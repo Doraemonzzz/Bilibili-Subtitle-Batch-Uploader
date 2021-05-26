@@ -1,0 +1,3852 @@
+1
+00:01:09,670 --> 00:01:18,030
+all right the time still 30-some I make an attempt to to put something on the
+
+2
+00:01:18,030 --> 00:01:20,730
+an attempt to to put something on the website half an hour ago
+
+3
+00:01:20,730 --> 00:01:23,190
+website half an hour ago so the lecture from last Tuesday and
+
+4
+00:01:23,190 --> 00:01:26,430
+so the lecture from last Tuesday and today's lecture must be there okay
+
+5
+00:01:26,430 --> 00:01:30,359
+today's lecture must be there okay the rest is available starters I'm going
+
+6
+00:01:30,359 --> 00:01:34,219
+the rest is available starters I'm going to be collecting what I had coming okay
+
+7
+00:01:34,219 --> 00:01:37,499
+to be collecting what I had coming okay and I think probably two more on will
+
+8
+00:01:37,499 --> 00:01:41,370
+and I think probably two more on will email those register some topics from
+
+9
+00:01:41,370 --> 00:01:43,430
+email those register some topics from books to read
+
+10
+00:01:43,430 --> 00:01:46,380
+books to read let's see another announcement we're
+
+11
+00:01:46,380 --> 00:01:49,050
+let's see another announcement we're going to post an early homework but it's
+
+12
+00:01:49,050 --> 00:01:50,969
+going to post an early homework but it's nobody need you for another three weeks
+
+13
+00:01:50,969 --> 00:01:53,639
+nobody need you for another three weeks or so but I want you to just know what
+
+14
+00:01:53,639 --> 00:01:56,219
+or so but I want you to just know what is coming and just not reading and in
+
+15
+00:01:56,219 --> 00:01:57,510
+is coming and just not reading and in the process of the homework we're going
+
+16
+00:01:57,510 --> 00:01:59,910
+the process of the homework we're going to have recitation tomorrow
+
+17
+00:01:59,910 --> 00:02:04,040
+to have recitation tomorrow so should we can introduce you to
+
+18
+00:02:04,040 --> 00:02:07,830
+so should we can introduce you to yesterday we did move what you have done
+
+19
+00:02:07,830 --> 00:02:09,810
+yesterday we did move what you have done introducing led me to some programming
+
+20
+00:02:09,810 --> 00:02:12,479
+introducing led me to some programming aspects cocoa from vista graphical focus
+
+21
+00:02:12,479 --> 00:02:14,580
+aspects cocoa from vista graphical focus because I think the Wake is preparing
+
+22
+00:02:14,580 --> 00:02:17,640
+because I think the Wake is preparing the homeworks he wants you to start
+
+23
+00:02:17,640 --> 00:02:19,860
+the homeworks he wants you to start building little libraries that
+
+24
+00:02:19,860 --> 00:02:23,039
+building little libraries that eventually lead to large-scale problems
+
+25
+00:02:23,039 --> 00:02:26,400
+eventually lead to large-scale problems now if you don't want us to develop this
+
+26
+00:02:26,400 --> 00:02:29,759
+now if you don't want us to develop this libraries in homework 1 we're gonna pass
+
+27
+00:02:29,759 --> 00:02:31,470
+libraries in homework 1 we're gonna pass the solutions so you can use from the
+
+28
+00:02:31,470 --> 00:02:34,920
+the solutions so you can use from the second part hours but lastly whatever we
+
+29
+00:02:34,920 --> 00:02:36,690
+second part hours but lastly whatever we post does it means the right thing I
+
+30
+00:02:36,690 --> 00:02:39,960
+post does it means the right thing I mean we are also students and we post
+
+31
+00:02:39,960 --> 00:02:42,750
+mean we are also students and we post whatever so hopefully you can do better
+
+32
+00:02:42,750 --> 00:02:46,920
+whatever so hopefully you can do better than than us and hopefully there are
+
+33
+00:02:46,920 --> 00:02:49,490
+than than us and hopefully there are solutions we post are your solutions
+
+34
+00:02:49,490 --> 00:02:53,220
+solutions we post are your solutions that's why I want you to factor right up
+
+35
+00:02:53,220 --> 00:02:56,850
+that's why I want you to factor right up and paste okay
+
+36
+00:02:56,850 --> 00:02:59,759
+and paste okay and what was the other announcement and
+
+37
+00:02:59,759 --> 00:03:01,470
+and what was the other announcement and so in this process of we will have a
+
+38
+00:03:01,470 --> 00:03:04,170
+so in this process of we will have a recitation this Friday but as I told me
+
+39
+00:03:04,170 --> 00:03:06,840
+recitation this Friday but as I told me very station the same ways the lectures
+
+40
+00:03:06,840 --> 00:03:07,450
+very station the same ways the lectures are not
+
+41
+00:03:07,450 --> 00:03:09,730
+are not thorry so if you don't like to see me
+
+42
+00:03:09,730 --> 00:03:11,020
+thorry so if you don't like to see me you don't have to come you know there
+
+43
+00:03:11,020 --> 00:03:13,060
+you don't have to come you know there are video lectures everything is online
+
+44
+00:03:13,060 --> 00:03:15,850
+are video lectures everything is online you can watch me from your kitchen
+
+45
+00:03:15,850 --> 00:03:19,800
+you can watch me from your kitchen basically we're getting a cup of coffee
+
+46
+00:03:19,800 --> 00:03:22,180
+basically we're getting a cup of coffee but there's gondola station at the same
+
+47
+00:03:22,180 --> 00:03:25,330
+but there's gondola station at the same time of driving and again net1 Authority
+
+48
+00:03:25,330 --> 00:03:27,390
+time of driving and again net1 Authority because hold information will be posted
+
+49
+00:03:27,390 --> 00:03:33,360
+because hold information will be posted and so the homework the Lexus okay so
+
+50
+00:03:33,360 --> 00:03:35,590
+and so the homework the Lexus okay so you will notice when you reveal the
+
+51
+00:03:35,590 --> 00:03:37,930
+you will notice when you reveal the slides from let's do one there are some
+
+52
+00:03:37,930 --> 00:03:41,170
+slides from let's do one there are some topics that are not covered okay now
+
+53
+00:03:41,170 --> 00:03:43,570
+topics that are not covered okay now those topics are really some little bit
+
+54
+00:03:43,570 --> 00:03:45,760
+those topics are really some little bit more examples from the concepts that was
+
+55
+00:03:45,760 --> 00:03:47,920
+more examples from the concepts that was trying to communicate some of them are
+
+56
+00:03:47,920 --> 00:03:49,480
+trying to communicate some of them are going to come in this lecture so I don't
+
+57
+00:03:49,480 --> 00:03:54,070
+going to come in this lecture so I don't have to do them some lady 3d will cover
+
+58
+00:03:54,070 --> 00:03:57,400
+have to do them some lady 3d will cover on Friday some we have to read them on
+
+59
+00:03:57,400 --> 00:04:02,410
+on Friday some we have to read them on your own okay and but if there is
+
+60
+00:04:02,410 --> 00:04:04,810
+your own okay and but if there is anything essential I will go back to it
+
+61
+00:04:04,810 --> 00:04:07,270
+anything essential I will go back to it okay if I don't cover it means we don't
+
+62
+00:04:07,270 --> 00:04:09,820
+okay if I don't cover it means we don't really need it for the shell code so for
+
+63
+00:04:09,820 --> 00:04:13,240
+really need it for the shell code so for example there is a big case study of
+
+64
+00:04:13,240 --> 00:04:17,380
+example there is a big case study of publicity graphical model related to the
+
+65
+00:04:17,380 --> 00:04:20,140
+publicity graphical model related to the biology and as you guys know there is
+
+66
+00:04:20,140 --> 00:04:22,840
+biology and as you guys know there is nobody from biology actually I was asked
+
+67
+00:04:22,840 --> 00:04:24,700
+nobody from biology actually I was asked yesterday polygamy I said we have any
+
+68
+00:04:24,700 --> 00:04:26,530
+yesterday polygamy I said we have any students in biology doing this type of
+
+69
+00:04:26,530 --> 00:04:32,230
+students in biology doing this type of things like not sorry you know so I
+
+70
+00:04:32,230 --> 00:04:35,020
+things like not sorry you know so I don't know if I stopped working for 20
+
+71
+00:04:35,020 --> 00:04:37,690
+don't know if I stopped working for 20 minutes in biology and I did clicker on
+
+72
+00:04:37,690 --> 00:04:41,110
+minutes in biology and I did clicker on the slide maybe a third of humans
+
+73
+00:04:41,110 --> 00:04:42,820
+the slide maybe a third of humans reached biology and that is not gonna be
+
+74
+00:04:42,820 --> 00:04:43,980
+reached biology and that is not gonna be good right
+
+75
+00:04:43,980 --> 00:04:49,380
+good right pointing all the way around okay
+
+76
+00:04:49,380 --> 00:04:49,390
+
+
+77
+00:04:49,390 --> 00:04:56,590
+we're going to start discussing a limit about conditional independence relations
+
+78
+00:04:56,590 --> 00:05:01,410
+about conditional independence relations and graphs but the context of
+
+79
+00:05:01,410 --> 00:05:05,950
+and graphs but the context of theoretical aspects of this conditional
+
+80
+00:05:05,950 --> 00:05:07,510
+theoretical aspects of this conditional independence relations not the graphs
+
+81
+00:05:07,510 --> 00:05:10,230
+independence relations not the graphs represent this is sort of an impure much
+
+82
+00:05:10,230 --> 00:05:12,809
+represent this is sort of an impure much so we will probably go back to it again
+
+83
+00:05:12,809 --> 00:05:16,140
+so we will probably go back to it again and again for the next 23 weeks so we
+
+84
+00:05:16,140 --> 00:05:19,580
+and again for the next 23 weeks so we have a very reduced understanding so -
+
+85
+00:05:19,580 --> 00:05:22,710
+have a very reduced understanding so - you can take the concepts today the
+
+86
+00:05:22,710 --> 00:05:25,320
+you can take the concepts today the lecture scrolling up you'd be easy but
+
+87
+00:05:25,320 --> 00:05:27,330
+lecture scrolling up you'd be easy but you know you don't have from the stir
+
+88
+00:05:27,330 --> 00:05:38,150
+you know you don't have from the stir everything ok this is if you have
+
+89
+00:05:38,150 --> 00:05:42,290
+everything ok this is if you have variables are showing absolutely zero
+
+90
+00:05:42,290 --> 00:05:44,820
+variables are showing absolutely zero independence relations this is an
+
+91
+00:05:44,820 --> 00:05:47,040
+independence relations this is an appreciation of the visionary all right
+
+92
+00:05:47,040 --> 00:05:48,270
+appreciation of the visionary all right so look at it carefully
+
+93
+00:05:48,270 --> 00:05:55,170
+so look at it carefully all right not x1 x2 given x1 x2 be given
+
+94
+00:05:55,170 --> 00:06:00,900
+all right not x1 x2 given x1 x2 be given x2 x1 several different positions like
+
+95
+00:06:00,900 --> 00:06:02,430
+x2 x1 several different positions like that because for example I can start
+
+96
+00:06:02,430 --> 00:06:04,770
+that because for example I can start with x2 and the next one you will
+
+97
+00:06:04,770 --> 00:06:10,740
+with x2 and the next one you will experience x3 given you know x1 and x3
+
+98
+00:06:10,740 --> 00:06:14,610
+experience x3 given you know x1 and x3 etc etc so in essence you have very
+
+99
+00:06:14,610 --> 00:06:17,670
+etc etc so in essence you have very shove those and in some ways are not
+
+100
+00:06:17,670 --> 00:06:19,620
+shove those and in some ways are not symmetric right the way that I write
+
+101
+00:06:19,620 --> 00:06:25,909
+symmetric right the way that I write them so same sort of symmetry sphere ok
+
+102
+00:06:25,909 --> 00:06:29,490
+them so same sort of symmetry sphere ok this expansion is very expensive to do
+
+103
+00:06:29,490 --> 00:06:34,050
+this expansion is very expensive to do so just nibble on this if we have you
+
+104
+00:06:34,050 --> 00:06:39,930
+so just nibble on this if we have you say K values for its variable X and you
+
+105
+00:06:39,930 --> 00:06:41,670
+say K values for its variable X and you have both no so this will require a
+
+106
+00:06:41,670 --> 00:06:44,719
+have both no so this will require a table of the order of KT power V and
+
+107
+00:06:44,719 --> 00:06:46,890
+table of the order of KT power V and this is the reason really we started
+
+108
+00:06:46,890 --> 00:06:49,740
+this is the reason really we started probabilistic graphical models because
+
+109
+00:06:49,740 --> 00:06:52,830
+probabilistic graphical models because we be asking a question structures can
+
+110
+00:06:52,830 --> 00:06:55,649
+we be asking a question structures can you actually simplify this conditional
+
+111
+00:06:55,649 --> 00:06:57,749
+you actually simplify this conditional distributions accountable for some
+
+112
+00:06:57,749 --> 00:06:59,850
+distributions accountable for some independence relations other ways you
+
+113
+00:06:59,850 --> 00:07:02,580
+independence relations other ways you know looking at this is well explore
+
+114
+00:07:02,580 --> 00:07:05,310
+know looking at this is well explore given x1 depends on x2 and x3 telling
+
+115
+00:07:05,310 --> 00:07:08,730
+given x1 depends on x2 and x3 telling the trend of x2 and x3 the answer is yes
+
+116
+00:07:08,730 --> 00:07:10,150
+the trend of x2 and x3 the answer is yes we would
+
+117
+00:07:10,150 --> 00:07:15,930
+we would factorization that is very efficient so
+
+118
+00:07:15,930 --> 00:07:19,510
+factorization that is very efficient so the discount that I did here it does not
+
+119
+00:07:19,510 --> 00:07:21,790
+the discount that I did here it does not account for normalization of each of
+
+120
+00:07:21,790 --> 00:07:24,610
+account for normalization of each of these probabilities which is really it
+
+121
+00:07:24,610 --> 00:07:28,980
+these probabilities which is really it doesn't remove much of the cost and so
+
+122
+00:07:28,980 --> 00:07:31,420
+doesn't remove much of the cost and so when you want a perfect one
+
+123
+00:07:31,420 --> 00:07:34,120
+when you want a perfect one you can okay numbers to describe it k
+
+124
+00:07:34,120 --> 00:07:36,390
+you can okay numbers to describe it k square to describe excellent even x1
+
+125
+00:07:36,390 --> 00:07:40,930
+square to describe excellent even x1 take you to describe this and take the
+
+126
+00:07:40,930 --> 00:07:46,810
+take you to describe this and take the power bill escape to describe now we'll
+
+127
+00:07:46,810 --> 00:07:49,980
+power bill escape to describe now we'll study machine learning right if you have
+
+128
+00:07:49,980 --> 00:07:52,240
+study machine learning right if you have missed admission like that and if you
+
+129
+00:07:52,240 --> 00:07:55,090
+missed admission like that and if you want to visit in the context in the self
+
+130
+00:07:55,090 --> 00:07:57,430
+want to visit in the context in the self classification problems there's a lot of
+
+131
+00:07:57,430 --> 00:08:00,070
+classification problems there's a lot of text you can do but you don't have to
+
+132
+00:08:00,070 --> 00:08:03,420
+text you can do but you don't have to deal with complexity of K to the me and
+
+133
+00:08:03,420 --> 00:08:07,300
+deal with complexity of K to the me and so here's one example I'm going to
+
+134
+00:08:07,300 --> 00:08:09,190
+so here's one example I'm going to making tables for each of this
+
+135
+00:08:09,190 --> 00:08:10,930
+making tables for each of this conditional probability distributions
+
+136
+00:08:10,930 --> 00:08:15,420
+conditional probability distributions but inverse you replace them with
+
+137
+00:08:15,420 --> 00:08:18,010
+but inverse you replace them with logistic regression ordinates looks like
+
+138
+00:08:18,010 --> 00:08:19,170
+logistic regression ordinates looks like that
+
+139
+00:08:19,170 --> 00:08:26,050
+alright so delicious that you see here it's so tight and we're from the field
+
+140
+00:08:26,050 --> 00:08:28,330
+it's so tight and we're from the field itself in here it depends on all the
+
+141
+00:08:28,330 --> 00:08:31,600
+itself in here it depends on all the previous axis so I try to fit this
+
+142
+00:08:31,600 --> 00:08:33,219
+previous axis so I try to fit this distribution of science enjoyed a
+
+143
+00:08:33,219 --> 00:08:36,310
+distribution of science enjoyed a function with a rival of somewhat it's
+
+144
+00:08:36,310 --> 00:08:40,150
+function with a rival of somewhat it's doubly times the vector X for a for the
+
+145
+00:08:40,150 --> 00:08:43,450
+doubly times the vector X for a for the previous ones and then we may have not
+
+146
+00:08:43,450 --> 00:08:46,990
+previous ones and then we may have not seen this but yeah vs. are different
+
+147
+00:08:46,990 --> 00:08:49,540
+seen this but yeah vs. are different there's no no services sigmoid function
+
+148
+00:08:49,540 --> 00:08:52,210
+there's no no services sigmoid function and the focus of a label to take the K
+
+149
+00:08:52,210 --> 00:08:56,860
+and the focus of a label to take the K component of the argument and there is a
+
+150
+00:08:56,860 --> 00:09:00,580
+component of the argument and there is a nice model for this provision from a
+
+151
+00:09:00,580 --> 00:09:02,420
+nice model for this provision from a movie
+
+152
+00:09:02,420 --> 00:09:04,130
+movie of them and you won't have to fix a
+
+153
+00:09:04,130 --> 00:09:06,890
+of them and you won't have to fix a thing with to describe them okay now
+
+154
+00:09:06,890 --> 00:09:10,190
+thing with to describe them okay now it's not but the question is normally
+
+155
+00:09:10,190 --> 00:09:12,320
+it's not but the question is normally and I have the calculation here so if
+
+156
+00:09:12,320 --> 00:09:15,800
+and I have the calculation here so if anybody has any places from the power I
+
+157
+00:09:15,800 --> 00:09:18,350
+anybody has any places from the power I get it it's actually still taller than
+
+158
+00:09:18,350 --> 00:09:20,330
+get it it's actually still taller than they want you to do the odds of those
+
+159
+00:09:20,330 --> 00:09:22,280
+they want you to do the odds of those different against yourself so it comes
+
+160
+00:09:22,280 --> 00:09:26,840
+different against yourself so it comes out of the the the post of this is K
+
+161
+00:09:26,840 --> 00:09:30,770
+out of the the the post of this is K times miss Claire before the possible
+
+162
+00:09:30,770 --> 00:09:31,850
+times miss Claire before the possible straight to the power of me you know
+
+163
+00:09:31,850 --> 00:09:34,820
+straight to the power of me you know it's okay to whisper so it's really I
+
+164
+00:09:34,820 --> 00:09:37,460
+it's okay to whisper so it's really I mean depends offensively is but they
+
+165
+00:09:37,460 --> 00:09:39,620
+mean depends offensively is but they they significantly reduce from above
+
+166
+00:09:39,620 --> 00:09:44,150
+they significantly reduce from above course okay however this method is not
+
+167
+00:09:44,150 --> 00:09:45,830
+course okay however this method is not very useful because each of this
+
+168
+00:09:45,830 --> 00:09:48,020
+very useful because each of this conditional distributions depends on the
+
+169
+00:09:48,020 --> 00:09:49,100
+conditional distributions depends on the values of all the other previous
+
+170
+00:09:49,100 --> 00:09:52,100
+values of all the other previous variables so you want to be able to do
+
+171
+00:09:52,100 --> 00:09:54,530
+variables so you want to be able to do maths very sort of business in the
+
+172
+00:09:54,530 --> 00:09:58,130
+maths very sort of business in the college software plus fire so if you
+
+173
+00:09:58,130 --> 00:10:00,530
+college software plus fire so if you want people mixtures and you want five
+
+174
+00:10:00,530 --> 00:10:03,920
+want people mixtures and you want five modules you know account for evidence
+
+175
+00:10:03,920 --> 00:10:05,690
+modules you know account for evidence and things like that you won't be able
+
+176
+00:10:05,690 --> 00:10:08,960
+and things like that you won't be able to do the algebra using this module okay
+
+177
+00:10:08,960 --> 00:10:13,070
+to do the algebra using this module okay but again there is more than this one we
+
+178
+00:10:13,070 --> 00:10:15,650
+but again there is more than this one we have the tables nice fried this had some
+
+179
+00:10:15,650 --> 00:10:21,680
+have the tables nice fried this had some function alright and in this case a few
+
+180
+00:10:21,680 --> 00:10:23,870
+function alright and in this case a few this matrix not many once you have it
+
+181
+00:10:23,870 --> 00:10:25,850
+this matrix not many once you have it then this could be an easy problem
+
+182
+00:10:25,850 --> 00:10:28,340
+then this could be an easy problem figure in the context of classification
+
+183
+00:10:28,340 --> 00:10:31,070
+figure in the context of classification so what I want to do this in this course
+
+184
+00:10:31,070 --> 00:10:38,360
+so what I want to do this in this course we won't do something better some basic
+
+185
+00:10:38,360 --> 00:10:43,150
+we won't do something better some basic things probability integral syndrome
+
+186
+00:10:43,150 --> 00:10:43,160
+
+
+187
+00:10:43,160 --> 00:10:50,690
+conditional independence so I have 1 divided by XY and Z can be scalar K
+
+188
+00:10:50,690 --> 00:10:54,590
+divided by XY and Z can be scalar K vector so I say that x and y are
+
+189
+00:10:54,590 --> 00:10:57,590
+vector so I say that x and y are conditionally independent given Z 1 FX 2
+
+190
+00:10:57,590 --> 00:11:01,220
+conditionally independent given Z 1 FX 2 the y and z is equal to B FX given C ok
+
+191
+00:11:01,220 --> 00:11:05,020
+the y and z is equal to B FX given C ok so tom is a normal something of Drive
+
+192
+00:11:05,020 --> 00:11:07,390
+so tom is a normal something of Drive make a difference when it comes to the
+
+193
+00:11:07,390 --> 00:11:11,170
+make a difference when it comes to the value of x okay so this is one way to
+
+194
+00:11:11,170 --> 00:11:15,100
+value of x okay so this is one way to I'd the traditional dependent of X for y
+
+195
+00:11:15,100 --> 00:11:17,680
+I'd the traditional dependent of X for y double Z this important that's why you
+
+196
+00:11:17,680 --> 00:11:19,510
+double Z this important that's why you say conditional because there is an
+
+197
+00:11:19,510 --> 00:11:25,120
+say conditional because there is an argument either now cosmas if you think
+
+198
+00:11:25,120 --> 00:11:27,550
+argument either now cosmas if you think this is a definition let me say the
+
+199
+00:11:27,550 --> 00:11:29,430
+this is a definition let me say the simple algebra right I can write this
+
+200
+00:11:29,430 --> 00:11:32,710
+simple algebra right I can write this more effectively y and z and then P of Y
+
+201
+00:11:32,710 --> 00:11:35,800
+more effectively y and z and then P of Y given Z so those are this I can write
+
+202
+00:11:35,800 --> 00:11:39,310
+given Z so those are this I can write this as P of X given Z P of Y given C so
+
+203
+00:11:39,310 --> 00:11:42,370
+this as P of X given Z P of Y given C so we can advances in the Commission to
+
+204
+00:11:42,370 --> 00:11:46,120
+we can advances in the Commission to life as an alternative way that when
+
+205
+00:11:46,120 --> 00:11:48,430
+life as an alternative way that when this conditional distribution for price
+
+206
+00:11:48,430 --> 00:11:50,730
+this conditional distribution for price is like knob Direction Y an independent
+
+207
+00:11:50,730 --> 00:11:55,630
+is like knob Direction Y an independent commission along Z okay so sometimes
+
+208
+00:11:55,630 --> 00:11:57,910
+commission along Z okay so sometimes this will be convenient sometimes this
+
+209
+00:11:57,910 --> 00:11:59,560
+this will be convenient sometimes this they are exactly the same thing that's
+
+210
+00:11:59,560 --> 00:12:02,610
+they are exactly the same thing that's good
+
+211
+00:12:02,610 --> 00:12:02,620
+
+
+212
+00:12:02,620 --> 00:12:20,830
+okay dependence relationship also in terms of sets of random variables so we
+
+213
+00:12:20,830 --> 00:12:22,750
+terms of sets of random variables so we can either assent affection for
+
+214
+00:12:22,750 --> 00:12:25,000
+can either assent affection for environments is developing once that
+
+215
+00:12:25,000 --> 00:12:29,530
+environments is developing once that wagon easy when texas independent of Y
+
+216
+00:12:29,530 --> 00:12:33,580
+wagon easy when texas independent of Y given Z for every X in the set X and
+
+217
+00:12:33,580 --> 00:12:36,900
+given Z for every X in the set X and everyone in the sidewalk okay
+
+218
+00:12:36,900 --> 00:12:39,970
+everyone in the sidewalk okay and actually this Zia can make it also
+
+219
+00:12:39,970 --> 00:12:43,360
+and actually this Zia can make it also set so I maybe that we have been even
+
+220
+00:12:43,360 --> 00:12:47,050
+set so I maybe that we have been even more generalized reversals in there now
+
+221
+00:12:47,050 --> 00:12:48,910
+more generalized reversals in there now for example we say this set of the very
+
+222
+00:12:48,910 --> 00:12:51,160
+for example we say this set of the very most is independent that given that set
+
+223
+00:12:51,160 --> 00:12:53,800
+most is independent that given that set variable so this basically will follow
+
+224
+00:12:53,800 --> 00:12:58,770
+variable so this basically will follow this definition here
+
+225
+00:12:58,770 --> 00:12:58,780
+
+
+226
+00:12:58,780 --> 00:13:03,690
+the repellents we listen to this sort of orthogonality condition but in some
+
+227
+00:13:03,690 --> 00:13:06,090
+orthogonality condition but in some probability looks mr. personality
+
+228
+00:13:06,090 --> 00:13:07,890
+probability looks mr. personality condition may imply something else
+
+229
+00:13:07,890 --> 00:13:10,010
+condition may imply something else usually defined in terms of expectations
+
+230
+00:13:10,010 --> 00:13:11,190
+usually defined in terms of expectations okay
+
+231
+00:13:11,190 --> 00:13:13,260
+okay but for us this is the notation we're
+
+232
+00:13:13,260 --> 00:13:21,960
+but for us this is the notation we're going to use muscle independence
+
+233
+00:13:21,960 --> 00:13:23,730
+going to use muscle independence basically you know we take this
+
+234
+00:13:23,730 --> 00:13:25,770
+basically you know we take this definition for example means of
+
+235
+00:13:25,770 --> 00:13:31,020
+definition for example means of perfection y is given p FX he apply okay
+
+236
+00:13:31,020 --> 00:13:34,320
+perfection y is given p FX he apply okay I was just looking at this slide right
+
+237
+00:13:34,320 --> 00:13:36,630
+I was just looking at this slide right you can stab it sometimes because you
+
+238
+00:13:36,630 --> 00:13:39,690
+you can stab it sometimes because you see for example have I'm using the
+
+239
+00:13:39,690 --> 00:13:42,210
+see for example have I'm using the notation carrying them in a violent way
+
+240
+00:13:42,210 --> 00:13:44,400
+notation carrying them in a violent way but hopefully we can still get the
+
+241
+00:13:44,400 --> 00:13:47,880
+but hopefully we can still get the message for example you know here I lose
+
+242
+00:13:47,880 --> 00:13:49,500
+message for example you know here I lose capital X and wife on the bottom was
+
+243
+00:13:49,500 --> 00:13:53,400
+capital X and wife on the bottom was here in little x and y then effectively
+
+244
+00:13:53,400 --> 00:13:54,660
+here in little x and y then effectively the same force but you know
+
+245
+00:13:54,660 --> 00:13:56,730
+the same force but you know traditionally this would be the lot of
+
+246
+00:13:56,730 --> 00:13:58,470
+traditionally this would be the lot of the volume or this will be the values
+
+247
+00:13:58,470 --> 00:14:00,540
+the volume or this will be the values that are the vitamin can take but you
+
+248
+00:14:00,540 --> 00:14:03,810
+that are the vitamin can take but you know we're okay right we're not gonna
+
+249
+00:14:03,810 --> 00:14:05,610
+know we're okay right we're not gonna see you know sorry you with a little X
+
+250
+00:14:05,610 --> 00:14:07,980
+see you know sorry you with a little X you know it's gonna tell you I type this
+
+251
+00:14:07,980 --> 00:14:10,710
+you know it's gonna tell you I type this slide at least we have some slides to
+
+252
+00:14:10,710 --> 00:14:13,470
+slide at least we have some slides to talk about the wrong papers you know
+
+253
+00:14:13,470 --> 00:14:17,760
+talk about the wrong papers you know it's good idea to sort of be careful and
+
+254
+00:14:17,760 --> 00:14:19,770
+it's good idea to sort of be careful and consistent because much than you're
+
+255
+00:14:19,770 --> 00:14:27,570
+consistent because much than you're consistent okay so this mess intent of
+
+256
+00:14:27,570 --> 00:14:29,370
+consistent okay so this mess intent of this conditional and marginal
+
+257
+00:14:29,370 --> 00:14:37,200
+this conditional and marginal independence okay so I am saying here
+
+258
+00:14:37,200 --> 00:14:39,930
+independence okay so I am saying here that this whole time is independent of
+
+259
+00:14:39,930 --> 00:14:46,230
+that this whole time is independent of the type of the car okay
+
+260
+00:14:46,230 --> 00:14:46,240
+
+
+261
+00:14:46,240 --> 00:15:04,249
+[Music]
+
+262
+00:15:04,249 --> 00:15:04,259
+
+
+263
+00:15:04,259 --> 00:16:08,249
+I mean the you know they say the probability of a is higher is you know I
+
+264
+00:16:08,249 --> 00:16:10,979
+probability of a is higher is you know I mean they you know would be exactly the
+
+265
+00:16:10,979 --> 00:16:14,150
+mean they you know would be exactly the opposite effect from the first example
+
+266
+00:16:14,150 --> 00:16:20,489
+opposite effect from the first example okay so so this is the motion again so
+
+267
+00:16:20,489 --> 00:16:22,139
+okay so so this is the motion again so we're gonna verse here you know I'm
+
+268
+00:16:22,139 --> 00:16:26,879
+we're gonna verse here you know I'm writing this is a standard are gonna
+
+269
+00:16:26,879 --> 00:16:28,229
+writing this is a standard are gonna spend actually two or three lectures
+
+270
+00:16:28,229 --> 00:16:32,970
+spend actually two or three lectures discussing about this kindle market or
+
+271
+00:16:32,970 --> 00:16:35,039
+discussing about this kindle market or in the State Park Estate state-space
+
+272
+00:16:35,039 --> 00:16:39,569
+in the State Park Estate state-space models but this is a Markov chain so we
+
+273
+00:16:39,569 --> 00:16:43,439
+models but this is a Markov chain so we can imagine you know you have some state
+
+274
+00:16:43,439 --> 00:16:46,829
+can imagine you know you have some state body moves but and you know the values
+
+275
+00:16:46,829 --> 00:16:48,240
+body moves but and you know the values of it
+
+276
+00:16:48,240 --> 00:16:52,650
+of it Connie so x1 is the volume of dynomonics
+
+277
+00:16:52,650 --> 00:16:57,570
+Connie so x1 is the volume of dynomonics - thank you it cetera so the unusually a
+
+278
+00:16:57,570 --> 00:17:01,050
+- thank you it cetera so the unusually a monomial assumption here where the model
+
+279
+00:17:01,050 --> 00:17:02,760
+monomial assumption here where the model effects of high BP depends only on the
+
+280
+00:17:02,760 --> 00:17:06,030
+effects of high BP depends only on the value of I'm XT minus 1 so prepared this
+
+281
+00:17:06,030 --> 00:17:09,120
+value of I'm XT minus 1 so prepared this expression show expecially we can
+
+282
+00:17:09,120 --> 00:17:10,800
+expression show expecially we can remember this pretty does this long
+
+283
+00:17:10,800 --> 00:17:16,500
+remember this pretty does this long expression compared list right with this
+
+284
+00:17:16,500 --> 00:17:19,980
+expression compared list right with this Markovian model that is very simplified
+
+285
+00:17:19,980 --> 00:17:23,670
+Markovian model that is very simplified because extra doesn't depend on XT minus
+
+286
+00:17:23,670 --> 00:17:32,340
+because extra doesn't depend on XT minus 2 XT minus 3 etc ok so this is this
+
+287
+00:17:32,340 --> 00:17:34,500
+2 XT minus 3 etc ok so this is this moment they see various cues the
+
+288
+00:17:34,500 --> 00:17:37,080
+moment they see various cues the independence relations in particular but
+
+289
+00:17:37,080 --> 00:17:44,280
+independence relations in particular but XP is independent X 2 minus 1 is in the
+
+290
+00:17:44,280 --> 00:17:46,200
+XP is independent X 2 minus 1 is in the parent of all the various values XT
+
+291
+00:17:46,200 --> 00:17:58,070
+parent of all the various values XT minus 2 X 1 on this course or something
+
+292
+00:17:58,070 --> 00:18:03,950
+minus 2 X 1 on this course or something if I highlighted from lecture 1 which is
+
+293
+00:18:03,950 --> 00:18:07,230
+if I highlighted from lecture 1 which is the parent of the node right so in this
+
+294
+00:18:07,230 --> 00:18:09,540
+the parent of the node right so in this case if we look at no business to
+
+295
+00:18:09,540 --> 00:18:17,090
+case if we look at no business to parents okay and so here's a fundamental
+
+296
+00:18:17,090 --> 00:18:17,100
+
+
+297
+00:18:17,100 --> 00:18:22,820
+fairness conditionally previous relations for this directed graph and so
+
+298
+00:18:22,820 --> 00:18:27,930
+relations for this directed graph and so what it says x-ray is independent from
+
+299
+00:18:27,930 --> 00:18:31,350
+what it says x-ray is independent from the main the segments of a negative
+
+300
+00:18:31,350 --> 00:18:36,020
+the main the segments of a negative spiral so this is out there
+
+301
+00:18:36,020 --> 00:18:38,760
+spiral so this is out there Tamara trenched to emphasize the
+
+302
+00:18:38,760 --> 00:18:41,010
+Tamara trenched to emphasize the depositor given this will highlight in
+
+303
+00:18:41,010 --> 00:18:42,270
+depositor given this will highlight in that movie
+
+304
+00:18:42,270 --> 00:18:44,680
+that movie alright so
+
+305
+00:18:44,680 --> 00:18:47,410
+alright so the parlance it stays that the value of
+
+306
+00:18:47,410 --> 00:18:49,660
+the parlance it stays that the value of V is independent through the name of the
+
+307
+00:18:49,660 --> 00:18:53,920
+V is independent through the name of the sender so photographer at the political
+
+308
+00:18:53,920 --> 00:18:55,540
+sender so photographer at the political order the wrong descendants will have
+
+309
+00:18:55,540 --> 00:18:58,860
+order the wrong descendants will have numbers but they are basically
+
+310
+00:18:58,860 --> 00:19:00,820
+numbers but they are basically everything about the values of the
+
+311
+00:19:00,820 --> 00:19:04,360
+everything about the values of the parents basically in the order okay
+
+312
+00:19:04,360 --> 00:19:07,300
+parents basically in the order okay these are the non descendants right so
+
+313
+00:19:07,300 --> 00:19:09,420
+these are the non descendants right so point on the values of the parents
+
+314
+00:19:09,420 --> 00:19:12,210
+point on the values of the parents excuse you the fella from the
+
+315
+00:19:12,210 --> 00:19:17,500
+excuse you the fella from the non-descendants eye or anything like
+
+316
+00:19:17,500 --> 00:19:20,230
+non-descendants eye or anything like that right so view at this point I just
+
+317
+00:19:20,230 --> 00:19:23,230
+that right so view at this point I just want you to visualize as to what this
+
+318
+00:19:23,230 --> 00:19:28,090
+want you to visualize as to what this means because we love I think we should
+
+319
+00:19:28,090 --> 00:19:29,530
+means because we love I think we should highlight that which is not very
+
+320
+00:19:29,530 --> 00:19:32,260
+highlight that which is not very difficult but once you have this the
+
+321
+00:19:32,260 --> 00:19:34,510
+difficult but once you have this the composition for probability defined on
+
+322
+00:19:34,510 --> 00:19:36,670
+composition for probability defined on this graph you move rains pushing too
+
+323
+00:19:36,670 --> 00:19:38,980
+this graph you move rains pushing too hard okay so we will able to take
+
+324
+00:19:38,980 --> 00:19:44,080
+hard okay so we will able to take advantage of this relation so and no
+
+325
+00:19:44,080 --> 00:19:45,430
+advantage of this relation so and no Pascal will ensure that only
+
+326
+00:19:45,430 --> 00:19:47,140
+Pascal will ensure that only distillation of the fertilizer in this
+
+327
+00:19:47,140 --> 00:19:52,750
+distillation of the fertilizer in this graph satisfies this relation and around
+
+328
+00:19:52,750 --> 00:19:54,790
+graph satisfies this relation and around this dilution on the graph this relation
+
+329
+00:19:54,790 --> 00:19:56,560
+this dilution on the graph this relation is also satisfied you know I mean you
+
+330
+00:19:56,560 --> 00:19:58,050
+is also satisfied you know I mean you can see sorry
+
+331
+00:19:58,050 --> 00:20:10,950
+can see sorry alright so both ways this will be okay
+
+332
+00:20:10,950 --> 00:20:10,960
+
+
+333
+00:20:10,960 --> 00:20:18,340
+that the capitalization of the joint of immunity on the restive graph is written
+
+334
+00:20:18,340 --> 00:20:21,100
+immunity on the restive graph is written as the product over all the nodes of the
+
+335
+00:20:21,100 --> 00:20:23,470
+as the product over all the nodes of the graph of the conditional probabilities
+
+336
+00:20:23,470 --> 00:20:27,490
+graph of the conditional probabilities of X I excite the volume of you know the
+
+337
+00:20:27,490 --> 00:20:31,600
+of X I excite the volume of you know the I given the violence apart this is an
+
+338
+00:20:31,600 --> 00:20:33,250
+I given the violence apart this is an amazing between position if you think
+
+339
+00:20:33,250 --> 00:20:36,070
+amazing between position if you think about it right so you know
+
+340
+00:20:36,070 --> 00:20:38,590
+about it right so you know in this case the conditional probability
+
+341
+00:20:38,590 --> 00:20:42,220
+in this case the conditional probability corresponding to its no and this
+
+342
+00:20:42,220 --> 00:20:43,870
+corresponding to its no and this function is the condition of the way the
+
+343
+00:20:43,870 --> 00:20:48,070
+function is the condition of the way the effects are given its forests so mr.
+
+344
+00:20:48,070 --> 00:20:50,529
+effects are given its forests so mr. Bastian that factorization with this
+
+345
+00:20:50,529 --> 00:20:52,930
+Bastian that factorization with this graph the personal missile dependent
+
+346
+00:20:52,930 --> 00:20:54,639
+graph the personal missile dependent relation that we introduced which is
+
+347
+00:20:54,639 --> 00:20:57,159
+relation that we introduced which is certified ethical justification for
+
+348
+00:20:57,159 --> 00:21:03,220
+certified ethical justification for deewana and discuss its Lewis okay so I
+
+349
+00:21:03,220 --> 00:21:05,470
+deewana and discuss its Lewis okay so I will have exactly tricentennial examples
+
+350
+00:21:05,470 --> 00:21:07,029
+will have exactly tricentennial examples and some a little bit more complicated
+
+351
+00:21:07,029 --> 00:21:14,049
+and some a little bit more complicated but I'll ask you to know mrs. Blaine and
+
+352
+00:21:14,049 --> 00:21:16,659
+but I'll ask you to know mrs. Blaine and electric artworks and washing us if we
+
+353
+00:21:16,659 --> 00:21:20,200
+electric artworks and washing us if we can prove it
+
+354
+00:21:20,200 --> 00:21:20,210
+
+
+355
+00:21:20,210 --> 00:21:28,379
+[Music]
+
+356
+00:21:28,379 --> 00:21:28,389
+
+
+357
+00:21:28,389 --> 00:21:34,629
+Rises and this factors here these functions are the condition for
+
+358
+00:21:34,629 --> 00:21:40,060
+functions are the condition for committees of X i given sparks when we
+
+359
+00:21:40,060 --> 00:21:42,370
+committees of X i given sparks when we have this complicated factorization from
+
+360
+00:21:42,370 --> 00:21:44,440
+have this complicated factorization from the product rule well we only have the
+
+361
+00:21:44,440 --> 00:21:47,409
+the product rule well we only have the parents we have taught the settlers and
+
+362
+00:21:47,409 --> 00:21:50,529
+parents we have taught the settlers and the co parents and the novice and
+
+363
+00:21:50,529 --> 00:21:52,810
+the co parents and the novice and everything else is coming here but
+
+364
+00:21:52,810 --> 00:21:54,870
+everything else is coming here but because of this independent relationship
+
+365
+00:21:54,870 --> 00:21:58,720
+because of this independent relationship the the only partition here this X i
+
+366
+00:21:58,720 --> 00:22:09,560
+the the only partition here this X i given the parents of
+
+367
+00:22:09,560 --> 00:22:09,570
+
+
+368
+00:22:09,570 --> 00:22:17,180
+so I'm actually so sure what I'm doing I am taking a directed graph with my body
+
+369
+00:22:17,180 --> 00:22:20,899
+am taking a directed graph with my body moves the first equation writes the the
+
+370
+00:22:20,899 --> 00:22:23,180
+moves the first equation writes the the product rule so no independence
+
+371
+00:22:23,180 --> 00:22:25,549
+product rule so no independence assumptions I am love assuming nothing
+
+372
+00:22:25,549 --> 00:22:28,519
+assumptions I am love assuming nothing and then I am applying sort of this
+
+373
+00:22:28,519 --> 00:22:31,430
+and then I am applying sort of this equation right I'm applying this
+
+374
+00:22:31,430 --> 00:22:34,159
+equation right I'm applying this equation that says that business
+
+375
+00:22:34,159 --> 00:22:36,440
+equation that says that business innovation is factorized this way and
+
+376
+00:22:36,440 --> 00:22:38,539
+innovation is factorized this way and another thing at this the predominate
+
+377
+00:22:38,539 --> 00:22:40,219
+another thing at this the predominate affects one because it's one has no
+
+378
+00:22:40,219 --> 00:22:42,649
+affects one because it's one has no parents all right the prevent effects
+
+379
+00:22:42,649 --> 00:22:44,839
+parents all right the prevent effects still given x1 that's the only part I
+
+380
+00:22:44,839 --> 00:22:48,169
+still given x1 that's the only part I could still get enough only x1 x4 given
+
+381
+00:22:48,169 --> 00:22:51,469
+could still get enough only x1 x4 given 2 and 3 and X 5 given 3 so remember you
+
+382
+00:22:51,469 --> 00:22:57,190
+2 and 3 and X 5 given 3 so remember you can see the appearance relations that
+
+383
+00:22:57,190 --> 00:22:57,200
+
+
+384
+00:22:57,200 --> 00:23:02,779
+effectively whether says the probability is equal to naught which means the level
+
+385
+00:23:02,779 --> 00:23:07,519
+is equal to naught which means the level x3 expires in the penitent water I mean
+
+386
+00:23:07,519 --> 00:23:10,129
+x3 expires in the penitent water I mean looking at this 2 equation there never
+
+387
+00:23:10,129 --> 00:23:10,999
+looking at this 2 equation there never expiry
+
+388
+00:23:10,999 --> 00:23:15,710
+expiry x5 is independent off that's 124 right
+
+389
+00:23:15,710 --> 00:23:19,310
+x5 is independent off that's 124 right there it's here given x2 x3 x4 is
+
+390
+00:23:19,310 --> 00:23:22,789
+there it's here given x2 x3 x4 is independent of X 1 given X 1 X 3 in
+
+391
+00:23:22,789 --> 00:23:34,219
+independent of X 1 given X 1 X 3 in terms of X 2 etc you may say I know but
+
+392
+00:23:34,219 --> 00:23:37,909
+terms of X 2 etc you may say I know but how do I know this independence relation
+
+393
+00:23:37,909 --> 00:23:39,889
+how do I know this independence relation well we will spend a lecture or two and
+
+394
+00:23:39,889 --> 00:23:49,610
+well we will spend a lecture or two and we will
+
+395
+00:23:49,610 --> 00:23:49,620
+
+
+396
+00:23:49,620 --> 00:23:57,410
+cases
+
+397
+00:23:57,410 --> 00:23:57,420
+
+
+398
+00:23:57,420 --> 00:25:28,410
+it's okay you know this if let's say is the number of parents to the power left
+
+399
+00:25:28,410 --> 00:25:33,310
+the number of parents to the power left to describe this times times
+
+400
+00:25:33,310 --> 00:25:33,320
+
+
+401
+00:25:33,320 --> 00:25:40,639
+in principle actually somebody can say take the power a plus one
+
+402
+00:25:40,639 --> 00:25:40,649
+take the power a plus one
+
+403
+00:25:40,649 --> 00:25:46,879
+you sit up but you know it's like if you're comfortable a normalization and
+
+404
+00:25:46,879 --> 00:25:48,320
+you're comfortable a normalization and everything so that's approximately of
+
+405
+00:25:48,320 --> 00:26:00,399
+everything so that's approximately of the order wine is take aid to affect
+
+406
+00:26:00,399 --> 00:26:00,409
+
+
+407
+00:26:00,409 --> 00:26:06,829
+reverse right these are going to take a values and we're taking K values all
+
+408
+00:26:06,829 --> 00:27:26,430
+values and we're taking K values all right so okay less rough
+
+409
+00:27:26,430 --> 00:27:26,440
+
+
+410
+00:27:26,440 --> 00:27:30,630
+yes NZ's enemy remembrances lesser dismissed
+
+411
+00:27:30,630 --> 00:27:34,320
+dismissed mara independence relations okay and
+
+412
+00:27:34,320 --> 00:27:36,030
+mara independence relations okay and this is not very interesting so this is
+
+413
+00:27:36,030 --> 00:28:54,980
+this is not very interesting so this is something very just the Ascension this
+
+414
+00:28:54,980 --> 00:28:58,500
+something very just the Ascension this you can appreciate the necessary I'm
+
+415
+00:28:58,500 --> 00:29:00,780
+you can appreciate the necessary I'm showing that this function is a
+
+416
+00:29:00,780 --> 00:29:06,690
+showing that this function is a probability right because you say 116
+
+417
+00:29:06,690 --> 00:29:15,090
+probability right because you say 116 points along that mystical did you okay
+
+418
+00:29:15,090 --> 00:29:15,100
+
+
+419
+00:29:15,100 --> 00:29:38,549
+the distributions okay next one to experience equal to one which is nice
+
+420
+00:29:38,549 --> 00:29:41,039
+experience equal to one which is nice so obviously it's individual on
+
+421
+00:29:41,039 --> 00:29:43,019
+so obviously it's individual on normalizing expect that this will be the
+
+422
+00:29:43,019 --> 00:29:48,539
+normalizing expect that this will be the case and apparently this the composition
+
+423
+00:29:48,539 --> 00:29:52,379
+case and apparently this the composition here you can show that the national
+
+424
+00:29:52,379 --> 00:30:08,279
+here you can show that the national experience is actually it comes home
+
+425
+00:30:08,279 --> 00:30:10,259
+experience is actually it comes home service functions is really the
+
+426
+00:30:10,259 --> 00:30:13,619
+service functions is really the conditional distribution which is what I
+
+427
+00:30:13,619 --> 00:30:22,710
+conditional distribution which is what I tell you you need to remember okay this
+
+428
+00:30:22,710 --> 00:30:25,049
+tell you you need to remember okay this functions are very more general and they
+
+429
+00:30:25,049 --> 00:30:26,519
+functions are very more general and they don't even have to be preferable if this
+
+430
+00:30:26,519 --> 00:30:28,680
+don't even have to be preferable if this but right now from directed graphs this
+
+431
+00:30:28,680 --> 00:30:33,570
+but right now from directed graphs this is the case and I say the proof and it
+
+432
+00:30:33,570 --> 00:30:36,119
+is the case and I say the proof and it works on extremely busy slide all right
+
+433
+00:30:36,119 --> 00:30:37,740
+works on extremely busy slide all right that's why I want you to type your
+
+434
+00:30:37,740 --> 00:30:42,539
+that's why I want you to type your homework because this rule was the lazy
+
+435
+00:30:42,539 --> 00:30:45,779
+homework because this rule was the lazy person typing the slide my secretary the
+
+436
+00:30:45,779 --> 00:30:48,930
+person typing the slide my secretary the novelist which imaginary person alright
+
+437
+00:30:48,930 --> 00:30:54,659
+novelist which imaginary person alright so it was me okay because I can't
+
+438
+00:30:54,659 --> 00:30:56,310
+so it was me okay because I can't imagine asking anybody that I've
+
+439
+00:30:56,310 --> 00:30:58,710
+imagine asking anybody that I've destroyed so it was this I want you to
+
+440
+00:30:58,710 --> 00:31:06,680
+destroyed so it was this I want you to to need some type and by typing fails so
+
+441
+00:31:06,680 --> 00:31:06,690
+
+
+442
+00:31:06,690 --> 00:31:11,549
+that because you will need to do this for specific distribution your homework
+
+443
+00:31:11,549 --> 00:31:16,649
+for specific distribution your homework to do things like that so the first part
+
+444
+00:31:16,649 --> 00:31:21,269
+to do things like that so the first part of the theorem was methods and responses
+
+445
+00:31:21,269 --> 00:32:13,550
+of the theorem was methods and responses individually
+
+446
+00:32:13,550 --> 00:32:13,560
+
+
+447
+00:32:13,560 --> 00:32:25,399
+[Music]
+
+448
+00:32:25,399 --> 00:32:25,409
+
+
+449
+00:32:25,409 --> 00:32:38,310
+the secrets wirelessly was one of the signals along okay sort of calculation
+
+450
+00:32:38,310 --> 00:32:40,110
+signals along okay sort of calculation that is going to make the relations of
+
+451
+00:32:40,110 --> 00:32:42,090
+that is going to make the relations of the article of all those extremely
+
+452
+00:32:42,090 --> 00:32:51,600
+the article of all those extremely efficient okay define in terms of the
+
+453
+00:32:51,600 --> 00:32:53,310
+efficient okay define in terms of the notes and the values of the parents
+
+454
+00:32:53,310 --> 00:32:55,529
+notes and the values of the parents minds within the operations rather in
+
+455
+00:32:55,529 --> 00:32:58,680
+minds within the operations rather in this case the marginalization is a local
+
+456
+00:32:58,680 --> 00:33:01,710
+this case the marginalization is a local operation right and this allows us to to
+
+457
+00:33:01,710 --> 00:33:06,070
+operation right and this allows us to to see immediately the distance
+
+458
+00:33:06,070 --> 00:33:06,080
+
+
+459
+00:33:06,080 --> 00:33:52,730
+it's his Michigan the normalized properly okay okay mr. as I say those
+
+460
+00:33:52,730 --> 00:33:54,410
+properly okay okay mr. as I say those any functions like that take the
+
+461
+00:33:54,410 --> 00:33:57,590
+any functions like that take the permanent zone distribution well I'm
+
+462
+00:33:57,590 --> 00:34:01,330
+permanent zone distribution well I'm going to show you know that this and
+
+463
+00:34:01,330 --> 00:34:05,030
+going to show you know that this and some of the various I write lists as the
+
+464
+00:34:05,030 --> 00:34:08,450
+some of the various I write lists as the joint effects k plus 1 and the quality k
+
+465
+00:34:08,450 --> 00:34:10,760
+joint effects k plus 1 and the quality k plus 1 divided by the powers of k plus 1
+
+466
+00:34:10,760 --> 00:34:15,770
+plus 1 divided by the powers of k plus 1 and then I I calculate the numerator
+
+467
+00:34:15,770 --> 00:34:19,000
+and then I I calculate the numerator denominator using the appropriate
+
+468
+00:34:19,000 --> 00:34:21,409
+denominator using the appropriate marginalization of the composition of
+
+469
+00:34:21,409 --> 00:34:35,830
+marginalization of the composition of the joint of a new distribution
+
+470
+00:34:35,830 --> 00:34:35,840
+
+
+471
+00:34:35,840 --> 00:35:13,680
+expansion sure whatever done
+
+472
+00:35:13,680 --> 00:35:13,690
+
+
+473
+00:35:13,690 --> 00:35:54,700
+okay okay okay so this is the okay mr. Lucius okay because that's positive
+
+474
+00:35:54,700 --> 00:35:56,950
+Lucius okay because that's positive wearing dark shirt and whatever else on
+
+475
+00:35:56,950 --> 00:36:06,640
+wearing dark shirt and whatever else on the proctors so let's take this one and
+
+476
+00:36:06,640 --> 00:36:21,540
+the proctors so let's take this one and the partnership give you some k plus and
+
+477
+00:36:21,540 --> 00:36:21,550
+
+
+478
+00:36:21,550 --> 00:36:26,890
+and because I have to forensic aware that if L doesn't create the pilots of k
+
+479
+00:36:26,890 --> 00:36:28,570
+that if L doesn't create the pilots of k plus 1 is inside before camp yesterday
+
+480
+00:36:28,570 --> 00:36:30,760
+plus 1 is inside before camp yesterday right so I don't have to worry about the
+
+481
+00:36:30,760 --> 00:36:35,320
+right so I don't have to worry about the parent and mr. McCann needed to learn
+
+482
+00:36:35,320 --> 00:36:37,540
+parent and mr. McCann needed to learn outside the estimation because I don't
+
+483
+00:36:37,540 --> 00:36:40,600
+outside the estimation because I don't samel XK plus one or departments and you
+
+484
+00:36:40,600 --> 00:36:43,180
+samel XK plus one or departments and you notice from here to there I have to
+
+485
+00:36:43,180 --> 00:36:46,510
+notice from here to there I have to sound and the professionals from 1 to K
+
+486
+00:36:46,510 --> 00:36:48,490
+sound and the professionals from 1 to K except the parts of campus where
+
+487
+00:36:48,490 --> 00:36:51,160
+except the parts of campus where elements will be possible
+
+488
+00:36:51,160 --> 00:36:58,200
+elements will be possible explain right there without a freshwater
+
+489
+00:36:58,200 --> 00:36:58,210
+
+
+490
+00:36:58,210 --> 00:37:02,860
+because this is something extremely important right because I'm doing I'm
+
+491
+00:37:02,860 --> 00:37:05,830
+important right because I'm doing I'm pushing the summations inside I have a
+
+492
+00:37:05,830 --> 00:37:09,510
+pushing the summations inside I have a context that the potentials are okay
+
+493
+00:37:09,510 --> 00:37:11,980
+context that the potentials are okay according to my induction argument
+
+494
+00:37:11,980 --> 00:37:13,420
+according to my induction argument they're really the conditional
+
+495
+00:37:13,420 --> 00:37:15,370
+they're really the conditional distributions and then I have this
+
+496
+00:37:15,370 --> 00:37:16,870
+distributions and then I have this summation of the other factors that have
+
+497
+00:37:16,870 --> 00:37:22,480
+summation of the other factors that have no clear benefit so if you do this and
+
+498
+00:37:22,480 --> 00:37:25,810
+no clear benefit so if you do this and we move this on the local what you have
+
+499
+00:37:25,810 --> 00:37:28,720
+we move this on the local what you have to summon XK plus 1 because there's no X
+
+500
+00:37:28,720 --> 00:37:31,690
+to summon XK plus 1 because there's no X 2 plus 1 so this whole transformation
+
+501
+00:37:31,690 --> 00:37:34,300
+2 plus 1 so this whole transformation constants numerator denominator D
+
+502
+00:37:34,300 --> 00:37:37,740
+constants numerator denominator D summation constants and this
+
+503
+00:37:37,740 --> 00:37:41,110
+summation constants and this factorization by definition is 1 because
+
+504
+00:37:41,110 --> 00:37:43,450
+factorization by definition is 1 because this functions are normalized so what I
+
+505
+00:37:43,450 --> 00:37:45,970
+this functions are normalized so what I get is this conditional distribution is
+
+506
+00:37:45,970 --> 00:37:53,430
+get is this conditional distribution is equal to my factor FK plus 1 so as you
+
+507
+00:37:53,430 --> 00:37:53,440
+
+
+508
+00:37:53,440 --> 00:38:02,170
+compose in revenue distribution in terms of conditionals the proof is not
+
+509
+00:38:02,170 --> 00:38:04,390
+of conditionals the proof is not shortened to contagious is like traffic
+
+510
+00:38:04,390 --> 00:38:05,080
+shortened to contagious is like traffic AIDS
+
+511
+00:38:05,080 --> 00:38:08,860
+AIDS ok actually most books the parties
+
+512
+00:38:08,860 --> 00:38:10,980
+ok actually most books the parties consider a logician there's no proof
+
+513
+00:38:10,980 --> 00:38:17,490
+consider a logician there's no proof okay inaudible any questions on this
+
+514
+00:38:17,490 --> 00:38:19,980
+okay inaudible any questions on this thing's right if another story
+
+515
+00:38:19,980 --> 00:38:23,200
+thing's right if another story our interest is really the decomposition
+
+516
+00:38:23,200 --> 00:38:27,460
+our interest is really the decomposition in terms of these local conscious that
+
+517
+00:38:27,460 --> 00:38:30,310
+in terms of these local conscious that their conditional the values of exodus
+
+518
+00:38:30,310 --> 00:38:32,560
+their conditional the values of exodus 12 given its parents the resumption
+
+519
+00:38:32,560 --> 00:38:35,110
+12 given its parents the resumption topology will here the destructor
+
+520
+00:38:35,110 --> 00:38:37,390
+topology will here the destructor fundamental to the type of things we do
+
+521
+00:38:37,390 --> 00:38:40,240
+fundamental to the type of things we do this with directed graph and the part
+
+522
+00:38:40,240 --> 00:38:43,330
+this with directed graph and the part that we have it illogical or derivative
+
+523
+00:38:43,330 --> 00:38:45,520
+that we have it illogical or derivative is decelerations and insulation
+
+524
+00:38:45,520 --> 00:38:48,840
+is decelerations and insulation don't imagine that they have to sound x1
+
+525
+00:38:48,840 --> 00:38:51,250
+don't imagine that they have to sound x1 an actual appears in all of these
+
+526
+00:38:51,250 --> 00:38:54,260
+an actual appears in all of these functions
+
+527
+00:38:54,260 --> 00:38:54,270
+
+
+528
+00:38:54,270 --> 00:38:59,630
+myself but the tractor fixed islands only on the bottom here exclusively
+
+529
+00:38:59,630 --> 00:39:01,850
+only on the bottom here exclusively there right so obviously in this
+
+530
+00:39:01,850 --> 00:39:04,190
+there right so obviously in this problems you can start some you provide
+
+531
+00:39:04,190 --> 00:39:05,810
+problems you can start some you provide to the left all right
+
+532
+00:39:05,810 --> 00:39:10,760
+to the left all right and if examples as you see this so
+
+533
+00:39:10,760 --> 00:39:13,190
+and if examples as you see this so that's important and then you'll notice
+
+534
+00:39:13,190 --> 00:39:15,380
+that's important and then you'll notice you have some operations to put rods and
+
+535
+00:39:15,380 --> 00:39:18,500
+you have some operations to put rods and notes where we sum up although the rest
+
+536
+00:39:18,500 --> 00:39:21,470
+notes where we sum up although the rest of the body most this is so focused on
+
+537
+00:39:21,470 --> 00:39:24,380
+of the body most this is so focused on the operation we we have to do with a
+
+538
+00:39:24,380 --> 00:39:26,330
+the operation we we have to do with a glass with left of model stressing the
+
+539
+00:39:26,330 --> 00:39:37,310
+glass with left of model stressing the context of why not kids like the
+
+540
+00:39:37,310 --> 00:39:39,440
+context of why not kids like the different there is a problem to the
+
+541
+00:39:39,440 --> 00:39:41,300
+different there is a problem to the complex all right I'm
+
+542
+00:39:41,300 --> 00:39:44,960
+complex all right I'm I always like the opposite of the normal
+
+543
+00:39:44,960 --> 00:39:48,080
+I always like the opposite of the normal case right I remember you know I said
+
+544
+00:39:48,080 --> 00:39:50,330
+case right I remember you know I said maybe this joke some time ago I was
+
+545
+00:39:50,330 --> 00:39:52,610
+maybe this joke some time ago I was trying to give a whole action on some
+
+546
+00:39:52,610 --> 00:39:56,390
+trying to give a whole action on some topic and some people ask me can you
+
+547
+00:39:56,390 --> 00:39:59,240
+topic and some people ask me can you start to give an example and I have not
+
+548
+00:39:59,240 --> 00:40:01,570
+start to give an example and I have not been introduced what the topic was
+
+549
+00:40:01,570 --> 00:40:05,420
+been introduced what the topic was okay you know she'll never leave my case
+
+550
+00:40:05,420 --> 00:40:07,130
+okay you know she'll never leave my case alive to give you the period when the
+
+551
+00:40:07,130 --> 00:40:09,410
+alive to give you the period when the examples come later on he do the
+
+552
+00:40:09,410 --> 00:40:13,040
+examples come later on he do the examples on your own so yes sort of the
+
+553
+00:40:13,040 --> 00:40:17,030
+examples on your own so yes sort of the people in one day so extra depends on X
+
+554
+00:40:17,030 --> 00:40:29,780
+people in one day so extra depends on X 1 X 2 X 2 etc so you can see I say okay
+
+555
+00:40:29,780 --> 00:40:31,310
+1 X 2 X 2 etc so you can see I say okay of the write this as a product of the
+
+556
+00:40:31,310 --> 00:40:34,460
+of the write this as a product of the functions but intellectual inspires this
+
+557
+00:40:34,460 --> 00:40:37,130
+functions but intellectual inspires this is nothing then experian the partner
+
+558
+00:40:37,130 --> 00:40:38,570
+is nothing then experian the partner physics wonder next year and the
+
+559
+00:40:38,570 --> 00:40:40,430
+physics wonder next year and the pharmacist our experience it's for the
+
+560
+00:40:40,430 --> 00:40:42,890
+pharmacist our experience it's for the next three so the other ones you can
+
+561
+00:40:42,890 --> 00:40:45,920
+next three so the other ones you can show you at least the service functions
+
+562
+00:40:45,920 --> 00:40:48,680
+show you at least the service functions they are nothing else or the the
+
+563
+00:40:48,680 --> 00:40:51,290
+they are nothing else or the the function of P of X clinics still is when
+
+564
+00:40:51,290 --> 00:40:55,550
+function of P of X clinics still is when the condition of x3 given x2 and
+
+565
+00:40:55,550 --> 00:40:59,590
+the condition of x3 given x2 and I think mr. composition right and I I
+
+566
+00:40:59,590 --> 00:41:05,270
+I think mr. composition right and I I you know the country first I have to
+
+567
+00:41:05,270 --> 00:41:07,610
+you know the country first I have to calculate the joint if X to X T divided
+
+568
+00:41:07,610 --> 00:41:10,940
+calculate the joint if X to X T divided by T FX still so then the other thing I
+
+569
+00:41:10,940 --> 00:41:13,430
+by T FX still so then the other thing I have to some obviously to marginalize
+
+570
+00:41:13,430 --> 00:41:20,570
+have to some obviously to marginalize it's all X 1 X 2 X 4 or X 1 and X 4 and
+
+571
+00:41:20,570 --> 00:41:22,670
+it's all X 1 X 2 X 4 or X 1 and X 4 and you can see some of the things we'll
+
+572
+00:41:22,670 --> 00:41:24,740
+you can see some of the things we'll organization can see long distance
+
+573
+00:41:24,740 --> 00:41:28,520
+organization can see long distance inside the trial and these parenthesis
+
+574
+00:41:28,520 --> 00:41:30,320
+inside the trial and these parenthesis and visible practice comes too long to
+
+575
+00:41:30,320 --> 00:41:33,530
+and visible practice comes too long to learn good idea to is f 3 or X 3 and X 3
+
+576
+00:41:33,530 --> 00:41:36,710
+learn good idea to is f 3 or X 3 and X 3 just is like a turbulent completed
+
+577
+00:41:36,710 --> 00:41:37,670
+just is like a turbulent completed version of the theorem
+
+578
+00:41:37,670 --> 00:41:43,610
+version of the theorem okay the best possible functions right
+
+579
+00:41:43,610 --> 00:41:45,950
+okay the best possible functions right and this conscience turn out to be pro
+
+580
+00:41:45,950 --> 00:41:48,050
+and this conscience turn out to be pro communities is only for directed graphs
+
+581
+00:41:48,050 --> 00:41:50,960
+communities is only for directed graphs we said anything for undirected graphs
+
+582
+00:41:50,960 --> 00:41:54,100
+we said anything for undirected graphs the case to be very well general
+
+583
+00:41:54,100 --> 00:41:56,990
+the case to be very well general management of sanity can position at
+
+584
+00:41:56,990 --> 00:41:59,450
+management of sanity can position at least in the context of this Markov
+
+585
+00:41:59,450 --> 00:42:02,990
+least in the context of this Markov chain about adoption being a bit more
+
+586
+00:42:02,990 --> 00:42:12,860
+chain about adoption being a bit more powerful so this is an example from one
+
+587
+00:42:12,860 --> 00:42:16,310
+powerful so this is an example from one of the textbook similar in machine
+
+588
+00:42:16,310 --> 00:42:25,910
+of the textbook similar in machine learning so one of the notes is the
+
+589
+00:42:25,910 --> 00:42:28,940
+learning so one of the notes is the glass is left one of the knowledge is
+
+590
+00:42:28,940 --> 00:42:31,460
+glass is left one of the knowledge is the support which can be on the left the
+
+591
+00:42:31,460 --> 00:42:33,920
+the support which can be on the left the other one is a know that is raining
+
+592
+00:42:33,920 --> 00:42:35,330
+other one is a know that is raining which can be on earth
+
+593
+00:42:35,330 --> 00:42:39,140
+which can be on earth and everyone is that it's cloudy
+
+594
+00:42:39,140 --> 00:42:43,010
+and everyone is that it's cloudy I am a strong basically the dependencies
+
+595
+00:42:43,010 --> 00:42:46,310
+I am a strong basically the dependencies look like the hot all right and let's
+
+596
+00:42:46,310 --> 00:42:49,040
+look like the hot all right and let's follow the fuel that I described the
+
+597
+00:42:49,040 --> 00:42:52,430
+follow the fuel that I described the junket ability of drama straight away
+
+598
+00:42:52,430 --> 00:42:56,800
+junket ability of drama straight away the grass right is basically returnest
+
+599
+00:42:56,800 --> 00:42:58,730
+the grass right is basically returnest same time
+
+600
+00:42:58,730 --> 00:43:02,270
+same time first even see we're forgiven see what
+
+601
+00:43:02,270 --> 00:43:05,090
+first even see we're forgiven see what not really given us an hour and
+
+602
+00:43:05,090 --> 00:43:08,600
+not really given us an hour and everything you can see by comparing this
+
+603
+00:43:08,600 --> 00:43:11,540
+everything you can see by comparing this with examining the composition using the
+
+604
+00:43:11,540 --> 00:43:13,700
+with examining the composition using the product community to share is implies
+
+605
+00:43:13,700 --> 00:43:17,600
+product community to share is implies basically fundamental national
+
+606
+00:43:17,600 --> 00:43:22,100
+basically fundamental national independence relations right and as a
+
+607
+00:43:22,100 --> 00:43:43,250
+independence relations right and as a measure of the elections okay right that
+
+608
+00:43:43,250 --> 00:43:45,140
+measure of the elections okay right that you can this you can expect this
+
+609
+00:43:45,140 --> 00:43:48,530
+you can this you can expect this independence relations all right and
+
+610
+00:43:48,530 --> 00:43:51,260
+independence relations all right and then from this you can say oh that's why
+
+611
+00:43:51,260 --> 00:43:56,240
+then from this you can say oh that's why the composition I mean in Pascal the new
+
+612
+00:43:56,240 --> 00:43:59,030
+the composition I mean in Pascal the new activist problem and you have this graph
+
+613
+00:43:59,030 --> 00:44:00,770
+activist problem and you have this graph like that smells you already have a
+
+614
+00:44:00,770 --> 00:44:03,170
+like that smells you already have a negative in the graphics independence
+
+615
+00:44:03,170 --> 00:44:05,180
+negative in the graphics independence relations so this decomposition is
+
+616
+00:44:05,180 --> 00:44:06,560
+relations so this decomposition is automatic you don't have to clear
+
+617
+00:44:06,560 --> 00:44:18,680
+automatic you don't have to clear anything right so we are going to define
+
+618
+00:44:18,680 --> 00:44:26,240
+anything right so we are going to define this distribution so effectively the
+
+619
+00:44:26,240 --> 00:44:29,390
+this distribution so effectively the trial value well because of an
+
+620
+00:44:29,390 --> 00:44:34,910
+trial value well because of an organization to define this is from his
+
+621
+00:44:34,910 --> 00:44:37,490
+organization to define this is from his first loudest row so if I do he wanted
+
+622
+00:44:37,490 --> 00:44:39,440
+first loudest row so if I do he wanted as long as the other one is one line is
+
+623
+00:44:39,440 --> 00:44:43,340
+as long as the other one is one line is nervously than one value let's say this
+
+624
+00:44:43,340 --> 00:44:46,190
+nervously than one value let's say this is the probability of the specular the
+
+625
+00:44:46,190 --> 00:44:49,280
+is the probability of the specular the hell are they so I am writing is
+
+626
+00:44:49,280 --> 00:44:52,430
+hell are they so I am writing is probability well the cloud is a false
+
+627
+00:44:52,430 --> 00:44:55,230
+probability well the cloud is a false argument or a tool
+
+628
+00:44:55,230 --> 00:45:01,680
+argument or a tool to describe this well actually I have no
+
+629
+00:45:01,680 --> 00:45:03,570
+to describe this well actually I have no money from this I have to fill this I
+
+630
+00:45:03,570 --> 00:45:05,850
+money from this I have to fill this I have different Lee's and if I take this
+
+631
+00:45:05,850 --> 00:45:13,530
+have different Lee's and if I take this little mini be how isn't it okay we come
+
+632
+00:45:13,530 --> 00:45:15,270
+little mini be how isn't it okay we come from the normalization because for a lot
+
+633
+00:45:15,270 --> 00:45:17,310
+from the normalization because for a lot of skilled problem it doesn't make a
+
+634
+00:45:17,310 --> 00:45:19,530
+of skilled problem it doesn't make a sense to say - wah - wah
+
+635
+00:45:19,530 --> 00:45:22,530
+sense to say - wah - wah yeah we can subtract - fish - a problem
+
+636
+00:45:22,530 --> 00:45:23,970
+yeah we can subtract - fish - a problem with million borrowers we will make a
+
+637
+00:45:23,970 --> 00:45:24,600
+with million borrowers we will make a difference
+
+638
+00:45:24,600 --> 00:45:30,859
+difference okay so no bother so I spent the card
+
+639
+00:45:30,859 --> 00:45:35,430
+okay so no bother so I spent the card for this problem is the times to the
+
+640
+00:45:35,430 --> 00:45:38,520
+for this problem is the times to the carry case the number of points below
+
+641
+00:45:38,520 --> 00:45:42,420
+carry case the number of points below and this environment variables that's
+
+642
+00:45:42,420 --> 00:45:44,690
+and this environment variables that's why you see it through there
+
+643
+00:45:44,690 --> 00:45:49,770
+why you see it through there actually I don't know why I different
+
+644
+00:45:49,770 --> 00:45:52,230
+actually I don't know why I different from before before using were using K
+
+645
+00:45:52,230 --> 00:45:53,670
+from before before using were using K from the number of values that are
+
+646
+00:45:53,670 --> 00:45:56,190
+from the number of values that are available can take here I just a for
+
+647
+00:45:56,190 --> 00:45:59,130
+available can take here I just a for another opponent the game you guys are
+
+648
+00:45:59,130 --> 00:46:02,010
+another opponent the game you guys are adult and vaccinated so you can figure
+
+649
+00:46:02,010 --> 00:46:04,440
+adult and vaccinated so you can figure out in which life what the context is
+
+650
+00:46:04,440 --> 00:46:06,480
+out in which life what the context is right so so I don't have to go back and
+
+651
+00:46:06,480 --> 00:46:13,680
+right so so I don't have to go back and change the story that's already there
+
+652
+00:46:13,680 --> 00:46:17,130
+change the story that's already there and I was sure that everybody responds
+
+653
+00:46:17,130 --> 00:46:19,890
+and I was sure that everybody responds what this equation makes or let's the
+
+654
+00:46:19,890 --> 00:46:24,270
+what this equation makes or let's the the correlation rate across today from
+
+655
+00:46:24,270 --> 00:46:26,670
+the correlation rate across today from directly ghost makes a little sense
+
+656
+00:46:26,670 --> 00:46:38,710
+directly ghost makes a little sense there was nothing else okay all right
+
+657
+00:46:38,710 --> 00:46:38,720
+
+
+658
+00:46:38,720 --> 00:46:47,040
+so this 11 example I think I'm gonna I may have to give this because there's
+
+659
+00:46:47,040 --> 00:46:47,050
+
+
+660
+00:46:47,050 --> 00:46:50,980
+unpleasant dependence relations from this example as applications in the
+
+661
+00:46:50,980 --> 00:46:57,960
+this example as applications in the slides so this is prevalence of you know
+
+662
+00:46:57,960 --> 00:47:02,250
+slides so this is prevalence of you know to come you know sometime in the near
+
+663
+00:47:02,250 --> 00:47:06,040
+to come you know sometime in the near part of a future so there are such
+
+664
+00:47:06,040 --> 00:47:08,800
+part of a future so there are such variables and best on with the
+
+665
+00:47:08,800 --> 00:47:10,809
+variables and best on with the discussion of in the composition this is
+
+666
+00:47:10,809 --> 00:47:14,470
+discussion of in the composition this is what I have right x1 x2 given x1 x3
+
+667
+00:47:14,470 --> 00:47:19,030
+what I have right x1 x2 given x1 x3 given X 1 X 5 etc X tix given X 2 X 5
+
+668
+00:47:19,030 --> 00:47:23,410
+given X 1 X 5 etc X tix given X 2 X 5 protected right and and you say in this
+
+669
+00:47:23,410 --> 00:47:26,530
+protected right and and you say in this example a nice graphical representation
+
+670
+00:47:26,530 --> 00:47:29,859
+example a nice graphical representation of the table society to this conditional
+
+671
+00:47:29,859 --> 00:47:31,240
+of the table society to this conditional distribution is corresponding to each
+
+672
+00:47:31,240 --> 00:47:34,839
+distribution is corresponding to each tsunami so x1 it's a long experience
+
+673
+00:47:34,839 --> 00:47:37,210
+tsunami so x1 it's a long experience given x1 so it's a baby like this
+
+674
+00:47:37,210 --> 00:47:39,520
+given x1 so it's a baby like this exports given x2 table like this exist
+
+675
+00:47:39,520 --> 00:47:42,460
+exports given x2 table like this exist given two values okay it's a table like
+
+676
+00:47:42,460 --> 00:47:46,870
+given two values okay it's a table like that and like that I have to actually
+
+677
+00:47:46,870 --> 00:47:50,050
+that and like that I have to actually program I'm assuming and I'm saying this
+
+678
+00:47:50,050 --> 00:47:53,430
+program I'm assuming and I'm saying this that show the kid and take note and
+
+679
+00:47:53,430 --> 00:47:55,599
+that show the kid and take note and destroy that we assign you some homework
+
+680
+00:47:55,599 --> 00:47:57,670
+destroy that we assign you some homework problems when we don't do the question
+
+681
+00:47:57,670 --> 00:47:59,140
+problems when we don't do the question all right you have something only
+
+682
+00:47:59,140 --> 00:48:05,730
+all right you have something only computer program to do this for you
+
+683
+00:48:05,730 --> 00:48:05,740
+
+
+684
+00:48:05,740 --> 00:48:13,920
+don't eat this don't eat this already did this Antoni gaudí
+
+685
+00:48:13,920 --> 00:48:13,930
+
+
+686
+00:48:13,930 --> 00:48:16,980
+okay guys there's a time for them how's that possible
+
+687
+00:48:16,980 --> 00:48:23,250
+that possible I don't have the power you know why not
+
+688
+00:48:23,250 --> 00:48:27,530
+I don't have the power you know why not a very good machine ever left of their
+
+689
+00:48:27,530 --> 00:48:30,030
+a very good machine ever left of their other thing you guys left me because
+
+690
+00:48:30,030 --> 00:48:35,100
+other thing you guys left me because you'll never never go almost papers
+
+691
+00:48:35,100 --> 00:48:40,440
+you'll never never go almost papers right that's the 30 minutes all right
+
+692
+00:48:40,440 --> 00:48:44,700
+right that's the 30 minutes all right let's see necessarily put so I'm going
+
+693
+00:48:44,700 --> 00:49:00,360
+let's see necessarily put so I'm going to my past
+
+694
+00:49:00,360 --> 00:49:00,370
+
+
+695
+00:49:00,370 --> 00:50:10,390
+and okay so which of the sexist is coming all right so then this is our
+
+696
+00:50:10,390 --> 00:50:12,970
+coming all right so then this is our independent of each other and that's the
+
+697
+00:50:12,970 --> 00:50:18,540
+independent of each other and that's the concept of the latest Paris fire okay so
+
+698
+00:50:18,540 --> 00:50:22,270
+concept of the latest Paris fire okay so so it's my NRI all right this are
+
+699
+00:50:22,270 --> 00:50:24,490
+so it's my NRI all right this are independent if I didn't know why they're
+
+700
+00:50:24,490 --> 00:50:27,640
+independent if I didn't know why they're nervous values of X 1 and X 4 whatever I
+
+701
+00:50:27,640 --> 00:50:30,070
+nervous values of X 1 and X 4 whatever I get they depend on each other this is
+
+702
+00:50:30,070 --> 00:50:31,660
+get they depend on each other this is sort of a song another problem will
+
+703
+00:50:31,660 --> 00:50:34,540
+sort of a song another problem will reduce you know in in sort of mixed
+
+704
+00:50:34,540 --> 00:50:36,940
+reduce you know in in sort of mixed models but many other settings as well
+
+705
+00:50:36,940 --> 00:50:41,819
+models but many other settings as well okay
+
+706
+00:50:41,819 --> 00:50:41,829
+
+
+707
+00:50:41,829 --> 00:50:46,979
+two things - one and two long is this Belgium to mislead Gaussian so if I
+
+708
+00:50:46,979 --> 00:50:48,829
+Belgium to mislead Gaussian so if I wrote a little bit of white for it sex
+
+709
+00:50:48,829 --> 00:50:53,609
+wrote a little bit of white for it sex the this exercising defendant and so
+
+710
+00:50:53,609 --> 00:50:56,969
+the this exercising defendant and so effectively you know this is the problem
+
+711
+00:50:56,969 --> 00:50:58,829
+effectively you know this is the problem engine roaring tons of the divinity of
+
+712
+00:50:58,829 --> 00:51:02,039
+engine roaring tons of the divinity of the world X given Y and the lamented
+
+713
+00:51:02,039 --> 00:51:04,079
+the world X given Y and the lamented world X living who soldier sex is given
+
+714
+00:51:04,079 --> 00:51:07,469
+world X living who soldier sex is given Y can be factorized over the data right
+
+715
+00:51:07,469 --> 00:51:10,680
+Y can be factorized over the data right because of this assumption that the X is
+
+716
+00:51:10,680 --> 00:51:15,209
+because of this assumption that the X is having a fairly given Y ok so so this is
+
+717
+00:51:15,209 --> 00:51:16,910
+having a fairly given Y ok so so this is something very important
+
+718
+00:51:16,910 --> 00:51:19,259
+something very important laughter moment of birth under the name
+
+719
+00:51:19,259 --> 00:51:22,979
+laughter moment of birth under the name of naive Bayes classifier i mean i
+
+720
+00:51:22,979 --> 00:51:29,089
+of naive Bayes classifier i mean i satisfy a fear you know i know this but
+
+721
+00:51:29,089 --> 00:51:35,699
+satisfy a fear you know i know this but additionally basically has been this is
+
+722
+00:51:35,699 --> 00:51:38,039
+additionally basically has been this is that that's fine to say become from now
+
+723
+00:51:38,039 --> 00:51:40,499
+that that's fine to say become from now someone and thousand through so that's
+
+724
+00:51:40,499 --> 00:51:47,150
+someone and thousand through so that's what the name plus pi or take this
+
+725
+00:51:47,150 --> 00:51:49,799
+what the name plus pi or take this complexed and say the sections are
+
+726
+00:51:49,799 --> 00:51:52,199
+complexed and say the sections are linearly independent given y and you
+
+727
+00:51:52,199 --> 00:51:55,799
+linearly independent given y and you notice on this paragraph if you see on
+
+728
+00:51:55,799 --> 00:51:57,120
+notice on this paragraph if you see on the birthday all right
+
+729
+00:51:57,120 --> 00:51:59,880
+the birthday all right I started fatal dependencies between the
+
+730
+00:51:59,880 --> 00:52:03,900
+I started fatal dependencies between the exes okay so this is the display the
+
+731
+00:52:03,900 --> 00:52:09,269
+exes okay so this is the display the printed my Vegas was fired okay to come
+
+732
+00:52:09,269 --> 00:52:12,359
+printed my Vegas was fired okay to come up with your own little algorithms and
+
+733
+00:52:12,359 --> 00:52:17,279
+up with your own little algorithms and this if you search in the literature you
+
+734
+00:52:17,279 --> 00:52:19,709
+this if you search in the literature you will find very particular algorithm it's
+
+735
+00:52:19,709 --> 00:52:22,890
+will find very particular algorithm it's for leveling this demented name they
+
+736
+00:52:22,890 --> 00:52:27,839
+for leveling this demented name they discussed fire okay yes well I just know
+
+737
+00:52:27,839 --> 00:52:29,999
+discussed fire okay yes well I just know if you remember that name basements that
+
+738
+00:52:29,999 --> 00:52:31,680
+if you remember that name basements that these types of sex
+
+739
+00:52:31,680 --> 00:52:33,719
+these types of sex running right and independent so you
+
+740
+00:52:33,719 --> 00:52:35,819
+running right and independent so you have a nice proposition that looks like
+
+741
+00:52:35,819 --> 00:52:38,610
+have a nice proposition that looks like this okay
+
+742
+00:52:38,610 --> 00:52:40,590
+this okay and constants with dependencies between
+
+743
+00:52:40,590 --> 00:52:44,730
+and constants with dependencies between the extras and because the balance is
+
+744
+00:52:44,730 --> 00:52:47,040
+the extras and because the balance is still maintained some pay structure that
+
+745
+00:52:47,040 --> 00:52:51,630
+still maintained some pay structure that you can do is the difference but the
+
+746
+00:52:51,630 --> 00:53:04,430
+you can do is the difference but the custom what you see on the top okay
+
+747
+00:53:04,430 --> 00:53:04,440
+
+
+748
+00:53:04,440 --> 00:53:15,720
+it's prevalent conditional independence relations National Defense relations so
+
+749
+00:53:15,720 --> 00:53:23,250
+relations National Defense relations so these actions right so this is all right
+
+750
+00:53:23,250 --> 00:53:26,190
+these actions right so this is all right this is the length of appearances this
+
+751
+00:53:26,190 --> 00:53:28,860
+this is the length of appearances this is referred directly best luck sir okay
+
+752
+00:53:28,860 --> 00:53:33,810
+is referred directly best luck sir okay and the party dependencies we have this
+
+753
+00:53:33,810 --> 00:53:37,140
+and the party dependencies we have this one we introduced the Vegas more longer
+
+754
+00:53:37,140 --> 00:53:39,900
+one we introduced the Vegas more longer in about two legs from now so you can
+
+755
+00:53:39,900 --> 00:53:41,790
+in about two legs from now so you can work from something from collective one
+
+756
+00:53:41,790 --> 00:53:46,220
+work from something from collective one connected personal between the first
+
+757
+00:53:46,220 --> 00:53:46,230
+
+
+758
+00:53:46,230 --> 00:53:57,700
+okay there is nothing new there
+
+759
+00:53:57,700 --> 00:53:57,710
+
+
+760
+00:53:57,710 --> 00:55:08,990
+but I am descendants even the parents then the descendants even the parents
+
+761
+00:55:08,990 --> 00:56:13,360
+then the descendants even the parents and
+
+762
+00:56:13,360 --> 00:56:13,370
+
+
+763
+00:56:13,370 --> 00:56:19,340
+accept the fact the fundamental property of directed graphs the different
+
+764
+00:56:19,340 --> 00:56:23,480
+of directed graphs the different position from the parable sprouts to
+
+765
+00:56:23,480 --> 00:56:25,760
+position from the parable sprouts to convince your sensitive actually again
+
+766
+00:56:25,760 --> 00:56:29,450
+convince your sensitive actually again the fulfilled never step two is this
+
+767
+00:56:29,450 --> 00:56:31,220
+the fulfilled never step two is this marginalization that we did in two
+
+768
+00:56:31,220 --> 00:56:33,520
+marginalization that we did in two examples before and then you can treat
+
+769
+00:56:33,520 --> 00:56:40,810
+examples before and then you can treat this decomposition is correct
+
+770
+00:56:40,810 --> 00:56:40,820
+
+
+771
+00:56:40,820 --> 00:57:57,530
+[Music]
+
+772
+00:57:57,530 --> 00:57:57,540
+
+
+773
+00:57:57,540 --> 00:58:27,020
+one extreme
+
+774
+00:58:27,020 --> 00:58:27,030
+
+
+775
+00:58:27,030 --> 00:58:34,280
+experts in the time of x1 x2 and there's not wrong exterior to this efficient
+
+776
+00:58:34,280 --> 00:58:34,290
+
+
+777
+00:58:34,290 --> 00:58:40,319
+right
+
+778
+00:58:40,319 --> 00:58:40,329
+
+
+779
+00:58:40,329 --> 00:58:47,920
+- okay listen tada your life is perfect when it's the
+
+780
+00:58:47,920 --> 00:59:00,430
+your life is perfect when it's the expected by P of X 1 is 50 ok by you
+
+781
+00:59:00,430 --> 00:59:03,370
+expected by P of X 1 is 50 ok by you alpha plus X 1 X 2 X 3 X 4 is that what
+
+782
+00:59:03,370 --> 00:59:07,469
+alpha plus X 1 X 2 X 3 X 4 is that what happens to X 5 and X 6 fear of insulin
+
+783
+00:59:07,469 --> 00:59:11,729
+happens to X 5 and X 6 fear of insulin what happened to X 5 minus X 6
+
+784
+00:59:11,729 --> 00:59:15,700
+what happened to X 5 minus X 6 well I mean the question of attack the
+
+785
+00:59:15,700 --> 00:59:17,469
+well I mean the question of attack the black is words you know when you
+
+786
+00:59:17,469 --> 00:59:20,469
+black is words you know when you somewhere X 5 and X 6 this is 0.1 of
+
+787
+00:59:20,469 --> 00:59:24,400
+somewhere X 5 and X 6 this is 0.1 of this equal to 1 so they disappear you
+
+788
+00:59:24,400 --> 00:59:26,859
+this equal to 1 so they disappear you see that when you analyze to the joint
+
+789
+00:59:26,859 --> 00:59:29,710
+see that when you analyze to the joint the next 5 minutes because this how
+
+790
+00:59:29,710 --> 00:59:32,319
+the next 5 minutes because this how conditional distinguishes the summation
+
+791
+00:59:32,319 --> 00:59:37,870
+conditional distinguishes the summation is giving the advantage okay so so this
+
+792
+00:59:37,870 --> 00:59:41,049
+is giving the advantage okay so so this is the joint of X 1 X 2 X 3 X 4 and then
+
+793
+00:59:41,049 --> 00:59:42,700
+is the joint of X 1 X 2 X 3 X 4 and then if you wanted to join the pitch 1 X 2 X
+
+794
+00:59:42,700 --> 00:59:44,620
+if you wanted to join the pitch 1 X 2 X 3 we have to something that's clear but
+
+795
+00:59:44,620 --> 00:59:46,719
+3 we have to something that's clear but when someone experimenting disappearing
+
+796
+00:59:46,719 --> 00:59:48,999
+when someone experimenting disappearing because summation of expelling everyone
+
+797
+00:59:48,999 --> 00:59:50,170
+because summation of expelling everyone all right
+
+798
+00:59:50,170 --> 00:59:52,630
+all right yeah well this consus without this
+
+799
+00:59:52,630 --> 00:59:55,690
+yeah well this consus without this concept evolved already but you get this
+
+800
+00:59:55,690 --> 00:59:59,019
+concept evolved already but you get this perfect score given X 2 okay so this is
+
+801
+00:59:59,019 --> 01:00:01,019
+perfect score given X 2 okay so this is kinda filled this independence relation
+
+802
+01:00:01,019 --> 01:00:05,519
+kinda filled this independence relation but I wrestle to remember the ideas that
+
+803
+01:00:05,519 --> 01:00:08,200
+but I wrestle to remember the ideas that Assad isn't behind all of this and say
+
+804
+01:00:08,200 --> 01:00:09,999
+Assad isn't behind all of this and say all there is an independence relations
+
+805
+01:00:09,999 --> 01:00:12,940
+all there is an independence relations but to heaven all the groups of this
+
+806
+01:00:12,940 --> 01:00:15,489
+but to heaven all the groups of this graph and he says this graph implies
+
+807
+01:00:15,489 --> 01:00:18,640
+graph and he says this graph implies none of this independence relations
+
+808
+01:00:18,640 --> 01:00:21,339
+none of this independence relations so whatever distribution that population
+
+809
+01:00:21,339 --> 01:00:24,039
+so whatever distribution that population the graph has been tamarkan satisfy of
+
+810
+01:00:24,039 --> 01:00:25,769
+the graph has been tamarkan satisfy of this relationship
+
+811
+01:00:25,769 --> 01:00:28,690
+this relationship okay a stupid idea so we're not going to
+
+812
+01:00:28,690 --> 01:00:31,870
+okay a stupid idea so we're not going to do the algebra but we lived
+
+813
+01:00:31,870 --> 01:00:34,300
+do the algebra but we lived that vision server browser arguments
+
+814
+01:00:34,300 --> 01:00:38,640
+that vision server browser arguments implants University what is relationship
+
+815
+01:00:38,640 --> 01:00:38,650
+
+
+816
+01:00:38,650 --> 01:00:44,650
+and here is an over in the Paris relation X 1 given X 6 is the head of X
+
+817
+01:00:44,650 --> 01:01:31,660
+relation X 1 given X 6 is the head of X 3 X 3 this is like in the in this case
+
+818
+01:01:31,660 --> 01:01:36,000
+3 X 3 this is like in the in this case of disease that say cancer and why is
+
+819
+01:01:36,000 --> 01:01:38,859
+of disease that say cancer and why is somehow kind of a disease you know some
+
+820
+01:01:38,859 --> 01:01:43,990
+somehow kind of a disease you know some of molecule blood or other things so why
+
+821
+01:01:43,990 --> 01:01:46,720
+of molecule blood or other things so why is the disease right but the memory
+
+822
+01:01:46,720 --> 01:01:50,170
+is the disease right but the memory access many diseases and you have
+
+823
+01:01:50,170 --> 01:01:52,089
+access many diseases and you have something that can be derived from any
+
+824
+01:01:52,089 --> 01:01:57,579
+something that can be derived from any diseases so you can see this as a little
+
+825
+01:01:57,579 --> 01:02:02,740
+diseases so you can see this as a little from X to Y so exist another thing the -
+
+826
+01:02:02,740 --> 01:02:04,690
+from X to Y so exist another thing the - you can see this is awareness problem
+
+827
+01:02:04,690 --> 01:02:07,329
+you can see this is awareness problem that if you have an alternate and let's
+
+828
+01:02:07,329 --> 01:02:08,770
+that if you have an alternate and let's say a blood test you ask the members
+
+829
+01:02:08,770 --> 01:02:12,670
+say a blood test you ask the members area and so this graph that you see in
+
+830
+01:02:12,670 --> 01:02:18,520
+area and so this graph that you see in spitzer discuss you know this isn't
+
+831
+01:02:18,520 --> 01:02:20,079
+spitzer discuss you know this isn't about the narrative rondelle the joint
+
+832
+01:02:20,079 --> 01:02:23,050
+about the narrative rondelle the joint affection Y as the probable effects
+
+833
+01:02:23,050 --> 01:02:27,010
+affection Y as the probable effects knives the probability of Y given X so
+
+834
+01:02:27,010 --> 01:02:30,400
+knives the probability of Y given X so reliable addressed you know this you
+
+835
+01:02:30,400 --> 01:02:32,620
+reliable addressed you know this you know the parent effects may be will
+
+836
+01:02:32,620 --> 01:02:36,280
+know the parent effects may be will define it by
+
+837
+01:02:36,280 --> 01:02:36,290
+
+
+838
+01:02:36,290 --> 01:03:49,460
+right right okay
+
+839
+01:03:49,460 --> 01:03:49,470
+
+
+840
+01:03:49,470 --> 01:03:59,350
+[Music]
+
+841
+01:03:59,350 --> 01:03:59,360
+
+
+842
+01:03:59,360 --> 01:04:04,640
+delicious from X to Y but that doesn't allow you can be any friends res or
+
+843
+01:04:04,640 --> 01:04:06,410
+allow you can be any friends res or something for y and say what desserts
+
+844
+01:04:06,410 --> 01:04:13,430
+something for y and say what desserts okay
+
+845
+01:04:13,430 --> 01:04:13,440
+
+
+846
+01:04:13,440 --> 01:06:17,520
+they delivered the next two slides we will discuss and rain
+
+847
+01:06:17,520 --> 01:06:17,530
+
+
+848
+01:06:17,530 --> 01:07:42,450
+okay right okay so this is the right
+
+849
+01:07:42,450 --> 01:07:42,460
+
+
+850
+01:07:42,460 --> 01:07:58,380
+[Music]
+
+851
+01:07:58,380 --> 01:07:58,390
+
+
+852
+01:07:58,390 --> 01:08:22,980
+dress is wet but let me let you know whether Dre
+
+853
+01:08:22,980 --> 01:08:22,990
+
+
+854
+01:08:22,990 --> 01:08:57,389
+[Music]
+
+855
+01:08:57,389 --> 01:08:57,399
+
+
+856
+01:08:57,399 --> 01:09:30,019
+[Music]
+
+857
+01:09:30,019 --> 01:09:30,029
+
+
+858
+01:09:30,029 --> 01:09:34,829
+[Music]
+
+859
+01:09:34,829 --> 01:09:34,839
+
+
+860
+01:09:34,839 --> 01:09:39,329
+this has already explained that the grass is wet
+
+861
+01:09:39,329 --> 01:09:44,320
+grass is wet okay we will formally serve this with a
+
+862
+01:09:44,320 --> 01:09:48,460
+okay we will formally serve this with a derivation okay but in essence if this
+
+863
+01:09:48,460 --> 01:09:57,990
+derivation okay but in essence if this example all right
+
+864
+01:09:57,990 --> 01:09:58,000
+
+
+865
+01:09:58,000 --> 01:10:11,569
+no problems maybe today
+
+866
+01:10:11,569 --> 01:10:11,579
+
+
+867
+01:10:11,579 --> 01:10:17,990
+with little names let's say you have two points the students are doing the kind
+
+868
+01:10:17,990 --> 01:10:22,490
+points the students are doing the kind of it thank you go gents you know come
+
+869
+01:10:22,490 --> 01:10:24,200
+of it thank you go gents you know come to get doesn't depend on anything so
+
+870
+01:10:24,200 --> 01:10:26,089
+to get doesn't depend on anything so they're putting the feather corns let's
+
+871
+01:10:26,089 --> 01:10:51,010
+they're putting the feather corns let's say this and this right so let's
+
+872
+01:10:51,010 --> 01:11:03,140
+say this and this right so let's Alchemist is right this is zero okay so
+
+873
+01:11:03,140 --> 01:11:07,910
+Alchemist is right this is zero okay so this has exploratory they so right so
+
+874
+01:11:07,910 --> 01:11:11,330
+this has exploratory they so right so this is Center for the experiment a
+
+875
+01:11:11,330 --> 01:11:16,640
+this is Center for the experiment a phenomenal
+
+876
+01:11:16,640 --> 01:11:16,650
+
+
+877
+01:11:16,650 --> 01:11:23,330
+I was reporting this in the slides you know losing the game in the
+
+878
+01:11:23,330 --> 01:11:24,920
+know losing the game in the factorization which we miss you can
+
+879
+01:11:24,920 --> 01:11:28,940
+factorization which we miss you can actually compute an audience and do the
+
+880
+01:11:28,940 --> 01:11:31,460
+actually compute an audience and do the algebra nothing Ranger so this is the
+
+881
+01:11:31,460 --> 01:11:33,410
+algebra nothing Ranger so this is the factorization we started so you can
+
+882
+01:11:33,410 --> 01:11:35,900
+factorization we started so you can actually prove all the questions that
+
+883
+01:11:35,900 --> 01:11:56,239
+actually prove all the questions that you saw in the previous slides
+
+884
+01:11:56,239 --> 01:11:56,249
+
+
+885
+01:11:56,249 --> 01:12:02,839
+my ass Douglas relation so let me just say what's going easier so remember we
+
+886
+01:12:02,839 --> 01:12:11,899
+say what's going easier so remember we sent that you know X of the royal
+
+887
+01:12:11,899 --> 01:12:21,919
+sent that you know X of the royal descendants okay so basically the board
+
+888
+01:12:21,919 --> 01:12:25,729
+descendants okay so basically the board is independent of anything else okay the
+
+889
+01:12:25,729 --> 01:12:29,000
+is independent of anything else okay the SAT score or what rate is clearing out
+
+890
+01:12:29,000 --> 01:12:31,479
+SAT score or what rate is clearing out that cetera
+
+891
+01:12:31,479 --> 01:12:37,689
+that cetera question on the doctor okay it says
+
+892
+01:12:37,689 --> 01:12:37,699
+
+
+893
+01:12:37,699 --> 01:12:43,279
+parasocial was given them the difficulty of an exam all right
+
+894
+01:12:43,279 --> 01:12:45,770
+of an exam all right it's also kind of hell okay that's not
+
+895
+01:12:45,770 --> 01:12:50,410
+it's also kind of hell okay that's not what I wrote it
+
+896
+01:12:50,410 --> 01:12:50,420
+
+
+897
+01:12:50,420 --> 01:12:57,480
+however informational says about its descendants
+
+898
+01:12:57,480 --> 01:12:57,490
+
+
+899
+01:12:57,490 --> 01:13:02,840
+well so long I just want the sentence against not breathing with an equation
+
+900
+01:13:02,840 --> 01:13:06,300
+against not breathing with an equation any information about the descendants
+
+901
+01:13:06,300 --> 01:13:09,270
+any information about the descendants contains beliefs about this invention
+
+902
+01:13:09,270 --> 01:13:12,360
+contains beliefs about this invention reasoning process so another race if you
+
+903
+01:13:12,360 --> 01:13:15,330
+reasoning process so another race if you know what happened was still there it
+
+904
+01:13:15,330 --> 01:13:17,190
+know what happened was still there it has got there okay
+
+905
+01:13:17,190 --> 01:13:23,280
+has got there okay it changes the picture okay even who
+
+906
+01:13:23,280 --> 01:13:24,840
+it changes the picture okay even who says the difficulty on the intelligence
+
+907
+01:13:24,840 --> 01:13:27,630
+says the difficulty on the intelligence of the Skinner right if the evidence is
+
+908
+01:13:27,630 --> 01:13:29,310
+of the Skinner right if the evidence is the difficulty of in Excel and even
+
+909
+01:13:29,310 --> 01:13:34,980
+the difficulty of in Excel and even peasants sugar still smells but the
+
+910
+01:13:34,980 --> 01:13:37,890
+peasants sugar still smells but the official from below the most immortality
+
+911
+01:13:37,890 --> 01:13:40,790
+official from below the most immortality do the fixer okay so we will see this
+
+912
+01:13:40,790 --> 01:13:45,120
+do the fixer okay so we will see this sort of problem when we discuss
+
+913
+01:13:45,120 --> 01:13:47,010
+sort of problem when we discuss independence relationships and and
+
+914
+01:13:47,010 --> 01:14:09,940
+independence relationships and and evidence okay
+
+915
+01:14:09,940 --> 01:14:09,950
+
+
+916
+01:14:09,950 --> 01:14:21,140
+[Music]
+
+917
+01:14:21,140 --> 01:14:21,150
+
+
+918
+01:14:21,150 --> 01:14:35,760
+[Music]
+
+919
+01:14:35,760 --> 01:14:35,770
+
+
+920
+01:14:35,770 --> 01:14:48,650
+[Music]
+
+921
+01:14:48,650 --> 01:14:48,660
+
+
+922
+01:14:48,660 --> 01:15:01,730
+okay
+
+923
+01:15:01,730 --> 01:15:01,740
+
+
+924
+01:15:01,740 --> 01:15:14,210
+[Music]
+
+925
+01:15:14,210 --> 01:15:14,220
+
+
+926
+01:15:14,220 --> 01:15:22,190
+and this would be the growth and the logo is this image on just the mission
+
+927
+01:15:22,190 --> 01:15:24,720
+logo is this image on just the mission we have sent up over all the she's
+
+928
+01:15:24,720 --> 01:15:30,210
+we have sent up over all the she's invaluable success okay so then this
+
+929
+01:15:30,210 --> 01:15:31,830
+invaluable success okay so then this have the visceral volume is the Sabbath
+
+930
+01:15:31,830 --> 01:15:33,540
+have the visceral volume is the Sabbath even vartanus and this is sort of the
+
+931
+01:15:33,540 --> 01:15:36,270
+even vartanus and this is sort of the main cost that allows you develop native
+
+932
+01:15:36,270 --> 01:15:40,080
+main cost that allows you develop native environments now the only thing I was
+
+933
+01:15:40,080 --> 01:15:43,770
+environments now the only thing I was gonna say is a little socially desirable
+
+934
+01:15:43,770 --> 01:15:47,940
+gonna say is a little socially desirable but Sir I was seven gardeners
+
+935
+01:15:47,940 --> 01:15:50,070
+but Sir I was seven gardeners there was the number of mobile growth so
+
+936
+01:15:50,070 --> 01:15:53,600
+there was the number of mobile growth so we can think of a gradual and that way
+
+937
+01:15:53,600 --> 01:15:57,240
+we can think of a gradual and that way the death of our decisions coming so the
+
+938
+01:15:57,240 --> 01:16:00,300
+the death of our decisions coming so the killer virus can be maybe indicator
+
+939
+01:16:00,300 --> 01:16:05,550
+killer virus can be maybe indicator punch values that tells you what it's
+
+940
+01:16:05,550 --> 01:16:08,670
+punch values that tells you what it's beautiful collect - what
+
+941
+01:16:08,670 --> 01:16:11,100
+beautiful collect - what Gaussian envelopes are they too late or
+
+942
+01:16:11,100 --> 01:16:17,970
+Gaussian envelopes are they too late or what you know okay so life is the
+
+943
+01:16:17,970 --> 01:16:19,980
+what you know okay so life is the composition is right that this hidden
+
+944
+01:16:19,980 --> 01:16:22,260
+composition is right that this hidden garden was the morning with a number of
+
+945
+01:16:22,260 --> 01:16:25,410
+garden was the morning with a number of the additional volume which in the graph
+
+946
+01:16:25,410 --> 01:16:34,580
+the additional volume which in the graph you can keep the prosperous
+
+947
+01:16:34,580 --> 01:16:34,590
+
+
+948
+01:16:34,590 --> 01:16:41,580
+service parameters theta are independent but independent of the data you collect
+
+949
+01:16:41,580 --> 01:16:45,180
+but independent of the data you collect in the problem okay sure
+
+950
+01:16:45,180 --> 01:16:47,490
+in the problem okay sure and in real problems here in the
+
+951
+01:16:47,490 --> 01:16:49,890
+and in real problems here in the formation of the rebels will go to be
+
+952
+01:16:49,890 --> 01:16:52,650
+formation of the rebels will go to be able to achieve is a testament to this
+
+953
+01:16:52,650 --> 01:17:03,830
+able to achieve is a testament to this data parameters theta but this bottom of
+
+954
+01:17:03,830 --> 01:17:03,840
+
+
+955
+01:17:03,840 --> 01:17:12,900
+missions to carefully account for the factors and somehow instance you have to
+
+956
+01:17:12,900 --> 01:17:15,030
+factors and somehow instance you have to do predictions by information of the
+
+957
+01:17:15,030 --> 01:17:40,260
+do predictions by information of the students to know is nobody here in a few
+
+958
+01:17:40,260 --> 01:17:42,420
+students to know is nobody here in a few weeks from now but because not wait a
+
+959
+01:17:42,420 --> 01:17:45,780
+weeks from now but because not wait a minute and the very natural self
+
+960
+01:17:45,780 --> 01:17:48,600
+minute and the very natural self directly linked to my website at least
+
+961
+01:17:48,600 --> 01:17:51,090
+directly linked to my website at least the previous one and this nice already
+
+962
+01:17:51,090 --> 01:17:55,760
+the previous one and this nice already aware and I will see here on next
+
+963
+01:17:55,760 --> 01:17:59,280
+aware and I will see here on next Tuesday suppose 
+

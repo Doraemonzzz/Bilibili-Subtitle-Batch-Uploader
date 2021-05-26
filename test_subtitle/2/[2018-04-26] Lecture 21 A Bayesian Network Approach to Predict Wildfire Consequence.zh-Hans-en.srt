@@ -1,0 +1,6555 @@
+1
+00:02:05,290 --> 00:02:12,900
+好的，好的，我今天成为第一个发表演讲的人
+okay okay I become the first person to give presentation today hello everyone
+
+2
+00:02:12,900 --> 00:02:12,910
+好的，好的，我今天成为第一个发表演讲的人
+give presentation today hello everyone my name is Tina I'm the first year
+
+3
+00:02:12,910 --> 00:02:15,850
+我叫蒂娜（Tina）我是该系第一年的研究生
+give presentation today hello everyone my name is Tina I'm the first year
+
+4
+00:02:15,850 --> 00:02:18,070
+我叫蒂娜（Tina）我是该系第一年的研究生
+my name is Tina I'm the first year graduate student in the department
+
+5
+00:02:18,070 --> 00:02:18,080
+我叫蒂娜（Tina）我是该系第一年的研究生
+graduate student in the department working with environmental combustion
+
+6
+00:02:18,080 --> 00:02:20,560
+与环境燃烧一起工作是被摧毁，我是实验人员
+graduate student in the department working with environmental combustion
+
+7
+00:02:20,560 --> 00:02:23,230
+与环境燃烧一起工作是被摧毁，我是实验人员
+working with environmental combustion yes destroyed I'm experimental people
+
+8
+00:02:23,230 --> 00:02:23,240
+与环境燃烧一起工作是被摧毁，我是实验人员
+yes destroyed I'm experimental people and majority of my previous research and
+
+9
+00:02:23,240 --> 00:02:26,230
+我以前的大部分研究和正在进行的工作都与实验有关
+yes destroyed I'm experimental people and majority of my previous research and
+
+10
+00:02:26,230 --> 00:02:28,750
+我以前的大部分研究和正在进行的工作都与实验有关
+and majority of my previous research and ongoing job are related to experiment
+
+11
+00:02:28,750 --> 00:02:28,760
+我以前的大部分研究和正在进行的工作都与实验有关
+ongoing job are related to experiment instead of computation so this causes
+
+12
+00:02:28,760 --> 00:02:31,300
+而不是计算，因此这是我有史以来最具挑战性的课程
+ongoing job are related to experiment instead of computation so this causes
+
+13
+00:02:31,300 --> 00:02:33,250
+而不是计算，因此这是我有史以来最具挑战性的课程
+instead of computation so this causes the most challenging class I've ever
+
+14
+00:02:33,250 --> 00:02:33,260
+而不是计算，因此这是我有史以来最具挑战性的课程
+the most challenging class I've ever taken but do I have to do I'm very
+
+15
+00:02:33,260 --> 00:02:37,030
+采取，但我必须要做的事我对此非常感兴趣，我们肯定
+the most challenging class I've ever taken but do I have to do I'm very
+
+16
+00:02:37,030 --> 00:02:39,820
+采取，但我必须要做的事我对此非常感兴趣，我们肯定
+taken but do I have to do I'm very interested in that and we definitely
+
+17
+00:02:39,820 --> 00:02:39,830
+采取，但我必须要做的事我对此非常感兴趣，我们肯定
+interested in that and we definitely know a lot although sometimes we are
+
+18
+00:02:39,830 --> 00:02:42,430
+知道很多，尽管有时我们是他们承受压力，并为我的礼物
+interested in that and we definitely know a lot although sometimes we are
+
+19
+00:02:42,430 --> 00:02:47,199
+知道很多，尽管有时我们是他们承受压力，并为我的礼物
+know a lot although sometimes we are they take pressure and for my present
+
+20
+00:02:47,199 --> 00:02:47,209
+知道很多，尽管有时我们是他们承受压力，并为我的礼物
+they take pressure and for my present for my future I just like a candle is
+
+21
+00:02:47,209 --> 00:02:50,080
+为了我的未来，我就像蜡烛一样，如果您想尝试这个话题，
+they take pressure and for my present for my future I just like a candle is
+
+22
+00:02:50,080 --> 00:02:54,070
+为了我的未来，我就像蜡烛一样，如果您想尝试这个话题，
+for my future I just like a candle is the topic which I want to try if you
+
+23
+00:02:54,070 --> 00:02:54,080
+为了我的未来，我就像蜡烛一样，如果您想尝试这个话题，
+the topic which I want to try if you want to apply what we've learned class
+
+24
+00:02:54,080 --> 00:02:56,320
+希望将我们所学的课程应用于使用
+the topic which I want to try if you want to apply what we've learned class
+
+25
+00:02:56,320 --> 00:02:59,620
+希望将我们所学的课程应用于使用
+want to apply what we've learned class to a real world case which is using the
+
+26
+00:02:59,620 --> 00:02:59,630
+希望将我们所学的课程应用于使用
+to a real world case which is using the Bayesian network approaches to predict
+
+27
+00:02:59,630 --> 00:03:01,870
+贝叶斯网络方法预测井场火灾后果
+to a real world case which is using the Bayesian network approaches to predict
+
+28
+00:03:01,870 --> 00:03:04,620
+贝叶斯网络方法预测井场火灾后果
+Bayesian network approaches to predict the well fire consequence
+
+29
+00:03:04,620 --> 00:03:04,630
+贝叶斯网络方法预测井场火灾后果
+the well fire consequence well fire we generate some some damage
+
+30
+00:03:04,630 --> 00:03:10,330
+好火，我们会产生一些损害，如果您
+the well fire consequence well fire we generate some some damage
+
+31
+00:03:10,330 --> 00:03:12,910
+好火，我们会产生一些损害，如果您
+well fire we generate some some damage and you lead to some cost if you are
+
+32
+00:03:12,910 --> 00:03:12,920
+好火，我们会产生一些损害，如果您
+and you lead to some cost if you are person working maybe government
+
+33
+00:03:12,920 --> 00:03:16,120
+你有井喷时，可能是政府部门的工作人员
+and you lead to some cost if you are person working maybe government
+
+34
+00:03:16,120 --> 00:03:18,699
+你有井喷时，可能是政府部门的工作人员
+person working maybe government department when there is a well fire you
+
+35
+00:03:18,699 --> 00:03:18,709
+你有井喷时，可能是政府部门的工作人员
+department when there is a well fire you will be probably surrounded by a lot of
+
+36
+00:03:18,709 --> 00:03:21,550
+可能会被很多来自不同媒体的人包围着
+department when there is a well fire you will be probably surrounded by a lot of
+
+37
+00:03:21,550 --> 00:03:25,000
+可能会被很多来自不同媒体的人包围着
+will be probably surrounded by a lot of people from different media keep asking
+
+38
+00:03:25,000 --> 00:03:25,010
+可能会被很多来自不同媒体的人包围着
+people from different media keep asking you unknowing questions about the
+
+39
+00:03:25,010 --> 00:03:27,039
+您不知道有关井火后果的问题吗？
+people from different media keep asking you unknowing questions about the
+
+40
+00:03:27,039 --> 00:03:30,610
+您不知道有关井火后果的问题吗？
+you unknowing questions about the consequence of the well fire do you want
+
+41
+00:03:30,610 --> 00:03:30,620
+您不知道有关井火后果的问题吗？
+consequence of the well fire do you want to be complete - good job you have to
+
+42
+00:03:30,620 --> 00:03:34,449
+要完整-好工作，你必须让他们失望
+consequence of the well fire do you want to be complete - good job you have to
+
+43
+00:03:34,449 --> 00:03:36,940
+要完整-好工作，你必须让他们失望
+to be complete - good job you have to keep them down raise doubt the the
+
+44
+00:03:36,940 --> 00:03:36,950
+要完整-好工作，你必须让他们失望
+keep them down raise doubt the the consequence of the world fire however a
+
+45
+00:03:36,950 --> 00:03:39,400
+世界大火的后果，但真正的价值是福利的核算
+keep them down raise doubt the the consequence of the world fire however a
+
+46
+00:03:39,400 --> 00:03:41,740
+世界大火的后果，但真正的价值是福利的核算
+consequence of the world fire however a true value is accountant of the welfare
+
+47
+00:03:41,740 --> 00:03:41,750
+世界大火的后果，但真正的价值是福利的核算
+true value is accountant of the welfare it's kind of hard job because it's
+
+48
+00:03:41,750 --> 00:03:44,500
+这是一项艰苦的工作，因为它是来自许多不同领域的信息
+true value is accountant of the welfare it's kind of hard job because it's
+
+49
+00:03:44,500 --> 00:03:47,080
+这是一项艰苦的工作，因为它是来自许多不同领域的信息
+it's kind of hard job because it's information from many different areas
+
+50
+00:03:47,080 --> 00:03:47,090
+这是一项艰苦的工作，因为它是来自许多不同领域的信息
+information from many different areas for example you have to think about the
+
+51
+00:03:47,090 --> 00:03:50,069
+例如，您必须考虑城市的类型和道路
+information from many different areas for example you have to think about the
+
+52
+00:03:50,069 --> 00:03:53,470
+例如，您必须考虑城市的类型和道路
+for example you have to think about the type of your city and you the road
+
+53
+00:03:53,470 --> 00:03:53,480
+例如，您必须考虑城市的类型和道路
+type of your city and you the road density and your type of your
+
+54
+00:03:53,480 --> 00:03:55,720
+密度和建筑类型这是一种知识
+type of your city and you the road density and your type of your
+
+55
+00:03:55,720 --> 00:03:57,280
+密度和建筑类型这是一种知识
+density and your type of your construction it's a kind of knowledge
+
+56
+00:03:57,280 --> 00:03:57,290
+密度和建筑类型这是一种知识
+construction it's a kind of knowledge from stable engineering and the
+
+57
+00:03:57,290 --> 00:03:59,650
+与稳定的工程和景观环境有关
+construction it's a kind of knowledge from stable engineering and the
+
+58
+00:03:59,650 --> 00:04:02,140
+与稳定的工程和景观环境有关
+from stable engineering and the landscape environment something related
+
+59
+00:04:02,140 --> 00:04:02,150
+与稳定的工程和景观环境有关
+landscape environment something related to geology or biology and the value of
+
+60
+00:04:02,150 --> 00:04:05,949
+地质或生物学以及建筑物的价值
+landscape environment something related to geology or biology and the value of
+
+61
+00:04:05,949 --> 00:04:07,150
+地质或生物学以及建筑物的价值
+to geology or biology and the value of your building
+
+62
+00:04:07,150 --> 00:04:07,160
+地质或生物学以及建筑物的价值
+your building finish their job of Business School so
+
+63
+00:04:07,160 --> 00:04:09,820
+完成商学院的工作，所以您的话语复杂而艰巨，而且一直保持下去
+your building finish their job of Business School so
+
+64
+00:04:09,820 --> 00:04:14,620
+完成商学院的工作，所以您的话语复杂而艰巨，而且一直保持下去
+finish their job of Business School so your word complex and hard and it keeps
+
+65
+00:04:14,620 --> 00:04:14,630
+完成商学院的工作，所以您的话语复杂而艰巨，而且一直保持下去
+your word complex and hard and it keeps the nightmares who the traditional
+
+66
+00:04:14,630 --> 00:04:16,570
+传统上我自己来计算计数任务的噩梦
+your word complex and hard and it keeps the nightmares who the traditional
+
+67
+00:04:16,570 --> 00:04:19,630
+传统上我自己来计算计数任务的噩梦
+the nightmares who the traditional myself to calculate the counts quest
+
+68
+00:04:19,630 --> 00:04:19,640
+传统上我自己来计算计数任务的噩梦
+myself to calculate the counts quest however the Bayesian network or hurdle
+
+69
+00:04:19,640 --> 00:04:22,660
+但是，贝叶斯网络或障碍可以取决于来自
+myself to calculate the counts quest however the Bayesian network or hurdle
+
+70
+00:04:22,660 --> 00:04:25,210
+但是，贝叶斯网络或障碍可以取决于来自
+however the Bayesian network or hurdle can depend on the information from
+
+71
+00:04:25,210 --> 00:04:25,220
+但是，贝叶斯网络或障碍可以取决于来自
+can depend on the information from different area very well as same time
+
+72
+00:04:25,220 --> 00:04:27,730
+很好地同时在不同的区域，并且有很多研究人员在使用
+can depend on the information from different area very well as same time
+
+73
+00:04:27,730 --> 00:04:31,060
+很好地同时在不同的区域，并且有很多研究人员在使用
+different area very well as same time and there are many researchers using
+
+74
+00:04:31,060 --> 00:04:31,070
+很好地同时在不同的区域，并且有很多研究人员在使用
+and there are many researchers using Bayesian network to do some work on
+
+75
+00:04:31,070 --> 00:04:34,990
+贝叶斯网络在不同领域做一些工作，例如生物学
+and there are many researchers using Bayesian network to do some work on
+
+76
+00:04:34,990 --> 00:04:37,930
+贝叶斯网络在不同领域做一些工作，例如生物学
+Bayesian network to do some work on different areas for example the biology
+
+77
+00:04:37,930 --> 00:04:37,940
+贝叶斯网络在不同领域做一些工作，例如生物学
+different areas for example the biology system and you know well fire and this
+
+78
+00:04:37,940 --> 00:04:42,520
+系统，你知道火，这个人叫我，我不知道他
+different areas for example the biology system and you know well fire and this
+
+79
+00:04:42,520 --> 00:04:47,050
+系统，你知道火，这个人叫我，我不知道他
+system and you know well fire and this person whose name is I don't know his
+
+80
+00:04:47,050 --> 00:04:47,060
+系统，你知道火，这个人叫我，我不知道他
+person whose name is I don't know his name the correct pronunciation he
+
+81
+00:04:47,060 --> 00:04:50,740
+命名他发展互联网工作的正确发音，然后用户
+person whose name is I don't know his name the correct pronunciation he
+
+82
+00:04:50,740 --> 00:04:53,860
+命名他发展互联网工作的正确发音，然后用户
+name the correct pronunciation he develop up internet work and the user to
+
+83
+00:04:53,860 --> 00:04:53,870
+命名他发展互联网工作的正确发音，然后用户
+develop up internet work and the user to access the suicide the building damage
+
+84
+00:04:53,870 --> 00:04:56,860
+获得自杀的建筑损失称为买井火的费用。
+develop up internet work and the user to access the suicide the building damage
+
+85
+00:04:56,860 --> 00:05:00,250
+获得自杀的建筑损失称为买井火的费用。
+access the suicide the building damage called the cost to buy well fire in
+
+86
+00:05:00,250 --> 00:05:00,260
+获得自杀的建筑损失称为买井火的费用。
+called the cost to buy well fire in tableau and in his work he just used use
+
+87
+00:05:00,260 --> 00:05:06,850
+tableau，在他的工作中，他只是使用了名为
+called the cost to buy well fire in tableau and in his work he just used use
+
+88
+00:05:06,850 --> 00:05:09,550
+tableau，在他的工作中，他只是使用了名为
+tableau and in his work he just used use the software commercial software named
+
+89
+00:05:09,550 --> 00:05:09,560
+tableau，在他的工作中，他只是使用了名为
+the software commercial software named fusion mister very strong software you
+
+90
+00:05:09,560 --> 00:05:13,090
+融合雾化器非常强大的软件，您无法或实际上会破坏贝叶斯
+the software commercial software named fusion mister very strong software you
+
+91
+00:05:13,090 --> 00:05:15,700
+融合雾化器非常强大的软件，您无法或实际上会破坏贝叶斯
+fusion mister very strong software you can't or actually tore your Bayesian
+
+92
+00:05:15,700 --> 00:05:15,710
+融合雾化器非常强大的软件，您无法或实际上会破坏贝叶斯
+can't or actually tore your Bayesian network and that's the input your CPT
+
+93
+00:05:15,710 --> 00:05:19,060
+网络，这就是您的CPT的输入，然后点击运行，您将获得
+can't or actually tore your Bayesian network and that's the input your CPT
+
+94
+00:05:19,060 --> 00:05:21,580
+网络，这就是您的CPT的输入，然后点击运行，您将获得
+network and that's the input your CPT and click run and you will get your
+
+95
+00:05:21,580 --> 00:05:21,590
+网络，这就是您的CPT的输入，然后点击运行，您将获得
+and click run and you will get your result not very simple but he might I'm
+
+96
+00:05:21,590 --> 00:05:26,470
+结果不是很简单，但是他可能会担心他对工作的兴趣并想要
+and click run and you will get your result not very simple but he might I'm
+
+97
+00:05:26,470 --> 00:05:29,500
+结果不是很简单，但是他可能会担心他对工作的兴趣并想要
+result not very simple but he might I'm worried the interest in his job and want
+
+98
+00:05:29,500 --> 00:05:29,510
+结果不是很简单，但是他可能会担心他对工作的兴趣并想要
+worried the interest in his job and want to want to reproduce his work to a
+
+99
+00:05:29,510 --> 00:05:32,680
+想将他的作品复制为类似作品，但我不想使用
+worried the interest in his job and want to want to reproduce his work to a
+
+100
+00:05:32,680 --> 00:05:35,370
+想将他的作品复制为类似作品，但我不想使用
+to want to reproduce his work to a similar work but I don't want to use
+
+101
+00:05:35,370 --> 00:05:35,380
+想将他的作品复制为类似作品，但我不想使用
+similar work but I don't want to use commercial software and I want to use
+
+102
+00:05:35,380 --> 00:05:40,300
+商业软件，我想使用它来查看网络中如此繁忙的网络
+similar work but I don't want to use commercial software and I want to use
+
+103
+00:05:40,300 --> 00:05:42,820
+商业软件，我想使用它来查看网络中如此繁忙的网络
+commercial software and I want to use that want to view so busy a network in
+
+104
+00:05:42,820 --> 00:05:42,830
+商业软件，我想使用它来查看网络中如此繁忙的网络
+that want to view so busy a network in MATLAB and to select several inference
+
+105
+00:05:42,830 --> 00:05:45,070
+MATLAB并选择几个推理引擎，然后尝试看看我能得到什么
+that want to view so busy a network in MATLAB and to select several inference
+
+106
+00:05:45,070 --> 00:05:51,760
+MATLAB并选择几个推理引擎，然后尝试看看我能得到什么
+MATLAB and to select several inference engines and try to see what I can get to
+
+107
+00:05:51,760 --> 00:05:51,770
+MATLAB并选择几个推理引擎，然后尝试看看我能得到什么
+engines and try to see what I can get to decide or a silent
+
+108
+00:05:51,770 --> 00:05:54,909
+决定或无声极限理论，看并且很大
+engines and try to see what I can get to decide or a silent
+
+109
+00:05:54,909 --> 00:05:57,820
+决定或无声极限理论，看并且很大
+decide or a silent limit theory and see and is very large
+
+110
+00:05:57,820 --> 00:05:57,830
+决定或无声极限理论，看并且很大
+limit theory and see and is very large and the wire here for you to study the
+
+111
+00:05:57,830 --> 00:06:00,580
+和电线在这里供您研究整个岛，我花了时间和时间
+limit theory and see and is very large and the wire here for you to study the
+
+112
+00:06:00,580 --> 00:06:03,690
+和电线在这里供您研究整个岛，我花了时间和时间
+and the wire here for you to study the whole island I spend time and to as
+
+113
+00:06:03,690 --> 00:06:03,700
+和电线在这里供您研究整个岛，我花了时间和时间
+whole island I spend time and to as is also similar in my work we just
+
+114
+00:06:03,700 --> 00:06:07,260
+在我的工作中也很相似我们只是将这个岛分成几个部分
+whole island I spend time and to as is also similar in my work we just
+
+115
+00:06:07,260 --> 00:06:10,920
+在我的工作中也很相似我们只是将这个岛分成几个部分
+is also similar in my work we just separate this island into several into
+
+116
+00:06:10,920 --> 00:06:10,930
+在我的工作中也很相似我们只是将这个岛分成几个部分
+separate this island into several into thousands of a hotel and so each time we
+
+117
+00:06:10,930 --> 00:06:14,130
+成千上万的酒店，因此每次我们只关注一个线单元
+separate this island into several into thousands of a hotel and so each time we
+
+118
+00:06:14,130 --> 00:06:17,370
+成千上万的酒店，因此每次我们只关注一个线单元
+thousands of a hotel and so each time we just the focus on one wire cells which
+
+119
+00:06:17,370 --> 00:06:17,380
+成千上万的酒店，因此每次我们只关注一个线单元
+just the focus on one wire cells which is represented by the right square in
+
+120
+00:06:17,380 --> 00:06:19,650
+由该事件中的右方表示，并且具有血液
+just the focus on one wire cells which is represented by the right square in
+
+121
+00:06:19,650 --> 00:06:24,210
+由该事件中的右方表示，并且具有血液
+is represented by the right square in the in the matter and it has blood has
+
+122
+00:06:24,210 --> 00:06:24,220
+由该事件中的右方表示，并且具有血液
+the in the matter and it has blood has the area of one of one kilometer square
+
+123
+00:06:24,220 --> 00:06:27,950
+现在，我们决定将目标确定为1公里见方之一的面积
+the in the matter and it has blood has the area of one of one kilometer square
+
+124
+00:06:27,950 --> 00:06:32,250
+现在，我们决定将目标确定为1公里见方之一的面积
+the area of one of one kilometer square now we decided our aim just tells the
+
+125
+00:06:32,250 --> 00:06:32,260
+现在，我们决定将目标确定为1公里见方之一的面积
+now we decided our aim just tells the next step we try to figure out one way
+
+126
+00:06:32,260 --> 00:06:35,310
+下一步，我们尝试找出一种量化井的所有后果的方法
+now we decided our aim just tells the next step we try to figure out one way
+
+127
+00:06:35,310 --> 00:06:40,440
+下一步，我们尝试找出一种量化井的所有后果的方法
+next step we try to figure out one way to quantify all the consequences of well
+
+128
+00:06:40,440 --> 00:06:40,450
+下一步，我们尝试找出一种量化井的所有后果的方法
+to quantify all the consequences of well fire several researchers has established
+
+129
+00:06:40,450 --> 00:06:43,740
+几位研究人员建立了这个常数，表明该常数
+to quantify all the consequences of well fire several researchers has established
+
+130
+00:06:43,740 --> 00:06:47,970
+几位研究人员建立了这个常数，表明该常数
+fire several researchers has established this constants which indicate that the a
+
+131
+00:06:47,970 --> 00:06:47,980
+几位研究人员建立了这个常数，表明该常数
+this constants which indicate that the a good way to formular the expected value
+
+132
+00:06:47,980 --> 00:06:51,750
+制定井眼火势期望值的好方法是此函数
+this constants which indicate that the a good way to formular the expected value
+
+133
+00:06:51,750 --> 00:06:55,950
+制定井眼火势期望值的好方法是此函数
+good way to formular the expected value of the of the well fire is this function
+
+134
+00:06:55,950 --> 00:06:55,960
+制定井眼火势期望值的好方法是此函数
+of the of the well fire is this function and this one lifetime size expected
+
+135
+00:06:55,960 --> 00:06:59,370
+而这个一生的大小期望值可能是小值而离开
+of the of the well fire is this function and this one lifetime size expected
+
+136
+00:06:59,370 --> 00:07:03,750
+而这个一生的大小期望值可能是小值而离开
+and this one lifetime size expected value may be the little value and leave
+
+137
+00:07:03,750 --> 00:07:03,760
+而这个一生的大小期望值可能是小值而离开
+value may be the little value and leave the function of probability of hazard
+
+138
+00:07:03,760 --> 00:07:06,390
+危险概率和破坏概率的函数
+value may be the little value and leave the function of probability of hazard
+
+139
+00:07:06,390 --> 00:07:08,910
+危险概率和破坏概率的函数
+the function of probability of hazard and the probability of damage
+
+140
+00:07:08,910 --> 00:07:08,920
+危险概率和破坏概率的函数
+and the probability of damage conditional hazard and here and fiercely
+
+141
+00:07:08,920 --> 00:07:12,470
+有条件的危害，这里还有剧烈的成本函数，所以上周末我们
+and the probability of damage conditional hazard and here and fiercely
+
+142
+00:07:12,470 --> 00:07:18,720
+有条件的危害，这里还有剧烈的成本函数，所以上周末我们
+conditional hazard and here and fiercely cost function and so last weekend we
+
+143
+00:07:18,720 --> 00:07:18,730
+有条件的危害，这里还有剧烈的成本函数，所以上周末我们
+cost function and so last weekend we know this formula we've got some hint to
+
+144
+00:07:18,730 --> 00:07:21,240
+知道这个公式，我们有一些提示可以考虑考虑指标以
+cost function and so last weekend we know this formula we've got some hint to
+
+145
+00:07:21,240 --> 00:07:25,230
+知道这个公式，我们有一些提示可以考虑考虑指标以
+know this formula we've got some hint to to think to consider the indicator to to
+
+146
+00:07:25,230 --> 00:07:25,240
+知道这个公式，我们有一些提示可以考虑考虑指标以
+to think to consider the indicator to to consider the the way to comic-con
+
+147
+00:07:25,240 --> 00:07:28,110
+考虑漫画计算的方式是下一个结果
+to think to consider the indicator to to consider the the way to comic-con
+
+148
+00:07:28,110 --> 00:07:31,950
+考虑漫画计算的方式是下一个结果
+consider the the way to comic-con calculates are a consequence the next
+
+149
+00:07:31,950 --> 00:07:31,960
+考虑漫画计算的方式是下一个结果
+calculates are a consequence the next that we tried to find indicator
+
+150
+00:07:31,960 --> 00:07:34,350
+我们试图找到指标代表损坏等，让我们
+calculates are a consequence the next that we tried to find indicator
+
+151
+00:07:34,350 --> 00:07:41,220
+我们试图找到指标代表损坏等，让我们
+that we tried to find indicator represent either the damage etc let's
+
+152
+00:07:41,220 --> 00:07:41,230
+我们试图找到指标代表损坏等，让我们
+represent either the damage etc let's come back to the little cells again and
+
+153
+00:07:41,230 --> 00:07:43,850
+再次回到小牢房，现在没有叔叔也没有法官
+represent either the damage etc let's come back to the little cells again and
+
+154
+00:07:43,850 --> 00:07:47,970
+再次回到小牢房，现在没有叔叔也没有法官
+come back to the little cells again and no judge nor no no are now uncle in job
+
+155
+00:07:47,970 --> 00:07:47,980
+再次回到小牢房，现在没有叔叔也没有法官
+no judge nor no no are now uncle in job is to find the indicators even if in the
+
+156
+00:07:47,980 --> 00:07:51,720
+是要找到指标，即使在小单元格中它们仍然很多
+no judge nor no no are now uncle in job is to find the indicators even if in the
+
+157
+00:07:51,720 --> 00:07:53,730
+是要找到指标，即使在小单元格中它们仍然很多
+is to find the indicators even if in the little cell they are still a lot of
+
+158
+00:07:53,730 --> 00:07:53,740
+是要找到指标，即使在小单元格中它们仍然很多
+little cell they are still a lot of indicator you have to think about for
+
+159
+00:07:53,740 --> 00:07:56,010
+您必须考虑的指标，例如，我们假设帽商是
+little cell they are still a lot of indicator you have to think about for
+
+160
+00:07:56,010 --> 00:07:59,250
+您必须考虑的指标，例如，我们假设帽商是
+indicator you have to think about for example we assume that the Hatters to be
+
+161
+00:07:59,250 --> 00:07:59,260
+您必须考虑的指标，例如，我们假设帽商是
+example we assume that the Hatters to be the burn area and fire intensity and
+
+162
+00:07:59,260 --> 00:08:02,420
+燃烧面积和火烈度为零和大地
+example we assume that the Hatters to be the burn area and fire intensity and
+
+163
+00:08:02,420 --> 00:08:05,320
+燃烧面积和火烈度为零和大地
+the burn area and fire intensity and zero several and the earth
+
+164
+00:08:05,320 --> 00:08:05,330
+燃烧面积和火烈度为零和大地
+zero several and the earth something influenced your damage maybe
+
+165
+00:08:05,330 --> 00:08:07,809
+某些因素可能会影响您的损坏，例如您的建筑物类型，如果
+zero several and the earth something influenced your damage maybe
+
+166
+00:08:07,809 --> 00:08:11,409
+某些因素可能会影响您的损坏，例如您的建筑物类型，如果
+something influenced your damage maybe for example your your building type if
+
+167
+00:08:11,409 --> 00:08:11,419
+某些因素可能会影响您的损坏，例如您的建筑物类型，如果
+for example your your building type if it is the apartment or it's a single
+
+168
+00:08:11,419 --> 00:08:15,670
+它是公寓，还是一栋建筑物，其中有多少栋建筑物
+for example your your building type if it is the apartment or it's a single
+
+169
+00:08:15,670 --> 00:08:19,059
+它是公寓，还是一栋建筑物，其中有多少栋建筑物
+it is the apartment or it's a single building and the how many building in
+
+170
+00:08:19,059 --> 00:08:19,069
+它是公寓，还是一栋建筑物，其中有多少栋建筑物
+building and the how many building in this location the building density and
+
+171
+00:08:19,069 --> 00:08:21,249
+此位置的建筑密度，同时您与火之间的距离
+building and the how many building in this location the building density and
+
+172
+00:08:21,249 --> 00:08:24,820
+此位置的建筑密度，同时您与火之间的距离
+this location the building density and at same times your distance to the fire
+
+173
+00:08:24,820 --> 00:08:24,830
+此位置的建筑密度，同时您与火之间的距离
+at same times your distance to the fire station and the road surround you
+
+174
+00:08:24,830 --> 00:08:29,140
+车站和道路周围，也许您也可能在
+at same times your distance to the fire station and the road surround you
+
+175
+00:08:29,140 --> 00:08:33,490
+车站和道路周围，也许您也可能在
+station and the road surround you maybe maybe also maybe play a role in
+
+176
+00:08:33,490 --> 00:08:33,500
+车站和道路周围，也许您也可能在
+maybe maybe also maybe play a role in strife because love did not decide that
+
+177
+00:08:33,500 --> 00:08:36,519
+之所以发生冲突，是因为爱情并不能决定您有机会从大火中获得帮助
+maybe maybe also maybe play a role in strife because love did not decide that
+
+178
+00:08:36,519 --> 00:08:38,380
+之所以发生冲突，是因为爱情并不能决定您有机会从大火中获得帮助
+strife because love did not decide that your chance to get help from fire
+
+179
+00:08:38,380 --> 00:08:38,390
+之所以发生冲突，是因为爱情并不能决定您有机会从大火中获得帮助
+your chance to get help from fire department if you have a better chance
+
+180
+00:08:38,390 --> 00:08:40,480
+部门，如果您有更好的机会找到控制财富的机会
+your chance to get help from fire department if you have a better chance
+
+181
+00:08:40,480 --> 00:08:42,969
+部门，如果您有更好的机会找到控制财富的机会
+department if you have a better chance to find a chance to control the wealth
+
+182
+00:08:42,969 --> 00:08:42,979
+部门，如果您有更好的机会找到控制财富的机会
+to find a chance to control the wealth but also fire not will definitely reduce
+
+183
+00:08:42,979 --> 00:08:46,360
+但也不会因火灾而降低您的成本
+to find a chance to control the wealth but also fire not will definitely reduce
+
+184
+00:08:46,360 --> 00:08:47,560
+但也不会因火灾而降低您的成本
+but also fire not will definitely reduce your cost
+
+185
+00:08:47,560 --> 00:08:47,570
+但也不会因火灾而降低您的成本
+your cost so this speaker just gave me something
+
+186
+00:08:47,570 --> 00:08:49,870
+所以这位演讲者给了我一些东西，使我们对如何融合
+your cost so this speaker just gave me something
+
+187
+00:08:49,870 --> 00:08:52,930
+所以这位演讲者给了我一些东西，使我们对如何融合
+so this speaker just gave me something give us some hint about how to fuse the
+
+188
+00:08:52,930 --> 00:08:52,940
+所以这位演讲者给了我一些东西，使我们对如何融合
+give us some hint about how to fuse the classic model so what watch the
+
+189
+00:08:52,940 --> 00:09:00,009
+经典模型，那么我们可以创建什么样的指标来研究
+give us some hint about how to fuse the classic model so what watch the
+
+190
+00:09:00,009 --> 00:09:03,250
+经典模型，那么我们可以创建什么样的指标来研究
+classic model so what watch the indicator we want to study we can create
+
+191
+00:09:03,250 --> 00:09:03,260
+经典模型，那么我们可以创建什么样的指标来研究
+indicator we want to study we can create these weak raises to act involve graphic
+
+192
+00:09:03,260 --> 00:09:06,370
+这些微不足道的举动涉及像这样的图形模型，说实话
+indicator we want to study we can create these weak raises to act involve graphic
+
+193
+00:09:06,370 --> 00:09:10,360
+这些微不足道的举动涉及像这样的图形模型，说实话
+these weak raises to act involve graphic model like this and to be honest the
+
+194
+00:09:10,360 --> 00:09:10,370
+这些微不足道的举动涉及像这样的图形模型，说实话
+model like this and to be honest the several indicator has been already
+
+195
+00:09:10,370 --> 00:09:12,329
+几个指标已经被忽略了我们只想研究的意义
+model like this and to be honest the several indicator has been already
+
+196
+00:09:12,329 --> 00:09:15,970
+几个指标已经被忽略了我们只想研究的意义
+several indicator has been already ignored sense we only want to study
+
+197
+00:09:15,970 --> 00:09:15,980
+几个指标已经被忽略了我们只想研究的意义
+ignored sense we only want to study something we are really really
+
+198
+00:09:15,980 --> 00:09:17,710
+我们真的很感兴趣，这对您来说很难
+ignored sense we only want to study something we are really really
+
+199
+00:09:17,710 --> 00:09:21,189
+我们真的很感兴趣，这对您来说很难
+something we are really really interested and it's very hard for you to
+
+200
+00:09:21,189 --> 00:09:21,199
+我们真的很感兴趣，这对您来说很难
+interested and it's very hard for you to study piracy in the to build everything
+
+201
+00:09:21,199 --> 00:09:25,480
+研究盗版，将所有内容装在瓶子中，放在顶部
+interested and it's very hard for you to study piracy in the to build everything
+
+202
+00:09:25,480 --> 00:09:29,380
+研究盗版，将所有内容装在瓶子中，放在顶部
+study piracy in the to build everything in a bottle and on the top the while
+
+203
+00:09:29,380 --> 00:09:29,390
+研究盗版，将所有内容装在瓶子中，放在顶部
+in a bottle and on the top the while each node represents the the hazard
+
+204
+00:09:29,390 --> 00:09:32,350
+每个节点都代表着着火和着火的危险
+in a bottle and on the top the while each node represents the the hazard
+
+205
+00:09:32,350 --> 00:09:34,420
+每个节点都代表着着火和着火的危险
+each node represents the the hazard which is the burn area and fire
+
+206
+00:09:34,420 --> 00:09:34,430
+每个节点都代表着着火和着火的危险
+which is the burn area and fire intensity so little at least a light
+
+207
+00:09:34,430 --> 00:09:37,389
+强度如此之小，至少代表该项目的浅绿色节点位于
+which is the burn area and fire intensity so little at least a light
+
+208
+00:09:37,389 --> 00:09:42,189
+强度如此之小，至少代表该项目的浅绿色节点位于
+intensity so little at least a light green nodes representing the item at at
+
+209
+00:09:42,189 --> 00:09:42,199
+强度如此之小，至少代表该项目的浅绿色节点位于
+green nodes representing the item at at the item at risk with this list we call
+
+210
+00:09:42,199 --> 00:09:46,569
+该列表中处于风险中的物品，我们称之为资源管理器
+green nodes representing the item at at the item at risk with this list we call
+
+211
+00:09:46,569 --> 00:09:49,509
+该列表中处于风险中的物品，我们称之为资源管理器
+the item at risk with this list we call it Explorer this knows where you cost
+
+212
+00:09:49,509 --> 00:09:49,519
+该列表中处于风险中的物品，我们称之为资源管理器
+it Explorer this knows where you cost your damage after your building and you
+
+213
+00:09:49,519 --> 00:09:52,580
+您在建筑物建造后所遭受的损失以及您的主要损失，因此除非我们处理了
+it Explorer this knows where you cost your damage after your building and you
+
+214
+00:09:52,580 --> 00:09:58,190
+您在建筑物建造后所遭受的损失以及您的主要损失，因此除非我们处理了
+your damage after your building and you their major cost so unless we get to our
+
+215
+00:09:58,190 --> 00:09:58,200
+您在建筑物建造后所遭受的损失以及您的主要损失，因此除非我们处理了
+their major cost so unless we get to our model the next stop is to connect up to
+
+216
+00:09:58,200 --> 00:10:01,640
+建立下一站的模型是连接起来以找到条件概率
+their major cost so unless we get to our model the next stop is to connect up to
+
+217
+00:10:01,640 --> 00:10:04,880
+建立下一站的模型是连接起来以找到条件概率
+model the next stop is to connect up to find the conditional probability
+
+218
+00:10:04,880 --> 00:10:04,890
+建立下一站的模型是连接起来以找到条件概率
+find the conditional probability distribution and and here we do another
+
+219
+00:10:04,890 --> 00:10:08,630
+分布，在这里我们做另一个假设，我们假设每个
+find the conditional probability distribution and and here we do another
+
+220
+00:10:08,630 --> 00:10:11,270
+分布，在这里我们做另一个假设，我们假设每个
+distribution and and here we do another another assumption that we assume each
+
+221
+00:10:11,270 --> 00:10:11,280
+分布，在这里我们做另一个假设，我们假设每个
+another assumption that we assume each node has finite state and and we assume
+
+222
+00:10:11,280 --> 00:10:16,220
+节点具有有限状态，并且我们还假设北跟随
+another assumption that we assume each node has finite state and and we assume
+
+223
+00:10:16,220 --> 00:10:19,510
+节点具有有限状态，并且我们还假设北跟随
+node has finite state and and we assume I also assume that the North follows of
+
+224
+00:10:19,510 --> 00:10:19,520
+节点具有有限状态，并且我们还假设北跟随
+I also assume that the North follows of discrete distributed instead of causing
+
+225
+00:10:19,520 --> 00:10:23,920
+离散分布而不是导致分布器也只是获得此值，因为
+I also assume that the North follows of discrete distributed instead of causing
+
+226
+00:10:23,920 --> 00:10:29,300
+离散分布而不是导致分布器也只是获得此值，因为
+discrete distributed instead of causing distributor also just get this value as
+
+227
+00:10:29,300 --> 00:10:29,310
+离散分布而不是导致分布器也只是获得此值，因为
+distributor also just get this value as this probability distribution value from
+
+228
+00:10:29,310 --> 00:10:31,910
+一些文献研究机构的这种概率分布值
+distributor also just get this value as this probability distribution value from
+
+229
+00:10:31,910 --> 00:10:34,280
+一些文献研究机构的这种概率分布值
+this probability distribution value from some literature research government
+
+230
+00:10:34,280 --> 00:10:34,290
+一些文献研究机构的这种概率分布值
+some literature research government report or historical record just like
+
+231
+00:10:34,290 --> 00:10:38,000
+报告或历史记录就像是麦克风一样，所以选择了我在这里选择的
+some literature research government report or historical record just like
+
+232
+00:10:38,000 --> 00:10:41,960
+报告或历史记录就像是麦克风一样，所以选择了我在这里选择的
+report or historical record just like it's a mic so chose I chose here however
+
+233
+00:10:41,960 --> 00:10:41,970
+报告或历史记录就像是麦克风一样，所以选择了我在这里选择的
+it's a mic so chose I chose here however unfortunately those data I know it's
+
+234
+00:10:41,970 --> 00:10:45,260
+不幸的是，我知道这些数据非常重要，但是现在这些数据
+it's a mic so chose I chose here however unfortunately those data I know it's
+
+235
+00:10:45,260 --> 00:10:48,320
+不幸的是，我知道这些数据非常重要，但是现在这些数据
+unfortunately those data I know it's very important but this data is now
+
+236
+00:10:48,320 --> 00:10:48,330
+不幸的是，我知道这些数据非常重要，但是现在这些数据
+very important but this data is now we're not given in the paper that gave
+
+237
+00:10:48,330 --> 00:10:51,650
+这篇论文并没有给我们一个钦佩者竞争的机会，
+very important but this data is now we're not given in the paper that gave
+
+238
+00:10:51,650 --> 00:10:53,720
+这篇论文并没有给我们一个钦佩者竞争的机会，
+we're not given in the paper that gave me an admirer to compete to do to
+
+239
+00:10:53,720 --> 00:10:53,730
+这篇论文并没有给我们一个钦佩者竞争的机会，
+me an admirer to compete to do to continue so and forced us to do some
+
+240
+00:10:53,730 --> 00:10:56,990
+继续这样做，迫使我们做一些简化并做一些假设
+me an admirer to compete to do to continue so and forced us to do some
+
+241
+00:10:56,990 --> 00:10:59,630
+继续这样做，迫使我们做一些简化并做一些假设
+continue so and forced us to do some simplification and do some assumptions
+
+242
+00:10:59,630 --> 00:10:59,640
+继续这样做，迫使我们做一些简化并做一些假设
+simplification and do some assumptions and try to take this hope
+
+243
+00:10:59,640 --> 00:11:05,000
+并尝试抱这个希望
+simplification and do some assumptions and try to take this hope
+
+244
+00:11:05,000 --> 00:11:05,790
+在这里，让我们再次回到图形模型，现在我们必须
+simplification and do some assumptions and try to take this hope
+
+245
+00:11:05,790 --> 00:11:05,800
+在这里，让我们再次回到图形模型，现在我们必须
+
+
+246
+00:11:05,800 --> 00:11:13,619
+在这里，让我们再次回到图形模型，现在我们必须
+here here let's come back to the graphic model again and and now we have to
+
+247
+00:11:13,619 --> 00:11:13,629
+在这里，让我们再次回到图形模型，现在我们必须
+model again and and now we have to everything ourselves first I want to do
+
+248
+00:11:13,629 --> 00:11:16,199
+首先要自己做所有事情，我想对此图形做一些简化
+model again and and now we have to everything ourselves first I want to do
+
+249
+00:11:16,199 --> 00:11:19,139
+首先要自己做所有事情，我想对此图形做一些简化
+everything ourselves first I want to do some simplification for this graphical
+
+250
+00:11:19,139 --> 00:11:19,149
+首先要自己做所有事情，我想对此图形做一些简化
+some simplification for this graphical model if you example when you when you
+
+251
+00:11:19,149 --> 00:11:23,669
+如果您以身作则，当您看到决定的时候，我们将进行建模，我们将
+some simplification for this graphical model if you example when you when you
+
+252
+00:11:23,669 --> 00:11:26,249
+如果您以身作则，当您看到决定的时候，我们将进行建模，我们将
+model if you example when you when you see when you're deciding and we will
+
+253
+00:11:26,249 --> 00:11:26,259
+如果您以身作则，当您看到决定的时候，我们将进行建模，我们将
+see when you're deciding and we will decide that is prefigured probability or
+
+254
+00:11:26,259 --> 00:11:28,679
+决定是预先确定的概率或建筑物损坏，您可以看到
+see when you're deciding and we will decide that is prefigured probability or
+
+255
+00:11:28,679 --> 00:11:31,109
+决定是预先确定的概率或建筑物损坏，您可以看到
+decide that is prefigured probability or for the building damage you can see that
+
+256
+00:11:31,109 --> 00:11:31,119
+决定是预先确定的概率或建筑物损坏，您可以看到
+for the building damage you can see that it has swore parent 1 2 3 4 which I'm
+
+257
+00:11:31,119 --> 00:11:34,410
+它发誓父母1 2 3 4我是每个父母都有不同的状态
+for the building damage you can see that it has swore parent 1 2 3 4 which I'm
+
+258
+00:11:34,410 --> 00:11:36,479
+它发誓父母1 2 3 4我是每个父母都有不同的状态
+it has swore parent 1 2 3 4 which I'm the each parent has different state
+
+259
+00:11:36,479 --> 00:11:36,489
+它发誓父母1 2 3 4我是每个父母都有不同的状态
+the each parent has different state which means that that if you want to
+
+260
+00:11:36,489 --> 00:11:39,030
+这意味着，如果您要创建一个表，
+the each parent has different state which means that that if you want to
+
+261
+00:11:39,030 --> 00:11:40,829
+这意味着，如果您要创建一个表，
+which means that that if you want to create a table that will be a really
+
+262
+00:11:40,829 --> 00:11:40,839
+这意味着，如果您要创建一个表，
+create a table that will be a really huge large table you have to input a lot
+
+263
+00:11:40,839 --> 00:11:43,289
+巨大的大表，您必须输入大量数据，而您处于高位
+create a table that will be a really huge large table you have to input a lot
+
+264
+00:11:43,289 --> 00:11:46,619
+巨大的大表，您必须输入大量数据，而您处于高位
+huge large table you have to input a lot of data and you are you are under high
+
+265
+00:11:46,619 --> 00:11:46,629
+巨大的大表，您必须输入大量数据，而您处于高位
+of data and you are you are under high risk to make mistake and actually I made
+
+266
+00:11:46,629 --> 00:11:50,039
+冒犯错误的风险，实际上我犯了这个错误，但有趣的是，您去找他
+of data and you are you are under high risk to make mistake and actually I made
+
+267
+00:11:50,039 --> 00:11:54,419
+冒犯错误的风险，实际上我犯了这个错误，但有趣的是，您去找他
+risk to make mistake and actually I made that and but interesting you go to his
+
+268
+00:11:54,419 --> 00:11:54,429
+冒犯错误的风险，实际上我犯了这个错误，但有趣的是，您去找他
+that and but interesting you go to his paper and check that the beauty talk and
+
+269
+00:11:54,429 --> 00:11:57,509
+纸并检查美容谈话和收缩是否几乎相似
+that and but interesting you go to his paper and check that the beauty talk and
+
+270
+00:11:57,509 --> 00:12:01,369
+纸并检查美容谈话和收缩是否几乎相似
+paper and check that the beauty talk and the contraction has almost similar
+
+271
+00:12:01,369 --> 00:12:01,379
+纸并检查美容谈话和收缩是否几乎相似
+the contraction has almost similar similar meanings so for simple to
+
+272
+00:12:01,379 --> 00:12:04,919
+具有相似的含义，因此为了简化此模型，我将其合并
+the contraction has almost similar similar meanings so for simple to
+
+273
+00:12:04,919 --> 00:12:09,720
+具有相似的含义，因此为了简化此模型，我将其合并
+similar meanings so for simple to simplify this this model I just combine
+
+274
+00:12:09,720 --> 00:12:09,730
+具有相似的含义，因此为了简化此模型，我将其合并
+simplify this this model I just combine them together combined together and then
+
+275
+00:12:09,730 --> 00:12:14,100
+他们一起结合在一起，然后假设火智者知道我会
+simplify this this model I just combine them together combined together and then
+
+276
+00:12:14,100 --> 00:12:19,039
+他们一起结合在一起，然后假设火智者知道我会
+them together combined together and then assume that the the Firewise know I'll
+
+277
+00:12:19,039 --> 00:12:19,049
+他们一起结合在一起，然后假设火智者知道我会
+assume that the the Firewise know I'll have three states inside and the yellow
+
+278
+00:12:19,049 --> 00:12:22,769
+里面有三个状态，黄色节点里面有牙膏，所以
+assume that the the Firewise know I'll have three states inside and the yellow
+
+279
+00:12:22,769 --> 00:12:27,289
+里面有三个状态，黄色节点里面有牙膏，所以
+have three states inside and the yellow node has toothpaste inside so that's
+
+280
+00:12:27,289 --> 00:12:27,299
+里面有三个状态，黄色节点里面有牙膏，所以
+node has toothpaste inside so that's fair enough but and not gave me a
+
+281
+00:12:27,299 --> 00:12:30,869
+足够公平，但并没有给我一个噩梦，以违抗cpt以及
+node has toothpaste inside so that's fair enough but and not gave me a
+
+282
+00:12:30,869 --> 00:12:36,239
+足够公平，但并没有给我一个噩梦，以违抗cpt以及
+fair enough but and not gave me a nightmare to defy the cpt and also the
+
+283
+00:12:36,239 --> 00:12:36,249
+足够公平，但并没有给我一个噩梦，以违抗cpt以及
+nightmare to defy the cpt and also the earth and independence assumption to
+
+284
+00:12:36,249 --> 00:12:38,429
+地球和独立性假设，以简化或主持这样的事
+nightmare to defy the cpt and also the earth and independence assumption to
+
+285
+00:12:38,429 --> 00:12:42,900
+地球和独立性假设，以简化或主持这样的事
+earth and independence assumption to simplify or chair or so okay like that
+
+286
+00:12:42,900 --> 00:12:42,910
+地球和独立性假设，以简化或主持这样的事
+simplify or chair or so okay like that KB here's a very example is a very
+
+287
+00:12:42,910 --> 00:12:46,350
+KB这是一个非常示例，它是CPT的一个非常简单的示例，
+simplify or chair or so okay like that KB here's a very example is a very
+
+288
+00:12:46,350 --> 00:12:49,829
+KB这是一个非常示例，它是CPT的一个非常简单的示例，
+KB here's a very example is a very simple example for one for CPT for the
+
+289
+00:12:49,829 --> 00:12:49,839
+KB这是一个非常示例，它是CPT的一个非常简单的示例，
+simple example for one for CPT for the positional
+
+290
+00:12:49,839 --> 00:12:51,659
+位置这是灭火，它具有
+simple example for one for CPT for the positional
+
+291
+00:12:51,659 --> 00:12:54,090
+位置这是灭火，它具有
+positional this is a fire suppression and it has
+
+292
+00:12:54,090 --> 00:12:54,100
+位置这是灭火，它具有
+this is a fire suppression and it has three parents and fire intensity this by
+
+293
+00:12:54,100 --> 00:12:56,730
+三个父母，火强度，根据实际健康状况，我将其定义为三个状态
+this is a fire suppression and it has three parents and fire intensity this by
+
+294
+00:12:56,730 --> 00:12:59,519
+三个父母，火强度，根据实际健康状况，我将其定义为三个状态
+three parents and fire intensity this by real health I define it as three states
+
+295
+00:12:59,519 --> 00:12:59,529
+三个父母，火强度，根据实际健康状况，我将其定义为三个状态
+real health I define it as three states and this too has has to stay inside so
+
+296
+00:12:59,529 --> 00:13:05,429
+这也必须留在里面，所以你
+real health I define it as three states and this too has has to stay inside so
+
+297
+00:13:05,429 --> 00:13:06,370
+这也必须留在里面，所以你
+and this too has has to stay inside so you
+
+298
+00:13:06,370 --> 00:13:06,380
+这也必须留在里面，所以你
+buuuut this table you can sleep on the consider different states of different
+
+299
+00:13:06,380 --> 00:13:12,970
+buuuut这张桌子上可以睡，考虑不同状态的不同
+buuuut this table you can sleep on the consider different states of different
+
+300
+00:13:12,970 --> 00:13:12,980
+buuuut这张桌子上可以睡，考虑不同状态的不同
+consider different states of different parents and each island each elements in
+
+301
+00:13:12,980 --> 00:13:16,780
+父母和每个岛上表中的每个元素我都给了我们合理的
+consider different states of different parents and each island each elements in
+
+302
+00:13:16,780 --> 00:13:18,520
+父母和每个岛上表中的每个元素我都给了我们合理的
+parents and each island each elements in the table I just gave our reasonable
+
+303
+00:13:18,520 --> 00:13:18,530
+父母和每个岛上表中的每个元素我都给了我们合理的
+the table I just gave our reasonable reasonable cats for the probability the
+
+304
+00:13:18,530 --> 00:13:21,760
+合理的猫对于概率，合理的含义是
+the table I just gave our reasonable reasonable cats for the probability the
+
+305
+00:13:21,760 --> 00:13:24,190
+合理的猫对于概率，合理的含义是
+reasonable cats for the probability the the meaning of reasonable is that for
+
+306
+00:13:24,190 --> 00:13:24,200
+合理的猫对于概率，合理的含义是
+the meaning of reasonable is that for example if you have a really low fire
+
+307
+00:13:24,200 --> 00:13:25,930
+例如，如果您的火势非常低并且建筑物正在磨损
+the meaning of reasonable is that for example if you have a really low fire
+
+308
+00:13:25,930 --> 00:13:28,630
+例如，如果您的火势非常低并且建筑物正在磨损
+example if you have a really low fire intensity and your building is wearing
+
+309
+00:13:28,630 --> 00:13:28,640
+例如，如果您的火势非常低并且建筑物正在磨损
+intensity and your building is wearing the buildings very close to the fire
+
+310
+00:13:28,640 --> 00:13:31,120
+距离消防局非常近的建筑物，您被真正的包围
+intensity and your building is wearing the buildings very close to the fire
+
+311
+00:13:31,120 --> 00:13:34,570
+距离消防局非常近的建筑物，您被真正的包围
+the buildings very close to the fire station and you are surrounded by really
+
+312
+00:13:34,570 --> 00:13:34,580
+距离消防局非常近的建筑物，您被真正的包围
+station and you are surrounded by really at once the vault system which means to
+
+313
+00:13:34,580 --> 00:13:37,180
+马上，对于角色密度来说，金库系统非常高，您将
+station and you are surrounded by really at once the vault system which means to
+
+314
+00:13:37,180 --> 00:13:40,000
+马上，对于角色密度来说，金库系统非常高，您将
+at once the vault system which means to the role density is very high you will
+
+315
+00:13:40,000 --> 00:13:40,010
+马上，对于角色密度来说，金库系统非常高，您将
+the role density is very high you will fight you will get better care better
+
+316
+00:13:40,010 --> 00:13:42,670
+战斗，消防部门会为您提供更好的护理和更好的健康
+the role density is very high you will fight you will get better care better
+
+317
+00:13:42,670 --> 00:13:45,220
+战斗，消防部门会为您提供更好的护理和更好的健康
+fight you will get better care better health from the fire department which
+
+318
+00:13:45,220 --> 00:13:45,230
+战斗，消防部门会为您提供更好的护理和更好的健康
+health from the fire department which means that the fire control could be
+
+319
+00:13:45,230 --> 00:13:47,820
+意味着火力控制可以是成功的，也可以是中等的，而不是差的
+health from the fire department which means that the fire control could be
+
+320
+00:13:47,820 --> 00:13:52,030
+意味着火力控制可以是成功的，也可以是中等的，而不是差的
+means that the fire control could be successful or medium instead of poor so
+
+321
+00:13:52,030 --> 00:13:52,040
+意味着火力控制可以是成功的，也可以是中等的，而不是差的
+successful or medium instead of poor so for example this case I just gave the
+
+322
+00:13:52,040 --> 00:13:54,640
+例如，在这种情况下，我只是给穷人穷人，四个州可以
+successful or medium instead of poor so for example this case I just gave the
+
+323
+00:13:54,640 --> 00:13:57,250
+例如，在这种情况下，我只是给穷人穷人，四个州可以
+for example this case I just gave the poor poor can the four states has a
+
+324
+00:13:57,250 --> 00:13:57,260
+例如，在这种情况下，我只是给穷人穷人，四个州可以
+poor poor can the four states has a really low I give him a really low
+
+325
+00:13:57,260 --> 00:13:59,740
+非常低，我给他的概率非常低，并且控制了中位数
+poor poor can the four states has a really low I give him a really low
+
+326
+00:13:59,740 --> 00:14:02,380
+非常低，我给他的概率非常低，并且控制了中位数
+really low I give him a really low probability and gave the medians control
+
+327
+00:14:02,380 --> 00:14:02,390
+非常低，我给他的概率非常低，并且控制了中位数
+probability and gave the medians control and successful control a really high
+
+328
+00:14:02,390 --> 00:14:04,350
+成功控制的可能性非常高，所以现在我们建立或
+probability and gave the medians control and successful control a really high
+
+329
+00:14:04,350 --> 00:14:11,770
+成功控制的可能性非常高，所以现在我们建立或
+and successful control a really high probability so now we built our or
+
+330
+00:14:11,770 --> 00:14:11,780
+成功控制的可能性非常高，所以现在我们建立或
+probability so now we built our or graphic model and also also have our
+
+331
+00:14:11,780 --> 00:14:15,240
+图形模型，并且每个模型都有我们的概率分布表
+probability so now we built our or graphic model and also also have our
+
+332
+00:14:15,240 --> 00:14:17,740
+图形模型，并且每个模型都有我们的概率分布表
+graphic model and also also have our probability distribution table for each
+
+333
+00:14:17,740 --> 00:14:17,750
+图形模型，并且每个模型都有我们的概率分布表
+probability distribution table for each note the next stop Ahmet life is to make
+
+334
+00:14:17,750 --> 00:14:21,760
+请注意，Ahmet生活的下一站是在这里制造所有推理引擎。
+probability distribution table for each note the next stop Ahmet life is to make
+
+335
+00:14:21,760 --> 00:14:24,910
+请注意，Ahmet生活的下一站是在这里制造所有推理引擎。
+note the next stop Ahmet life is to make all the inference engine here in this
+
+336
+00:14:24,910 --> 00:14:24,920
+请注意，Ahmet生活的下一站是在这里制造所有推理引擎。
+all the inference engine here in this problem which 408 y31 see the first line
+
+337
+00:14:24,920 --> 00:14:28,900
+408 y31看到的第一行是连接树和推理引擎的问题
+all the inference engine here in this problem which 408 y31 see the first line
+
+338
+00:14:28,900 --> 00:14:31,600
+408 y31看到的第一行是连接树和推理引擎的问题
+problem which 408 y31 see the first line is the junction tree an inference engine
+
+339
+00:14:31,600 --> 00:14:31,610
+408 y31看到的第一行是连接树和推理引擎的问题
+is the junction tree an inference engine and neither one has to be belief
+
+340
+00:14:31,610 --> 00:14:33,730
+而且没有人必须是信仰传播引擎，我们已经谈论了很多
+is the junction tree an inference engine and neither one has to be belief
+
+341
+00:14:33,730 --> 00:14:36,820
+而且没有人必须是信仰传播引擎，我们已经谈论了很多
+and neither one has to be belief propagation engine we have talked a lot
+
+342
+00:14:36,820 --> 00:14:36,830
+而且没有人必须是信仰传播引擎，我们已经谈论了很多
+propagation engine we have talked a lot in the class and the tribe test allows
+
+343
+00:14:36,830 --> 00:14:39,400
+在课堂上，部落测试允许家庭作业，所以我不会讨论这个
+propagation engine we have talked a lot in the class and the tribe test allows
+
+344
+00:14:39,400 --> 00:14:41,890
+在课堂上，部落测试允许家庭作业，所以我不会讨论这个
+in the class and the tribe test allows in the homework so I won't discuss this
+
+345
+00:14:41,890 --> 00:14:41,900
+在课堂上，部落测试允许家庭作业，所以我不会讨论这个
+in the homework so I won't discuss this too much there and there is another
+
+346
+00:14:41,900 --> 00:14:44,260
+那里太多了，还有一点滞留可以使用
+in the homework so I won't discuss this too much there and there is another
+
+347
+00:14:44,260 --> 00:14:47,890
+那里太多了，还有一点滞留可以使用
+too much there and there is another little bit detention to use to use
+
+348
+00:14:47,890 --> 00:14:47,900
+那里太多了，还有一点滞留可以使用
+little bit detention to use to use sampling engine called likelihood
+
+349
+00:14:47,900 --> 00:14:50,350
+采样引擎称为似然等待立点铰接
+little bit detention to use to use sampling engine called likelihood
+
+350
+00:14:50,350 --> 00:14:53,500
+采样引擎称为似然等待立点铰接
+sampling engine called likelihood waiting standpoint hinging
+
+351
+00:14:53,500 --> 00:14:53,510
+采样引擎称为似然等待立点铰接
+waiting standpoint hinging so it's a kind of temporal inking the
+
+352
+00:14:53,510 --> 00:14:55,810
+所以这是一种暂时的墨水，样本引擎的基本思想是
+waiting standpoint hinging so it's a kind of temporal inking the
+
+353
+00:14:55,810 --> 00:14:58,000
+所以这是一种暂时的墨水，样本引擎的基本思想是
+so it's a kind of temporal inking the basic idea of sample engines are you
+
+354
+00:14:58,000 --> 00:14:58,010
+所以这是一种暂时的墨水，样本引擎的基本思想是
+basic idea of sample engines are you just the cheapest and whole handle turns
+
+355
+00:14:58,010 --> 00:15:01,060
+只是最便宜和完整的转弯，它们来自您的贝叶斯
+basic idea of sample engines are you just the cheapest and whole handle turns
+
+356
+00:15:01,060 --> 00:15:04,540
+只是最便宜和完整的转弯，它们来自您的贝叶斯
+just the cheapest and whole handle turns they're from your from your Bayesian
+
+357
+00:15:04,540 --> 00:15:04,550
+只是最便宜和完整的转弯，它们来自您的贝叶斯
+they're from your from your Bayesian network and to compute the probability
+
+358
+00:15:04,550 --> 00:15:07,150
+网络并计算此庙宇计算机古庙宇的概率
+they're from your from your Bayesian network and to compute the probability
+
+359
+00:15:07,150 --> 00:15:11,980
+网络并计算此庙宇计算机古庙宇的概率
+network and to compute the probability of this temple computer ancient temple
+
+360
+00:15:11,980 --> 00:15:11,990
+网络并计算此庙宇计算机古庙宇的概率
+of this temple computer ancient temple Allah keeps temple in now if you get
+
+361
+00:15:11,990 --> 00:15:14,380
+如果您获得足够的样本，安拉将使神殿现在处于最终状态
+of this temple computer ancient temple Allah keeps temple in now if you get
+
+362
+00:15:14,380 --> 00:15:17,050
+如果您获得足够的样本，安拉将使神殿现在处于最终状态
+Allah keeps temple in now if you get enough sample the final distribution of
+
+363
+00:15:17,050 --> 00:15:17,060
+如果您获得足够的样本，安拉将使神殿现在处于最终状态
+enough sample the final distribution of your sampling would be close to the true
+
+364
+00:15:17,060 --> 00:15:20,020
+您的抽样将接近基本分布的真实分布
+enough sample the final distribution of your sampling would be close to the true
+
+365
+00:15:20,020 --> 00:15:22,810
+您的抽样将接近基本分布的真实分布
+your sampling would be close to the true distribution that's a basic idea of
+
+366
+00:15:22,810 --> 00:15:22,820
+您的抽样将接近基本分布的真实分布
+distribution that's a basic idea of sampling and likelihood likelihood
+
+367
+00:15:22,820 --> 00:15:27,010
+采样和似然似然等待采样完成
+distribution that's a basic idea of sampling and likelihood likelihood
+
+368
+00:15:27,010 --> 00:15:29,770
+采样和似然似然等待采样完成
+sampling and likelihood likelihood waiting sampling is done it will be
+
+369
+00:15:29,770 --> 00:15:29,780
+采样和似然似然等待采样完成
+waiting sampling is done it will be updated sampling work it's just we have
+
+370
+00:15:29,780 --> 00:15:33,640
+更新的采样工作只是我们有证据，因此需要
+waiting sampling is done it will be updated sampling work it's just we have
+
+371
+00:15:33,640 --> 00:15:36,160
+更新的采样工作只是我们有证据，因此需要
+updated sampling work it's just we have the evidence and it takes to have this
+
+372
+00:15:36,160 --> 00:15:36,170
+更新的采样工作只是我们有证据，因此需要
+the evidence and it takes to have this variable and only sample the one above
+
+373
+00:15:36,170 --> 00:15:39,640
+变量，仅是上面的一个是可穿戴变量，与
+the evidence and it takes to have this variable and only sample the one above
+
+374
+00:15:39,640 --> 00:15:42,130
+变量，仅是上面的一个是可穿戴变量，与
+variable and only sample the one above is a wearable variables not related to
+
+375
+00:15:42,130 --> 00:15:42,140
+变量，仅是上面的一个是可穿戴变量，与
+is a wearable variables not related to the average not only samples and man
+
+376
+00:15:42,140 --> 00:15:45,220
+平均不仅是样本和人为证据变量，而且每个样本
+is a wearable variables not related to the average not only samples and man
+
+377
+00:15:45,220 --> 00:15:49,660
+平均不仅是样本和人为证据变量，而且每个样本
+the average not only samples and man evidence variables and for each sample
+
+378
+00:15:49,660 --> 00:15:49,670
+平均不仅是样本和人为证据变量，而且每个样本
+evidence variables and for each sample we just multiply it by the weight which
+
+379
+00:15:49,670 --> 00:15:53,560
+我们将其乘以权重就可以了，我已经使用了很多文献资料
+evidence variables and for each sample we just multiply it by the weight which
+
+380
+00:15:53,560 --> 00:15:57,910
+我们将其乘以权重就可以了，我已经使用了很多文献资料
+we just multiply it by the weight which is fine I've used a lot of literature's
+
+381
+00:15:57,910 --> 00:15:57,920
+我们将其乘以权重就可以了，我已经使用了很多文献资料
+is fine I've used a lot of literature's talk about the likelihood waiting
+
+382
+00:15:57,920 --> 00:16:00,400
+谈论可能性等待等待等待等待推论和
+is fine I've used a lot of literature's talk about the likelihood waiting
+
+383
+00:16:00,400 --> 00:16:04,200
+谈论可能性等待等待等待等待推论和
+talk about the likelihood waiting waiting waiting waiting inference and
+
+384
+00:16:04,200 --> 00:16:04,210
+谈论可能性等待等待等待等待推论和
+waiting waiting waiting inference and the sums up term are very complicated
+
+385
+00:16:04,210 --> 00:16:07,030
+总结期非常复杂，这里包含很多信息
+waiting waiting waiting inference and the sums up term are very complicated
+
+386
+00:16:07,030 --> 00:16:10,270
+总结期非常复杂，这里包含很多信息
+the sums up term are very complicated and contain a lot of information here I
+
+387
+00:16:10,270 --> 00:16:10,280
+总结期非常复杂，这里包含很多信息
+and contain a lot of information here I adjust the last day introduced by using
+
+388
+00:16:10,280 --> 00:16:13,390
+通过使用一个简单的示例来调整最后一天的介绍，让我们回来
+and contain a lot of information here I adjust the last day introduced by using
+
+389
+00:16:13,390 --> 00:16:18,940
+通过使用一个简单的示例来调整最后一天的介绍，让我们回来
+adjust the last day introduced by using a simple simple example let's come back
+
+390
+00:16:18,940 --> 00:16:18,950
+通过使用一个简单的示例来调整最后一天的介绍，让我们回来
+a simple simple example let's come back our cream-coloured sprinkler model we
+
+391
+00:16:18,950 --> 00:16:23,770
+我们的奶油色洒水模型，我们担心熟悉的垃圾
+a simple simple example let's come back our cream-coloured sprinkler model we
+
+392
+00:16:23,770 --> 00:16:25,330
+我们的奶油色洒水模型，我们担心熟悉的垃圾
+our cream-coloured sprinkler model we are which we are worried familiar waste
+
+393
+00:16:25,330 --> 00:16:25,340
+我们的奶油色洒水模型，我们担心熟悉的垃圾
+are which we are worried familiar waste so and assume that we are required to
+
+394
+00:16:25,340 --> 00:16:29,350
+因此，假设我们需要计算R的R的概率，其中
+are which we are worried familiar waste so and assume that we are required to
+
+395
+00:16:29,350 --> 00:16:32,680
+因此，假设我们需要计算R的R的概率，其中
+so and assume that we are required to compute the probability of R of R which
+
+396
+00:16:32,680 --> 00:16:32,690
+因此，假设我们需要计算R的R的概率，其中
+compute the probability of R of R which is ring given as is true that cream
+
+397
+00:16:32,690 --> 00:16:35,440
+给出的戒指是正确的，奶油色是2，白色的草是真的
+compute the probability of R of R which is ring given as is true that cream
+
+398
+00:16:35,440 --> 00:16:37,630
+给出的戒指是正确的，奶油色是2，白色的草是真的
+is ring given as is true that cream color is 2 and the white grass is true
+
+399
+00:16:37,630 --> 00:16:37,640
+给出的戒指是正确的，奶油色是2，白色的草是真的
+color is 2 and the white grass is true and let's start or simply first wish you
+
+400
+00:16:37,640 --> 00:16:41,650
+让我们开始或只是简单地希望您简单地看到质量就没有了
+color is 2 and the white grass is true and let's start or simply first wish you
+
+401
+00:16:41,650 --> 00:16:46,300
+让我们开始或只是简单地希望您简单地看到质量就没有了
+and let's start or simply first wish you the simple see the quality there is no
+
+402
+00:16:46,300 --> 00:16:46,310
+让我们开始或只是简单地希望您简单地看到质量就没有了
+the simple see the quality there is no country and say we just assume that we
+
+403
+00:16:46,310 --> 00:16:49,090
+国家，并说我们只是假设我们可以称其为真，请
+the simple see the quality there is no country and say we just assume that we
+
+404
+00:16:49,090 --> 00:16:53,830
+国家，并说我们只是假设我们可以称其为真，请
+country and say we just assume that we can call it as true which please
+
+405
+00:16:53,830 --> 00:16:53,840
+国家，并说我们只是假设我们可以称其为真，请
+can call it as true which please what which is plastic
+
+406
+00:16:53,840 --> 00:16:56,660
+什么是可塑的，以及妻子在我们决定时的感觉
+can call it as true which please what which is plastic
+
+407
+00:16:56,660 --> 00:16:59,840
+什么是可塑的，以及妻子在我们决定时的感觉
+what which is plastic and the sense this wife's decide when we
+
+408
+00:16:59,840 --> 00:16:59,850
+什么是可塑的，以及妻子在我们决定时的感觉
+and the sense this wife's decide when we will next with simple the simple sighs
+
+409
+00:16:59,850 --> 00:17:02,540
+接下来，我们将以简单的简单叹息来介绍，既然有了威士忌风格，我们就可以
+and the sense this wife's decide when we will next with simple the simple sighs
+
+410
+00:17:02,540 --> 00:17:05,930
+接下来，我们将以简单的简单叹息来介绍，既然有了威士忌风格，我们就可以
+will next with simple the simple sighs so since whiskey style we have we can
+
+411
+00:17:05,930 --> 00:17:05,940
+接下来，我们将以简单的简单叹息来介绍，既然有了威士忌风格，我们就可以
+so since whiskey style we have we can only offer to like our eyes from this
+
+412
+00:17:05,940 --> 00:17:08,720
+只提供从右后方喜欢我们的眼睛的感觉，但是冰厚了
+so since whiskey style we have we can only offer to like our eyes from this
+
+413
+00:17:08,720 --> 00:17:14,600
+只提供从右后方喜欢我们的眼睛的感觉，但是冰厚了
+only offer to like our eyes from this right back however the ice is thick by
+
+414
+00:17:14,600 --> 00:17:14,610
+只提供从右后方喜欢我们的眼睛的感觉，但是冰厚了
+right back however the ice is thick by the evidence which is true so we can
+
+415
+00:17:14,610 --> 00:17:17,510
+证据是真实的，所以我们只能在第一点上取得更大的成功
+right back however the ice is thick by the evidence which is true so we can
+
+416
+00:17:17,510 --> 00:17:20,510
+证据是真实的，所以我们只能在第一点上取得更大的成功
+the evidence which is true so we can only strike the wider of point one then
+
+417
+00:17:20,510 --> 00:17:20,520
+证据是真实的，所以我们只能在第一点上取得更大的成功
+only strike the wider of point one then because our first weight of point one
+
+418
+00:17:20,520 --> 00:17:23,090
+因为我们的第一个点的权重然后到达我们的实例的味道
+only strike the wider of point one then because our first weight of point one
+
+419
+00:17:23,090 --> 00:17:28,040
+因为我们的第一个点的权重然后到达我们的实例的味道
+because our first weight of point one and then come to our instance tastes
+
+420
+00:17:28,040 --> 00:17:28,050
+因为我们的第一个点的权重然后到达我们的实例的味道
+and then come to our instance tastes simple which is part so we can only like
+
+421
+00:17:28,050 --> 00:17:31,670
+很简单，这是一部分，因此我们只能喜欢此栏右框中的值，
+and then come to our instance tastes simple which is part so we can only like
+
+422
+00:17:31,670 --> 00:17:35,230
+很简单，这是一部分，因此我们只能喜欢此栏右框中的值，
+simple which is part so we can only like our values from this bar right box and
+
+423
+00:17:35,230 --> 00:17:35,240
+很简单，这是一部分，因此我们只能喜欢此栏右框中的值，
+our values from this bar right box and and there is no constraint on heart
+
+424
+00:17:35,240 --> 00:17:39,860
+对心脏没有任何约束，这意味着我们可以发送
+our values from this bar right box and and there is no constraint on heart
+
+425
+00:17:39,860 --> 00:17:41,360
+对心脏没有任何约束，这意味着我们可以发送
+and there is no constraint on heart which means that we can send off
+
+426
+00:17:41,360 --> 00:17:41,370
+对心脏没有任何约束，这意味着我们可以发送
+which means that we can send off whatever we want
+
+427
+00:17:41,370 --> 00:17:42,620
+我们想要的就是让我们假设简单的艺术是
+which means that we can send off whatever we want
+
+428
+00:17:42,620 --> 00:17:46,130
+我们想要的就是让我们假设简单的艺术是
+whatever we want let's assume that with simple art is
+
+429
+00:17:46,130 --> 00:17:46,140
+我们想要的就是让我们假设简单的艺术是
+let's assume that with simple art is true are true and then we move to
+
+430
+00:17:46,140 --> 00:17:50,320
+true是true，然后我们以表格为例，说我们的眼睛
+let's assume that with simple art is true are true and then we move to
+
+431
+00:17:50,320 --> 00:17:53,840
+true是true，然后我们以表格为例，说我们的眼睛
+true are true and then we move to example the table and says the our eyes
+
+432
+00:17:53,840 --> 00:17:53,850
+true是true，然后我们以表格为例，说我们的眼睛
+example the table and says the our eyes way is for that to be true
+
+433
+00:17:53,850 --> 00:17:56,300
+方式是使我们真实，我们的样本是真实的，然后回来
+example the table and says the our eyes way is for that to be true
+
+434
+00:17:56,300 --> 00:18:00,470
+方式是使我们真实，我们的样本是真实的，然后回来
+way is for that to be true our is sample to be true and come back
+
+435
+00:18:00,470 --> 00:18:00,480
+方式是使我们真实，我们的样本是真实的，然后回来
+our is sample to be true and come back to the evidence we record W to be true
+
+436
+00:18:00,480 --> 00:18:04,550
+证明我们将W记录为真，因此表只能是W
+our is sample to be true and come back to the evidence we record W to be true
+
+437
+00:18:04,550 --> 00:18:08,660
+证明我们将W记录为真，因此表只能是W
+to the evidence we record W to be true so because the table can be only only it
+
+438
+00:18:08,660 --> 00:18:08,670
+证明我们将W记录为真，因此表只能是W
+so because the table can be only only it can be only in 9.99
+
+439
+00:18:08,670 --> 00:18:11,120
+只能在9.99，而我们最终发现了另一种方式
+so because the table can be only only it can be only in 9.99
+
+440
+00:18:11,120 --> 00:18:13,880
+只能在9.99，而我们最终发现了另一种方式
+can be only in 9.99 and we caught another way finally our
+
+441
+00:18:13,880 --> 00:18:13,890
+只能在9.99，而我们最终发现了另一种方式
+and we caught another way finally our total weight is 0.1 multiplied 199 which
+
+442
+00:18:13,890 --> 00:18:17,750
+总重量是0.1乘以199，即今晚的0.09，我们只是
+and we caught another way finally our total weight is 0.1 multiplied 199 which
+
+443
+00:18:17,750 --> 00:18:22,660
+总重量是0.1乘以199，即今晚的0.09，我们只是
+total weight is 0.1 multiplied 199 which is 0.09 tonight and we just just
+
+444
+00:18:22,660 --> 00:18:22,670
+总重量是0.1乘以199，即今晚的0.09，我们只是
+is 0.09 tonight and we just just multiplied and just multiply our sample
+
+445
+00:18:22,670 --> 00:18:25,820
+乘以我们的样本，然后乘以这就是我们的样本乘以该权重
+is 0.09 tonight and we just just multiplied and just multiply our sample
+
+446
+00:18:25,820 --> 00:18:29,080
+乘以我们的样本，然后乘以这就是我们的样本乘以该权重
+multiplied and just multiply our sample with this is our sample by this weight
+
+447
+00:18:29,080 --> 00:18:29,090
+乘以我们的样本，然后乘以这就是我们的样本乘以该权重
+with this is our sample by this weight and then to a lot of iterations to trim
+
+448
+00:18:29,090 --> 00:18:34,310
+然后经过很多次迭代来精简您的工作，最后猫得到了结果
+with this is our sample by this weight and then to a lot of iterations to trim
+
+449
+00:18:34,310 --> 00:18:36,830
+然后经过很多次迭代来精简您的工作，最后猫得到了结果
+and then to a lot of iterations to trim your job and finally the cat's a result
+
+450
+00:18:36,830 --> 00:18:36,840
+然后经过很多次迭代来精简您的工作，最后猫得到了结果
+your job and finally the cat's a result of the final of probability and catch
+
+451
+00:18:36,840 --> 00:18:39,290
+最后的概率并抓住这一点，存在一些问题
+your job and finally the cat's a result of the final of probability and catch
+
+452
+00:18:39,290 --> 00:18:42,220
+最后的概率并抓住这一点，存在一些问题
+of the final of probability and catch this one there is some problem of
+
+453
+00:18:42,220 --> 00:18:42,230
+最后的概率并抓住这一点，存在一些问题
+this one there is some problem of likelihood waiting for example if you
+
+454
+00:18:42,230 --> 00:18:45,080
+似然等待，例如，如果您需要计算T的概率
+this one there is some problem of likelihood waiting for example if you
+
+455
+00:18:45,080 --> 00:18:48,410
+似然等待，例如，如果您需要计算T的概率
+likelihood waiting for example if you are required to compute probability of T
+
+456
+00:18:48,410 --> 00:18:48,420
+似然等待，例如，如果您需要计算T的概率
+are required to compute probability of T given I signed the are you are what
+
+457
+00:18:48,420 --> 00:18:51,200
+鉴于我签署的是你是你担心的东西，也许有时候
+are required to compute probability of T given I signed the are you are what
+
+458
+00:18:51,200 --> 00:18:54,010
+鉴于我签署的是你是你担心的东西，也许有时候
+given I signed the are you are what you're worried you can maybe sometimes
+
+459
+00:18:54,010 --> 00:18:54,020
+鉴于我签署的是你是你担心的东西，也许有时候
+you're worried you can maybe sometimes thousands thousands go well with
+
+460
+00:18:54,020 --> 00:18:57,070
+成千上万的证据
+you're worried you can maybe sometimes thousands thousands go well with
+
+461
+00:18:57,070 --> 00:18:58,600
+成千上万的证据
+thousands thousands go well with evidence
+
+462
+00:18:58,600 --> 00:18:58,610
+成千上万的证据
+evidence sans use the the U star U star sample
+
+463
+00:18:58,610 --> 00:19:01,690
+不使用U形星，U形星的样本，在这里您无需查看
+evidence sans use the the U star U star sample
+
+464
+00:19:01,690 --> 00:19:05,049
+不使用U形星，U形星的样本，在这里您无需查看
+sans use the the U star U star sample its sample to see here you don't need to
+
+465
+00:19:05,049 --> 00:19:05,059
+不使用U形星，U形星的样本，在这里您无需查看
+its sample to see here you don't need to think about the as your evidence which
+
+466
+00:19:05,059 --> 00:19:09,220
+考虑一下，作为您的证据，这是非常沉默的哦，是的，有一些
+its sample to see here you don't need to think about the as your evidence which
+
+467
+00:19:09,220 --> 00:19:13,330
+考虑一下，作为您的证据，这是非常沉默的哦，是的，有一些
+think about the as your evidence which is a silent awfully oh yeah there's some
+
+468
+00:19:13,330 --> 00:19:13,340
+考虑一下，作为您的证据，这是非常沉默的哦，是的，有一些
+is a silent awfully oh yeah there's some opted for the sampling for under some
+
+469
+00:19:13,340 --> 00:19:17,250
+选择了一些其他采样更改下的采样来修复它
+is a silent awfully oh yeah there's some opted for the sampling for under some
+
+470
+00:19:17,250 --> 00:19:20,710
+选择了一些其他采样更改下的采样来修复它
+opted for the sampling for under some some other sampling changings to fix it
+
+471
+00:19:20,710 --> 00:19:20,720
+选择了一些其他采样更改下的采样来修复它
+some other sampling changings to fix it problem which I won't talk here here's
+
+472
+00:19:20,720 --> 00:19:25,779
+这是我一生中得到的结果，我在这里不谈
+some other sampling changings to fix it problem which I won't talk here here's
+
+473
+00:19:25,779 --> 00:19:28,509
+这是我一生中得到的结果，我在这里不谈
+problem which I won't talk here here's the result I got from the my life and
+
+474
+00:19:28,509 --> 00:19:28,519
+这是我一生中得到的结果，我在这里不谈
+the result I got from the my life and this this part on the left-hand side I
+
+475
+00:19:28,519 --> 00:19:31,720
+这部分在左侧，我只是图片烧伤，我很少为零
+the result I got from the my life and this this part on the left-hand side I
+
+476
+00:19:31,720 --> 00:19:34,299
+这部分在左侧，我只是图片烧伤，我很少为零
+this this part on the left-hand side I just the picture burn I rare to be zero
+
+477
+00:19:34,299 --> 00:19:34,309
+这部分在左侧，我只是图片烧伤，我很少为零
+just the picture burn I rare to be zero point zero two zero point zero one
+
+478
+00:19:34,309 --> 00:19:37,570
+点零二零点零一公里平方
+just the picture burn I rare to be zero point zero two zero point zero one
+
+479
+00:19:37,570 --> 00:19:40,299
+点零二零点零一公里平方
+point zero two zero point zero one kilometer square and the changing the
+
+480
+00:19:40,299 --> 00:19:40,309
+点零二零点零一公里平方
+kilometer square and the changing the fire intensity the actual painting
+
+481
+00:19:40,309 --> 00:19:42,519
+火灾强度实际涂装成本的变化或
+kilometer square and the changing the fire intensity the actual painting
+
+482
+00:19:42,519 --> 00:19:47,200
+火灾强度实际涂装成本的变化或
+fire intensity the actual painting change for the cost or the cost that's
+
+483
+00:19:47,200 --> 00:19:47,210
+火灾强度实际涂装成本的变化或
+change for the cost or the cost that's because I assume last things as a higher
+
+484
+00:19:47,210 --> 00:19:51,340
+因为我认为最后一件事是因为火势较高
+change for the cost or the cost that's because I assume last things as a higher
+
+485
+00:19:51,340 --> 00:19:53,440
+因为我认为最后一件事是因为火势较高
+because I assume last things as a higher in fire intensity has a really really
+
+486
+00:19:53,440 --> 00:19:53,450
+因为我认为最后一件事是因为火势较高
+in fire intensity has a really really low very low probabilities and this part
+
+487
+00:19:53,450 --> 00:19:58,299
+低非常低的概率，这部分在右侧，我只是修复了
+in fire intensity has a really really low very low probabilities and this part
+
+488
+00:19:58,299 --> 00:20:01,840
+低非常低的概率，这部分在右侧，我只是修复了
+low very low probabilities and this part on the right hand side I just fix the
+
+489
+00:20:01,840 --> 00:20:01,850
+低非常低的概率，这部分在右侧，我只是修复了
+on the right hand side I just fix the fire intensity to be this one and the
+
+490
+00:20:01,850 --> 00:20:05,169
+火灾强度是这一和不断变化的高层美术师表现出的
+on the right hand side I just fix the fire intensity to be this one and the
+
+491
+00:20:05,169 --> 00:20:08,009
+火灾强度是这一和不断变化的高层美术师表现出的
+fire intensity to be this one and the changing the upper area artist showed
+
+492
+00:20:08,009 --> 00:20:08,019
+火灾强度是这一和不断变化的高层美术师表现出的
+changing the upper area artist showed generally those increasing trend as a
+
+493
+00:20:08,019 --> 00:20:12,490
+通常，随着燃烧面积的增加，这些增加的趋势使得
+changing the upper area artist showed generally those increasing trend as a
+
+494
+00:20:12,490 --> 00:20:14,500
+通常，随着燃烧面积的增加，这些增加的趋势使得
+generally those increasing trend as a function of burn area that makes the
+
+495
+00:20:14,500 --> 00:20:14,510
+通常，随着燃烧面积的增加，这些增加的趋势使得
+function of burn area that makes the instance if you have a fire intensity
+
+496
+00:20:14,510 --> 00:20:17,320
+例如，如果您有火势并且燃烧面积较大，那么您的结果
+function of burn area that makes the instance if you have a fire intensity
+
+497
+00:20:17,320 --> 00:20:20,529
+例如，如果您有火势并且燃烧面积较大，那么您的结果
+instance if you have a fire intensity and have a larger burn area your result
+
+498
+00:20:20,529 --> 00:20:20,539
+例如，如果您有火势并且燃烧面积较大，那么您的结果
+and have a larger burn area your result would be a little your cost will be a
+
+499
+00:20:20,539 --> 00:20:22,990
+会有点你的成本会有点大，这次民意调查也
+and have a larger burn area your result would be a little your cost will be a
+
+500
+00:20:22,990 --> 00:20:27,009
+会有点你的成本会有点大，这次民意调查也
+would be a little your cost will be a little bit large and this poll also
+
+501
+00:20:27,009 --> 00:20:27,019
+会有点你的成本会有点大，这次民意调查也
+little bit large and this poll also showed the photos do something for
+
+502
+00:20:27,019 --> 00:20:29,919
+展示了照片为我们所知道的不同推理引擎做了些什么
+little bit large and this poll also showed the photos do something for
+
+503
+00:20:29,919 --> 00:20:31,810
+展示了照片为我们所知道的不同推理引擎做了些什么
+showed the photos do something for different inference engines that we know
+
+504
+00:20:31,810 --> 00:20:31,820
+展示了照片为我们所知道的不同推理引擎做了些什么
+different inference engines that we know the junction Creek and of accurate
+
+505
+00:20:31,820 --> 00:20:33,909
+交界处的小河和精确的变化以及PD的发布和
+different inference engines that we know the junction Creek and of accurate
+
+506
+00:20:33,909 --> 00:20:37,120
+交界处的小河和精确的变化以及PD的发布和
+the junction Creek and of accurate changing and the PD publication and
+
+507
+00:20:37,120 --> 00:20:37,130
+交界处的小河和精确的变化以及PD的发布和
+changing and the PD publication and likely who waiting proximate engines you
+
+508
+00:20:37,130 --> 00:20:42,129
+可能是谁在等待附近的引擎，您可以看到这种情况下
+changing and the PD publication and likely who waiting proximate engines you
+
+509
+00:20:42,129 --> 00:20:44,139
+可能是谁在等待附近的引擎，您可以看到这种情况下
+likely who waiting proximate engines you can see that for this case the chance to
+
+510
+00:20:44,139 --> 00:20:44,149
+可能是谁在等待附近的引擎，您可以看到这种情况下
+can see that for this case the chance to be worthwhile where we always compared
+
+511
+00:20:44,149 --> 00:20:46,960
+值得在我们总是将其与您知道信念的交界处进行比较的地方
+can see that for this case the chance to be worthwhile where we always compared
+
+512
+00:20:46,960 --> 00:20:48,970
+值得在我们总是将其与您知道信念的交界处进行比较的地方
+be worthwhile where we always compared to the junction you know the belief
+
+513
+00:20:48,970 --> 00:20:48,980
+值得在我们总是将其与您知道信念的交界处进行比较的地方
+to the junction you know the belief complication works very well and there's
+
+514
+00:20:48,980 --> 00:20:51,100
+并发症非常有效，有一些
+to the junction you know the belief complication works very well and there's
+
+515
+00:20:51,100 --> 00:20:52,270
+并发症非常有效，有一些
+complication works very well and there's some
+
+516
+00:20:52,270 --> 00:20:52,280
+并发症非常有效，有一些
+some different but between the likely who to
+
+517
+00:20:52,280 --> 00:20:55,570
+有所不同，但可能在结点树的谁和这一信念之间
+some different but between the likely who to
+
+518
+00:20:55,570 --> 00:20:57,550
+有所不同，但可能在结点树的谁和这一信念之间
+different but between the likely who to the junction tree and this one belief
+
+519
+00:20:57,550 --> 00:20:57,560
+有所不同，但可能在结点树的谁和这一信念之间
+the junction tree and this one belief propagation works also worried well but
+
+520
+00:20:57,560 --> 00:20:59,440
+传播工作也很担心，但除了这里还可以
+the junction tree and this one belief propagation works also worried well but
+
+521
+00:20:59,440 --> 00:21:02,470
+传播工作也很担心，但除了这里还可以
+propagation works also worried well but except here okay
+
+522
+00:21:02,470 --> 00:21:02,480
+传播工作也很担心，但除了这里还可以
+except here okay the beautiful tools to the similar work
+
+523
+00:21:02,480 --> 00:21:05,770
+普拉达（Prada）类似作品的漂亮工具，但其中有成千上万个细胞
+except here okay the beautiful tools to the similar work
+
+524
+00:21:05,770 --> 00:21:09,190
+普拉达（Prada）类似作品的漂亮工具，但其中有成千上万个细胞
+the beautiful tools to the similar work Prada but all the thousands of cells in
+
+525
+00:21:09,190 --> 00:21:09,200
+普拉达（Prada）类似作品的漂亮工具，但其中有成千上万个细胞
+Prada but all the thousands of cells in on the island you can end up with this
+
+526
+00:21:09,200 --> 00:21:11,680
+在岛上，您甚至有可能在这种习俗中最终会遭受这种破坏的习俗
+Prada but all the thousands of cells in on the island you can end up with this
+
+527
+00:21:11,680 --> 00:21:14,590
+在岛上，您甚至有可能在这种习俗中最终会遭受这种破坏的习俗
+on the island you can end up with this damaged custom at might even to learn in
+
+528
+00:21:14,590 --> 00:21:14,600
+在岛上，您甚至有可能在这种习俗中最终会遭受这种破坏的习俗
+damaged custom at might even to learn in the project they also just separates
+
+529
+00:21:14,600 --> 00:21:18,010
+他们也只是将这个岛分割成9000个小岛的项目
+damaged custom at might even to learn in the project they also just separates
+
+530
+00:21:18,010 --> 00:21:21,490
+他们也只是将这个岛分割成9000个小岛的项目
+the project they also just separates this island to nine thousand little
+
+531
+00:21:21,490 --> 00:21:21,500
+他们也只是将这个岛分割成9000个小岛的项目
+this island to nine thousand little cells though I don't have enough time to
+
+532
+00:21:21,500 --> 00:21:24,460
+牢房，尽管我没有足够的时间去做爱尔兰菜
+this island to nine thousand little cells though I don't have enough time to
+
+533
+00:21:24,460 --> 00:21:26,440
+牢房，尽管我没有足够的时间去做爱尔兰菜
+cells though I don't have enough time to do Irish to do Irish a for the whole
+
+534
+00:21:26,440 --> 00:21:26,450
+牢房，尽管我没有足够的时间去做爱尔兰菜
+do Irish to do Irish a for the whole island so this one just give you our
+
+535
+00:21:26,450 --> 00:21:28,480
+岛，所以这只是给您关于最终结果的提示，并且
+do Irish to do Irish a for the whole island so this one just give you our
+
+536
+00:21:28,480 --> 00:21:32,920
+岛，所以这只是给您关于最终结果的提示，并且
+island so this one just give you our hints about the final result which and
+
+537
+00:21:32,920 --> 00:21:32,930
+岛，所以这只是给您关于最终结果的提示，并且
+hints about the final result which and there are some other thing we can talk
+
+538
+00:21:32,930 --> 00:21:35,290
+还有其他一些我们可以谈及的东西，以及颤抖的质量
+hints about the final result which and there are some other thing we can talk
+
+539
+00:21:35,290 --> 00:21:38,380
+还有其他一些我们可以谈及的东西，以及颤抖的质量
+there are some other thing we can talk and the quality of trembling as a
+
+540
+00:21:38,380 --> 00:21:38,390
+还有其他一些我们可以谈及的东西，以及颤抖的质量
+and the quality of trembling as a function of number of your sample so you
+
+541
+00:21:38,390 --> 00:21:42,100
+样本数的函数，以便您可以幸运地看到
+and the quality of trembling as a function of number of your sample so you
+
+542
+00:21:42,100 --> 00:21:45,340
+样本数的函数，以便您可以幸运地看到
+function of number of your sample so you can see that the likelihood luckily
+
+543
+00:21:45,340 --> 00:21:45,350
+样本数的函数，以便您可以幸运地看到
+can see that the likelihood luckily who's awaiting awaiting inference
+
+544
+00:21:45,350 --> 00:21:47,710
+谁在等待推理引擎的结果接近
+can see that the likelihood luckily who's awaiting awaiting inference
+
+545
+00:21:47,710 --> 00:21:50,730
+谁在等待推理引擎的结果接近
+who's awaiting awaiting inference engines results come close to the
+
+546
+00:21:50,730 --> 00:21:50,740
+谁在等待推理引擎的结果接近
+engines results come close to the junction sweet results the difference
+
+547
+00:21:50,740 --> 00:21:53,290
+结甜效果差请娇小适当
+engines results come close to the junction sweet results the difference
+
+548
+00:21:53,290 --> 00:21:55,720
+结甜效果差请娇小适当
+junction sweet results the difference please the petite the appropriate a
+
+549
+00:21:55,720 --> 00:21:55,730
+结甜效果差请娇小适当
+please the petite the appropriate a difference that means the difference
+
+550
+00:21:55,730 --> 00:21:57,730
+差异意味着连接树和可能性之间的差异
+please the petite the appropriate a difference that means the difference
+
+551
+00:21:57,730 --> 00:22:00,070
+差异意味着连接树和可能性之间的差异
+difference that means the difference between junction tree and likelihood
+
+552
+00:22:00,070 --> 00:22:00,080
+差异意味着连接树和可能性之间的差异
+between junction tree and likelihood reading so if you increase your number
+
+553
+00:22:00,080 --> 00:22:03,190
+阅读，因此，如果您增加采样数量，则会减少
+between junction tree and likelihood reading so if you increase your number
+
+554
+00:22:03,190 --> 00:22:05,530
+阅读，因此，如果您增加采样数量，则会减少
+reading so if you increase your number of sampling you will reduce the
+
+555
+00:22:05,530 --> 00:22:05,540
+阅读，因此，如果您增加采样数量，则会减少
+of sampling you will reduce the difference which means the likelihood
+
+556
+00:22:05,540 --> 00:22:07,630
+差异，这意味着接近结点树的可能性
+of sampling you will reduce the difference which means the likelihood
+
+557
+00:22:07,630 --> 00:22:12,100
+差异，这意味着接近结点树的可能性
+difference which means the likelihood close to the close to the junction tree
+
+558
+00:22:12,100 --> 00:22:12,110
+差异，这意味着接近结点树的可能性
+close to the close to the junction tree however there is no freelance and if you
+
+559
+00:22:12,110 --> 00:22:15,430
+但是没有自由职业者，如果您增加数量，则增加您的
+close to the close to the junction tree however there is no freelance and if you
+
+560
+00:22:15,430 --> 00:22:19,870
+但是没有自由职业者，如果您增加数量，则增加您的
+however there is no freelance and if you increase your number of increase your
+
+561
+00:22:19,870 --> 00:22:19,880
+但是没有自由职业者，如果您增加数量，则增加您的
+increase your number of increase your time okay okay
+
+562
+00:22:19,880 --> 00:22:23,050
+时间好吧好吧未来世界肯定有一些未来的工作
+increase your number of increase your time okay okay
+
+563
+00:22:23,050 --> 00:22:25,570
+时间好吧好吧未来世界肯定有一些未来的工作
+time okay okay future world some future work definitely
+
+564
+00:22:25,570 --> 00:22:25,580
+时间好吧好吧未来世界肯定有一些未来的工作
+future world some future work definitely for the work of this welfare study you
+
+565
+00:22:25,580 --> 00:22:28,510
+对于这项福利研究的工作，您肯定可以添加更多信息
+future world some future work definitely for the work of this welfare study you
+
+566
+00:22:28,510 --> 00:22:30,400
+对于这项福利研究的工作，您肯定可以添加更多信息
+for the work of this welfare study you can definitely add more information more
+
+567
+00:22:30,400 --> 00:22:30,410
+对于这项福利研究的工作，您肯定可以添加更多信息
+can definitely add more information more cost more nodes and each note you can
+
+568
+00:22:30,410 --> 00:22:32,770
+花费更多的节点，您可以将每个音符分隔成更多的空间，
+can definitely add more information more cost more nodes and each note you can
+
+569
+00:22:32,770 --> 00:22:35,260
+花费更多的节点，您可以将每个音符分隔成更多的空间，
+cost more nodes and each note you can separate into more space that will
+
+570
+00:22:35,260 --> 00:22:35,270
+花费更多的节点，您可以将每个音符分隔成更多的空间，
+separate into more space that will definitely increase your accuracy of
+
+571
+00:22:35,270 --> 00:22:37,240
+肯定会提高近似的准确性，我也认为
+separate into more space that will definitely increase your accuracy of
+
+572
+00:22:37,240 --> 00:22:40,810
+肯定会提高近似的准确性，我也认为
+definitely increase your accuracy of your approximation and I also think
+
+573
+00:22:40,810 --> 00:22:40,820
+肯定会提高近似的准确性，我也认为
+your approximation and I also think about think about the for my own
+
+574
+00:22:40,820 --> 00:22:44,740
+考虑为自己的研究也考虑我可以的一种方法
+your approximation and I also think about think about the for my own
+
+575
+00:22:44,740 --> 00:22:47,260
+考虑为自己的研究也考虑我可以的一种方法
+about think about the for my own research also think about one way I can
+
+576
+00:22:47,260 --> 00:22:47,270
+考虑为自己的研究也考虑我可以的一种方法
+research also think about one way I can maybe who I can I can apply what I've
+
+577
+00:22:47,270 --> 00:22:49,990
+也许我可以将我从这笔费用中学到的知识运用到我的研究中
+research also think about one way I can maybe who I can I can apply what I've
+
+578
+00:22:49,990 --> 00:22:52,450
+也许我可以将我从这笔费用中学到的知识运用到我的研究中
+maybe who I can I can apply what I've learned in this cost in my research
+
+579
+00:22:52,450 --> 00:22:52,460
+也许我可以将我从这笔费用中学到的知识运用到我的研究中
+learned in this cost in my research to do some more uncertainty vacation for
+
+580
+00:22:52,460 --> 00:22:55,720
+为我的实验做更多不确定的假期，这会很有趣
+learned in this cost in my research to do some more uncertainty vacation for
+
+581
+00:22:55,720 --> 00:22:58,090
+为我的实验做更多不确定的假期，这会很有趣
+to do some more uncertainty vacation for my experiments that would be interesting
+
+582
+00:22:58,090 --> 00:22:58,100
+为我的实验做更多不确定的假期，这会很有趣
+my experiments that would be interesting to conclude today's presentation first
+
+583
+00:22:58,100 --> 00:23:01,360
+结束今天的演示文稿的第一个查询简单项目是一个主题
+my experiments that would be interesting to conclude today's presentation first
+
+584
+00:23:01,360 --> 00:23:04,600
+结束今天的演示文稿的第一个查询简单项目是一个主题
+to conclude today's presentation first inquiry simple project is a single topic
+
+585
+00:23:04,600 --> 00:23:04,610
+结束今天的演示文稿的第一个查询简单项目是一个主题
+inquiry simple project is a single topic compared to you guys may be busy Network
+
+586
+00:23:04,610 --> 00:23:08,640
+与你们相比可能很忙网络在其中确实很强大
+inquiry simple project is a single topic compared to you guys may be busy Network
+
+587
+00:23:08,640 --> 00:23:10,960
+与你们相比可能很忙网络在其中确实很强大
+compared to you guys may be busy Network definitely really strong for in which
+
+588
+00:23:10,960 --> 00:23:10,970
+与你们相比可能很忙网络在其中确实很强大
+definitely really strong for in which you can use to you to evaluate the fire
+
+589
+00:23:10,970 --> 00:23:14,860
+您可以使用它来评估火井火灾后果，我也认为
+definitely really strong for in which you can use to you to evaluate the fire
+
+590
+00:23:14,860 --> 00:23:18,040
+您可以使用它来评估火井火灾后果，我也认为
+you can use to you to evaluate the fire well fire consequence and I'm also think
+
+591
+00:23:18,040 --> 00:23:18,050
+您可以使用它来评估火井火灾后果，我也认为
+well fire consequence and I'm also think about one way to apply it to my own
+
+592
+00:23:18,050 --> 00:23:20,530
+一种将其应用于我自己的研究以及忙碌和忙碌的优势的方法
+well fire consequence and I'm also think about one way to apply it to my own
+
+593
+00:23:20,530 --> 00:23:23,680
+一种将其应用于我自己的研究以及忙碌和忙碌的优势的方法
+about one way to apply it to my own research and the advantage of busy and
+
+594
+00:23:23,680 --> 00:23:23,690
+一种将其应用于我自己的研究以及忙碌和忙碌的优势的方法
+research and the advantage of busy and network is is ability to power
+
+595
+00:23:23,690 --> 00:23:26,140
+网络是增强来自不同区域各方的信息的能力
+research and the advantage of busy and network is is ability to power
+
+596
+00:23:26,140 --> 00:23:29,050
+网络是增强来自不同区域各方的信息的能力
+network is is ability to power information from different area parties
+
+597
+00:23:29,050 --> 00:23:29,060
+网络是增强来自不同区域各方的信息的能力
+information from different area parties to worry computational expense if you
+
+598
+00:23:29,060 --> 00:23:31,420
+如果您构建一个很大的网络，就不必担心计算成本
+information from different area parties to worry computational expense if you
+
+599
+00:23:31,420 --> 00:23:33,220
+如果您构建一个很大的网络，就不必担心计算成本
+to worry computational expense if you build a really large piece their network
+
+600
+00:23:33,220 --> 00:23:33,230
+如果您构建一个很大的网络，就不必担心计算成本
+build a really large piece their network and create you have also you need to do
+
+601
+00:23:33,230 --> 00:23:36,430
+并创建您自己，您还需要做很多工作才能找到合适的
+build a really large piece their network and create you have also you need to do
+
+602
+00:23:36,430 --> 00:23:40,270
+并创建您自己，您还需要做很多工作才能找到合适的
+and create you have also you need to do a lot of work to find the apt and since
+
+603
+00:23:40,270 --> 00:23:40,280
+并创建您自己，您还需要做很多工作才能找到合适的
+a lot of work to find the apt and since the separatists are known for this for
+
+604
+00:23:40,280 --> 00:23:42,580
+分离主义者之所以闻名，是因为对方没有在我们的论文中给我
+a lot of work to find the apt and since the separatists are known for this for
+
+605
+00:23:42,580 --> 00:23:45,760
+分离主义者之所以闻名，是因为对方没有在我们的论文中给我
+the separatists are known for this for the other didn't give me in the paper we
+
+606
+00:23:45,760 --> 00:23:45,770
+分离主义者之所以闻名，是因为对方没有在我们的论文中给我
+the other didn't give me in the paper we can now compute our result with the with
+
+607
+00:23:45,770 --> 00:23:50,740
+现在可以使用，而没有和的作者洞穴计算我们的结果。
+the other didn't give me in the paper we can now compute our result with the with
+
+608
+00:23:50,740 --> 00:23:54,520
+现在可以使用，而没有和的作者洞穴计算我们的结果。
+can now compute our result with the with the authors cave without and and another
+
+609
+00:23:54,520 --> 00:23:54,530
+现在可以使用，而没有和的作者洞穴计算我们的结果。
+the authors cave without and and another two chances I act exact approximation
+
+610
+00:23:54,530 --> 00:23:57,720
+我有两次机会完全按照这种精确方法行事，另一种是
+the authors cave without and and another two chances I act exact approximation
+
+611
+00:23:57,720 --> 00:24:02,070
+我有两次机会完全按照这种精确方法行事，另一种是
+two chances I act exact approximation this exact approach and another to
+
+612
+00:24:02,070 --> 00:24:02,080
+我有两次机会完全按照这种精确方法行事，另一种是
+this exact approach and another to proximate approaches and
+
+613
+00:24:02,080 --> 00:24:06,010
+最近的方法和
+this exact approach and another to proximate approaches and
+
+614
+00:24:06,010 --> 00:24:08,500
+[掌声]
+this exact approach and another to proximate approaches and
+
+615
+00:24:08,500 --> 00:24:08,510
+[掌声]
+
+
+616
+00:24:08,510 --> 00:24:11,640
+[掌声]
+[Applause]
+
+617
+00:24:11,640 --> 00:24:26,440
+是啊是啊
+[Applause]
+
+618
+00:24:26,440 --> 00:24:26,450
+是啊是啊
+
+
+619
+00:24:26,450 --> 00:24:29,889
+是啊是啊
+yeah yeah
+
+620
+00:24:29,889 --> 00:24:38,520
+[音乐]
+yeah yeah
+
+621
+00:24:38,520 --> 00:24:38,530
+[音乐]
+
+
+622
+00:24:38,530 --> 00:24:41,619
+[音乐]
+[Music]
+
+623
+00:24:41,619 --> 00:24:50,440
+哦
+[Music]
+
+624
+00:24:50,440 --> 00:24:50,450
+哦
+
+
+625
+00:24:50,450 --> 00:24:52,450
+哦
+Oh
+
+626
+00:24:52,450 --> 00:24:54,139
+所以他问我，解释该部分的计算量最大的是哪里
+Oh
+
+627
+00:24:54,139 --> 00:24:54,149
+所以他问我，解释该部分的计算量最大的是哪里
+
+
+628
+00:24:54,149 --> 00:25:00,169
+所以他问我，解释该部分的计算量最大的是哪里
+so he asked me where's the most the computation who explains the part for
+
+629
+00:25:00,169 --> 00:25:00,179
+所以他问我，解释该部分的计算量最大的是哪里
+computation who explains the part for the junction tree to compute I think
+
+630
+00:25:00,179 --> 00:25:05,899
+要计算的结点树，我认为我不知道没有分数
+computation who explains the part for the junction tree to compute I think
+
+631
+00:25:05,899 --> 00:25:10,519
+要计算的结点树，我认为我不知道没有分数
+the junction tree to compute I think that the I don't know no score exactly I
+
+632
+00:25:10,519 --> 00:25:10,529
+要计算的结点树，我认为我不知道没有分数
+that the I don't know no score exactly I think if my answer is salad maybe in the
+
+633
+00:25:10,529 --> 00:25:12,829
+想想如果我的答案是沙拉，也许在路口树中，您必须运行
+that the I don't know no score exactly I think if my answer is salad maybe in the
+
+634
+00:25:12,829 --> 00:25:15,499
+想想如果我的答案是沙拉，也许在路口树中，您必须运行
+think if my answer is salad maybe in the junction tree you have to we run the
+
+635
+00:25:15,499 --> 00:25:15,509
+想想如果我的答案是沙拉，也许在路口树中，您必须运行
+junction tree you have to we run the code you have to find the optimize the
+
+636
+00:25:15,509 --> 00:25:19,699
+您必须找到用于优化生日的有偏交界树的代码
+junction tree you have to we run the code you have to find the optimize the
+
+637
+00:25:19,699 --> 00:25:22,699
+您必须找到用于优化生日的有偏交界树的代码
+code you have to find the optimize the biased junction tree for the birthday
+
+638
+00:25:22,699 --> 00:25:22,709
+您必须找到用于优化生日的有偏交界树的代码
+biased junction tree for the birthday for your model so maybe that will be
+
+639
+00:25:22,709 --> 00:25:26,389
+为您的模型，所以也许会在某个时候调用它，或者在计算上
+biased junction tree for the birthday for your model so maybe that will be
+
+640
+00:25:26,389 --> 00:25:28,789
+为您的模型，所以也许会在某个时候调用它，或者在计算上
+for your model so maybe that will be called sometime or it is computationally
+
+641
+00:25:28,789 --> 00:25:28,799
+为您的模型，所以也许会在某个时候调用它，或者在计算上
+called sometime or it is computationally expensive
+
+642
+00:25:28,799 --> 00:25:31,339
+昂贵的
+called sometime or it is computationally expensive
+
+643
+00:25:31,339 --> 00:25:38,259
+我不是我没有在这里做得那么深
+called sometime or it is computationally expensive
+
+644
+00:25:38,259 --> 00:25:38,269
+我不是我没有在这里做得那么深
+
+
+645
+00:25:38,269 --> 00:25:44,499
+我不是我没有在这里做得那么深
+I didn't I didn't do that deeply here
+
+646
+00:25:44,499 --> 00:26:48,040
+我是银河系便利课程的二年级学生，现在拥有
+I didn't I didn't do that deeply here
+
+647
+00:26:48,040 --> 00:26:48,050
+我是银河系便利课程的二年级学生，现在拥有
+
+
+648
+00:26:48,050 --> 00:26:56,530
+我是银河系便利课程的二年级学生，现在拥有
+I'm a second year student in galactic convenience I'm in possession and today
+
+649
+00:26:56,530 --> 00:26:56,540
+我是银河系便利课程的二年级学生，现在拥有
+convenience I'm in possession and today my turn project linear time algorithm in
+
+650
+00:26:56,540 --> 00:27:00,710
+基于高斯的贝叶斯电子邮件引擎中的我的转项目线性时间算法
+convenience I'm in possession and today my turn project linear time algorithm in
+
+651
+00:27:00,710 --> 00:27:05,300
+基于高斯的贝叶斯电子邮件引擎中的我的转项目线性时间算法
+my turn project linear time algorithm in Bayesian email engine based on Gaussian
+
+652
+00:27:05,300 --> 00:27:24,010
+Deltora设置了动画噪点，我确实有两个步骤，首先是料斗参数
+my turn project linear time algorithm in Bayesian email engine based on Gaussian
+
+653
+00:27:24,010 --> 00:27:24,020
+Deltora设置了动画噪点，我确实有两个步骤，首先是料斗参数
+
+
+654
+00:27:24,020 --> 00:27:30,980
+Deltora设置了动画噪点，我确实有两个步骤，首先是料斗参数
+Deltora is animating noisy I really have two steps first is the hopper parameter
+
+655
+00:27:30,980 --> 00:27:30,990
+Deltora设置了动画噪点，我确实有两个步骤，首先是料斗参数
+two steps first is the hopper parameter estimation by yeah matters
+
+656
+00:27:30,990 --> 00:27:35,360
+是的估计很重要
+two steps first is the hopper parameter estimation by yeah matters
+
+657
+00:27:35,360 --> 00:27:37,250
+期望最大化，第二个将是AP的图像恢复
+two steps first is the hopper parameter estimation by yeah matters
+
+658
+00:27:37,250 --> 00:27:37,260
+期望最大化，第二个将是AP的图像恢复
+
+
+659
+00:27:37,260 --> 00:27:43,320
+期望最大化，第二个将是AP的图像恢复
+expectation maximization and second that will be the image restoration by an AP
+
+660
+00:27:43,320 --> 00:27:43,330
+期望最大化，第二个将是AP的图像恢复
+will be the image restoration by an AP maximize a posterior metric and in this
+
+661
+00:27:43,330 --> 00:27:49,320
+最大化后验度量，在此
+will be the image restoration by an AP maximize a posterior metric and in this
+
+662
+00:27:49,320 --> 00:27:55,160
+那些需要环境方差矩阵逆的事物发生变化
+will be the image restoration by an AP maximize a posterior metric and in this
+
+663
+00:27:55,160 --> 00:27:55,170
+那些需要环境方差矩阵逆的事物发生变化
+
+
+664
+00:27:55,170 --> 00:28:02,820
+那些需要环境方差矩阵逆的事物发生变化
+those things change that requires inverse of environment variance matrix
+
+665
+00:28:02,820 --> 00:28:02,830
+那些需要环境方差矩阵逆的事物发生变化
+inverse of environment variance matrix the computation under order of natives
+
+666
+00:28:02,830 --> 00:28:11,120
+根据厄尼博客的本地人顺序的计算我需要这个
+inverse of environment variance matrix the computation under order of natives
+
+667
+00:28:11,120 --> 00:28:16,650
+根据厄尼博客的本地人顺序的计算我需要这个
+the computation under order of natives order of Ernie blogging I need this
+
+668
+00:28:16,650 --> 00:28:16,660
+根据厄尼博客的本地人顺序的计算我需要这个
+order of Ernie blogging I need this people achieve
+
+669
+00:28:16,660 --> 00:28:19,710
+人们实现
+order of Ernie blogging I need this people achieve
+
+670
+00:28:19,710 --> 00:28:22,750
+之所以这样，是因为实际上与我们能学到的东西有关
+order of Ernie blogging I need this people achieve
+
+671
+00:28:22,750 --> 00:28:22,760
+之所以这样，是因为实际上与我们能学到的东西有关
+
+
+672
+00:28:22,760 --> 00:28:28,960
+之所以这样，是因为实际上与我们能学到的东西有关
+the reason why is because virtually having related to what we can learn
+
+673
+00:28:28,960 --> 00:28:28,970
+之所以这样，是因为实际上与我们能学到的东西有关
+having related to what we can learn about the past like GM adoption my
+
+674
+00:28:28,970 --> 00:28:33,310
+关于过去，例如通用汽车的领养，我的父亲和恐吓的笑声，以及
+having related to what we can learn about the past like GM adoption my
+
+675
+00:28:33,310 --> 00:28:44,530
+关于过去，例如通用汽车的领养，我的父亲和恐吓的笑声，以及
+about the past like GM adoption my father and intimidation laughter and
+
+676
+00:28:44,530 --> 00:28:44,540
+关于过去，例如通用汽车的领养，我的父亲和恐吓的笑声，以及
+father and intimidation laughter and second reason is that it's highly
+
+677
+00:28:44,540 --> 00:28:47,169
+第二个原因是，这与我在这里做的事情高度相关
+father and intimidation laughter and second reason is that it's highly
+
+678
+00:28:47,169 --> 00:28:50,890
+第二个原因是，这与我在这里做的事情高度相关
+second reason is that it's highly related to what i'm doing here i'm doing
+
+679
+00:28:50,890 --> 00:28:50,900
+第二个原因是，这与我在这里做的事情高度相关
+related to what i'm doing here i'm doing the noted image alignment and the melty
+
+680
+00:28:50,900 --> 00:28:54,430
+着名的图像对齐方式和融化的图像显影是最好的方法
+related to what i'm doing here i'm doing the noted image alignment and the melty
+
+681
+00:28:54,430 --> 00:28:57,250
+着名的图像对齐方式和融化的图像显影是最好的方法
+the noted image alignment and the melty image development it is the best way to
+
+682
+00:28:57,250 --> 00:28:57,260
+着名的图像对齐方式和融化的图像显影是最好的方法
+image development it is the best way to show my my algorithm itself so I'm
+
+683
+00:28:57,260 --> 00:29:01,120
+显示我自己的算法本身，所以我非常有兴趣选择出色的算法
+image development it is the best way to show my my algorithm itself so I'm
+
+684
+00:29:01,120 --> 00:29:07,990
+显示我自己的算法本身，所以我非常有兴趣选择出色的算法
+show my my algorithm itself so I'm really interested to choose excellent
+
+685
+00:29:07,990 --> 00:29:08,000
+显示我自己的算法本身，所以我非常有兴趣选择出色的算法
+really interested to choose excellent clarity in both insurance caps and the
+
+686
+00:29:08,000 --> 00:29:10,900
+保险限额和参数设置都非常清楚
+really interested to choose excellent clarity in both insurance caps and the
+
+687
+00:29:10,900 --> 00:29:13,510
+保险限额和参数设置都非常清楚
+clarity in both insurance caps and the parameter settings it's very clear for
+
+688
+00:29:13,510 --> 00:29:13,520
+保险限额和参数设置都非常清楚
+parameter settings it's very clear for me to follow each step so I will not go
+
+689
+00:29:13,520 --> 00:29:17,560
+我按照每个步骤进行操作，这样我就不会陷入循环或者不知道发生了什么
+parameter settings it's very clear for me to follow each step so I will not go
+
+690
+00:29:17,560 --> 00:29:19,720
+我按照每个步骤进行操作，这样我就不会陷入循环或者不知道发生了什么
+me to follow each step so I will not go into a loop or I don't know what's going
+
+691
+00:29:19,720 --> 00:29:19,730
+我按照每个步骤进行操作，这样我就不会陷入循环或者不知道发生了什么
+into a loop or I don't know what's going on
+
+692
+00:29:19,730 --> 00:29:21,910
+上
+into a loop or I don't know what's going on
+
+693
+00:29:21,910 --> 00:29:23,530
+本报告我们仅介绍了成帧器在18年内接待了他们，第二次
+into a loop or I don't know what's going on
+
+694
+00:29:23,530 --> 00:29:23,540
+本报告我们仅介绍了成帧器在18年内接待了他们，第二次
+
+
+695
+00:29:23,540 --> 00:29:30,130
+本报告我们仅介绍了成帧器在18年内接待了他们，第二次
+this report our first introduced the framers hoste them in 18 only and second
+
+696
+00:29:30,130 --> 00:29:30,140
+本报告我们仅介绍了成帧器在18年内接待了他们，第二次
+framers hoste them in 18 only and second how are you to introduce you their
+
+697
+00:29:30,140 --> 00:29:32,290
+您如何向您介绍他们的线性时间算法？
+framers hoste them in 18 only and second how are you to introduce you their
+
+698
+00:29:32,290 --> 00:29:35,590
+您如何向您介绍他们的线性时间算法？
+how are you to introduce you their linear time algorithm second I add a
+
+699
+00:29:35,590 --> 00:29:35,600
+您如何向您介绍他们的线性时间算法？
+linear time algorithm second I add a comparison other rhythm to do this paper
+
+700
+00:29:35,600 --> 00:29:39,010
+比较其他节奏做这篇论文增加以前的论文唯一
+linear time algorithm second I add a comparison other rhythm to do this paper
+
+701
+00:29:39,010 --> 00:29:43,800
+比较其他节奏做这篇论文增加以前的论文唯一
+comparison other rhythm to do this paper increase in previous paper the only
+
+702
+00:29:43,800 --> 00:29:43,810
+比较其他节奏做这篇论文增加以前的论文唯一
+increase in previous paper the only averaging everything else which is just
+
+703
+00:29:43,810 --> 00:29:46,990
+将其他所有内容平均化，以单位为单位，然后除以
+increase in previous paper the only averaging everything else which is just
+
+704
+00:29:46,990 --> 00:29:49,270
+将其他所有内容平均化，以单位为单位，然后除以
+averaging everything else which is just as units together and divide to the
+
+705
+00:29:49,270 --> 00:29:49,280
+将其他所有内容平均化，以单位为单位，然后除以
+as units together and divide to the remember a free print so I think too
+
+706
+00:29:49,280 --> 00:29:52,540
+记得有免费印刷品，所以我认为太简单了，以至于无法显示更多功能
+as units together and divide to the remember a free print so I think too
+
+707
+00:29:52,540 --> 00:29:55,960
+记得有免费印刷品，所以我认为太简单了，以至于无法显示更多功能
+remember a free print so I think too simple I thought to show more features
+
+708
+00:29:55,960 --> 00:29:55,970
+记得有免费印刷品，所以我认为太简单了，以至于无法显示更多功能
+simple I thought to show more features of this outer limits them so I added the
+
+709
+00:29:55,970 --> 00:29:59,250
+这个外部限制了他们，所以我添加了一个名为利比亚3d的问题，原始的是
+simple I thought to show more features of this outer limits them so I added the
+
+710
+00:29:59,250 --> 00:30:03,430
+这个外部限制了他们，所以我添加了一个名为利比亚3d的问题，原始的是
+of this outer limits them so I added the matter called Libyan 3d the original is
+
+711
+00:30:03,430 --> 00:30:03,440
+这个外部限制了他们，所以我添加了一个名为利比亚3d的问题，原始的是
+matter called Libyan 3d the original is very long it's a video Facebook noising
+
+712
+00:30:03,440 --> 00:30:08,130
+很长一段时间，这是一段视频，Facebook告别了再见的传承历史，是真实的
+matter called Libyan 3d the original is very long it's a video Facebook noising
+
+713
+00:30:08,130 --> 00:30:11,350
+很长一段时间，这是一段视频，Facebook告别了再见的传承历史，是真实的
+very long it's a video Facebook noising bye-bye passage history being truthful
+
+714
+00:30:11,350 --> 00:30:11,360
+很长一段时间，这是一段视频，Facebook告别了再见的传承历史，是真实的
+bye-bye passage history being truthful it's very longer recorded vivianne 3d
+
+715
+00:30:11,360 --> 00:30:15,610
+它记录的维维安3d时间更长，应该有这种方法
+bye-bye passage history being truthful it's very longer recorded vivianne 3d
+
+716
+00:30:15,610 --> 00:30:18,850
+它记录的维维安3d时间更长，应该有这种方法
+it's very longer recorded vivianne 3d and this method should there be result
+
+717
+00:30:18,850 --> 00:30:18,860
+它记录的维维安3d时间更长，应该有这种方法
+and this method should there be result in any papers so I want to show the
+
+718
+00:30:18,860 --> 00:30:23,290
+在任何论文中，我想展示其他人之间的比较
+and this method should there be result in any papers so I want to show the
+
+719
+00:30:23,290 --> 00:30:25,810
+在任何论文中，我想展示其他人之间的比较
+in any papers so I want to show the comparison between the people other
+
+720
+00:30:25,810 --> 00:30:25,820
+在任何论文中，我想展示其他人之间的比较
+comparison between the people other algorithm in this paper and Libyan 3d
+
+721
+00:30:25,820 --> 00:30:29,970
+本文的算法和利比亚3D最后，我将向您展示按摩，而我们
+comparison between the people other algorithm in this paper and Libyan 3d
+
+722
+00:30:29,970 --> 00:30:33,190
+本文的算法和利比亚3D最后，我将向您展示按摩，而我们
+algorithm in this paper and Libyan 3d last I will show you the massage and we
+
+723
+00:30:33,190 --> 00:30:33,200
+本文的算法和利比亚3D最后，我将向您展示按摩，而我们
+last I will show you the massage and we can discuss the results
+
+724
+00:30:33,200 --> 00:30:35,930
+可以讨论给出给定原始图像的结果
+last I will show you the massage and we can discuss the results
+
+725
+00:30:35,930 --> 00:30:39,320
+可以讨论给出给定原始图像的结果
+can discuss the results given given an original image composed
+
+726
+00:30:39,320 --> 00:30:39,330
+可以讨论给出给定原始图像的结果
+given given an original image composed of we buy the kid for a depleted image
+
+727
+00:30:39,330 --> 00:30:44,480
+我们为孩子购买的是与原始图片大小相同的已耗尽图片，
+given given an original image composed of we buy the kid for a depleted image
+
+728
+00:30:44,480 --> 00:30:47,120
+我们为孩子购买的是与原始图片大小相同的已耗尽图片，
+of we buy the kid for a depleted image of the same size of the original one is
+
+729
+00:30:47,120 --> 00:30:47,130
+我们为孩子购买的是与原始图片大小相同的已耗尽图片，
+of the same size of the original one is generated by adding additive white
+
+730
+00:30:47,130 --> 00:30:50,090
+通过将原始高斯白噪声awgn加到原始噪声中而产生
+of the same size of the original one is generated by adding additive white
+
+731
+00:30:50,090 --> 00:30:54,410
+通过将原始高斯白噪声awgn加到原始噪声中而产生
+generated by adding additive white Gaussian noise awgn to the original one
+
+732
+00:30:54,410 --> 00:30:54,420
+通过将原始高斯白噪声awgn加到原始噪声中而产生
+Gaussian noise awgn to the original one suppose we independently of team K
+
+733
+00:30:54,420 --> 00:30:58,310
+假设我们独立于K队而降低了形象，并且他大于一个
+Gaussian noise awgn to the original one suppose we independently of team K
+
+734
+00:30:58,310 --> 00:31:01,070
+假设我们独立于K队而降低了形象，并且他大于一个
+suppose we independently of team K degrade image and he is bigger than one
+
+735
+00:31:01,070 --> 00:31:01,080
+假设我们独立于K队而降低了形象，并且他大于一个
+degrade image and he is bigger than one we denoted the original image by the
+
+736
+00:31:01,080 --> 00:31:04,340
+我们用水标记了原始图像，因此实际上是在想像您
+degrade image and he is bigger than one we denoted the original image by the
+
+737
+00:31:04,340 --> 00:31:10,010
+我们用水标记了原始图像，因此实际上是在想像您
+we denoted the original image by the water so it is actually imagined you
+
+738
+00:31:10,010 --> 00:31:10,020
+我们用水标记了原始图像，因此实际上是在想像您
+water so it is actually imagined you just vectorized into a vector to
+
+739
+00:31:10,020 --> 00:31:13,040
+只是向量化为一个向量以简化计算，它具有n
+water so it is actually imagined you just vectorized into a vector to
+
+740
+00:31:13,040 --> 00:31:16,490
+只是向量化为一个向量以简化计算，它具有n
+just vectorized into a vector to simplify the computation and it has n
+
+741
+00:31:16,490 --> 00:31:16,500
+只是向量化为一个向量以简化计算，它具有n
+simplify the computation and it has n pick stars
+
+742
+00:31:16,500 --> 00:31:18,310
+摘星星[音乐]
+simplify the computation and it has n pick stars
+
+743
+00:31:18,310 --> 00:31:21,169
+摘星星[音乐]
+pick stars [Music]
+
+744
+00:31:21,169 --> 00:31:21,179
+摘星星[音乐]
+[Music] skin roll a burrito you know to the case
+
+745
+00:31:21,179 --> 00:31:23,899
+皮肤卷一个卷饼，你知道到案件由rector降低图像的情况下，我会
+[Music] skin roll a burrito you know to the case
+
+746
+00:31:23,899 --> 00:31:30,139
+皮肤卷一个卷饼，你知道到案件由rector降低图像的情况下，我会
+skin roll a burrito you know to the case degraded image by the rector next I will
+
+747
+00:31:30,139 --> 00:31:30,149
+皮肤卷一个卷饼，你知道到案件由rector降低图像的情况下，我会
+degraded image by the rector next I will introduce the definition of prior
+
+748
+00:31:30,149 --> 00:31:32,329
+介绍方形网格图v5的先验分布的定义
+degraded image by the rector next I will introduce the definition of prior
+
+749
+00:31:32,329 --> 00:31:36,680
+介绍方形网格图v5的先验分布的定义
+introduce the definition of prior distribution for v5 a square grid graph
+
+750
+00:31:36,680 --> 00:31:36,690
+介绍方形网格图v5的先验分布的定义
+distribution for v5 a square grid graph TV in the refuge's of arrivals you know
+
+751
+00:31:36,690 --> 00:31:40,999
+在庇护所中的电视，您知道在以斯拉半岛，E是边缘地带，因此
+distribution for v5 a square grid graph TV in the refuge's of arrivals you know
+
+752
+00:31:40,999 --> 00:31:44,659
+在庇护所中的电视，您知道在以斯拉半岛，E是边缘地带，因此
+TV in the refuge's of arrivals you know it in Ezra and E is the edge so the
+
+753
+00:31:44,659 --> 00:31:44,669
+在庇护所中的电视，您知道在以斯拉半岛，E是边缘地带，因此
+it in Ezra and E is the edge so the prior distribution is defined as
+
+754
+00:31:44,669 --> 00:31:48,919
+先验分布定义为
+it in Ezra and E is the edge so the prior distribution is defined as
+
+755
+00:31:48,919 --> 00:31:54,370
+在7月2日，以
+it in Ezra and E is the edge so the prior distribution is defined as
+
+756
+00:31:54,370 --> 00:31:54,380
+在7月2日，以
+
+
+757
+00:31:54,380 --> 00:32:00,400
+在7月2日，以
+on July 2 the broth it's represented by the movement of
+
+758
+00:32:00,400 --> 00:32:00,410
+在7月2日，以
+it's represented by the movement of energy functions
+
+759
+00:32:00,410 --> 00:32:04,280
+能量函数
+it's represented by the movement of energy functions
+
+760
+00:32:04,280 --> 00:32:05,789
+我发誓
+it's represented by the movement of energy functions
+
+761
+00:32:05,789 --> 00:32:05,799
+我发誓
+
+
+762
+00:32:05,799 --> 00:32:09,419
+我发誓
+as I as I swear
+
+763
+00:32:09,419 --> 00:32:12,970
+参数团队Yaya和alpha是我们要采取的行动
+as I as I swear
+
+764
+00:32:12,970 --> 00:32:12,980
+参数团队Yaya和alpha是我们要采取的行动
+
+
+765
+00:32:12,980 --> 00:32:20,790
+参数团队Yaya和alpha是我们要采取的行动
+the parameter team Yaya and alpha is the we want to act
+
+766
+00:32:20,790 --> 00:32:20,800
+参数团队Yaya和alpha是我们要采取的行动
+we want to act the contract is
+
+767
+00:32:20,800 --> 00:32:24,150
+合同是
+we want to act the contract is
+
+768
+00:32:24,150 --> 00:32:29,760
+这是因为很好，这是人们尝试解决问题的方法，
+we want to act the contract is
+
+769
+00:32:29,760 --> 00:32:29,770
+这是因为很好，这是人们尝试解决问题的方法，
+
+
+770
+00:32:29,770 --> 00:33:15,400
+这是因为很好，这是人们尝试解决问题的方法，
+this is because well it was people try the matter and the waves and complete
+
+771
+00:33:15,400 --> 00:33:15,410
+这是因为很好，这是人们尝试解决问题的方法，
+the matter and the waves and complete routine to the inverse of this
+
+772
+00:33:15,410 --> 00:33:18,070
+这种甲壳动物的反例，自然而然的成功
+the matter and the waves and complete routine to the inverse of this
+
+773
+00:33:18,070 --> 00:33:21,760
+这种甲壳动物的反例，自然而然的成功
+routine to the inverse of this crustacean a success in doing by natural
+
+774
+00:33:21,760 --> 00:33:21,770
+这种甲壳动物的反例，自然而然的成功
+crustacean a success in doing by natural decomposition
+
+775
+00:33:21,770 --> 00:33:24,160
+分解
+crustacean a success in doing by natural decomposition
+
+776
+00:33:24,160 --> 00:33:26,850
+在Moodle办公室的模型中
+crustacean a success in doing by natural decomposition
+
+777
+00:33:26,850 --> 00:33:26,860
+在Moodle办公室的模型中
+
+
+778
+00:33:26,860 --> 00:33:32,730
+在Moodle办公室的模型中
+in the model of the Moodle office
+
+779
+00:33:32,730 --> 00:33:32,749
+awgn现在我们准备找到后验分布
+in the model of the Moodle office
+
+780
+00:33:32,749 --> 00:33:32,759
+awgn现在我们准备找到后验分布
+
+
+781
+00:33:32,759 --> 00:34:16,889
+awgn现在我们准备找到后验分布
+the awgn now we are ready to find the posterior distribution
+
+782
+00:34:16,889 --> 00:34:23,789
+和
+the awgn now we are ready to find the posterior distribution
+
+783
+00:34:23,789 --> 00:34:23,799
+和
+
+
+784
+00:34:23,799 --> 00:34:26,799
+和
+and
+
+785
+00:34:26,799 --> 00:34:45,619
+我们可以做的
+and
+
+786
+00:34:45,619 --> 00:34:45,629
+我们可以做的
+
+
+787
+00:34:45,629 --> 00:34:49,200
+我们可以做的
+we can do
+
+788
+00:34:49,200 --> 00:34:50,680
+女士职位，这意味着lambda的利润率
+we can do
+
+789
+00:34:50,680 --> 00:34:50,690
+女士职位，这意味着lambda的利润率
+
+
+790
+00:34:50,690 --> 00:35:00,350
+女士职位，这意味着lambda的利润率
+ladies position that means the profit margin lambda
+
+791
+00:35:00,350 --> 00:35:02,160
+因为我们已经有了我们以前的发行版，
+ladies position that means the profit margin lambda
+
+792
+00:35:02,160 --> 00:35:02,170
+因为我们已经有了我们以前的发行版，
+
+
+793
+00:35:02,170 --> 00:35:07,530
+因为我们已经有了我们以前的发行版，
+since we're already having our prior distribution and
+
+794
+00:35:07,530 --> 00:35:09,160
+通过EMS搜索薰衣草
+since we're already having our prior distribution and
+
+795
+00:35:09,160 --> 00:35:09,170
+通过EMS搜索薰衣草
+
+
+796
+00:35:09,170 --> 00:35:16,000
+通过EMS搜索薰衣草
+the lavenders by EMS search
+
+797
+00:35:16,000 --> 00:35:16,880
+太平洋将在那里发挥作用，我们发现与Maxine的联系
+the lavenders by EMS search
+
+798
+00:35:16,880 --> 00:35:16,890
+太平洋将在那里发挥作用，我们发现与Maxine的联系
+
+
+799
+00:35:16,890 --> 00:35:25,120
+太平洋将在那里发挥作用，我们发现与Maxine的联系
+Pacific that will be there to function we find a connection with to Maxine
+
+800
+00:35:25,120 --> 00:35:25,130
+太平洋将在那里发挥作用，我们发现与Maxine的联系
+we find a connection with to Maxine is illustrate the use of all production
+
+801
+00:35:25,130 --> 00:35:30,780
+是说明所有生产后验分布的用法，我们加入了
+we find a connection with to Maxine is illustrate the use of all production
+
+802
+00:35:30,780 --> 00:35:33,700
+是说明所有生产后验分布的用法，我们加入了
+is illustrate the use of all production posterior distribution are we join the
+
+803
+00:35:33,700 --> 00:35:33,710
+是说明所有生产后验分布的用法，我们加入了
+posterior distribution are we join the group
+
+804
+00:35:33,710 --> 00:35:36,180
+组以及我们定义为哪些特殊能力
+posterior distribution are we join the group
+
+805
+00:35:36,180 --> 00:35:39,599
+组以及我们定义为哪些特殊能力
+group and what special abilities we define as
+
+806
+00:35:39,599 --> 00:35:39,609
+组以及我们定义为哪些特殊能力
+and what special abilities we define as the production
+
+807
+00:35:39,609 --> 00:35:42,359
+生产
+and what special abilities we define as the production
+
+808
+00:35:42,359 --> 00:35:45,020
+我们将为每个需要计算的协方差的反函数进行计算
+and what special abilities we define as the production
+
+809
+00:35:45,020 --> 00:35:45,030
+我们将为每个需要计算的协方差的反函数进行计算
+
+
+810
+00:35:45,030 --> 00:36:26,130
+我们将为每个需要计算的协方差的反函数进行计算
+we will compute for each requires the inverse of the covariance magic makes
+
+811
+00:36:26,130 --> 00:36:26,140
+我们将为每个需要计算的协方差的反函数进行计算
+inverse of the covariance magic makes the computation time is thank you
+
+812
+00:36:26,140 --> 00:36:31,140
+计算时间是谢谢
+inverse of the covariance magic makes the computation time is thank you
+
+813
+00:36:31,140 --> 00:36:31,330
+用于图像恢复
+inverse of the covariance magic makes the computation time is thank you
+
+814
+00:36:31,330 --> 00:36:31,340
+用于图像恢复
+
+
+815
+00:36:31,340 --> 00:36:35,020
+用于图像恢复
+for the image restoration
+
+816
+00:36:35,020 --> 00:37:14,279
+时间到了，谢谢
+for the image restoration
+
+817
+00:37:14,279 --> 00:37:14,289
+时间到了，谢谢
+
+
+818
+00:37:14,289 --> 00:37:19,519
+时间到了，谢谢
+time is and thank you
+
+819
+00:37:19,519 --> 00:37:23,180
+非常喜欢它们导致场景的抗扰度近似验证
+time is and thank you
+
+820
+00:37:23,180 --> 00:37:23,190
+非常喜欢它们导致场景的抗扰度近似验证
+
+
+821
+00:37:23,190 --> 00:37:33,190
+非常喜欢它们导致场景的抗扰度近似验证
+really like the immunity approximation validation they lead to a scene
+
+822
+00:37:33,190 --> 00:37:33,870
+我们实际要做的是
+really like the immunity approximation validation they lead to a scene
+
+823
+00:37:33,870 --> 00:37:33,880
+我们实际要做的是
+
+
+824
+00:37:33,880 --> 00:37:37,620
+我们实际要做的是
+what do we actually do is
+
+825
+00:37:37,620 --> 00:37:41,670
+萨维克式的牧场主与老与老的突变时间一
+what do we actually do is
+
+826
+00:37:41,670 --> 00:37:41,680
+萨维克式的牧场主与老与老的突变时间一
+
+
+827
+00:37:41,680 --> 00:37:50,490
+萨维克式的牧场主与老与老的突变时间一
+Saavik type of ranchers and old and the old on the mutation time a
+
+828
+00:37:50,490 --> 00:37:50,890
+对我来说，整个算法需要做的是部分算法
+Saavik type of ranchers and old and the old on the mutation time a
+
+829
+00:37:50,890 --> 00:37:50,900
+对我来说，整个算法需要做的是部分算法
+
+
+830
+00:37:50,900 --> 00:37:59,880
+对我来说，整个算法需要做的是部分算法
+what to me the whole algorithm what we need to do is the partial
+
+831
+00:37:59,880 --> 00:37:59,890
+对我来说，整个算法需要做的是部分算法
+what we need to do is the partial derivatives in another energy the energy
+
+832
+00:37:59,890 --> 00:38:07,680
+衍生出另一种能量，火的能量
+what we need to do is the partial derivatives in another energy the energy
+
+833
+00:38:07,680 --> 00:38:11,309
+衍生出另一种能量，火的能量
+derivatives in another energy the energy of the fire
+
+834
+00:38:11,309 --> 00:38:13,120
+至于胜利能量的传单
+derivatives in another energy the energy of the fire
+
+835
+00:38:13,120 --> 00:38:13,130
+至于胜利能量的传单
+
+
+836
+00:38:13,130 --> 00:38:50,840
+至于胜利能量的传单
+as for the Flyers for the triumph energy
+
+837
+00:38:50,840 --> 00:39:05,170
+没有Allison Stockport这个装置，但我是Alice
+as for the Flyers for the triumph energy
+
+838
+00:39:05,170 --> 00:39:05,180
+没有Allison Stockport这个装置，但我是Alice
+
+
+839
+00:39:05,180 --> 00:39:13,420
+没有Allison Stockport这个装置，但我是Alice
+no Allison Stockport this device but I is Alice
+
+840
+00:39:13,420 --> 00:39:31,730
+我们知道它的引力可以写成
+no Allison Stockport this device but I is Alice
+
+841
+00:39:31,730 --> 00:39:31,740
+我们知道它的引力可以写成
+
+
+842
+00:39:31,740 --> 00:39:37,950
+我们知道它的引力可以写成
+we know the gravity it can be written as
+
+843
+00:39:37,950 --> 00:39:42,749
+类似地
+we know the gravity it can be written as
+
+844
+00:39:42,749 --> 00:39:42,759
+类似地
+
+
+845
+00:39:42,759 --> 00:39:48,069
+类似地
+similarly the for the area
+
+846
+00:39:48,069 --> 00:40:02,200
+绝对决定矩阵的行列式
+similarly the for the area
+
+847
+00:40:02,200 --> 00:40:02,210
+绝对决定矩阵的行列式
+
+
+848
+00:40:02,210 --> 00:40:11,110
+绝对决定矩阵的行列式
+for the determinants of decision matrix absolutely
+
+849
+00:40:11,110 --> 00:40:13,160
+真的是导数
+for the determinants of decision matrix absolutely
+
+850
+00:40:13,160 --> 00:40:13,170
+真的是导数
+
+
+851
+00:40:13,170 --> 00:40:16,789
+真的是导数
+really the derivative
+
+852
+00:40:16,789 --> 00:40:28,840
+其实非常嘿，请收敛13
+really the derivative
+
+853
+00:40:28,840 --> 00:40:28,850
+其实非常嘿，请收敛13
+
+
+854
+00:40:28,850 --> 00:40:34,460
+其实非常嘿，请收敛13
+actually very hey it converged please like them 13
+
+855
+00:40:34,460 --> 00:40:34,470
+其实非常嘿，请收敛13
+hey it converged please like them 13 iterations and the here
+
+856
+00:40:34,470 --> 00:40:37,670
+迭代，这里我将首先向您保证它是补丁
+hey it converged please like them 13 iterations and the here
+
+857
+00:40:37,670 --> 00:40:41,660
+迭代，这里我将首先向您保证它是补丁
+iterations and the here I will first assure you it's the patch
+
+858
+00:40:41,660 --> 00:40:41,670
+迭代，这里我将首先向您保证它是补丁
+I will first assure you it's the patch faced the baby and three
+
+859
+00:40:41,670 --> 00:40:44,930
+面对婴儿和三个
+I will first assure you it's the patch faced the baby and three
+
+860
+00:40:44,930 --> 00:40:57,840
+但总的来说，
+I will first assure you it's the patch faced the baby and three
+
+861
+00:40:57,840 --> 00:40:57,850
+但总的来说，
+
+
+862
+00:40:57,850 --> 00:41:02,160
+但总的来说，
+but in total we have up to
+
+863
+00:41:02,160 --> 00:41:02,890
+女士们生活在其中，我们保留作为王子的说唱歌手之一
+but in total we have up to
+
+864
+00:41:02,890 --> 00:41:02,900
+女士们生活在其中，我们保留作为王子的说唱歌手之一
+
+
+865
+00:41:02,900 --> 00:41:14,750
+女士们生活在其中，我们保留作为王子的说唱歌手之一
+ladies to live in that we keep the one of the decree the Prince as the rapper
+
+866
+00:41:14,750 --> 00:41:17,360
+在第一部分中只是所有项目的平均值
+ladies to live in that we keep the one of the decree the Prince as the rapper
+
+867
+00:41:17,360 --> 00:41:17,370
+在第一部分中只是所有项目的平均值
+
+
+868
+00:41:17,370 --> 00:41:23,420
+在第一部分中只是所有项目的平均值
+in the first part is just for the average of all the projects
+
+869
+00:41:23,420 --> 00:41:23,430
+在第一部分中只是所有项目的平均值
+average of all the projects and the second part is actually is to
+
+870
+00:41:23,430 --> 00:41:27,329
+第二部分实际上是衰减位置的频率
+average of all the projects and the second part is actually is to
+
+871
+00:41:27,329 --> 00:41:29,999
+第二部分实际上是衰减位置的频率
+and the second part is actually is to attenuate the frequency for positions
+
+872
+00:41:29,999 --> 00:41:30,009
+第二部分实际上是衰减位置的频率
+attenuate the frequency for positions that do not match the record and it is
+
+873
+00:41:30,009 --> 00:41:35,339
+与记录不匹配的是
+attenuate the frequency for positions that do not match the record and it is
+
+874
+00:41:35,339 --> 00:41:39,089
+辛西娅常数这个修正常数实际上是迟钝的
+attenuate the frequency for positions that do not match the record and it is
+
+875
+00:41:39,089 --> 00:41:39,099
+辛西娅常数这个修正常数实际上是迟钝的
+
+
+876
+00:41:39,099 --> 00:41:45,730
+辛西娅常数这个修正常数实际上是迟钝的
+Cynthia is constant this fix the constant actually is
+
+877
+00:41:45,730 --> 00:41:45,740
+辛西娅常数这个修正常数实际上是迟钝的
+constant actually is where is the noise variance would
+
+878
+00:41:45,740 --> 00:41:49,540
+在素材功能中，噪声方差会在哪里激活？
+constant actually is where is the noise variance would
+
+879
+00:41:49,540 --> 00:41:52,210
+在素材功能中，噪声方差会在哪里激活？
+where is the noise variance would activate in the footage function we
+
+880
+00:41:52,210 --> 00:41:52,220
+在素材功能中，噪声方差会在哪里激活？
+activate in the footage function we believe is the difference between the
+
+881
+00:41:52,220 --> 00:41:54,550
+相信是说唱歌手的触动之间的区别
+activate in the footage function we believe is the difference between the
+
+882
+00:41:54,550 --> 00:41:58,869
+相信是说唱歌手的触动之间的区别
+believe is the difference between the touch of the rapper's
+
+883
+00:41:58,869 --> 00:41:59,820
+这是您制作的渐变噪声数为3的结果，
+believe is the difference between the touch of the rapper's
+
+884
+00:41:59,820 --> 00:41:59,830
+这是您制作的渐变噪声数为3的结果，
+
+
+885
+00:41:59,830 --> 00:42:10,720
+这是您制作的渐变噪声数为3的结果，
+and here is the result for the number of the gradient noise you make is 3 and the
+
+886
+00:42:10,720 --> 00:42:10,730
+这是您制作的渐变噪声数为3的结果，
+the gradient noise you make is 3 and the include noise variance is their tape
+
+887
+00:42:10,730 --> 00:42:12,730
+包含噪声方差是他们的磁带图像大小是2到5 6 x 2 pi
+the gradient noise you make is 3 and the include noise variance is their tape
+
+888
+00:42:12,730 --> 00:42:19,300
+包含噪声方差是他们的磁带图像大小是2到5 6 x 2 pi
+include noise variance is their tape image size is 2 to 5 6 by 2 pi
+
+889
+00:42:19,300 --> 00:42:25,690
+我以此来显示他们的结果，他要求我今晚讲种族，并要求有
+include noise variance is their tape image size is 2 to 5 6 by 2 pi
+
+890
+00:42:25,690 --> 00:42:25,700
+我以此来显示他们的结果，他要求我今晚讲种族，并要求有
+
+
+891
+00:42:25,700 --> 00:42:33,210
+我以此来显示他们的结果，他要求我今晚讲种族，并要求有
+I show their results by it he asked I speak tonight racial and asked to have
+
+892
+00:42:33,210 --> 00:42:33,220
+我以此来显示他们的结果，他要求我今晚讲种族，并要求有
+I speak tonight racial and asked to have dr. Shri Mataji
+
+893
+00:42:33,220 --> 00:42:36,670
+博士什里·马塔吉（Shri Mataji）
+I speak tonight racial and asked to have dr. Shri Mataji
+
+894
+00:42:36,670 --> 00:42:36,970
+因为我是ger队的饲养者，所以助推器花了很多时间，所以如果你还记得的话
+I speak tonight racial and asked to have dr. Shri Mataji
+
+895
+00:42:36,970 --> 00:42:36,980
+因为我是ger队的饲养者，所以助推器花了很多时间，所以如果你还记得的话
+
+
+896
+00:42:36,980 --> 00:42:44,920
+因为我是ger队的饲养者，所以助推器花了很多时间，所以如果你还记得的话
+the Boosters ts the time as I am the feeder of the Badgers so if you remember
+
+897
+00:42:44,920 --> 00:42:44,930
+因为我是ger队的饲养者，所以助推器花了很多时间，所以如果你还记得的话
+feeder of the Badgers so if you remember the largely work to the wrong tree
+
+898
+00:42:44,930 --> 00:42:49,780
+对错误树的大部分工作
+feeder of the Badgers so if you remember the largely work to the wrong tree
+
+899
+00:42:49,780 --> 00:43:35,910
+[音乐]
+feeder of the Badgers so if you remember the largely work to the wrong tree
+
+900
+00:43:35,910 --> 00:43:35,920
+[音乐]
+
+
+901
+00:43:35,920 --> 00:43:38,959
+[音乐]
+[Music]
+
+902
+00:43:38,959 --> 00:43:54,380
+是较大图像尺寸的结果5到5哦
+[Music]
+
+903
+00:43:54,380 --> 00:43:54,390
+是较大图像尺寸的结果5到5哦
+
+
+904
+00:43:54,390 --> 00:44:02,490
+是较大图像尺寸的结果5到5哦
+is the result for bigger image size Oh 5 to 5
+
+905
+00:44:02,490 --> 00:44:10,130
+让我向您展示更大的形象
+is the result for bigger image size Oh 5 to 5
+
+906
+00:44:10,130 --> 00:44:10,140
+让我向您展示更大的形象
+
+
+907
+00:44:10,140 --> 00:44:15,570
+让我向您展示更大的形象
+let me show you the even bigger image
+
+908
+00:44:15,570 --> 00:44:22,160
+是的
+let me show you the even bigger image
+
+909
+00:44:22,160 --> 00:44:22,170
+是的
+
+
+910
+00:44:22,170 --> 00:44:25,170
+是的
+yes
+
+911
+00:44:25,170 --> 00:44:27,240
+由医生摆动两次
+yes
+
+912
+00:44:27,240 --> 00:44:27,250
+由医生摆动两次
+
+
+913
+00:44:27,250 --> 00:44:30,960
+由医生摆动两次
+swing by the doctor twice
+
+914
+00:44:30,960 --> 00:44:31,060
+还要考虑一下我刚才在英国队长的讲话。
+swing by the doctor twice
+
+915
+00:44:31,060 --> 00:44:31,070
+还要考虑一下我刚才在英国队长的讲话。
+
+
+916
+00:44:31,070 --> 00:44:42,910
+还要考虑一下我刚才在英国队长的讲话。
+also consider the English team leader I I just popped the remark from the
+
+917
+00:44:42,910 --> 00:44:42,920
+还要考虑一下我刚才在英国队长的讲话。
+I just popped the remark from the teenage member from zero enough
+
+918
+00:44:42,920 --> 00:44:47,440
+少年成员从零开始
+I just popped the remark from the teenage member from zero enough
+
+919
+00:44:47,440 --> 00:44:54,780
+否则
+I just popped the remark from the teenage member from zero enough
+
+920
+00:44:54,780 --> 00:44:54,790
+否则
+
+
+921
+00:44:54,790 --> 00:44:57,330
+否则
+the otherwise
+
+922
+00:44:57,330 --> 00:45:01,140
+我们之间的所有三场比赛
+the otherwise
+
+923
+00:45:01,140 --> 00:45:01,150
+我们之间的所有三场比赛
+
+
+924
+00:45:01,150 --> 00:45:07,420
+我们之间的所有三场比赛
+all our three matches between that
+
+925
+00:45:07,420 --> 00:45:07,430
+我们之间的所有三场比赛
+that forever after leaving my village
+
+926
+00:45:07,430 --> 00:45:11,099
+永远离开我的村庄永远
+that forever after leaving my village
+
+927
+00:45:11,099 --> 00:45:13,000
+永远离开我的村庄永远
+forever after leaving my village immediately
+
+928
+00:45:13,000 --> 00:45:13,010
+永远离开我的村庄永远
+immediately fifty
+
+929
+00:45:13,010 --> 00:45:15,339
+五十
+immediately fifty
+
+930
+00:45:15,339 --> 00:45:17,370
+愚弄线性记录中的两点
+immediately fifty
+
+931
+00:45:17,370 --> 00:45:17,380
+愚弄线性记录中的两点
+
+
+932
+00:45:17,380 --> 00:45:23,170
+愚弄线性记录中的两点
+fool on the linear record out of two points
+
+933
+00:45:23,170 --> 00:45:23,180
+愚弄线性记录中的两点
+points these more amazing wonders
+
+934
+00:45:23,180 --> 00:45:27,020
+这些更奇妙的奇观，是的，它们彼此非常接近
+points these more amazing wonders
+
+935
+00:45:27,020 --> 00:45:32,180
+这些更奇妙的奇观，是的，它们彼此非常接近
+these more amazing wonders yeah they are very close to each other
+
+936
+00:45:32,180 --> 00:45:32,700
+根据管理局的赔偿金可能会过期
+these more amazing wonders yeah they are very close to each other
+
+937
+00:45:32,700 --> 00:45:32,710
+根据管理局的赔偿金可能会过期
+
+
+938
+00:45:32,710 --> 00:45:36,300
+根据管理局的赔偿金可能会过期
+according to Authority benamber may be expiated
+
+939
+00:45:36,300 --> 00:45:36,310
+根据管理局的赔偿金可能会过期
+expiated I also tie the image type the previous
+
+940
+00:45:36,310 --> 00:45:39,330
+我也将上个月的图片类型扎起来，比如说要买五五次
+expiated I also tie the image type the previous
+
+941
+00:45:39,330 --> 00:45:42,750
+我也将上个月的图片类型扎起来，比如说要买五五次
+I also tie the image type the previous month like five five runs to buy I
+
+942
+00:45:42,750 --> 00:45:42,760
+我也将上个月的图片类型扎起来，比如说要买五五次
+month like five five runs to buy I wanted things they happen maybe the
+
+943
+00:45:42,760 --> 00:45:45,960
+想要发生的事情，也许是正确的生活，愿景实际上是好的
+month like five five runs to buy I wanted things they happen maybe the
+
+944
+00:45:45,960 --> 00:45:48,720
+想要发生的事情，也许是正确的生活，愿景实际上是好的
+wanted things they happen maybe the right life the vision actually is good
+
+945
+00:45:48,720 --> 00:45:48,730
+想要发生的事情，也许是正确的生活，愿景实际上是好的
+right life the vision actually is good in the bean bag is not inclusive that
+
+946
+00:45:48,730 --> 00:45:53,340
+豆袋中的价格和机会不包含在内，因此
+right life the vision actually is good in the bean bag is not inclusive that
+
+947
+00:45:53,340 --> 00:45:56,430
+豆袋中的价格和机会不包含在内，因此
+in the bean bag is not inclusive that price and opportunity so it's
+
+948
+00:45:56,430 --> 00:45:56,440
+豆袋中的价格和机会不包含在内，因此
+price and opportunity so it's preventively welcome
+
+949
+00:45:56,440 --> 00:45:59,580
+预防性地欢迎
+price and opportunity so it's preventively welcome
+
+950
+00:45:59,580 --> 00:46:03,690
+这个线性时间也不能最成功地解析出精美的图像，
+price and opportunity so it's preventively welcome
+
+951
+00:46:03,690 --> 00:46:03,700
+这个线性时间也不能最成功地解析出精美的图像，
+
+
+952
+00:46:03,700 --> 00:46:10,020
+这个线性时间也不能最成功地解析出精美的图像，
+this linear time neither can you resolve a nice image most successfully than
+
+953
+00:46:10,020 --> 00:46:10,030
+这个线性时间也不能最成功地解析出精美的图像，
+a nice image most successfully than aberration answered all the time in all
+
+954
+00:46:10,030 --> 00:46:12,460
+在所有情况下，像差总是回答鞭打者对小物体的尝试。
+a nice image most successfully than aberration answered all the time in all
+
+955
+00:46:12,460 --> 00:46:16,210
+在所有情况下，像差总是回答鞭打者对小物体的尝试。
+aberration answered all the time in all cases for lasher's tries on the small
+
+956
+00:46:16,210 --> 00:46:16,220
+在所有情况下，像差总是回答鞭打者对小物体的尝试。
+cases for lasher's tries on the small amount of teammates read the amps medium
+
+957
+00:46:16,220 --> 00:46:19,480
+队友阅读安培中号3d是小电池嫩线性
+cases for lasher's tries on the small amount of teammates read the amps medium
+
+958
+00:46:19,480 --> 00:46:23,290
+队友阅读安培中号3d是小电池嫩线性
+amount of teammates read the amps medium 3d is the little battery tender linear
+
+959
+00:46:23,290 --> 00:46:23,300
+队友阅读安培中号3d是小电池嫩线性
+3d is the little battery tender linear time but for the larger amount of image
+
+960
+00:46:23,300 --> 00:46:26,380
+时间，但对于大量图像，线性问题意义深远
+3d is the little battery tender linear time but for the larger amount of image
+
+961
+00:46:26,380 --> 00:46:30,400
+时间，但对于大量图像，线性问题意义深远
+time but for the larger amount of image linear matters profound
+
+962
+00:46:30,400 --> 00:46:31,530
+也许猫头鹰早于硒雅典，而不是让人惊叹的国家
+time but for the larger amount of image linear matters profound
+
+963
+00:46:31,530 --> 00:46:31,540
+也许猫头鹰早于硒雅典，而不是让人惊叹的国家
+
+
+964
+00:46:31,540 --> 00:46:36,780
+也许猫头鹰早于硒雅典，而不是让人惊叹的国家
+maybe the owl earlier the selenium Athens rather than amazing of countries
+
+965
+00:46:36,780 --> 00:46:36,790
+也许猫头鹰早于硒雅典，而不是让人惊叹的国家
+Athens rather than amazing of countries in my legs
+
+966
+00:46:36,790 --> 00:46:40,230
+在我的腿上
+Athens rather than amazing of countries in my legs
+
+967
+00:46:40,230 --> 00:47:07,350
+所以你的姿势就是为什么分钟数会引起注意
+Athens rather than amazing of countries in my legs
+
+968
+00:47:07,350 --> 00:47:07,360
+所以你的姿势就是为什么分钟数会引起注意
+
+
+969
+00:47:07,360 --> 00:47:14,760
+所以你的姿势就是为什么分钟数会引起注意
+so your posture is why the number of minutes notice
+
+970
+00:47:14,760 --> 00:47:15,890
+让我们玩方程式二
+so your posture is why the number of minutes notice
+
+971
+00:47:15,890 --> 00:47:15,900
+让我们玩方程式二
+
+
+972
+00:47:15,900 --> 00:47:19,490
+让我们玩方程式二
+let's play of equation two
+
+973
+00:47:19,490 --> 00:47:30,280
+如果您有分配，甚至还有期权和大类人猿
+let's play of equation two
+
+974
+00:47:30,280 --> 00:47:30,290
+如果您有分配，甚至还有期权和大类人猿
+
+
+975
+00:47:30,290 --> 00:47:36,080
+如果您有分配，甚至还有期权和大类人猿
+if you have a distribution or even for the options and the big hominoid
+
+976
+00:47:36,080 --> 00:47:36,090
+如果您有分配，甚至还有期权和大类人猿
+the options and the big hominoid be affected by the tsunami the marries
+
+977
+00:47:36,090 --> 00:47:42,470
+受到海啸的影响，喧闹的噪音不会令西格玛广场感到高兴
+the options and the big hominoid be affected by the tsunami the marries
+
+978
+00:47:42,470 --> 00:47:47,420
+受到海啸的影响，喧闹的噪音不会令西格玛广场感到高兴
+be affected by the tsunami the marries of noise won't be pleased Sigma square
+
+979
+00:47:47,420 --> 00:47:47,430
+受到海啸的影响，喧闹的噪音不会令西格玛广场感到高兴
+of noise won't be pleased Sigma square well if you crease the into Sigma square
+
+980
+00:47:47,430 --> 00:47:50,450
+好吧，如果您将其折成Sigma正方形，那么您就在其中，所以您越多
+of noise won't be pleased Sigma square well if you crease the into Sigma square
+
+981
+00:47:50,450 --> 00:47:54,800
+好吧，如果您将其折成Sigma正方形，那么您就在其中，所以您越多
+well if you crease the into Sigma square a you're in it so the more the more you
+
+982
+00:47:54,800 --> 00:47:54,810
+好吧，如果您将其折成Sigma正方形，那么您就在其中，所以您越多
+a you're in it so the more the more you makes you get Latino is very you have so
+
+983
+00:47:54,810 --> 00:48:00,200
+让您变得拉丁裔非常拥有，所以他们想添加一些东西
+a you're in it so the more the more you makes you get Latino is very you have so
+
+984
+00:48:00,200 --> 00:48:04,700
+让您变得拉丁裔非常拥有，所以他们想添加一些东西
+makes you get Latino is very you have so is something like they'd like to add
+
+985
+00:48:04,700 --> 00:48:04,710
+让您变得拉丁裔非常拥有，所以他们想添加一些东西
+is something like they'd like to add them together and the the the noise
+
+986
+00:48:04,710 --> 00:48:08,330
+他们在一起和噪声方差
+is something like they'd like to add them together and the the the noise
+
+987
+00:48:08,330 --> 00:48:10,700
+他们在一起和噪声方差
+them together and the the the noise variance
+
+988
+00:48:10,700 --> 00:48:19,999
+你是说一个饼干吗
+them together and the the the noise variance
+
+989
+00:48:19,999 --> 00:48:20,009
+你是说一个饼干吗
+
+
+990
+00:48:20,009 --> 00:48:23,789
+你是说一个饼干吗
+would you mean a cookie
+
+991
+00:48:23,789 --> 00:48:24,779
+如果这是932 NASA在所有问题上的区别，
+would you mean a cookie
+
+992
+00:48:24,779 --> 00:48:24,789
+如果这是932 NASA在所有问题上的区别，
+
+
+993
+00:48:24,789 --> 00:48:34,689
+如果这是932 NASA在所有问题上的区别，
+if it's difference between the 932 NASA wonder for all of the matter the
+
+994
+00:48:34,689 --> 00:48:34,699
+如果这是932 NASA在所有问题上的区别，
+wonder for all of the matter the computation time will increase
+
+995
+00:48:34,699 --> 00:48:37,940
+计算时间将增加原住民单位的数量
+wonder for all of the matter the computation time will increase
+
+996
+00:48:37,940 --> 00:48:42,200
+计算时间将增加原住民单位的数量
+computation time will increase the number of units for the aboriginal
+
+997
+00:48:42,200 --> 00:48:42,210
+计算时间将增加原住民单位的数量
+the number of units for the aboriginal it's very small always lifestyle website
+
+998
+00:48:42,210 --> 00:48:44,359
+这个很小的网站始终都是生活时尚网站，因为您没有那样做，
+the number of units for the aboriginal it's very small always lifestyle website
+
+999
+00:48:44,359 --> 00:48:46,370
+这个很小的网站始终都是生活时尚网站，因为您没有那样做，
+it's very small always lifestyle website because you didn't do that keep
+
+1000
+00:48:46,370 --> 00:48:46,380
+这个很小的网站始终都是生活时尚网站，因为您没有那样做，
+because you didn't do that keep syntactic it has to actually add them
+
+1001
+00:48:46,380 --> 00:48:48,650
+语法上必须将它们实际加在一起，但另一方面
+because you didn't do that keep syntactic it has to actually add them
+
+1002
+00:48:48,650 --> 00:48:52,130
+语法上必须将它们实际加在一起，但另一方面
+syntactic it has to actually add them together but for the other matter it
+
+1003
+00:48:52,130 --> 00:48:52,140
+语法上必须将它们实际加在一起，但另一方面
+together but for the other matter it really depends depends on the speech of
+
+1004
+00:48:52,140 --> 00:48:54,950
+真的取决于物质的表达
+together but for the other matter it really depends depends on the speech of
+
+1005
+00:48:54,950 --> 00:48:57,319
+真的取决于物质的表达
+really depends depends on the speech of matter
+
+1006
+00:48:57,319 --> 00:48:59,949
+我找到它了
+really depends depends on the speech of matter
+
+1007
+00:48:59,949 --> 00:48:59,959
+我找到它了
+
+
+1008
+00:48:59,959 --> 00:49:03,430
+我找到它了
+I find it
+
+1009
+00:49:03,430 --> 00:49:03,510
+图片成员越多，他们的主人的计算时间就比我们少
+I find it
+
+1010
+00:49:03,510 --> 00:49:03,520
+图片成员越多，他们的主人的计算时间就比我们少
+
+
+1011
+00:49:03,520 --> 00:49:12,390
+图片成员越多，他们的主人的计算时间就比我们少
+with more image members the living their master has less computation time than we
+
+1012
+00:49:12,390 --> 00:49:12,400
+图片成员越多，他们的主人的计算时间就比我们少
+master has less computation time than we do you have
+
+1013
+00:49:12,400 --> 00:49:14,790
+你有没有
+master has less computation time than we do you have
+
+1014
+00:49:14,790 --> 00:51:04,170
+哦，大家好，我的名字叫露西（Lucy），就像我来自航空航天业一样，
+master has less computation time than we do you have
+
+1015
+00:51:04,170 --> 00:51:04,180
+哦，大家好，我的名字叫露西（Lucy），就像我来自航空航天业一样，
+
+
+1016
+00:51:04,180 --> 00:51:10,470
+哦，大家好，我的名字叫露西（Lucy），就像我来自航空航天业一样，
+oh hello everyone my name is Lucy same way I'm from the aerospace and
+
+1017
+00:51:10,470 --> 00:51:10,480
+哦，大家好，我的名字叫露西（Lucy），就像我来自航空航天业一样，
+way I'm from the aerospace and mechanical engineering taking this
+
+1018
+00:51:10,480 --> 00:51:16,109
+机械工程学这门课虽然有点冷但是很棒
+way I'm from the aerospace and mechanical engineering taking this
+
+1019
+00:51:16,109 --> 00:51:18,960
+机械工程学这门课虽然有点冷但是很棒
+mechanical engineering taking this course it's kind of cold but a great
+
+1020
+00:51:18,960 --> 00:51:18,970
+机械工程学这门课虽然有点冷但是很棒
+course it's kind of cold but a great challenge for me and it's my pleasure to
+
+1021
+00:51:18,970 --> 00:51:21,329
+挑战对我来说，我很乐意做有关交付的演讲
+course it's kind of cold but a great challenge for me and it's my pleasure to
+
+1022
+00:51:21,329 --> 00:51:24,299
+挑战对我来说，我很乐意做有关交付的演讲
+challenge for me and it's my pleasure to do my presentation about delivering
+
+1023
+00:51:24,299 --> 00:51:24,309
+挑战对我来说，我很乐意做有关交付的演讲
+do my presentation about delivering using the things I learned in the car I
+
+1024
+00:51:24,309 --> 00:51:29,309
+使用我在车上学到的东西，我这样做是因为它非常有趣
+do my presentation about delivering using the things I learned in the car I
+
+1025
+00:51:29,309 --> 00:51:33,890
+使用我在车上学到的东西，我这样做是因为它非常有趣
+using the things I learned in the car I do this because of its very interesting
+
+1026
+00:51:33,890 --> 00:51:33,900
+使用我在车上学到的东西，我这样做是因为它非常有趣
+do this because of its very interesting project on the website so when we
+
+1027
+00:51:33,900 --> 00:51:40,349
+网站上的项目，因此当我们认为应该花力气时，我们可以找到一个
+do this because of its very interesting project on the website so when we
+
+1028
+00:51:40,349 --> 00:51:43,940
+网站上的项目，因此当我们认为应该花力气时，我们可以找到一个
+project on the website so when we thought should be laboring we can find a
+
+1029
+00:51:43,940 --> 00:51:43,950
+网站上的项目，因此当我们认为应该花力气时，我们可以找到一个
+thought should be laboring we can find a lot of examples we can the most famous
+
+1030
+00:51:43,950 --> 00:51:49,170
+我们可以举很多例子，最有名的女人是加州理工学院1:01的标签
+thought should be laboring we can find a lot of examples we can the most famous
+
+1031
+00:51:49,170 --> 00:51:52,230
+我们可以举很多例子，最有名的女人是加州理工学院1:01的标签
+lot of examples we can the most famous woman is a Caltech 1:01 the labels
+
+1032
+00:51:52,230 --> 00:51:52,240
+我们可以举很多例子，最有名的女人是加州理工学院1:01的标签
+woman is a Caltech 1:01 the labels airplanes or other object tools in our
+
+1033
+00:51:52,240 --> 00:51:55,109
+我们日常生活中的飞机或其他物体工具，例如椅子或桌子或
+woman is a Caltech 1:01 the labels airplanes or other object tools in our
+
+1034
+00:51:55,109 --> 00:51:57,270
+我们日常生活中的飞机或其他物体工具，例如椅子或桌子或
+airplanes or other object tools in our daily lives like a chair or table or
+
+1035
+00:51:57,270 --> 00:51:57,280
+我们日常生活中的飞机或其他物体工具，例如椅子或桌子或
+daily lives like a chair or table or whatever you can say of recently there's
+
+1036
+00:51:57,280 --> 00:52:00,059
+不管你怎么说，最近还有另一种爱的形象，他们将它们标记为
+daily lives like a chair or table or whatever you can say of recently there's
+
+1037
+00:52:00,059 --> 00:52:06,230
+不管你怎么说，最近还有另一种爱的形象，他们将它们标记为
+whatever you can say of recently there's another image love love they label these
+
+1038
+00:52:06,230 --> 00:52:06,240
+不管你怎么说，最近还有另一种爱的形象，他们将它们标记为
+another image love love they label these birds and they can characterize about
+
+1039
+00:52:06,240 --> 00:52:11,059
+鸟类，它们可以描述其中的任何一个，这也是为什么
+another image love love they label these birds and they can characterize about
+
+1040
+00:52:11,059 --> 00:52:16,470
+鸟类，它们可以描述其中的任何一个，这也是为什么
+birds and they can characterize about either and this is also the reason why
+
+1041
+00:52:16,470 --> 00:52:16,480
+鸟类，它们可以描述其中的任何一个，这也是为什么
+either and this is also the reason why we do this labeling before because if
+
+1042
+00:52:16,480 --> 00:52:19,140
+我们之前做过这个标签，因为如果您想知道这是什么，您首先
+either and this is also the reason why we do this labeling before because if
+
+1043
+00:52:19,140 --> 00:52:21,569
+我们之前做过这个标签，因为如果您想知道这是什么，您首先
+we do this labeling before because if you want to know what this is you first
+
+1044
+00:52:21,569 --> 00:52:21,579
+我们之前做过这个标签，因为如果您想知道这是什么，您首先
+you want to know what this is you first have to label yet you have a big picture
+
+1045
+00:52:21,579 --> 00:52:26,250
+必须贴上标签，但您有一幅大图，然后我们必须说出对象在哪里
+you want to know what this is you first have to label yet you have a big picture
+
+1046
+00:52:26,250 --> 00:52:30,410
+必须贴上标签，但您有一幅大图，然后我们必须说出对象在哪里
+have to label yet you have a big picture then we have to say where is the object
+
+1047
+00:52:30,410 --> 00:52:30,420
+必须贴上标签，但您有一幅大图，然后我们必须说出对象在哪里
+then we have to say where is the object this is a primary step
+
+1048
+00:52:30,420 --> 00:52:34,590
+这是我们在可以渲染的Google上进行搜索时的第一步
+then we have to say where is the object this is a primary step
+
+1049
+00:52:34,590 --> 00:52:38,040
+这是我们在可以渲染的Google上进行搜索时的第一步
+this is a primary step when we search on Google who can render
+
+1050
+00:52:38,040 --> 00:52:38,050
+这是我们在可以渲染的Google上进行搜索时的第一步
+when we search on Google who can render some papers they talk about this project
+
+1051
+00:52:38,050 --> 00:52:40,890
+他们谈论这个项目的一些论文请真正的产品，这是一个
+when we search on Google who can render some papers they talk about this project
+
+1052
+00:52:40,890 --> 00:52:44,100
+他们谈论这个项目的一些论文请真正的产品，这是一个
+some papers they talk about this project please kind of true product it is a
+
+1053
+00:52:44,100 --> 00:52:44,110
+他们谈论这个项目的一些论文请真正的产品，这是一个
+please kind of true product it is a customer Redmond field and we have great
+
+1054
+00:52:44,110 --> 00:52:48,870
+客户雷蒙德（Redmond）领域，我们有很好的观察和关于
+please kind of true product it is a customer Redmond field and we have great
+
+1055
+00:52:48,870 --> 00:52:52,290
+客户雷蒙德（Redmond）领域，我们有很好的观察和关于
+customer Redmond field and we have great observations and the hidden value about
+
+1056
+00:52:52,290 --> 00:52:52,300
+客户雷蒙德（Redmond）领域，我们有很好的观察和关于
+observations and the hidden value about the hand observe reservations image and
+
+1057
+00:52:52,300 --> 00:52:55,610
+手观察保留图像和流行的方法是迭代的
+observations and the hidden value about the hand observe reservations image and
+
+1058
+00:52:55,610 --> 00:52:58,050
+手观察保留图像和流行的方法是迭代的
+the hand observe reservations image and popular methods are iterative
+
+1059
+00:52:58,050 --> 00:52:58,060
+手观察保留图像和流行的方法是迭代的
+popular methods are iterative conditional mode this Laster we have a
+
+1060
+00:52:58,060 --> 00:53:01,260
+有条件的模式这Laster我们会在您执行此操作时进行人为操作
+popular methods are iterative conditional mode this Laster we have a
+
+1061
+00:53:01,260 --> 00:53:03,360
+有条件的模式这Laster我们会在您执行此操作时进行人为操作
+conditional mode this Laster we have a homework in human to when you do this
+
+1062
+00:53:03,360 --> 00:53:03,370
+有条件的模式这Laster我们会在您执行此操作时进行人为操作
+homework in human to when you do this this is the beginning of this project
+
+1063
+00:53:03,370 --> 00:53:06,420
+这是这个项目的开始，然后根据这些，我们可以做
+homework in human to when you do this this is the beginning of this project
+
+1064
+00:53:06,420 --> 00:53:11,550
+这是这个项目的开始，然后根据这些，我们可以做
+this is the beginning of this project then based on these at the end we can do
+
+1065
+00:53:11,550 --> 00:53:11,560
+这是这个项目的开始，然后根据这些，我们可以做
+then based on these at the end we can do a graphic art and god Carter actually it
+
+1066
+00:53:11,560 --> 00:53:16,950
+一个图形艺术和卡特神，实际上它不仅可以应用在这个想法上，
+then based on these at the end we can do a graphic art and god Carter actually it
+
+1067
+00:53:16,950 --> 00:53:20,070
+一个图形艺术和卡特神，实际上它不仅可以应用在这个想法上，
+a graphic art and god Carter actually it can be applied not only on this idea we
+
+1068
+00:53:20,070 --> 00:53:20,080
+一个图形艺术和卡特神，实际上它不仅可以应用在这个想法上，
+can be applied not only on this idea we can also applied on Vicki and thousand
+
+1069
+00:53:20,080 --> 00:53:23,430
+也可以应用于维琪和一千种方法，因为增长的趋势
+can be applied not only on this idea we can also applied on Vicki and thousand
+
+1070
+00:53:23,430 --> 00:53:26,370
+也可以应用于维琪和一千种方法，因为增长的趋势
+can also applied on Vicki and thousand methods because the growth current
+
+1071
+00:53:26,370 --> 00:53:26,380
+也可以应用于维琪和一千种方法，因为增长的趋势
+methods because the growth current basically it can kill a lot of cool
+
+1072
+00:53:26,380 --> 00:53:29,850
+基本上，它可以杀死很多很酷的像素，不仅是一个像素，然后
+methods because the growth current basically it can kill a lot of cool
+
+1073
+00:53:29,850 --> 00:53:34,640
+基本上，它可以杀死很多很酷的像素，不仅是一个像素，然后
+basically it can kill a lot of cool pixels not only one pixels and then
+
+1074
+00:53:34,640 --> 00:53:34,650
+基本上，它可以杀死很多很酷的像素，不仅是一个像素，然后
+pixels not only one pixels and then distill method I will talk about is the
+
+1075
+00:53:34,650 --> 00:53:36,930
+我将讨论的提炼方法是他认为传播的循环
+pixels not only one pixels and then distill method I will talk about is the
+
+1076
+00:53:36,930 --> 00:53:41,070
+我将讨论的提炼方法是他认为传播的循环
+distill method I will talk about is the loop he believes to propagation
+
+1077
+00:53:41,070 --> 00:53:41,490
+海报工作人员赶上了沉积金属的大师和一个高级大师
+distill method I will talk about is the loop he believes to propagation
+
+1078
+00:53:41,490 --> 00:53:41,500
+海报工作人员赶上了沉积金属的大师和一个高级大师
+
+
+1079
+00:53:41,500 --> 00:53:47,940
+海报工作人员赶上了沉积金属的大师和一个高级大师
+poster staffer to catch the master depositing metal and an advanced master
+
+1080
+00:53:47,940 --> 00:53:47,950
+海报工作人员赶上了沉积金属的大师和一个高级大师
+depositing metal and an advanced master that would be sequential train waited
+
+1081
+00:53:47,950 --> 00:53:50,210
+这将是基于
+depositing metal and an advanced master that would be sequential train waited
+
+1082
+00:53:50,210 --> 00:53:52,860
+这将是基于
+that would be sequential train waited message conference which is based on
+
+1083
+00:53:52,860 --> 00:53:52,870
+这将是基于
+message conference which is based on Avicii and when I talk about this method
+
+1084
+00:53:52,870 --> 00:53:57,660
+Avicii，当我谈论这种方法时，希望您能告诉我我错了
+message conference which is based on Avicii and when I talk about this method
+
+1085
+00:53:57,660 --> 00:54:01,230
+Avicii，当我谈论这种方法时，希望您能告诉我我错了
+Avicii and when I talk about this method I hope you can tell me where I'm wrong
+
+1086
+00:54:01,230 --> 00:54:01,240
+Avicii，当我谈论这种方法时，希望您能告诉我我错了
+I hope you can tell me where I'm wrong because we can say this equation in our
+
+1087
+00:54:01,240 --> 00:54:08,910
+因为我们可以说我们工作部分中的这个等式是总的
+I hope you can tell me where I'm wrong because we can say this equation in our
+
+1088
+00:54:08,910 --> 00:54:18,000
+因为我们可以说我们工作部分中的这个等式是总的
+because we can say this equation in our work part is observed by the total
+
+1089
+00:54:18,000 --> 00:54:18,010
+因为我们可以说我们工作部分中的这个等式是总的
+work part is observed by the total energy the Sun from the observation and
+
+1090
+00:54:18,010 --> 00:54:20,730
+从观察到能量太阳和邻居最重要
+work part is observed by the total energy the Sun from the observation and
+
+1091
+00:54:20,730 --> 00:54:26,190
+从观察到能量太阳和邻居最重要
+energy the Sun from the observation and the neighbor neighbor the most important
+
+1092
+00:54:26,190 --> 00:54:26,200
+从观察到能量太阳和邻居最重要
+the neighbor neighbor the most important part is
+
+1093
+00:54:26,200 --> 00:54:27,520
+在此标签下，零件实际上既很重要
+the neighbor neighbor the most important part is
+
+1094
+00:54:27,520 --> 00:54:30,220
+在此标签下，零件实际上既很重要
+part is actually both important under this label
+
+1095
+00:54:30,220 --> 00:54:30,230
+在此标签下，零件实际上既很重要
+actually both important under this label will be actual consume the states naval
+
+1096
+00:54:30,230 --> 00:54:34,060
+将是我们实际消耗的各州海军储备信息
+actually both important under this label will be actual consume the states naval
+
+1097
+00:54:34,060 --> 00:54:36,490
+将是我们实际消耗的各州海军储备信息
+will be actual consume the states naval reserve information we came out to
+
+1098
+00:54:36,490 --> 00:54:36,500
+将是我们实际消耗的各州海军储备信息
+reserve information we came out to change because it is what would help and
+
+1099
+00:54:36,500 --> 00:54:39,900
+变化，因为这将有所帮助，并且有人总结了这两个部分，
+reserve information we came out to change because it is what would help and
+
+1100
+00:54:39,900 --> 00:54:42,880
+变化，因为这将有所帮助，并且有人总结了这两个部分，
+change because it is what would help and by some summarizes these two parts to
+
+1101
+00:54:42,880 --> 00:54:42,890
+变化，因为这将有所帮助，并且有人总结了这两个部分，
+by some summarizes these two parts to have a total energy and whether accept
+
+1102
+00:54:42,890 --> 00:54:46,330
+有总的精力，是否接受是否有吸引力
+by some summarizes these two parts to have a total energy and whether accept
+
+1103
+00:54:46,330 --> 00:54:48,760
+有总的精力，是否接受是否有吸引力
+have a total energy and whether accept or not attractive is the picked
+
+1104
+00:54:48,760 --> 00:54:48,770
+有总的精力，是否接受是否有吸引力
+or not attractive is the picked alternative decided by the energy
+
+1105
+00:54:48,770 --> 00:54:51,940
+由能量决定的替代方案，它是减少还是增加
+or not attractive is the picked alternative decided by the energy
+
+1106
+00:54:51,940 --> 00:54:54,160
+由能量决定的替代方案，它是减少还是增加
+alternative decided by the energy whether it's decrease or increase in the
+
+1107
+00:54:54,160 --> 00:54:54,170
+由能量决定的替代方案，它是减少还是增加
+whether it's decrease or increase in the Angela will have lowest damages when we
+
+1108
+00:54:54,170 --> 00:54:57,250
+当我们转动所有像素时，安吉拉的伤害将最低，并且我们会做很多
+whether it's decrease or increase in the Angela will have lowest damages when we
+
+1109
+00:54:57,250 --> 00:55:02,290
+当我们转动所有像素时，安吉拉的伤害将最低，并且我们会做很多
+Angela will have lowest damages when we turn all the pixels and we do a lot of
+
+1110
+00:55:02,290 --> 00:55:06,780
+图像以及权重因素都来自青铜器的保存
+Angela will have lowest damages when we turn all the pixels and we do a lot of
+
+1111
+00:55:06,780 --> 00:55:06,790
+图像以及权重因素都来自青铜器的保存
+
+
+1112
+00:55:06,790 --> 00:55:16,090
+图像以及权重因素都来自青铜器的保存
+images and also the weighting factors work from the preservation of bronze
+
+1113
+00:55:16,090 --> 00:55:16,100
+图像以及权重因素都来自青铜器的保存
+work from the preservation of bronze neighbor we can till this part we
+
+1114
+00:55:16,100 --> 00:55:19,180
+邻居，我们可以直到这部分我们增加或在图像的分割下
+work from the preservation of bronze neighbor we can till this part we
+
+1115
+00:55:19,180 --> 00:55:21,940
+邻居，我们可以直到这部分我们增加或在图像的分割下
+neighbor we can till this part we increase or under the division the image
+
+1116
+00:55:21,940 --> 00:55:21,950
+邻居，我们可以直到这部分我们增加或在图像的分割下
+increase or under the division the image will be different and then I will talk
+
+1117
+00:55:21,950 --> 00:55:24,520
+会有所不同，然后我将谈谈双方的图形卡
+increase or under the division the image will be different and then I will talk
+
+1118
+00:55:24,520 --> 00:55:27,190
+会有所不同，然后我将谈谈双方的图形卡
+will be different and then I will talk about the graph card both parties are
+
+1119
+00:55:27,190 --> 00:55:27,200
+会有所不同，然后我将谈谈双方的图形卡
+about the graph card both parties are for this part we tune with those colors
+
+1120
+00:55:27,200 --> 00:55:31,630
+对于这一部分，我们用这些颜色进行调整，就像冷冻机一样，
+about the graph card both parties are for this part we tune with those colors
+
+1121
+00:55:31,630 --> 00:55:34,560
+对于这一部分，我们用这些颜色进行调整，就像冷冻机一样，
+for this part we tune with those colors it's like a freezer we cut through these
+
+1122
+00:55:34,560 --> 00:55:34,570
+对于这一部分，我们用这些颜色进行调整，就像冷冻机一样，
+it's like a freezer we cut through these parts and was an account or not it's
+
+1123
+00:55:34,570 --> 00:55:38,230
+零件，是否是一个帐户，如果Y，也用能量来描述
+it's like a freezer we cut through these parts and was an account or not it's
+
+1124
+00:55:38,230 --> 00:55:40,720
+零件，是否是一个帐户，如果Y，也用能量来描述
+parts and was an account or not it's also described by the energy if Y
+
+1125
+00:55:40,720 --> 00:55:40,730
+零件，是否是一个帐户，如果Y，也用能量来描述
+also described by the energy if Y invalid in brought carton 2000 army just
+
+1126
+00:55:40,730 --> 00:55:43,870
+在带入的纸箱2000军中无效，只是重新计算能量，但是它将
+also described by the energy if Y invalid in brought carton 2000 army just
+
+1127
+00:55:43,870 --> 00:55:46,300
+在带入的纸箱2000军中无效，只是重新计算能量，但是它将
+invalid in brought carton 2000 army just calculate the energy again but it will
+
+1128
+00:55:46,300 --> 00:55:46,310
+在带入的纸箱2000军中无效，只是重新计算能量，但是它将
+calculate the energy again but it will be more computational cost because the
+
+1129
+00:55:46,310 --> 00:55:49,390
+由于邻居数量增加，计算成本更高
+calculate the energy again but it will be more computational cost because the
+
+1130
+00:55:49,390 --> 00:55:51,340
+由于邻居数量增加，计算成本更高
+be more computational cost because the number of neighbors is enlarged the one
+
+1131
+00:55:51,340 --> 00:55:51,350
+由于邻居数量增加，计算成本更高
+number of neighbors is enlarged the one I do this record and if I increase the
+
+1132
+00:55:51,350 --> 00:55:53,740
+我做这个记录，如果我增加了说的大小，或者如果我想扔的话，则增加D
+number of neighbors is enlarged the one I do this record and if I increase the
+
+1133
+00:55:53,740 --> 00:55:58,210
+我做这个记录，如果我增加了说的大小，或者如果我想扔的话，则增加D
+I do this record and if I increase the say the size or the D if I want to throw
+
+1134
+00:55:58,210 --> 00:55:58,220
+我做这个记录，如果我增加了说的大小，或者如果我想扔的话，则增加D
+say the size or the D if I want to throw up a lot of pixels and tram will be very
+
+1135
+00:55:58,220 --> 00:56:03,600
+像素很多，电车对于一些复杂的设备可能不是很好
+say the size or the D if I want to throw up a lot of pixels and tram will be very
+
+1136
+00:56:03,600 --> 00:56:06,730
+像素很多，电车对于一些复杂的设备可能不是很好
+up a lot of pixels and tram will be very maybe not very good for some complicated
+
+1137
+00:56:06,730 --> 00:56:06,740
+像素很多，电车对于一些复杂的设备可能不是很好
+maybe not very good for some complicated applications but it's very effective
+
+1138
+00:56:06,740 --> 00:56:13,150
+应用程序，但非常有效
+maybe not very good for some complicated applications but it's very effective
+
+1139
+00:56:13,150 --> 00:56:16,950
+在我的书房里，我并不惊讶不向聚会广播这是
+maybe not very good for some complicated applications but it's very effective
+
+1140
+00:56:16,950 --> 00:56:16,960
+在我的书房里，我并不惊讶不向聚会广播这是
+
+
+1141
+00:56:16,960 --> 00:56:35,010
+在我的书房里，我并不惊讶不向聚会广播这是
+in my study I didn't surprises not broadcasting to the party it's
+
+1142
+00:56:35,010 --> 00:56:37,040
+最小化实际上，有很多方法可以重新计算这是所有消息
+in my study I didn't surprises not broadcasting to the party it's
+
+1143
+00:56:37,040 --> 00:56:37,050
+最小化实际上，有很多方法可以重新计算这是所有消息
+
+
+1144
+00:56:37,050 --> 00:57:09,480
+最小化实际上，有很多方法可以重新计算这是所有消息
+minimization actually there are a lot of ways to recount all the messages this is
+
+1145
+00:57:09,480 --> 00:57:09,490
+最小化实际上，有很多方法可以重新计算这是所有消息
+ways to recount all the messages this is actually in my case I did it similar to
+
+1146
+00:57:09,490 --> 00:57:12,329
+实际上，就我而言，我所做的与我需要确定的顺序交易相似
+ways to recount all the messages this is actually in my case I did it similar to
+
+1147
+00:57:12,329 --> 00:57:15,030
+实际上，就我而言，我所做的与我需要确定的顺序交易相似
+actually in my case I did it similar to the sequential trade I needed to decide
+
+1148
+00:57:15,030 --> 00:57:15,040
+实际上，就我而言，我所做的与我需要确定的顺序交易相似
+the sequential trade I needed to decide how to accept all of the messages and I
+
+1149
+00:57:15,040 --> 00:57:18,210
+如何接受所​​有信息，我需要真正决定形成方式
+the sequential trade I needed to decide how to accept all of the messages and I
+
+1150
+00:57:18,210 --> 00:57:20,910
+如何接受所​​有信息，我需要真正决定形成方式
+how to accept all of the messages and I needed to actually decide the formation
+
+1151
+00:57:20,910 --> 00:57:20,920
+如何接受所​​有信息，我需要真正决定形成方式
+needed to actually decide the formation of the trade inside of this mark and in
+
+1152
+00:57:20,920 --> 00:57:24,450
+标记内的交易，在我的情况下，我只是喜欢写下顶部
+needed to actually decide the formation of the trade inside of this mark and in
+
+1153
+00:57:24,450 --> 00:57:27,450
+标记内的交易，在我的情况下，我只是喜欢写下顶部
+of the trade inside of this mark and in my case I just do love to write the top
+
+1154
+00:57:27,450 --> 00:57:27,460
+标记内的交易，在我的情况下，我只是喜欢写下顶部
+my case I just do love to write the top bottom and my last part again when I
+
+1155
+00:57:27,460 --> 00:57:34,289
+当我不能为所需的像素做颜色时，又是底部和最后一部分
+my case I just do love to write the top bottom and my last part again when I
+
+1156
+00:57:34,289 --> 00:57:37,349
+当我不能为所需的像素做颜色时，又是底部和最后一部分
+bottom and my last part again when I can't do a color of the pixel I needed
+
+1157
+00:57:37,349 --> 00:57:37,359
+当我不能为所需的像素做颜色时，又是底部和最后一部分
+can't do a color of the pixel I needed to maximize this message and in
+
+1158
+00:57:37,359 --> 00:57:41,609
+为了最大程度地利用此消息，在计算中我也将其设置为
+can't do a color of the pixel I needed to maximize this message and in
+
+1159
+00:57:41,609 --> 00:57:44,010
+为了最大程度地利用此消息，在计算中我也将其设置为
+to maximize this message and in calculation I do also make them because
+
+1160
+00:57:44,010 --> 00:57:44,020
+为了最大程度地利用此消息，在计算中我也将其设置为
+calculation I do also make them because these two are all written in turn we
+
+1161
+00:57:44,020 --> 00:57:47,700
+这两个都是依次写的，我们不会找到最大化的
+calculation I do also make them because these two are all written in turn we
+
+1162
+00:57:47,700 --> 00:57:50,880
+这两个都是依次写的，我们不会找到最大化的
+these two are all written in turn we won't find the maximized
+
+1163
+00:57:50,880 --> 00:57:50,980
+我们想要的是在模拟社会中有更大的生存空间，而我有一个
+these two are all written in turn we won't find the maximized
+
+1164
+00:57:50,980 --> 00:57:50,990
+我们想要的是在模拟社会中有更大的生存空间，而我有一个
+
+
+1165
+00:57:50,990 --> 00:58:02,990
+我们想要的是在模拟社会中有更大的生存空间，而我有一个
+and what we want is to have a larger be under simulate society and I have a
+
+1166
+00:58:02,990 --> 00:58:03,000
+我们想要的是在模拟社会中有更大的生存空间，而我有一个
+under simulate society and I have a weighting factors order from other
+
+1167
+00:58:03,000 --> 00:58:05,599
+权重因子从保留中的其他消息和
+under simulate society and I have a weighting factors order from other
+
+1168
+00:58:05,599 --> 00:58:09,080
+权重因子从保留中的其他消息和
+weighting factors order from other messages from the reservation and from
+
+1169
+00:58:09,080 --> 00:58:09,090
+权重因子从保留中的其他消息和
+messages from the reservation and from some neighbors for neighbors in this
+
+1170
+00:58:09,090 --> 00:58:11,540
+在这种情况下，一些邻居对邻居表示敬意
+messages from the reservation and from some neighbors for neighbors in this
+
+1171
+00:58:11,540 --> 00:58:16,040
+在这种情况下，一些邻居对邻居表示敬意
+some neighbors for neighbors in this case the respect eyes
+
+1172
+00:58:16,040 --> 00:58:19,500
+我的意思是与传递消息相反的是单数是芒斯特
+some neighbors for neighbors in this case the respect eyes
+
+1173
+00:58:19,500 --> 00:58:19,510
+我的意思是与传递消息相反的是单数是芒斯特
+
+
+1174
+00:58:19,510 --> 00:58:27,359
+我的意思是与传递消息相反的是单数是芒斯特
+I mean the contrary to the message passing is the singular is the munster
+
+1175
+00:58:27,359 --> 00:58:27,369
+我的意思是与传递消息相反的是单数是芒斯特
+passing is the singular is the munster of believe the publication this case the
+
+1176
+00:58:27,369 --> 00:58:31,410
+认为出版物这种情况下我如何有一个复杂的方式不在这里
+passing is the singular is the munster of believe the publication this case the
+
+1177
+00:58:31,410 --> 00:58:38,330
+认为出版物这种情况下我如何有一个复杂的方式不在这里
+of believe the publication this case the way how I we have a complicated not here
+
+1178
+00:58:38,330 --> 00:58:38,340
+认为出版物这种情况下我如何有一个复杂的方式不在这里
+way how I we have a complicated not here it's maybe more complicated than range
+
+1179
+00:58:38,340 --> 00:58:40,859
+它可能比范围更复杂，但我们可以将其组合成很多
+way how I we have a complicated not here it's maybe more complicated than range
+
+1180
+00:58:40,859 --> 00:58:44,400
+它可能比范围更复杂，但我们可以将其组合成很多
+it's maybe more complicated than range but we can the composite into a lot of
+
+1181
+00:58:44,400 --> 00:58:44,410
+它可能比范围更复杂，但我们可以将其组合成很多
+but we can the composite into a lot of groups very simple tree then we
+
+1182
+00:58:44,410 --> 00:58:47,220
+将非常简单的树分组，然后我们总结来自每个树的消息
+but we can the composite into a lot of groups very simple tree then we
+
+1183
+00:58:47,220 --> 00:58:50,880
+将非常简单的树分组，然后我们总结来自每个树的消息
+groups very simple tree then we summarize the messages from each of
+
+1184
+00:58:50,880 --> 00:58:50,890
+将非常简单的树分组，然后我们总结来自每个树的消息
+summarize the messages from each of trainees we get a total messages and
+
+1185
+00:58:50,890 --> 00:58:54,080
+学员，我们获得了总体信息，效果很好，并且有很多
+summarize the messages from each of trainees we get a total messages and
+
+1186
+00:58:54,080 --> 00:58:57,540
+学员，我们获得了总体信息，效果很好，并且有很多
+trainees we get a total messages and this works well well and there are a lot
+
+1187
+00:58:57,540 --> 00:58:57,550
+学员，我们获得了总体信息，效果很好，并且有很多
+this works well well and there are a lot of things we can design here first is
+
+1188
+00:58:57,550 --> 00:58:59,670
+首先我们可以设计的是作曲家对所追踪的
+this works well well and there are a lot of things we can design here first is
+
+1189
+00:58:59,670 --> 00:59:02,970
+首先我们可以设计的是作曲家对所追踪的
+of things we can design here first is how weighted the composer the traced and
+
+1190
+00:59:02,970 --> 00:59:02,980
+首先我们可以设计的是作曲家对所追踪的
+how weighted the composer the traced and how a way to infiltrate this will be
+
+1191
+00:59:02,980 --> 00:59:06,090
+如何渗透到这一点将非常有趣，在这种情况下，
+how weighted the composer the traced and how a way to infiltrate this will be
+
+1192
+00:59:06,090 --> 00:59:11,510
+如何渗透到这一点将非常有趣，在这种情况下，
+how a way to infiltrate this will be very interesting and in this case in my
+
+1193
+00:59:11,510 --> 00:59:11,520
+如何渗透到这一点将非常有趣，在这种情况下，
+very interesting and in this case in my coding I got to this left to right and
+
+1194
+00:59:11,520 --> 00:59:17,400
+编码我从左到右
+very interesting and in this case in my coding I got to this left to right and
+
+1195
+00:59:17,400 --> 00:59:19,790
+我想从质量库中获取图像并
+very interesting and in this case in my coding I got to this left to right and
+
+1196
+00:59:19,790 --> 00:59:19,800
+我想从质量库中获取图像并
+
+
+1197
+00:59:19,800 --> 00:59:48,190
+我想从质量库中获取图像并
+with I want to images from the quality library and
+
+1198
+00:59:48,190 --> 00:59:48,200
+我想从质量库中获取图像并
+library and and the way I needed to close to turn
+
+1199
+00:59:48,200 --> 00:59:53,140
+以及我需要关闭的方法来将它们变成彩色RPG变成黑白色
+library and and the way I needed to close to turn
+
+1200
+00:59:53,140 --> 00:59:57,219
+以及我需要关闭的方法来将它们变成彩色RPG变成黑白色
+and the way I needed to close to turn these to a color RPG into a black white
+
+1201
+00:59:57,219 --> 00:59:57,229
+以及我需要关闭的方法来将它们变成彩色RPG变成黑白色
+these to a color RPG into a black white I just to use my bathroom like to try
+
+1202
+00:59:57,229 --> 01:00:01,839
+我只是想用我的浴室来尝试应该达到的范围
+these to a color RPG into a black white I just to use my bathroom like to try
+
+1203
+01:00:01,839 --> 01:00:04,599
+我只是想用我的浴室来尝试应该达到的范围
+I just to use my bathroom like to try the at which the range it should be
+
+1204
+01:00:04,599 --> 01:00:04,609
+我只是想用我的浴室来尝试应该达到的范围
+the at which the range it should be black this is after I am and which is
+
+1205
+01:00:04,609 --> 01:00:15,339
+黑色，这是我之后的状态，里面仍然是黑色，是白色
+the at which the range it should be black this is after I am and which is
+
+1206
+01:00:15,339 --> 01:00:19,349
+黑色，这是我之后的状态，里面仍然是黑色，是白色
+black this is after I am and which is still the black inside is a white
+
+1207
+01:00:19,349 --> 01:00:19,359
+黑色，这是我之后的状态，里面仍然是黑色，是白色
+still the black inside is a white surrounded by the whites then I energy
+
+1208
+01:00:19,359 --> 01:00:38,680
+被白人包围，然后我的能量正在减少是无法坐下来的
+still the black inside is a white surrounded by the whites then I energy
+
+1209
+01:00:38,680 --> 01:00:44,950
+被白人包围，然后我的能量正在减少是无法坐下来的
+surrounded by the whites then I energy is decreasing is no way to sit down the
+
+1210
+01:00:44,950 --> 01:00:44,960
+被白人包围，然后我的能量正在减少是无法坐下来的
+is decreasing is no way to sit down the later I used here I can actually use
+
+1211
+01:00:44,960 --> 01:00:48,009
+后来我用在这里我实际上可以使用不同的
+is decreasing is no way to sit down the later I used here I can actually use
+
+1212
+01:00:48,009 --> 01:00:50,710
+后来我用在这里我实际上可以使用不同的
+later I used here I can actually use different
+
+1213
+01:00:50,710 --> 01:00:53,620
+这是我随董事会发送的使用情况，这很好
+later I used here I can actually use different
+
+1214
+01:00:53,620 --> 01:00:53,630
+这是我随董事会发送的使用情况，这很好
+
+
+1215
+01:00:53,630 --> 01:01:01,150
+这是我随董事会发送的使用情况，这很好
+this is the using I send along the board and this is mix good
+
+1216
+01:01:01,150 --> 01:01:03,190
+在这里和这里丢卡文化不是很好，这就是
+this is the using I send along the board and this is mix good
+
+1217
+01:01:03,190 --> 01:01:03,200
+在这里和这里丢卡文化不是很好，这就是
+
+
+1218
+01:01:03,200 --> 01:01:14,289
+在这里和这里丢卡文化不是很好，这就是
+drop cards here and here the culture is not very good and this is the
+
+1219
+01:01:14,289 --> 01:01:14,299
+在这里和这里丢卡文化不是很好，这就是
+not very good and this is the propagation to believe to be I this is
+
+1220
+01:01:14,299 --> 01:01:18,940
+传播相信是我这是对所有事物尝试总结的眼睛
+not very good and this is the propagation to believe to be I this is
+
+1221
+01:01:18,940 --> 01:01:22,480
+传播相信是我这是对所有事物尝试总结的眼睛
+propagation to believe to be I this is the eyes to try summarize to all the be
+
+1222
+01:01:22,480 --> 01:01:22,490
+传播相信是我这是对所有事物尝试总结的眼睛
+the eyes to try summarize to all the be other images actually long as you stab
+
+1223
+01:01:22,490 --> 01:01:28,630
+其他图像实际上只要您将其刺穿就可以转换，这就是消息
+the eyes to try summarize to all the be other images actually long as you stab
+
+1224
+01:01:28,630 --> 01:01:37,240
+其他图像实际上只要您将其刺穿就可以转换，这就是消息
+other images actually long as you stab it just convert this is the message
+
+1225
+01:01:37,240 --> 01:01:37,250
+其他图像实际上只要您将其刺穿就可以转换，这就是消息
+it just convert this is the message accounting I to make a trade
+
+1226
+01:01:37,250 --> 01:01:41,950
+会计我做交易
+it just convert this is the message accounting I to make a trade
+
+1227
+01:01:41,950 --> 01:01:45,640
+因为我的编码仅对图像执行此操作，所以II只能拼写此代码
+it just convert this is the message accounting I to make a trade
+
+1228
+01:01:45,640 --> 01:01:45,650
+因为我的编码仅对图像执行此操作，所以II只能拼写此代码
+
+
+1229
+01:01:45,650 --> 01:01:54,010
+因为我的编码仅对图像执行此操作，所以II只能拼写此代码
+because of my coding is only doing this to images then I I just gotta spell this
+
+1230
+01:01:54,010 --> 01:01:54,020
+因为我的编码仅对图像执行此操作，所以II只能拼写此代码
+to images then I I just gotta spell this - he looks - fine then I I can also
+
+1231
+01:01:54,020 --> 01:02:00,460
+-他看起来-很好，然后II也可以先放松一下
+to images then I I just gotta spell this - he looks - fine then I I can also
+
+1232
+01:02:00,460 --> 01:02:06,640
+-他看起来-很好，然后II也可以先放松一下
+- he looks - fine then I I can also chill before well how do they do
+
+1233
+01:02:06,640 --> 01:02:11,070
+假设我说如果我再选一张的话这好吃
+- he looks - fine then I I can also chill before well how do they do
+
+1234
+01:02:11,070 --> 01:02:11,080
+假设我说如果我再选一张的话这好吃
+
+
+1235
+01:02:11,080 --> 01:02:17,520
+假设我说如果我再选一张的话这好吃
+suppose this tasty I said if I pick another image
+
+1236
+01:02:17,520 --> 01:02:27,500
+这会导致标签或假设它对于ITN看起来也非常好
+suppose this tasty I said if I pick another image
+
+1237
+01:02:27,500 --> 01:02:27,510
+这会导致标签或假设它对于ITN看起来也非常好
+
+
+1238
+01:02:27,510 --> 01:02:35,280
+这会导致标签或假设它对于ITN看起来也非常好
+this leads to labels or suppose it's looked also very good for ITN
+
+1239
+01:02:35,280 --> 01:02:46,800
+这是真的
+this leads to labels or suppose it's looked also very good for ITN
+
+1240
+01:02:46,800 --> 01:02:46,810
+这是真的
+
+
+1241
+01:02:46,810 --> 01:02:49,860
+这是真的
+this was true
+
+1242
+01:02:49,860 --> 01:02:52,890
+太好了
+this was true
+
+1243
+01:02:52,890 --> 01:02:52,900
+太好了
+
+
+1244
+01:02:52,900 --> 01:02:57,650
+太好了
+wonderful Oh
+
+1245
+01:02:57,650 --> 01:03:15,280
+在这种情况下，我是多球亲王，因为社交圈很大
+wonderful Oh
+
+1246
+01:03:15,280 --> 01:03:15,290
+在这种情况下，我是多球亲王，因为社交圈很大
+
+
+1247
+01:03:15,290 --> 01:03:22,650
+在这种情况下，我是多球亲王，因为社交圈很大
+in this case I am Prince multi-ball a good because socially big marzyong
+
+1248
+01:03:22,650 --> 01:03:22,660
+在这种情况下，我是多球亲王，因为社交圈很大
+good because socially big marzyong remove this part we we don't like the
+
+1249
+01:03:22,660 --> 01:03:26,710
+删除这部分，我们不喜欢那些心相信的维持者
+good because socially big marzyong remove this part we we don't like the
+
+1250
+01:03:26,710 --> 01:03:30,400
+删除这部分，我们不喜欢那些心相信的维持者
+remove this part we we don't like the sustain those heart believes to
+
+1251
+01:03:30,400 --> 01:03:30,410
+删除这部分，我们不喜欢那些心相信的维持者
+sustain those heart believes to constrain
+
+1252
+01:03:30,410 --> 01:03:32,980
+约束
+sustain those heart believes to constrain
+
+1253
+01:03:32,980 --> 01:03:46,710
+-比医疗补助更好
+sustain those heart believes to constrain
+
+1254
+01:03:46,710 --> 01:03:46,720
+-比医疗补助更好
+
+
+1255
+01:03:46,720 --> 01:03:51,430
+-比医疗补助更好
+- much better than Medicaid
+
+1256
+01:03:51,430 --> 01:03:59,580
+还有先生到非部门的预告片的序列太乱了
+- much better than Medicaid
+
+1257
+01:03:59,580 --> 01:03:59,590
+还有先生到非部门的预告片的序列太乱了
+
+
+1258
+01:03:59,590 --> 01:04:07,770
+还有先生到非部门的预告片的序列太乱了
+and also mr. Messer the sequence to the trailer which is not a department is too
+
+1259
+01:04:07,770 --> 01:04:07,780
+还有先生到非部门的预告片的序列太乱了
+trailer which is not a department is too flexible
+
+1260
+01:04:07,780 --> 01:04:08,990
+灵活的masterda假设查看这些参数
+trailer which is not a department is too flexible
+
+1261
+01:04:08,990 --> 01:04:13,380
+灵活的masterda假设查看这些参数
+flexible masterda assume look at those parameters
+
+1262
+01:04:13,380 --> 01:04:13,390
+灵活的masterda假设查看这些参数
+masterda assume look at those parameters wait until the weight of each of three I
+
+1263
+01:04:13,390 --> 01:04:20,040
+等到三个人的体重我在这里有两个，也要坚强
+masterda assume look at those parameters wait until the weight of each of three I
+
+1264
+01:04:20,040 --> 01:04:24,240
+等到三个人的体重我在这里有两个，也要坚强
+wait until the weight of each of three I have two here and also the way to strong
+
+1265
+01:04:24,240 --> 01:04:24,250
+等到三个人的体重我在这里有两个，也要坚强
+have two here and also the way to strong evidence and the weight from neighbors
+
+1266
+01:04:24,250 --> 01:04:27,960
+证据和邻居的重量，我们可以调整那些，如果我杀了我
+have two here and also the way to strong evidence and the weight from neighbors
+
+1267
+01:04:27,960 --> 01:04:31,260
+证据和邻居的重量，我们可以调整那些，如果我杀了我
+evidence and the weight from neighbors we can tune those and the if I kill me
+
+1268
+01:04:31,260 --> 01:04:31,270
+证据和邻居的重量，我们可以调整那些，如果我杀了我
+we can tune those and the if I kill me too
+
+1269
+01:04:31,270 --> 01:04:33,960
+也
+we can tune those and the if I kill me too
+
+1270
+01:04:33,960 --> 01:04:38,030
+并以一种方式
+we can tune those and the if I kill me too
+
+1271
+01:04:38,030 --> 01:04:38,040
+并以一种方式
+
+
+1272
+01:04:38,040 --> 01:04:42,330
+并以一种方式
+and in one way of
+
+1273
+01:04:42,330 --> 01:04:48,529
+这可能是
+and in one way of
+
+1274
+01:04:48,529 --> 01:04:48,539
+这可能是
+
+
+1275
+01:04:48,539 --> 01:04:51,589
+这可能是
+this could be
+
+1276
+01:04:51,589 --> 01:04:52,760
+我不知道这是否够糟糕，但听可以导致我们所有那些
+this could be
+
+1277
+01:04:52,760 --> 01:04:52,770
+我不知道这是否够糟糕，但听可以导致我们所有那些
+
+
+1278
+01:04:52,770 --> 01:04:59,390
+我不知道这是否够糟糕，但听可以导致我们所有那些
+I don't know whether this is bad enough but listen can lead to us all those that
+
+1279
+01:04:59,390 --> 01:04:59,400
+我不知道这是否够糟糕，但听可以导致我们所有那些
+but listen can lead to us all those that we can select a path parameter this
+
+1280
+01:04:59,400 --> 01:05:04,640
+我们可以选择一个路径参数，这样可以使照片质量更高
+but listen can lead to us all those that we can select a path parameter this
+
+1281
+01:05:04,640 --> 01:05:07,010
+我们可以选择一个路径参数，这样可以使照片质量更高
+we can select a path parameter this become a higher quality of photos to the
+
+1282
+01:05:07,010 --> 01:05:07,020
+我们可以选择一个路径参数，这样可以使照片质量更高
+become a higher quality of photos to the picture mechanizations
+
+1283
+01:05:07,020 --> 01:05:10,850
+图片机械化
+become a higher quality of photos to the picture mechanizations
+
+1284
+01:05:10,850 --> 01:05:19,440
+因为如果我们走得太远
+become a higher quality of photos to the picture mechanizations
+
+1285
+01:05:19,440 --> 01:05:19,450
+因为如果我们走得太远
+
+
+1286
+01:05:19,450 --> 01:05:24,210
+因为如果我们走得太远
+because if we make it too far along
+
+1287
+01:05:24,210 --> 01:05:45,030
+你知道这是事实，我们的最佳选择是整个
+because if we make it too far along
+
+1288
+01:05:45,030 --> 01:05:45,040
+你知道这是事实，我们的最佳选择是整个
+
+
+1289
+01:05:45,040 --> 01:05:50,270
+你知道这是事实，我们的最佳选择是整个
+you know this is the truth our ultra spot please the whole part is to
+
+1290
+01:05:50,270 --> 01:05:50,280
+你知道这是事实，我们的最佳选择是整个
+spot please the whole part is to becoming the boat because i propagate
+
+1291
+01:05:50,280 --> 01:05:56,240
+之所以成为船，是因为我串联后从左向右传播
+spot please the whole part is to becoming the boat because i propagate
+
+1292
+01:05:56,240 --> 01:06:02,240
+之所以成为船，是因为我串联后从左向右传播
+becoming the boat because i propagate left to right I think after tandem
+
+1293
+01:06:02,240 --> 01:06:02,250
+之所以成为船，是因为我串联后从左向右传播
+left to right I think after tandem dominant this trilogy is the final a
+
+1294
+01:06:02,250 --> 01:06:10,020
+这部三部曲占主导地位，是我认为爱房子的最终王位密码
+left to right I think after tandem dominant this trilogy is the final a
+
+1295
+01:06:10,020 --> 01:06:12,660
+这部三部曲占主导地位，是我认为爱房子的最终王位密码
+dominant this trilogy is the final a code of throne that love a house I think
+
+1296
+01:06:12,660 --> 01:06:12,670
+这部三部曲占主导地位，是我认为爱房子的最终王位密码
+code of throne that love a house I think they did a very good coding
+
+1297
+01:06:12,670 --> 01:06:16,350
+他们做了很好的编码
+code of throne that love a house I think they did a very good coding
+
+1298
+01:06:16,350 --> 01:06:29,380
+感谢您的关注
+code of throne that love a house I think they did a very good coding
+
+1299
+01:06:29,380 --> 01:06:29,390
+感谢您的关注
+
+
+1300
+01:06:29,390 --> 01:07:44,580
+感谢您的关注
+of
+
+1301
+01:07:44,580 --> 01:07:44,590
+感谢您的关注
+
+
+1302
+01:07:44,590 --> 01:07:48,210
+感谢您的关注
+thank you for your attention
+
+1303
+01:07:48,210 --> 01:07:48,450
+[掌声]
+thank you for your attention
+
+1304
+01:07:48,450 --> 01:07:48,460
+[掌声]
+
+
+1305
+01:07:48,460 --> 01:07:53,539
+[掌声]
+[Applause]
+
+1306
+01:07:53,539 --> 01:08:12,830
+是的
+[Applause]
+
+1307
+01:08:12,830 --> 01:08:12,840
+是的
+
+
+1308
+01:08:12,840 --> 01:08:15,410
+是的
+yeah
+
+1309
+01:08:15,410 --> 01:08:52,099
+我不知道
+yeah
+
+1310
+01:08:52,099 --> 01:08:52,109
+我不知道
+
+
+1311
+01:08:52,109 --> 01:08:54,830
+我不知道
+I don't know
+

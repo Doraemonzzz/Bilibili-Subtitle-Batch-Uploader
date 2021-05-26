@@ -1,0 +1,5528 @@
+1
+00:02:38,870 --> 00:02:43,089
+I wish they can say that the cluster's League because the weather is nice then
+
+2
+00:02:43,089 --> 00:02:46,600
+League because the weather is nice then that would be a very reasonable excuse
+
+3
+00:02:46,600 --> 00:02:49,630
+that would be a very reasonable excuse but as the semester progresses
+
+4
+00:02:49,630 --> 00:02:52,449
+but as the semester progresses everybody's coming later and later later
+
+5
+00:02:52,449 --> 00:02:55,089
+everybody's coming later and later later I don't even bring my watch anymore but
+
+6
+00:02:55,089 --> 00:03:00,690
+I don't even bring my watch anymore but unfortunately I can see the time there
+
+7
+00:03:00,690 --> 00:03:00,700
+
+
+8
+00:03:00,700 --> 00:03:06,670
+so if you remember we were talking we start talking actually about doing
+
+9
+00:03:06,670 --> 00:03:10,180
+start talking actually about doing maximum likelihood estimation for the
+
+10
+00:03:10,180 --> 00:03:11,979
+maximum likelihood estimation for the parameters in undirected graphical
+
+11
+00:03:11,979 --> 00:03:16,210
+parameters in undirected graphical models so I'm going to continue that
+
+12
+00:03:16,210 --> 00:03:20,650
+models so I'm going to continue that topic but I realized that some of the
+
+13
+00:03:20,650 --> 00:03:25,000
+topic but I realized that some of the the you know the algorithm is a little
+
+14
+00:03:25,000 --> 00:03:28,059
+the you know the algorithm is a little bit more complicated than you guys are
+
+15
+00:03:28,059 --> 00:03:31,000
+bit more complicated than you guys are ready to take on a sunny day so I'm
+
+16
+00:03:31,000 --> 00:03:32,800
+ready to take on a sunny day so I'm going to take sort of the box back today
+
+17
+00:03:32,800 --> 00:03:36,610
+going to take sort of the box back today and I I'm gonna review this parameter
+
+18
+00:03:36,610 --> 00:03:39,400
+and I I'm gonna review this parameter estimation for completely describe to
+
+19
+00:03:39,400 --> 00:03:41,170
+estimation for completely describe to observe graphical models first starting
+
+20
+00:03:41,170 --> 00:03:43,509
+observe graphical models first starting with the under with directed graphs and
+
+21
+00:03:43,509 --> 00:03:45,220
+with the under with directed graphs and then I'm going to give you some
+
+22
+00:03:45,220 --> 00:03:47,170
+then I'm going to give you some introduction for undirected graph so
+
+23
+00:03:47,170 --> 00:03:49,000
+introduction for undirected graph so when we come on the next lecture we can
+
+24
+00:03:49,000 --> 00:03:52,900
+when we come on the next lecture we can complete the the previous notes from
+
+25
+00:03:52,900 --> 00:03:56,740
+complete the the previous notes from last Tuesday right like sometimes the
+
+26
+00:03:56,740 --> 00:03:59,229
+last Tuesday right like sometimes the lecture today is elementary on some
+
+27
+00:03:59,229 --> 00:04:01,949
+lecture today is elementary on some other point of view it's actually more
+
+28
+00:04:01,949 --> 00:04:07,839
+other point of view it's actually more complicated because it involves concepts
+
+29
+00:04:07,839 --> 00:04:09,309
+complicated because it involves concepts that we have already seen in the
+
+30
+00:04:09,309 --> 00:04:14,309
+that we have already seen in the homework yet
+
+31
+00:04:14,309 --> 00:04:14,319
+
+
+32
+00:04:14,319 --> 00:04:20,050
+well interested basically to learn the parameters of directed undirected
+
+33
+00:04:20,050 --> 00:04:24,400
+parameters of directed undirected graphical models where we assume that we
+
+34
+00:04:24,400 --> 00:04:26,670
+graphical models where we assume that we have all the data we need this
+
+35
+00:04:26,670 --> 00:04:28,000
+have all the data we need this non-observable
+
+36
+00:04:28,000 --> 00:04:29,980
+non-observable so somebody gives you the recognizer
+
+37
+00:04:29,980 --> 00:04:32,650
+so somebody gives you the recognizer calmodulin space you know what I have
+
+38
+00:04:32,650 --> 00:04:36,670
+calmodulin space you know what I have data on all nodes in the graph can you
+
+39
+00:04:36,670 --> 00:04:39,470
+data on all nodes in the graph can you go and estimate the parameters
+
+40
+00:04:39,470 --> 00:04:41,240
+go and estimate the parameters and we're interested to go back to the
+
+41
+00:04:41,240 --> 00:04:42,890
+and we're interested to go back to the problem we discussed on Tuesday which is
+
+42
+00:04:42,890 --> 00:04:47,570
+problem we discussed on Tuesday which is maximum likelihood estimation so I can
+
+43
+00:04:47,570 --> 00:04:49,610
+maximum likelihood estimation so I can tell you what the outcome of the lecture
+
+44
+00:04:49,610 --> 00:04:51,950
+tell you what the outcome of the lecture today is going to be but for the referee
+
+45
+00:04:51,950 --> 00:04:54,740
+today is going to be but for the referee graphical models the parameter
+
+46
+00:04:54,740 --> 00:04:58,670
+graphical models the parameter estimation decouples as one little Emily
+
+47
+00:04:58,670 --> 00:05:01,790
+estimation decouples as one little Emily problem of this node so basically you
+
+48
+00:05:01,790 --> 00:05:04,550
+problem of this node so basically you can calculate the parameters locally in
+
+49
+00:05:04,550 --> 00:05:08,090
+can calculate the parameters locally in the graph so this is very trivial very
+
+50
+00:05:08,090 --> 00:05:13,160
+the graph so this is very trivial very attractive to do for undirected
+
+51
+00:05:13,160 --> 00:05:15,380
+attractive to do for undirected graphical mode for undirected graphical
+
+52
+00:05:15,380 --> 00:05:17,330
+graphical mode for undirected graphical model for Montecarlo fields we're ready
+
+53
+00:05:17,330 --> 00:05:19,790
+model for Montecarlo fields we're ready started discussing this on Tuesday
+
+54
+00:05:19,790 --> 00:05:22,550
+started discussing this on Tuesday because of the normalization factors D
+
+55
+00:05:22,550 --> 00:05:24,440
+because of the normalization factors D you cannot really be couple it this
+
+56
+00:05:24,440 --> 00:05:29,150
+you cannot really be couple it this nicely so the whole problem needs to
+
+57
+00:05:29,150 --> 00:05:30,500
+nicely so the whole problem needs to come together and compute all the
+
+58
+00:05:30,500 --> 00:05:33,230
+come together and compute all the parameters for all the tricks because
+
+59
+00:05:33,230 --> 00:05:36,470
+parameters for all the tricks because this G factor includes all the
+
+60
+00:05:36,470 --> 00:05:39,620
+this G factor includes all the information so this does not allow the
+
+61
+00:05:39,620 --> 00:05:44,930
+information so this does not allow the coffee now there is a very special type
+
+62
+00:05:44,930 --> 00:05:47,720
+coffee now there is a very special type of undirected graphical models that is
+
+63
+00:05:47,720 --> 00:05:50,510
+of undirected graphical models that is called the composable models where
+
+64
+00:05:50,510 --> 00:05:55,970
+called the composable models where somehow we can do a many locally and
+
+65
+00:05:55,970 --> 00:05:58,450
+somehow we can do a many locally and this is what I want to discuss today and
+
+66
+00:05:58,450 --> 00:06:05,270
+this is what I want to discuss today and so there is some relative that complete
+
+67
+00:06:05,270 --> 00:06:07,070
+so there is some relative that complete the Emily solution and this algorithms
+
+68
+00:06:07,070 --> 00:06:09,680
+the Emily solution and this algorithms are local okay so for dialectic
+
+69
+00:06:09,680 --> 00:06:10,940
+are local okay so for dialectic graphical models we're going to see the
+
+70
+00:06:10,940 --> 00:06:13,190
+graphical models we're going to see the problem is really trivial if we have a
+
+71
+00:06:13,190 --> 00:06:17,210
+problem is really trivial if we have a completely observed model for the record
+
+72
+00:06:17,210 --> 00:06:19,370
+completely observed model for the record graphical models it becomes an easy
+
+73
+00:06:19,370 --> 00:06:21,440
+graphical models it becomes an easy thing for what is called the composable
+
+74
+00:06:21,440 --> 00:06:26,000
+thing for what is called the composable bundle otherwise still you can do some
+
+75
+00:06:26,000 --> 00:06:28,250
+bundle otherwise still you can do some iterations and we will see what type of
+
+76
+00:06:28,250 --> 00:06:30,490
+iterations and we will see what type of file would we have
+
+77
+00:06:30,490 --> 00:06:34,090
+file would we have to discuss them much I'm gonna take a
+
+78
+00:06:34,090 --> 00:06:35,800
+to discuss them much I'm gonna take a step backwards and discuss the trivial
+
+79
+00:06:35,800 --> 00:06:37,540
+step backwards and discuss the trivial problem first of directed graphical
+
+80
+00:06:37,540 --> 00:06:40,240
+problem first of directed graphical models and see why this is sort of a
+
+81
+00:06:40,240 --> 00:06:45,070
+models and see why this is sort of a trivial situation I realize she's
+
+82
+00:06:45,070 --> 00:07:11,159
+trivial situation I realize she's getting hot
+
+83
+00:07:11,159 --> 00:07:11,169
+
+
+84
+00:07:11,169 --> 00:07:19,499
+so we consider a very simple directive graphical fondant and you notice all the
+
+85
+00:07:19,499 --> 00:07:23,610
+graphical fondant and you notice all the notes are observed right and so if you
+
+86
+00:07:23,610 --> 00:07:25,140
+notes are observed right and so if you try to write the joint probability
+
+87
+00:07:25,140 --> 00:07:27,450
+try to write the joint probability distribution of course you may have P of
+
+88
+00:07:27,450 --> 00:07:30,089
+distribution of course you may have P of x1 given to that one so this is the
+
+89
+00:07:30,089 --> 00:07:31,830
+x1 given to that one so this is the transfer ominous theta one then you have
+
+90
+00:07:31,830 --> 00:07:35,600
+transfer ominous theta one then you have P of x2 given x1 its own parameters and
+
+91
+00:07:35,600 --> 00:07:39,390
+P of x2 given x1 its own parameters and finally P of X for given x2 and x3 with
+
+92
+00:07:39,390 --> 00:07:41,850
+finally P of X for given x2 and x3 with its own parameters 2 1 July will you
+
+93
+00:07:41,850 --> 00:07:43,800
+its own parameters 2 1 July will you write down the log life it looks like
+
+94
+00:07:43,800 --> 00:07:45,990
+write down the log life it looks like that so you can immediately see why this
+
+95
+00:07:45,990 --> 00:07:48,119
+that so you can immediately see why this is a trivial problem to discuss about
+
+96
+00:07:48,119 --> 00:07:50,939
+is a trivial problem to discuss about Emily estimation in the record graphs
+
+97
+00:07:50,939 --> 00:07:54,719
+Emily estimation in the record graphs when you have fully prescribed data
+
+98
+00:07:54,719 --> 00:07:57,119
+when you have fully prescribed data because if you look at theta 1 it only
+
+99
+00:07:57,119 --> 00:07:59,279
+because if you look at theta 1 it only comes in this term if you look at see
+
+100
+00:07:59,279 --> 00:08:01,559
+comes in this term if you look at see the two it only comes here etcetera
+
+101
+00:08:01,559 --> 00:08:03,540
+the two it only comes here etcetera etcetera so really if you want to
+
+102
+00:08:03,540 --> 00:08:06,779
+etcetera so really if you want to compute it along if you can do any many
+
+103
+00:08:06,779 --> 00:08:08,339
+compute it along if you can do any many problem on the first time if you want to
+
+104
+00:08:08,339 --> 00:08:10,860
+problem on the first time if you want to do to compute theta 2 or the second term
+
+105
+00:08:10,860 --> 00:08:14,899
+do to compute theta 2 or the second term etc so effectively the problem
+
+106
+00:08:14,899 --> 00:08:20,129
+etc so effectively the problem decomposes to little optimization
+
+107
+00:08:20,129 --> 00:08:22,740
+decomposes to little optimization problems defined in its node all right
+
+108
+00:08:22,740 --> 00:08:24,390
+problems defined in its node all right they need to know do you remember the
+
+109
+00:08:24,390 --> 00:08:26,670
+they need to know do you remember the probability involves the node and the
+
+110
+00:08:26,670 --> 00:08:29,309
+probability involves the node and the path of the node all right so
+
+111
+00:08:29,309 --> 00:08:32,639
+path of the node all right so information that for example if you try
+
+112
+00:08:32,639 --> 00:08:35,759
+information that for example if you try to compute theta 2 obviously the
+
+113
+00:08:35,759 --> 00:08:38,939
+to compute theta 2 obviously the observations X 1 and X 2 completely at
+
+114
+00:08:38,939 --> 00:08:41,159
+observations X 1 and X 2 completely at all so when we have to see at least four
+
+115
+00:08:41,159 --> 00:08:42,870
+all so when we have to see at least four discrete models how people get fitter to
+
+116
+00:08:42,870 --> 00:08:44,630
+discrete models how people get fitter to give an information
+
+117
+00:08:44,630 --> 00:08:50,660
+give an information x1 and x2 in essence what the Emily
+
+118
+00:08:50,660 --> 00:08:54,170
+x1 and x2 in essence what the Emily problem becomes becomes a bunch of
+
+119
+00:08:54,170 --> 00:08:57,140
+problem becomes becomes a bunch of separate Emily problems define for its
+
+120
+00:08:57,140 --> 00:08:59,510
+separate Emily problems define for its node and this little graph that you see
+
+121
+00:08:59,510 --> 00:09:04,160
+node and this little graph that you see involve to no than the parts okay so in
+
+122
+00:09:04,160 --> 00:09:06,950
+involve to no than the parts okay so in in many ways you can run this in
+
+123
+00:09:06,950 --> 00:09:11,050
+in many ways you can run this in parallel and it's as we received surveys
+
+124
+00:09:11,050 --> 00:09:13,610
+parallel and it's as we received surveys analytical solution eight sort of a
+
+125
+00:09:13,610 --> 00:09:15,070
+analytical solution eight sort of a trivial problem
+
+126
+00:09:15,070 --> 00:09:18,680
+trivial problem so let's because I'm gonna need the
+
+127
+00:09:18,680 --> 00:09:21,590
+so let's because I'm gonna need the notation in the context of Markov random
+
+128
+00:09:21,590 --> 00:09:25,100
+notation in the context of Markov random field so let's introduce this notation
+
+129
+00:09:25,100 --> 00:09:28,850
+field so let's introduce this notation for directed models so we have a graph
+
+130
+00:09:28,850 --> 00:09:32,120
+for directed models so we have a graph okay this is the number of notes a
+
+131
+00:09:32,120 --> 00:09:36,500
+okay this is the number of notes a number of edges xu is random variable
+
+132
+00:09:36,500 --> 00:09:39,830
+number of edges xu is random variable affiliated with a note you in the graph
+
+133
+00:09:39,830 --> 00:09:42,500
+affiliated with a note you in the graph the little xu is the realization of
+
+134
+00:09:42,500 --> 00:09:46,520
+the little xu is the realization of capital X of you capital X with
+
+135
+00:09:46,520 --> 00:09:51,440
+capital X of you capital X with subscript T is basically the random
+
+136
+00:09:51,440 --> 00:09:53,720
+subscript T is basically the random variables affiliation with a subset G of
+
+137
+00:09:53,720 --> 00:09:56,030
+variables affiliation with a subset G of the notes alright
+
+138
+00:09:56,030 --> 00:09:58,160
+the notes alright and this would be a very useful
+
+139
+00:09:58,160 --> 00:10:01,390
+and this would be a very useful important location actually today and
+
+140
+00:10:01,390 --> 00:10:04,930
+important location actually today and because we use X subscript C to describe
+
+141
+00:10:04,930 --> 00:10:08,570
+because we use X subscript C to describe the random variables on the subset say
+
+142
+00:10:08,570 --> 00:10:10,670
+the random variables on the subset say we're going instead of using X and
+
+143
+00:10:10,670 --> 00:10:12,230
+we're going instead of using X and scribe order on the volume which we're
+
+144
+00:10:12,230 --> 00:10:14,690
+scribe order on the volume which we're going to put X subscript V to describe
+
+145
+00:10:14,690 --> 00:10:16,370
+going to put X subscript V to describe other of the variables in the graph as
+
+146
+00:10:16,370 --> 00:10:24,110
+other of the variables in the graph as well okay so the distribution factorizes
+
+147
+00:10:24,110 --> 00:10:25,940
+well okay so the distribution factorizes basically this is the fundamental
+
+148
+00:10:25,940 --> 00:10:28,850
+basically this is the fundamental property of directed graphs as a product
+
+149
+00:10:28,850 --> 00:10:32,740
+property of directed graphs as a product of these local distributions for it's no
+
+150
+00:10:32,740 --> 00:10:35,270
+of these local distributions for it's no condition of the parlance and these are
+
+151
+00:10:35,270 --> 00:10:36,590
+condition of the parlance and these are the unknown parameters that we want to
+
+152
+00:10:36,590 --> 00:10:39,920
+the unknown parameters that we want to compute okay so basically this
+
+153
+00:10:39,920 --> 00:10:42,040
+compute okay so basically this parameters if the variables are discrete
+
+154
+00:10:42,040 --> 00:10:44,510
+parameters if the variables are discrete they are basically the values that the
+
+155
+00:10:44,510 --> 00:10:47,390
+they are basically the values that the XQ takes the tray value i given the
+
+156
+00:10:47,390 --> 00:10:47,960
+XQ takes the tray value i given the defines
+
+157
+00:10:47,960 --> 00:10:50,069
+defines take a value J
+
+158
+00:10:50,069 --> 00:10:52,889
+take a value J but we just denote the parameters now
+
+159
+00:10:52,889 --> 00:10:54,869
+but we just denote the parameters now asleep thank you but really for the
+
+160
+00:10:54,869 --> 00:10:56,759
+asleep thank you but really for the street models the parameters
+
+161
+00:10:56,759 --> 00:11:00,300
+street models the parameters v IQ is the table that gives you the
+
+162
+00:11:00,300 --> 00:11:02,519
+v IQ is the table that gives you the information about this conditional
+
+163
+00:11:02,519 --> 00:11:08,369
+information about this conditional distribution where can we have n
+
+164
+00:11:08,369 --> 00:11:11,100
+distribution where can we have n observations and sure that is
+
+165
+00:11:11,100 --> 00:11:12,929
+observations and sure that is interesting and observations means I
+
+166
+00:11:12,929 --> 00:11:14,999
+interesting and observations means I have n observations and each observation
+
+167
+00:11:14,999 --> 00:11:17,639
+have n observations and each observation involves values of all the nodes in the
+
+168
+00:11:17,639 --> 00:11:21,660
+involves values of all the nodes in the graph because everything is observed ok
+
+169
+00:11:21,660 --> 00:11:24,090
+graph because everything is observed ok so there is not hidden variables so
+
+170
+00:11:24,090 --> 00:11:26,759
+so there is not hidden variables so again in everything we have done up to
+
+171
+00:11:26,759 --> 00:11:28,740
+again in everything we have done up to now when we still have n observations we
+
+172
+00:11:28,740 --> 00:11:30,689
+now when we still have n observations we may have some variables in the graph
+
+173
+00:11:30,689 --> 00:11:36,710
+may have some variables in the graph here we apply all the the realizations
+
+174
+00:11:36,710 --> 00:11:40,499
+here we apply all the the realizations are given in the graph and we have n of
+
+175
+00:11:40,499 --> 00:11:45,420
+are given in the graph and we have n of those right n observations okay so let's
+
+176
+00:11:45,420 --> 00:11:49,679
+those right n observations okay so let's check how we are going to write this in
+
+177
+00:11:49,679 --> 00:11:52,800
+check how we are going to write this in some sense what we have is we have n
+
+178
+00:11:52,800 --> 00:11:56,040
+some sense what we have is we have n replicas or a 20 describe probabilistic
+
+179
+00:11:56,040 --> 00:11:59,280
+replicas or a 20 describe probabilistic directly graphical model you Bri so you
+
+180
+00:11:59,280 --> 00:12:01,439
+directly graphical model you Bri so you know if I say I give you all of these
+
+181
+00:12:01,439 --> 00:12:03,749
+know if I say I give you all of these nodes prescribed one realization I will
+
+182
+00:12:03,749 --> 00:12:05,519
+nodes prescribed one realization I will give you another one and another one and
+
+183
+00:12:05,519 --> 00:12:08,100
+give you another one and another one and another one really a heav n realizations
+
+184
+00:12:08,100 --> 00:12:10,199
+another one really a heav n realizations I have n different graphical models
+
+185
+00:12:10,199 --> 00:12:13,110
+I have n different graphical models obviously it's not convenient to think
+
+186
+00:12:13,110 --> 00:12:14,999
+obviously it's not convenient to think that you work with an graphical model so
+
+187
+00:12:14,999 --> 00:12:18,150
+that you work with an graphical model so somehow when we do the analysis we will
+
+188
+00:12:18,150 --> 00:12:19,889
+somehow when we do the analysis we will need sort of to take this information
+
+189
+00:12:19,889 --> 00:12:23,519
+need sort of to take this information and and somehow composited in a way that
+
+190
+00:12:23,519 --> 00:12:27,030
+and and somehow composited in a way that we can use these probability for one
+
+191
+00:12:27,030 --> 00:12:29,999
+we can use these probability for one stinking graph G ok but right now the
+
+192
+00:12:29,999 --> 00:12:32,369
+stinking graph G ok but right now the way that this looks like ok it's like
+
+193
+00:12:32,369 --> 00:12:35,759
+way that this looks like ok it's like that and so it's maybe back home to
+
+194
+00:12:35,759 --> 00:12:37,410
+that and so it's maybe back home to describe what is going on so I could
+
+195
+00:12:37,410 --> 00:12:41,519
+describe what is going on so I could describe if you want to describe the end
+
+196
+00:12:41,519 --> 00:12:45,329
+describe if you want to describe the end for this replicas of the twenty
+
+197
+00:12:45,329 --> 00:12:46,680
+for this replicas of the twenty described
+
+198
+00:12:46,680 --> 00:12:48,990
+described directly grout even have to write it as
+
+199
+00:12:48,990 --> 00:12:51,930
+directly grout even have to write it as xB which is all the notes or theoretical
+
+200
+00:12:51,930 --> 00:12:54,630
+xB which is all the notes or theoretical and what if you want to do this for a
+
+201
+00:12:54,630 --> 00:12:57,300
+and what if you want to do this for a subset of note C then you have to again
+
+202
+00:12:57,300 --> 00:13:00,630
+subset of note C then you have to again refer to some replicas and okay so it's
+
+203
+00:13:00,630 --> 00:13:04,410
+refer to some replicas and okay so it's a little bit awkward to do that so the
+
+204
+00:13:04,410 --> 00:13:07,560
+a little bit awkward to do that so the observed data set is the values of all
+
+205
+00:13:07,560 --> 00:13:10,730
+observed data set is the values of all the notes and we have this given n times
+
+206
+00:13:10,730 --> 00:13:12,900
+the notes and we have this given n times again I want you to be sure that you
+
+207
+00:13:12,900 --> 00:13:15,720
+again I want you to be sure that you understand this each of this are the
+
+208
+00:13:15,720 --> 00:13:19,590
+understand this each of this are the values of X's every cronograph alright
+
+209
+00:13:19,590 --> 00:13:21,890
+values of X's every cronograph alright and we have n realizations below
+
+210
+00:13:21,890 --> 00:13:27,180
+and we have n realizations below so the likelihood is written as the
+
+211
+00:13:27,180 --> 00:13:31,340
+so the likelihood is written as the product over each of this replicas of
+
+212
+00:13:31,340 --> 00:13:34,560
+product over each of this replicas of the likelihood for each graph and given
+
+213
+00:13:34,560 --> 00:13:38,760
+the likelihood for each graph and given the parameters so I have n data you know
+
+214
+00:13:38,760 --> 00:13:43,020
+the parameters so I have n data you know I have a product over with the data set
+
+215
+00:13:43,020 --> 00:13:46,170
+I have a product over with the data set and then the factorization of the Joint
+
+216
+00:13:46,170 --> 00:13:49,680
+and then the factorization of the Joint Distribution over each graph is over
+
+217
+00:13:49,680 --> 00:13:53,010
+Distribution over each graph is over nodes right and I put a subscript u
+
+218
+00:13:53,010 --> 00:13:55,650
+nodes right and I put a subscript u there and here clear precise that this
+
+219
+00:13:55,650 --> 00:14:00,420
+there and here clear precise that this refers to the replica and anybody
+
+220
+00:14:00,420 --> 00:14:03,380
+refers to the replica and anybody follows
+
+221
+00:14:03,380 --> 00:14:03,390
+
+
+222
+00:14:03,390 --> 00:14:09,440
+right we're giving and number of observations and each observation
+
+223
+00:14:09,440 --> 00:14:12,139
+observations and each observation involves the values of for the notes in
+
+224
+00:14:12,139 --> 00:14:14,780
+involves the values of for the notes in a graph alright so what I want to write
+
+225
+00:14:14,780 --> 00:14:16,910
+a graph alright so what I want to write a likelihood I'm going to have first
+
+226
+00:14:16,910 --> 00:14:20,240
+a likelihood I'm going to have first over a product of the likelihood of this
+
+227
+00:14:20,240 --> 00:14:24,650
+over a product of the likelihood of this replicas here want to up to n right so
+
+228
+00:14:24,650 --> 00:14:26,720
+replicas here want to up to n right so this is a product and then I'm going to
+
+229
+00:14:26,720 --> 00:14:28,160
+this is a product and then I'm going to have to light the light with a picture
+
+230
+00:14:28,160 --> 00:14:30,259
+have to light the light with a picture of this graph I mean much of the course
+
+231
+00:14:30,259 --> 00:14:32,060
+of this graph I mean much of the course up to now has been the likelihood of a
+
+232
+00:14:32,060 --> 00:14:34,280
+up to now has been the likelihood of a single graph but now because fully
+
+233
+00:14:34,280 --> 00:14:36,769
+single graph but now because fully describe I have a likelihood over an
+
+234
+00:14:36,769 --> 00:14:39,170
+describe I have a likelihood over an elective s of the graph and it'd be
+
+235
+00:14:39,170 --> 00:14:43,069
+elective s of the graph and it'd be different okay so and this distribution
+
+236
+00:14:43,069 --> 00:14:46,310
+different okay so and this distribution for this replica end it is written in
+
+237
+00:14:46,310 --> 00:14:48,980
+for this replica end it is written in the classical way is the product of the
+
+238
+00:14:48,980 --> 00:14:51,740
+the classical way is the product of the Xu for every note you given the parents
+
+239
+00:14:51,740 --> 00:14:53,810
+Xu for every note you given the parents alright and peter view of the parameters
+
+240
+00:14:53,810 --> 00:14:58,970
+alright and peter view of the parameters but you know the defined that condition
+
+241
+00:14:58,970 --> 00:15:02,210
+but you know the defined that condition distribution so we take the log
+
+242
+00:15:02,210 --> 00:15:04,160
+distribution so we take the log likelihood right the public becomes
+
+243
+00:15:04,160 --> 00:15:07,880
+likelihood right the public becomes summations it looks like that can you
+
+244
+00:15:07,880 --> 00:15:11,300
+summations it looks like that can you see now immediately why this Emily
+
+245
+00:15:11,300 --> 00:15:15,620
+see now immediately why this Emily estimation the couple's can look at this
+
+246
+00:15:15,620 --> 00:15:17,420
+estimation the couple's can look at this equation I don't read anything in the
+
+247
+00:15:17,420 --> 00:15:20,930
+equation I don't read anything in the text etc so we can move faster today and
+
+248
+00:15:20,930 --> 00:15:24,410
+text etc so we can move faster today and tell me look at this equation what
+
+249
+00:15:24,410 --> 00:15:26,720
+tell me look at this equation what information from the observations do we
+
+250
+00:15:26,720 --> 00:15:28,900
+information from the observations do we need to compute the parameters theta you
+
+251
+00:15:28,900 --> 00:15:30,889
+need to compute the parameters theta you about having the conditional
+
+252
+00:15:30,889 --> 00:15:32,360
+about having the conditional distribution affectionately given its
+
+253
+00:15:32,360 --> 00:15:37,370
+distribution affectionately given its products so what information how do you
+
+254
+00:15:37,370 --> 00:15:40,009
+products so what information how do you you know maximize this with respect to
+
+255
+00:15:40,009 --> 00:15:52,090
+you know maximize this with respect to theta here for the given you
+
+256
+00:15:52,090 --> 00:15:52,100
+
+
+257
+00:15:52,100 --> 00:15:58,540
+in how many firms invest a double summation of these are you comes in
+
+258
+00:15:58,540 --> 00:16:01,120
+summation of these are you comes in terms okay and only one of the
+
+259
+00:16:01,120 --> 00:16:06,070
+terms okay and only one of the summations on you so what are the
+
+260
+00:16:06,070 --> 00:16:08,080
+summations on you so what are the cetacean statistics basically from the
+
+261
+00:16:08,080 --> 00:16:10,420
+cetacean statistics basically from the data or at least what information looks
+
+262
+00:16:10,420 --> 00:16:12,760
+data or at least what information looks right now from all the data that it's
+
+263
+00:16:12,760 --> 00:16:14,140
+right now from all the data that it's going to be essential in computing
+
+264
+00:16:14,140 --> 00:16:19,510
+going to be essential in computing p-type you looking at this the
+
+265
+00:16:19,510 --> 00:16:22,750
+p-type you looking at this the observations of the non-text view in the
+
+266
+00:16:22,750 --> 00:16:25,840
+observations of the non-text view in the n electricals that we had and also the
+
+267
+00:16:25,840 --> 00:16:28,980
+n electricals that we had and also the information on the current review
+
+268
+00:16:28,980 --> 00:16:31,210
+information on the current review there's no return for these things
+
+269
+00:16:31,210 --> 00:16:36,970
+there's no return for these things coming in you see that if that he only
+
+270
+00:16:36,970 --> 00:16:40,930
+coming in you see that if that he only comes it is you know the parameters are
+
+271
+00:16:40,930 --> 00:16:42,370
+comes it is you know the parameters are coming in this distribution rights
+
+272
+00:16:42,370 --> 00:16:43,810
+coming in this distribution rights during installation of many of these
+
+273
+00:16:43,810 --> 00:16:46,690
+during installation of many of these distributions so today you will only be
+
+274
+00:16:46,690 --> 00:16:49,330
+distributions so today you will only be in all these terms 10 where we have the
+
+275
+00:16:49,330 --> 00:16:52,830
+in all these terms 10 where we have the youth here you and the parents of you
+
+276
+00:16:52,830 --> 00:16:58,420
+youth here you and the parents of you there on the couple okay the only cover
+
+277
+00:16:58,420 --> 00:17:03,179
+there on the couple okay the only cover all right now we will not tell me that
+
+278
+00:17:03,179 --> 00:17:05,890
+all right now we will not tell me that if this distribution is in the
+
+279
+00:17:05,890 --> 00:17:09,490
+if this distribution is in the exponential family right actually we can
+
+280
+00:17:09,490 --> 00:17:13,150
+exponential family right actually we can easily compute sufficient statistics all
+
+281
+00:17:13,150 --> 00:17:18,100
+easily compute sufficient statistics all right but for any and basically okay so
+
+282
+00:17:18,100 --> 00:17:26,039
+right but for any and basically okay so let's see how this is going to have
+
+283
+00:17:26,039 --> 00:17:26,049
+
+
+284
+00:17:26,049 --> 00:17:29,490
+so inefficient I was going to get a little bit complicated and I need this
+
+285
+00:17:29,490 --> 00:17:33,360
+little bit complicated and I need this when throughout the lecture today so we
+
+286
+00:17:33,360 --> 00:17:36,120
+when throughout the lecture today so we have any observations at all the roads
+
+287
+00:17:36,120 --> 00:17:42,000
+have any observations at all the roads being the go ok so let me introduce the
+
+288
+00:17:42,000 --> 00:17:46,830
+being the go ok so let me introduce the following definition all right so the
+
+289
+00:17:46,830 --> 00:17:50,669
+following definition all right so the intellectual member is reinventions with
+
+290
+00:17:50,669 --> 00:17:52,680
+intellectual member is reinventions with a subscript retiarius the organization's
+
+291
+00:17:52,680 --> 00:17:55,680
+a subscript retiarius the organization's of all the variables so M affects V is
+
+292
+00:17:55,680 --> 00:17:59,159
+of all the variables so M affects V is the number of times that in my data set
+
+293
+00:17:59,159 --> 00:18:02,580
+the number of times that in my data set I escape this realization little extra
+
+294
+00:18:02,580 --> 00:18:09,990
+I escape this realization little extra subscript me I'm working with discrete
+
+295
+00:18:09,990 --> 00:18:12,390
+subscript me I'm working with discrete volume so it's every X takes a finite
+
+296
+00:18:12,390 --> 00:18:14,850
+volume so it's every X takes a finite number of values and I'm taking a
+
+297
+00:18:14,850 --> 00:18:17,370
+number of values and I'm taking a collection of all the variables and I'm
+
+298
+00:18:17,370 --> 00:18:19,980
+collection of all the variables and I'm asking for this collection little X's
+
+299
+00:18:19,980 --> 00:18:21,930
+asking for this collection little X's realization of all of our images mean
+
+300
+00:18:21,930 --> 00:18:25,169
+realization of all of our images mean how many counts how many times but
+
+301
+00:18:25,169 --> 00:18:27,810
+how many counts how many times but collection for the variables happens on
+
+302
+00:18:27,810 --> 00:18:30,150
+collection for the variables happens on the data set that I collected which is
+
+303
+00:18:30,150 --> 00:18:34,950
+the data set that I collected which is this n pint you ever and what the basis
+
+304
+00:18:34,950 --> 00:18:37,470
+this n pint you ever and what the basis is the summation of these Delta
+
+305
+00:18:37,470 --> 00:18:41,610
+is the summation of these Delta functions or indicator functions to do
+
+306
+00:18:41,610 --> 00:18:44,820
+functions or indicator functions to do once them even better and this gives me
+
+307
+00:18:44,820 --> 00:18:48,930
+once them even better and this gives me one every time XV coincides with X very
+
+308
+00:18:48,930 --> 00:18:53,039
+one every time XV coincides with X very subscript F do you agree this is what I
+
+309
+00:18:53,039 --> 00:18:57,240
+subscript F do you agree this is what I have observed so if you gave me amounts
+
+310
+00:18:57,240 --> 00:18:59,150
+have observed so if you gave me amounts of realizations who followed the axis
+
+311
+00:18:59,150 --> 00:19:01,500
+of realizations who followed the axis obviously the number of cows how many
+
+312
+00:19:01,500 --> 00:19:04,169
+obviously the number of cows how many times in my data set this happens is the
+
+313
+00:19:04,169 --> 00:19:10,000
+times in my data set this happens is the summation of this
+
+314
+00:19:10,000 --> 00:19:10,010
+
+
+315
+00:19:10,010 --> 00:19:13,659
+you know sometimes I'm wonder if anybody sleeping and then I realized somebody
+
+316
+00:19:13,659 --> 00:19:25,760
+sleeping and then I realized somebody looks there they're so well okay yeah
+
+317
+00:19:25,760 --> 00:19:25,770
+
+
+318
+00:19:25,770 --> 00:19:28,950
+yes
+
+319
+00:19:28,950 --> 00:19:28,960
+
+
+320
+00:19:28,960 --> 00:19:33,280
+all right
+
+321
+00:19:33,280 --> 00:19:33,290
+
+
+322
+00:19:33,290 --> 00:19:41,440
+okay so this again X subscript V is the realization of focus in the dark to give
+
+323
+00:19:41,440 --> 00:19:45,190
+realization of focus in the dark to give them a try on X 2 X 5 X 55 whatever you
+
+324
+00:19:45,190 --> 00:19:49,090
+them a try on X 2 X 5 X 55 whatever you have the number of times the number of
+
+325
+00:19:49,090 --> 00:19:51,190
+have the number of times the number of cows that you see this in your observed
+
+326
+00:19:51,190 --> 00:19:55,210
+cows that you see this in your observed observations is this time now I am going
+
+327
+00:19:55,210 --> 00:19:58,330
+observations is this time now I am going to introduce the notation for partial
+
+328
+00:19:58,330 --> 00:20:00,190
+to introduce the notation for partial accounts always subscripe of the
+
+329
+00:20:00,190 --> 00:20:02,260
+accounts always subscripe of the variables and I want you to look very
+
+330
+00:20:02,260 --> 00:20:05,050
+variables and I want you to look very carefully on this equation and convince
+
+331
+00:20:05,050 --> 00:20:07,090
+carefully on this equation and convince yourself that we understand it so we
+
+332
+00:20:07,090 --> 00:20:11,110
+yourself that we understand it so we introduce ffxv the number of accounts in
+
+333
+00:20:11,110 --> 00:20:15,160
+introduce ffxv the number of accounts in my data set of this observation section
+
+334
+00:20:15,160 --> 00:20:18,070
+my data set of this observation section 2 XV all right and now to define the
+
+335
+00:20:18,070 --> 00:20:21,400
+2 XV all right and now to define the partial count of a subset G unfold my
+
+336
+00:20:21,400 --> 00:20:24,400
+partial count of a subset G unfold my notes okay what I have to do is take
+
+337
+00:20:24,400 --> 00:20:27,580
+notes okay what I have to do is take this and sum it over all the
+
+338
+00:20:27,580 --> 00:20:33,730
+this and sum it over all the realizations in V minus T so I you know
+
+339
+00:20:33,730 --> 00:20:35,620
+realizations in V minus T so I you know I give the relationship C and I can
+
+340
+00:20:35,620 --> 00:20:41,620
+I give the relationship C and I can complete this partial tau all right
+
+341
+00:20:41,620 --> 00:20:44,080
+complete this partial tau all right by taking this and summing everything
+
+342
+00:20:44,080 --> 00:20:53,010
+by taking this and summing everything except X subscript C and you have a
+
+343
+00:20:53,010 --> 00:20:56,800
+except X subscript C and you have a value so you say understand all the
+
+344
+00:20:56,800 --> 00:20:58,480
+value so you say understand all the possible combinations for the other
+
+345
+00:20:58,480 --> 00:21:00,670
+possible combinations for the other variables enough to give me the count
+
+346
+00:21:00,670 --> 00:21:06,400
+variables enough to give me the count effective take for example if I share
+
+347
+00:21:06,400 --> 00:21:11,020
+effective take for example if I share three variables right and M of X 1 X 2 X
+
+348
+00:21:11,020 --> 00:21:13,750
+three variables right and M of X 1 X 2 X 3 is the number of times in my data set
+
+349
+00:21:13,750 --> 00:21:16,630
+3 is the number of times in my data set but capital X 1 takes the value little X
+
+350
+00:21:16,630 --> 00:21:19,510
+but capital X 1 takes the value little X 1 capital X 2 takes the value little X 2
+
+351
+00:21:19,510 --> 00:21:22,570
+1 capital X 2 takes the value little X 2 capital X 3 X 1 a little extreme to
+
+352
+00:21:22,570 --> 00:21:24,790
+capital X 3 X 1 a little extreme to define the number of times that in my
+
+353
+00:21:24,790 --> 00:21:27,460
+define the number of times that in my data stand I have a capital X 1 taking
+
+354
+00:21:27,460 --> 00:21:29,800
+data stand I have a capital X 1 taking divided leave electron and capital
+
+355
+00:21:29,800 --> 00:21:30,250
+divided leave electron and capital actually
+
+356
+00:21:30,250 --> 00:21:33,730
+actually let's do what I have to do is take the
+
+357
+00:21:33,730 --> 00:21:35,980
+let's do what I have to do is take the count or for all the variables and some
+
+358
+00:21:35,980 --> 00:21:43,960
+count or for all the variables and some extreme make sense yes all right so and
+
+359
+00:21:43,960 --> 00:21:48,010
+extreme make sense yes all right so and similarly mx1 I can comics to tear over
+
+360
+00:21:48,010 --> 00:21:50,470
+similarly mx1 I can comics to tear over I can some X 2 and X 3 or not okay so
+
+361
+00:21:50,470 --> 00:21:52,630
+I can some X 2 and X 3 or not okay so what I want you to remember is this is
+
+362
+00:21:52,630 --> 00:21:55,630
+what I want you to remember is this is the count M of X V for all the variables
+
+363
+00:21:55,630 --> 00:21:57,400
+the count M of X V for all the variables and this is a party account for a
+
+364
+00:21:57,400 --> 00:21:59,770
+and this is a party account for a success of the variables and this would
+
+365
+00:21:59,770 --> 00:22:01,450
+success of the variables and this would be an essential thing right because we
+
+366
+00:22:01,450 --> 00:22:05,110
+be an essential thing right because we will have the you see shortly why and we
+
+367
+00:22:05,110 --> 00:22:08,860
+will have the you see shortly why and we try to solve them really well now look
+
+368
+00:22:08,860 --> 00:22:11,080
+try to solve them really well now look at this equation and tell me this is for
+
+369
+00:22:11,080 --> 00:22:14,200
+at this equation and tell me this is for the example right but effectively if I
+
+370
+00:22:14,200 --> 00:22:16,510
+the example right but effectively if I take M effects V of all the variables
+
+371
+00:22:16,510 --> 00:22:19,000
+take M effects V of all the variables and I sound for possible combinations of
+
+372
+00:22:19,000 --> 00:22:21,400
+and I sound for possible combinations of X V and then I have to get particle and
+
+373
+00:22:21,400 --> 00:22:26,989
+X V and then I have to get particle and there
+
+374
+00:22:26,989 --> 00:22:26,999
+
+
+375
+00:22:26,999 --> 00:22:32,460
+right
+
+376
+00:22:32,460 --> 00:22:32,470
+
+
+377
+00:22:32,470 --> 00:22:36,060
+here I'm taking all possible realizations of my variables but they
+
+378
+00:22:36,060 --> 00:22:38,730
+realizations of my variables but they have only an observation so this sum has
+
+379
+00:22:38,730 --> 00:22:44,120
+have only an observation so this sum has to be equal to capital F okay so let me
+
+380
+00:22:44,120 --> 00:22:47,220
+to be equal to capital F okay so let me introduce the last notation basically
+
+381
+00:22:47,220 --> 00:22:49,560
+introduce the last notation basically then we're ready to go I'm going to
+
+382
+00:22:49,560 --> 00:22:52,710
+then we're ready to go I'm going to introduce a partial account for the
+
+383
+00:22:52,710 --> 00:22:56,160
+introduce a partial account for the comedy of the note you okay so the
+
+384
+00:22:56,160 --> 00:22:57,870
+comedy of the note you okay so the family of a note here is basically here
+
+385
+00:22:57,870 --> 00:23:01,050
+family of a note here is basically here in the palette right and I do notice as
+
+386
+00:23:01,050 --> 00:23:05,430
+in the palette right and I do notice as P of you okay so take some realizations
+
+387
+00:23:05,430 --> 00:23:08,070
+P of you okay so take some realizations of the notes that belong to this family
+
+388
+00:23:08,070 --> 00:23:11,490
+of the notes that belong to this family of note view obviously the number of
+
+389
+00:23:11,490 --> 00:23:14,580
+of note view obviously the number of times that you see this in your data set
+
+390
+00:23:14,580 --> 00:23:18,090
+times that you see this in your data set is the partial account which is
+
+391
+00:23:18,090 --> 00:23:21,810
+is the partial account which is completed if you take n of organizations
+
+392
+00:23:21,810 --> 00:23:24,930
+completed if you take n of organizations of X V and you sum for all values in
+
+393
+00:23:24,930 --> 00:23:27,360
+of X V and you sum for all values in these notes except the values that
+
+394
+00:23:27,360 --> 00:23:30,200
+these notes except the values that belong in the family of the note view
+
+395
+00:23:30,200 --> 00:23:33,990
+belong in the family of the note view you see that so this is the number of
+
+396
+00:23:33,990 --> 00:23:37,200
+you see that so this is the number of counts that you see and now do you take
+
+397
+00:23:37,200 --> 00:23:38,940
+counts that you see and now do you take some values and the Paris take some
+
+398
+00:23:38,940 --> 00:23:39,660
+some values and the Paris take some other value
+
+399
+00:23:39,660 --> 00:23:44,190
+other value okay you can compute this by taking the
+
+400
+00:23:44,190 --> 00:23:46,860
+okay you can compute this by taking the total count over all the notes and
+
+401
+00:23:46,860 --> 00:23:49,080
+total count over all the notes and summing everything but the notes that
+
+402
+00:23:49,080 --> 00:23:57,680
+summing everything but the notes that belong without stopping so let's turn I
+
+403
+00:23:57,680 --> 00:23:59,850
+belong without stopping so let's turn I don't have to go through all of this so
+
+404
+00:23:59,850 --> 00:24:02,340
+don't have to go through all of this so I'm looking on the equation of the
+
+405
+00:24:02,340 --> 00:24:05,700
+I'm looking on the equation of the bottom all right so we're looking for
+
+406
+00:24:05,700 --> 00:24:11,440
+bottom all right so we're looking for the likelihood of of
+
+407
+00:24:11,440 --> 00:24:11,450
+
+
+408
+00:24:11,450 --> 00:24:16,820
+of the observations I have and I'm guessing they're absolute most probably
+
+409
+00:24:16,820 --> 00:24:18,170
+guessing they're absolute most probably it'd be okay
+
+410
+00:24:18,170 --> 00:24:21,140
+it'd be okay it's on slide 11 this is fine as it is
+
+411
+00:24:21,140 --> 00:24:23,290
+it's on slide 11 this is fine as it is but you know it's better to put the
+
+412
+00:24:23,290 --> 00:24:25,430
+but you know it's better to put the probability of the observation of given
+
+413
+00:24:25,430 --> 00:24:27,260
+probability of the observation of given the parameters suddenly you're late and
+
+414
+00:24:27,260 --> 00:24:29,600
+the parameters suddenly you're late and we're all this equation before that this
+
+415
+00:24:29,600 --> 00:24:31,250
+we're all this equation before that this is the product of the likely which over
+
+416
+00:24:31,250 --> 00:24:37,760
+is the product of the likely which over this and eléctricas remember anything
+
+417
+00:24:37,760 --> 00:24:39,980
+this and eléctricas remember anything else we can do so
+
+418
+00:24:39,980 --> 00:24:42,950
+else we can do so okay so I have the product basically
+
+419
+00:24:42,950 --> 00:24:47,270
+okay so I have the product basically over and graphs right so this listen to
+
+420
+00:24:47,270 --> 00:24:50,300
+over and graphs right so this listen to them and this is the likelihood for each
+
+421
+00:24:50,300 --> 00:24:54,560
+them and this is the likelihood for each graph end of observing the data that I
+
+422
+00:24:54,560 --> 00:24:57,560
+graph end of observing the data that I have given for the presentation okay so
+
+423
+00:24:57,560 --> 00:25:00,980
+have given for the presentation okay so now I'm going to do I won't be get rid
+
+424
+00:25:00,980 --> 00:25:04,730
+now I'm going to do I won't be get rid of this index ten and this product in n
+
+425
+00:25:04,730 --> 00:25:06,620
+of this index ten and this product in n so I'm going to start doing some algebra
+
+426
+00:25:06,620 --> 00:25:09,410
+so I'm going to start doing some algebra so I'm going to write this probability
+
+427
+00:25:09,410 --> 00:25:12,140
+so I'm going to write this probability for this replica and I'm gonna write it
+
+428
+00:25:12,140 --> 00:25:14,630
+for this replica and I'm gonna write it as this product and I want you to look
+
+429
+00:25:14,630 --> 00:25:19,540
+as this product and I want you to look and tell me that you understand
+
+430
+00:25:19,540 --> 00:25:19,550
+
+
+431
+00:25:19,550 --> 00:25:29,710
+all right so what exactly have I done here remember in in this time all right
+
+432
+00:25:29,710 --> 00:25:33,640
+here remember in in this time all right I have a particular type of realization
+
+433
+00:25:33,640 --> 00:25:37,210
+I have a particular type of realization of all the variables right X subscript V
+
+434
+00:25:37,210 --> 00:25:39,730
+of all the variables right X subscript V comma n is from the unreplicated the
+
+435
+00:25:39,730 --> 00:25:42,730
+comma n is from the unreplicated the values of all the nodes in a lifeless as
+
+436
+00:25:42,730 --> 00:25:45,430
+values of all the nodes in a lifeless as the following take basically the
+
+437
+00:25:45,430 --> 00:25:47,740
+the following take basically the probability of observing little X
+
+438
+00:25:47,740 --> 00:25:51,970
+probability of observing little X subscript V rotational inertia flex V in
+
+439
+00:25:51,970 --> 00:25:54,910
+subscript V rotational inertia flex V in only converse bunch of experi cortex
+
+440
+00:25:54,910 --> 00:25:59,410
+only converse bunch of experi cortex become an we have all those tricks
+
+441
+00:25:59,410 --> 00:26:04,650
+become an we have all those tricks actually before okay all right
+
+442
+00:26:04,650 --> 00:26:08,980
+actually before okay all right that's this equation on middle and then
+
+443
+00:26:08,980 --> 00:26:12,220
+that's this equation on middle and then for notice that the probability
+
+444
+00:26:12,220 --> 00:26:15,670
+for notice that the probability basically of having the realizations of
+
+445
+00:26:15,670 --> 00:26:19,330
+basically of having the realizations of all the nodes okay given the parameters
+
+446
+00:26:19,330 --> 00:26:22,420
+all the nodes okay given the parameters is basically the product of the curve of
+
+447
+00:26:22,420 --> 00:26:24,880
+is basically the product of the curve of the probabilities of the parents given a
+
+448
+00:26:24,880 --> 00:26:26,500
+the probabilities of the parents given a mean of the knowledge given the parents
+
+449
+00:26:26,500 --> 00:26:30,880
+mean of the knowledge given the parents but with recent Anthony's notice that by
+
+450
+00:26:30,880 --> 00:26:34,570
+but with recent Anthony's notice that by doing this trick here the isness I only
+
+451
+00:26:34,570 --> 00:26:37,030
+doing this trick here the isness I only worked with the probability of one model
+
+452
+00:26:37,030 --> 00:26:40,570
+worked with the probability of one model this is very important the subscription
+
+453
+00:26:40,570 --> 00:26:45,490
+this is very important the subscription has been eliminated here right when we
+
+454
+00:26:45,490 --> 00:26:47,500
+has been eliminated here right when we start playing right so we have the
+
+455
+00:26:47,500 --> 00:26:50,560
+start playing right so we have the probability of X V comma n here there is
+
+456
+00:26:50,560 --> 00:26:54,010
+probability of X V comma n here there is no anymore end the end has gone up to
+
+457
+00:26:54,010 --> 00:26:57,070
+no anymore end the end has gone up to that delta function so we work with the
+
+458
+00:26:57,070 --> 00:26:59,290
+that delta function so we work with the probability the joint probability of one
+
+459
+00:26:59,290 --> 00:27:01,660
+probability the joint probability of one graphical model alone not of the n
+
+460
+00:27:01,660 --> 00:27:08,050
+graphical model alone not of the n replicas okay action
+
+461
+00:27:08,050 --> 00:27:11,560
+replicas okay action and what practically done I think with
+
+462
+00:27:11,560 --> 00:27:15,550
+and what practically done I think with this slide take the log of this so this
+
+463
+00:27:15,550 --> 00:27:17,920
+this slide take the log of this so this product is gonna become a summation all
+
+464
+00:27:17,920 --> 00:27:20,140
+product is gonna become a summation all right we don't like this gonna end there
+
+465
+00:27:20,140 --> 00:27:24,370
+right we don't like this gonna end there so this term is going to become a
+
+466
+00:27:24,370 --> 00:27:25,760
+so this term is going to become a summation
+
+467
+00:27:25,760 --> 00:27:28,220
+summation the delta function will come down and
+
+468
+00:27:28,220 --> 00:27:30,200
+the delta function will come down and then we're going to have log of V of X V
+
+469
+00:27:30,200 --> 00:27:34,040
+then we're going to have log of V of X V given theta this is nice because this is
+
+470
+00:27:34,040 --> 00:27:35,960
+given theta this is nice because this is the probability the love largely good
+
+471
+00:27:35,960 --> 00:27:39,350
+the probability the love largely good for our generic graph right does not
+
+472
+00:27:39,350 --> 00:27:44,090
+for our generic graph right does not involve any end and now notice if I take
+
+473
+00:27:44,090 --> 00:27:46,580
+involve any end and now notice if I take the summation here in n what is this
+
+474
+00:27:46,580 --> 00:27:52,250
+the summation here in n what is this summation giving me what is this
+
+475
+00:27:52,250 --> 00:27:57,980
+summation giving me what is this summation according to our definition
+
+476
+00:27:57,980 --> 00:27:57,990
+
+
+477
+00:27:57,990 --> 00:28:04,190
+you know I go through basically okay so this is for possible configuration so
+
+478
+00:28:04,190 --> 00:28:07,190
+this is for possible configuration so then you know what I do is for each 6v I
+
+479
+00:28:07,190 --> 00:28:09,019
+then you know what I do is for each 6v I am checking how many times that
+
+480
+00:28:09,019 --> 00:28:12,289
+am checking how many times that exhibitions appear within my data set so
+
+481
+00:28:12,289 --> 00:28:19,389
+exhibitions appear within my data set so isn't it this the terms of M XP right
+
+482
+00:28:19,389 --> 00:28:20,570
+isn't it this the terms of M XP right okay
+
+483
+00:28:20,570 --> 00:28:25,220
+okay so basically if you look at this there
+
+484
+00:28:25,220 --> 00:28:31,159
+so basically if you look at this there is absolutely no end here now there's no
+
+485
+00:28:31,159 --> 00:28:36,049
+is absolutely no end here now there's no precursor of models etc I want to graph
+
+486
+00:28:36,049 --> 00:28:38,889
+precursor of models etc I want to graph alone but somehow the bank has been
+
+487
+00:28:38,889 --> 00:28:41,630
+alone but somehow the bank has been integrated in the number of cows of the
+
+488
+00:28:41,630 --> 00:28:46,580
+integrated in the number of cows of the observed X subscript V okay so let's put
+
+489
+00:28:46,580 --> 00:28:47,180
+observed X subscript V okay so let's put in here
+
+490
+00:28:47,180 --> 00:28:50,149
+in here right so the log likelihood of all my
+
+491
+00:28:50,149 --> 00:28:53,779
+right so the log likelihood of all my observations is this again and I write
+
+492
+00:28:53,779 --> 00:28:59,269
+observations is this again and I write this probability as long I factorize
+
+493
+00:28:59,269 --> 00:29:01,610
+this probability as long I factorize this over the conditional probabilities
+
+494
+00:29:01,610 --> 00:29:04,580
+this over the conditional probabilities of bits now given the parent and I
+
+495
+00:29:04,580 --> 00:29:07,940
+of bits now given the parent and I forgot to mention the condition
+
+496
+00:29:07,940 --> 00:29:09,980
+forgot to mention the condition probability I basically because we work
+
+497
+00:29:09,980 --> 00:29:13,340
+probability I basically because we work with discrete variables I liked it you
+
+498
+00:29:13,340 --> 00:29:15,860
+with discrete variables I liked it you know a parametric homeless parameters
+
+499
+00:29:15,860 --> 00:29:20,570
+know a parametric homeless parameters theta that belongs to the Lord V and
+
+500
+00:29:20,570 --> 00:29:23,990
+theta that belongs to the Lord V and their functions of the data at the node
+
+501
+00:29:23,990 --> 00:29:25,990
+their functions of the data at the node V and it's product
+
+502
+00:29:25,990 --> 00:29:27,919
+V and it's product mr. Stanner petitioner could have
+
+503
+00:29:27,919 --> 00:29:32,750
+mr. Stanner petitioner could have written explicitly this P of X V given X
+
+504
+00:29:32,750 --> 00:29:37,190
+written explicitly this P of X V given X of its parts comma theta V but for a
+
+505
+00:29:37,190 --> 00:29:39,320
+of its parts comma theta V but for a discrete distribution departments are
+
+506
+00:29:39,320 --> 00:29:41,360
+discrete distribution departments are really the values of a conditional
+
+507
+00:29:41,360 --> 00:29:45,649
+really the values of a conditional distribution given different values for
+
+508
+00:29:45,649 --> 00:29:48,440
+distribution given different values for the node V any tolerance all right so
+
+509
+00:29:48,440 --> 00:29:49,880
+the node V any tolerance all right so this is basically from the factorization
+
+510
+00:29:49,880 --> 00:29:51,080
+this is basically from the factorization of the directed
+
+511
+00:29:51,080 --> 00:29:56,330
+of the directed a bundle so okay there is the product
+
+512
+00:29:56,330 --> 00:29:58,970
+a bundle so okay there is the product becomes a summation the launch goes
+
+513
+00:29:58,970 --> 00:30:03,680
+becomes a summation the launch goes inside and I have been a frictional so
+
+514
+00:30:03,680 --> 00:30:05,990
+inside and I have been a frictional so let's see I take this donation and VA
+
+515
+00:30:05,990 --> 00:30:09,080
+let's see I take this donation and VA put it outside I pay I take a summation
+
+516
+00:30:09,080 --> 00:30:11,570
+put it outside I pay I take a summation over all the immunization for the notes
+
+517
+00:30:11,570 --> 00:30:14,090
+over all the immunization for the notes and I split it in estimation over the
+
+518
+00:30:14,090 --> 00:30:17,660
+and I split it in estimation over the realizations of the family and the
+
+519
+00:30:17,660 --> 00:30:19,340
+realizations of the family and the organization of all the notes - the
+
+520
+00:30:19,340 --> 00:30:20,290
+organization of all the notes - the problem
+
+521
+00:30:20,290 --> 00:30:24,320
+problem am I allowed to do it I split this right
+
+522
+00:30:24,320 --> 00:30:26,360
+am I allowed to do it I split this right this is estimation over all
+
+523
+00:30:26,360 --> 00:30:29,090
+this is estimation over all hospitalizations for the notes and I
+
+524
+00:30:29,090 --> 00:30:32,650
+hospitalizations for the notes and I split it over the family of node V and
+
+525
+00:30:32,650 --> 00:30:36,740
+split it over the family of node V and everything you know except the family of
+
+526
+00:30:36,740 --> 00:30:43,220
+everything you know except the family of notes V and all right look now at the
+
+527
+00:30:43,220 --> 00:30:44,870
+notes V and all right look now at the inside summation what is the summation
+
+528
+00:30:44,870 --> 00:30:50,630
+inside summation what is the summation of this on the total count of XV we
+
+529
+00:30:50,630 --> 00:30:52,610
+of this on the total count of XV we introduced and definition it was our
+
+530
+00:30:52,610 --> 00:30:56,120
+introduced and definition it was our second definition of towns so if I take
+
+531
+00:30:56,120 --> 00:30:59,200
+second definition of towns so if I take this summation here what is it
+
+532
+00:30:59,200 --> 00:31:03,530
+this summation here what is it if I take F of M that's me and I found
+
+533
+00:31:03,530 --> 00:31:07,400
+if I take F of M that's me and I found everything but the family of V what they
+
+534
+00:31:07,400 --> 00:31:12,800
+everything but the family of V what they get the personal contact the notes and
+
+535
+00:31:12,800 --> 00:31:17,510
+get the personal contact the notes and the harmony of V alright so now I can
+
+536
+00:31:17,510 --> 00:31:21,020
+the harmony of V alright so now I can you see why immediately the problem the
+
+537
+00:31:21,020 --> 00:31:23,120
+you see why immediately the problem the MLE estimate the couple's and why you
+
+538
+00:31:23,120 --> 00:31:26,300
+MLE estimate the couple's and why you can compute the parameters affiliated
+
+539
+00:31:26,300 --> 00:31:29,830
+can compute the parameters affiliated with the condition probability of not V
+
+540
+00:31:29,830 --> 00:31:33,050
+with the condition probability of not V independently of other parameters can
+
+541
+00:31:33,050 --> 00:31:37,780
+independently of other parameters can you see this decomposition here right
+
+542
+00:31:37,780 --> 00:31:41,570
+you see this decomposition here right okay separates this right this is for
+
+543
+00:31:41,570 --> 00:31:45,260
+okay separates this right this is for each node V and for each node V I have
+
+544
+00:31:45,260 --> 00:31:47,510
+each node V and for each node V I have this summation over all possible
+
+545
+00:31:47,510 --> 00:31:50,420
+this summation over all possible realizations of the varnish effects in
+
+546
+00:31:50,420 --> 00:31:52,820
+realizations of the varnish effects in the family of being
+
+547
+00:31:52,820 --> 00:31:55,250
+the family of being so basically you can immediately see
+
+548
+00:31:55,250 --> 00:31:58,720
+so basically you can immediately see that this parameterization only comes
+
+549
+00:31:58,720 --> 00:32:02,810
+that this parameterization only comes once for each node V the problem is
+
+550
+00:32:02,810 --> 00:32:05,840
+once for each node V the problem is convened a couple so we want to complete
+
+551
+00:32:05,840 --> 00:32:07,970
+convened a couple so we want to complete this parameter so obviously we're going
+
+552
+00:32:07,970 --> 00:32:10,400
+this parameter so obviously we're going to maximize this but to maximize it we
+
+553
+00:32:10,400 --> 00:32:13,130
+to maximize this but to maximize it we all should have so children we decouple
+
+554
+00:32:13,130 --> 00:32:17,630
+all should have so children we decouple it right we're gonna maximize this with
+
+555
+00:32:17,630 --> 00:32:20,120
+it right we're gonna maximize this with them separately okay because this
+
+556
+00:32:20,120 --> 00:32:23,060
+them separately okay because this parameters appear only in this term but
+
+557
+00:32:23,060 --> 00:32:25,760
+parameters appear only in this term but we need to be careful because since this
+
+558
+00:32:25,760 --> 00:32:27,500
+we need to be careful because since this is for habilities conditional
+
+559
+00:32:27,500 --> 00:32:30,740
+is for habilities conditional probability when you sang in XV you have
+
+560
+00:32:30,740 --> 00:32:32,630
+probability when you sang in XV you have to get equal to one when you have the
+
+561
+00:32:32,630 --> 00:32:34,700
+to get equal to one when you have the probability of X V given its powers and
+
+562
+00:32:34,700 --> 00:32:37,040
+probability of X V given its powers and you sominex three it better stands to up
+
+563
+00:32:37,040 --> 00:32:39,200
+you sominex three it better stands to up okay so basically you have to put a
+
+564
+00:32:39,200 --> 00:32:41,780
+okay so basically you have to put a Lagrange multiplier and you want to
+
+565
+00:32:41,780 --> 00:32:43,520
+Lagrange multiplier and you want to compute the Emily estimates for the
+
+566
+00:32:43,520 --> 00:32:45,500
+compute the Emily estimates for the parameters that define this conditional
+
+567
+00:32:45,500 --> 00:32:47,270
+parameters that define this conditional distribution you have to maximize that
+
+568
+00:32:47,270 --> 00:32:52,850
+distribution you have to maximize that and the answer is immediate and an int
+
+569
+00:32:52,850 --> 00:32:56,480
+and the answer is immediate and an int actually always it says that the Emily
+
+570
+00:32:56,480 --> 00:33:00,380
+actually always it says that the Emily estimate of theta subscript V and
+
+571
+00:33:00,380 --> 00:33:02,810
+estimate of theta subscript V and remember really this is the conditional
+
+572
+00:33:02,810 --> 00:33:06,530
+remember really this is the conditional distribution of X V given its parents to
+
+573
+00:33:06,530 --> 00:33:08,990
+distribution of X V given its parents to put some values for X P so values for
+
+574
+00:33:08,990 --> 00:33:09,710
+put some values for X P so values for the parents
+
+575
+00:33:09,710 --> 00:33:12,680
+the parents that's what we're looking here is the
+
+576
+00:33:12,680 --> 00:33:16,600
+that's what we're looking here is the partial count effects in the commonly
+
+577
+00:33:16,600 --> 00:33:24,750
+partial count effects in the commonly divided by the partial count okay of X
+
+578
+00:33:24,750 --> 00:33:24,760
+
+
+579
+00:33:24,760 --> 00:33:31,110
+was fun to the parlance of V but that makes sense so basically the calculated
+
+580
+00:33:31,110 --> 00:33:34,230
+makes sense so basically the calculated safety of analytics one clinician let a
+
+581
+00:33:34,230 --> 00:33:36,480
+safety of analytics one clinician let a extreme condition and it's wrong and you
+
+582
+00:33:36,480 --> 00:33:38,820
+extreme condition and it's wrong and you won't obey the parameters of that so
+
+583
+00:33:38,820 --> 00:33:40,860
+won't obey the parameters of that so what you have here is you have an
+
+584
+00:33:40,860 --> 00:33:44,010
+what you have here is you have an electronic school and surpass muscles
+
+585
+00:33:44,010 --> 00:33:46,980
+electronic school and surpass muscles that the values have observed in your
+
+586
+00:33:46,980 --> 00:33:52,310
+that the values have observed in your data set for x1 and x2 divided by the
+
+587
+00:33:52,310 --> 00:33:55,980
+data set for x1 and x2 divided by the observations that you have or in the
+
+588
+00:33:55,980 --> 00:33:58,350
+observations that you have or in the particular case if x1 is the comment
+
+589
+00:33:58,350 --> 00:34:03,150
+particular case if x1 is the comment basically for the counts of x1 is that
+
+590
+00:34:03,150 --> 00:34:10,210
+basically for the counts of x1 is that sort of an expected answer right
+
+591
+00:34:10,210 --> 00:34:10,220
+
+
+592
+00:34:10,220 --> 00:34:17,409
+I mean this is the obvious answer and usually if you don't get the obvious
+
+593
+00:34:17,409 --> 00:34:19,990
+usually if you don't get the obvious answer you're doing something wrong
+
+594
+00:34:19,990 --> 00:34:23,970
+answer you're doing something wrong again this is for discrete distributions
+
+595
+00:34:23,970 --> 00:34:27,339
+again this is for discrete distributions okay and this is what you get so the
+
+596
+00:34:27,339 --> 00:34:29,710
+okay and this is what you get so the bottom line is this
+
+597
+00:34:29,710 --> 00:34:31,569
+bottom line is this Emily estimate for direct graphical
+
+598
+00:34:31,569 --> 00:34:36,099
+Emily estimate for direct graphical models the couples okay and you can
+
+599
+00:34:36,099 --> 00:34:37,750
+models the couples okay and you can solve this problems basically for each
+
+600
+00:34:37,750 --> 00:34:41,200
+solve this problems basically for each node separately and these partial counts
+
+601
+00:34:41,200 --> 00:34:42,669
+node separately and these partial counts that you get is the sufficient
+
+602
+00:34:42,669 --> 00:34:45,129
+that you get is the sufficient statistics that you need and contain all
+
+603
+00:34:45,129 --> 00:34:47,710
+statistics that you need and contain all the information relevant to this local
+
+604
+00:34:47,710 --> 00:34:49,720
+the information relevant to this local estimation and Emily estimation problem
+
+605
+00:34:49,720 --> 00:34:55,089
+estimation and Emily estimation problem for long B so all this estimates are
+
+606
+00:34:55,089 --> 00:34:56,889
+for long B so all this estimates are independent for each node so this
+
+607
+00:34:56,889 --> 00:35:02,349
+independent for each node so this paradox now I know a definition in the
+
+608
+00:35:02,349 --> 00:35:06,790
+paradox now I know a definition in the class in in in the film so we will say
+
+609
+00:35:06,790 --> 00:35:08,890
+class in in in the film so we will say you know if you try to do this great
+
+610
+00:35:08,890 --> 00:35:11,220
+you know if you try to do this great models and this probabilities right now
+
+611
+00:35:11,220 --> 00:35:13,960
+models and this probabilities right now very high-dimensional so you basically
+
+612
+00:35:13,960 --> 00:35:15,790
+very high-dimensional so you basically the very high dimension of table to
+
+613
+00:35:15,790 --> 00:35:19,270
+the very high dimension of table to describe this obviously that is not
+
+614
+00:35:19,270 --> 00:35:20,440
+describe this obviously that is not going to be very practical
+
+615
+00:35:20,440 --> 00:35:22,540
+going to be very practical I mean if X we can take PI values this
+
+616
+00:35:22,540 --> 00:35:24,940
+I mean if X we can take PI values this can take 20 values you know you got lost
+
+617
+00:35:24,940 --> 00:35:27,750
+can take 20 values you know you got lost okay so what you usually do is you
+
+618
+00:35:27,750 --> 00:35:29,740
+okay so what you usually do is you approximate this with a generalized
+
+619
+00:35:29,740 --> 00:35:34,150
+approximate this with a generalized linear model so you could basically if
+
+620
+00:35:34,150 --> 00:35:36,460
+linear model so you could basically if you link this distribution with fewer
+
+621
+00:35:36,460 --> 00:35:40,030
+you link this distribution with fewer parameters in a generalized linear model
+
+622
+00:35:40,030 --> 00:35:44,559
+parameters in a generalized linear model and so in we have shown them you can go
+
+623
+00:35:44,559 --> 00:35:47,920
+and so in we have shown them you can go and visit one of the lectures from the
+
+624
+00:35:47,920 --> 00:35:51,040
+and visit one of the lectures from the fall semester I think Mary's book has
+
+625
+00:35:51,040 --> 00:35:54,480
+fall semester I think Mary's book has this as well as an example you can show
+
+626
+00:35:54,480 --> 00:35:58,059
+this as well as an example you can show so in this case this generalizing and
+
+627
+00:35:58,059 --> 00:36:00,010
+so in this case this generalizing and what is corresponding to each node we
+
+628
+00:36:00,010 --> 00:36:01,859
+what is corresponding to each node we are decoupled
+
+629
+00:36:01,859 --> 00:36:04,530
+are decoupled so you can complete the parameters of
+
+630
+00:36:04,530 --> 00:36:07,510
+so you can complete the parameters of each of these models separately for each
+
+631
+00:36:07,510 --> 00:36:09,280
+each of these models separately for each node
+
+632
+00:36:09,280 --> 00:36:11,950
+node and you didn't have a nice solution in
+
+633
+00:36:11,950 --> 00:36:13,540
+and you didn't have a nice solution in terms of counts the way that you see
+
+634
+00:36:13,540 --> 00:36:17,710
+terms of counts the way that you see here so you have to solve any therapy
+
+635
+00:36:17,710 --> 00:36:20,920
+here so you have to solve any therapy the way to discuss problem okay
+
+636
+00:36:20,920 --> 00:36:24,580
+the way to discuss problem okay so basically what you get is and where
+
+637
+00:36:24,580 --> 00:36:26,050
+so basically what you get is and where he describes problem that you solve
+
+638
+00:36:26,050 --> 00:36:28,210
+he describes problem that you solve iteratively but you can do this
+
+639
+00:36:28,210 --> 00:36:33,550
+iteratively but you can do this algorithm in parallel for its note so in
+
+640
+00:36:33,550 --> 00:36:36,430
+algorithm in parallel for its note so in in essence you know the total still
+
+641
+00:36:36,430 --> 00:36:39,130
+in essence you know the total still becomes even if you have a network of
+
+642
+00:36:39,130 --> 00:36:40,600
+becomes even if you have a network of the game of expression for this
+
+643
+00:36:40,600 --> 00:36:48,130
+the game of expression for this conditional distribution okay so the
+
+644
+00:36:48,130 --> 00:36:50,440
+conditional distribution okay so the only thing I want you to not forget here
+
+645
+00:36:50,440 --> 00:36:52,630
+only thing I want you to not forget here is right but it says for completely
+
+646
+00:36:52,630 --> 00:36:54,820
+is right but it says for completely observed data sets all right so you have
+
+647
+00:36:54,820 --> 00:36:57,040
+observed data sets all right so you have begun everything is prescribed in the
+
+648
+00:36:57,040 --> 00:37:00,160
+begun everything is prescribed in the drafter I'm not even body can you just
+
+649
+00:37:00,160 --> 00:37:01,780
+drafter I'm not even body can you just if you have hidden variables since I
+
+650
+00:37:01,780 --> 00:37:04,240
+if you have hidden variables since I start I said something intellectual last
+
+651
+00:37:04,240 --> 00:37:06,580
+start I said something intellectual last time and we're going to come back on it
+
+652
+00:37:06,580 --> 00:37:09,520
+time and we're going to come back on it next week but if you have hidden
+
+653
+00:37:09,520 --> 00:37:11,860
+next week but if you have hidden variables how do you you know do you
+
+654
+00:37:11,860 --> 00:37:13,540
+variables how do you you know do you have any algorithms of chance that you
+
+655
+00:37:13,540 --> 00:37:17,430
+have any algorithms of chance that you think the same idea can be applied
+
+656
+00:37:17,430 --> 00:37:20,740
+think the same idea can be applied so basically somehow you can do some
+
+657
+00:37:20,740 --> 00:37:22,810
+so basically somehow you can do some iterations and apply some of the same
+
+658
+00:37:22,810 --> 00:37:27,190
+iterations and apply some of the same algorithms which will be that will allow
+
+659
+00:37:27,190 --> 00:37:29,320
+algorithms which will be that will allow you to work with hidden variables and
+
+660
+00:37:29,320 --> 00:37:38,160
+you to work with hidden variables and observe all
+
+661
+00:37:38,160 --> 00:37:38,170
+
+
+662
+00:37:38,170 --> 00:37:43,620
+but this is a value so how will you do a man live when you have hidden powers
+
+663
+00:37:43,620 --> 00:37:45,089
+man live when you have hidden powers which how do you do Emily when you have
+
+664
+00:37:45,089 --> 00:37:55,010
+which how do you do Emily when you have kid environments
+
+665
+00:37:55,010 --> 00:37:55,020
+
+
+666
+00:37:55,020 --> 00:37:59,960
+how do you do Emily what he have to the particles there's only one algorithm you
+
+667
+00:37:59,960 --> 00:38:02,540
+particles there's only one algorithm you know and the guy who you know will be
+
+668
+00:38:02,540 --> 00:38:05,620
+know and the guy who you know will be happy that you don't all those outward
+
+669
+00:38:05,620 --> 00:38:10,070
+happy that you don't all those outward p.m. expectation maximization you don't
+
+670
+00:38:10,070 --> 00:38:14,500
+p.m. expectation maximization you don't remember expectation maximization no no
+
+671
+00:38:14,500 --> 00:38:19,640
+remember expectation maximization no no all right you know what is what it isn't
+
+672
+00:38:19,640 --> 00:38:25,480
+all right you know what is what it isn't you know and you move on okay
+
+673
+00:38:25,480 --> 00:38:25,490
+
+
+674
+00:38:25,490 --> 00:38:34,609
+expectation maximization all right so you do expectation much choices all
+
+675
+00:38:34,609 --> 00:38:38,599
+you do expectation much choices all right okay so we're gonna move back to
+
+676
+00:38:38,599 --> 00:38:43,930
+right okay so we're gonna move back to the problem we were discussing on
+
+677
+00:38:43,930 --> 00:38:43,940
+
+
+678
+00:38:43,940 --> 00:38:50,480
+Thursday and try to see how we're actually can do MLE more than directed
+
+679
+00:38:50,480 --> 00:38:53,810
+actually can do MLE more than directed graphical models we will say the problem
+
+680
+00:38:53,810 --> 00:38:58,520
+graphical models we will say the problem does not decompose okay and it is a
+
+681
+00:38:58,520 --> 00:39:00,520
+does not decompose okay and it is a little bit vertically bit complicated
+
+682
+00:39:00,520 --> 00:39:03,589
+little bit vertically bit complicated mainly because of this normalization
+
+683
+00:39:03,589 --> 00:39:05,990
+mainly because of this normalization factor see the capitana parameters in
+
+684
+00:39:05,990 --> 00:39:12,750
+factor see the capitana parameters in the graph okay so
+
+685
+00:39:12,750 --> 00:39:12,760
+
+
+686
+00:39:12,760 --> 00:39:17,490
+again premiums and thank the senator Kaine we have any lefty custer's we
+
+687
+00:39:17,490 --> 00:39:19,680
+Kaine we have any lefty custer's we started before but somehow we would like
+
+688
+00:39:19,680 --> 00:39:21,780
+started before but somehow we would like to get rid of these replicas and work
+
+689
+00:39:21,780 --> 00:39:23,810
+to get rid of these replicas and work with the probability of one undirected
+
+690
+00:39:23,810 --> 00:39:26,670
+with the probability of one undirected more than so we will need to borrow some
+
+691
+00:39:26,670 --> 00:39:28,170
+more than so we will need to borrow some of the notation reviews from directed
+
+692
+00:39:28,170 --> 00:39:31,310
+of the notation reviews from directed graphs that's why I inserted those
+
+693
+00:39:31,310 --> 00:39:34,590
+graphs that's why I inserted those slides but this is the main difficult
+
+694
+00:39:34,590 --> 00:39:35,700
+slides but this is the main difficult problem we need others
+
+695
+00:39:35,700 --> 00:39:39,150
+problem we need others ok so to learn if you give me the
+
+696
+00:39:39,150 --> 00:39:40,830
+ok so to learn if you give me the realizations of all the variables in the
+
+697
+00:39:40,830 --> 00:39:43,440
+realizations of all the variables in the graph right this is basically one of the
+
+698
+00:39:43,440 --> 00:39:47,250
+graph right this is basically one of the normalization till the product of this
+
+699
+00:39:47,250 --> 00:39:49,020
+normalization till the product of this potential is defined over clicked and
+
+700
+00:39:49,020 --> 00:39:51,510
+potential is defined over clicked and for the discussion today actually I'm
+
+701
+00:39:51,510 --> 00:39:53,160
+for the discussion today actually I'm not assuming anything about this click
+
+702
+00:39:53,160 --> 00:39:55,410
+not assuming anything about this click so you can use whatever you want so they
+
+703
+00:39:55,410 --> 00:39:58,110
+so you can use whatever you want so they don't even have to be maximal okay so
+
+704
+00:39:58,110 --> 00:40:00,620
+don't even have to be maximal okay so these are potentials over clicks not
+
+705
+00:40:00,620 --> 00:40:04,920
+these are potentials over clicks not necessarily the normalization factor is
+
+706
+00:40:04,920 --> 00:40:07,650
+necessarily the normalization factor is basically the numerator here when you
+
+707
+00:40:07,650 --> 00:40:09,780
+basically the numerator here when you sum over all possible configurations of
+
+708
+00:40:09,780 --> 00:40:13,740
+sum over all possible configurations of extreme and magnification is identical
+
+709
+00:40:13,740 --> 00:40:17,400
+extreme and magnification is identical to what I used before sure let's go
+
+710
+00:40:17,400 --> 00:40:20,700
+to what I used before sure let's go again all right please ask again it
+
+711
+00:40:20,700 --> 00:40:23,730
+again all right please ask again it doesn't make any sense the probability
+
+712
+00:40:23,730 --> 00:40:26,910
+doesn't make any sense the probability for the observations is the product of
+
+713
+00:40:26,910 --> 00:40:29,220
+for the observations is the product of the likelihood police really described
+
+714
+00:40:29,220 --> 00:40:32,700
+the likelihood police really described block right exiting a comma n is the
+
+715
+00:40:32,700 --> 00:40:35,460
+block right exiting a comma n is the data for the analeptic of the graph
+
+716
+00:40:35,460 --> 00:40:37,640
+data for the analeptic of the graph where I given all the realizations right
+
+717
+00:40:37,640 --> 00:40:42,810
+where I given all the realizations right okay and I write each of this as the
+
+718
+00:40:42,810 --> 00:40:44,880
+okay and I write each of this as the product over all possible configurations
+
+719
+00:40:44,880 --> 00:40:48,660
+product over all possible configurations to find out now where is the generic
+
+720
+00:40:48,660 --> 00:40:52,140
+to find out now where is the generic graph G and I use the likelihood of that
+
+721
+00:40:52,140 --> 00:40:54,720
+graph G and I use the likelihood of that for some realizations explained and then
+
+722
+00:40:54,720 --> 00:40:56,760
+for some realizations explained and then to get the replica and I could event a
+
+723
+00:40:56,760 --> 00:41:00,780
+to get the replica and I could event a function of the exponent right so when X
+
+724
+00:41:00,780 --> 00:41:05,180
+function of the exponent right so when X vacant side next the end I'm in business
+
+725
+00:41:05,180 --> 00:41:09,200
+vacant side next the end I'm in business right but by doing this effectively I
+
+726
+00:41:09,200 --> 00:41:11,640
+right but by doing this effectively I don't have any more to deal with this
+
+727
+00:41:11,640 --> 00:41:14,160
+don't have any more to deal with this text become iron okay I'm going to deal
+
+728
+00:41:14,160 --> 00:41:17,370
+text become iron okay I'm going to deal with one probability model oh my god
+
+729
+00:41:17,370 --> 00:41:19,259
+with one probability model oh my god I mean why having an erect because this
+
+730
+00:41:19,259 --> 00:41:21,089
+I mean why having an erect because this is it this is what I want to work with
+
+731
+00:41:21,089 --> 00:41:25,079
+is it this is what I want to work with okay no twist there's no rule right I
+
+732
+00:41:25,079 --> 00:41:26,579
+okay no twist there's no rule right I mean they are the same but this is much
+
+733
+00:41:26,579 --> 00:41:34,529
+mean they are the same but this is much more elegant so the log of this is so
+
+734
+00:41:34,529 --> 00:41:36,180
+more elegant so the log of this is so I'm going to take logs here summation in
+
+735
+00:41:36,180 --> 00:41:39,809
+I'm going to take logs here summation in N and then I have X V so summation on
+
+736
+00:41:39,809 --> 00:41:43,469
+N and then I have X V so summation on all configurations of little V I have
+
+737
+00:41:43,469 --> 00:41:45,390
+all configurations of little V I have people and exponents of the Delta
+
+738
+00:41:45,390 --> 00:41:48,989
+people and exponents of the Delta function will come in there and again
+
+739
+00:41:48,989 --> 00:41:52,920
+function will come in there and again what is this this is my count of XV in
+
+740
+00:41:52,920 --> 00:41:57,359
+what is this this is my count of XV in my data step alright this is after now
+
+741
+00:41:57,359 --> 00:41:59,910
+my data step alright this is after now it's identical with before nothing else
+
+742
+00:41:59,910 --> 00:42:03,359
+it's identical with before nothing else so share is the difference and I think
+
+743
+00:42:03,359 --> 00:42:06,630
+so share is the difference and I think this is what we work for the finish and
+
+744
+00:42:06,630 --> 00:42:08,849
+this is what we work for the finish and cutely with slightly different notation
+
+745
+00:42:08,849 --> 00:42:13,880
+cutely with slightly different notation so now what we do is we'll plug in this
+
+746
+00:42:13,880 --> 00:42:17,370
+so now what we do is we'll plug in this optimization from my undirected graph so
+
+747
+00:42:17,370 --> 00:42:22,170
+optimization from my undirected graph so this is number one over Z over the
+
+748
+00:42:22,170 --> 00:42:24,569
+this is number one over Z over the clicks on my graph of the potential side
+
+749
+00:42:24,569 --> 00:42:27,089
+clicks on my graph of the potential side C and immediately you appreciate the
+
+750
+00:42:27,089 --> 00:42:29,549
+C and immediately you appreciate the problem yes you get the summation over
+
+751
+00:42:29,549 --> 00:42:32,700
+problem yes you get the summation over the logs of the potentials but also you
+
+752
+00:42:32,700 --> 00:42:36,029
+the logs of the potentials but also you get the log of Z and that's the main
+
+753
+00:42:36,029 --> 00:42:37,769
+get the log of Z and that's the main should make in all of the rest of
+
+754
+00:42:37,769 --> 00:42:42,209
+should make in all of the rest of graphical waters ok now you get to
+
+755
+00:42:42,209 --> 00:42:45,299
+graphical waters ok now you get to mission of mmm effectively and you
+
+756
+00:42:45,299 --> 00:42:47,130
+mission of mmm effectively and you remember what is this quantity equal to
+
+757
+00:42:47,130 --> 00:42:50,700
+remember what is this quantity equal to this book summation what is it if
+
+758
+00:42:50,700 --> 00:42:53,099
+this book summation what is it if you take the accounts of all the
+
+759
+00:42:53,099 --> 00:42:55,440
+you take the accounts of all the variables the limitations of all the
+
+760
+00:42:55,440 --> 00:42:57,660
+variables the limitations of all the nodes and you sum for all possible x
+
+761
+00:42:57,660 --> 00:42:59,219
+nodes and you sum for all possible x rays what do you get
+
+762
+00:42:59,219 --> 00:43:02,609
+rays what do you get and all right so this is what you get
+
+763
+00:43:02,609 --> 00:43:08,729
+and all right so this is what you get okay you get summation n XV summation
+
+764
+00:43:08,729 --> 00:43:14,130
+okay you get summation n XV summation over maybe a this is the set of all that
+
+765
+00:43:14,130 --> 00:43:15,799
+over maybe a this is the set of all that makes or maybe I should put here
+
+766
+00:43:15,799 --> 00:43:18,870
+makes or maybe I should put here estimation over say
+
+767
+00:43:18,870 --> 00:43:23,300
+estimation over say slide 16 so we hit the correct part and
+
+768
+00:43:23,300 --> 00:43:26,190
+slide 16 so we hit the correct part and so this is and then you know what I disc
+
+769
+00:43:26,190 --> 00:43:29,340
+so this is and then you know what I disc I am using magic and I write equation on
+
+770
+00:43:29,340 --> 00:43:33,990
+I am using magic and I write equation on the top in the question too and I want
+
+771
+00:43:33,990 --> 00:43:35,760
+the top in the question too and I want you to tell me how a question to came
+
+772
+00:43:35,760 --> 00:43:39,930
+you to tell me how a question to came there are you saying dear so partial
+
+773
+00:43:39,930 --> 00:43:42,060
+there are you saying dear so partial cows but you have to tell me half of
+
+774
+00:43:42,060 --> 00:43:48,230
+cows but you have to tell me half of that you went to that what have I done
+
+775
+00:43:48,230 --> 00:43:48,240
+
+
+776
+00:43:48,240 --> 00:43:51,630
+obviously I haven't taught this summation over the click starts there
+
+777
+00:43:51,630 --> 00:43:57,090
+summation over the click starts there what if I dunno next week but summation
+
+778
+00:43:57,090 --> 00:44:04,720
+what if I dunno next week but summation Alex me
+
+779
+00:44:04,720 --> 00:44:04,730
+
+
+780
+00:44:04,730 --> 00:44:09,270
+what have I download the servation XP I
+
+781
+00:44:09,270 --> 00:44:09,280
+
+
+782
+00:44:09,280 --> 00:44:18,940
+mean I secured MXC so they spend on summation X be a multipass estimation
+
+783
+00:44:18,940 --> 00:44:21,760
+summation X be a multipass estimation illiteracy and another summation of X B
+
+784
+00:44:21,760 --> 00:44:24,849
+illiteracy and another summation of X B minus C and when I sum everything but
+
+785
+00:44:24,849 --> 00:44:28,960
+minus C and when I sum everything but okay this total content become the
+
+786
+00:44:28,960 --> 00:44:33,030
+okay this total content become the partial counts of XE
+
+787
+00:44:33,030 --> 00:44:33,040
+
+
+788
+00:44:33,040 --> 00:44:45,420
+so basically why you might know this because I only want this trick to
+
+789
+00:44:45,420 --> 00:44:50,140
+because I only want this trick to isometric see alright so you can sit
+
+790
+00:44:50,140 --> 00:44:53,799
+isometric see alright so you can sit here if you have estimation over the
+
+791
+00:44:53,799 --> 00:44:57,609
+here if you have estimation over the click okay information over the
+
+792
+00:44:57,609 --> 00:44:59,440
+click okay information over the realizations of the volume of this click
+
+793
+00:44:59,440 --> 00:45:02,559
+realizations of the volume of this click here is the partial count of XE lava
+
+794
+00:45:02,559 --> 00:45:07,630
+here is the partial count of XE lava precisely mr. function of HC so
+
+795
+00:45:07,630 --> 00:45:10,329
+precisely mr. function of HC so immediately you can appreciate that the
+
+796
+00:45:10,329 --> 00:45:12,370
+immediately you can appreciate that the least some decomposition they are
+
+797
+00:45:12,370 --> 00:45:13,990
+least some decomposition they are similar to what we have for the record
+
+798
+00:45:13,990 --> 00:45:18,819
+similar to what we have for the record last but Z involves all the parameters
+
+799
+00:45:18,819 --> 00:45:22,150
+last but Z involves all the parameters in the model so we're rolling so that's
+
+800
+00:45:22,150 --> 00:45:24,309
+in the model so we're rolling so that's the main complication basically and it
+
+801
+00:45:24,309 --> 00:45:28,870
+the main complication basically and it is the problem very fundamental not just
+
+802
+00:45:28,870 --> 00:45:30,220
+is the problem very fundamental not just for machine learning but very
+
+803
+00:45:30,220 --> 00:45:32,380
+for machine learning but very fundamental in statistical mechanics and
+
+804
+00:45:32,380 --> 00:45:38,140
+fundamental in statistical mechanics and other areas okay all right so this list
+
+805
+00:45:38,140 --> 00:45:43,609
+other areas okay all right so this list what do we do all right
+
+806
+00:45:43,609 --> 00:45:43,619
+
+
+807
+00:45:43,619 --> 00:45:47,779
+so we need to start doing some ads about to see what is going to come out of this
+
+808
+00:45:47,779 --> 00:45:51,789
+to see what is going to come out of this right and I am going to try to optimize
+
+809
+00:45:51,789 --> 00:45:54,819
+right and I am going to try to optimize with respect to its potentials I see
+
+810
+00:45:54,819 --> 00:45:58,460
+with respect to its potentials I see okay for its to exchange so here the
+
+811
+00:45:58,460 --> 00:46:05,019
+okay for its to exchange so here the idea is working for a guarantee
+
+812
+00:46:05,019 --> 00:46:05,029
+
+
+813
+00:46:05,029 --> 00:46:21,309
+right and the configuration of Twix is
+
+814
+00:46:21,309 --> 00:46:21,319
+
+
+815
+00:46:21,319 --> 00:46:34,700
+given okay so that we can maximize there is the potential choice Qi okay so we
+
+816
+00:46:34,700 --> 00:46:37,779
+is the potential choice Qi okay so we take belabor this with respect to C and
+
+817
+00:46:37,779 --> 00:46:40,309
+take belabor this with respect to C and immediately you can you know we this is
+
+818
+00:46:40,309 --> 00:46:42,650
+immediately you can you know we this is similar with the record graphs this
+
+819
+00:46:42,650 --> 00:46:44,599
+similar with the record graphs this decomposes so we're going to have the
+
+820
+00:46:44,599 --> 00:46:48,880
+decomposes so we're going to have the passer counts of exceed one / - I see
+
+821
+00:46:48,880 --> 00:46:50,809
+passer counts of exceed one / - I see remember when you look at this pair
+
+822
+00:46:50,809 --> 00:46:52,579
+remember when you look at this pair right the precisely concerning what
+
+823
+00:46:52,579 --> 00:47:02,480
+right the precisely concerning what they're writing comes on in Walter okay
+
+824
+00:47:02,480 --> 00:47:04,210
+they're writing comes on in Walter okay [Applause]
+
+825
+00:47:04,210 --> 00:47:07,190
+[Applause] so this X take here is speaks to take
+
+826
+00:47:07,190 --> 00:47:10,640
+so this X take here is speaks to take and support fixed realization of the
+
+827
+00:47:10,640 --> 00:47:12,650
+and support fixed realization of the matter will succeed we only have my
+
+828
+00:47:12,650 --> 00:47:15,019
+matter will succeed we only have my third choice G of X G and we take
+
+829
+00:47:15,019 --> 00:47:17,599
+third choice G of X G and we take derivatives with respect to that so M
+
+830
+00:47:17,599 --> 00:47:21,410
+derivatives with respect to that so M over 1 over C minus 10 times the
+
+831
+00:47:21,410 --> 00:47:24,410
+over 1 over C minus 10 times the derivative of the log and now we start
+
+832
+00:47:24,410 --> 00:47:28,039
+derivative of the log and now we start getting today's because log of Z the
+
+833
+00:47:28,039 --> 00:47:30,460
+getting today's because log of Z the derailleur would be 1 over is d times
+
+834
+00:47:30,460 --> 00:47:33,049
+derailleur would be 1 over is d times the derivative with respect to price G
+
+835
+00:47:33,049 --> 00:47:35,750
+the derivative with respect to price G of X 3 and Z is written
+
+836
+00:47:35,750 --> 00:47:39,200
+of X 3 and Z is written remember the Z is the normalization so
+
+837
+00:47:39,200 --> 00:47:42,289
+remember the Z is the normalization so it's written like that the potentials
+
+838
+00:47:42,289 --> 00:47:44,890
+it's written like that the potentials and then I stand all the variables and
+
+839
+00:47:44,890 --> 00:47:48,410
+and then I stand all the variables and because I don't want to confuse
+
+840
+00:47:48,410 --> 00:47:51,140
+because I don't want to confuse since I work with a given X P in Cyprus
+
+841
+00:47:51,140 --> 00:47:53,749
+since I work with a given X P in Cyprus the definition they put and externally
+
+842
+00:47:53,749 --> 00:47:56,420
+the definition they put and externally right because I some every for the
+
+843
+00:47:56,420 --> 00:48:02,690
+right because I some every for the access get out okay alright so let's
+
+844
+00:48:02,690 --> 00:48:04,759
+access get out okay alright so let's this is the equation that we started
+
+845
+00:48:04,759 --> 00:48:09,829
+this is the equation that we started with so Emirates I see now I have done a
+
+846
+00:48:09,829 --> 00:48:11,539
+with so Emirates I see now I have done a little bit today right so can be
+
+847
+00:48:11,539 --> 00:48:13,970
+little bit today right so can be appreciate what Rick has been done on
+
+848
+00:48:13,970 --> 00:48:16,309
+appreciate what Rick has been done on the second line I will need to move that
+
+849
+00:48:16,309 --> 00:48:19,789
+the second line I will need to move that summation which are DX outside just to
+
+850
+00:48:19,789 --> 00:48:23,839
+summation which are DX outside just to simplify my antibodies with so what's
+
+851
+00:48:23,839 --> 00:48:25,809
+simplify my antibodies with so what's the trick here to move this summation of
+
+852
+00:48:25,809 --> 00:48:30,440
+the trick here to move this summation of curly out I need to be sure that on this
+
+853
+00:48:30,440 --> 00:48:35,239
+curly out I need to be sure that on this term wait a second what happened yes
+
+854
+00:48:35,239 --> 00:48:37,910
+term wait a second what happened yes alright so I need to be sure you can
+
+855
+00:48:37,910 --> 00:48:39,680
+alright so I need to be sure you can vary care of its derivatives with
+
+856
+00:48:39,680 --> 00:48:42,229
+vary care of its derivatives with respect to precisely for a given X C so
+
+857
+00:48:42,229 --> 00:48:44,299
+respect to precisely for a given X C so I need to put a mental function they
+
+858
+00:48:44,299 --> 00:48:46,160
+I need to put a mental function they have to be sure that I don't agree in
+
+859
+00:48:46,160 --> 00:48:51,759
+have to be sure that I don't agree in fix remember in psyche Here I am
+
+860
+00:48:51,759 --> 00:48:51,769
+
+
+861
+00:48:51,769 --> 00:48:57,559
+scarily different information outside I've never shared about the function
+
+862
+00:48:57,559 --> 00:48:59,599
+I've never shared about the function here to be sure that share a morning
+
+863
+00:48:59,599 --> 00:49:01,309
+here to be sure that share a morning differentiate with respect to price T of
+
+864
+00:49:01,309 --> 00:49:07,660
+differentiate with respect to price T of X G okay
+
+865
+00:49:07,660 --> 00:49:12,560
+X G okay right so this comes third minus N 1 over
+
+866
+00:49:12,560 --> 00:49:16,160
+right so this comes third minus N 1 over Z there's the function and now in stage
+
+867
+00:49:16,160 --> 00:49:22,310
+Z there's the function and now in stage here I have the para or for the ties on
+
+868
+00:49:22,310 --> 00:49:26,420
+here I have the para or for the ties on every click alright and you notice here
+
+869
+00:49:26,420 --> 00:49:30,650
+every click alright and you notice here this now became xfinity of C okay and
+
+870
+00:49:30,650 --> 00:49:31,820
+this now became xfinity of C okay and these are security
+
+871
+00:49:31,820 --> 00:49:34,099
+these are security so you remember if I have the folder
+
+872
+00:49:34,099 --> 00:49:35,930
+so you remember if I have the folder condition I think they know about this
+
+873
+00:49:35,930 --> 00:49:37,730
+condition I think they know about this with respect to on terror where I'm
+
+874
+00:49:37,730 --> 00:49:38,780
+with respect to on terror where I'm going to get these proposed that for
+
+875
+00:49:38,780 --> 00:49:44,380
+going to get these proposed that for focus potentials except potential Street
+
+876
+00:49:44,380 --> 00:49:44,390
+
+
+877
+00:49:44,390 --> 00:49:50,060
+right that's an assumption of you depreciate one disappears and you get
+
+878
+00:49:50,060 --> 00:49:53,240
+depreciate one disappears and you get the product of everything but see in
+
+879
+00:49:53,240 --> 00:49:54,740
+the product of everything but see in obviously now what I'm gonna this I'm
+
+880
+00:49:54,740 --> 00:49:58,580
+obviously now what I'm gonna this I'm gonna multiply resistor and divide by
+
+881
+00:49:58,580 --> 00:49:59,300
+gonna multiply resistor and divide by got error
+
+882
+00:49:59,300 --> 00:50:02,810
+got error so what way inside this chair I am gonna
+
+883
+00:50:02,810 --> 00:50:05,240
+so what way inside this chair I am gonna get again my food distribution for X
+
+884
+00:50:05,240 --> 00:50:10,450
+get again my food distribution for X scale this is the rainbabies here I
+
+885
+00:50:10,450 --> 00:50:13,130
+scale this is the rainbabies here I would multiplied with twice tree of
+
+886
+00:50:13,130 --> 00:50:16,670
+would multiplied with twice tree of carry XP and divide by that so they
+
+887
+00:50:16,670 --> 00:50:18,500
+carry XP and divide by that so they terms of the multiplied together with
+
+888
+00:50:18,500 --> 00:50:22,430
+terms of the multiplied together with this will give me back all right so and
+
+889
+00:50:22,430 --> 00:50:24,950
+this will give me back all right so and now since I have done my accessible this
+
+890
+00:50:24,950 --> 00:50:28,070
+now since I have done my accessible this little trick I can push the summation
+
+891
+00:50:28,070 --> 00:50:32,000
+little trick I can push the summation inside plug in X trick here alright and
+
+892
+00:50:32,000 --> 00:50:36,829
+inside plug in X trick here alright and then what I get this I get from here and
+
+893
+00:50:36,829 --> 00:50:39,890
+then what I get this I get from here and we'll get the effects tell me right
+
+894
+00:50:39,890 --> 00:50:43,460
+we'll get the effects tell me right there is a function inside and I want
+
+895
+00:50:43,460 --> 00:50:46,010
+there is a function inside and I want you to tell me this summation what will
+
+896
+00:50:46,010 --> 00:50:50,120
+you to tell me this summation what will it give me so here this is all the
+
+897
+00:50:50,120 --> 00:50:51,890
+it give me so here this is all the variables in the graph right and you say
+
+898
+00:50:51,890 --> 00:50:54,440
+variables in the graph right and you say it's time for possible configurations
+
+899
+00:50:54,440 --> 00:50:57,530
+it's time for possible configurations but this show you from the very mission
+
+900
+00:50:57,530 --> 00:51:01,070
+but this show you from the very mission makes a systematic see because X is
+
+901
+00:51:01,070 --> 00:51:05,670
+makes a systematic see because X is fixed so what did we get out of it
+
+902
+00:51:05,670 --> 00:51:11,130
+fixed so what did we get out of it we'll give it here off me okay chin what
+
+903
+00:51:11,130 --> 00:51:18,050
+we'll give it here off me okay chin what is pfx cheating with words
+
+904
+00:51:18,050 --> 00:51:18,060
+
+
+905
+00:51:18,060 --> 00:51:26,450
+what does people could see with what's what is the name I mean here this
+
+906
+00:51:26,450 --> 00:51:29,360
+what is the name I mean here this has big tables right position in service
+
+907
+00:51:29,360 --> 00:51:30,110
+has big tables right position in service in the ground
+
+908
+00:51:30,110 --> 00:51:35,090
+in the ground now I integrate all the Bible acceptance
+
+909
+00:51:35,090 --> 00:51:36,920
+now I integrate all the Bible acceptance on the clicks chain that I fixed them of
+
+910
+00:51:36,920 --> 00:51:39,950
+on the clicks chain that I fixed them of the injection XT so that this P of X C
+
+911
+00:51:39,950 --> 00:51:44,180
+the injection XT so that this P of X C is the marginal corresponding to the
+
+912
+00:51:44,180 --> 00:51:47,030
+is the marginal corresponding to the logistic state of the lights and click
+
+913
+00:51:47,030 --> 00:51:49,270
+logistic state of the lights and click see that's very nice
+
+914
+00:51:49,270 --> 00:51:53,780
+see that's very nice all right so this gives me the final
+
+915
+00:51:53,780 --> 00:51:56,390
+all right so this gives me the final result that looks as follows the
+
+916
+00:51:56,390 --> 00:51:58,930
+result that looks as follows the derivative of the log likelihood of all
+
+917
+00:51:58,930 --> 00:52:02,600
+derivative of the log likelihood of all my observations is the partial count in
+
+918
+00:52:02,600 --> 00:52:07,220
+my observations is the partial count in my data set of XT divided by this now
+
+919
+00:52:07,220 --> 00:52:09,320
+my data set of XT divided by this now optimized right need figure out what
+
+920
+00:52:09,320 --> 00:52:11,930
+optimized right need figure out what what would lead us the potential and
+
+921
+00:52:11,930 --> 00:52:17,180
+what would lead us the potential and click see completed of XT right after
+
+922
+00:52:17,180 --> 00:52:20,870
+click see completed of XT right after night XT is fixed minus n times 1 over
+
+923
+00:52:20,870 --> 00:52:26,770
+night XT is fixed minus n times 1 over PI C of X T and this is the marginal
+
+924
+00:52:26,770 --> 00:52:29,900
+PI C of X T and this is the marginal over the click complete aquatics tree
+
+925
+00:52:29,900 --> 00:52:32,390
+over the click complete aquatics tree some of this comes from childhood comes
+
+926
+00:52:32,390 --> 00:52:38,540
+some of this comes from childhood comes out and what I get is the this is this
+
+927
+00:52:38,540 --> 00:52:41,090
+out and what I get is the this is this is nested it is valued at still the MLE
+
+928
+00:52:41,090 --> 00:52:44,450
+is nested it is valued at still the MLE estimate so the an early estimate toward
+
+929
+00:52:44,450 --> 00:52:47,720
+estimate so the an early estimate toward the marginal over click shape computer
+
+930
+00:52:47,720 --> 00:52:52,270
+the marginal over click shape computer visualization extry is NH 3 divided by n
+
+931
+00:52:52,270 --> 00:52:55,970
+visualization extry is NH 3 divided by n an amazing without and what is M of XJ
+
+932
+00:52:55,970 --> 00:53:01,520
+an amazing without and what is M of XJ divided by n what what is on the right
+
+933
+00:53:01,520 --> 00:53:03,980
+divided by n what what is on the right hand side what what name will give you
+
+934
+00:53:03,980 --> 00:53:05,900
+hand side what what name will give you this this is the partial parent
+
+935
+00:53:05,900 --> 00:53:08,810
+this this is the partial parent effective T so M effects C divided by n
+
+936
+00:53:08,810 --> 00:53:13,790
+effective T so M effects C divided by n swap what they will you give it is you
+
+937
+00:53:13,790 --> 00:53:17,030
+swap what they will you give it is you can't how many times in realizations you
+
+938
+00:53:17,030 --> 00:53:20,570
+can't how many times in realizations you have seen the variable sex say capital
+
+939
+00:53:20,570 --> 00:53:22,240
+have seen the variable sex say capital extreme to take these values of
+
+940
+00:53:22,240 --> 00:53:26,080
+extreme to take these values of next e-service best best M divided by n
+
+941
+00:53:26,080 --> 00:53:32,200
+next e-service best best M divided by n which to name we should give to it you
+
+942
+00:53:32,200 --> 00:53:35,590
+which to name we should give to it you know datasets you have seen this
+
+943
+00:53:35,590 --> 00:53:38,350
+know datasets you have seen this combinations of expiry times so what
+
+944
+00:53:38,350 --> 00:53:45,420
+combinations of expiry times so what does anyone where end
+
+945
+00:53:45,420 --> 00:53:45,430
+
+
+946
+00:53:45,430 --> 00:53:54,329
+we're discrete distributions how do you co-op
+
+947
+00:53:54,329 --> 00:53:54,339
+
+
+948
+00:53:54,339 --> 00:54:05,470
+spell it I can see you're fighting with it so what's the war
+
+949
+00:54:05,470 --> 00:54:05,480
+
+
+950
+00:54:05,480 --> 00:54:12,690
+frequency okay you're close right you know another word similar to frequency
+
+951
+00:54:12,690 --> 00:54:12,700
+
+
+952
+00:54:12,700 --> 00:54:23,740
+and in the alphabet is very close 1000 left and other starts between empirical
+
+953
+00:54:23,740 --> 00:54:27,099
+left and other starts between empirical distribution right so basically the
+
+954
+00:54:27,099 --> 00:54:28,900
+distribution right so basically the optimal marginal is equal to the
+
+955
+00:54:28,900 --> 00:54:33,910
+optimal marginal is equal to the empirical distribution so basically what
+
+956
+00:54:33,910 --> 00:54:36,660
+empirical distribution so basically what we have done is the modal marginal
+
+957
+00:54:36,660 --> 00:54:40,180
+we have done is the modal marginal agrees with in political much the still
+
+958
+00:54:40,180 --> 00:54:42,550
+agrees with in political much the still amazing result if you think right we
+
+959
+00:54:42,550 --> 00:54:46,690
+amazing result if you think right we have done no sanctions anything not even
+
+960
+00:54:46,690 --> 00:54:48,640
+have done no sanctions anything not even we haven't even said that the clicks are
+
+961
+00:54:48,640 --> 00:54:50,980
+we haven't even said that the clicks are much more but the maximal active a
+
+962
+00:54:50,980 --> 00:54:55,830
+much more but the maximal active a destination for this functional sigh
+
+963
+00:54:55,830 --> 00:54:55,840
+
+
+964
+00:54:55,840 --> 00:55:07,450
+implicitly implies that the the marginal for its place to the empirical model is
+
+965
+00:55:07,450 --> 00:55:10,210
+for its place to the empirical model is right objective is to find the potential
+
+966
+00:55:10,210 --> 00:55:12,849
+right objective is to find the potential side another information is given
+
+967
+00:55:12,849 --> 00:55:20,040
+side another information is given because
+
+968
+00:55:20,040 --> 00:55:20,050
+
+
+969
+00:55:20,050 --> 00:55:25,420
+so they are devious it doesn't matter this algorithm this this the regression
+
+970
+00:55:25,420 --> 00:55:28,359
+this algorithm this this the regression tells you I don't know how they're going
+
+971
+00:55:28,359 --> 00:55:30,430
+tells you I don't know how they're going to compute this potentials but whatever
+
+972
+00:55:30,430 --> 00:55:31,720
+to compute this potentials but whatever it is know if you want to pull this
+
+973
+00:55:31,720 --> 00:55:34,210
+it is know if you want to pull this anomaly estimate this short of the model
+
+974
+00:55:34,210 --> 00:55:35,920
+anomaly estimate this short of the model marginal can start with the empirical
+
+975
+00:55:35,920 --> 00:55:39,550
+marginal can start with the empirical box it doesn't tell you where those
+
+976
+00:55:39,550 --> 00:55:42,430
+box it doesn't tell you where those choice would be there is no information
+
+977
+00:55:42,430 --> 00:55:47,290
+choice would be there is no information of this equation okay and why there's no
+
+978
+00:55:47,290 --> 00:55:49,570
+of this equation okay and why there's no information because unfortunately when
+
+979
+00:55:49,570 --> 00:55:52,180
+information because unfortunately when we took the million the steep side terms
+
+980
+00:55:52,180 --> 00:55:57,430
+we took the million the steep side terms cancel out don't worry this cycle
+
+981
+00:55:57,430 --> 00:55:58,960
+cancel out don't worry this cycle don't you think is contained inside the
+
+982
+00:55:58,960 --> 00:56:02,200
+don't you think is contained inside the marginal of pfx shape it's abusive area
+
+983
+00:56:02,200 --> 00:56:02,800
+marginal of pfx shape it's abusive area right
+
+984
+00:56:02,800 --> 00:56:05,290
+right marginal connection also click see and
+
+985
+00:56:05,290 --> 00:56:10,780
+marginal connection also click see and what is really the pencil existed the
+
+986
+00:56:10,780 --> 00:56:13,240
+what is really the pencil existed the potential is not a distribution all
+
+987
+00:56:13,240 --> 00:56:16,510
+potential is not a distribution all right so this is what you get so we will
+
+988
+00:56:16,510 --> 00:56:18,790
+right so this is what you get so we will obviously need to figure out a way to
+
+989
+00:56:18,790 --> 00:56:22,030
+obviously need to figure out a way to extract the potentials with some
+
+990
+00:56:22,030 --> 00:56:24,310
+extract the potentials with some algorithm in a way that satisfies this
+
+991
+00:56:24,310 --> 00:56:26,380
+algorithm in a way that satisfies this condition so we can call those estimates
+
+992
+00:56:26,380 --> 00:56:40,870
+condition so we can call those estimates and potentials particles for a very
+
+993
+00:56:40,870 --> 00:56:44,320
+and potentials particles for a very particular set of undirected graphs and
+
+994
+00:56:44,320 --> 00:56:48,700
+particular set of undirected graphs and then we will expect this to be trillion
+
+995
+00:56:48,700 --> 00:56:53,200
+then we will expect this to be trillion directed graphs I'm using a simple
+
+996
+00:56:53,200 --> 00:56:56,170
+directed graphs I'm using a simple example which were three nodes I am
+
+997
+00:56:56,170 --> 00:57:00,160
+example which were three nodes I am writing The Comedians videos one
+
+998
+00:57:00,160 --> 00:57:01,840
+writing The Comedians videos one potential of electronic spirit another
+
+999
+00:57:01,840 --> 00:57:05,160
+potential of electronic spirit another potential over X 2 X 3 so this two
+
+1000
+00:57:05,160 --> 00:57:10,890
+potential over X 2 X 3 so this two potentials basically stare down x2 so
+
+1001
+00:57:10,890 --> 00:57:13,720
+potentials basically stare down x2 so obviously there is an empirical
+
+1002
+00:57:13,720 --> 00:57:15,760
+obviously there is an empirical counterfactual and X you remember the
+
+1003
+00:57:15,760 --> 00:57:18,820
+counterfactual and X you remember the speaker needs a miracle gown so there is
+
+1004
+00:57:18,820 --> 00:57:21,160
+speaker needs a miracle gown so there is an empirical count X 2 and X 3 and you
+
+1005
+00:57:21,160 --> 00:57:23,580
+an empirical count X 2 and X 3 and you know what I am going to give you what
+
+1006
+00:57:23,580 --> 00:57:28,330
+know what I am going to give you what the you know what the summation will
+
+1007
+00:57:28,330 --> 00:57:30,520
+the you know what the summation will look like for the model for the
+
+1008
+00:57:30,520 --> 00:57:32,620
+look like for the model for the underneath solution okay what's the
+
+1009
+00:57:32,620 --> 00:57:34,870
+underneath solution okay what's the initial issue and you can tell me if I'm
+
+1010
+00:57:34,870 --> 00:57:36,160
+initial issue and you can tell me if I'm right or wrong okay
+
+1011
+00:57:36,160 --> 00:57:39,460
+right or wrong okay I mean nothing all right so I am going
+
+1012
+00:57:39,460 --> 00:57:42,000
+I mean nothing all right so I am going to tell you that the MLE estimate okay
+
+1013
+00:57:42,000 --> 00:57:47,110
+to tell you that the MLE estimate okay is given by this empirical marginal x 1
+
+1014
+00:57:47,110 --> 00:57:50,680
+is given by this empirical marginal x 1 x 2 x this is physical marginal but
+
+1015
+00:57:50,680 --> 00:57:52,840
+x 2 x this is physical marginal but divided by the physical model of extreme
+
+1016
+00:57:52,840 --> 00:57:57,430
+divided by the physical model of extreme and can you do some checking and tell me
+
+1017
+00:57:57,430 --> 00:58:00,430
+and can you do some checking and tell me that this is satisfies the condition
+
+1018
+00:58:00,430 --> 00:58:02,320
+that this is satisfies the condition that we had before so really we can call
+
+1019
+00:58:02,320 --> 00:58:04,920
+that we had before so really we can call it an Emily estimate
+
+1020
+00:58:04,920 --> 00:58:10,260
+it an Emily estimate I say this is the solution and I want
+
+1021
+00:58:10,260 --> 00:58:11,760
+I say this is the solution and I want you to tell me that that solution is
+
+1022
+00:58:11,760 --> 00:58:14,760
+you to tell me that that solution is actually satisfying this so can you tell
+
+1023
+00:58:14,760 --> 00:58:20,670
+actually satisfying this so can you tell me about the gate so remember the
+
+1024
+00:58:20,670 --> 00:58:23,450
+me about the gate so remember the imminent question is not the mountain
+
+1025
+00:58:23,450 --> 00:58:25,470
+imminent question is not the mountain Nancy that has to be equal to the
+
+1026
+00:58:25,470 --> 00:58:29,160
+Nancy that has to be equal to the empirical module this is my mother
+
+1027
+00:58:29,160 --> 00:58:32,610
+empirical module this is my mother i postulate this is the model take the
+
+1028
+00:58:32,610 --> 00:58:36,390
+i postulate this is the model take the margin I would say of x1 and x2 all
+
+1029
+00:58:36,390 --> 00:58:39,000
+margin I would say of x1 and x2 all right so take from this the margin of
+
+1030
+00:58:39,000 --> 00:58:40,620
+right so take from this the margin of affection are x2 what do we need to do
+
+1031
+00:58:40,620 --> 00:58:42,000
+affection are x2 what do we need to do to get a nonzero reflection on
+
+1032
+00:58:42,000 --> 00:58:47,430
+to get a nonzero reflection on experience from this approximation here
+
+1033
+00:58:47,430 --> 00:58:49,770
+experience from this approximation here but i postulate that maybe in my answer
+
+1034
+00:58:49,770 --> 00:58:52,230
+but i postulate that maybe in my answer to get the mountain of x1 x2 what do I
+
+1035
+00:58:52,230 --> 00:58:58,640
+to get the mountain of x1 x2 what do I need to do how do you not generalize
+
+1036
+00:58:58,640 --> 00:58:58,650
+
+
+1037
+00:58:58,650 --> 00:59:06,090
+sonic 3 so when you sang on x3 what will you get here that will cancel out so you
+
+1038
+00:59:06,090 --> 00:59:09,390
+you get here that will cancel out so you get that the modern marginal of x1 x2 is
+
+1039
+00:59:09,390 --> 00:59:13,050
+get that the modern marginal of x1 x2 is the empirical module Flextronics to do
+
+1040
+00:59:13,050 --> 00:59:16,050
+the empirical module Flextronics to do the same thing and marginalize the chain
+
+1041
+00:59:16,050 --> 00:59:21,480
+the same thing and marginalize the chain on the on x1 if you mention illogical x1
+
+1042
+00:59:21,480 --> 00:59:24,630
+on the on x1 if you mention illogical x1 this will give you the empirical
+
+1043
+00:59:24,630 --> 00:59:27,030
+this will give you the empirical marginal of X 2 will cancel out the list
+
+1044
+00:59:27,030 --> 00:59:29,100
+marginal of X 2 will cancel out the list and then you get the empirical version
+
+1045
+00:59:29,100 --> 00:59:30,780
+and then you get the empirical version of X 2 and X 3 so this satisfies
+
+1046
+00:59:30,780 --> 00:59:36,570
+of X 2 and X 3 so this satisfies actually all the properties there so it
+
+1047
+00:59:36,570 --> 00:59:40,830
+actually all the properties there so it is the correct solution so how did I get
+
+1048
+00:59:40,830 --> 00:59:43,890
+is the correct solution so how did I get this relation here is the trick what a
+
+1049
+00:59:43,890 --> 00:59:46,590
+this relation here is the trick what a business I think the text of ahead of my
+
+1050
+00:59:46,590 --> 00:59:48,960
+business I think the text of ahead of my problem like X 1 X 2 X 2 X 3
+
+1051
+00:59:48,960 --> 00:59:51,060
+problem like X 1 X 2 X 2 X 3 I took the empirical couch over this
+
+1052
+00:59:51,060 --> 00:59:53,220
+I took the empirical couch over this place so these are my empirical
+
+1053
+00:59:53,220 --> 00:59:55,560
+place so these are my empirical knowledge not and because the splits
+
+1054
+00:59:55,560 --> 00:59:58,020
+knowledge not and because the splits have another lost over this now the X 2
+
+1055
+00:59:58,020 --> 01:00:03,780
+have another lost over this now the X 2 I divided by the marginal of now that
+
+1056
+01:00:03,780 --> 01:00:03,790
+
+
+1057
+01:00:03,790 --> 01:00:09,150
+okay so the next wave you can actually do this type of things are called the
+
+1058
+01:00:09,150 --> 01:00:14,670
+do this type of things are called the composable drops alright and so she's
+
+1059
+01:00:14,670 --> 01:00:18,360
+composable drops alright and so she's right the composable glass right okay
+
+1060
+01:00:18,360 --> 01:00:20,310
+right the composable glass right okay and here's one glass that is not
+
+1061
+01:00:20,310 --> 01:00:22,080
+and here's one glass that is not decomposable for you won't be able to
+
+1062
+01:00:22,080 --> 01:00:24,800
+decomposable for you won't be able to actually do this trick so this idea of
+
+1063
+01:00:24,800 --> 01:00:28,680
+actually do this trick so this idea of starting with the pinnacle marginals and
+
+1064
+01:00:28,680 --> 01:00:30,480
+starting with the pinnacle marginals and trying to guess where the solution will
+
+1065
+01:00:30,480 --> 01:00:33,300
+trying to guess where the solution will not actually apply to this problem okay
+
+1066
+01:00:33,300 --> 01:00:37,650
+not actually apply to this problem okay and and the reason is not because this
+
+1067
+01:00:37,650 --> 01:00:40,740
+and and the reason is not because this has a look all right this is nothing to
+
+1068
+01:00:40,740 --> 01:00:42,600
+has a look all right this is nothing to do out at the end of the day you have a
+
+1069
+01:00:42,600 --> 01:00:44,970
+do out at the end of the day you have a look here but here's liver the fact that
+
+1070
+01:00:44,970 --> 01:00:49,290
+look here but here's liver the fact that this what you see here is not a
+
+1071
+01:00:49,290 --> 01:00:50,820
+this what you see here is not a decomposable drop so what's the
+
+1072
+01:00:50,820 --> 01:00:53,880
+decomposable drop so what's the definition of a decomposable graph the
+
+1073
+01:00:53,880 --> 01:00:56,070
+definition of a decomposable graph the glasses are become possible if we can
+
+1074
+01:00:56,070 --> 01:00:59,370
+glasses are become possible if we can divide it into this joint into various
+
+1075
+01:00:59,370 --> 01:01:03,540
+divide it into this joint into various joint cells adn s where s the parade a
+
+1076
+01:01:03,540 --> 01:01:05,990
+joint cells adn s where s the parade a and B and s is complete
+
+1077
+01:01:05,990 --> 01:01:08,640
+and B and s is complete chasuble knowledge genus are collective
+
+1078
+01:01:08,640 --> 01:01:12,120
+chasuble knowledge genus are collective okay so if you look on this graph I can
+
+1079
+01:01:12,120 --> 01:01:13,710
+okay so if you look on this graph I can divide you from this knowledge of this
+
+1080
+01:01:13,710 --> 01:01:15,570
+divide you from this knowledge of this node and that node and obviously in this
+
+1081
+01:01:15,570 --> 01:01:18,960
+node and that node and obviously in this S note here x2 separate sexual in
+
+1082
+01:01:18,960 --> 01:01:21,240
+S note here x2 separate sexual in extreme right and I can do the same
+
+1083
+01:01:21,240 --> 01:01:24,960
+extreme right and I can do the same thing here I can divide this to be the
+
+1084
+01:01:24,960 --> 01:01:27,930
+thing here I can divide this to be the set a this node x4 to be the certainty
+
+1085
+01:01:27,930 --> 01:01:31,230
+set a this node x4 to be the certainty and x2 and x3 that are connected they
+
+1086
+01:01:31,230 --> 01:01:32,670
+and x2 and x3 that are connected they separate x2 and x4
+
+1087
+01:01:32,670 --> 01:01:36,990
+separate x2 and x4 but if you move to this graph you can
+
+1088
+01:01:36,990 --> 01:01:42,680
+but if you move to this graph you can try if you try to define how to define a
+
+1089
+01:01:42,680 --> 01:01:46,320
+try if you try to define how to define a bns we are not going to succeed unless
+
+1090
+01:01:46,320 --> 01:01:49,500
+bns we are not going to succeed unless you actually add extra edges from this
+
+1091
+01:01:49,500 --> 01:01:53,640
+you actually add extra edges from this graph all right unless you had extra
+
+1092
+01:01:53,640 --> 01:01:55,680
+graph all right unless you had extra edges to this graph
+
+1093
+01:01:55,680 --> 01:01:58,870
+edges to this graph and let me tell you and you know I know
+
+1094
+01:01:58,870 --> 01:02:00,640
+and let me tell you and you know I know what I'm going to be able to discuss
+
+1095
+01:02:00,640 --> 01:02:02,819
+what I'm going to be able to discuss this in this course
+
+1096
+01:02:02,819 --> 01:02:06,250
+this in this course remember when we do will the very early
+
+1097
+01:02:06,250 --> 01:02:08,799
+remember when we do will the very early part of the course we were doing a graph
+
+1098
+01:02:08,799 --> 01:02:11,440
+part of the course we were doing a graph elimination so nothing that you do graph
+
+1099
+01:02:11,440 --> 01:02:13,000
+elimination so nothing that you do graph elimination here right and it's not
+
+1100
+01:02:13,000 --> 01:02:16,000
+elimination here right and it's not eliminating any note it doesn't matter
+
+1101
+01:02:16,000 --> 01:02:18,190
+eliminating any note it doesn't matter they're all symmetric so if you luminate
+
+1102
+01:02:18,190 --> 01:02:20,530
+they're all symmetric so if you luminate explore what do you need to go to the
+
+1103
+01:02:20,530 --> 01:02:28,930
+explore what do you need to go to the next step if you need to analyze this
+
+1104
+01:02:28,930 --> 01:02:33,160
+next step if you need to analyze this idea the composability for this class it
+
+1105
+01:02:33,160 --> 01:02:36,370
+idea the composability for this class it is directly linked with the graph
+
+1106
+01:02:36,370 --> 01:02:38,829
+is directly linked with the graph elimination algorithm all right and to
+
+1107
+01:02:38,829 --> 01:02:40,660
+elimination algorithm all right and to hell and actually at the end of the day
+
+1108
+01:02:40,660 --> 01:02:42,819
+hell and actually at the end of the day they're directly linked with the
+
+1109
+01:02:42,819 --> 01:02:50,049
+they're directly linked with the junction 3 output ok so if the graph is
+
+1110
+01:02:50,049 --> 01:02:52,750
+junction 3 output ok so if the graph is the compulsive vote the solution is
+
+1111
+01:02:52,750 --> 01:02:55,180
+the compulsive vote the solution is trivial all right and there is more
+
+1112
+01:02:55,180 --> 01:02:56,530
+trivial all right and there is more discussion in the launch
+
+1113
+01:02:56,530 --> 01:03:03,400
+discussion in the launch ok ok so it says if the graph is not
+
+1114
+01:03:03,400 --> 01:03:04,930
+ok ok so it says if the graph is not become possible basically there's
+
+1115
+01:03:04,930 --> 01:03:07,630
+become possible basically there's nothing you can do with the present
+
+1116
+01:03:07,630 --> 01:03:09,730
+nothing you can do with the present curve of the immediate so we need to do
+
+1117
+01:03:09,730 --> 01:03:12,400
+curve of the immediate so we need to do something better so since the time is
+
+1118
+01:03:12,400 --> 01:03:15,490
+something better so since the time is clicking so let's see what we will do if
+
+1119
+01:03:15,490 --> 01:03:18,069
+clicking so let's see what we will do if the algorithm if graph is a genetic
+
+1120
+01:03:18,069 --> 01:03:22,450
+the algorithm if graph is a genetic graph and we cannot use this the
+
+1121
+01:03:22,450 --> 01:03:24,430
+graph and we cannot use this the composition become possibility basically
+
+1122
+01:03:24,430 --> 01:03:26,440
+composition become possibility basically of the graph so we're going to develop
+
+1123
+01:03:26,440 --> 01:03:27,910
+of the graph so we're going to develop evaluate let's call it therapy
+
+1124
+01:03:27,910 --> 01:03:30,250
+evaluate let's call it therapy proportional thinking part of this
+
+1125
+01:03:30,250 --> 01:03:32,980
+proportional thinking part of this nozzle continuation be a lecture on
+
+1126
+01:03:32,980 --> 01:03:35,950
+nozzle continuation be a lecture on Tuesday but we're going to come back so
+
+1127
+01:03:35,950 --> 01:03:37,720
+Tuesday but we're going to come back so we can finish the course so let's see
+
+1128
+01:03:37,720 --> 01:03:45,819
+we can finish the course so let's see what is our waitress remember when we
+
+1129
+01:03:45,819 --> 01:03:47,099
+what is our waitress remember when we took the gradient of the log likelihood
+
+1130
+01:03:47,099 --> 01:03:52,210
+took the gradient of the log likelihood we basically regret the use this pair -
+
+1131
+01:03:52,210 --> 01:03:55,720
+we basically regret the use this pair - despair you remember we said that
+
+1132
+01:03:55,720 --> 01:03:58,450
+despair you remember we said that child-sized cancel out so you know now
+
+1133
+01:03:58,450 --> 01:03:59,410
+child-sized cancel out so you know now we're going guys
+
+1134
+01:03:59,410 --> 01:04:00,460
+we're going guys ok this
+
+1135
+01:04:00,460 --> 01:04:03,520
+ok this raishin site with more the likelihood
+
+1136
+01:04:03,520 --> 01:04:06,280
+raishin site with more the likelihood implicitly right so then I guess I am
+
+1137
+01:04:06,280 --> 01:04:08,740
+implicitly right so then I guess I am NOT going to get rid of precisely but
+
+1138
+01:04:08,740 --> 01:04:10,960
+NOT going to get rid of precisely but I'm gonna plate and tell at the fixed
+
+1139
+01:04:10,960 --> 01:04:13,839
+I'm gonna plate and tell at the fixed point algorithm using this equation as
+
+1140
+01:04:13,839 --> 01:04:14,260
+point algorithm using this equation as follows
+
+1141
+01:04:14,260 --> 01:04:18,040
+follows I am what I'm going to based I am going
+
+1142
+01:04:18,040 --> 01:04:24,940
+I am what I'm going to based I am going to use so this is my empirical marginal
+
+1143
+01:04:24,940 --> 01:04:28,330
+to use so this is my empirical marginal or a is there I am going to divide by my
+
+1144
+01:04:28,330 --> 01:04:31,030
+or a is there I am going to divide by my previous guests as the modern marginal
+
+1145
+01:04:31,030 --> 01:04:35,470
+previous guests as the modern marginal which is this but interracial tea I am
+
+1146
+01:04:35,470 --> 01:04:38,800
+which is this but interracial tea I am going to multiply with my estimate for
+
+1147
+01:04:38,800 --> 01:04:41,170
+going to multiply with my estimate for the potential of iteration of tea and
+
+1148
+01:04:41,170 --> 01:04:42,880
+the potential of iteration of tea and then we all the term on the other side
+
+1149
+01:04:42,880 --> 01:04:48,810
+then we all the term on the other side even when you update the time T plus 1
+
+1150
+01:04:48,810 --> 01:04:48,820
+
+
+1151
+01:04:48,820 --> 01:04:54,070
+you should happen here right I took this to the right hand side they push
+
+1152
+01:04:54,070 --> 01:04:56,050
+to the right hand side they push everything to the left all right
+
+1153
+01:04:56,050 --> 01:04:58,870
+everything to the left all right so the this thing on the right hand side
+
+1154
+01:04:58,870 --> 01:05:01,510
+so the this thing on the right hand side would be mighty plus small update based
+
+1155
+01:05:01,510 --> 01:05:04,089
+would be mighty plus small update based on the estimate of the previous nine
+
+1156
+01:05:04,089 --> 01:05:09,579
+on the estimate of the previous nine times the ratio of this empirical margin
+
+1157
+01:05:09,579 --> 01:05:14,680
+times the ratio of this empirical margin divided by the previous estimated margin
+
+1158
+01:05:14,680 --> 01:05:18,120
+divided by the previous estimated margin of clickstream now you know conventional
+
+1159
+01:05:18,120 --> 01:05:20,859
+of clickstream now you know conventional have done this in numerical analysis you
+
+1160
+01:05:20,859 --> 01:05:22,420
+have done this in numerical analysis you know it's not like you play trivia
+
+1161
+01:05:22,420 --> 01:05:24,670
+know it's not like you play trivia question we divide by some unknown then
+
+1162
+01:05:24,670 --> 01:05:26,440
+question we divide by some unknown then you do a fixed point iteration somehow
+
+1163
+01:05:26,440 --> 01:05:29,200
+you do a fixed point iteration somehow this thing converts the assumption is no
+
+1164
+01:05:29,200 --> 01:05:31,540
+this thing converts the assumption is no guarantee that this will actually makes
+
+1165
+01:05:31,540 --> 01:05:35,109
+guarantee that this will actually makes any sense well in the notes and I don't
+
+1166
+01:05:35,109 --> 01:05:37,120
+any sense well in the notes and I don't know how much time we have there is a
+
+1167
+01:05:37,120 --> 01:05:38,740
+know how much time we have there is a propulsion unit only that this is
+
+1168
+01:05:38,740 --> 01:05:41,589
+propulsion unit only that this is working the naturally maximizes them
+
+1169
+01:05:41,589 --> 01:05:43,690
+working the naturally maximizes them they love likelihood so it's actually
+
+1170
+01:05:43,690 --> 01:05:46,450
+they love likelihood so it's actually the more than the standard wave as well
+
+1171
+01:05:46,450 --> 01:05:50,470
+the more than the standard wave as well okay and so let's see how this so this
+
+1172
+01:05:50,470 --> 01:05:52,690
+okay and so let's see how this so this is how this thing works
+
+1173
+01:05:52,690 --> 01:05:54,640
+is how this thing works all right I am NOT gonna go through the
+
+1174
+01:05:54,640 --> 01:05:56,650
+all right I am NOT gonna go through the points because the drop is wanted before
+
+1175
+01:05:56,650 --> 01:06:01,690
+points because the drop is wanted before but let me tell you two things that you
+
+1176
+01:06:01,690 --> 01:06:03,180
+but let me tell you two things that you know they know she's actually
+
+1177
+01:06:03,180 --> 01:06:06,000
+know they know she's actually there's just algebra there are two
+
+1178
+01:06:06,000 --> 01:06:09,270
+there's just algebra there are two things that happen when you iterate with
+
+1179
+01:06:09,270 --> 01:06:12,990
+things that happen when you iterate with this algorithm number one demands you
+
+1180
+01:06:12,990 --> 01:06:15,569
+this algorithm number one demands you know at every iteration is equal to the
+
+1181
+01:06:15,569 --> 01:06:18,780
+know at every iteration is equal to the empirical marginal so if it means as you
+
+1182
+01:06:18,780 --> 01:06:21,630
+empirical marginal so if it means as you implement you subscribe in the liquor
+
+1183
+01:06:21,630 --> 01:06:25,260
+implement you subscribe in the liquor trade show is like you keep going and
+
+1184
+01:06:25,260 --> 01:06:27,660
+trade show is like you keep going and clapping the prevent you will suffice to
+
+1185
+01:06:27,660 --> 01:06:29,790
+clapping the prevent you will suffice to say that the model module is equal to
+
+1186
+01:06:29,790 --> 01:06:32,099
+say that the model module is equal to the empirical much stuff we position you
+
+1187
+01:06:32,099 --> 01:06:37,680
+the empirical much stuff we position you satisfy them and the normalization
+
+1188
+01:06:37,680 --> 01:06:49,079
+satisfy them and the normalization factor does not change okay and I want
+
+1189
+01:06:49,079 --> 01:06:52,530
+factor does not change okay and I want to give you so basically this is the MLE
+
+1190
+01:06:52,530 --> 01:06:54,900
+to give you so basically this is the MLE property right of all iterations the
+
+1191
+01:06:54,900 --> 01:06:56,309
+property right of all iterations the more than marginal is equal to the
+
+1192
+01:06:56,309 --> 01:06:58,170
+more than marginal is equal to the empirical milestone thus it doesn't
+
+1193
+01:06:58,170 --> 01:07:01,800
+empirical milestone thus it doesn't change but I wanted to give you a
+
+1194
+01:07:01,800 --> 01:07:03,390
+change but I wanted to give you a position of this time with it
+
+1195
+01:07:03,390 --> 01:07:06,000
+position of this time with it this is what we derive you can actually
+
+1196
+01:07:06,000 --> 01:07:09,300
+this is what we derive you can actually show this very important you can throw
+
+1197
+01:07:09,300 --> 01:07:11,910
+show this very important you can throw from this equation you can show the
+
+1198
+01:07:11,910 --> 01:07:14,250
+from this equation you can show the algorithm takes the form that you see on
+
+1199
+01:07:14,250 --> 01:07:16,650
+algorithm takes the form that you see on just a question on the lingual okay and
+
+1200
+01:07:16,650 --> 01:07:18,990
+just a question on the lingual okay and I'm going to rewrite this equation in a
+
+1201
+01:07:18,990 --> 01:07:23,730
+I'm going to rewrite this equation in a form of the total fraud you can which
+
+1202
+01:07:23,730 --> 01:07:25,410
+form of the total fraud you can which orientation you can come up with it
+
+1203
+01:07:25,410 --> 01:07:29,370
+orientation you can come up with it without any mathematics okay so I mean
+
+1204
+01:07:29,370 --> 01:07:33,420
+without any mathematics okay so I mean give you proof of this you can show the
+
+1205
+01:07:33,420 --> 01:07:36,780
+give you proof of this you can show the proof is actually two lines but this
+
+1206
+01:07:36,780 --> 01:07:39,990
+proof is actually two lines but this algorithm you can show that the
+
+1207
+01:07:39,990 --> 01:07:42,359
+algorithm you can show that the probability of X being right on the
+
+1208
+01:07:42,359 --> 01:07:47,309
+probability of X being right on the whole at iteration T plus one is your
+
+1209
+01:07:47,309 --> 01:07:50,250
+whole at iteration T plus one is your estimated duration T times the empirical
+
+1210
+01:07:50,250 --> 01:07:52,470
+estimated duration T times the empirical marginal
+
+1211
+01:07:52,470 --> 01:07:55,470
+marginal clip state divided by the northern
+
+1212
+01:07:55,470 --> 01:08:00,809
+clip state divided by the northern margin out at Creek stream I mean you
+
+1213
+01:08:00,809 --> 01:08:03,420
+margin out at Creek stream I mean you can you know when you're working this
+
+1214
+01:08:03,420 --> 01:08:05,280
+can you know when you're working this right you will operate on
+
+1215
+01:08:05,280 --> 01:08:08,430
+right you will operate on Trixie so you can appreciate why I can
+
+1216
+01:08:08,430 --> 01:08:10,680
+Trixie so you can appreciate why I can stop the disguise here with a whole
+
+1217
+01:08:10,680 --> 01:08:12,630
+stop the disguise here with a whole probability distribution because
+
+1218
+01:08:12,630 --> 01:08:15,000
+probability distribution because socialism doesn't change so it's not
+
+1219
+01:08:15,000 --> 01:08:17,249
+socialism doesn't change so it's not like you go from P plus 1 to P and this
+
+1220
+01:08:17,249 --> 01:08:18,870
+like you go from P plus 1 to P and this is going to ring you because they always
+
+1221
+01:08:18,870 --> 01:08:21,360
+is going to ring you because they always can keep the second stop okay so let me
+
+1222
+01:08:21,360 --> 01:08:23,460
+can keep the second stop okay so let me I'm going to take this equation and I'm
+
+1223
+01:08:23,460 --> 01:08:24,420
+I'm going to take this equation and I'm gonna rewrite it
+
+1224
+01:08:24,420 --> 01:08:28,499
+gonna rewrite it okay so whatever it is I am keeping this
+
+1225
+01:08:28,499 --> 01:08:31,230
+okay so whatever it is I am keeping this in critical marginal there and I am
+
+1226
+01:08:31,230 --> 01:08:34,740
+in critical marginal there and I am taking this divided by God and I'm going
+
+1227
+01:08:34,740 --> 01:08:37,289
+taking this divided by God and I'm going to write this at iteration P and I'm
+
+1228
+01:08:37,289 --> 01:08:39,390
+to write this at iteration P and I'm going to write it as the conditional of
+
+1229
+01:08:39,390 --> 01:08:44,309
+going to write it as the conditional of X V minus T given XT you never played
+
+1230
+01:08:44,309 --> 01:08:48,300
+X V minus T given XT you never played that risk / that is the conditional of
+
+1231
+01:08:48,300 --> 01:08:56,160
+that risk / that is the conditional of XT minus T given extreme I mean if you
+
+1232
+01:08:56,160 --> 01:08:58,200
+XT minus T given extreme I mean if you are going to expire right this would be
+
+1233
+01:08:58,200 --> 01:09:00,349
+are going to expire right this would be the joint of this and that which is not
+
+1234
+01:09:00,349 --> 01:09:04,050
+the joint of this and that which is not divided by the modal marginal extreme
+
+1235
+01:09:04,050 --> 01:09:07,220
+divided by the modal marginal extreme nothing now why am i doing like this
+
+1236
+01:09:07,220 --> 01:09:09,870
+nothing now why am i doing like this this is how the graph looks like
+
+1237
+01:09:09,870 --> 01:09:12,660
+this is how the graph looks like all right and very intuition here what
+
+1238
+01:09:12,660 --> 01:09:15,269
+all right and very intuition here what do you do you're actually changing the
+
+1239
+01:09:15,269 --> 01:09:24,329
+do you do you're actually changing the potential conflict see you know of the
+
+1240
+01:09:24,329 --> 01:09:28,289
+potential conflict see you know of the notes on click G so equation tells us
+
+1241
+01:09:28,289 --> 01:09:31,079
+notes on click G so equation tells us you know math test to make the joint
+
+1242
+01:09:31,079 --> 01:09:32,970
+you know math test to make the joint probability distribution of step T plus
+
+1243
+01:09:32,970 --> 01:09:37,349
+probability distribution of step T plus 1 use the previous conditional where the
+
+1244
+01:09:37,349 --> 01:09:39,980
+1 use the previous conditional where the body missions still are not updated and
+
+1245
+01:09:39,980 --> 01:09:43,460
+body missions still are not updated and anything in first line of data marginal
+
+1246
+01:09:43,460 --> 01:09:48,320
+anything in first line of data marginal on extreme
+
+1247
+01:09:48,320 --> 01:09:48,330
+
+
+1248
+01:09:48,330 --> 01:09:53,910
+all right so you keep the previous again exit here
+
+1249
+01:09:53,910 --> 01:09:56,220
+exit here this is the conditional from the
+
+1250
+01:09:56,220 --> 01:09:58,620
+this is the conditional from the previous model times the new marginal
+
+1251
+01:09:58,620 --> 01:10:01,710
+previous model times the new marginal which is basically it is so yeah
+
+1252
+01:10:01,710 --> 01:10:05,670
+which is basically it is so yeah basically the marginal on XJ with
+
+1253
+01:10:05,670 --> 01:10:11,040
+basically the marginal on XJ with empirical master very clearly allowed
+
+1254
+01:10:11,040 --> 01:10:12,930
+empirical master very clearly allowed relief if you think about it and this
+
+1255
+01:10:12,930 --> 01:10:15,570
+relief if you think about it and this algorithm is applicable sort of to any
+
+1256
+01:10:15,570 --> 01:10:19,830
+algorithm is applicable sort of to any type of undirected graph it doesn't have
+
+1257
+01:10:19,830 --> 01:10:25,890
+type of undirected graph it doesn't have to be you know become possible you know
+
+1258
+01:10:25,890 --> 01:10:27,990
+to be you know become possible you know haven't really said anything about that
+
+1259
+01:10:27,990 --> 01:10:30,120
+haven't really said anything about that the police have to be much small so it's
+
+1260
+01:10:30,120 --> 01:10:34,230
+the police have to be much small so it's and again you can see miss nice the
+
+1261
+01:10:34,230 --> 01:10:37,100
+and again you can see miss nice the details there is a profit rate that this
+
+1262
+01:10:37,100 --> 01:10:39,420
+details there is a profit rate that this increases as you iterate a much more
+
+1263
+01:10:39,420 --> 01:10:42,570
+increases as you iterate a much more likelihood and in even give you life
+
+1264
+01:10:42,570 --> 01:10:44,430
+likelihood and in even give you life solution of the three iterations by the
+
+1265
+01:10:44,430 --> 01:10:47,160
+solution of the three iterations by the way if the graph is like impossible I
+
+1266
+01:10:47,160 --> 01:10:48,720
+way if the graph is like impossible I think you do this in one iteration
+
+1267
+01:10:48,720 --> 01:10:55,279
+think you do this in one iteration converges to right answer yep
+
+1268
+01:10:55,279 --> 01:10:55,289
+
+
+1269
+01:10:55,289 --> 01:10:59,649
+when people study before but the whole thing is of directly linked actually
+
+1270
+01:10:59,649 --> 01:11:01,689
+thing is of directly linked actually yeah exactly
+
+1271
+01:11:01,689 --> 01:11:10,009
+yeah exactly okay as an algorithm is basically the
+
+1272
+01:11:10,009 --> 01:11:12,109
+okay as an algorithm is basically the most general a lot of good is right but
+
+1273
+01:11:12,109 --> 01:11:14,000
+most general a lot of good is right but so the two things are directly linked
+
+1274
+01:11:14,000 --> 01:11:18,589
+so the two things are directly linked here okay so the exact elimination
+
+1275
+01:11:18,589 --> 01:11:20,390
+here okay so the exact elimination algorithm a junction tree algorithm and
+
+1276
+01:11:20,390 --> 01:11:30,370
+algorithm a junction tree algorithm and what you see here have the same origin
+
+1277
+01:11:30,370 --> 01:11:30,380
+
+
+1278
+01:11:30,380 --> 01:11:37,850
+is algorithm and I'm going to give you something that somehow when I was
+
+1279
+01:11:37,850 --> 01:11:41,930
+something that somehow when I was looking at your Mike Jordans knows that
+
+1280
+01:11:41,930 --> 01:11:45,979
+looking at your Mike Jordans knows that I gave you some time ago she has a
+
+1281
+01:11:45,979 --> 01:11:49,430
+I gave you some time ago she has a derivation of this IPF algorithm that is
+
+1282
+01:11:49,430 --> 01:11:53,899
+derivation of this IPF algorithm that is very interesting using short of one
+
+1283
+01:11:53,899 --> 01:11:56,299
+very interesting using short of one identity we have never seen and most
+
+1284
+01:11:56,299 --> 01:11:59,750
+identity we have never seen and most probably very few people use okay and
+
+1285
+01:11:59,750 --> 01:12:02,060
+probably very few people use okay and and something we have discussed at least
+
+1286
+01:12:02,060 --> 01:12:03,529
+and something we have discussed at least we discussed with us we took the course
+
+1287
+01:12:03,529 --> 01:12:04,310
+we discussed with us we took the course in the fall
+
+1288
+01:12:04,310 --> 01:12:07,129
+in the fall shall we give you that you can derive
+
+1289
+01:12:07,129 --> 01:12:09,799
+shall we give you that you can derive all of these things using a minimization
+
+1290
+01:12:09,799 --> 01:12:12,770
+all of these things using a minimization of an appropriate KL divergence distance
+
+1291
+01:12:12,770 --> 01:12:20,330
+of an appropriate KL divergence distance and that you to minimize is basically
+
+1292
+01:12:20,330 --> 01:12:24,109
+and that you to minimize is basically the distance between P of x given theta
+
+1293
+01:12:24,109 --> 01:12:28,209
+the distance between P of x given theta and the empirical distribution P of X
+
+1294
+01:12:28,209 --> 01:12:32,750
+and the empirical distribution P of X right and what you need to do is you can
+
+1295
+01:12:32,750 --> 01:12:33,490
+right and what you need to do is you can show by the way
+
+1296
+01:12:33,490 --> 01:12:36,680
+show by the way so let me say that things that you
+
+1297
+01:12:36,680 --> 01:12:38,660
+so let me say that things that you should know by now if you want to
+
+1298
+01:12:38,660 --> 01:12:40,819
+should know by now if you want to maximize the likelihood this is
+
+1299
+01:12:40,819 --> 01:12:43,160
+maximize the likelihood this is equivalent to minimizing the distance of
+
+1300
+01:12:43,160 --> 01:12:45,950
+equivalent to minimizing the distance of P of X from the empirical distribution
+
+1301
+01:12:45,950 --> 01:12:47,950
+P of X from the empirical distribution picture via text that's the standard
+
+1302
+01:12:47,950 --> 01:12:50,870
+picture via text that's the standard theory all right if you want to maximize
+
+1303
+01:12:50,870 --> 01:12:53,870
+theory all right if you want to maximize the likelihood the derivation sphere is
+
+1304
+01:12:53,870 --> 01:12:55,200
+the likelihood the derivation sphere is the same as minimize
+
+1305
+01:12:55,200 --> 01:12:56,580
+the same as minimize distance from the empirical distribution
+
+1306
+01:12:56,580 --> 01:13:02,160
+distance from the empirical distribution factor that's part one factor the cool
+
+1307
+01:13:02,160 --> 01:13:05,220
+factor that's part one factor the cool but liberal distance D between some
+
+1308
+01:13:05,220 --> 01:13:06,780
+but liberal distance D between some distribution P from another distribution
+
+1309
+01:13:06,780 --> 01:13:10,290
+distribution P from another distribution Q when I split the variables in two sets
+
+1310
+01:13:10,290 --> 01:13:13,770
+Q when I split the variables in two sets a and B can be written down in a in a
+
+1311
+01:13:13,770 --> 01:13:17,790
+a and B can be written down in a in a sort of very nice decomposition that is
+
+1312
+01:13:17,790 --> 01:13:20,250
+sort of very nice decomposition that is given by the second line here so if you
+
+1313
+01:13:20,250 --> 01:13:22,620
+given by the second line here so if you need the distance between P of X a X B
+
+1314
+01:13:22,620 --> 01:13:25,380
+need the distance between P of X a X B and Q of X or X B you can write this as
+
+1315
+01:13:25,380 --> 01:13:28,250
+and Q of X or X B you can write this as the difference between the marginals and
+
+1316
+01:13:28,250 --> 01:13:30,750
+the difference between the marginals and the distance between the conditionals
+
+1317
+01:13:30,750 --> 01:13:34,560
+the distance between the conditionals after it's over let's say all right okay
+
+1318
+01:13:34,560 --> 01:13:37,590
+after it's over let's say all right okay so what I'm gonna do is so this is not
+
+1319
+01:13:37,590 --> 01:13:39,959
+so what I'm gonna do is so this is not something you see often but it comes
+
+1320
+01:13:39,959 --> 01:13:43,080
+something you see often but it comes very handy in our problem because if you
+
+1321
+01:13:43,080 --> 01:13:45,479
+very handy in our problem because if you use this idea but much maizing the
+
+1322
+01:13:45,479 --> 01:13:47,310
+use this idea but much maizing the likelihood is the same as me imagine
+
+1323
+01:13:47,310 --> 01:13:49,380
+likelihood is the same as me imagine this distance and it's life is this
+
+1324
+01:13:49,380 --> 01:13:52,110
+this distance and it's life is this confusing this equation you're shall get
+
+1325
+01:13:52,110 --> 01:13:55,920
+confusing this equation you're shall get the same answer as what you know
+
+1326
+01:13:55,920 --> 01:13:57,690
+the same answer as what you know directly doing the algebra that I show
+
+1327
+01:13:57,690 --> 01:14:00,690
+directly doing the algebra that I show you before and here is the how the scale
+
+1328
+01:14:00,690 --> 01:14:06,450
+you before and here is the how the scale of distance manifests itself in our
+
+1329
+01:14:06,450 --> 01:14:10,920
+of distance manifests itself in our problem so what are those two be noise
+
+1330
+01:14:10,920 --> 01:14:13,530
+problem so what are those two be noise the distance between the model and the
+
+1331
+01:14:13,530 --> 01:14:16,410
+the distance between the model and the empirical distribution is the same as
+
+1332
+01:14:16,410 --> 01:14:18,570
+empirical distribution is the same as you know we have to write as distance as
+
+1333
+01:14:18,570 --> 01:14:20,850
+you know we have to write as distance as the distance between the marginals and
+
+1334
+01:14:20,850 --> 01:14:23,459
+the distance between the marginals and I'm using the potential to HC between
+
+1335
+01:14:23,459 --> 01:14:25,680
+I'm using the potential to HC between the model and the empirical and then I
+
+1336
+01:14:25,680 --> 01:14:28,170
+the model and the empirical and then I have this average that involves the
+
+1337
+01:14:28,170 --> 01:14:34,290
+have this average that involves the conditionals as given exchange shall be
+
+1338
+01:14:34,290 --> 01:14:37,110
+conditionals as given exchange shall be only further this equation that I want
+
+1339
+01:14:37,110 --> 01:14:39,570
+only further this equation that I want to minimize with respect to X T is this
+
+1340
+01:14:39,570 --> 01:14:43,320
+to minimize with respect to X T is this time this is not secure that ship has
+
+1341
+01:14:43,320 --> 01:14:46,820
+time this is not secure that ship has been tomorrow
+
+1342
+01:14:46,820 --> 01:14:46,830
+
+
+1343
+01:14:46,830 --> 01:14:52,700
+so how do you minimize the distance between this marginal and this and
+
+1344
+01:14:52,700 --> 01:14:54,710
+between this marginal and this and critical Martina obviously this should
+
+1345
+01:14:54,710 --> 01:14:56,660
+critical Martina obviously this should be equal to that and that's what we
+
+1346
+01:14:56,660 --> 01:14:59,150
+be equal to that and that's what we proved before so there is a proofing on
+
+1347
+01:14:59,150 --> 01:15:05,170
+proved before so there is a proofing on life right and again you never know
+
+1348
+01:15:05,170 --> 01:15:09,500
+life right and again you never know where and how things will be useful but
+
+1349
+01:15:09,500 --> 01:15:11,630
+where and how things will be useful but this not is the composition of the KL
+
+1350
+01:15:11,630 --> 01:15:13,760
+this not is the composition of the KL it's actually very handy because it
+
+1351
+01:15:13,760 --> 01:15:16,100
+it's actually very handy because it gives you an answer no need to the
+
+1352
+01:15:16,100 --> 01:15:23,510
+gives you an answer no need to the gradient and you know you can use ideas
+
+1353
+01:15:23,510 --> 01:15:27,760
+gradient and you know you can use ideas from a gradient descent so we can please
+
+1354
+01:15:27,760 --> 01:15:30,800
+from a gradient descent so we can please so rather than doing this fixed point
+
+1355
+01:15:30,800 --> 01:15:32,750
+so rather than doing this fixed point iteration algorithm you can introduce
+
+1356
+01:15:32,750 --> 01:15:35,510
+iteration algorithm you can introduce some learning rate and a real life is a
+
+1357
+01:15:35,510 --> 01:15:37,850
+some learning rate and a real life is a gradient equation is the gradient so you
+
+1358
+01:15:37,850 --> 01:15:40,040
+gradient equation is the gradient so you can put some learning rate law and you
+
+1359
+01:15:40,040 --> 01:15:42,920
+can put some learning rate law and you can keep doing update in a fantastic
+
+1360
+01:15:42,920 --> 01:15:50,930
+can keep doing update in a fantastic regular sense if you apply the solver if
+
+1361
+01:15:50,930 --> 01:15:55,160
+regular sense if you apply the solver if the discuss today the only thing is you
+
+1362
+01:15:55,160 --> 01:15:56,720
+the discuss today the only thing is you need to just be careful because the
+
+1363
+01:15:56,720 --> 01:15:58,790
+need to just be careful because the romanization cost from Z has to be
+
+1364
+01:15:58,790 --> 01:16:01,280
+romanization cost from Z has to be recalculated at each iteration doesn't
+
+1365
+01:16:01,280 --> 01:16:05,000
+recalculated at each iteration doesn't remain constant right and again if you
+
+1366
+01:16:05,000 --> 01:16:08,090
+remain constant right and again if you have latent variables basically what you
+
+1367
+01:16:08,090 --> 01:16:11,240
+have latent variables basically what you need to do is that for the rest of the
+
+1368
+01:16:11,240 --> 01:16:13,340
+need to do is that for the rest of the wacky graphs you can apply exactly the
+
+1369
+01:16:13,340 --> 01:16:15,980
+wacky graphs you can apply exactly the same that needs to discuss today but you
+
+1370
+01:16:15,980 --> 01:16:18,320
+same that needs to discuss today but you apply them artistic iteration of the e/m
+
+1371
+01:16:18,320 --> 01:16:21,140
+apply them artistic iteration of the e/m outwards so really you can do this for
+
+1372
+01:16:21,140 --> 01:16:24,770
+outwards so really you can do this for any problem with hidden variables very
+
+1373
+01:16:24,770 --> 01:16:27,170
+any problem with hidden variables very simple way to estimate the parameters
+
+1374
+01:16:27,170 --> 01:16:28,700
+simple way to estimate the parameters assuming that you have complete data
+
+1375
+01:16:28,700 --> 01:16:37,670
+assuming that you have complete data description all right if civics says no
+
+1376
+01:16:37,670 --> 01:16:39,710
+description all right if civics says no we have noticed they know no lecture on
+
+1377
+01:16:39,710 --> 01:16:44,540
+we have noticed they know no lecture on Friday okay and I'm going to maybe if we
+
+1378
+01:16:44,540 --> 01:16:47,210
+Friday okay and I'm going to maybe if we have a lecture next Friday but there's
+
+1379
+01:16:47,210 --> 01:16:49,690
+have a lecture next Friday but there's no lecture on Tuesday and Thursday okay
+
+1380
+01:16:49,690 --> 01:16:51,719
+no lecture on Tuesday and Thursday okay all right
+
+1381
+01:16:51,719 --> 01:16:56,909
+all right so and and and so we'll see you next
+
+1382
+01:16:56,909 --> 01:16:59,130
+so and and and so we'll see you next week 
+

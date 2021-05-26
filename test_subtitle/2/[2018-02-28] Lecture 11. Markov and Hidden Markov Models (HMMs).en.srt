@@ -1,0 +1,5040 @@
+1
+00:02:06,510 --> 00:02:14,610
+all right I have not posted this lecture yet it's more than 200 pages and I
+
+2
+00:02:14,610 --> 00:02:18,240
+yet it's more than 200 pages and I almost have only 10 pages left you know
+
+3
+00:02:18,240 --> 00:02:20,670
+almost have only 10 pages left you know so let's open the mentary stop so I'm
+
+4
+00:02:20,670 --> 00:02:22,080
+so let's open the mentary stop so I'm going to be jumping through but I will
+
+5
+00:02:22,080 --> 00:02:24,630
+going to be jumping through but I will try to finish the last ten pages today
+
+6
+00:02:24,630 --> 00:02:30,240
+try to finish the last ten pages today and post them by the end of the day so I
+
+7
+00:02:30,240 --> 00:02:31,560
+and post them by the end of the day so I assume all the projects have been
+
+8
+00:02:31,560 --> 00:02:38,820
+assume all the projects have been submitted including from those who have
+
+9
+00:02:38,820 --> 00:02:43,680
+submitted including from those who have no plans to submit project all right and
+
+10
+00:02:43,680 --> 00:02:46,710
+no plans to submit project all right and so we have permission projects and the
+
+11
+00:02:46,710 --> 00:02:49,800
+so we have permission projects and the deadline was yesterday okay so we need
+
+12
+00:02:49,800 --> 00:02:56,940
+deadline was yesterday okay so we need project all right so we're going to do
+
+13
+00:02:56,940 --> 00:02:59,780
+project all right so we're going to do is I'm going to go through you know
+
+14
+00:02:59,780 --> 00:03:01,949
+is I'm going to go through you know notice there is another point mental
+
+15
+00:03:01,949 --> 00:03:04,800
+notice there is another point mental state today because I'm over a million
+
+16
+00:03:04,800 --> 00:03:07,170
+state today because I'm over a million things when we are trying to jump
+
+17
+00:03:07,170 --> 00:03:10,020
+things when we are trying to jump through the flight to be sure we cover
+
+18
+00:03:10,020 --> 00:03:13,460
+through the flight to be sure we cover some essential topics and depending on
+
+19
+00:03:13,460 --> 00:03:17,759
+some essential topics and depending on where we are we decide on Thursday if we
+
+20
+00:03:17,759 --> 00:03:19,970
+where we are we decide on Thursday if we continue this lecturer would jump to
+
+21
+00:03:19,970 --> 00:03:23,190
+continue this lecturer would jump to state-space models the slides are very
+
+22
+00:03:23,190 --> 00:03:25,500
+state-space models the slides are very easy so you guys can read them in detail
+
+23
+00:03:25,500 --> 00:03:28,890
+easy so you guys can read them in detail so I'm gonna try to to do some something
+
+24
+00:03:28,890 --> 00:03:32,759
+so I'm gonna try to to do some something here there so things I want to discuss
+
+25
+00:03:32,759 --> 00:03:37,259
+here there so things I want to discuss today hopefully we will have time to do
+
+26
+00:03:37,259 --> 00:03:39,630
+today hopefully we will have time to do this how do we complete parameters in
+
+27
+00:03:39,630 --> 00:03:44,030
+this how do we complete parameters in hmm models and in computing parameters
+
+28
+00:03:44,030 --> 00:03:46,890
+hmm models and in computing parameters we will see that we need to integrate
+
+29
+00:03:46,890 --> 00:03:49,740
+we will see that we need to integrate the algorithms for forward and backward
+
+30
+00:03:49,740 --> 00:03:52,620
+the algorithms for forward and backward passing message passing basically those
+
+31
+00:03:52,620 --> 00:03:54,900
+passing message passing basically those messages will serve as essential
+
+32
+00:03:54,900 --> 00:03:56,250
+messages will serve as essential statistics that will allow us to
+
+33
+00:03:56,250 --> 00:03:59,280
+statistics that will allow us to complete parameters given some training
+
+34
+00:03:59,280 --> 00:04:01,900
+complete parameters given some training data okay
+
+35
+00:04:01,900 --> 00:04:04,130
+data okay what number was so I'm going to be
+
+36
+00:04:04,130 --> 00:04:07,130
+what number was so I'm going to be jumping slide and I'm going to go we
+
+37
+00:04:07,130 --> 00:04:11,480
+jumping slide and I'm going to go we stopped last lecture on slide 21 so we
+
+38
+00:04:11,480 --> 00:04:13,580
+stopped last lecture on slide 21 so we can deal extinct
+
+39
+00:04:13,580 --> 00:04:23,070
+can deal extinct simple training with a Markov model okay
+
+40
+00:04:23,070 --> 00:04:23,080
+
+
+41
+00:04:23,080 --> 00:04:29,890
+conservatively the the problem of learning basically mercy consists of
+
+42
+00:04:29,890 --> 00:04:32,110
+learning basically mercy consists of words and I'm going to introduce some
+
+43
+00:04:32,110 --> 00:04:40,290
+words and I'm going to introduce some probability models over a single word so
+
+44
+00:04:40,290 --> 00:04:40,300
+
+
+45
+00:04:40,300 --> 00:04:46,990
+information the time is time implies sequence in a sentence okay so it's not
+
+46
+00:04:46,990 --> 00:04:49,240
+sequence in a sentence okay so it's not really I mean you can apply this as
+
+47
+00:04:49,240 --> 00:04:53,410
+really I mean you can apply this as opposed when you talk alright so this
+
+48
+00:04:53,410 --> 00:04:55,060
+opposed when you talk alright so this can be represented once at the given
+
+49
+00:04:55,060 --> 00:04:58,750
+can be represented once at the given time but right now is world within a
+
+50
+00:04:58,750 --> 00:05:01,720
+time but right now is world within a text question so this is what we call
+
+51
+00:05:01,720 --> 00:05:05,170
+text question so this is what we call the Ingram probability this is a bigram
+
+52
+00:05:05,170 --> 00:05:07,390
+the Ingram probability this is a bigram probability so what's the next word
+
+53
+00:05:07,390 --> 00:05:09,340
+probability so what's the next word going to be given the previous world and
+
+54
+00:05:09,340 --> 00:05:12,160
+going to be given the previous world and this is what is the next word given the
+
+55
+00:05:12,160 --> 00:05:13,150
+this is what is the next word given the previous two words
+
+56
+00:05:13,150 --> 00:05:17,860
+previous two words so we can train a model like that given
+
+57
+00:05:17,860 --> 00:05:22,260
+so we can train a model like that given data and do some circuit elementary
+
+58
+00:05:22,260 --> 00:05:23,380
+data and do some circuit elementary statistics
+
+59
+00:05:23,380 --> 00:05:26,860
+statistics with some prior modeling to do that this
+
+60
+00:05:26,860 --> 00:05:28,360
+with some prior modeling to do that this is an essential problem if you are
+
+61
+00:05:28,360 --> 00:05:31,420
+is an essential problem if you are interested to complete the sentence if
+
+62
+00:05:31,420 --> 00:05:33,370
+interested to complete the sentence if you want to compress basically text and
+
+63
+00:05:33,370 --> 00:05:36,040
+you want to compress basically text and also if you want to write automatically
+
+64
+00:05:36,040 --> 00:05:39,159
+also if you want to write automatically without you know any interference from a
+
+65
+00:05:39,159 --> 00:05:41,920
+without you know any interference from a human you want to write in a stay which
+
+66
+00:05:41,920 --> 00:05:44,170
+human you want to write in a stay which of course may not be reading anything
+
+67
+00:05:44,170 --> 00:05:45,550
+of course may not be reading anything but you know if you want anything
+
+68
+00:05:45,550 --> 00:05:49,980
+but you know if you want anything somebody will buy okay so this is
+
+69
+00:05:49,980 --> 00:05:53,980
+somebody will buy okay so this is textbook all right some missed an
+
+70
+00:05:53,980 --> 00:05:56,020
+textbook all right some missed an example of this probabilities of the
+
+71
+00:05:56,020 --> 00:05:58,930
+example of this probabilities of the Engram probabilities for the different
+
+72
+00:05:58,930 --> 00:06:03,550
+Engram probabilities for the different letters they enjoyed in the alphabet and
+
+73
+00:06:03,550 --> 00:06:06,340
+letters they enjoyed in the alphabet and the first letter is basically implies
+
+74
+00:06:06,340 --> 00:06:09,520
+the first letter is basically implies nothing unknown so as timber basically
+
+75
+00:06:09,520 --> 00:06:11,890
+nothing unknown so as timber basically doesn't exist within those symbols this
+
+76
+00:06:11,890 --> 00:06:13,719
+doesn't exist within those symbols this is the Biograph probabilities to
+
+77
+00:06:13,719 --> 00:06:16,240
+is the Biograph probabilities to transition from one letter to another
+
+78
+00:06:16,240 --> 00:06:20,320
+transition from one letter to another the biggest this white spaces the high
+
+79
+00:06:20,320 --> 00:06:22,210
+the biggest this white spaces the high of this probability door so this is sort
+
+80
+00:06:22,210 --> 00:06:25,379
+of this probability door so this is sort of like a kingdom diagram
+
+81
+00:06:25,379 --> 00:06:27,270
+of like a kingdom diagram so we're going to have trick to the
+
+82
+00:06:27,270 --> 00:06:30,839
+so we're going to have trick to the mathematical problem and we will try to
+
+83
+00:06:30,839 --> 00:06:33,089
+mathematical problem and we will try to explain this in the context of sentences
+
+84
+00:06:33,089 --> 00:06:35,850
+explain this in the context of sentences the algebra but a very sort of universal
+
+85
+00:06:35,850 --> 00:06:38,189
+the algebra but a very sort of universal even for hidden Markov models that he
+
+86
+00:06:38,189 --> 00:06:40,140
+even for hidden Markov models that he understands this we can understand a
+
+87
+00:06:40,140 --> 00:06:45,050
+understands this we can understand a little bit more complex pro model the
+
+88
+00:06:45,050 --> 00:06:47,339
+little bit more complex pro model the Markov chain is rather hidden Markov
+
+89
+00:06:47,339 --> 00:06:50,279
+Markov chain is rather hidden Markov model right so we have it's a next Ronix
+
+90
+00:06:50,279 --> 00:06:53,879
+model right so we have it's a next Ronix to our X capital T so using conditional
+
+91
+00:06:53,879 --> 00:06:55,770
+to our X capital T so using conditional independence relations we like this like
+
+92
+00:06:55,770 --> 00:07:00,510
+independence relations we like this like that this is the probability of the
+
+93
+00:07:00,510 --> 00:07:03,629
+that this is the probability of the initial state so this is given and this
+
+94
+00:07:03,629 --> 00:07:05,070
+initial state so this is given and this of the transition probabilities from
+
+95
+00:07:05,070 --> 00:07:08,999
+of the transition probabilities from state X want you to XT minus 1 to X T
+
+96
+00:07:08,999 --> 00:07:11,519
+state X want you to XT minus 1 to X T and I can run a test in a much nicer
+
+97
+00:07:11,519 --> 00:07:14,010
+and I can run a test in a much nicer format the way that you see on the third
+
+98
+00:07:14,010 --> 00:07:16,200
+format the way that you see on the third lines I want you to pay close attention
+
+99
+00:07:16,200 --> 00:07:19,320
+lines I want you to pay close attention because sort of the notation is very
+
+100
+00:07:19,320 --> 00:07:22,129
+because sort of the notation is very standard these are many other problems
+
+101
+00:07:22,129 --> 00:07:25,559
+standard these are many other problems for mixed models and and the like so you
+
+102
+00:07:25,559 --> 00:07:27,749
+for mixed models and and the like so you know this is a standard way to write the
+
+103
+00:07:27,749 --> 00:07:30,329
+know this is a standard way to write the joint probability distribution given the
+
+104
+00:07:30,329 --> 00:07:32,279
+joint probability distribution given the parameters and parameters here referring
+
+105
+00:07:32,279 --> 00:07:35,279
+parameters and parameters here referring to the probability the initial
+
+106
+00:07:35,279 --> 00:07:36,930
+to the probability the initial probabilities of being upstaged a and
+
+107
+00:07:36,930 --> 00:07:40,010
+probabilities of being upstaged a and the transition probabilities may carry
+
+108
+00:07:40,010 --> 00:07:44,570
+the transition probabilities may carry transitioning from state a to state K so
+
+109
+00:07:44,570 --> 00:07:47,659
+transitioning from state a to state K so look at this again does this make sense
+
+110
+00:07:47,659 --> 00:07:54,620
+look at this again does this make sense is this the same as what we see up there
+
+111
+00:07:54,620 --> 00:07:54,630
+
+
+112
+00:07:54,630 --> 00:07:59,570
+so how do you understand can't see the probability of x1 now this is written
+
+113
+00:07:59,570 --> 00:08:04,970
+probability of x1 now this is written like that so what does not mean the big
+
+114
+00:08:04,970 --> 00:08:07,070
+like that so what does not mean the big is the indicator function right so it's
+
+115
+00:08:07,070 --> 00:08:09,680
+is the indicator function right so it's Rondo and the argument is school zero
+
+116
+00:08:09,680 --> 00:08:10,400
+Rondo and the argument is school zero otherwise
+
+117
+00:08:10,400 --> 00:08:14,870
+otherwise so as this don't do here addiction is on
+
+118
+00:08:14,870 --> 00:08:17,960
+so as this don't do here addiction is on state one right then I have a space for
+
+119
+00:08:17,960 --> 00:08:20,540
+state one right then I have a space for a lot of times
+
+120
+00:08:20,540 --> 00:08:28,040
+a lot of times so if x1 is equal to let's say is the
+
+121
+00:08:28,040 --> 00:08:31,490
+so if x1 is equal to let's say is the state Z so this time what will give me
+
+122
+00:08:31,490 --> 00:08:37,250
+state Z so this time what will give me you will give me PJ and if x1 isn't a
+
+123
+00:08:37,250 --> 00:08:39,710
+you will give me PJ and if x1 isn't a means x1 is not in all the other states
+
+124
+00:08:39,710 --> 00:08:42,170
+means x1 is not in all the other states so if this process all the attempts will
+
+125
+00:08:42,170 --> 00:08:44,660
+so if this process all the attempts will give me basically a power of 0 which
+
+126
+00:08:44,660 --> 00:08:49,040
+give me basically a power of 0 which will result to 1 okay all right so this
+
+127
+00:08:49,040 --> 00:09:03,730
+will result to 1 okay all right so this is the way to write P of x1 and
+
+128
+00:09:03,730 --> 00:09:03,740
+
+
+129
+00:09:03,740 --> 00:09:08,930
+sentences each with length T all right so this is the one would say in tax but
+
+130
+00:09:08,930 --> 00:09:13,070
+so this is the one would say in tax but has okay so this is a point remove a
+
+131
+00:09:13,070 --> 00:09:15,890
+has okay so this is a point remove a sequence this is a beautiful in the
+
+132
+00:09:15,890 --> 00:09:18,620
+sequence this is a beautiful in the states of J and K and this probability
+
+133
+00:09:18,620 --> 00:09:20,540
+states of J and K and this probability of transitions to say JK to this
+
+134
+00:09:20,540 --> 00:09:23,180
+of transitions to say JK to this indicator function transitioning from J
+
+135
+00:09:23,180 --> 00:09:32,810
+indicator function transitioning from J of T minus 1 to K and what interested to
+
+136
+00:09:32,810 --> 00:09:35,330
+of T minus 1 to K and what interested to compute a JK I mean most of the things
+
+137
+00:09:35,330 --> 00:09:37,690
+compute a JK I mean most of the things we have done up to now we assume that
+
+138
+00:09:37,690 --> 00:09:40,520
+we have done up to now we assume that this parameters are known now we don't
+
+139
+00:09:40,520 --> 00:09:42,710
+this parameters are known now we don't know these parameters and we're going to
+
+140
+00:09:42,710 --> 00:09:46,550
+know these parameters and we're going to compute them from data so interesting
+
+141
+00:09:46,550 --> 00:09:49,820
+compute them from data so interesting here will be
+
+142
+00:09:49,820 --> 00:09:53,510
+here will be this one will it's a sequence of words
+
+143
+00:09:53,510 --> 00:09:56,330
+this one will it's a sequence of words of lengthy but now I'm going to have any
+
+144
+00:09:56,330 --> 00:09:59,290
+of lengthy but now I'm going to have any sequence of words each of them having
+
+145
+00:09:59,290 --> 00:10:04,400
+sequence of words each of them having length all right so I'm going to
+
+146
+00:10:04,400 --> 00:10:08,120
+length all right so I'm going to basically text of different lengths so
+
+147
+00:10:08,120 --> 00:10:11,960
+basically text of different lengths so x1 we have a lengthy one words executed
+
+148
+00:10:11,960 --> 00:10:15,650
+x1 we have a lengthy one words executed 2 etc but if you not you can take that
+
+149
+00:10:15,650 --> 00:10:17,060
+2 etc but if you not you can take that the length of each of this is the same
+
+150
+00:10:17,060 --> 00:10:26,660
+the length of each of this is the same so the is given semester of the logs i
+
+151
+00:10:26,660 --> 00:10:29,210
+so the is given semester of the logs i given theta and i'm making it like that
+
+152
+00:10:29,210 --> 00:10:31,490
+given theta and i'm making it like that so i want you to look hard from this
+
+153
+00:10:31,490 --> 00:10:34,930
+so i want you to look hard from this equation the third line a went to the
+
+154
+00:10:34,930 --> 00:10:40,510
+equation the third line a went to the nothing to it questions this make sense
+
+155
+00:10:40,510 --> 00:10:40,520
+
+
+156
+00:10:40,520 --> 00:10:45,980
+to describe estimation ferrymen which is all my data sets i push it in the works
+
+157
+00:10:45,980 --> 00:10:49,310
+all my data sets i push it in the works okay and I left the summation so maybe
+
+158
+00:10:49,310 --> 00:10:51,230
+okay and I left the summation so maybe people books this progress ever becomes
+
+159
+00:10:51,230 --> 00:10:53,360
+people books this progress ever becomes summation right so I first destination
+
+160
+00:10:53,360 --> 00:10:56,720
+summation right so I first destination over the states outside and this
+
+161
+00:10:56,720 --> 00:10:58,610
+over the states outside and this summation over the data sets they push
+
+162
+00:10:58,610 --> 00:11:01,490
+summation over the data sets they push it inside should I get on this term I
+
+163
+00:11:01,490 --> 00:11:05,030
+it inside should I get on this term I get this all right and in this term I'm
+
+164
+00:11:05,030 --> 00:11:07,130
+get this all right and in this term I'm going to push the summation over n an
+
+165
+00:11:07,130 --> 00:11:09,730
+going to push the summation over n an estimation over the length of verse
+
+166
+00:11:09,730 --> 00:11:13,220
+estimation over the length of verse sentences inside and then the
+
+167
+00:11:13,220 --> 00:11:15,950
+sentences inside and then the estimations over the states I will leave
+
+168
+00:11:15,950 --> 00:11:19,970
+estimations over the states I will leave them outside and the usually not missus
+
+169
+00:11:19,970 --> 00:11:25,460
+them outside and the usually not missus blaze what I mean is I'm colorblind so
+
+170
+00:11:25,460 --> 00:11:27,380
+blaze what I mean is I'm colorblind so it's not like I'm doing it because I
+
+171
+00:11:27,380 --> 00:11:30,890
+it's not like I'm doing it because I enjoy a lot right so what's the reason
+
+172
+00:11:30,890 --> 00:11:35,660
+enjoy a lot right so what's the reason we mark them for a reason here so what
+
+173
+00:11:35,660 --> 00:11:39,350
+we mark them for a reason here so what you see this mr. blue colors what are
+
+174
+00:11:39,350 --> 00:11:41,270
+you see this mr. blue colors what are they for this nation of the parameters
+
+175
+00:11:41,270 --> 00:11:44,480
+they for this nation of the parameters theta Mr mouse won't know whether we
+
+176
+00:11:44,480 --> 00:11:47,330
+theta Mr mouse won't know whether we gonna call this
+
+177
+00:11:47,330 --> 00:11:47,340
+
+
+178
+00:11:47,340 --> 00:11:52,880
+this is where the information from the data comes so in estimating this part of
+
+179
+00:11:52,880 --> 00:11:55,280
+data comes so in estimating this part of the speed day and alpha JK the only
+
+180
+00:11:55,280 --> 00:11:56,810
+the speed day and alpha JK the only information we need this to know this
+
+181
+00:11:56,810 --> 00:12:01,610
+information we need this to know this quantity this can be so rapidly how do
+
+182
+00:12:01,610 --> 00:12:08,900
+quantity this can be so rapidly how do we call them
+
+183
+00:12:08,900 --> 00:12:08,910
+
+
+184
+00:12:08,910 --> 00:12:14,210
+well in principle evidence dissolve this right this is the evidence of the day
+
+185
+00:12:14,210 --> 00:12:17,960
+right this is the evidence of the day cow so but the very top the bank as
+
+186
+00:12:17,960 --> 00:12:21,770
+cow so but the very top the bank as independent entities excise a right they
+
+187
+00:12:21,770 --> 00:12:24,200
+independent entities excise a right they come in making the parameters theta
+
+188
+00:12:24,200 --> 00:12:29,630
+come in making the parameters theta inside those big summations by anything
+
+189
+00:12:29,630 --> 00:12:31,880
+inside those big summations by anything we need to know the individual data we
+
+190
+00:12:31,880 --> 00:12:33,950
+we need to know the individual data we need to know these summations so this
+
+191
+00:12:33,950 --> 00:12:37,010
+need to know these summations so this summation is in blue or what mister
+
+192
+00:12:37,010 --> 00:12:40,910
+summation is in blue or what mister patient statistics so you will need this
+
+193
+00:12:40,910 --> 00:12:45,470
+patient statistics so you will need this to know this blue quantities so I am
+
+194
+00:12:45,470 --> 00:12:47,720
+to know this blue quantities so I am going to Congress than j1 and I'm gonna
+
+195
+00:12:47,720 --> 00:12:50,390
+going to Congress than j1 and I'm gonna call this and JK so which words can you
+
+196
+00:12:50,390 --> 00:12:52,970
+call this and JK so which words can you tell me what isn't anyone so looking at
+
+197
+00:12:52,970 --> 00:12:55,340
+tell me what isn't anyone so looking at this body that's you know miss baptize
+
+198
+00:12:55,340 --> 00:12:58,520
+this body that's you know miss baptize it something and j1 because there's a J
+
+199
+00:12:58,520 --> 00:13:01,250
+it something and j1 because there's a J there there's no I I'm summing Ally and
+
+200
+00:13:01,250 --> 00:13:03,890
+there there's no I I'm summing Ally and because this refers to state 1 Americas
+
+201
+00:13:03,890 --> 00:13:07,280
+because this refers to state 1 Americas and J 1 so what is this in words what
+
+202
+00:13:07,280 --> 00:13:13,640
+and J 1 so what is this in words what sends L 1 I mean obviously mister
+
+203
+00:13:13,640 --> 00:13:15,710
+sends L 1 I mean obviously mister indicator function some looking at all
+
+204
+00:13:15,710 --> 00:13:19,700
+indicator function some looking at all the data all right and I'm accounting in
+
+205
+00:13:19,700 --> 00:13:22,010
+the data all right and I'm accounting in my data set so I have n of laws and
+
+206
+00:13:22,010 --> 00:13:24,080
+my data set so I have n of laws and sultans this arm accounting how many
+
+207
+00:13:24,080 --> 00:13:32,580
+sultans this arm accounting how many times what
+
+208
+00:13:32,580 --> 00:13:32,590
+
+
+209
+00:13:32,590 --> 00:13:41,190
+the first segment is on the web state we should take one and I'ma counting how
+
+210
+00:13:41,190 --> 00:13:45,480
+should take one and I'ma counting how many times the state one is or what one
+
+211
+00:13:45,480 --> 00:13:52,260
+many times the state one is or what one say some particular Makati how many
+
+212
+00:13:52,260 --> 00:13:54,930
+say some particular Makati how many times the first and the first world in
+
+213
+00:13:54,930 --> 00:13:57,620
+times the first and the first world in the end documents is that particular war
+
+214
+00:13:57,620 --> 00:14:03,150
+the end documents is that particular war okay this is again next refers to the
+
+215
+00:14:03,150 --> 00:14:05,700
+okay this is again next refers to the data thirds right this is the state one
+
+216
+00:14:05,700 --> 00:14:08,579
+data thirds right this is the state one of each of the sentences I remind you x1
+
+217
+00:14:08,579 --> 00:14:12,810
+of each of the sentences I remind you x1 is a sentence of length TI all right
+
+218
+00:14:12,810 --> 00:14:15,750
+is a sentence of length TI all right x10 is another long sentence of words of
+
+219
+00:14:15,750 --> 00:14:19,710
+x10 is another long sentence of words of length T I am okay to capitulate all
+
+220
+00:14:19,710 --> 00:14:22,380
+length T I am okay to capitulate all right what is the symbol now what is
+
+221
+00:14:22,380 --> 00:14:24,930
+right what is the symbol now what is this sufficient statistic so I'm coming
+
+222
+00:14:24,930 --> 00:14:30,200
+this sufficient statistic so I'm coming over other data over all the words in it
+
+223
+00:14:30,200 --> 00:14:33,690
+over other data over all the words in it data set in each of this X 1 to X
+
+224
+00:14:33,690 --> 00:14:36,090
+data set in each of this X 1 to X capital N and I'm accounting work in
+
+225
+00:14:36,090 --> 00:14:41,460
+capital N and I'm accounting work in those sentences some accounting in all
+
+226
+00:14:41,460 --> 00:14:45,360
+those sentences some accounting in all my data how many times a time T I was
+
+227
+00:14:45,360 --> 00:14:48,480
+my data how many times a time T I was from state J and the time T plus 1 I was
+
+228
+00:14:48,480 --> 00:14:53,340
+from state J and the time T plus 1 I was of state K all right so we have two
+
+229
+00:14:53,340 --> 00:14:57,870
+of state K all right so we have two versions right how many times the pay T
+
+230
+00:14:57,870 --> 00:15:01,050
+versions right how many times the pay T was the what J and how many times the
+
+231
+00:15:01,050 --> 00:15:03,120
+was the what J and how many times the stated most one simultaneously was on
+
+232
+00:15:03,120 --> 00:15:10,590
+stated most one simultaneously was on state K I can the log-likelihood as
+
+233
+00:15:10,590 --> 00:15:13,320
+state K I can the log-likelihood as these sufficient statistic times without
+
+234
+00:15:13,320 --> 00:15:16,800
+these sufficient statistic times without sufficient statistic and I do alright I
+
+235
+00:15:16,800 --> 00:15:18,240
+sufficient statistic and I do alright I don't have time to go through the
+
+236
+00:15:18,240 --> 00:15:20,579
+don't have time to go through the algebra but I want you to look sort of
+
+237
+00:15:20,579 --> 00:15:21,240
+algebra but I want you to look sort of visual
+
+238
+00:15:21,240 --> 00:15:25,410
+visual we do now to find the parameters by Jay
+
+239
+00:15:25,410 --> 00:15:28,999
+we do now to find the parameters by Jay and DJ Kay this is sort of a generic
+
+240
+00:15:28,999 --> 00:15:30,929
+and DJ Kay this is sort of a generic inference problem called discrete
+
+241
+00:15:30,929 --> 00:15:34,050
+inference problem called discrete distributions so you should have some
+
+242
+00:15:34,050 --> 00:15:36,540
+distributions so you should have some good idea on how to do this so how do
+
+243
+00:15:36,540 --> 00:15:38,429
+good idea on how to do this so how do you compute this power that speeds Aryan
+
+244
+00:15:38,429 --> 00:15:50,610
+you compute this power that speeds Aryan alpha DK I give you the results are
+
+245
+00:15:50,610 --> 00:15:58,740
+alpha DK I give you the results are coming in my model maximizing the
+
+246
+00:15:58,740 --> 00:16:00,030
+coming in my model maximizing the evidence cause we're gonna take
+
+247
+00:16:00,030 --> 00:16:02,040
+evidence cause we're gonna take derivatives with respect to Phi J and
+
+248
+00:16:02,040 --> 00:16:06,210
+derivatives with respect to Phi J and alpha J carry in taking the remnants of
+
+249
+00:16:06,210 --> 00:16:08,429
+alpha J carry in taking the remnants of this with respect to Phi J you also have
+
+250
+00:16:08,429 --> 00:16:10,019
+this with respect to Phi J you also have to enhance this with something else
+
+251
+00:16:10,019 --> 00:16:12,449
+to enhance this with something else because the PI J's are not independent
+
+252
+00:16:12,449 --> 00:16:16,230
+because the PI J's are not independent of each other if you take the sum over I
+
+253
+00:16:16,230 --> 00:16:25,110
+of each other if you take the sum over I mean at some state so the terrified
+
+254
+00:16:25,110 --> 00:16:28,920
+mean at some state so the terrified zatia's to be equal to one alright so
+
+255
+00:16:28,920 --> 00:16:30,629
+zatia's to be equal to one alright so that we need to do is we need to send
+
+256
+00:16:30,629 --> 00:16:32,759
+that we need to do is we need to send additional grants multiplier to enforce
+
+257
+00:16:32,759 --> 00:16:35,040
+additional grants multiplier to enforce the children gonna have to add here a
+
+258
+00:16:35,040 --> 00:16:38,189
+the children gonna have to add here a term 1/2 times the summation of the Phi
+
+259
+00:16:38,189 --> 00:16:42,110
+term 1/2 times the summation of the Phi J's for take will run to K - Ronnie
+
+260
+00:16:42,110 --> 00:16:47,960
+J's for take will run to K - Ronnie right
+
+261
+00:16:47,960 --> 00:16:47,970
+
+
+262
+00:16:47,970 --> 00:16:54,119
+and we take also vary with respect to PI J including the term you will get this
+
+263
+00:16:54,119 --> 00:16:56,189
+J including the term you will get this and partial derivative with respect to a
+
+264
+00:16:56,189 --> 00:17:00,179
+and partial derivative with respect to a JK you will get that the business will
+
+265
+00:17:00,179 --> 00:17:02,309
+JK you will get that the business will collapse this are central to the obvious
+
+266
+00:17:02,309 --> 00:17:05,159
+collapse this are central to the obvious answer so you say I do not have to do
+
+267
+00:17:05,159 --> 00:17:06,689
+answer so you say I do not have to do any calculations because I know what the
+
+268
+00:17:06,689 --> 00:17:08,970
+any calculations because I know what the answer is going to be but obviously we
+
+269
+00:17:08,970 --> 00:17:10,620
+answer is going to be but obviously we need this methodology for more complex
+
+270
+00:17:10,620 --> 00:17:13,340
+need this methodology for more complex problems so with this project
+
+271
+00:17:13,340 --> 00:17:15,600
+problems so with this project what was the physical meaning offends
+
+272
+00:17:15,600 --> 00:17:18,820
+what was the physical meaning offends anyone again
+
+273
+00:17:18,820 --> 00:17:18,830
+
+
+274
+00:17:18,830 --> 00:17:26,530
+there is how many times in my data sets the step one was upwards I divide it by
+
+275
+00:17:26,530 --> 00:17:29,590
+the step one was upwards I divide it by how many times I was on anything on
+
+276
+00:17:29,590 --> 00:17:33,730
+how many times I was on anything on state one let's take one red one okay
+
+277
+00:17:33,730 --> 00:17:37,690
+state one let's take one red one okay and counting how many times to hit
+
+278
+00:17:37,690 --> 00:17:40,170
+and counting how many times to hit transitions from state day to carry
+
+279
+00:17:40,170 --> 00:17:44,830
+transitions from state day to carry visitors you know how many times I have
+
+280
+00:17:44,830 --> 00:17:49,930
+visitors you know how many times I have transitioned from as a to whatever okay
+
+281
+00:17:49,930 --> 00:17:54,160
+transitioned from as a to whatever okay it is really significant transitions
+
+282
+00:17:54,160 --> 00:17:56,530
+it is really significant transitions from the people to whatever active comm
+
+283
+00:17:56,530 --> 00:18:00,040
+from the people to whatever active comm transitions from stage a is this the
+
+284
+00:18:00,040 --> 00:18:02,410
+transitions from stage a is this the normalization factor from j2 anything
+
+285
+00:18:02,410 --> 00:18:05,110
+normalization factor from j2 anything else so actually to make it sort of more
+
+286
+00:18:05,110 --> 00:18:07,450
+else so actually to make it sort of more nice and looking at you put the K prime
+
+287
+00:18:07,450 --> 00:18:17,860
+nice and looking at you put the K prime there and K Prime this result okay this
+
+288
+00:18:17,860 --> 00:18:20,380
+there and K Prime this result okay this models are computationally very
+
+289
+00:18:20,380 --> 00:18:24,570
+models are computationally very difficult to work with because we
+
+290
+00:18:24,570 --> 00:18:30,210
+difficult to work with because we introduced this probabilities that you
+
+291
+00:18:30,210 --> 00:18:33,160
+introduced this probabilities that you here for improve immediately basically
+
+292
+00:18:33,160 --> 00:18:36,400
+here for improve immediately basically like what we did with the inference from
+
+293
+00:18:36,400 --> 00:18:38,950
+like what we did with the inference from with the parameter estimation problem
+
+294
+00:18:38,950 --> 00:18:40,900
+with the parameter estimation problem how many parameters we have just to make
+
+295
+00:18:40,900 --> 00:18:46,260
+how many parameters we have just to make theory each of the states it's K
+
+296
+00:18:46,260 --> 00:18:46,270
+
+
+297
+00:18:46,270 --> 00:18:53,080
+the message saying that we computed how many years if this is K and K T squared
+
+298
+00:18:53,080 --> 00:18:57,010
+many years if this is K and K T squared all right so if you have an engine
+
+299
+00:18:57,010 --> 00:19:01,000
+all right so if you have an engine community this will be K to the power n
+
+300
+00:19:01,000 --> 00:19:02,320
+community this will be K to the power n so this is computationally very
+
+301
+00:19:02,320 --> 00:19:06,610
+so this is computationally very expensive and the wrong data sets and I
+
+302
+00:19:06,610 --> 00:19:09,940
+expensive and the wrong data sets and I was moving actually the other day so one
+
+303
+00:19:09,940 --> 00:19:12,220
+was moving actually the other day so one of those later says but you can download
+
+304
+00:19:12,220 --> 00:19:17,170
+of those later says but you can download as 30,000 words and the number of profit
+
+305
+00:19:17,170 --> 00:19:18,910
+as 30,000 words and the number of profit is basically to calibrate the model and
+
+306
+00:19:18,910 --> 00:19:21,220
+is basically to calibrate the model and this term diagram model is 2.5 billion
+
+307
+00:19:21,220 --> 00:19:25,360
+this term diagram model is 2.5 billion parameters actually this is not trivial
+
+308
+00:19:25,360 --> 00:19:29,110
+parameters actually this is not trivial because you know the model is not
+
+309
+00:19:29,110 --> 00:19:42,880
+because you know the model is not computationally expensive so it's not we
+
+310
+00:19:42,880 --> 00:19:46,060
+computationally expensive so it's not we need to go away from maximizing the
+
+311
+00:19:46,060 --> 00:19:48,310
+need to go away from maximizing the likelihood of the data and maybe do
+
+312
+00:19:48,310 --> 00:19:50,560
+likelihood of the data and maybe do something Bayesian here so this can be
+
+313
+00:19:50,560 --> 00:19:55,180
+something Bayesian here so this can be give me the situation where the model
+
+314
+00:19:55,180 --> 00:19:59,680
+give me the situation where the model that we discussed will not work so you
+
+315
+00:19:59,680 --> 00:20:02,080
+that we discussed will not work so you have the Italian the data with a few
+
+316
+00:20:02,080 --> 00:20:05,610
+have the Italian the data with a few sentences that contain a few words and
+
+317
+00:20:05,610 --> 00:20:09,190
+sentences that contain a few words and and you know we computed transition
+
+318
+00:20:09,190 --> 00:20:12,100
+and you know we computed transition probabilities you know and obviously you
+
+319
+00:20:12,100 --> 00:20:14,020
+probabilities you know and obviously you can do predictions you know you can and
+
+320
+00:20:14,020 --> 00:20:16,420
+can do predictions you know you can and I will do it actually hopefully in a few
+
+321
+00:20:16,420 --> 00:20:18,610
+I will do it actually hopefully in a few minutes you can predict what the next
+
+322
+00:20:18,610 --> 00:20:21,430
+minutes you can predict what the next word is going to be but why do we need
+
+323
+00:20:21,430 --> 00:20:24,610
+word is going to be but why do we need to do Bayesian rather much more likely
+
+324
+00:20:24,610 --> 00:20:31,030
+to do Bayesian rather much more likely if it's there in the specific mode of
+
+325
+00:20:31,030 --> 00:20:32,730
+if it's there in the specific mode of the language model what can go wrong
+
+326
+00:20:32,730 --> 00:20:43,640
+the language model what can go wrong with family
+
+327
+00:20:43,640 --> 00:20:43,650
+
+
+328
+00:20:43,650 --> 00:20:48,170
+so that we would say in the training sentences which is missing would you
+
+329
+00:20:48,170 --> 00:20:51,650
+sentences which is missing would you ever be able to predict that work no
+
+330
+00:20:51,650 --> 00:20:55,130
+ever be able to predict that work no okay so obviously there are lots of
+
+331
+00:20:55,130 --> 00:20:57,260
+okay so obviously there are lots of tricks you can go about this all right
+
+332
+00:20:57,260 --> 00:20:59,990
+tricks you can go about this all right and they go with different names but I'm
+
+333
+00:20:59,990 --> 00:21:02,060
+and they go with different names but I'm gonna show you briefly on how we can do
+
+334
+00:21:02,060 --> 00:21:05,990
+gonna show you briefly on how we can do a 20 million population but let me just
+
+335
+00:21:05,990 --> 00:21:16,280
+a 20 million population but let me just put all of these things up here in the
+
+336
+00:21:16,280 --> 00:21:23,810
+put all of these things up here in the estimation you in the when we estimated
+
+337
+00:21:23,810 --> 00:21:26,480
+estimation you in the when we estimated this parameter say we defined basically
+
+338
+00:21:26,480 --> 00:21:30,650
+this parameter say we defined basically the MLE estimate as being n JK / MJ in
+
+339
+00:21:30,650 --> 00:21:33,260
+the MLE estimate as being n JK / MJ in science basically the transitions from J
+
+340
+00:21:33,260 --> 00:21:35,419
+science basically the transitions from J to anything else and when you sum the
+
+341
+00:21:35,419 --> 00:21:38,390
+to anything else and when you sum the mjk whole case you get we do know this
+
+342
+00:21:38,390 --> 00:21:43,630
+mjk whole case you get we do know this as n sorry right so a way to fix
+
+343
+00:21:43,630 --> 00:21:45,950
+as n sorry right so a way to fix whatever problems you have with Emily is
+
+344
+00:21:45,950 --> 00:21:47,060
+whatever problems you have with Emily is irrelevant
+
+345
+00:21:47,060 --> 00:21:49,669
+irrelevant taking the Emily estimate for a JK use
+
+346
+00:21:49,669 --> 00:21:54,140
+taking the Emily estimate for a JK use some weighted average of what you
+
+347
+00:21:54,140 --> 00:21:59,330
+some weighted average of what you completely with Emily and also the K
+
+348
+00:21:59,330 --> 00:22:03,530
+completely with Emily and also the K where things NK divided by L so here
+
+349
+00:22:03,530 --> 00:22:05,419
+where things NK divided by L so here we're interested in the transitions from
+
+350
+00:22:05,419 --> 00:22:09,169
+we're interested in the transitions from Zeta K but this term does what it
+
+351
+00:22:09,169 --> 00:22:11,960
+Zeta K but this term does what it accounts for many times I see the word
+
+352
+00:22:11,960 --> 00:22:16,720
+accounts for many times I see the word cake it doesn't really care about
+
+353
+00:22:16,720 --> 00:22:17,980
+cake it doesn't really care about transitions
+
+354
+00:22:17,980 --> 00:22:22,970
+transitions okay so and this is you select Atlanta
+
+355
+00:22:22,970 --> 00:22:26,030
+okay so and this is you select Atlanta cross validation so this is not Bayesian
+
+356
+00:22:26,030 --> 00:22:28,340
+cross validation so this is not Bayesian we will see how possibly we can get
+
+357
+00:22:28,340 --> 00:22:29,870
+we will see how possibly we can get something like that with a basin
+
+358
+00:22:29,870 --> 00:22:33,169
+something like that with a basin formulation okay so this is called the
+
+359
+00:22:33,169 --> 00:22:35,540
+formulation okay so this is called the style version is called the belt
+
+360
+00:22:35,540 --> 00:22:40,940
+style version is called the belt smoothing okay where anyone taking the
+
+361
+00:22:40,940 --> 00:22:42,830
+smoothing okay where anyone taking the MLE estimate we take a weighted average
+
+362
+00:22:42,830 --> 00:22:45,980
+MLE estimate we take a weighted average of the Emily estimate or diagonally
+
+363
+00:22:45,980 --> 00:22:49,160
+of the Emily estimate or diagonally consists and also lambda times of cake
+
+364
+00:22:49,160 --> 00:22:51,730
+consists and also lambda times of cake where this is the unit of frequencies
+
+365
+00:22:51,730 --> 00:22:55,000
+where this is the unit of frequencies which is NK / yeah all right so let's
+
+366
+00:22:55,000 --> 00:22:58,210
+which is NK / yeah all right so let's take how we get the measure model for
+
+367
+00:22:58,210 --> 00:22:59,740
+take how we get the measure model for this let me put all of this thing up
+
+368
+00:22:59,740 --> 00:23:03,400
+this let me put all of this thing up actually this is very simple but assumes
+
+369
+00:23:03,400 --> 00:23:05,580
+actually this is very simple but assumes that you know something about different
+
+370
+00:23:05,580 --> 00:23:10,180
+that you know something about different distributions as prior so this is the
+
+371
+00:23:10,180 --> 00:23:18,490
+distributions as prior so this is the situation and this is the matrix a that
+
+372
+00:23:18,490 --> 00:23:20,440
+situation and this is the matrix a that is being stirred by all my observations
+
+373
+00:23:20,440 --> 00:23:23,350
+is being stirred by all my observations so that's why you see these links like
+
+374
+00:23:23,350 --> 00:23:27,160
+so that's why you see these links like that and each of this is the first in
+
+375
+00:23:27,160 --> 00:23:31,840
+that and each of this is the first in the a matrix so if you think this will
+
+376
+00:23:31,840 --> 00:23:33,700
+the a matrix so if you think this will give me the probabilities to transition
+
+377
+00:23:33,700 --> 00:23:37,720
+give me the probabilities to transition from one to state to state one from one
+
+378
+00:23:37,720 --> 00:23:39,700
+from one to state to state one from one to clear from one two three one two
+
+379
+00:23:39,700 --> 00:23:42,460
+to clear from one two three one two three etc so the sum of these things is
+
+380
+00:23:42,460 --> 00:23:45,490
+three etc so the sum of these things is equal to 1 okay
+
+381
+00:23:45,490 --> 00:23:48,040
+equal to 1 okay so then this will give you the
+
+382
+00:23:48,040 --> 00:23:54,790
+so then this will give you the transition from you know the one - okay
+
+383
+00:23:54,790 --> 00:23:58,810
+transition from you know the one - okay and so I'm going to take the pitch of
+
+384
+00:23:58,810 --> 00:24:06,250
+and so I'm going to take the pitch of this Rose amethyst and then I'm going to
+
+385
+00:24:06,250 --> 00:24:09,220
+this Rose amethyst and then I'm going to do is I am going to put a on each of
+
+386
+00:24:09,220 --> 00:24:11,950
+do is I am going to put a on each of these rows okay and this one is going to
+
+387
+00:24:11,950 --> 00:24:14,940
+these rows okay and this one is going to be the declare distribution that looks
+
+388
+00:24:14,940 --> 00:24:21,310
+be the declare distribution that looks the way that you see here the distance
+
+389
+00:24:21,310 --> 00:24:23,710
+the way that you see here the distance basically from silty clay have been
+
+390
+00:24:23,710 --> 00:24:26,320
+basically from silty clay have been written in an interesting way where I
+
+391
+00:24:26,320 --> 00:24:31,660
+written in an interesting way where I have the time you know it's not from the
+
+392
+00:24:31,660 --> 00:24:33,970
+have the time you know it's not from the details but basically a 0 comes
+
+393
+00:24:33,970 --> 00:24:36,340
+details but basically a 0 comes everywhere then I have M 0 2 and carry
+
+394
+00:24:36,340 --> 00:24:39,100
+everywhere then I have M 0 2 and carry so this is if you can take the mean of
+
+395
+00:24:39,100 --> 00:24:41,320
+so this is if you can take the mean of this declare distribution the mean comes
+
+396
+00:24:41,320 --> 00:24:44,830
+this declare distribution the mean comes to the N ok and the strength of which is
+
+397
+00:24:44,830 --> 00:24:48,840
+to the N ok and the strength of which is defined by this coefficient of 0 okay so
+
+398
+00:24:48,840 --> 00:24:50,130
+defined by this coefficient of 0 okay so so
+
+399
+00:24:50,130 --> 00:24:57,990
+let's see what this is going to do some of these min satisfies the stomach
+
+400
+00:24:57,990 --> 00:25:03,210
+of these min satisfies the stomach encase has to be cooked one alright so
+
+401
+00:25:03,210 --> 00:25:09,570
+encase has to be cooked one alright so this is the prior and I claim that the
+
+402
+00:25:09,570 --> 00:25:14,010
+this is the prior and I claim that the posterior for its you know I can say and
+
+403
+00:25:14,010 --> 00:25:18,140
+posterior for its you know I can say and I remind you it's a healthy purge a
+
+404
+00:25:18,140 --> 00:25:20,940
+I remind you it's a healthy purge a contains the transition probabilities
+
+405
+00:25:20,940 --> 00:25:25,290
+contains the transition probabilities from J to 1 to J 2 to 20 to 3 right all
+
+406
+00:25:25,290 --> 00:25:29,550
+from J to 1 to J 2 to 20 to 3 right all of the things education you know this
+
+407
+00:25:29,550 --> 00:25:34,310
+of the things education you know this chest do you remember what time he has
+
+408
+00:25:34,310 --> 00:25:37,500
+chest do you remember what time he has so he can look at the analytical
+
+409
+00:25:37,500 --> 00:25:42,000
+so he can look at the analytical expression which a for alpha J 1 so the
+
+410
+00:25:42,000 --> 00:25:44,030
+expression which a for alpha J 1 so the terminal for J 1 is going to be sum
+
+411
+00:25:44,030 --> 00:25:50,090
+terminal for J 1 is going to be sum alpha G want some power what's the power
+
+412
+00:25:50,090 --> 00:25:50,100
+
+
+413
+00:25:50,100 --> 00:25:56,040
+you guys to the computer power of youth we have a distribution of does it look
+
+414
+00:25:56,040 --> 00:26:01,440
+we have a distribution of does it look like you can take for distribution some
+
+415
+00:26:01,440 --> 00:26:04,200
+like you can take for distribution some parameters theta 1 theta 2 etc you're
+
+416
+00:26:04,200 --> 00:26:10,590
+parameters theta 1 theta 2 etc you're going to have people line to what power
+
+417
+00:26:10,590 --> 00:26:10,600
+
+
+418
+00:26:10,600 --> 00:26:18,450
+- this - swan and mythic a it would be if they came to this power minus 1 right
+
+419
+00:26:18,450 --> 00:26:22,889
+if they came to this power minus 1 right can you suppress with the likelihood
+
+420
+00:26:22,889 --> 00:26:24,330
+can you suppress with the likelihood that had the same form that we had
+
+421
+00:26:24,330 --> 00:26:27,749
+that had the same form that we had before that they were the parameters to
+
+422
+00:26:27,749 --> 00:26:32,299
+before that they were the parameters to some power you remember the likelihood I
+
+423
+00:26:32,299 --> 00:26:35,039
+some power you remember the likelihood I don't want to go back 20 slides all
+
+424
+00:26:35,039 --> 00:26:42,690
+don't want to go back 20 slides all right
+
+425
+00:26:42,690 --> 00:26:42,700
+
+
+426
+00:26:42,700 --> 00:26:47,360
+you remember
+
+427
+00:26:47,360 --> 00:26:47,370
+
+
+428
+00:26:47,370 --> 00:26:50,990
+so you can see now the right to declare distribution is the appropriate
+
+429
+00:26:50,990 --> 00:26:54,260
+distribution is the appropriate conjugate prior alright so you multiply
+
+430
+00:26:54,260 --> 00:26:57,260
+conjugate prior alright so you multiply stall here with I'd say to some power
+
+431
+00:26:57,260 --> 00:27:00,350
+stall here with I'd say to some power and here with a educate some power and
+
+432
+00:27:00,350 --> 00:27:04,010
+and here with a educate some power and lower case and object this will give you
+
+433
+00:27:04,010 --> 00:27:07,690
+lower case and object this will give you a very clear prior base okay so the
+
+434
+00:27:07,690 --> 00:27:11,710
+a very clear prior base okay so the event of the day the collab liquid is
+
+435
+00:27:11,710 --> 00:27:14,150
+event of the day the collab liquid is declared distribution if the priors in
+
+436
+00:27:14,150 --> 00:27:15,980
+declared distribution if the priors in the liquor distribution the posterior
+
+437
+00:27:15,980 --> 00:27:17,330
+the liquor distribution the posterior will come to be a digital distribution
+
+438
+00:27:17,330 --> 00:27:20,960
+will come to be a digital distribution and the posterior we have the same
+
+439
+00:27:20,960 --> 00:27:22,490
+and the posterior we have the same promise the prior with updated
+
+440
+00:27:22,490 --> 00:27:25,000
+promise the prior with updated parameters and this will be the form of
+
+441
+00:27:25,000 --> 00:27:30,020
+parameters and this will be the form of the the operator will be the
+
+442
+00:27:30,020 --> 00:27:32,950
+the the operator will be the distribution with parameters of a zero
+
+443
+00:27:32,950 --> 00:27:40,550
+distribution with parameters of a zero times M the comes from the prior NJ not
+
+444
+00:27:40,550 --> 00:27:43,640
+times M the comes from the prior NJ not the scalar and Jerry NJ is the vector of
+
+445
+00:27:43,640 --> 00:27:46,940
+the scalar and Jerry NJ is the vector of the time to transition from TJ to state
+
+446
+00:27:46,940 --> 00:27:50,390
+the time to transition from TJ to state one from state a to state two and NJ to
+
+447
+00:27:50,390 --> 00:27:52,160
+one from state a to state two and NJ to take care okay
+
+448
+00:27:52,160 --> 00:27:54,890
+take care okay so the posterior distribution looks it's
+
+449
+00:27:54,890 --> 00:27:56,810
+so the posterior distribution looks it's not going close from the way that this
+
+450
+00:27:56,810 --> 00:28:07,460
+not going close from the way that this is this basically to do a better
+
+451
+00:28:07,460 --> 00:28:10,670
+is this basically to do a better estimation and prediction for the
+
+452
+00:28:10,670 --> 00:28:13,180
+estimation and prediction for the language model that's one thing and
+
+453
+00:28:13,180 --> 00:28:17,690
+language model that's one thing and secondly how do you actually can go and
+
+454
+00:28:17,690 --> 00:28:20,120
+secondly how do you actually can go and ask you something about that for 0 name
+
+455
+00:28:20,120 --> 00:28:23,660
+ask you something about that for 0 name okay so how do you find this parameter
+
+456
+00:28:23,660 --> 00:28:30,940
+okay so how do you find this parameter seen in the prior but make sure
+
+457
+00:28:30,940 --> 00:28:30,950
+
+
+458
+00:28:30,950 --> 00:28:37,640
+we reduce the prestige remain a JK so each of this is that the declared
+
+459
+00:28:37,640 --> 00:28:38,960
+each of this is that the declared distribution we're going to use the
+
+460
+00:28:38,960 --> 00:28:40,850
+distribution we're going to use the posterior min and the posterior mean
+
+461
+00:28:40,850 --> 00:28:45,890
+posterior min and the posterior mean basically for the this distribution if
+
+462
+00:28:45,890 --> 00:28:48,140
+basically for the this distribution if you take each of the partitions the K
+
+463
+00:28:48,140 --> 00:28:50,540
+you take each of the partitions the K partition it will be M say k plus alpha
+
+464
+00:28:50,540 --> 00:28:58,820
+partition it will be M say k plus alpha 0 MK / MJ suppose dinner and okay so
+
+465
+00:28:58,820 --> 00:29:02,120
+0 MK / MJ suppose dinner and okay so into the trade is the frequency of
+
+466
+00:29:02,120 --> 00:29:05,810
+into the trade is the frequency of transition from J to K times n J this is
+
+467
+00:29:05,810 --> 00:29:08,840
+transition from J to K times n J this is what we came with family estimation plus
+
+468
+00:29:08,840 --> 00:29:12,530
+what we came with family estimation plus 1 plus 0 times MK and J plus alpha 0 and
+
+469
+00:29:12,530 --> 00:29:15,350
+1 plus 0 times MK and J plus alpha 0 and I can write this expression like this
+
+470
+00:29:15,350 --> 00:29:19,850
+I can write this expression like this for lambda J is alpha 0 / MJ plus alpha
+
+471
+00:29:19,850 --> 00:29:23,420
+for lambda J is alpha 0 / MJ plus alpha 0 so basically this approximation that
+
+472
+00:29:23,420 --> 00:29:26,180
+0 so basically this approximation that people introduced before it comes out to
+
+473
+00:29:26,180 --> 00:29:27,860
+people introduced before it comes out to be actually the posterior min when it
+
+474
+00:29:27,860 --> 00:29:30,860
+be actually the posterior min when it uses very clear prior on the rolls of
+
+475
+00:29:30,860 --> 00:29:37,220
+uses very clear prior on the rolls of the transition matrix a JK okay so the
+
+476
+00:29:37,220 --> 00:29:44,120
+the transition matrix a JK okay so the first evening because the 0 the
+
+477
+00:29:44,120 --> 00:29:46,490
+first evening because the 0 the procedure mean really is the transition
+
+478
+00:29:46,490 --> 00:29:51,290
+procedure mean really is the transition probability from state a to state K ok
+
+479
+00:29:51,290 --> 00:29:55,520
+probability from state a to state K ok so this integration it is defined
+
+480
+00:29:55,520 --> 00:29:57,920
+so this integration it is defined exclusively in terms of the prior
+
+481
+00:29:57,920 --> 00:30:01,100
+exclusively in terms of the prior strength of for 0 and also the number of
+
+482
+00:30:01,100 --> 00:30:04,580
+strength of for 0 and also the number of time she worked on on stage a on the
+
+483
+00:30:04,580 --> 00:30:08,150
+time she worked on on stage a on the word shape
+
+484
+00:30:08,150 --> 00:30:08,160
+
+
+485
+00:30:08,160 --> 00:30:17,300
+okay so the question is rep all pioneers going to be okay and that is not a
+
+486
+00:30:17,300 --> 00:30:28,400
+going to be okay and that is not a trivial problem so I'm going to if it's
+
+487
+00:30:28,400 --> 00:30:30,050
+trivial problem so I'm going to if it's something that I know it somehow might
+
+488
+00:30:30,050 --> 00:30:39,620
+something that I know it somehow might slide in the okay it comes to be the
+
+489
+00:30:39,620 --> 00:30:41,990
+slide in the okay it comes to be the same thing at the end of the day the
+
+490
+00:30:41,990 --> 00:30:47,060
+same thing at the end of the day the likelihood alright remember the steps we
+
+491
+00:30:47,060 --> 00:30:50,450
+likelihood alright remember the steps we assume that each hole is independent of
+
+492
+00:30:50,450 --> 00:30:53,780
+assume that each hole is independent of each other so the likelihood basically
+
+493
+00:30:53,780 --> 00:30:58,370
+each other so the likelihood basically is the product of all the rows of this
+
+494
+00:30:58,370 --> 00:31:01,630
+is the product of all the rows of this interesting relationship potential
+
+495
+00:31:01,630 --> 00:31:04,070
+interesting relationship potential should somebody transmit from where this
+
+496
+00:31:04,070 --> 00:31:10,280
+should somebody transmit from where this is coming I were very happy
+
+497
+00:31:10,280 --> 00:31:10,290
+
+
+498
+00:31:10,290 --> 00:31:20,720
+so remember we multiply all right we multiply and then we got a posterior
+
+499
+00:31:20,720 --> 00:31:23,180
+multiply and then we got a posterior that he was also at the clear
+
+500
+00:31:23,180 --> 00:31:25,520
+that he was also at the clear distribution and this Bank was really an
+
+501
+00:31:25,520 --> 00:31:35,380
+distribution and this Bank was really an j plus alpha so did this formula come
+
+502
+00:31:35,380 --> 00:31:35,390
+
+
+503
+00:31:35,390 --> 00:31:41,210
+declare distribution we multiply with the dirichlet prior and then we set the
+
+504
+00:31:41,210 --> 00:31:43,300
+the dirichlet prior and then we set the reason the posterior is a data flow
+
+505
+00:31:43,300 --> 00:31:48,230
+reason the posterior is a data flow distribution as well so this I can tell
+
+506
+00:31:48,230 --> 00:31:50,600
+distribution as well so this I can tell you it reminds me very much the
+
+507
+00:31:50,600 --> 00:31:52,520
+you it reminds me very much the normalizing factor of the delay
+
+508
+00:31:52,520 --> 00:31:55,880
+normalizing factor of the delay distribution she wanted to have 1 over
+
+509
+00:31:55,880 --> 00:32:00,770
+distribution she wanted to have 1 over the Aquacade this is really the
+
+510
+00:32:00,770 --> 00:32:02,980
+the Aquacade this is really the normalizing question of what
+
+511
+00:32:02,980 --> 00:32:09,170
+normalizing question of what distributional problem remember we have
+
+512
+00:32:09,170 --> 00:32:11,420
+distributional problem remember we have the likelihood we assimilate a prior
+
+513
+00:32:11,420 --> 00:32:14,510
+the likelihood we assimilate a prior than spirit-led so for this term in the
+
+514
+00:32:14,510 --> 00:32:19,730
+than spirit-led so for this term in the denominator came from
+
+515
+00:32:19,730 --> 00:32:19,740
+
+
+516
+00:32:19,740 --> 00:32:29,120
+that's the normalizing factor with mr. Bishop
+
+517
+00:32:29,120 --> 00:32:29,130
+
+
+518
+00:32:29,130 --> 00:32:41,029
+so it's the normalizing factor of the prior right and to normalize it you have
+
+519
+00:32:41,029 --> 00:32:44,900
+prior right and to normalize it you have to multiply and divide by this factor so
+
+520
+00:32:44,900 --> 00:32:46,640
+to multiply and divide by this factor so one of our best times whatever you have
+
+521
+00:32:46,640 --> 00:32:48,529
+one of our best times whatever you have as a problem will give you a declared
+
+522
+00:32:48,529 --> 00:32:50,510
+as a problem will give you a declared posterior and this would be the
+
+523
+00:32:50,510 --> 00:32:55,100
+posterior and this would be the normalization factor to the power so the
+
+524
+00:32:55,100 --> 00:32:57,080
+normalization factor to the power so the product over J a father and also the
+
+525
+00:32:57,080 --> 00:32:59,450
+product over J a father and also the transition matrix of this ratio will
+
+526
+00:32:59,450 --> 00:33:01,279
+transition matrix of this ratio will basically give you explicitly the
+
+527
+00:33:01,279 --> 00:33:04,100
+basically give you explicitly the marginal likelihood and what you can do
+
+528
+00:33:04,100 --> 00:33:06,260
+marginal likelihood and what you can do is if you are interested to actually now
+
+529
+00:33:06,260 --> 00:33:11,120
+is if you are interested to actually now go and compute this parameters for
+
+530
+00:33:11,120 --> 00:33:16,070
+go and compute this parameters for example you know what you can do is you
+
+531
+00:33:16,070 --> 00:33:18,680
+example you know what you can do is you can do an optimization problem and you
+
+532
+00:33:18,680 --> 00:33:22,669
+can do an optimization problem and you can find the actual calculations semi
+
+533
+00:33:22,669 --> 00:33:24,770
+can find the actual calculations semi analytically basically this paper by
+
+534
+00:33:24,770 --> 00:33:26,960
+analytically basically this paper by Mincha using this expression to compute
+
+535
+00:33:26,960 --> 00:33:35,000
+Mincha using this expression to compute these parameters to this expression the
+
+536
+00:33:35,000 --> 00:33:38,060
+these parameters to this expression the posterior comes our political transition
+
+537
+00:33:38,060 --> 00:33:41,480
+posterior comes our political transition matrix to be declared distribution so
+
+538
+00:33:41,480 --> 00:33:44,330
+matrix to be declared distribution so the transition from J to K has this mean
+
+539
+00:33:44,330 --> 00:33:48,649
+the transition from J to K has this mean value and this mean value is the
+
+540
+00:33:48,649 --> 00:33:51,020
+value and this mean value is the weighted average basically of the
+
+541
+00:33:51,020 --> 00:33:54,320
+weighted average basically of the diagram frequencies to collide and this
+
+542
+00:33:54,320 --> 00:33:56,680
+diagram frequencies to collide and this template that has to do with the prior
+
+543
+00:33:56,680 --> 00:34:00,080
+template that has to do with the prior now I remind you but if you do this
+
+544
+00:34:00,080 --> 00:34:02,450
+now I remind you but if you do this empirically people will take this
+
+545
+00:34:02,450 --> 00:34:05,779
+empirically people will take this coefficient MK to be how many times you
+
+546
+00:34:05,779 --> 00:34:07,450
+coefficient MK to be how many times you have the world carrying the data search
+
+547
+00:34:07,450 --> 00:34:12,230
+have the world carrying the data search alright so here's X ability because NK
+
+548
+00:34:12,230 --> 00:34:15,379
+alright so here's X ability because NK is defined in terms of the prior so the
+
+549
+00:34:15,379 --> 00:34:21,159
+is defined in terms of the prior so the question is what do you take as MK so
+
+550
+00:34:21,159 --> 00:34:21,169
+
+
+551
+00:34:21,169 --> 00:34:25,760
+anything what it saved look at this equation here and it makes
+
+552
+00:34:25,760 --> 00:34:30,190
+look at this equation here and it makes an K is proportional today such that and
+
+553
+00:34:30,190 --> 00:34:33,260
+an K is proportional today such that and JK greater than zero can you tell me
+
+554
+00:34:33,260 --> 00:34:34,100
+JK greater than zero can you tell me what this change
+
+555
+00:34:34,100 --> 00:34:38,240
+what this change towards take us m'kay what noticing all
+
+556
+00:34:38,240 --> 00:34:44,870
+towards take us m'kay what noticing all the times you see the words a what how
+
+557
+00:34:44,870 --> 00:34:47,120
+the times you see the words a what how many times you transition to the web K
+
+558
+00:34:47,120 --> 00:34:52,160
+many times you transition to the web K for many other words a okay because in
+
+559
+00:34:52,160 --> 00:34:56,780
+for many other words a okay because in essence this is an entropy I have and
+
+560
+00:34:56,780 --> 00:34:58,940
+essence this is an entropy I have and how many times you say given war okay
+
+561
+00:34:58,940 --> 00:35:07,420
+how many times you say given war okay and there is an example in Memphis UNC
+
+562
+00:35:07,420 --> 00:35:11,300
+and there is an example in Memphis UNC okay and you know this that always comes
+
+563
+00:35:11,300 --> 00:35:12,170
+okay and you know this that always comes after you
+
+564
+00:35:12,170 --> 00:35:15,530
+after you so if you need to find the transition
+
+565
+00:35:15,530 --> 00:35:18,470
+so if you need to find the transition probabilities basically can give the
+
+566
+00:35:18,470 --> 00:35:22,180
+probabilities basically can give the same thing and see something you know
+
+567
+00:35:22,180 --> 00:35:25,040
+same thing and see something you know genius comes up to review all right and
+
+568
+00:35:25,040 --> 00:35:28,640
+genius comes up to review all right and you will notice the times that you see
+
+569
+00:35:28,640 --> 00:35:30,380
+you will notice the times that you see appear in this model it's about the
+
+570
+00:35:30,380 --> 00:35:35,470
+appear in this model it's about the thing okay eleven times is the same but
+
+571
+00:35:35,470 --> 00:35:43,880
+thing okay eleven times is the same but utilizations language you just you could
+
+572
+00:35:43,880 --> 00:35:46,520
+utilizations language you just you could let you etcetera you know see you
+
+573
+00:35:46,520 --> 00:35:52,250
+let you etcetera you know see you whatever but in this model into account
+
+574
+00:35:52,250 --> 00:35:54,620
+whatever but in this model into account that this transition probability is the
+
+575
+00:35:54,620 --> 00:35:57,650
+that this transition probability is the weighted average of these random
+
+576
+00:35:57,650 --> 00:36:01,130
+weighted average of these random frequencies and how many times you
+
+577
+00:36:01,130 --> 00:36:04,640
+frequencies and how many times you transition to the word k okay defined by
+
+578
+00:36:04,640 --> 00:36:07,040
+transition to the word k okay defined by this definition does this model performs
+
+579
+00:36:07,040 --> 00:36:11,080
+this definition does this model performs way better found the any other sort of
+
+580
+00:36:11,080 --> 00:36:19,820
+way better found the any other sort of known estimate for for m'kay if I
+
+581
+00:36:19,820 --> 00:36:22,250
+known estimate for for m'kay if I understand is the basically non
+
+582
+00:36:22,250 --> 00:36:24,890
+understand is the basically non parametric model and usually this non
+
+583
+00:36:24,890 --> 00:36:27,530
+parametric model and usually this non parametric models use practical
+
+584
+00:36:27,530 --> 00:36:29,900
+parametric models use practical techniques so you can think you know
+
+585
+00:36:29,900 --> 00:36:31,250
+techniques so you can think you know since you are interested in model the
+
+586
+00:36:31,250 --> 00:36:32,660
+since you are interested in model the transition from one world to another
+
+587
+00:36:32,660 --> 00:36:35,570
+transition from one world to another this you can think of this this time so
+
+588
+00:36:35,570 --> 00:36:37,370
+this you can think of this this time so you can use ideas from sequence to
+
+589
+00:36:37,370 --> 00:36:39,980
+you can use ideas from sequence to Montecarlo to do that
+
+590
+00:36:39,980 --> 00:36:42,650
+Montecarlo to do that into service no parametric methods but I
+
+591
+00:36:42,650 --> 00:36:46,820
+into service no parametric methods but I know by reducing I can go back here I
+
+592
+00:36:46,820 --> 00:36:49,640
+know by reducing I can go back here I have I'm using the declared distribution
+
+593
+00:36:49,640 --> 00:36:51,920
+have I'm using the declared distribution as a prior their prior you know what it
+
+594
+00:36:51,920 --> 00:36:55,280
+as a prior their prior you know what it is that they reflect process and I don't
+
+595
+00:36:55,280 --> 00:36:56,810
+is that they reflect process and I don't know kind of you will do a profit from
+
+596
+00:36:56,810 --> 00:36:59,240
+know kind of you will do a profit from this what's the difference not
+
+597
+00:36:59,240 --> 00:37:01,940
+this what's the difference not automatically but if I go from this
+
+598
+00:37:01,940 --> 00:37:04,430
+automatically but if I go from this distribution to the clip process what
+
+599
+00:37:04,430 --> 00:37:06,710
+distribution to the clip process what you know what did the process in general
+
+600
+00:37:06,710 --> 00:37:08,870
+you know what did the process in general will allow me to do that this particular
+
+601
+00:37:08,870 --> 00:37:25,960
+will allow me to do that this particular model would not allow me anybody knows
+
+602
+00:37:25,960 --> 00:37:25,970
+
+
+603
+00:37:25,970 --> 00:37:33,760
+so in this case right I have transitions from J to state 0 to K right in
+
+604
+00:37:33,760 --> 00:37:35,410
+from J to state 0 to K right in different postures I'm gonna be able to
+
+605
+00:37:35,410 --> 00:37:39,930
+different postures I'm gonna be able to have transitions to handle states
+
+606
+00:37:39,930 --> 00:37:39,940
+
+
+607
+00:37:39,940 --> 00:37:49,450
+Antony okay so that way worst of you have not seen with the accountant in the
+
+608
+00:37:49,450 --> 00:37:51,849
+have not seen with the accountant in the private market you know because you have
+
+609
+00:37:51,849 --> 00:37:55,839
+private market you know because you have transitions to everything okay but I've
+
+610
+00:37:55,839 --> 00:37:59,109
+transitions to everything okay but I've now told it will not allow you to do
+
+611
+00:37:59,109 --> 00:38:03,550
+now told it will not allow you to do this so the raclette process is you know
+
+612
+00:38:03,550 --> 00:38:05,680
+this so the raclette process is you know that's why we call it a non parametric
+
+613
+00:38:05,680 --> 00:38:07,270
+that's why we call it a non parametric model because effectively you have
+
+614
+00:38:07,270 --> 00:38:09,280
+model because effectively you have infinite parameters to define this model
+
+615
+00:38:09,280 --> 00:38:12,120
+infinite parameters to define this model so if you are interested the actually
+
+616
+00:38:12,120 --> 00:38:15,790
+so if you are interested the actually the world of tech from Oxford basically
+
+617
+00:38:15,790 --> 00:38:18,520
+the world of tech from Oxford basically is the one that has produced one of the
+
+618
+00:38:18,520 --> 00:38:21,220
+is the one that has produced one of the best language models basically using the
+
+619
+00:38:21,220 --> 00:38:29,509
+best language models basically using the repair process priors from doing that
+
+620
+00:38:29,509 --> 00:38:29,519
+
+
+621
+00:38:29,519 --> 00:38:44,659
+I mentioned something else here with coefficients 1 1 1 1 the you know what
+
+622
+00:38:44,659 --> 00:38:46,579
+coefficients 1 1 1 1 the you know what is going to happen at the end of the day
+
+623
+00:38:46,579 --> 00:38:52,370
+is going to happen at the end of the day on this estimate because that everybody
+
+624
+00:38:52,370 --> 00:38:54,409
+on this estimate because that everybody does and the girls you know it is your
+
+625
+00:38:54,409 --> 00:38:56,659
+does and the girls you know it is your series empirically written in a lots of
+
+626
+00:38:56,659 --> 00:39:01,689
+series empirically written in a lots of machine learning books so the estimate
+
+627
+00:39:01,689 --> 00:39:06,979
+machine learning books so the estimate AJ Clary was m JK / MJ so if my data
+
+628
+00:39:06,979 --> 00:39:11,419
+AJ Clary was m JK / MJ so if my data layer has coefficients 1 1 1 1 ok all
+
+629
+00:39:11,419 --> 00:39:14,149
+layer has coefficients 1 1 1 1 ok all was what actually this thing is going to
+
+630
+00:39:14,149 --> 00:39:19,039
+was what actually this thing is going to come to be what is this what will happen
+
+631
+00:39:19,039 --> 00:39:21,859
+come to be what is this what will happen to the mean of digital prior with
+
+632
+00:39:21,859 --> 00:39:30,480
+to the mean of digital prior with Kristin's want
+
+633
+00:39:30,480 --> 00:39:30,490
+
+
+634
+00:39:30,490 --> 00:39:36,620
+so it will come out that this quotation here would be 1 and this would be 1
+
+635
+00:39:36,620 --> 00:39:38,760
+here would be 1 and this would be 1 subjectively what you will be doing in
+
+636
+00:39:38,760 --> 00:39:41,040
+subjectively what you will be doing in computing the posterior mean you will be
+
+637
+00:39:41,040 --> 00:39:44,880
+computing the posterior mean you will be adding the quantity 1 all the empirical
+
+638
+00:39:44,880 --> 00:39:45,890
+adding the quantity 1 all the empirical cows
+
+639
+00:39:45,890 --> 00:39:49,079
+cows so if one word for example doesn't exist
+
+640
+00:39:49,079 --> 00:39:52,079
+so if one word for example doesn't exist a term in the training data set you will
+
+641
+00:39:52,079 --> 00:39:55,260
+a term in the training data set you will get 1 there so the transition from J to
+
+642
+00:39:55,260 --> 00:39:59,250
+get 1 there so the transition from J to that one will not be 0 you're not gonna
+
+643
+00:39:59,250 --> 00:40:00,630
+that one will not be 0 you're not gonna get anything worth it because the
+
+644
+00:40:00,630 --> 00:40:02,970
+get anything worth it because the organization that prior will usually
+
+645
+00:40:02,970 --> 00:40:05,870
+organization that prior will usually have a transition to an award
+
+646
+00:40:05,870 --> 00:40:09,900
+have a transition to an award okay and this graph would let me see
+
+647
+00:40:09,900 --> 00:40:14,730
+okay and this graph would let me see what the name is and plus 1 or something
+
+648
+00:40:14,730 --> 00:40:21,990
+what the name is and plus 1 or something this is very typical
+
+649
+00:40:21,990 --> 00:40:22,000
+
+
+650
+00:40:22,000 --> 00:41:06,780
+somewhere I remember well is with me okay so this is the mouthing okay so
+
+651
+00:41:06,780 --> 00:41:09,150
+okay so this is the mouthing okay so here we have an evolution of the space
+
+652
+00:41:09,150 --> 00:41:11,430
+here we have an evolution of the space the way that you see here these are my
+
+653
+00:41:11,430 --> 00:41:14,339
+the way that you see here these are my exist this or the observations they have
+
+654
+00:41:14,339 --> 00:41:16,620
+exist this or the observations they have and you know the purpose of introducing
+
+655
+00:41:16,620 --> 00:41:18,900
+and you know the purpose of introducing sort of this length and representations
+
+656
+00:41:18,900 --> 00:41:24,450
+sort of this length and representations is because it allows us to take very
+
+657
+00:41:24,450 --> 00:41:26,130
+is because it allows us to take very complex dependencies between the
+
+658
+00:41:26,130 --> 00:41:29,099
+complex dependencies between the external okay so even though given let's
+
+659
+00:41:29,099 --> 00:41:34,530
+external okay so even though given let's say this this observation and
+
+660
+00:41:34,530 --> 00:41:36,000
+say this this observation and observation are independent of each
+
+661
+00:41:36,000 --> 00:41:43,250
+observation are independent of each other by integrator resist how okay
+
+662
+00:41:43,250 --> 00:41:46,140
+other by integrator resist how okay lexis depend on each other so this is a
+
+663
+00:41:46,140 --> 00:41:48,480
+lexis depend on each other so this is a much more complicated model than the
+
+664
+00:41:48,480 --> 00:41:51,329
+much more complicated model than the Markov model even though conditioned on
+
+665
+00:41:51,329 --> 00:41:53,660
+Markov model even though conditioned on Z you have conditioned you know this GI
+
+666
+00:41:53,660 --> 00:41:57,300
+Z you have conditioned you know this GI independence relations that simplify the
+
+667
+00:41:57,300 --> 00:42:01,559
+independence relations that simplify the problem okay so let me just write the
+
+668
+00:42:01,559 --> 00:42:03,089
+problem okay so let me just write the probability distribution is going to
+
+669
+00:42:03,089 --> 00:42:06,660
+probability distribution is going to look like the joint of action three okay
+
+670
+00:42:06,660 --> 00:42:09,089
+look like the joint of action three okay is again the probability of being in
+
+671
+00:42:09,089 --> 00:42:11,910
+is again the probability of being in state C 1 we have the transition
+
+672
+00:42:11,910 --> 00:42:13,500
+state C 1 we have the transition probability exactly as in the markov
+
+673
+00:42:13,500 --> 00:42:17,309
+probability exactly as in the markov model and then we have the observation
+
+674
+00:42:17,309 --> 00:42:20,430
+model and then we have the observation probabilities so at this time the
+
+675
+00:42:20,430 --> 00:42:25,490
+probabilities so at this time the probability of X and given Zn sorry hmm
+
+676
+00:42:25,490 --> 00:42:26,830
+probability of X and given Zn sorry hmm model
+
+677
+00:42:26,830 --> 00:42:28,900
+model we will take the state Z to be discreet
+
+678
+00:42:28,900 --> 00:42:31,810
+we will take the state Z to be discreet but the observation sex can be anything
+
+679
+00:42:31,810 --> 00:42:35,290
+but the observation sex can be anything you want to so it can be - them can be
+
+680
+00:42:35,290 --> 00:42:37,540
+you want to so it can be - them can be multi no me can be any sort of
+
+681
+00:42:37,540 --> 00:42:40,900
+multi no me can be any sort of distribution if you make this have this
+
+682
+00:42:40,900 --> 00:42:43,000
+distribution if you make this have this position to be Gaussian and this to be a
+
+683
+00:42:43,000 --> 00:42:46,030
+position to be Gaussian and this to be a Gaussian then you get in here
+
+684
+00:42:46,030 --> 00:42:48,820
+Gaussian then you get in here Gaussian models basically that we will
+
+685
+00:42:48,820 --> 00:42:51,250
+Gaussian models basically that we will see later on and from there if you can
+
+686
+00:42:51,250 --> 00:42:53,320
+see later on and from there if you can get a year similar to Kalman filtering
+
+687
+00:42:53,320 --> 00:42:55,810
+get a year similar to Kalman filtering but right now we're going to take that
+
+688
+00:42:55,810 --> 00:42:58,900
+but right now we're going to take that this is a discrete distribution this can
+
+689
+00:42:58,900 --> 00:43:00,910
+this is a discrete distribution this can be we leave it on the earth so it can be
+
+690
+00:43:00,910 --> 00:43:11,109
+be we leave it on the earth so it can be anything we want we want to alright
+
+691
+00:43:11,109 --> 00:43:11,119
+
+
+692
+00:43:11,119 --> 00:43:18,130
+so extremely similar to a Gaussian mixture model okay
+
+693
+00:43:18,130 --> 00:43:20,230
+mixture model okay the only difference so imagine that we
+
+694
+00:43:20,230 --> 00:43:23,289
+the only difference so imagine that we have this liquid distance right of the
+
+695
+00:43:23,289 --> 00:43:26,819
+have this liquid distance right of the mixture quotations that tells you when
+
+696
+00:43:26,819 --> 00:43:29,950
+mixture quotations that tells you when you know so let's say the parameter of
+
+697
+00:43:29,950 --> 00:43:32,710
+you know so let's say the parameter of XT given the state is a Gaussian all
+
+698
+00:43:32,710 --> 00:43:35,140
+XT given the state is a Gaussian all right and maybe in our mixture model we
+
+699
+00:43:35,140 --> 00:43:38,529
+right and maybe in our mixture model we have three different gaussian right so k
+
+700
+00:43:38,529 --> 00:43:40,180
+have three different gaussian right so k equal 1 2 or 3
+
+701
+00:43:40,180 --> 00:43:43,180
+equal 1 2 or 3 so if your sister is a data set that
+
+702
+00:43:43,180 --> 00:43:46,079
+so if your sister is a data set that comes from three different gaussian okay
+
+703
+00:43:46,079 --> 00:43:50,380
+comes from three different gaussian okay but incident models is a little more
+
+704
+00:43:50,380 --> 00:44:37,180
+but incident models is a little more complicated because z1 and z2 will again
+
+705
+00:44:37,180 --> 00:44:39,789
+complicated because z1 and z2 will again point to the childís Gaussian but won't
+
+706
+00:44:39,789 --> 00:44:41,710
+point to the childís Gaussian but won't survive with three you know what the
+
+707
+00:44:41,710 --> 00:44:43,749
+survive with three you know what the state trip is gonna be on this ride the
+
+708
+00:44:43,749 --> 00:44:46,509
+state trip is gonna be on this ride the Gaussian so you start taking samples
+
+709
+00:44:46,509 --> 00:44:48,940
+Gaussian so you start taking samples from this until all so why have you find
+
+710
+00:44:48,940 --> 00:44:51,460
+from this until all so why have you find yourself on this Gaussian so what's the
+
+711
+00:44:51,460 --> 00:44:52,720
+yourself on this Gaussian so what's the difference of this from a Gaussian
+
+712
+00:44:52,720 --> 00:44:56,019
+difference of this from a Gaussian mixture the difference is very simple
+
+713
+00:44:56,019 --> 00:44:58,269
+mixture the difference is very simple that the state are basically now a
+
+714
+00:44:58,269 --> 00:45:04,960
+that the state are basically now a Markov chain if you sample next depends
+
+715
+00:45:04,960 --> 00:45:08,769
+Markov chain if you sample next depends what state they were before all right so
+
+716
+00:45:08,769 --> 00:45:11,109
+what state they were before all right so in many ways this is very similar to a
+
+717
+00:45:11,109 --> 00:45:13,410
+in many ways this is very similar to a diversion mixed model behind
+
+718
+00:45:13,410 --> 00:45:16,410
+diversion mixed model behind without this all right I connected
+
+719
+00:45:16,410 --> 00:45:18,660
+without this all right I connected through the Markovian property basically
+
+720
+00:45:18,660 --> 00:45:21,690
+through the Markovian property basically you know the transition of the
+
+721
+00:45:21,690 --> 00:45:25,109
+you know the transition of the permeability of GI from given CI - Juan
+
+722
+00:45:25,109 --> 00:45:28,650
+permeability of GI from given CI - Juan what you see here is in constraints on
+
+723
+00:45:28,650 --> 00:45:33,059
+what you see here is in constraints on how we go from you know from one state
+
+724
+00:45:33,059 --> 00:45:33,660
+how we go from you know from one state to another
+
+725
+00:45:33,660 --> 00:45:36,660
+to another can you tell me if I want to generate
+
+726
+00:45:36,660 --> 00:45:41,549
+can you tell me if I want to generate this data given historical time for this
+
+727
+00:45:41,549 --> 00:45:43,680
+this data given historical time for this distribution can somebody give me an
+
+728
+00:45:43,680 --> 00:45:46,890
+distribution can somebody give me an idea if I want to to stop generating
+
+729
+00:45:46,890 --> 00:45:51,089
+idea if I want to to stop generating this picture here and it's this
+
+730
+00:45:51,089 --> 00:45:52,920
+this picture here and it's this observation modest is a direction with
+
+731
+00:45:52,920 --> 00:45:55,289
+observation modest is a direction with its own mean and variance how are you
+
+732
+00:45:55,289 --> 00:45:57,000
+its own mean and variance how are you going to generate the picture looking at
+
+733
+00:45:57,000 --> 00:45:58,460
+going to generate the picture looking at this distribution
+
+734
+00:45:58,460 --> 00:46:01,079
+this distribution what's restless I'm going to look like
+
+735
+00:46:01,079 --> 00:46:05,039
+what's restless I'm going to look like to generate data the way that you seen
+
+736
+00:46:05,039 --> 00:46:10,440
+to generate data the way that you seen the showing the picture so how are you
+
+737
+00:46:10,440 --> 00:46:12,510
+the showing the picture so how are you going to generate the observations that
+
+738
+00:46:12,510 --> 00:46:17,700
+going to generate the observations that we saw there from gaussians you can see
+
+739
+00:46:17,700 --> 00:46:19,859
+we saw there from gaussians you can see here so what do we do what's the first
+
+740
+00:46:19,859 --> 00:46:25,210
+here so what do we do what's the first step
+
+741
+00:46:25,210 --> 00:46:25,220
+
+
+742
+00:46:25,220 --> 00:46:29,540
+from this distribution of g1 the initial State
+
+743
+00:46:29,540 --> 00:46:39,170
+State alright I got it what's next alright the
+
+744
+00:46:39,170 --> 00:46:43,460
+alright I got it what's next alright the next thing is can we sample actual right
+
+745
+00:46:43,460 --> 00:46:45,380
+next thing is can we sample actual right the answer is yes we can sell furniture
+
+746
+00:46:45,380 --> 00:46:47,000
+the answer is yes we can sell furniture on the given is d---rom from this
+
+747
+00:46:47,000 --> 00:46:51,610
+on the given is d---rom from this probability okay what's next
+
+748
+00:46:51,610 --> 00:46:54,830
+probability okay what's next we have a sample of zero and now also
+
+749
+00:46:54,830 --> 00:46:56,570
+we have a sample of zero and now also given the sample whatever we gonna do
+
+750
+00:46:56,570 --> 00:46:59,270
+given the sample whatever we gonna do samples it to now giving us the three we
+
+751
+00:46:59,270 --> 00:47:01,820
+samples it to now giving us the three we can sample it do etc so mister you get
+
+752
+00:47:01,820 --> 00:47:04,000
+can sample it do etc so mister you get this picture that you see on the left
+
+753
+00:47:04,000 --> 00:47:09,290
+this picture that you see on the left okay so it is a very exactly like a
+
+754
+00:47:09,290 --> 00:47:11,000
+okay so it is a very exactly like a Gaussian mixture the only difference is
+
+755
+00:47:11,000 --> 00:47:12,890
+Gaussian mixture the only difference is in a Gaussian mixture you don't have
+
+756
+00:47:12,890 --> 00:47:15,380
+in a Gaussian mixture you don't have this transition probability which we
+
+757
+00:47:15,380 --> 00:47:24,440
+this transition probability which we have here okay because we're running out
+
+758
+00:47:24,440 --> 00:47:37,910
+have here okay because we're running out of time if I can't pee
+
+759
+00:47:37,910 --> 00:47:37,920
+
+
+760
+00:47:37,920 --> 00:47:42,860
+nope I don't see it I'm gonna have to I have to use your imagination now because
+
+761
+00:47:42,860 --> 00:47:50,069
+have to use your imagination now because who knows what try this now okay
+
+762
+00:47:50,069 --> 00:47:50,079
+
+
+763
+00:47:50,079 --> 00:47:57,339
+it was made that I can write the initial probability of C 1 because eventually
+
+764
+00:47:57,339 --> 00:47:59,020
+probability of C 1 because eventually we're going to be interesting to do
+
+765
+00:47:59,020 --> 00:48:01,030
+we're going to be interesting to do influence of the parameters in this
+
+766
+00:48:01,030 --> 00:48:03,130
+influence of the parameters in this distribution I can write it like that
+
+767
+00:48:03,130 --> 00:48:05,290
+distribution I can write it like that so you can do something exactly what
+
+768
+00:48:05,290 --> 00:48:08,530
+so you can do something exactly what this equation gives me on the bottom so
+
+769
+00:48:08,530 --> 00:48:10,690
+this equation gives me on the bottom so I'm assuming here that the states D 1 is
+
+770
+00:48:10,690 --> 00:48:21,019
+I'm assuming here that the states D 1 is discrete fixed K stage so that is PI K
+
+771
+00:48:21,019 --> 00:48:21,029
+
+
+772
+00:48:21,029 --> 00:48:28,999
+is the probability that that would say one I am on what state okay and where is
+
+773
+00:48:28,999 --> 00:48:30,620
+one I am on what state okay and where is this coming because this discrete
+
+774
+00:48:30,620 --> 00:48:34,569
+this coming because this discrete variable Z the aleni
+
+775
+00:48:34,569 --> 00:48:34,579
+
+
+776
+00:48:34,579 --> 00:48:45,259
+so I'm gonna get okay cheer win when Z K is equal to R I mean I say the first
+
+777
+00:48:45,259 --> 00:48:48,319
+is equal to R I mean I say the first risk video I should not have it here but
+
+778
+00:48:48,319 --> 00:48:52,969
+risk video I should not have it here but oh hey the first verse 32 no actually
+
+779
+00:48:52,969 --> 00:48:53,539
+oh hey the first verse 32 no actually you know what
+
+780
+00:48:53,539 --> 00:48:55,789
+you know what this should not be an i what should this
+
+781
+00:48:55,789 --> 00:49:02,239
+this should not be an i what should this be right so when the state you know I'm
+
+782
+00:49:02,239 --> 00:49:08,149
+be right so when the state you know I'm one dataset here right when 0 C is from
+
+783
+00:49:08,149 --> 00:49:12,259
+one dataset here right when 0 C is from state that's a notation like this what's
+
+784
+00:49:12,259 --> 00:49:15,529
+state that's a notation like this what's new 1 K is equal to 1 okay so when z1 k
+
+785
+00:49:15,529 --> 00:49:18,380
+new 1 K is equal to 1 okay so when z1 k equal to 1 this will give me DK and all
+
+786
+00:49:18,380 --> 00:49:20,359
+equal to 1 this will give me DK and all the other terms we have an exponent 0 so
+
+787
+00:49:20,359 --> 00:49:22,669
+the other terms we have an exponent 0 so would be equal to 1 so I get basically
+
+788
+00:49:22,669 --> 00:49:26,949
+would be equal to 1 so I get basically the distance equal to PI K all right
+
+789
+00:49:26,949 --> 00:49:32,310
+the distance equal to PI K all right does this make sense
+
+790
+00:49:32,310 --> 00:49:32,320
+
+
+791
+00:49:32,320 --> 00:49:37,140
+alright this exactly basically what we had for the Markov chain right so
+
+792
+00:49:37,140 --> 00:49:38,910
+had for the Markov chain right so there's nothing different this is the
+
+793
+00:49:38,910 --> 00:49:44,070
+there's nothing different this is the transition from J to K and J in k k
+
+794
+00:49:44,070 --> 00:49:46,230
+transition from J to K and J in k k dimensional right they can take K States
+
+795
+00:49:46,230 --> 00:49:49,430
+dimensional right they can take K States and on the experiences to make this
+
+796
+00:49:49,430 --> 00:49:53,580
+and on the experiences to make this explicit if I have GN minus 1 J this is
+
+797
+00:49:53,580 --> 00:49:57,060
+explicit if I have GN minus 1 J this is equal to 1 when the N minus 1 state is
+
+798
+00:49:57,060 --> 00:50:00,690
+equal to 1 when the N minus 1 state is on J status and this one a time step
+
+799
+00:50:00,690 --> 00:50:04,380
+on J status and this one a time step then I'm alakay alright so if this is
+
+800
+00:50:04,380 --> 00:50:06,900
+then I'm alakay alright so if this is the case the exponents equal to 1 and
+
+801
+00:50:06,900 --> 00:50:10,680
+the case the exponents equal to 1 and this give me a JK the rest gives me is
+
+802
+00:50:10,680 --> 00:50:13,200
+this give me a JK the rest gives me is doing exponent so I get a contribution
+
+803
+00:50:13,200 --> 00:50:15,110
+doing exponent so I get a contribution of 1 so nothing changes
+
+804
+00:50:15,110 --> 00:50:19,890
+of 1 so nothing changes ok so here's what we're interested we're
+
+805
+00:50:19,890 --> 00:50:22,320
+ok so here's what we're interested we're interested to protonate for the hidden
+
+806
+00:50:22,320 --> 00:50:25,230
+interested to protonate for the hidden market one of the dispositions and also
+
+807
+00:50:25,230 --> 00:50:27,990
+market one of the dispositions and also the history probabilities pi K potential
+
+808
+00:50:27,990 --> 00:50:29,640
+the history probabilities pi K potential and if you're introducing observation
+
+809
+00:50:29,640 --> 00:50:32,370
+and if you're introducing observation love them and this observation model we
+
+810
+00:50:32,370 --> 00:50:33,960
+love them and this observation model we have the chain parameters and we need to
+
+811
+00:50:33,960 --> 00:50:38,430
+have the chain parameters and we need to compute this as well ok and you know we
+
+812
+00:50:38,430 --> 00:50:39,900
+compute this as well ok and you know we can consider several different choices
+
+813
+00:50:39,900 --> 00:50:42,750
+can consider several different choices it's lethal for the slides but you can
+
+814
+00:50:42,750 --> 00:50:47,300
+it's lethal for the slides but you can imagine if you are on state K let's say
+
+815
+00:50:47,300 --> 00:50:51,080
+imagine if you are on state K let's say then if this coefficients can be PKA and
+
+816
+00:50:51,080 --> 00:50:53,640
+then if this coefficients can be PKA and this will be the chosen correspondent
+
+817
+00:50:53,640 --> 00:50:54,810
+this will be the chosen correspondent about k-state
+
+818
+00:50:54,810 --> 00:50:59,310
+about k-state sharing some mineral child by carrying
+
+819
+00:50:59,310 --> 00:51:01,170
+sharing some mineral child by carrying that's carrying some variants also fits
+
+820
+00:51:01,170 --> 00:51:03,120
+that's carrying some variants also fits all and we're going to have to compute
+
+821
+00:51:03,120 --> 00:51:05,040
+all and we're going to have to compute all the means and the variances of the
+
+822
+00:51:05,040 --> 00:51:07,050
+all the means and the variances of the observation model for each of the k
+
+823
+00:51:07,050 --> 00:51:09,150
+observation model for each of the k space but michigan if this is the
+
+824
+00:51:09,150 --> 00:51:11,090
+space but michigan if this is the discrete model can be a multi newly
+
+825
+00:51:11,090 --> 00:51:13,740
+discrete model can be a multi newly distribution so we have to calculate the
+
+826
+00:51:13,740 --> 00:51:15,750
+distribution so we have to calculate the probabilities of the different states as
+
+827
+00:51:15,750 --> 00:51:19,530
+probabilities of the different states as well I'm supervising this in general
+
+828
+00:51:19,530 --> 00:51:26,850
+well I'm supervising this in general like that ok so so tell me what do we
+
+829
+00:51:26,850 --> 00:51:28,730
+like that ok so so tell me what do we have here
+
+830
+00:51:28,730 --> 00:51:31,620
+have here so I'm looking at the emission
+
+831
+00:51:31,620 --> 00:51:33,420
+so I'm looking at the emission probabilities this we observe a chinois
+
+832
+00:51:33,420 --> 00:51:36,660
+probabilities this we observe a chinois deluxe step 10 all right and it
+
+833
+00:51:36,660 --> 00:51:40,050
+deluxe step 10 all right and it next scent comes from this model this
+
+834
+00:51:40,050 --> 00:51:43,590
+next scent comes from this model this probability papyrus ink is DNA and DNA
+
+835
+00:51:43,590 --> 00:51:47,490
+probability papyrus ink is DNA and DNA equal to now happens when a step and
+
+836
+00:51:47,490 --> 00:51:50,580
+equal to now happens when a step and almost if I would say I mean on state K
+
+837
+00:51:50,580 --> 00:51:54,660
+almost if I would say I mean on state K so if I'm on spent cave is equal to one
+
+838
+00:51:54,660 --> 00:51:57,630
+so if I'm on spent cave is equal to one so the parameters basically that define
+
+839
+00:51:57,630 --> 00:51:59,730
+so the parameters basically that define the observation models of the parameters
+
+840
+00:51:59,730 --> 00:52:02,660
+the observation models of the parameters PK and this is what we need to observe
+
+841
+00:52:02,660 --> 00:52:05,100
+PK and this is what we need to observe what we need to complete basically what
+
+842
+00:52:05,100 --> 00:52:09,310
+what we need to complete basically what we do Emily you're measuring current
+
+843
+00:52:09,310 --> 00:52:09,320
+
+
+844
+00:52:09,320 --> 00:52:13,010
+[Applause]
+
+845
+00:52:13,010 --> 00:52:13,020
+
+
+846
+00:52:13,020 --> 00:52:18,510
+distribution at both the observed variables and I call all of this
+
+847
+00:52:18,510 --> 00:52:21,000
+variables and I call all of this variable sex so from next one to X
+
+848
+00:52:21,000 --> 00:52:25,260
+variable sex so from next one to X capital T and G 1 2 G capital in your
+
+849
+00:52:25,260 --> 00:52:27,510
+capital T and G 1 2 G capital in your subscript a is the initial probability
+
+850
+00:52:27,510 --> 00:52:30,000
+subscript a is the initial probability of this transitions of the state and the
+
+851
+00:52:30,000 --> 00:52:32,400
+of this transitions of the state and the observation model 3d panel it is
+
+852
+00:52:32,400 --> 00:52:34,350
+observation model 3d panel it is difficult as you can see from what we
+
+853
+00:52:34,350 --> 00:52:36,600
+difficult as you can see from what we have seen on a Markov model here where
+
+854
+00:52:36,600 --> 00:52:42,290
+have seen on a Markov model here where is this a difficult problem
+
+855
+00:52:42,290 --> 00:52:42,300
+
+
+856
+00:52:42,300 --> 00:52:46,190
+you can open the left hand side what is different from what we had in the market
+
+857
+00:52:46,190 --> 00:52:51,850
+different from what we had in the market Walden
+
+858
+00:52:51,850 --> 00:52:51,860
+
+
+859
+00:52:51,860 --> 00:52:57,040
+you remember in a Markov chain we had the likelihood of the observation sex
+
+860
+00:52:57,040 --> 00:52:58,840
+the likelihood of the observation sex but now here I have the joint likelihood
+
+861
+00:52:58,840 --> 00:53:02,050
+but now here I have the joint likelihood of X and Z given the parameters and what
+
+862
+00:53:02,050 --> 00:53:03,780
+of X and Z given the parameters and what is different here
+
+863
+00:53:03,780 --> 00:53:09,190
+is different here Benghazi we don't know this tears on
+
+864
+00:53:09,190 --> 00:53:12,460
+Benghazi we don't know this tears on itself so basically this joint look like
+
+865
+00:53:12,460 --> 00:53:14,230
+itself so basically this joint look like it would it looks nice
+
+866
+00:53:14,230 --> 00:53:17,050
+it would it looks nice it looks exactly like an operating model
+
+867
+00:53:17,050 --> 00:53:19,540
+it looks exactly like an operating model but unfortunately the states they have
+
+868
+00:53:19,540 --> 00:53:21,760
+but unfortunately the states they have not known so we cannot go and do an
+
+869
+00:53:21,760 --> 00:53:27,360
+not known so we cannot go and do an Emily on this you will not work right
+
+870
+00:53:27,360 --> 00:53:27,370
+
+
+871
+00:53:27,370 --> 00:53:44,980
+because it looks very this is very easy to look at and manipulate but we don't
+
+872
+00:53:44,980 --> 00:53:46,900
+to look at and manipulate but we don't know what saves so let's go to slide
+
+873
+00:53:46,900 --> 00:53:50,260
+know what saves so let's go to slide undred 70 and see on how we can compute
+
+874
+00:53:50,260 --> 00:53:57,370
+undred 70 and see on how we can compute all these unknown parameters hmm
+
+875
+00:53:57,370 --> 00:54:00,730
+all these unknown parameters hmm so that we covered in last spring and
+
+876
+00:54:00,730 --> 00:54:03,160
+so that we covered in last spring and I'm going to review it basically in the
+
+877
+00:54:03,160 --> 00:54:05,080
+I'm going to review it basically in the context of the hmm
+
+878
+00:54:05,080 --> 00:54:23,350
+context of the hmm is optimized maximized not the hood the
+
+879
+00:54:23,350 --> 00:54:25,210
+is optimized maximized not the hood the joint of likelihood of the observations
+
+880
+00:54:25,210 --> 00:54:27,220
+joint of likelihood of the observations of the hidden body most but the
+
+881
+00:54:27,220 --> 00:54:29,830
+of the hidden body most but the expectation of the joint of likelihood
+
+882
+00:54:29,830 --> 00:54:31,360
+expectation of the joint of likelihood with respect to the posterior
+
+883
+00:54:31,360 --> 00:54:33,970
+with respect to the posterior distribution of Z given live the waist
+
+884
+00:54:33,970 --> 00:54:37,630
+distribution of Z given live the waist of self and of course the posterior
+
+885
+00:54:37,630 --> 00:54:40,690
+of self and of course the posterior distribution of derivatives erections is
+
+886
+00:54:40,690 --> 00:54:42,370
+distribution of derivatives erections is not now because we don't know the
+
+887
+00:54:42,370 --> 00:54:44,620
+not now because we don't know the parameters so what we're gonna do is
+
+888
+00:54:44,620 --> 00:54:46,840
+parameters so what we're gonna do is we're gonna try to Eternity we update
+
+889
+00:54:46,840 --> 00:54:50,110
+we're gonna try to Eternity we update the parameters as follows we're going to
+
+890
+00:54:50,110 --> 00:54:53,290
+the parameters as follows we're going to take some previous iteration takes
+
+891
+00:54:53,290 --> 00:54:55,780
+take some previous iteration takes department some values and then try to
+
+892
+00:54:55,780 --> 00:54:57,660
+department some values and then try to compute this for strain of
+
+893
+00:54:57,660 --> 00:55:00,660
+compute this for strain of the necks with a barometer speaks then
+
+894
+00:55:00,660 --> 00:55:05,250
+the necks with a barometer speaks then compute the expectation of the join of
+
+895
+00:55:05,250 --> 00:55:07,680
+compute the expectation of the join of livelihood and not as this parameters
+
+896
+00:55:07,680 --> 00:55:10,440
+livelihood and not as this parameters here are parameters that are known and
+
+897
+00:55:10,440 --> 00:55:13,559
+here are parameters that are known and I'm going to update so first I'm going
+
+898
+00:55:13,559 --> 00:55:16,230
+I'm going to update so first I'm going to compute this expectation using this
+
+899
+00:55:16,230 --> 00:55:18,660
+to compute this expectation using this posterior that is approximated using
+
+900
+00:55:18,660 --> 00:55:20,609
+posterior that is approximated using some the previous iteration of the
+
+901
+00:55:20,609 --> 00:55:23,190
+some the previous iteration of the parameters and then once I compute this
+
+902
+00:55:23,190 --> 00:55:25,770
+parameters and then once I compute this I am going to maximize this with respect
+
+903
+00:55:25,770 --> 00:55:31,020
+I am going to maximize this with respect to parameters theta okay supposedly I am
+
+904
+00:55:31,020 --> 00:55:33,299
+to parameters theta okay supposedly I am going to abuse the complexity that has
+
+905
+00:55:33,299 --> 00:55:36,270
+going to abuse the complexity that has to do with the fact that I don't know Z
+
+906
+00:55:36,270 --> 00:55:39,720
+to do with the fact that I don't know Z by reducing the joining applied the
+
+907
+00:55:39,720 --> 00:55:43,020
+by reducing the joining applied the affections G but somehow transforming
+
+908
+00:55:43,020 --> 00:55:45,089
+affections G but somehow transforming the optimization and iterative
+
+909
+00:55:45,089 --> 00:55:47,220
+the optimization and iterative optimization problem who have worked
+
+910
+00:55:47,220 --> 00:55:48,990
+optimization problem who have worked with the expectation of the Journal of
+
+911
+00:55:48,990 --> 00:55:51,720
+with the expectation of the Journal of likelihood expectation with respect to
+
+912
+00:55:51,720 --> 00:55:54,720
+likelihood expectation with respect to this posterior and somehow it ray all
+
+913
+00:55:54,720 --> 00:55:57,059
+this posterior and somehow it ray all the parameters theta and at the same
+
+914
+00:55:57,059 --> 00:56:02,130
+the parameters theta and at the same time updating this posterior of Z makes
+
+915
+00:56:02,130 --> 00:56:02,940
+time updating this posterior of Z makes a little sense
+
+916
+00:56:02,940 --> 00:56:04,640
+a little sense so this is sort of the final
+
+917
+00:56:04,640 --> 00:56:07,589
+so this is sort of the final expectation-maximization algorithm to
+
+918
+00:56:07,589 --> 00:56:09,599
+expectation-maximization algorithm to ensure the problems we have parameters
+
+919
+00:56:09,599 --> 00:56:15,470
+ensure the problems we have parameters and you have some hidden variables right
+
+920
+00:56:15,470 --> 00:56:15,480
+
+
+921
+00:56:15,480 --> 00:56:19,710
+but somehow I'm working directly with the journal of livelihood is a much
+
+922
+00:56:19,710 --> 00:56:24,690
+the journal of livelihood is a much easier proposition than working with the
+
+923
+00:56:24,690 --> 00:56:26,460
+easier proposition than working with the likelihood effects I mean you can
+
+924
+00:56:26,460 --> 00:56:28,680
+likelihood effects I mean you can imagine here if you put destinations
+
+925
+00:56:28,680 --> 00:56:31,109
+imagine here if you put destinations they dialect on this distribution this
+
+926
+00:56:31,109 --> 00:56:32,579
+they dialect on this distribution this is computationally intractable you
+
+927
+00:56:32,579 --> 00:56:35,370
+is computationally intractable you cannot do anything about okay you know
+
+928
+00:56:35,370 --> 00:56:37,230
+cannot do anything about okay you know in this field you come up with Paniagua
+
+929
+00:56:37,230 --> 00:56:39,809
+in this field you come up with Paniagua later but this is especially when you
+
+930
+00:56:39,809 --> 00:56:41,490
+later but this is especially when you take the long this is a very easy
+
+931
+00:56:41,490 --> 00:56:43,950
+take the long this is a very easy distribution taking the average with
+
+932
+00:56:43,950 --> 00:56:45,870
+distribution taking the average with respect to this posterior is going to be
+
+933
+00:56:45,870 --> 00:56:48,480
+respect to this posterior is going to be easy and the key thing here is compute
+
+934
+00:56:48,480 --> 00:56:50,640
+easy and the key thing here is compute this posterior in tentatively using an
+
+935
+00:56:50,640 --> 00:56:52,260
+this posterior in tentatively using an onset of the variables of these
+
+936
+00:56:52,260 --> 00:56:54,990
+onset of the variables of these parameters and then when you do this
+
+937
+00:56:54,990 --> 00:56:57,660
+parameters and then when you do this computation of this quantity Q of demise
+
+938
+00:56:57,660 --> 00:57:00,500
+computation of this quantity Q of demise with respect to theta then come back and
+
+939
+00:57:00,500 --> 00:57:03,080
+with respect to theta then come back and they dressed very compute vest take
+
+940
+00:57:03,080 --> 00:57:05,180
+they dressed very compute vest take another optimization with respect to
+
+941
+00:57:05,180 --> 00:57:09,110
+another optimization with respect to theta so this lips want us to compute
+
+942
+00:57:09,110 --> 00:57:11,780
+theta so this lips want us to compute this expectation that base that second
+
+943
+00:57:11,780 --> 00:57:15,050
+this expectation that base that second much much respect to theta and hopefully
+
+944
+00:57:15,050 --> 00:57:17,660
+much much respect to theta and hopefully you will achieve some convergence in a
+
+945
+00:57:17,660 --> 00:57:32,870
+you will achieve some convergence in a few duration we discuss you know for
+
+946
+00:57:32,870 --> 00:57:35,060
+few duration we discuss you know for change them and we did this with a
+
+947
+00:57:35,060 --> 00:57:41,890
+change them and we did this with a junction tree etc okay it comes out when
+
+948
+00:57:41,890 --> 00:57:45,290
+junction tree etc okay it comes out when you calculate this expectation of the
+
+949
+00:57:45,290 --> 00:57:47,330
+you calculate this expectation of the joint of likelihood you're gonna need
+
+950
+00:57:47,330 --> 00:57:49,910
+joint of likelihood you're gonna need some sufficient statistics and those
+
+951
+00:57:49,910 --> 00:57:52,370
+some sufficient statistics and those sufficient statistics basically will
+
+952
+00:57:52,370 --> 00:57:57,020
+sufficient statistics basically will abilities that we have computed from the
+
+953
+00:57:57,020 --> 00:57:59,120
+abilities that we have computed from the forward and backward passing masters
+
+954
+00:57:59,120 --> 00:58:01,820
+forward and backward passing masters algorithms so the sufficient statistics
+
+955
+00:58:01,820 --> 00:58:05,320
+algorithms so the sufficient statistics that we will need is this probability
+
+956
+00:58:05,320 --> 00:58:10,370
+that we will need is this probability okay and so it is all of the day time
+
+957
+00:58:10,370 --> 00:58:12,590
+okay and so it is all of the day time the train from actual text copy text
+
+958
+00:58:12,590 --> 00:58:15,860
+the train from actual text copy text with subscript capital T so this is the
+
+959
+00:58:15,860 --> 00:58:17,870
+with subscript capital T so this is the smoothing distribution that gives me the
+
+960
+00:58:17,870 --> 00:58:20,930
+smoothing distribution that gives me the trait if they given all my exist with a
+
+961
+00:58:20,930 --> 00:58:23,630
+trait if they given all my exist with a parameter space alright and I remind
+
+962
+00:58:23,630 --> 00:58:26,180
+parameter space alright and I remind field of symbol we use for ballistic
+
+963
+00:58:26,180 --> 00:58:28,280
+field of symbol we use for ballistic this is the block was running on a suit
+
+964
+00:58:28,280 --> 00:58:30,770
+this is the block was running on a suit not the beta masters right this is this
+
+965
+00:58:30,770 --> 00:58:32,780
+not the beta masters right this is this moving distribution of ZT given all the
+
+966
+00:58:32,780 --> 00:58:35,840
+moving distribution of ZT given all the data and the other sufficient statistics
+
+967
+00:58:35,840 --> 00:58:38,360
+data and the other sufficient statistics we will need is the joint probably
+
+968
+00:58:38,360 --> 00:58:41,470
+we will need is the joint probably distribution of of ZT minus prong n CP
+
+969
+00:58:41,470 --> 00:58:45,350
+distribution of of ZT minus prong n CP given to the data so this is the joints
+
+970
+00:58:45,350 --> 00:58:48,470
+given to the data so this is the joints moving distribution that gives me Z at t
+
+971
+00:58:48,470 --> 00:58:51,380
+moving distribution that gives me Z at t minus 1 jointly with GP so if you
+
+972
+00:58:51,380 --> 00:58:55,550
+minus 1 jointly with GP so if you support that to compute this path and do
+
+973
+00:58:55,550 --> 00:58:58,220
+support that to compute this path and do this ex-professional calculation you
+
+974
+00:58:58,220 --> 00:58:59,420
+this ex-professional calculation you will need to compute these two
+
+975
+00:58:59,420 --> 00:59:01,480
+will need to compute these two probabilities and that requires a
+
+976
+00:59:01,480 --> 00:59:05,510
+probabilities and that requires a calculation of messages and this
+
+977
+00:59:05,510 --> 00:59:07,640
+calculation of messages and this basically requires
+
+978
+00:59:07,640 --> 00:59:10,520
+basically requires with message calculation okay so
+
+979
+00:59:10,520 --> 00:59:14,090
+with message calculation okay so remember so yes with one of his messages
+
+980
+00:59:14,090 --> 00:59:16,010
+remember so yes with one of his messages are coming if you want to find the
+
+981
+00:59:16,010 --> 00:59:18,140
+are coming if you want to find the parameters in your model you have not
+
+982
+00:59:18,140 --> 00:59:19,820
+parameters in your model you have not choice in the yellow algorithm but the
+
+983
+00:59:19,820 --> 00:59:21,350
+choice in the yellow algorithm but the calculator is forward and backward
+
+984
+00:59:21,350 --> 00:59:23,300
+calculator is forward and backward passing messages and when a certain
+
+985
+00:59:23,300 --> 00:59:24,830
+passing messages and when a certain point of these things are coming but
+
+986
+00:59:24,830 --> 00:59:25,660
+point of these things are coming but rightousness
+
+987
+00:59:25,660 --> 00:59:30,080
+rightousness this is the big picture so let me just
+
+988
+00:59:30,080 --> 00:59:36,290
+this is the big picture so let me just put a plot here the Subic make visible
+
+989
+00:59:36,290 --> 00:59:38,450
+put a plot here the Subic make visible basically you start with some values of
+
+990
+00:59:38,450 --> 00:59:41,960
+basically you start with some values of the parameters you know there's lots of
+
+991
+00:59:41,960 --> 00:59:44,300
+the parameters you know there's lots of guidance we want to use to start with if
+
+992
+00:59:44,300 --> 00:59:48,130
+guidance we want to use to start with if you compute this posterior ok of
+
+993
+00:59:48,130 --> 00:59:52,040
+you compute this posterior ok of overstates given all the data in the
+
+994
+00:59:52,040 --> 00:59:54,460
+overstates given all the data in the previous parameters you calculate this
+
+995
+00:59:54,460 --> 00:59:59,090
+previous parameters you calculate this quantity Q which is the sexpectations
+
+996
+00:59:59,090 --> 01:00:01,190
+quantity Q which is the sexpectations force here of the joint log likelihood
+
+997
+01:00:01,190 --> 01:00:03,410
+force here of the joint log likelihood but you notice here in the log
+
+998
+01:00:03,410 --> 01:00:06,020
+but you notice here in the log likelihood you have no power
+
+999
+01:00:06,020 --> 01:00:08,300
+likelihood you have no power all right so whatever he did when I get
+
+1000
+01:00:08,300 --> 01:00:10,430
+all right so whatever he did when I get is going to be a function of theta then
+
+1001
+01:00:10,430 --> 01:00:12,560
+is going to be a function of theta then on the m-step you maximize with respect
+
+1002
+01:00:12,560 --> 01:00:13,580
+on the m-step you maximize with respect to theta
+
+1003
+01:00:13,580 --> 01:00:15,620
+to theta if you convert if you are done if not
+
+1004
+01:00:15,620 --> 01:00:17,710
+if you convert if you are done if not you come back you update the parameters
+
+1005
+01:00:17,710 --> 01:00:20,480
+you come back you update the parameters you compute a new posterior and you eat
+
+1006
+01:00:20,480 --> 01:00:23,480
+you compute a new posterior and you eat a new expectation of the joint of
+
+1007
+01:00:23,480 --> 01:00:42,680
+a new expectation of the joint of likelihood you maximize that you can do
+
+1008
+01:00:42,680 --> 01:00:50,030
+likelihood you maximize that you can do anything you want okay I want you to
+
+1009
+01:00:50,030 --> 01:00:56,840
+anything you want okay I want you to look at this expression and so you guys
+
+1010
+01:00:56,840 --> 01:01:03,770
+look at this expression and so you guys can see it again alright so this is the
+
+1011
+01:01:03,770 --> 01:01:05,600
+can see it again alright so this is the backward message is this moving
+
+1012
+01:01:05,600 --> 01:01:06,800
+backward message is this moving posterior of c30
+
+1013
+01:01:06,800 --> 01:01:13,589
+posterior of c30 all right and you remember city
+
+1014
+01:01:13,589 --> 01:01:13,599
+
+
+1015
+01:01:13,599 --> 01:01:26,259
+so for example if the kids are equal to 1 you know what this is equal to is the
+
+1016
+01:01:26,259 --> 01:01:28,870
+1 you know what this is equal to is the probability those little TJ would make
+
+1017
+01:01:28,870 --> 01:01:31,749
+probability those little TJ would make onto our but is also the expectation of
+
+1018
+01:01:31,749 --> 01:01:35,620
+onto our but is also the expectation of the Zeta TJ why because if a TJ can only
+
+1019
+01:01:35,620 --> 01:01:41,489
+the Zeta TJ why because if a TJ can only take one is zero or one
+
+1020
+01:01:41,489 --> 01:01:41,499
+
+
+1021
+01:01:41,499 --> 01:01:47,559
+let me explain this again right so this is a vector Z T right but this can take
+
+1022
+01:01:47,559 --> 01:01:52,150
+is a vector Z T right but this can take values the CP you know why do whatever
+
+1023
+01:01:52,150 --> 01:01:54,849
+values the CP you know why do whatever states I have I have at this time I have
+
+1024
+01:01:54,849 --> 01:01:57,370
+states I have I have at this time I have K different states right so I can write
+
+1025
+01:01:57,370 --> 01:02:01,499
+K different states right so I can write this in a more easier part and a steak
+
+1026
+01:02:01,499 --> 01:02:04,989
+this in a more easier part and a steak well now obviously PJ which is the
+
+1027
+01:02:04,989 --> 01:02:07,450
+well now obviously PJ which is the probability basically of ztj being equal
+
+1028
+01:02:07,450 --> 01:02:10,870
+probability basically of ztj being equal to one in a claim that that is actually
+
+1029
+01:02:10,870 --> 01:02:14,589
+to one in a claim that that is actually the expectation of z TJ because he
+
+1030
+01:02:14,589 --> 01:02:17,440
+the expectation of z TJ because he visited J can take varnish only one and
+
+1031
+01:02:17,440 --> 01:02:19,690
+visited J can take varnish only one and zero the profession is the same as the
+
+1032
+01:02:19,690 --> 01:02:26,650
+zero the profession is the same as the probability West so effectively what I
+
+1033
+01:02:26,650 --> 01:02:33,999
+probability West so effectively what I claim is that the expectation of this
+
+1034
+01:02:33,999 --> 01:02:38,049
+claim is that the expectation of this alright is the same community simply
+
+1035
+01:02:38,049 --> 01:02:39,970
+alright is the same community simply because he fatigues English that the
+
+1036
+01:02:39,970 --> 01:02:43,749
+because he fatigues English that the clay has the varnish one of zero okay so
+
+1037
+01:02:43,749 --> 01:02:48,279
+clay has the varnish one of zero okay so just and the tree which is the joints
+
+1038
+01:02:48,279 --> 01:02:50,920
+just and the tree which is the joints moving distribution of ZT minus 1 and GT
+
+1039
+01:02:50,920 --> 01:02:53,259
+moving distribution of ZT minus 1 and GT they are really nothing else the
+
+1040
+01:02:53,259 --> 01:02:56,470
+they are really nothing else the posterior expectations of the z TJ
+
+1041
+01:02:56,470 --> 01:03:01,450
+posterior expectations of the z TJ variable remember that my definition of
+
+1042
+01:03:01,450 --> 01:03:05,200
+variable remember that my definition of gamma J right what was it the first
+
+1043
+01:03:05,200 --> 01:03:08,529
+gamma J right what was it the first period distribution is the posterior of
+
+1044
+01:03:08,529 --> 01:03:14,770
+period distribution is the posterior of Z that they given all my data
+
+1045
+01:03:14,770 --> 01:03:14,780
+
+
+1046
+01:03:14,780 --> 01:03:36,290
+mr. mission social expectation of Mitchell Pacific a values because forget
+
+1047
+01:03:36,290 --> 01:03:41,050
+Mitchell Pacific a values because forget about it so this is also the expectation
+
+1048
+01:03:41,050 --> 01:03:44,030
+about it so this is also the expectation so can you look at this equation here
+
+1049
+01:03:44,030 --> 01:03:48,829
+so can you look at this equation here now and tell me how from this equation
+
+1050
+01:03:48,829 --> 01:03:52,010
+now and tell me how from this equation when I take logs and then expectation I
+
+1051
+01:03:52,010 --> 01:03:54,319
+when I take logs and then expectation I get this equation from what did that
+
+1052
+01:03:54,319 --> 01:04:00,970
+get this equation from what did that come from I think the assumption is and
+
+1053
+01:04:00,970 --> 01:04:04,730
+come from I think the assumption is and this nice equation with the transition
+
+1054
+01:04:04,730 --> 01:04:06,980
+this nice equation with the transition probabilities to a boundary right and
+
+1055
+01:04:06,980 --> 01:04:09,260
+probabilities to a boundary right and you know we can do this the same thing
+
+1056
+01:04:09,260 --> 01:04:12,500
+you know we can do this the same thing there but how how did I get a grammar
+
+1057
+01:04:12,500 --> 01:04:14,630
+there but how how did I get a grammar there let's go to think of this now they
+
+1058
+01:04:14,630 --> 01:04:43,720
+there let's go to think of this now they are giving Rama what is 0k
+
+1059
+01:04:43,720 --> 01:04:43,730
+
+
+1060
+01:04:43,730 --> 01:04:52,400
+this is also that is the posterior expectation of the z1k so how did they
+
+1061
+01:04:52,400 --> 01:04:58,810
+expectation of the z1k so how did they welcome this time to a gamma x level PK
+
+1062
+01:04:58,810 --> 01:04:58,820
+
+
+1063
+01:04:58,820 --> 01:05:05,690
+remember this terminal used to be the drama still anticipate that their
+
+1064
+01:05:05,690 --> 01:05:08,540
+the drama still anticipate that their indicator function that 0 and K is equal
+
+1065
+01:05:08,540 --> 01:05:12,980
+indicator function that 0 and K is equal to L can give you expectation and what
+
+1066
+01:05:12,980 --> 01:05:15,800
+to L can give you expectation and what is that the expectation is gamma Z 1 K
+
+1067
+01:05:15,800 --> 01:05:25,730
+is that the expectation is gamma Z 1 K so similarly this in the transition from
+
+1068
+01:05:25,730 --> 01:05:28,900
+so similarly this in the transition from t minus 1 to 3 you will get basically
+
+1069
+01:05:28,900 --> 01:05:32,660
+t minus 1 to 3 you will get basically this quantity K which is this motoring
+
+1070
+01:05:32,660 --> 01:05:34,760
+this quantity K which is this motoring joining posterior of z t minus 1 and t
+
+1071
+01:05:34,760 --> 01:05:37,250
+joining posterior of z t minus 1 and t so what is this actually
+
+1072
+01:05:37,250 --> 01:05:42,170
+so what is this actually this is expectation of what distribution
+
+1073
+01:05:42,170 --> 01:05:46,860
+this is expectation of what distribution and in the Hollywood
+
+1074
+01:05:46,860 --> 01:05:46,870
+
+
+1075
+01:05:46,870 --> 01:05:52,590
+this is the joint distribution of city - rondell states a and city being a speck
+
+1076
+01:05:52,590 --> 01:05:55,290
+rondell states a and city being a speck a the proceeded expectation of that is
+
+1077
+01:05:55,290 --> 01:06:03,300
+a the proceeded expectation of that is Vista the quantity T okay so the pension
+
+1078
+01:06:03,300 --> 01:06:06,000
+Vista the quantity T okay so the pension is right but this van that we completed
+
+1079
+01:06:06,000 --> 01:06:07,530
+is right but this van that we completed an exchange that we defined them as
+
+1080
+01:06:07,530 --> 01:06:11,580
+an exchange that we defined them as posterior distributions all right this
+
+1081
+01:06:11,580 --> 01:06:14,400
+posterior distributions all right this is how we define them okay this vectors
+
+1082
+01:06:14,400 --> 01:06:17,490
+is how we define them okay this vectors because if he can take value 1
+
+1083
+01:06:17,490 --> 01:06:19,860
+because if he can take value 1 you know I have different K State okay
+
+1084
+01:06:19,860 --> 01:06:23,190
+you know I have different K State okay so when I simplify this and I'm asking
+
+1085
+01:06:23,190 --> 01:06:26,160
+so when I simplify this and I'm asking what is grandma's GP k yes that is the
+
+1086
+01:06:26,160 --> 01:06:29,010
+what is grandma's GP k yes that is the posterior of ZT k being equal to on but
+
+1087
+01:06:29,010 --> 01:06:31,580
+posterior of ZT k being equal to on but is also the personal expectation of z TK
+
+1088
+01:06:31,580 --> 01:06:35,160
+is also the personal expectation of z TK similarly when I put this Z to minus 1 3
+
+1089
+01:06:35,160 --> 01:06:39,450
+similarly when I put this Z to minus 1 3 and c TK yes that is the probability for
+
+1090
+01:06:39,450 --> 01:06:42,510
+and c TK yes that is the probability for stated probability of city - Ron being
+
+1091
+01:06:42,510 --> 01:06:44,910
+stated probability of city - Ron being of say J and this being of state K but
+
+1092
+01:06:44,910 --> 01:06:47,460
+of say J and this being of state K but is also the personal expectation of was
+
+1093
+01:06:47,460 --> 01:06:53,250
+is also the personal expectation of was devoured and so when you take this joint
+
+1094
+01:06:53,250 --> 01:06:56,940
+devoured and so when you take this joint of livelihood right you take the joint
+
+1095
+01:06:56,940 --> 01:06:58,860
+of livelihood right you take the joint of likelihood you will get this
+
+1096
+01:06:58,860 --> 01:07:01,050
+of likelihood you will get this indicator functions from the front when
+
+1097
+01:07:01,050 --> 01:07:05,640
+indicator functions from the front when you write this any JK and on the top
+
+1098
+01:07:05,640 --> 01:07:07,500
+you write this any JK and on the top level get the indicator function that
+
+1099
+01:07:07,500 --> 01:07:10,470
+level get the indicator function that city - Sean J equal to 1 and Z 2 k equal
+
+1100
+01:07:10,470 --> 01:07:13,260
+city - Sean J equal to 1 and Z 2 k equal to 1 then when you take this will come
+
+1101
+01:07:13,260 --> 01:07:21,870
+to 1 then when you take this will come in you know expectation of that wine
+
+1102
+01:07:21,870 --> 01:07:25,830
+in you know expectation of that wine expectations because we say that we do
+
+1103
+01:07:25,830 --> 01:07:28,380
+expectations because we say that we do not operate with the joint of likelihood
+
+1104
+01:07:28,380 --> 01:07:33,410
+not operate with the joint of likelihood we have to take expectations
+
+1105
+01:07:33,410 --> 01:07:33,420
+
+
+1106
+01:07:33,420 --> 01:07:39,000
+okay we have to take expectation with respect to the posterior of Z and those
+
+1107
+01:07:39,000 --> 01:07:41,130
+respect to the posterior of Z and those expectations give you basically the
+
+1108
+01:07:41,130 --> 01:07:44,070
+expectations give you basically the sufficient statistics and the sufficient
+
+1109
+01:07:44,070 --> 01:07:46,820
+sufficient statistics and the sufficient statistics come to be nothing else but
+
+1110
+01:07:46,820 --> 01:07:50,460
+statistics come to be nothing else but this before message this gamma and this
+
+1111
+01:07:50,460 --> 01:07:53,190
+this before message this gamma and this so this is moving distribution basically
+
+1112
+01:07:53,190 --> 01:07:57,630
+so this is moving distribution basically and the joint posterior of ZT minus 1
+
+1113
+01:07:57,630 --> 01:08:01,470
+and the joint posterior of ZT minus 1 and ZT and I have female think here for
+
+1114
+01:08:01,470 --> 01:08:03,630
+and ZT and I have female think here for the observation mobile so there's
+
+1115
+01:08:03,630 --> 01:08:05,880
+the observation mobile so there's missing energy on the first time I'm
+
+1116
+01:08:05,880 --> 01:08:07,230
+missing energy on the first time I'm going to have k-state
+
+1117
+01:08:07,230 --> 01:08:10,650
+going to have k-state so I'm get the summation here I'm gonna
+
+1118
+01:08:10,650 --> 01:08:14,670
+so I'm get the summation here I'm gonna have this properly
+
+1119
+01:08:14,670 --> 01:08:17,039
+have this properly alright this is this product and I have
+
+1120
+01:08:17,039 --> 01:08:19,079
+alright this is this product and I have transitioned from gay personal space to
+
+1121
+01:08:19,079 --> 01:08:20,070
+transitioned from gay personal space to carry possible states
+
+1122
+01:08:20,070 --> 01:08:22,920
+carry possible states so here the double summation and this is
+
+1123
+01:08:22,920 --> 01:08:24,570
+so here the double summation and this is the sufficient statistics do you get
+
+1124
+01:08:24,570 --> 01:08:27,180
+the sufficient statistics do you get longer days okay and here if you get
+
+1125
+01:08:27,180 --> 01:08:30,960
+longer days okay and here if you get again the scan local Christians and this
+
+1126
+01:08:30,960 --> 01:08:33,289
+again the scan local Christians and this is the log of the observation model
+
+1127
+01:08:33,289 --> 01:08:35,430
+is the log of the observation model considering the Vermont state flag
+
+1128
+01:08:35,430 --> 01:08:37,079
+considering the Vermont state flag so the parameters corresponding to
+
+1129
+01:08:37,079 --> 01:08:39,270
+so the parameters corresponding to observation model would be clear big
+
+1130
+01:08:39,270 --> 01:08:43,620
+observation model would be clear big subscript K so I don't know if anybody
+
+1131
+01:08:43,620 --> 01:08:46,349
+subscript K so I don't know if anybody remembers but what is the meaning we
+
+1132
+01:08:46,349 --> 01:08:48,720
+remembers but what is the meaning we have given what is given in the
+
+1133
+01:08:48,720 --> 01:08:51,289
+have given what is given in the literature to this posterior
+
+1134
+01:08:51,289 --> 01:09:05,039
+literature to this posterior probabilities of z chain and we do not
+
+1135
+01:09:05,039 --> 01:09:11,670
+probabilities of z chain and we do not write the expectation of the there was
+
+1136
+01:09:11,670 --> 01:09:15,990
+write the expectation of the there was no z change instead of having kilogram
+
+1137
+01:09:15,990 --> 01:09:19,260
+no z change instead of having kilogram of z1 k what did we have on the Markov
+
+1138
+01:09:19,260 --> 01:09:22,969
+of z1 k what did we have on the Markov chain remember
+
+1139
+01:09:22,969 --> 01:09:22,979
+
+
+1140
+01:09:22,979 --> 01:09:31,529
+remember sufficient statistics on a Markov chain just which is the time the
+
+1141
+01:09:31,529 --> 01:09:34,519
+Markov chain just which is the time the number of times that the first let's say
+
+1142
+01:09:34,519 --> 01:09:44,569
+number of times that the first let's say of the you know final on home state K so
+
+1143
+01:09:44,569 --> 01:09:56,779
+of the you know final on home state K so again that was telling me how many times
+
+1144
+01:09:56,779 --> 01:09:56,789
+
+
+1145
+01:09:56,789 --> 01:10:04,069
+here because this is a procedure quantity so this is observes the data
+
+1146
+01:10:04,069 --> 01:10:08,580
+quantity so this is observes the data right is what is the expectation of the
+
+1147
+01:10:08,580 --> 01:10:13,169
+right is what is the expectation of the times that I will be on on my time step
+
+1148
+01:10:13,169 --> 01:10:17,359
+times that I will be on on my time step one on state K this is what we call the
+
+1149
+01:10:17,359 --> 01:10:20,279
+one on state K this is what we call the what's the matter that we used what is
+
+1150
+01:10:20,279 --> 01:10:25,379
+what's the matter that we used what is used in the literature that we use
+
+1151
+01:10:25,379 --> 01:10:28,109
+used in the literature that we use especially for a you remember on how you
+
+1152
+01:10:28,109 --> 01:10:35,870
+especially for a you remember on how you do the am aware if conversion mixtures
+
+1153
+01:10:35,870 --> 01:10:35,880
+
+
+1154
+01:10:35,880 --> 01:10:48,420
+I'm looking you know whip type of things you get frequency okay I know it's a
+
+1155
+01:10:48,420 --> 01:11:06,900
+you get frequency okay I know it's a little hard responsibility right and I'm
+
+1156
+01:11:06,900 --> 01:11:11,340
+little hard responsibility right and I'm looking at state one in a procedure
+
+1157
+01:11:11,340 --> 01:11:15,180
+looking at state one in a procedure setting how many times my state one is I
+
+1158
+01:11:15,180 --> 01:11:38,880
+setting how many times my state one is I mean you know the parameter and then I'm
+
+1159
+01:11:38,880 --> 01:11:41,310
+mean you know the parameter and then I'm gonna destroy implying the spy this
+
+1160
+01:11:41,310 --> 01:11:43,800
+gonna destroy implying the spy this payee and this coefficients be in the
+
+1161
+01:11:43,800 --> 01:11:46,020
+payee and this coefficients be in the observation model we wanted to work with
+
+1162
+01:11:46,020 --> 01:11:49,710
+observation model we wanted to work with a joint likelihood because computation
+
+1163
+01:11:49,710 --> 01:11:51,720
+a joint likelihood because computation is very easy to write this a discrete
+
+1164
+01:11:51,720 --> 01:11:54,360
+is very easy to write this a discrete model this would say suggestions very
+
+1165
+01:11:54,360 --> 01:11:58,920
+model this would say suggestions very nice okay what years so how can we
+
+1166
+01:11:58,920 --> 01:12:00,960
+nice okay what years so how can we compute by what we don't know so there
+
+1167
+01:12:00,960 --> 01:12:06,690
+compute by what we don't know so there this yes the expectation with respect to
+
+1168
+01:12:06,690 --> 01:12:09,330
+this yes the expectation with respect to the posterior of Z right and then they
+
+1169
+01:12:09,330 --> 01:12:12,450
+the posterior of Z right and then they stiffen the complexity but how can I do
+
+1170
+01:12:12,450 --> 01:12:14,160
+stiffen the complexity but how can I do this well that posterior depends on the
+
+1171
+01:12:14,160 --> 01:12:17,160
+this well that posterior depends on the parameters PI an a and C so the second
+
+1172
+01:12:17,160 --> 01:12:18,900
+parameters PI an a and C so the second step is well start iterating on
+
+1173
+01:12:18,900 --> 01:12:22,680
+step is well start iterating on disparities so something didn't compute
+
+1174
+01:12:22,680 --> 01:12:25,200
+disparities so something didn't compute the expectation of this with respect to
+
+1175
+01:12:25,200 --> 01:12:27,300
+the expectation of this with respect to the posterior given the parameters all
+
+1176
+01:12:27,300 --> 01:12:29,630
+the posterior given the parameters all right this is what you see here then
+
+1177
+01:12:29,630 --> 01:12:32,540
+right this is what you see here then when we have this quantity
+
+1178
+01:12:32,540 --> 01:12:34,819
+when we have this quantity into this quantity now we didn't take
+
+1179
+01:12:34,819 --> 01:12:36,950
+into this quantity now we didn't take derivatives with respect to Phi K alpha
+
+1180
+01:12:36,950 --> 01:12:40,910
+derivatives with respect to Phi K alpha JK and with respect to pre-k right and
+
+1181
+01:12:40,910 --> 01:12:45,169
+JK and with respect to pre-k right and we keep doing iteration this is actually
+
+1182
+01:12:45,169 --> 01:12:47,359
+we keep doing iteration this is actually a first step it looks identical to what
+
+1183
+01:12:47,359 --> 01:12:49,069
+a first step it looks identical to what we had for Markov chains there is really
+
+1184
+01:12:49,069 --> 01:12:51,830
+we had for Markov chains there is really nothing that is different okay
+
+1185
+01:12:51,830 --> 01:12:53,629
+nothing that is different okay so you can go in to use Lagrange
+
+1186
+01:12:53,629 --> 01:12:55,970
+so you can go in to use Lagrange multipliers to infer that the sum of
+
+1187
+01:12:55,970 --> 01:12:58,520
+multipliers to infer that the sum of five K's is equal to one and then take
+
+1188
+01:12:58,520 --> 01:13:00,500
+five K's is equal to one and then take derivatives with this and I can tell you
+
+1189
+01:13:00,500 --> 01:13:03,919
+derivatives with this and I can tell you this research on these maximization step
+
+1190
+01:13:03,919 --> 01:13:06,049
+this research on these maximization step the suit is identical to what we did for
+
+1191
+01:13:06,049 --> 01:13:08,780
+the suit is identical to what we did for a Markov chain but the the medium of the
+
+1192
+01:13:08,780 --> 01:13:41,890
+a Markov chain but the the medium of the singles is very different coming to be
+
+1193
+01:13:41,890 --> 01:13:41,900
+
+
+1194
+01:13:41,900 --> 01:13:56,620
+okay
+
+1195
+01:13:56,620 --> 01:13:56,630
+
+
+1196
+01:13:56,630 --> 01:14:02,390
+/ this pristine responsibilities of the time Varnum in any state vary from one
+
+1197
+01:14:02,390 --> 01:14:05,479
+time Varnum in any state vary from one to K and similarly energy H is defined
+
+1198
+01:14:05,479 --> 01:14:10,520
+to K and similarly energy H is defined by the posterior transition
+
+1199
+01:14:10,520 --> 01:14:15,140
+by the posterior transition probabilities that so this patient a JK
+
+1200
+01:14:15,140 --> 01:14:17,660
+probabilities that so this patient a JK so but at time t minus one among set
+
+1201
+01:14:17,660 --> 01:14:20,420
+so but at time t minus one among set among state J and then I transitional
+
+1202
+01:14:20,420 --> 01:14:22,790
+among state J and then I transitional time T to state k so this is exactly
+
+1203
+01:14:22,790 --> 01:14:25,280
+time T to state k so this is exactly what we had before the only difference
+
+1204
+01:14:25,280 --> 01:14:28,459
+what we had before the only difference is that this gene gamma our posterior
+
+1205
+01:14:28,459 --> 01:14:31,670
+is that this gene gamma our posterior probabilities and there's nothing
+
+1206
+01:14:31,670 --> 01:14:34,490
+probabilities and there's nothing probabilities because here to calculate
+
+1207
+01:14:34,490 --> 01:14:37,940
+probabilities because here to calculate gamma and your current flow the data
+
+1208
+01:14:37,940 --> 01:14:40,910
+gamma and your current flow the data from time let's say 1 or 0 all the way
+
+1209
+01:14:40,910 --> 01:14:42,620
+from time let's say 1 or 0 all the way to capital T okay
+
+1210
+01:14:42,620 --> 01:14:44,950
+to capital T okay so this one's smoking probabilities not
+
+1211
+01:14:44,950 --> 01:14:47,300
+so this one's smoking probabilities not predictive probability stress not
+
+1212
+01:14:47,300 --> 01:14:49,700
+predictive probability stress not something you know you can stay up here
+
+1213
+01:14:49,700 --> 01:14:54,910
+something you know you can stay up here and estimate what this is okay series
+
+1214
+01:14:54,910 --> 01:14:57,830
+and estimate what this is okay series alright and then you say now can you
+
+1215
+01:14:57,830 --> 01:15:01,700
+alright and then you say now can you tell me what the expectation when the
+
+1216
+01:15:01,700 --> 01:15:03,979
+tell me what the expectation when the probability of z1 K being equal to 1 and
+
+1217
+01:15:03,979 --> 01:15:06,380
+probability of z1 K being equal to 1 and is given by this entity so that will
+
+1218
+01:15:06,380 --> 01:15:08,630
+is given by this entity so that will give you PI K etcetera etcetera
+
+1219
+01:15:08,630 --> 01:15:12,050
+give you PI K etcetera etcetera and insanity enclosures because he's run
+
+1220
+01:15:12,050 --> 01:15:14,090
+and insanity enclosures because he's run for the calendars and how do you
+
+1221
+01:15:14,090 --> 01:16:12,409
+for the calendars and how do you calculate
+
+1222
+01:16:12,409 --> 01:16:12,419
+
+
+1223
+01:16:12,419 --> 01:16:19,349
+so this is a possibility because I am counting all of the data right in my
+
+1224
+01:16:19,349 --> 01:16:21,779
+counting all of the data right in my stickers and I'm waiting them with these
+
+1225
+01:16:21,779 --> 01:16:23,129
+stickers and I'm waiting them with these probabilities which are the posterior
+
+1226
+01:16:23,129 --> 01:16:25,229
+probabilities which are the posterior probabilities and similarly for the
+
+1227
+01:16:25,229 --> 01:16:28,709
+probabilities and similarly for the variance basically it is like you know
+
+1228
+01:16:28,709 --> 01:16:30,989
+variance basically it is like you know you're estimating a Gaussian alright you
+
+1229
+01:16:30,989 --> 01:16:33,419
+you're estimating a Gaussian alright you are using all the data okay
+
+1230
+01:16:33,419 --> 01:16:35,399
+are using all the data okay this is with respect to this mean by the
+
+1231
+01:16:35,399 --> 01:16:36,419
+this is with respect to this mean by the way all right
+
+1232
+01:16:36,419 --> 01:16:39,329
+way all right this is very important and again your
+
+1233
+01:16:39,329 --> 01:16:41,189
+this is very important and again your wafers with respect to the
+
+1234
+01:16:41,189 --> 01:16:45,540
+wafers with respect to the responsibilities that the data time T
+
+1235
+01:16:45,540 --> 01:16:48,509
+responsibilities that the data time T belongs to theta you can extend this to
+
+1236
+01:16:48,509 --> 01:16:52,079
+belongs to theta you can extend this to actually to the distribution so if you
+
+1237
+01:16:52,079 --> 01:16:54,209
+actually to the distribution so if you have a multinomial or Bernoulli
+
+1238
+01:16:54,209 --> 01:16:56,459
+have a multinomial or Bernoulli distribution many other things work you
+
+1239
+01:16:56,459 --> 01:17:06,239
+distribution many other things work you can work the algebra by the way is I'm
+
+1240
+01:17:06,239 --> 01:17:10,619
+can work the algebra by the way is I'm going to go back and bring it to the
+
+1241
+01:17:10,619 --> 01:17:13,139
+going to go back and bring it to the need basically so completing the smoking
+
+1242
+01:17:13,139 --> 01:17:15,270
+need basically so completing the smoking distributions so you people think is
+
+1243
+01:17:15,270 --> 01:17:16,469
+distributions so you people think is working distributions
+
+1244
+01:17:16,469 --> 01:17:18,049
+working distributions sort of
+
+1245
+01:17:18,049 --> 01:17:20,839
+sort of then you know who wants to use all the
+
+1246
+01:17:20,839 --> 01:17:22,359
+then you know who wants to use all the data we are interested in online
+
+1247
+01:17:22,359 --> 01:17:25,189
+data we are interested in online estimation right but you can see when if
+
+1248
+01:17:25,189 --> 01:17:26,450
+estimation right but you can see when if you do the expectation-maximization
+
+1249
+01:17:26,450 --> 01:17:30,609
+you do the expectation-maximization algorithm you really need to have this
+
+1250
+01:17:30,609 --> 01:17:33,490
+algorithm you really need to have this posterior responsibilities and disjoint
+
+1251
+01:17:33,490 --> 01:17:36,950
+posterior responsibilities and disjoint expectations and those required that you
+
+1252
+01:17:36,950 --> 01:17:39,609
+expectations and those required that you use all the data so there's nothing
+
+1253
+01:17:39,609 --> 01:17:42,080
+use all the data so there's nothing distributions so we'll discuss on how
+
+1254
+01:17:42,080 --> 01:17:45,500
+distributions so we'll discuss on how with message-passing we can compute them
+
+1255
+01:17:45,500 --> 01:17:47,359
+with message-passing we can compute them I'm going to practice like the best when
+
+1256
+01:17:47,359 --> 01:17:50,959
+I'm going to practice like the best when I look at them to acquire the things
+
+1257
+01:17:50,959 --> 01:17:52,700
+I look at them to acquire the things looking they're very complicated but I
+
+1258
+01:17:52,700 --> 01:17:55,520
+looking they're very complicated but I think in many ways the hmm model is the
+
+1259
+01:17:55,520 --> 01:17:59,000
+think in many ways the hmm model is the simplest okay so you should invest some
+
+1260
+01:17:59,000 --> 01:18:01,760
+simplest okay so you should invest some time to understand 
+

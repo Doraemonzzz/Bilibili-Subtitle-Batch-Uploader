@@ -1,0 +1,5592 @@
+1
+00:01:34,940 --> 00:01:39,740
+all right before we start I have a question I know the homework is good
+
+2
+00:01:39,740 --> 00:01:40,900
+question I know the homework is good tomorrow
+
+3
+00:01:40,900 --> 00:01:48,510
+tomorrow are you working late with the situation
+
+4
+00:01:48,510 --> 00:01:48,520
+
+
+5
+00:01:48,520 --> 00:01:55,300
+Nick you have the barometer of the class because you always do things the last
+
+6
+00:01:55,300 --> 00:02:03,420
+because you always do things the last minute so somewhere okay on schedule
+
+7
+00:02:03,420 --> 00:02:03,430
+
+
+8
+00:02:03,430 --> 00:02:10,590
+Yass would be there's a lot of uncertainty there so what is what's the
+
+9
+00:02:10,590 --> 00:02:15,080
+uncertainty there so what is what's the idea here
+
+10
+00:02:15,080 --> 00:02:15,090
+
+
+11
+00:02:15,090 --> 00:02:19,020
+all right I get no response you know what no response means the homework is
+
+12
+00:02:19,020 --> 00:02:20,970
+what no response means the homework is here tomorrow and there will be a new
+
+13
+00:02:20,970 --> 00:02:28,350
+here tomorrow and there will be a new homework on Thursday so what we need to
+
+14
+00:02:28,350 --> 00:02:31,880
+homework on Thursday so what we need to do is you know we're covering top of
+
+15
+00:02:31,880 --> 00:02:36,570
+do is you know we're covering top of general algorithms for inference and in
+
+16
+00:02:36,570 --> 00:02:38,160
+general algorithms for inference and in particularly we were talking about the
+
+17
+00:02:38,160 --> 00:02:41,670
+particularly we were talking about the sample of the algorithm in twist which
+
+18
+00:02:41,670 --> 00:02:44,070
+sample of the algorithm in twist which is applicable both for direct indirect
+
+19
+00:02:44,070 --> 00:02:47,040
+is applicable both for direct indirect interest and so we've summarized this
+
+20
+00:02:47,040 --> 00:02:51,960
+interest and so we've summarized this today give you the algorithm hopefully
+
+21
+00:02:51,960 --> 00:02:54,270
+today give you the algorithm hopefully there will be a programming homework on
+
+22
+00:02:54,270 --> 00:02:59,580
+there will be a programming homework on this topic there for next week and also
+
+23
+00:02:59,580 --> 00:03:03,840
+this topic there for next week and also will generalize this with poly trace by
+
+24
+00:03:03,840 --> 00:03:06,890
+will generalize this with poly trace by introducing what is called factor trees
+
+25
+00:03:06,890 --> 00:03:11,460
+introducing what is called factor trees okay and I think depending how far we go
+
+26
+00:03:11,460 --> 00:03:16,860
+okay and I think depending how far we go today on Thursday we're going to start
+
+27
+00:03:16,860 --> 00:03:19,590
+today on Thursday we're going to start talking about the junction tree
+
+28
+00:03:19,590 --> 00:03:24,650
+talking about the junction tree algorithm which is even more general and
+
+29
+00:03:24,650 --> 00:03:26,880
+algorithm which is even more general and then after that actually we're going to
+
+30
+00:03:26,880 --> 00:03:28,170
+then after that actually we're going to start doing a lots of application
+
+31
+00:03:28,170 --> 00:03:30,600
+start doing a lots of application examples so some of the things that we
+
+32
+00:03:30,600 --> 00:03:32,910
+examples so some of the things that we have seen briefly we will see them again
+
+33
+00:03:32,910 --> 00:03:36,150
+have seen briefly we will see them again in detail including hidden Markov model
+
+34
+00:03:36,150 --> 00:03:39,870
+in detail including hidden Markov model space state-space models etc but it's
+
+35
+00:03:39,870 --> 00:03:41,520
+space state-space models etc but it's better to see the general theory and
+
+36
+00:03:41,520 --> 00:03:43,979
+better to see the general theory and then go to specifics around the other
+
+37
+00:03:43,979 --> 00:03:44,699
+then go to specifics around the other way around
+
+38
+00:03:44,699 --> 00:03:47,370
+way around eventually we run out of time there is
+
+39
+00:03:47,370 --> 00:03:52,559
+eventually we run out of time there is no room for the ok
+
+40
+00:03:52,559 --> 00:03:59,190
+no room for the ok so we were looking at this writin and we
+
+41
+00:03:59,190 --> 00:04:03,240
+so we were looking at this writin and we discuss if you have a directed graph you
+
+42
+00:04:03,240 --> 00:04:05,970
+discuss if you have a directed graph you transform it to an undirected graph and
+
+43
+00:04:05,970 --> 00:04:08,520
+transform it to an undirected graph and so we discuss about the sample the
+
+44
+00:04:08,520 --> 00:04:12,500
+so we discuss about the sample the algorithm for at three okay then it is
+
+45
+00:04:12,500 --> 00:04:16,849
+algorithm for at three okay then it is what you see on the first box alright so
+
+46
+00:04:16,849 --> 00:04:19,849
+what you see on the first box alright so if you have to introduce the evidence
+
+47
+00:04:19,849 --> 00:04:22,890
+if you have to introduce the evidence and the way he do this is by modifying
+
+48
+00:04:22,890 --> 00:04:29,370
+and the way he do this is by modifying the known potential all right so if X is
+
+49
+00:04:29,370 --> 00:04:32,730
+the known potential all right so if X is fixed somewhere and you already have a
+
+50
+00:04:32,730 --> 00:04:36,029
+fixed somewhere and you already have a potential of syusai you multiply by
+
+51
+00:04:36,029 --> 00:04:37,980
+potential of syusai you multiply by Delta function to force excited to take
+
+52
+00:04:37,980 --> 00:04:41,400
+Delta function to force excited to take this value at sidebar in many ways if
+
+53
+00:04:41,400 --> 00:04:42,779
+this value at sidebar in many ways if you don't have these cell potentials
+
+54
+00:04:42,779 --> 00:04:47,159
+you don't have these cell potentials this is been useful to impose everything
+
+55
+00:04:47,159 --> 00:04:49,589
+this is been useful to impose everything specifically in your in your ground all
+
+56
+00:04:49,589 --> 00:04:52,200
+specifically in your in your ground all right you have to choose a route in the
+
+57
+00:04:52,200 --> 00:04:54,960
+right you have to choose a route in the graph and in some sense for now you can
+
+58
+00:04:54,960 --> 00:04:56,520
+graph and in some sense for now you can take anything you want to because this
+
+59
+00:04:56,520 --> 00:05:00,659
+take anything you want to because this is a tree so any node you choose root
+
+60
+00:05:00,659 --> 00:05:03,930
+is a tree so any node you choose root and the algorithm starts with very
+
+61
+00:05:03,930 --> 00:05:07,860
+and the algorithm starts with very simple steps that requires total precut
+
+62
+00:05:07,860 --> 00:05:12,860
+simple steps that requires total precut C programming okay so if you start with
+
+63
+00:05:12,860 --> 00:05:16,890
+C programming okay so if you start with a node in the neighborhood of the of the
+
+64
+00:05:16,890 --> 00:05:20,000
+a node in the neighborhood of the of the root and you call this command collect
+
+65
+00:05:20,000 --> 00:05:25,890
+root and you call this command collect that's Hawaii okay so the collect
+
+66
+00:05:25,890 --> 00:05:27,960
+that's Hawaii okay so the collect algorithm you see basically here right
+
+67
+00:05:27,960 --> 00:05:30,629
+algorithm you see basically here right so you know give message this if you
+
+68
+00:05:30,629 --> 00:05:32,969
+so you know give message this if you know the message from k2j from this node
+
+69
+00:05:32,969 --> 00:05:35,310
+know the message from k2j from this node today then effectively you are ready to
+
+70
+00:05:35,310 --> 00:05:37,909
+today then effectively you are ready to propagate presence is to know the I and
+
+71
+00:05:37,909 --> 00:05:40,320
+propagate presence is to know the I and these messages are given by this command
+
+72
+00:05:40,320 --> 00:05:44,700
+these messages are given by this command that is 2 here we multiply the potential
+
+73
+00:05:44,700 --> 00:05:48,060
+that is 2 here we multiply the potential of I and J which are potential in all J
+
+74
+00:05:48,060 --> 00:05:50,430
+of I and J which are potential in all J and all the incoming messages that there
+
+75
+00:05:50,430 --> 00:05:52,350
+and all the incoming messages that there are functions of X J and then you
+
+76
+00:05:52,350 --> 00:05:55,110
+are functions of X J and then you marginalized X J so the passing message
+
+77
+00:05:55,110 --> 00:05:57,330
+marginalized X J so the passing message it's a message that depends strongly on
+
+78
+00:05:57,330 --> 00:06:03,500
+it's a message that depends strongly on Exile okay so in the Colet space
+
+79
+00:06:03,500 --> 00:06:06,480
+Exile okay so in the Colet space basically if you need to be able to
+
+80
+00:06:06,480 --> 00:06:08,659
+basically if you need to be able to start propagating this message from
+
+81
+00:06:08,659 --> 00:06:13,980
+start propagating this message from let's say if this is a road all right to
+
+82
+00:06:13,980 --> 00:06:16,680
+let's say if this is a road all right to be able to compute this messages you
+
+83
+00:06:16,680 --> 00:06:18,270
+be able to compute this messages you need to compute the messages coming from
+
+84
+00:06:18,270 --> 00:06:20,610
+need to compute the messages coming from that syndrome and then to compute those
+
+85
+00:06:20,610 --> 00:06:21,860
+that syndrome and then to compute those mess you have to keep going down
+
+86
+00:06:21,860 --> 00:06:23,939
+mess you have to keep going down eventually this will take me down to the
+
+87
+00:06:23,939 --> 00:06:27,420
+eventually this will take me down to the leaves and that's why the collect
+
+88
+00:06:27,420 --> 00:06:28,560
+leaves and that's why the collect algorithm you noticed
+
+89
+00:06:28,560 --> 00:06:31,409
+algorithm you noticed it's the recursive algorithm so you
+
+90
+00:06:31,409 --> 00:06:34,080
+it's the recursive algorithm so you start from the root and then you go one
+
+91
+00:06:34,080 --> 00:06:37,770
+start from the root and then you go one step down at a time until basically you
+
+92
+00:06:37,770 --> 00:06:39,390
+step down at a time until basically you are at the bottom and you can already
+
+93
+00:06:39,390 --> 00:06:44,340
+are at the bottom and you can already start collecting messages okay so you
+
+94
+00:06:44,340 --> 00:06:45,719
+start collecting messages okay so you don't have to write any fantastic
+
+95
+00:06:45,719 --> 00:06:47,969
+don't have to write any fantastic algorithm this is a canal but it's
+
+96
+00:06:47,969 --> 00:06:51,900
+algorithm this is a canal but it's basically for you know connecting the
+
+97
+00:06:51,900 --> 00:06:54,650
+basically for you know connecting the messages to be able to send a message
+
+98
+00:06:54,650 --> 00:06:58,140
+messages to be able to send a message from Ted why you need to have all the
+
+99
+00:06:58,140 --> 00:07:00,260
+from Ted why you need to have all the incoming vessels arriving in our journey
+
+100
+00:07:00,260 --> 00:07:01,409
+incoming vessels arriving in our journey okay
+
+101
+00:07:01,409 --> 00:07:05,940
+okay so so this is the collect and similarly
+
+102
+00:07:05,940 --> 00:07:09,810
+so so this is the collect and similarly the distributed messaging algorithm you
+
+103
+00:07:09,810 --> 00:07:12,300
+the distributed messaging algorithm you can see here it meets all the messages
+
+104
+00:07:12,300 --> 00:07:15,629
+can see here it meets all the messages arrive at the route then you are ready
+
+105
+00:07:15,629 --> 00:07:17,520
+arrive at the route then you are ready to start sending messages from the route
+
+106
+00:07:17,520 --> 00:07:20,550
+to start sending messages from the route down to the stillness of the route all
+
+107
+00:07:20,550 --> 00:07:24,089
+down to the stillness of the route all the way down to the leaves so if you you
+
+108
+00:07:24,089 --> 00:07:27,480
+the way down to the leaves so if you you can send this message and then the
+
+109
+00:07:27,480 --> 00:07:29,040
+can send this message and then the distribute algorithm is basically
+
+110
+00:07:29,040 --> 00:07:33,330
+distribute algorithm is basically propagated and again the propagating of
+
+111
+00:07:33,330 --> 00:07:34,560
+propagated and again the propagating of messages follows exactly the same
+
+112
+00:07:34,560 --> 00:07:37,290
+messages follows exactly the same commands that you know messages go up or
+
+113
+00:07:37,290 --> 00:07:38,760
+commands that you know messages go up or down specially the same commanders
+
+114
+00:07:38,760 --> 00:07:41,550
+down specially the same commanders disappear okay so the only thing have to
+
+115
+00:07:41,550 --> 00:07:43,350
+disappear okay so the only thing have to keep in mind when you propagate message
+
+116
+00:07:43,350 --> 00:07:46,200
+keep in mind when you propagate message from J to I and your countlessly for the
+
+117
+00:07:46,200 --> 00:07:48,450
+from J to I and your countlessly for the incoming messages to say if you don't
+
+118
+00:07:48,450 --> 00:07:52,800
+incoming messages to say if you don't account for the best is coming from I so
+
+119
+00:07:52,800 --> 00:07:54,510
+account for the best is coming from I so they're not gonna send try the Masters I
+
+120
+00:07:54,510 --> 00:07:57,960
+they're not gonna send try the Masters I sent you okay this is from the mental to
+
+121
+00:07:57,960 --> 00:07:59,040
+sent you okay this is from the mental to this
+
+122
+00:07:59,040 --> 00:08:05,240
+this masters parsing algorithms so eventually
+
+123
+00:08:05,240 --> 00:08:08,820
+masters parsing algorithms so eventually the collect step basically you go all
+
+124
+00:08:08,820 --> 00:08:10,980
+the collect step basically you go all the way down until you start sending
+
+125
+00:08:10,980 --> 00:08:12,960
+the way down until you start sending messages to the root and then from the
+
+126
+00:08:12,960 --> 00:08:14,430
+messages to the root and then from the root you all the way down to the leaf
+
+127
+00:08:14,430 --> 00:08:17,369
+root you all the way down to the leaf sending messages showing every edge at
+
+128
+00:08:17,369 --> 00:08:18,480
+sending messages showing every edge at the end of the day you're going to have
+
+129
+00:08:18,480 --> 00:08:22,589
+the end of the day you're going to have messages in both directions okay and we
+
+130
+00:08:22,589 --> 00:08:26,100
+messages in both directions okay and we already have Punta based for threads if
+
+131
+00:08:26,100 --> 00:08:27,689
+already have Punta based for threads if you want if you have this race engine
+
+132
+00:08:27,689 --> 00:08:29,460
+you want if you have this race engine you want to try to compute the marginal
+
+133
+00:08:29,460 --> 00:08:32,490
+you want to try to compute the marginal of a given no the only thing you have to
+
+134
+00:08:32,490 --> 00:08:34,800
+of a given no the only thing you have to do is multiply all the messages
+
+135
+00:08:34,800 --> 00:08:37,469
+do is multiply all the messages surviving to that note times the
+
+136
+00:08:37,469 --> 00:08:44,579
+surviving to that note times the potential but not the normalized okay so
+
+137
+00:08:44,579 --> 00:08:47,160
+potential but not the normalized okay so and we already discuss a few ones that
+
+138
+00:08:47,160 --> 00:08:50,990
+and we already discuss a few ones that say the Joint Distribution of I and J
+
+139
+00:08:50,990 --> 00:08:54,600
+say the Joint Distribution of I and J you know you can sort of write a single
+
+140
+00:08:54,600 --> 00:08:59,150
+you know you can sort of write a single algorithm with what we derive for change
+
+141
+00:08:59,150 --> 00:09:06,030
+algorithm with what we derive for change okay so again you choose any route you
+
+142
+00:09:06,030 --> 00:09:08,699
+okay so again you choose any route you send messages from the names to the
+
+143
+00:09:08,699 --> 00:09:12,240
+send messages from the names to the route and then from the road down to the
+
+144
+00:09:12,240 --> 00:09:18,930
+route and then from the road down to the links and and and then that's it
+
+145
+00:09:18,930 --> 00:09:18,940
+
+
+146
+00:09:18,940 --> 00:09:23,910
+I mentioned that so this algorithm is basically portrays if you try to
+
+147
+00:09:23,910 --> 00:09:26,820
+basically portrays if you try to generalize this in principle it may work
+
+148
+00:09:26,820 --> 00:09:29,610
+generalize this in principle it may work right so even if you don't have a tree
+
+149
+00:09:29,610 --> 00:09:32,580
+right so even if you don't have a tree and you try to use the same idea you
+
+150
+00:09:32,580 --> 00:09:35,700
+and you try to use the same idea you call something the root and you start
+
+151
+00:09:35,700 --> 00:09:39,000
+call something the root and you start sending messages you know you hold it
+
+152
+00:09:39,000 --> 00:09:40,650
+sending messages you know you hold it over one point you said I stay with you
+
+153
+00:09:40,650 --> 00:09:43,140
+over one point you said I stay with you and you send messages from the list all
+
+154
+00:09:43,140 --> 00:09:45,720
+and you send messages from the list all the way up and the other way around this
+
+155
+00:09:45,720 --> 00:09:48,600
+the way up and the other way around this may work even if you have loose okay but
+
+156
+00:09:48,600 --> 00:09:50,130
+may work even if you have loose okay but I'm not the antis that actually will
+
+157
+00:09:50,130 --> 00:09:53,610
+I'm not the antis that actually will work okay and the reflections of the
+
+158
+00:09:53,610 --> 00:09:55,290
+work okay and the reflections of the sound worried from including what is
+
+159
+00:09:55,290 --> 00:09:58,830
+sound worried from including what is called loopy belief propagation that
+
+160
+00:09:58,830 --> 00:10:00,990
+called loopy belief propagation that basically at the end of the day do the
+
+161
+00:10:00,990 --> 00:10:04,410
+basically at the end of the day do the same message passing in some systematic
+
+162
+00:10:04,410 --> 00:10:07,440
+same message passing in some systematic manner and then because they saw what if
+
+163
+00:10:07,440 --> 00:10:09,810
+manner and then because they saw what if they keep going forever you just stop it
+
+164
+00:10:09,810 --> 00:10:11,430
+they keep going forever you just stop it at a certain time when the messages
+
+165
+00:10:11,430 --> 00:10:13,650
+at a certain time when the messages don't change very much and you call that
+
+166
+00:10:13,650 --> 00:10:16,760
+don't change very much and you call that the end of the story hoping for the best
+
+167
+00:10:16,760 --> 00:10:18,650
+the end of the story hoping for the best okay
+
+168
+00:10:18,650 --> 00:10:23,210
+okay many years ago I you know when we were
+
+169
+00:10:23,210 --> 00:10:27,210
+many years ago I you know when we were writing a proposal somehow I I got
+
+170
+00:10:27,210 --> 00:10:29,010
+writing a proposal somehow I I got excited about this concept of loopy
+
+171
+00:10:29,010 --> 00:10:32,160
+excited about this concept of loopy belief propagation and I told all this
+
+172
+00:10:32,160 --> 00:10:33,900
+belief propagation and I told all this mathematician so you know we have to use
+
+173
+00:10:33,900 --> 00:10:36,480
+mathematician so you know we have to use this loopy belief algorithm and
+
+174
+00:10:36,480 --> 00:10:37,920
+this loopy belief algorithm and everybody had no idea what I was talking
+
+175
+00:10:37,920 --> 00:10:41,880
+everybody had no idea what I was talking because looping means crazy okay
+
+176
+00:10:41,880 --> 00:10:45,180
+because looping means crazy okay but obviously here is not a disgrace it
+
+177
+00:10:45,180 --> 00:10:48,120
+but obviously here is not a disgrace it means there are loops okay but it's all
+
+178
+00:10:48,120 --> 00:10:49,770
+means there are loops okay but it's all relative
+
+179
+00:10:49,770 --> 00:10:51,510
+relative they always may go crazy if you have
+
+180
+00:10:51,510 --> 00:10:54,780
+they always may go crazy if you have loops all right so one way you sit on
+
+181
+00:10:54,780 --> 00:10:58,679
+loops all right so one way you sit on the other you get the same message
+
+182
+00:10:58,679 --> 00:11:07,900
+the other you get the same message so if you have a directed graph what you
+
+183
+00:11:07,900 --> 00:11:11,139
+so if you have a directed graph what you have even though it is a tree like when
+
+184
+00:11:11,139 --> 00:11:12,519
+have even though it is a tree like when you transform into an undirected graph
+
+185
+00:11:12,519 --> 00:11:14,889
+you transform into an undirected graph you have to marry the parent so if you
+
+186
+00:11:14,889 --> 00:11:17,199
+you have to marry the parent so if you have two parents basically them directly
+
+187
+00:11:17,199 --> 00:11:22,179
+have two parents basically them directly God is going to have loops okay so one
+
+188
+00:11:22,179 --> 00:11:25,299
+God is going to have loops okay so one easy way to get away from this problem
+
+189
+00:11:25,299 --> 00:11:27,160
+easy way to get away from this problem without using this concept of look at
+
+190
+00:11:27,160 --> 00:11:29,590
+without using this concept of look at the new propagation is to transform this
+
+191
+00:11:29,590 --> 00:11:31,859
+the new propagation is to transform this graph to what is called a factor graph
+
+192
+00:11:31,859 --> 00:11:35,199
+graph to what is called a factor graph okay an instan idea basically that
+
+193
+00:11:35,199 --> 00:11:38,639
+okay an instan idea basically that everybody is using its simple trial
+
+194
+00:11:38,639 --> 00:11:42,519
+everybody is using its simple trial equal crap you know that allows you to
+
+195
+00:11:42,519 --> 00:11:46,470
+equal crap you know that allows you to extend the the sum product algorithm to
+
+196
+00:11:46,470 --> 00:11:48,009
+extend the the sum product algorithm to poly triste
+
+197
+00:11:48,009 --> 00:11:50,079
+poly triste so one where this I'm gonna reveal this
+
+198
+00:11:50,079 --> 00:11:52,569
+so one where this I'm gonna reveal this and tell you how this algorithm is going
+
+199
+00:11:52,569 --> 00:11:55,629
+and tell you how this algorithm is going to work for this factor graphs so we
+
+200
+00:11:55,629 --> 00:11:57,220
+to work for this factor graphs so we have to spend maybe ten fifteen minutes
+
+201
+00:11:57,220 --> 00:12:01,090
+have to spend maybe ten fifteen minutes to discuss what's a pack together so in
+
+202
+00:12:01,090 --> 00:12:03,400
+to discuss what's a pack together so in the photograph in addition to the nodes
+
+203
+00:12:03,400 --> 00:12:06,639
+the photograph in addition to the nodes that denote for all the variables like X
+
+204
+00:12:06,639 --> 00:12:07,869
+that denote for all the variables like X 1 X 2 X 3
+
+205
+00:12:07,869 --> 00:12:11,679
+1 X 2 X 3 you also have squared nodes that denote
+
+206
+00:12:11,679 --> 00:12:15,970
+you also have squared nodes that denote function the pencils so basically the
+
+207
+00:12:15,970 --> 00:12:19,179
+function the pencils so basically the fact that this total curve and express
+
+208
+00:12:19,179 --> 00:12:22,059
+fact that this total curve and express the graph that explicitly shows you the
+
+209
+00:12:22,059 --> 00:12:25,539
+the graph that explicitly shows you the potentials that are used in the
+
+210
+00:12:25,539 --> 00:12:27,400
+potentials that are used in the factorization of the joint probability
+
+211
+00:12:27,400 --> 00:12:30,549
+factorization of the joint probability distribution so for example let's look
+
+212
+00:12:30,549 --> 00:12:33,909
+distribution so for example let's look at this undirected graph right so I have
+
+213
+00:12:33,909 --> 00:12:36,309
+at this undirected graph right so I have P of X 1 P of X tilde has no farlands
+
+214
+00:12:36,309 --> 00:12:39,879
+P of X 1 P of X tilde has no farlands times P of X 3 given X 1 and X 2 so the
+
+215
+00:12:39,879 --> 00:12:42,970
+times P of X 3 given X 1 and X 2 so the factor graph looks like what you see
+
+216
+00:12:42,970 --> 00:12:48,129
+factor graph looks like what you see here okay this is a faction which is P
+
+217
+00:12:48,129 --> 00:12:50,919
+here okay this is a faction which is P of X 1 this function which is perfect to
+
+218
+00:12:50,919 --> 00:12:55,600
+of X 1 this function which is perfect to you notice this function are connected
+
+219
+00:12:55,600 --> 00:12:57,729
+you notice this function are connected to the nodes
+
+220
+00:12:57,729 --> 00:12:59,619
+to the nodes indicating which arguments are inside
+
+221
+00:12:59,619 --> 00:13:01,989
+indicating which arguments are inside those functions so feel touch one it's
+
+222
+00:13:01,989 --> 00:13:04,449
+those functions so feel touch one it's only involves sexual so it's only four
+
+223
+00:13:04,449 --> 00:13:04,910
+only involves sexual so it's only four left
+
+224
+00:13:04,910 --> 00:13:07,549
+left Schwann he of x2 is only connected to X
+
+225
+00:13:07,549 --> 00:13:10,579
+Schwann he of x2 is only connected to X 2 and then we have this function of P of
+
+226
+00:13:10,579 --> 00:13:12,829
+2 and then we have this function of P of X 3 given X 1 institution as a function
+
+227
+00:13:12,829 --> 00:13:14,929
+X 3 given X 1 institution as a function of three arguments so this is connected
+
+228
+00:13:14,929 --> 00:13:23,569
+of three arguments so this is connected to the 3 body okay so this the variables
+
+229
+00:13:23,569 --> 00:13:25,970
+to the 3 body okay so this the variables the random variables this charge these
+
+230
+00:13:25,970 --> 00:13:31,159
+the random variables this charge these factors and two nodes in the context of
+
+231
+00:13:31,159 --> 00:13:33,109
+factors and two nodes in the context of what we define a neighborhood in
+
+232
+00:13:33,109 --> 00:13:35,960
+what we define a neighborhood in directional directly up to now share
+
+233
+00:13:35,960 --> 00:13:39,530
+directional directly up to now share neighbors if they're basically sharing a
+
+234
+00:13:39,530 --> 00:13:42,710
+neighbors if they're basically sharing a factor not depend parts of the same
+
+235
+00:13:42,710 --> 00:13:45,379
+factor not depend parts of the same function be special for example x1 x2
+
+236
+00:13:45,379 --> 00:13:47,989
+function be special for example x1 x2 our know our neighbors because they are
+
+237
+00:13:47,989 --> 00:13:51,710
+our know our neighbors because they are part of this fact to know that connects
+
+238
+00:13:51,710 --> 00:13:59,689
+part of this fact to know that connects x1 x2 and x3 two more examples so you
+
+239
+00:13:59,689 --> 00:14:02,599
+x1 x2 and x3 two more examples so you know this list for the problem that you
+
+240
+00:14:02,599 --> 00:14:05,629
+know this list for the problem that you just discussed right I want to shake on
+
+241
+00:14:05,629 --> 00:14:10,340
+just discussed right I want to shake on this on this slide that the design of
+
+242
+00:14:10,340 --> 00:14:12,619
+this on this slide that the design of the factor graph from a given Direction
+
+243
+00:14:12,619 --> 00:14:15,769
+the factor graph from a given Direction graph is not a unique contract so you
+
+244
+00:14:15,769 --> 00:14:17,119
+graph is not a unique contract so you can have actually multiple paths to
+
+245
+00:14:17,119 --> 00:14:22,039
+can have actually multiple paths to graph ok and nothing really to worry at
+
+246
+00:14:22,039 --> 00:14:23,389
+graph ok and nothing really to worry at least in the context of this class so
+
+247
+00:14:23,389 --> 00:14:25,900
+least in the context of this class so for example here remember we have the
+
+248
+00:14:25,900 --> 00:14:29,059
+for example here remember we have the effect of friction aspectual on a factor
+
+249
+00:14:29,059 --> 00:14:31,249
+effect of friction aspectual on a factor for its to write and the part of that
+
+250
+00:14:31,249 --> 00:14:33,319
+for its to write and the part of that involves the three arguments here you
+
+251
+00:14:33,319 --> 00:14:35,479
+involves the three arguments here you know what I do is I only use one factor
+
+252
+00:14:35,479 --> 00:14:36,919
+know what I do is I only use one factor because this factor involves the three
+
+253
+00:14:36,919 --> 00:14:39,439
+because this factor involves the three arguments I could pose to be
+
+254
+00:14:39,439 --> 00:14:41,659
+arguments I could pose to be affectionate P of x2 as part of the
+
+255
+00:14:41,659 --> 00:14:43,249
+affectionate P of x2 as part of the biggest part of involves from three
+
+256
+00:14:43,249 --> 00:14:47,539
+biggest part of involves from three together alright so this is one course
+
+257
+00:14:47,539 --> 00:14:51,470
+together alright so this is one course but this is what we saw before right the
+
+258
+00:14:51,470 --> 00:14:57,229
+but this is what we saw before right the same so this two are different okay in
+
+259
+00:14:57,229 --> 00:14:59,710
+same so this two are different okay in this case I suppose the cost of doing
+
+260
+00:14:59,710 --> 00:15:02,029
+this case I suppose the cost of doing inference of something like this or
+
+261
+00:15:02,029 --> 00:15:04,489
+inference of something like this or something like that it's practically the
+
+262
+00:15:04,489 --> 00:15:07,039
+something like that it's practically the same because you notice here you know
+
+263
+00:15:07,039 --> 00:15:08,449
+same because you notice here you know you have three variables and here you
+
+264
+00:15:08,449 --> 00:15:11,210
+you have three variables and here you have three variables so we'll so that is
+
+265
+00:15:11,210 --> 00:15:12,710
+have three variables so we'll so that is what defines the complexity of the
+
+266
+00:15:12,710 --> 00:15:13,400
+what defines the complexity of the problem
+
+267
+00:15:13,400 --> 00:15:16,620
+problem but it's somehow you can write this
+
+268
+00:15:16,620 --> 00:15:18,960
+but it's somehow you can write this without those that have only to take two
+
+269
+00:15:18,960 --> 00:15:21,300
+without those that have only to take two arguments that would be the best way but
+
+270
+00:15:21,300 --> 00:15:24,290
+arguments that would be the best way but you cannot do it here because one of the
+
+271
+00:15:24,290 --> 00:15:27,300
+you cannot do it here because one of the probabilities is your X 3 given X 1 and
+
+272
+00:15:27,300 --> 00:15:30,080
+probabilities is your X 3 given X 1 and X 2 so you need a factor of also 3
+
+273
+00:15:30,080 --> 00:15:36,480
+X 2 so you need a factor of also 3 arguments again variable nodes these are
+
+274
+00:15:36,480 --> 00:15:41,390
+arguments again variable nodes these are factor notes their functions all right
+
+275
+00:15:41,390 --> 00:15:45,860
+factor notes their functions all right [Applause]
+
+276
+00:15:45,860 --> 00:15:45,870
+
+
+277
+00:15:45,870 --> 00:15:52,490
+so for example in in this case right so let's look so before we had the directly
+
+278
+00:15:52,490 --> 00:15:54,350
+let's look so before we had the directly graph here we have an undirected graph
+
+279
+00:15:54,350 --> 00:15:57,560
+graph here we have an undirected graph so we have a clique that involves nodes
+
+280
+00:15:57,560 --> 00:16:01,250
+so we have a clique that involves nodes 1 &amp; 2 so there is a potential of X 1 and
+
+281
+00:16:01,250 --> 00:16:04,070
+1 &amp; 2 so there is a potential of X 1 and X 2 and then we have a clique involves 2
+
+282
+00:16:04,070 --> 00:16:06,220
+X 2 and then we have a clique involves 2 3 &amp; 4 so vivid potential of 3 variables
+
+283
+00:16:06,220 --> 00:16:09,040
+3 &amp; 4 so vivid potential of 3 variables so the part of graph is very simple
+
+284
+00:16:09,040 --> 00:16:11,360
+so the part of graph is very simple there is a factor of they are the
+
+285
+00:16:11,360 --> 00:16:13,490
+there is a factor of they are the connect X 1 X 2 that's explicitly this
+
+286
+00:16:13,490 --> 00:16:16,420
+connect X 1 X 2 that's explicitly this function and then there is another
+
+287
+00:16:16,420 --> 00:16:24,920
+function and then there is another particles of connect 2 3 &amp; 4
+
+288
+00:16:24,920 --> 00:16:24,930
+
+
+289
+00:16:24,930 --> 00:16:30,470
+right and as I said several photographs would correspond to the same undirected
+
+290
+00:16:30,470 --> 00:16:34,130
+would correspond to the same undirected graph so in this case you know there is
+
+291
+00:16:34,130 --> 00:16:37,070
+graph so in this case you know there is only one click so you can collect all X
+
+292
+00:16:37,070 --> 00:16:39,890
+only one click so you can collect all X 1 X 2 X 3 to the others in one factor
+
+293
+00:16:39,890 --> 00:16:42,829
+1 X 2 X 3 to the others in one factor but here you know actually you can do
+
+294
+00:16:42,829 --> 00:16:45,440
+but here you know actually you can do weird things and split it in the factor
+
+295
+00:16:45,440 --> 00:16:47,900
+weird things and split it in the factor of 3 and also factors to so of course
+
+296
+00:16:47,900 --> 00:16:49,130
+of 3 and also factors to so of course you're not going to gain anything with
+
+297
+00:16:49,130 --> 00:16:51,880
+you're not going to gain anything with us but that's another story
+
+298
+00:16:51,880 --> 00:16:57,560
+us but that's another story so at this time directed graph right and
+
+299
+00:16:57,560 --> 00:16:59,510
+so at this time directed graph right and look a pissed-off the graph and this
+
+300
+00:16:59,510 --> 00:17:01,850
+look a pissed-off the graph and this factor block and don't read what it says
+
+301
+00:17:01,850 --> 00:17:04,549
+factor block and don't read what it says there which is computationally better to
+
+302
+00:17:04,549 --> 00:17:11,650
+there which is computationally better to work with
+
+303
+00:17:11,650 --> 00:17:11,660
+
+
+304
+00:17:11,660 --> 00:17:17,110
+no don't read this okay I don't have time to go and make an omission from the
+
+305
+00:17:17,110 --> 00:17:18,819
+time to go and make an omission from the slides right life you store any
+
+306
+00:17:18,819 --> 00:17:21,220
+slides right life you store any complicated making these clients so
+
+307
+00:17:21,220 --> 00:17:24,850
+complicated making these clients so Mitchell twelve this part of everything
+
+308
+00:17:24,850 --> 00:17:26,530
+Mitchell twelve this part of everything is confidential and graham easier to
+
+309
+00:17:26,530 --> 00:17:29,230
+is confidential and graham easier to work with for inference this or not and
+
+310
+00:17:29,230 --> 00:17:37,230
+work with for inference this or not and why David easiest Christian ethnic
+
+311
+00:17:37,230 --> 00:17:43,480
+why David easiest Christian ethnic alright I'm sorry to kill her now you're
+
+312
+00:17:43,480 --> 00:17:45,850
+alright I'm sorry to kill her now you're so famous you know around the world you
+
+313
+00:17:45,850 --> 00:17:47,230
+so famous you know around the world you know all the Chinese think who is the
+
+314
+00:17:47,230 --> 00:17:48,010
+know all the Chinese think who is the guy Nick
+
+315
+00:17:48,010 --> 00:17:50,170
+guy Nick you know so maybe we should turn the
+
+316
+00:17:50,170 --> 00:18:01,690
+you know so maybe we should turn the camera so this is not the best option
+
+317
+00:18:01,690 --> 00:18:01,700
+
+
+318
+00:18:01,700 --> 00:18:07,600
+I mean when you compare the two right what is different in the in the in the
+
+319
+00:18:07,600 --> 00:18:11,950
+what is different in the in the in the two photographs here this pastor is
+
+320
+00:18:11,950 --> 00:18:15,760
+two photographs here this pastor is welcome any notes three so let's say
+
+321
+00:18:15,760 --> 00:18:17,620
+welcome any notes three so let's say each of these variables has K value so
+
+322
+00:18:17,620 --> 00:18:21,160
+each of these variables has K value so it's K cubed complexity in sparkler here
+
+323
+00:18:21,160 --> 00:18:24,280
+it's K cubed complexity in sparkler here revolves how many nodes to so the
+
+324
+00:18:24,280 --> 00:18:28,570
+revolves how many nodes to so the complex disk X square now if K is very
+
+325
+00:18:28,570 --> 00:18:30,250
+complex disk X square now if K is very small right you will not make a
+
+326
+00:18:30,250 --> 00:18:32,920
+small right you will not make a difference for example if K is equal to
+
+327
+00:18:32,920 --> 00:18:38,920
+difference for example if K is equal to 105 not be difference that you know if
+
+328
+00:18:38,920 --> 00:18:40,960
+105 not be difference that you know if this is part you may have this in a much
+
+329
+00:18:40,960 --> 00:18:43,870
+this is part you may have this in a much bigger graph post this will make a huge
+
+330
+00:18:43,870 --> 00:18:44,470
+bigger graph post this will make a huge difference
+
+331
+00:18:44,470 --> 00:18:47,770
+difference this is ghost with K square this goes
+
+332
+00:18:47,770 --> 00:18:54,140
+this is ghost with K square this goes with take you all right
+
+333
+00:18:54,140 --> 00:18:54,150
+
+
+334
+00:18:54,150 --> 00:18:59,160
+what
+
+335
+00:18:59,160 --> 00:18:59,170
+
+
+336
+00:18:59,170 --> 00:19:05,370
+so let's just do one final example and we leave it there so this is a directed
+
+337
+00:19:05,370 --> 00:19:10,169
+we leave it there so this is a directed graph okay and this is sort of it's an
+
+338
+00:19:10,169 --> 00:19:13,580
+graph okay and this is sort of it's an antique abstract I think I you know I
+
+339
+00:19:13,580 --> 00:19:17,580
+antique abstract I think I you know I believe us probably did this on my own
+
+340
+00:19:17,580 --> 00:19:20,310
+believe us probably did this on my own here so it doesn't look very good but
+
+341
+00:19:20,310 --> 00:19:22,110
+here so it doesn't look very good but let's look at all the parts of tonight
+
+342
+00:19:22,110 --> 00:19:27,539
+let's look at all the parts of tonight so X ranch has no parents so we need to
+
+343
+00:19:27,539 --> 00:19:29,520
+so X ranch has no parents so we need to have a particle that represents the
+
+344
+00:19:29,520 --> 00:19:33,180
+have a particle that represents the effects Juan okay next week has no
+
+345
+00:19:33,180 --> 00:19:34,860
+effects Juan okay next week has no parents so we need to have a pastor of
+
+346
+00:19:34,860 --> 00:19:39,900
+parents so we need to have a pastor of the presents P of x2 now we have P of X
+
+347
+00:19:39,900 --> 00:19:43,680
+the presents P of x2 now we have P of X to be given x1 are you put is that no
+
+348
+00:19:43,680 --> 00:19:47,490
+to be given x1 are you put is that no I'm sorry p x3 give an X 1 and X 2 so
+
+349
+00:19:47,490 --> 00:19:50,250
+I'm sorry p x3 give an X 1 and X 2 so that this part third collects x1 and x2
+
+350
+00:19:50,250 --> 00:19:56,880
+that this part third collects x1 and x2 do you see that right you need to
+
+351
+00:19:56,880 --> 00:19:59,909
+do you see that right you need to collect basically X 1 X 2 and X 3 all
+
+352
+00:19:59,909 --> 00:20:04,140
+collect basically X 1 X 2 and X 3 all right let's see what else we have
+
+353
+00:20:04,140 --> 00:20:09,539
+right let's see what else we have we have P of X 5 given X 1 and X 3 X 5 X
+
+354
+00:20:09,539 --> 00:20:14,520
+we have P of X 5 given X 1 and X 3 X 5 X 1 and X 3 does this factor and then we
+
+355
+00:20:14,520 --> 00:20:17,159
+1 and X 3 does this factor and then we have X 1 given X 2 and X 3 and up this
+
+356
+00:20:17,159 --> 00:20:22,370
+have X 1 given X 2 and X 3 and up this part okay
+
+357
+00:20:22,370 --> 00:20:22,380
+
+
+358
+00:20:22,380 --> 00:20:27,419
+this is an esoteric example but it's an important example but I will bypass it
+
+359
+00:20:27,419 --> 00:20:31,560
+important example but I will bypass it but give questions just ask me okay so
+
+360
+00:20:31,560 --> 00:20:34,919
+but give questions just ask me okay so what we're interested to do spark
+
+361
+00:20:34,919 --> 00:20:39,419
+what we're interested to do spark Congrats because if we have a directed
+
+362
+00:20:39,419 --> 00:20:40,500
+Congrats because if we have a directed graph
+
+363
+00:20:40,500 --> 00:20:44,370
+graph God has two parents and we moralize it
+
+364
+00:20:44,370 --> 00:20:46,620
+God has two parents and we moralize it we get loops but somehow you can
+
+365
+00:20:46,620 --> 00:20:49,980
+we get loops but somehow you can transform the situation here with loops
+
+366
+00:20:49,980 --> 00:20:54,360
+transform the situation here with loops to literally to a tree the alternative
+
+367
+00:20:54,360 --> 00:20:56,970
+to literally to a tree the alternative is a tree graph then we can do the sum
+
+368
+00:20:56,970 --> 00:20:59,960
+is a tree graph then we can do the sum product algorithm on a photograph that
+
+369
+00:20:59,960 --> 00:21:05,370
+product algorithm on a photograph that would be annual okay so does this look
+
+370
+00:21:05,370 --> 00:21:07,590
+would be annual okay so does this look like a plate to you or I shall here here
+
+371
+00:21:07,590 --> 00:21:10,580
+like a plate to you or I shall here here I have three nodes all right three nodes
+
+372
+00:21:10,580 --> 00:21:13,049
+I have three nodes all right three nodes here because I had these two single
+
+373
+00:21:13,049 --> 00:21:14,669
+here because I had these two single potentials you can clip off the string
+
+374
+00:21:14,669 --> 00:21:16,620
+potentials you can clip off the string of potentials there then here you have
+
+375
+00:21:16,620 --> 00:21:23,630
+of potentials there then here you have three nodes and let me see and you know
+
+376
+00:21:23,630 --> 00:21:26,130
+three nodes and let me see and you know as suppose here this was accurate order
+
+377
+00:21:26,130 --> 00:21:28,169
+as suppose here this was accurate order of importance timing and other single
+
+378
+00:21:28,169 --> 00:21:30,480
+of importance timing and other single potential there okay so is this looking
+
+379
+00:21:30,480 --> 00:21:35,570
+potential there okay so is this looking like a treating you
+
+380
+00:21:35,570 --> 00:21:35,580
+
+
+381
+00:21:35,580 --> 00:21:40,190
+and he playin remember there's a single path from you known to any other normal
+
+382
+00:21:40,190 --> 00:21:42,320
+path from you known to any other normal but here we're not looking Anya the
+
+383
+00:21:42,320 --> 00:21:44,269
+but here we're not looking Anya the valuable notes were to incorporate also
+
+384
+00:21:44,269 --> 00:21:46,999
+valuable notes were to incorporate also the fact to note so if part of knowledge
+
+385
+00:21:46,999 --> 00:21:50,450
+the fact to note so if part of knowledge and variable nodes if you think of them
+
+386
+00:21:50,450 --> 00:21:53,749
+and variable nodes if you think of them as just different sets of notes you know
+
+387
+00:21:53,749 --> 00:21:56,539
+as just different sets of notes you know this is a tree okay so the question is
+
+388
+00:21:56,539 --> 00:22:00,649
+this is a tree okay so the question is how can we do sort of inference and how
+
+389
+00:22:00,649 --> 00:22:02,529
+how can we do sort of inference and how we can extend the sum-product algorithm
+
+390
+00:22:02,529 --> 00:22:08,359
+we can extend the sum-product algorithm this part okay that's another example of
+
+391
+00:22:08,359 --> 00:22:10,729
+this part okay that's another example of 12 but we make it to a tree
+
+392
+00:22:10,729 --> 00:22:16,759
+12 but we make it to a tree okay so let's discuss what the algorithm
+
+393
+00:22:16,759 --> 00:22:18,859
+okay so let's discuss what the algorithm is going to look like so the only thing
+
+394
+00:22:18,859 --> 00:22:22,430
+is going to look like so the only thing I am going to need right now is the
+
+395
+00:22:22,430 --> 00:22:23,830
+I am going to need right now is the decomposition of the Joint Distribution
+
+396
+00:22:23,830 --> 00:22:28,999
+decomposition of the Joint Distribution as a product for factors and this will
+
+397
+00:22:28,999 --> 00:22:31,190
+as a product for factors and this will be my squared knowledge basically each
+
+398
+00:22:31,190 --> 00:22:33,529
+be my squared knowledge basically each of these factors in principle okay
+
+399
+00:22:33,529 --> 00:22:38,840
+of these factors in principle okay so here is a decomposition of the Joint
+
+400
+00:22:38,840 --> 00:22:41,210
+so here is a decomposition of the Joint Distribution and you notice I have after
+
+401
+00:22:41,210 --> 00:22:43,399
+Distribution and you notice I have after a favor involves two variables that be
+
+402
+00:22:43,399 --> 00:22:46,879
+a favor involves two variables that be two variables actually variables and
+
+403
+00:22:46,879 --> 00:22:51,739
+two variables actually variables and it's the alone this is actually what is
+
+404
+00:22:51,739 --> 00:22:55,430
+it's the alone this is actually what is called bipartite facto graph okay you
+
+405
+00:22:55,430 --> 00:22:57,470
+called bipartite facto graph okay you notice there are no connections between
+
+406
+00:22:57,470 --> 00:23:03,519
+notice there are no connections between X 1 X 2 X 2 X 3 or between FASB ft etc
+
+407
+00:23:03,519 --> 00:23:11,120
+X 1 X 2 X 2 X 3 or between FASB ft etc all right
+
+408
+00:23:11,120 --> 00:23:11,130
+
+
+409
+00:23:11,130 --> 00:23:21,010
+don't really need this don't really need this I am gonna bypass all of this and
+
+410
+00:23:21,010 --> 00:23:21,020
+
+
+411
+00:23:21,020 --> 00:23:29,620
+all right so we need to discuss how we're gonna do incurring some on program
+
+412
+00:23:29,620 --> 00:23:29,630
+
+
+413
+00:23:29,630 --> 00:23:35,240
+he's going to get conceptually complicated right so you need to get
+
+414
+00:23:35,240 --> 00:23:39,470
+complicated right so you need to get used to visualize as to what is going on
+
+415
+00:23:39,470 --> 00:23:41,690
+used to visualize as to what is going on and what the definition of the message
+
+416
+00:23:41,690 --> 00:23:47,570
+and what the definition of the message is is all about okay and sometimes we
+
+417
+00:23:47,570 --> 00:23:50,000
+is is all about okay and sometimes we have an out that and you notice there's
+
+418
+00:23:50,000 --> 00:23:52,760
+have an out that and you notice there's no text is unrolled here and we need to
+
+419
+00:23:52,760 --> 00:23:55,910
+no text is unrolled here and we need to compute the marginal of X okay so in
+
+420
+00:23:55,910 --> 00:23:58,790
+compute the marginal of X okay so in principle this is basically integrating
+
+421
+00:23:58,790 --> 00:24:00,950
+principle this is basically integrating out all the other variables but little X
+
+422
+00:24:00,950 --> 00:24:06,950
+out all the other variables but little X ok they are bolded that I am writing now
+
+423
+00:24:06,950 --> 00:24:09,980
+ok they are bolded that I am writing now the Joint Distribution of all the
+
+424
+00:24:09,980 --> 00:24:15,050
+the Joint Distribution of all the variables X s this product that we see
+
+425
+00:24:15,050 --> 00:24:17,210
+variables X s this product that we see here but let's clearly define what the
+
+426
+00:24:17,210 --> 00:24:20,300
+here but let's clearly define what the location is so there's no that's here is
+
+427
+00:24:20,300 --> 00:24:27,830
+location is so there's no that's here is surrounded by factors because okay sorry
+
+428
+00:24:27,830 --> 00:24:31,880
+surrounded by factors because okay sorry I'm looking now to this factor FS all
+
+429
+00:24:31,880 --> 00:24:35,450
+I'm looking now to this factor FS all right now think if you take this 3 and
+
+430
+00:24:35,450 --> 00:24:37,850
+right now think if you take this 3 and you put X on the top it is a three
+
+431
+00:24:37,850 --> 00:24:40,520
+you put X on the top it is a three writes all of this part is going to be
+
+432
+00:24:40,520 --> 00:24:44,690
+writes all of this part is going to be coming down as one three and that three
+
+433
+00:24:44,690 --> 00:24:48,340
+coming down as one three and that three originates from the factory first
+
+434
+00:24:48,340 --> 00:24:52,010
+originates from the factory first because strictly this is a three all
+
+435
+00:24:52,010 --> 00:24:55,280
+because strictly this is a three all right so can we look at this equation
+
+436
+00:24:55,280 --> 00:24:57,980
+right so can we look at this equation and and before I go to the next slide
+
+437
+00:24:57,980 --> 00:25:01,340
+and and before I go to the next slide tell me what is this function they are
+
+438
+00:25:01,340 --> 00:25:04,550
+tell me what is this function they are going to be like what is it you need to
+
+439
+00:25:04,550 --> 00:25:06,980
+going to be like what is it you need to give me an equation but looking at short
+
+440
+00:25:06,980 --> 00:25:08,990
+give me an equation but looking at short it's reached here the Joint Distribution
+
+441
+00:25:08,990 --> 00:25:13,070
+it's reached here the Joint Distribution of all the axis is the product of these
+
+442
+00:25:13,070 --> 00:25:16,040
+of all the axis is the product of these functions would subscribe this so all a
+
+443
+00:25:16,040 --> 00:25:18,180
+functions would subscribe this so all a system of our neighbors
+
+444
+00:25:18,180 --> 00:25:20,850
+system of our neighbors so far in fact those that the neighbors
+
+445
+00:25:20,850 --> 00:25:23,399
+so far in fact those that the neighbors affect so this factor and that factor
+
+446
+00:25:23,399 --> 00:25:28,919
+affect so this factor and that factor and that factor etc invisible if you
+
+447
+00:25:28,919 --> 00:25:31,080
+and that factor etc invisible if you look at that factor you get 1/3 if you
+
+448
+00:25:31,080 --> 00:25:33,180
+look at that factor you get 1/3 if you look at this factor another tree if you
+
+449
+00:25:33,180 --> 00:25:36,360
+look at this factor another tree if you look about another dissipate so what do
+
+450
+00:25:36,360 --> 00:25:38,399
+look about another dissipate so what do you think is F subscript the first
+
+451
+00:25:38,399 --> 00:25:47,160
+you think is F subscript the first little X comma capital X first
+
+452
+00:25:47,160 --> 00:25:47,170
+
+
+453
+00:25:47,170 --> 00:25:52,260
+so you will agree with me light so this is a fat fella fest this node will be
+
+454
+00:25:52,260 --> 00:25:54,090
+is a fat fella fest this node will be connected to another factor which will
+
+455
+00:25:54,090 --> 00:25:56,430
+connected to another factor which will be connected to another node with other
+
+456
+00:25:56,430 --> 00:25:59,250
+be connected to another node with other factors etc and each comes with its
+
+457
+00:25:59,250 --> 00:26:03,570
+factors etc and each comes with its potential so when I say F subscript the
+
+458
+00:26:03,570 --> 00:26:07,050
+potential so when I say F subscript the first blue t-rex this is the advantage X
+
+459
+00:26:07,050 --> 00:26:10,350
+first blue t-rex this is the advantage X comma X test what is not first noticed
+
+460
+00:26:10,350 --> 00:26:16,500
+comma X test what is not first noticed XS you take capital X Earth there are a
+
+461
+00:26:16,500 --> 00:26:23,080
+XS you take capital X Earth there are a collection of knowledge which knows
+
+462
+00:26:23,080 --> 00:26:23,090
+
+
+463
+00:26:23,090 --> 00:26:29,680
+on the subtree double originates basically on the track to attach so all
+
+464
+00:26:29,680 --> 00:26:33,129
+basically on the track to attach so all the nodes that we have over there
+
+465
+00:26:33,129 --> 00:26:38,169
+the nodes that we have over there I call them expert okay it next it is
+
+466
+00:26:38,169 --> 00:26:41,080
+I call them expert okay it next it is there to remind me that I am looking at
+
+467
+00:26:41,080 --> 00:26:45,239
+there to remind me that I am looking at factors that are connected with text I
+
+468
+00:26:45,239 --> 00:26:48,430
+factors that are connected with text I need to make to define that when I say
+
+469
+00:26:48,430 --> 00:26:51,610
+need to make to define that when I say yes light actually is a factor of this a
+
+470
+00:26:51,610 --> 00:26:55,659
+yes light actually is a factor of this a neighbor or text so I need to have the
+
+471
+00:26:55,659 --> 00:26:57,759
+neighbor or text so I need to have the written text there this is an advantage
+
+472
+00:26:57,759 --> 00:27:01,389
+written text there this is an advantage X okay and what do you think in the
+
+473
+00:27:01,389 --> 00:27:08,920
+X okay and what do you think in the capital of F capital F subscript test
+
+474
+00:27:08,920 --> 00:27:08,930
+
+
+475
+00:27:08,930 --> 00:27:17,380
+what is a level on this from this term of the state I mean we say right joy
+
+476
+00:27:17,380 --> 00:27:20,980
+of the state I mean we say right joy care is you know this node and this node
+
+477
+00:27:20,980 --> 00:27:23,170
+care is you know this node and this node is connected to a factor which connected
+
+478
+00:27:23,170 --> 00:27:25,690
+is connected to a factor which connected to another known factor and again is
+
+479
+00:27:25,690 --> 00:27:28,000
+to another known factor and again is note the factor two other notes and a
+
+480
+00:27:28,000 --> 00:27:30,870
+note the factor two other notes and a factor so what do you think this at
+
+481
+00:27:30,870 --> 00:27:39,470
+factor so what do you think this at subscript assets
+
+482
+00:27:39,470 --> 00:27:39,480
+
+
+483
+00:27:39,480 --> 00:27:45,590
+it is before the potentials ready for the fastest on the sub three but
+
+484
+00:27:45,590 --> 00:27:50,570
+the fastest on the sub three but originates from this factory first right
+
+485
+00:27:50,570 --> 00:27:56,570
+originates from this factory first right first on this sub 3 alright so the
+
+486
+00:27:56,570 --> 00:27:58,310
+first on this sub 3 alright so the product of all of those you do not have
+
+487
+00:27:58,310 --> 00:28:02,440
+product of all of those you do not have to strip of s so do not confuse those
+
+488
+00:28:02,440 --> 00:28:05,419
+to strip of s so do not confuse those with this part because this factor
+
+489
+00:28:05,419 --> 00:28:07,940
+with this part because this factor involved showing the potential that has
+
+490
+00:28:07,940 --> 00:28:10,009
+involved showing the potential that has this now this node and that node but
+
+491
+00:28:10,009 --> 00:28:13,700
+this now this node and that node but there is no fear there is no there is no
+
+492
+00:28:13,700 --> 00:28:16,759
+there is no fear there is no there is no there etcetera okay and there are more
+
+493
+00:28:16,759 --> 00:28:19,610
+there etcetera okay and there are more factors but the quality is that this
+
+494
+00:28:19,610 --> 00:28:26,960
+factors but the quality is that this whole thing is a sub 3
+
+495
+00:28:26,960 --> 00:28:26,970
+
+
+496
+00:28:26,970 --> 00:28:32,540
+all right okay obviously if this is meant to play right you won't be able to
+
+497
+00:28:32,540 --> 00:28:36,920
+meant to play right you won't be able to do okay so I you know we need to pay
+
+498
+00:28:36,920 --> 00:28:39,470
+do okay so I you know we need to pay attention here so I you know I know what
+
+499
+00:28:39,470 --> 00:28:43,160
+attention here so I you know I know what I'm talking so excess the nose and said
+
+500
+00:28:43,160 --> 00:28:44,720
+I'm talking so excess the nose and said the four variables in the subject
+
+501
+00:28:44,720 --> 00:28:46,820
+the four variables in the subject collected the variable node X we are the
+
+502
+00:28:46,820 --> 00:28:49,280
+collected the variable node X we are the factor of the fest and this represents
+
+503
+00:28:49,280 --> 00:28:50,840
+factor of the fest and this represents the product before the carcass in the
+
+504
+00:28:50,840 --> 00:28:53,270
+the product before the carcass in the group associated with After Effects okay
+
+505
+00:28:53,270 --> 00:28:59,180
+group associated with After Effects okay this is what we just said no I am
+
+506
+00:28:59,180 --> 00:29:01,220
+this is what we just said no I am grateful you remember I'm interested
+
+507
+00:29:01,220 --> 00:29:03,590
+grateful you remember I'm interested would say that's why is related this
+
+508
+00:29:03,590 --> 00:29:05,270
+would say that's why is related this need to know that I'm interested in the
+
+509
+00:29:05,270 --> 00:29:09,110
+need to know that I'm interested in the marginal effects alright so if you want
+
+510
+00:29:09,110 --> 00:29:11,360
+marginal effects alright so if you want to the marginal effects what do we need
+
+511
+00:29:11,360 --> 00:29:14,150
+to the marginal effects what do we need to do in so this is your factorization
+
+512
+00:29:14,150 --> 00:29:17,030
+to do in so this is your factorization it's a nice way to factorize the joint
+
+513
+00:29:17,030 --> 00:29:19,280
+it's a nice way to factorize the joint distribution if I only need the marginal
+
+514
+00:29:19,280 --> 00:29:24,530
+distribution if I only need the marginal of this node what do I need to do I need
+
+515
+00:29:24,530 --> 00:29:28,460
+of this node what do I need to do I need to integrate out which variables all of
+
+516
+00:29:28,460 --> 00:29:31,360
+to integrate out which variables all of this volume of capital affects best
+
+517
+00:29:31,360 --> 00:29:37,160
+this volume of capital affects best solution else right so basically for
+
+518
+00:29:37,160 --> 00:29:39,410
+solution else right so basically for every trade that originates from this
+
+519
+00:29:39,410 --> 00:29:41,180
+every trade that originates from this part of service that there are neighbors
+
+520
+00:29:41,180 --> 00:29:43,850
+part of service that there are neighbors of little X I need to integrate the
+
+521
+00:29:43,850 --> 00:29:47,560
+of little X I need to integrate the nodes are created with all stop treats
+
+522
+00:29:47,560 --> 00:29:51,920
+nodes are created with all stop treats so whether I need to do I need so I had
+
+523
+00:29:51,920 --> 00:29:54,380
+so whether I need to do I need so I had the product of this function I need to
+
+524
+00:29:54,380 --> 00:29:56,960
+the product of this function I need to sell its father has its own notes
+
+525
+00:29:56,960 --> 00:29:59,590
+sell its father has its own notes alright so I can bring the salmon side
+
+526
+00:29:59,590 --> 00:30:02,300
+alright so I can bring the salmon side so everything you know you've got the
+
+527
+00:30:02,300 --> 00:30:06,260
+so everything you know you've got the idea here so do I need to integrate the
+
+528
+00:30:06,260 --> 00:30:10,760
+idea here so do I need to integrate the success out in this summation where I
+
+529
+00:30:10,760 --> 00:30:13,100
+success out in this summation where I have integrated all of this variables
+
+530
+00:30:13,100 --> 00:30:16,370
+have integrated all of this variables how I define it to be the message coming
+
+531
+00:30:16,370 --> 00:30:21,700
+how I define it to be the message coming from the factor test to know relax
+
+532
+00:30:21,700 --> 00:30:21,710
+
+
+533
+00:30:21,710 --> 00:30:28,690
+it's a definition so what is this message clearly it is the you know it
+
+534
+00:30:28,690 --> 00:30:31,300
+message clearly it is the you know it originates from the product of all of
+
+535
+00:30:31,300 --> 00:30:33,460
+originates from the product of all of these potentials when I have integrated
+
+536
+00:30:33,460 --> 00:30:36,880
+these potentials when I have integrated out all the variable success and the
+
+537
+00:30:36,880 --> 00:30:38,590
+out all the variable success and the only variable that is left is the
+
+538
+00:30:38,590 --> 00:30:40,480
+only variable that is left is the variable little X so I call this I
+
+539
+00:30:40,480 --> 00:30:43,990
+variable little X so I call this I define this so basically what this says
+
+540
+00:30:43,990 --> 00:30:46,240
+define this so basically what this says is that the marginal of the little node
+
+541
+00:30:46,240 --> 00:30:49,390
+is that the marginal of the little node X is the product of all the messages are
+
+542
+00:30:49,390 --> 00:30:52,480
+X is the product of all the messages are arriving when the problem that our
+
+543
+00:30:52,480 --> 00:30:58,660
+arriving when the problem that our neighbors to little X ok so basically to
+
+544
+00:30:58,660 --> 00:31:01,210
+neighbors to little X ok so basically to compute the marginal effects what you
+
+545
+00:31:01,210 --> 00:31:03,130
+compute the marginal effects what you need to do is eliminate all the
+
+546
+00:31:03,130 --> 00:31:05,440
+need to do is eliminate all the variables here and compute the message
+
+547
+00:31:05,440 --> 00:31:07,090
+variables here and compute the message that comes from this factor to this node
+
+548
+00:31:07,090 --> 00:31:10,090
+that comes from this factor to this node eliminate all the variables up there and
+
+549
+00:31:10,090 --> 00:31:11,830
+eliminate all the variables up there and compute the stresses or they're not
+
+550
+00:31:11,830 --> 00:31:14,160
+compute the stresses or they're not message the product of this messages
+
+551
+00:31:14,160 --> 00:31:18,610
+message the product of this messages basically gives you the marginal P of
+
+552
+00:31:18,610 --> 00:31:22,810
+basically gives you the marginal P of leaflets in game don't confuse the bold
+
+553
+00:31:22,810 --> 00:31:26,680
+leaflets in game don't confuse the bold X is all variables and bold X is this
+
+554
+00:31:26,680 --> 00:31:28,330
+X is all variables and bold X is this particular part
+
+555
+00:31:28,330 --> 00:31:33,130
+particular part so the definition here is the message
+
+556
+00:31:33,130 --> 00:31:36,970
+so the definition here is the message from that reflects is the product of all
+
+557
+00:31:36,970 --> 00:31:38,770
+from that reflects is the product of all of the factors affiliating in the
+
+558
+00:31:38,770 --> 00:31:41,110
+of the factors affiliating in the subtree where all the volume of success
+
+559
+00:31:41,110 --> 00:31:43,270
+subtree where all the volume of success have been integrated out except little X
+
+560
+00:31:43,270 --> 00:31:47,440
+have been integrated out except little X ok makes sense
+
+561
+00:31:47,440 --> 00:31:50,980
+ok makes sense I mean this is that the elimination
+
+562
+00:31:50,980 --> 00:31:53,380
+I mean this is that the elimination Albert right we need to eliminate so
+
+563
+00:31:53,380 --> 00:31:56,200
+Albert right we need to eliminate so what we do is eliminate in it some three
+
+564
+00:31:56,200 --> 00:31:58,620
+what we do is eliminate in it some three affiliated with this factor that
+
+565
+00:31:58,620 --> 00:32:02,650
+affiliated with this factor that neighbors known X okay and we can do
+
+566
+00:32:02,650 --> 00:32:04,890
+neighbors known X okay and we can do this elimination here separately because
+
+567
+00:32:04,890 --> 00:32:07,900
+this elimination here separately because one once you have this rule it lets this
+
+568
+00:32:07,900 --> 00:32:10,570
+one once you have this rule it lets this is one three so you can eliminate the
+
+569
+00:32:10,570 --> 00:32:13,030
+is one three so you can eliminate the accessories and you can assign them
+
+570
+00:32:13,030 --> 00:32:16,600
+accessories and you can assign them they're right and this is the message
+
+571
+00:32:16,600 --> 00:32:20,530
+they're right and this is the message that comes from a factor to another such
+
+572
+00:32:20,530 --> 00:32:23,500
+that comes from a factor to another such a weird concept right because mr. body
+
+573
+00:32:23,500 --> 00:32:25,300
+a weird concept right because mr. body will know that before we were talking
+
+574
+00:32:25,300 --> 00:32:27,730
+will know that before we were talking about messages between body moves but
+
+575
+00:32:27,730 --> 00:32:29,890
+about messages between body moves but now we talk about the lessons that is
+
+576
+00:32:29,890 --> 00:32:32,620
+now we talk about the lessons that is propagating from a Paxton Road which the
+
+577
+00:32:32,620 --> 00:32:37,510
+propagating from a Paxton Road which the function to know and again it's rare but
+
+578
+00:32:37,510 --> 00:32:38,410
+function to know and again it's rare but it's not weird
+
+579
+00:32:38,410 --> 00:32:40,270
+it's not weird once you know what the definition is
+
+580
+00:32:40,270 --> 00:32:42,970
+once you know what the definition is what it implies and in eastern graphical
+
+581
+00:32:42,970 --> 00:32:44,970
+what it implies and in eastern graphical phones Clark was really with the devices
+
+582
+00:32:44,970 --> 00:32:47,740
+phones Clark was really with the devices take the product of all the factors here
+
+583
+00:32:47,740 --> 00:32:54,430
+take the product of all the factors here and integrate out excess that's it okay
+
+584
+00:32:54,430 --> 00:32:57,550
+and integrate out excess that's it okay and we baptize this to be the message
+
+585
+00:32:57,550 --> 00:33:01,180
+and we baptize this to be the message that comes from the fact amount to a
+
+586
+00:33:01,180 --> 00:33:11,610
+that comes from the fact amount to a variable no okay
+
+587
+00:33:11,610 --> 00:33:11,620
+
+
+588
+00:33:11,620 --> 00:33:19,139
+of course you may ask me I forgot many messages from a node to a factory cause
+
+589
+00:33:19,139 --> 00:33:22,049
+messages from a node to a factory cause they need to be so right I mean
+
+590
+00:33:22,049 --> 00:33:23,759
+they need to be so right I mean otherwise you know what I'm gonna be
+
+591
+00:33:23,759 --> 00:33:26,129
+otherwise you know what I'm gonna be able to make a lot of sense so let's see
+
+592
+00:33:26,129 --> 00:33:30,950
+able to make a lot of sense so let's see what is further why don't you all right
+
+593
+00:33:30,950 --> 00:33:34,919
+what is further why don't you all right so we defined this okay now we need to
+
+594
+00:33:34,919 --> 00:33:37,830
+so we defined this okay now we need to define the message of goes from a factor
+
+595
+00:33:37,830 --> 00:33:42,029
+define the message of goes from a factor to a note okay
+
+596
+00:33:42,029 --> 00:33:44,519
+to a note okay the message that goes from the fact that
+
+597
+00:33:44,519 --> 00:33:51,029
+the message that goes from the fact that we'll know okay and instability will
+
+598
+00:33:51,029 --> 00:33:54,330
+we'll know okay and instability will exactly mean obviously if you're gonna
+
+599
+00:33:54,330 --> 00:33:57,029
+exactly mean obviously if you're gonna need message from this factor to this
+
+600
+00:33:57,029 --> 00:34:01,440
+need message from this factor to this node right you need to get rid of
+
+601
+00:34:01,440 --> 00:34:04,499
+node right you need to get rid of everything here all right you need to
+
+602
+00:34:04,499 --> 00:34:06,450
+everything here all right you need to eliminate on this Parliament and to
+
+603
+00:34:06,450 --> 00:34:07,950
+eliminate on this Parliament and to eliminate these variables whatever
+
+604
+00:34:07,950 --> 00:34:14,500
+eliminate these variables whatever potential star is being involved
+
+605
+00:34:14,500 --> 00:34:14,510
+
+
+606
+00:34:14,510 --> 00:34:20,200
+you remember this is a potential that connects let's say node X 1 X 2 with
+
+607
+00:34:20,200 --> 00:34:22,569
+connects let's say node X 1 X 2 with level X 10 is just for demonstration
+
+608
+00:34:22,569 --> 00:34:26,799
+level X 10 is just for demonstration purposes in various the little node X
+
+609
+00:34:26,799 --> 00:34:28,510
+purposes in various the little node X that's the label of a purse and I want
+
+610
+00:34:28,510 --> 00:34:30,970
+that's the label of a purse and I want to find the message that this part of
+
+611
+00:34:30,970 --> 00:34:34,569
+to find the message that this part of nonsense to review next this is a
+
+612
+00:34:34,569 --> 00:34:39,990
+nonsense to review next this is a function we invest is a function alright
+
+613
+00:34:39,990 --> 00:34:43,379
+function we invest is a function alright so this a function what we the thing is
+
+614
+00:34:43,379 --> 00:34:48,450
+so this a function what we the thing is GM of XM x sm based on what we discussed
+
+615
+00:34:48,450 --> 00:34:50,680
+GM of XM x sm based on what we discussed you know with a similar relation we
+
+616
+00:34:50,680 --> 00:34:52,960
+you know with a similar relation we discussed for a fact from before with
+
+617
+00:34:52,960 --> 00:34:56,799
+discussed for a fact from before with the 3 appeared so what do you think so
+
+618
+00:34:56,799 --> 00:34:58,299
+the 3 appeared so what do you think so here i need to account for all the
+
+619
+00:34:58,299 --> 00:35:01,990
+here i need to account for all the potentials right involved on this
+
+620
+00:35:01,990 --> 00:35:04,120
+potentials right involved on this subtree and the only thing I have is
+
+621
+00:35:04,120 --> 00:35:06,339
+subtree and the only thing I have is this factor in the nose that is being
+
+622
+00:35:06,339 --> 00:35:06,970
+this factor in the nose that is being collected
+
+623
+00:35:06,970 --> 00:35:09,490
+collected so I have to account from whatever comes
+
+624
+00:35:09,490 --> 00:35:12,039
+so I have to account from whatever comes with its narrow so one day the thing is
+
+625
+00:35:12,039 --> 00:35:20,980
+with its narrow so one day the thing is GM affects mx7 in simple words will be
+
+626
+00:35:20,980 --> 00:35:24,670
+GM affects mx7 in simple words will be the product of what I mean I see this
+
+627
+00:35:24,670 --> 00:35:26,680
+the product of what I mean I see this node next time right that is one of the
+
+628
+00:35:26,680 --> 00:35:28,780
+node next time right that is one of the nodes connecting with the first except
+
+629
+00:35:28,780 --> 00:35:38,470
+nodes connecting with the first except that so this would be what
+
+630
+00:35:38,470 --> 00:35:38,480
+
+
+631
+00:35:38,480 --> 00:35:45,840
+obviously share there must be a three right so the fact that I denoted with GM
+
+632
+00:35:45,840 --> 00:35:51,610
+right so the fact that I denoted with GM XL and then capital x sm the notation
+
+633
+00:35:51,610 --> 00:35:53,050
+XL and then capital x sm the notation looks to be similar to what we had
+
+634
+00:35:53,050 --> 00:35:56,050
+looks to be similar to what we had before so what do you think it is
+
+635
+00:35:56,050 --> 00:35:59,110
+before so what do you think it is so what does subscript there XM means
+
+636
+00:35:59,110 --> 00:36:01,240
+so what does subscript there XM means basically what I'm looking on the sub
+
+637
+00:36:01,240 --> 00:36:02,320
+basically what I'm looking on the sub tree of the year you would know that
+
+638
+00:36:02,320 --> 00:36:08,430
+tree of the year you would know that time what is capital affects yourself
+
+639
+00:36:08,430 --> 00:36:08,440
+
+
+640
+00:36:08,440 --> 00:36:13,360
+this is the step of all the nodes involved without the sub tree and why do
+
+641
+00:36:13,360 --> 00:36:15,940
+involved without the sub tree and why do I put the subscript s there to remind
+
+642
+00:36:15,940 --> 00:36:19,260
+I put the subscript s there to remind myself that this node extent is enabled
+
+643
+00:36:19,260 --> 00:36:22,390
+myself that this node extent is enabled at first because I'm interested figure
+
+644
+00:36:22,390 --> 00:36:25,300
+at first because I'm interested figure out what is the message the fact or FS
+
+645
+00:36:25,300 --> 00:36:28,330
+out what is the message the fact or FS sense to know that you need to know that
+
+646
+00:36:28,330 --> 00:36:30,880
+sense to know that you need to know that I'm only looking at the nonce extent
+
+647
+00:36:30,880 --> 00:36:32,740
+I'm only looking at the nonce extent that are connected with a factor
+
+648
+00:36:32,740 --> 00:36:38,710
+that are connected with a factor attached okay okay so you know I'm gonna
+
+649
+00:36:38,710 --> 00:36:41,740
+attached okay okay so you know I'm gonna have you know I'm gonna have something
+
+650
+00:36:41,740 --> 00:36:47,080
+have you know I'm gonna have something like that Michigan okay you know because
+
+651
+00:36:47,080 --> 00:36:51,630
+like that Michigan okay you know because we shan't you know we have this
+
+652
+00:36:51,630 --> 00:36:57,550
+we shan't you know we have this potential affiliated with right so like
+
+653
+00:36:57,550 --> 00:37:02,490
+potential affiliated with right so like this like that though explicitly
+
+654
+00:37:02,490 --> 00:37:04,630
+this like that though explicitly basically before right we took
+
+655
+00:37:04,630 --> 00:37:07,630
+basically before right we took everything affiliated with a factor of s
+
+656
+00:37:07,630 --> 00:37:10,360
+everything affiliated with a factor of s all right but now certified revealed is
+
+657
+00:37:10,360 --> 00:37:13,510
+all right but now certified revealed is now sexual act etc so I can write it
+
+658
+00:37:13,510 --> 00:37:17,950
+now sexual act etc so I can write it short awfully big differently so this is
+
+659
+00:37:17,950 --> 00:37:19,590
+short awfully big differently so this is exactly what we had before
+
+660
+00:37:19,590 --> 00:37:23,560
+exactly what we had before this is this all right now what I do is
+
+661
+00:37:23,560 --> 00:37:29,980
+this is this all right now what I do is I write it as the popular test times G
+
+662
+00:37:29,980 --> 00:37:33,930
+I write it as the popular test times G of at M G of X capital them etc
+
+663
+00:37:33,930 --> 00:37:38,460
+of at M G of X capital them etc this ain't the same entity before then
+
+664
+00:37:38,460 --> 00:37:41,520
+this ain't the same entity before then look I was looking on the product of all
+
+665
+00:37:41,520 --> 00:37:44,400
+look I was looking on the product of all the factors affiliated with this country
+
+666
+00:37:44,400 --> 00:37:48,210
+the factors affiliated with this country so now what I want to do is I want to
+
+667
+00:37:48,210 --> 00:37:50,730
+so now what I want to do is I want to write this explicitly by having the
+
+668
+00:37:50,730 --> 00:37:54,410
+write this explicitly by having the oppressed so I have to account for that
+
+669
+00:37:54,410 --> 00:37:58,490
+oppressed so I have to account for that times the product of this J products of
+
+670
+00:37:58,490 --> 00:38:00,810
+times the product of this J products of factors a community with the substrates
+
+671
+00:38:00,810 --> 00:38:03,690
+factors a community with the substrates that are connected to each of them note
+
+672
+00:38:03,690 --> 00:38:10,660
+that are connected to each of them note actually to them to extract Allah
+
+673
+00:38:10,660 --> 00:38:10,670
+
+
+674
+00:38:10,670 --> 00:38:17,979
+are you giving a Shadegg look all right charity and with it some to write down
+
+675
+00:38:17,979 --> 00:38:20,380
+charity and with it some to write down the product of all this functions so
+
+676
+00:38:20,380 --> 00:38:24,960
+the product of all this functions so this is a different way of writing it so
+
+677
+00:38:24,960 --> 00:38:24,970
+
+
+678
+00:38:24,970 --> 00:38:30,160
+so effectively if you're interested to complete the message from this factor to
+
+679
+00:38:30,160 --> 00:38:32,799
+complete the message from this factor to the node X what you have to do is in
+
+680
+00:38:32,799 --> 00:38:34,509
+the node X what you have to do is in that expression that they have to do is
+
+681
+00:38:34,509 --> 00:38:37,779
+that expression that they have to do is you have to integrate out the variables
+
+682
+00:38:37,779 --> 00:38:41,559
+you have to integrate out the variables x1 xn right because you know this is
+
+683
+00:38:41,559 --> 00:38:43,420
+x1 xn right because you know this is what I have but also you have to
+
+684
+00:38:43,420 --> 00:38:45,759
+what I have but also you have to integrate out all the variables
+
+685
+00:38:45,759 --> 00:38:47,200
+integrate out all the variables affiliated with which of this have
+
+686
+00:38:47,200 --> 00:38:50,799
+affiliated with which of this have placed which are should have put
+
+687
+00:38:50,799 --> 00:38:54,039
+placed which are should have put actually less there okay it's alright so
+
+688
+00:38:54,039 --> 00:38:55,900
+actually less there okay it's alright so we have them to make that by without as
+
+689
+00:38:55,900 --> 00:39:02,829
+we have them to make that by without as well okay so before we had this times
+
+690
+00:39:02,829 --> 00:39:05,470
+well okay so before we had this times this product and now I have to integrate
+
+691
+00:39:05,470 --> 00:39:07,660
+this product and now I have to integrate all the variables with little X to find
+
+692
+00:39:07,660 --> 00:39:10,390
+all the variables with little X to find the message that this factor sends to X
+
+693
+00:39:10,390 --> 00:39:14,380
+the message that this factor sends to X so the product of x1 to XM has to be
+
+694
+00:39:14,380 --> 00:39:16,809
+so the product of x1 to XM has to be outside because this is a function of X
+
+695
+00:39:16,809 --> 00:39:20,470
+outside because this is a function of X 1 X 10 and here I have to integrate out
+
+696
+00:39:20,470 --> 00:39:22,960
+1 X 10 and here I have to integrate out all this volume of success term
+
+697
+00:39:22,960 --> 00:39:25,509
+all this volume of success term affiliated with this subtree that hangs
+
+698
+00:39:25,509 --> 00:39:27,789
+affiliated with this subtree that hangs out of know that self and this is what
+
+699
+00:39:27,789 --> 00:39:31,779
+out of know that self and this is what this thing does so if you look carefully
+
+700
+00:39:31,779 --> 00:39:35,380
+this thing does so if you look carefully on again similar to the definition we
+
+701
+00:39:35,380 --> 00:39:39,880
+on again similar to the definition we gave before here what we do is we are
+
+702
+00:39:39,880 --> 00:39:41,589
+gave before here what we do is we are eliminating one of this volume of
+
+703
+00:39:41,589 --> 00:39:45,249
+eliminating one of this volume of successor so enhancing the elimination
+
+704
+00:39:45,249 --> 00:39:47,349
+successor so enhancing the elimination variable elimination you get rid of
+
+705
+00:39:47,349 --> 00:39:50,259
+variable elimination you get rid of anything below so that is left is the
+
+706
+00:39:50,259 --> 00:39:53,200
+anything below so that is left is the message that goes from this subtree to
+
+707
+00:39:53,200 --> 00:39:56,979
+message that goes from this subtree to the factor assess the Conservatives is
+
+708
+00:39:56,979 --> 00:40:01,599
+the factor assess the Conservatives is eliminated selectively what behaviors if
+
+709
+00:40:01,599 --> 00:40:03,880
+eliminated selectively what behaviors if you have that the message from the first
+
+710
+00:40:03,880 --> 00:40:06,789
+you have that the message from the first two acts is summation of all of these
+
+711
+00:40:06,789 --> 00:40:10,809
+two acts is summation of all of these variables of the factor of x times the
+
+712
+00:40:10,809 --> 00:40:12,910
+variables of the factor of x times the product of all the incoming messages
+
+713
+00:40:12,910 --> 00:40:15,670
+product of all the incoming messages from the nodes X little m2 X capital
+
+714
+00:40:15,670 --> 00:40:19,120
+from the nodes X little m2 X capital length to the factory first
+
+715
+00:40:19,120 --> 00:40:19,130
+
+
+716
+00:40:19,130 --> 00:40:24,800
+depression is Tibbets easily right so the message that goes out from here to
+
+717
+00:40:24,800 --> 00:40:28,910
+the message that goes out from here to there is this factor times all the
+
+718
+00:40:28,910 --> 00:40:30,680
+there is this factor times all the messages coming from this node to this
+
+719
+00:40:30,680 --> 00:40:32,330
+messages coming from this node to this factor all right
+
+720
+00:40:32,330 --> 00:40:35,470
+factor all right and this mess is remember claimed by
+
+721
+00:40:35,470 --> 00:40:38,480
+and this mess is remember claimed by eliminating restaurants on each of these
+
+722
+00:40:38,480 --> 00:40:38,990
+eliminating restaurants on each of these terms
+
+723
+00:40:38,990 --> 00:40:42,710
+terms okay so and then of course when you
+
+724
+00:40:42,710 --> 00:40:45,560
+okay so and then of course when you multiply this so this factor time is
+
+725
+00:40:45,560 --> 00:40:47,720
+multiply this so this factor time is these messages you have to integrate the
+
+726
+00:40:47,720 --> 00:40:49,850
+these messages you have to integrate the variables actually to left half of the
+
+727
+00:40:49,850 --> 00:40:53,510
+variables actually to left half of the level out so what is left is a function
+
+728
+00:40:53,510 --> 00:40:55,610
+level out so what is left is a function of little X and that's the message from
+
+729
+00:40:55,610 --> 00:41:00,140
+of little X and that's the message from a factor H to the bottom will non-visual
+
+730
+00:41:00,140 --> 00:41:05,420
+a factor H to the bottom will non-visual X makes a little sense again you know
+
+731
+00:41:05,420 --> 00:41:09,850
+X makes a little sense again you know what I the way to say it is sort of
+
+732
+00:41:09,850 --> 00:41:13,760
+what I the way to say it is sort of graphical right and if usually write
+
+733
+00:41:13,760 --> 00:41:16,100
+graphical right and if usually write something that's out of common sense you
+
+734
+00:41:16,100 --> 00:41:19,910
+something that's out of common sense you cannot go wrong okay so the lessons from
+
+735
+00:41:19,910 --> 00:41:25,130
+cannot go wrong okay so the lessons from lists from FS to X is this factor time
+
+736
+00:41:25,130 --> 00:41:27,200
+lists from FS to X is this factor time solve incoming messages to this factor
+
+737
+00:41:27,200 --> 00:41:29,750
+solve incoming messages to this factor and then you have to get rid basically
+
+738
+00:41:29,750 --> 00:41:30,920
+and then you have to get rid basically because each of these messed is a
+
+739
+00:41:30,920 --> 00:41:33,560
+because each of these messed is a function of this nodes so you have to
+
+740
+00:41:33,560 --> 00:41:35,140
+function of this nodes so you have to integrate all of this well tau
+
+741
+00:41:35,140 --> 00:41:39,170
+integrate all of this well tau okay and again you may say again what
+
+742
+00:41:39,170 --> 00:41:40,520
+okay and again you may say again what are this rest of this piece of the
+
+743
+00:41:40,520 --> 00:41:42,230
+are this rest of this piece of the message wants to eliminate everything
+
+744
+00:41:42,230 --> 00:41:48,200
+message wants to eliminate everything past what those particular node all
+
+745
+00:41:48,200 --> 00:41:51,660
+past what those particular node all right
+
+746
+00:41:51,660 --> 00:41:51,670
+
+
+747
+00:41:51,670 --> 00:42:06,170
+so what we have is we have so let me go back to the two equations all right
+
+748
+00:42:06,170 --> 00:42:06,180
+
+
+749
+00:42:06,180 --> 00:42:15,829
+so here we have an equation well I don't want this one actually okay so we've
+
+750
+00:42:15,829 --> 00:42:19,730
+want this one actually okay so we've basically discussed the way to propagate
+
+751
+00:42:19,730 --> 00:42:22,339
+basically discussed the way to propagate messages from the fact of your note and
+
+752
+00:42:22,339 --> 00:42:26,980
+messages from the fact of your note and then from the know into your factor okay
+
+753
+00:42:26,980 --> 00:42:28,130
+then from the know into your factor okay all right
+
+754
+00:42:28,130 --> 00:42:31,069
+all right so actually I'm sorry from a notice let
+
+755
+00:42:31,069 --> 00:42:34,160
+so actually I'm sorry from a notice let me let me just go back to this okay so
+
+756
+00:42:34,160 --> 00:42:36,859
+me let me just go back to this okay so if you want to find the message okay
+
+757
+00:42:36,859 --> 00:42:41,569
+if you want to find the message okay from XM to FS all right so from a notice
+
+758
+00:42:41,569 --> 00:42:44,900
+from XM to FS all right so from a notice after be available to me this is the
+
+759
+00:42:44,900 --> 00:42:46,999
+after be available to me this is the operation we did right we Lehman ate it
+
+760
+00:42:46,999 --> 00:42:49,160
+operation we did right we Lehman ate it on this sub tree we liberated this
+
+761
+00:42:49,160 --> 00:42:51,890
+on this sub tree we liberated this validates the sound definition three
+
+762
+00:42:51,890 --> 00:42:54,589
+validates the sound definition three lines there all right when we get me the
+
+763
+00:42:54,589 --> 00:42:56,720
+lines there all right when we get me the for the variables both extend and get
+
+764
+00:42:56,720 --> 00:42:59,239
+for the variables both extend and get basically the message from X term to the
+
+765
+00:42:59,239 --> 00:43:00,140
+basically the message from X term to the fact to the test
+
+766
+00:43:00,140 --> 00:43:05,210
+fact to the test okay and you can write this explicitly
+
+767
+00:43:05,210 --> 00:43:09,259
+okay and you can write this explicitly as the product of all the fact of
+
+768
+00:43:09,259 --> 00:43:11,989
+as the product of all the fact of functions are creating with this sub 3m
+
+769
+00:43:11,989 --> 00:43:14,989
+functions are creating with this sub 3m they're a filmic afters but the factor
+
+770
+00:43:14,989 --> 00:43:17,420
+they're a filmic afters but the factor appears because your interest to figure
+
+771
+00:43:17,420 --> 00:43:19,700
+appears because your interest to figure out what is the message this node sends
+
+772
+00:43:19,700 --> 00:43:21,499
+out what is the message this node sends to the first so you're not going to
+
+773
+00:43:21,499 --> 00:43:23,180
+to the first so you're not going to count the masses of questions to the no
+
+774
+00:43:23,180 --> 00:43:28,390
+count the masses of questions to the no right so here is the product of all this
+
+775
+00:43:28,390 --> 00:43:31,160
+right so here is the product of all this functions if you like except the ones
+
+776
+00:43:31,160 --> 00:43:33,190
+functions if you like except the ones the laconic of the first electors
+
+777
+00:43:33,190 --> 00:43:36,370
+the laconic of the first electors protectively to compute the messages
+
+778
+00:43:36,370 --> 00:43:40,370
+protectively to compute the messages from a node to a factor what do you have
+
+779
+00:43:40,370 --> 00:43:44,720
+from a node to a factor what do you have to do so this is a know then you want to
+
+780
+00:43:44,720 --> 00:43:46,489
+to do so this is a know then you want to find the message for this nonsense the
+
+781
+00:43:46,489 --> 00:43:49,609
+find the message for this nonsense the factor take all the messages that all
+
+782
+00:43:49,609 --> 00:43:51,529
+factor take all the messages that all the neighbors of this now the accept
+
+783
+00:43:51,529 --> 00:43:54,380
+the neighbors of this now the accept this fact or send it to it this node and
+
+784
+00:43:54,380 --> 00:43:57,170
+this fact or send it to it this node and then propagator so basically the masters
+
+785
+00:43:57,170 --> 00:43:59,599
+then propagator so basically the masters extreme says the first is the product of
+
+786
+00:43:59,599 --> 00:44:02,329
+extreme says the first is the product of this message here and that message and
+
+787
+00:44:02,329 --> 00:44:04,370
+this message here and that message and that message and of course you don't
+
+788
+00:44:04,370 --> 00:44:06,229
+that message and of course you don't account the message to the first you
+
+789
+00:44:06,229 --> 00:44:08,150
+account the message to the first you don't want to send to a password sent to
+
+790
+00:44:08,150 --> 00:44:09,470
+don't want to send to a password sent to you
+
+791
+00:44:09,470 --> 00:44:16,550
+a little bit of chance so basically you can sit on top for the elimination
+
+792
+00:44:16,550 --> 00:44:17,500
+can sit on top for the elimination algorithm
+
+793
+00:44:17,500 --> 00:44:22,340
+algorithm port risk in inaction well you know it's
+
+794
+00:44:22,340 --> 00:44:25,250
+port risk in inaction well you know it's all you can know you can do this simply
+
+795
+00:44:25,250 --> 00:44:28,910
+all you can know you can do this simply because these are twists so if you hand
+
+796
+00:44:28,910 --> 00:44:30,950
+because these are twists so if you hand it from anywhere you basically get the
+
+797
+00:44:30,950 --> 00:44:36,380
+it from anywhere you basically get the subtree and you know you need to
+
+798
+00:44:36,380 --> 00:44:39,230
+subtree and you know you need to understand going to relations the
+
+799
+00:44:39,230 --> 00:44:41,150
+understand going to relations the relation that you see on the top which
+
+800
+00:44:41,150 --> 00:44:44,300
+relation that you see on the top which is the message the fact or nonsense 2x20
+
+801
+00:44:44,300 --> 00:44:47,930
+is the message the fact or nonsense 2x20 know that very easily take the factor
+
+802
+00:44:47,930 --> 00:44:50,180
+know that very easily take the factor function Organists arriving to the
+
+803
+00:44:50,180 --> 00:44:51,980
+function Organists arriving to the factor from its neighbor nodes except
+
+804
+00:44:51,980 --> 00:44:54,020
+factor from its neighbor nodes except this intellect and integrate all the
+
+805
+00:44:54,020 --> 00:44:56,300
+this intellect and integrate all the variables out but little X and then
+
+806
+00:44:56,300 --> 00:44:58,880
+variables out but little X and then similarly if you wanna message that in
+
+807
+00:44:58,880 --> 00:45:01,490
+similarly if you wanna message that in all sense the fact or take all of its
+
+808
+00:45:01,490 --> 00:45:03,230
+all sense the fact or take all of its neighbor factors for fit the message
+
+809
+00:45:03,230 --> 00:45:07,640
+neighbor factors for fit the message they send to him and in basically not to
+
+810
+00:45:07,640 --> 00:45:08,720
+they send to him and in basically not to be the message you can propagate
+
+811
+00:45:08,720 --> 00:45:14,660
+be the message you can propagate reference boundary conditions because at
+
+812
+00:45:14,660 --> 00:45:17,090
+reference boundary conditions because at the end of the day you'll either when we
+
+813
+00:45:17,090 --> 00:45:19,220
+the end of the day you'll either when we apply this you'll be either at the leaf
+
+814
+00:45:19,220 --> 00:45:22,310
+apply this you'll be either at the leaf zone you would be at the root so if it
+
+815
+00:45:22,310 --> 00:45:26,120
+zone you would be at the root so if it happens that this is the leaf node and
+
+816
+00:45:26,120 --> 00:45:28,640
+happens that this is the leaf node and it's a valuable node then the Lester's
+
+817
+00:45:28,640 --> 00:45:31,640
+it's a valuable node then the Lester's accents to the first factor you set it
+
+818
+00:45:31,640 --> 00:45:35,599
+accents to the first factor you set it equal to one alright so let's learn
+
+819
+00:45:35,599 --> 00:45:37,880
+equal to one alright so let's learn yourself so if it happens actually but
+
+820
+00:45:37,880 --> 00:45:40,070
+yourself so if it happens actually but in your path of love the first thing the
+
+821
+00:45:40,070 --> 00:45:43,040
+in your path of love the first thing the leaf node is a factor then the message
+
+822
+00:45:43,040 --> 00:45:45,230
+leaf node is a factor then the message that you sent to the person all
+
+823
+00:45:45,230 --> 00:45:46,880
+that you sent to the person all correctly this factor is the function f
+
+824
+00:45:46,880 --> 00:45:51,800
+correctly this factor is the function f of X okay so we're gonna do some shorty
+
+825
+00:45:51,800 --> 00:45:56,999
+of X okay so we're gonna do some shorty some examples
+
+826
+00:45:56,999 --> 00:45:57,009
+
+
+827
+00:45:57,009 --> 00:46:06,970
+and I think even if you program this for your you know for your next homework I
+
+828
+00:46:06,970 --> 00:46:08,920
+your you know for your next homework I will suggest asam this examples to try
+
+829
+00:46:08,920 --> 00:46:10,870
+will suggest asam this examples to try to do things by can to convince
+
+830
+00:46:10,870 --> 00:46:12,640
+to do things by can to convince yourselves that the algebra doesn't
+
+831
+00:46:12,640 --> 00:46:17,620
+yourselves that the algebra doesn't accept ok so before I start showing you
+
+832
+00:46:17,620 --> 00:46:19,900
+accept ok so before I start showing you some examples they need to say that in
+
+833
+00:46:19,900 --> 00:46:23,039
+some examples they need to say that in principle you don't even have to bother
+
+834
+00:46:23,039 --> 00:46:27,640
+principle you don't even have to bother to discuss about messages sent by nodes
+
+835
+00:46:27,640 --> 00:46:28,690
+to discuss about messages sent by nodes to factors
+
+836
+00:46:28,690 --> 00:46:30,880
+to factors I mean in principle you can see the
+
+837
+00:46:30,880 --> 00:46:33,339
+I mean in principle you can see the whole algorithm the stump of the table
+
+838
+00:46:33,339 --> 00:46:35,559
+whole algorithm the stump of the table with four paragraphs as best in this
+
+839
+00:46:35,559 --> 00:46:39,970
+with four paragraphs as best in this tenth of the factors because for example
+
+840
+00:46:39,970 --> 00:46:43,390
+tenth of the factors because for example you may say but I need the message that
+
+841
+00:46:43,390 --> 00:46:45,940
+you may say but I need the message that to compute this little message I need to
+
+842
+00:46:45,940 --> 00:46:47,499
+to compute this little message I need to know the message this node sends to the
+
+843
+00:46:47,499 --> 00:46:49,059
+know the message this node sends to the sparkler second multiplied with this
+
+844
+00:46:49,059 --> 00:46:49,569
+sparkler second multiplied with this message
+
+845
+00:46:49,569 --> 00:46:53,980
+yes I know that but the message that this is nonsense to this factor is what
+
+846
+00:46:53,980 --> 00:46:56,440
+this is nonsense to this factor is what message is the message of this Pakistan
+
+847
+00:46:56,440 --> 00:46:59,940
+message is the message of this Pakistan to is no so you can go directly from
+
+848
+00:46:59,940 --> 00:47:03,729
+to is no so you can go directly from messages factor sent to this nodes and
+
+849
+00:47:03,729 --> 00:47:05,589
+messages factor sent to this nodes and to this note that they are neighbors of
+
+850
+00:47:05,589 --> 00:47:07,479
+to this note that they are neighbors of a test and then multiply all this
+
+851
+00:47:07,479 --> 00:47:09,640
+a test and then multiply all this together to get the blue message from
+
+852
+00:47:09,640 --> 00:47:13,450
+together to get the blue message from this factor to the law or check so you
+
+853
+00:47:13,450 --> 00:47:16,989
+this factor to the law or check so you can bypass basically if you want the
+
+854
+00:47:16,989 --> 00:47:21,700
+can bypass basically if you want the need of having you know bestest is
+
+855
+00:47:21,700 --> 00:47:28,420
+need of having you know bestest is programs factors and artist notes
+
+856
+00:47:28,420 --> 00:47:28,430
+
+
+857
+00:47:28,430 --> 00:47:32,579
+now I know this a little bit is not actually this is a very easy example
+
+858
+00:47:32,579 --> 00:47:37,809
+actually this is a very easy example alright so actually you know what I'm
+
+859
+00:47:37,809 --> 00:47:41,170
+alright so actually you know what I'm gonna you know this thing would with
+
+860
+00:47:41,170 --> 00:47:43,180
+gonna you know this thing would with chains you know actually this is not the
+
+861
+00:47:43,180 --> 00:47:44,769
+chains you know actually this is not the state space model is exchanged so
+
+862
+00:47:44,769 --> 00:47:46,839
+state space model is exchanged so actually I think good we can do this
+
+863
+00:47:46,839 --> 00:47:47,289
+actually I think good we can do this problem
+
+864
+00:47:47,289 --> 00:47:50,859
+problem alright so imagine you have a Markov
+
+865
+00:47:50,859 --> 00:47:54,250
+alright so imagine you have a Markov chain okay so this is plaintext n minus
+
+866
+00:47:54,250 --> 00:47:58,289
+chain okay so this is plaintext n minus 1 this is Excel this is xn plus 1 and
+
+867
+00:47:58,289 --> 00:48:01,029
+1 this is Excel this is xn plus 1 and let's say the only thing we prescribe is
+
+868
+00:48:01,029 --> 00:48:03,190
+let's say the only thing we prescribe is the dynamics of the chain would say
+
+869
+00:48:03,190 --> 00:48:06,700
+the dynamics of the chain would say basically what's the probability of xn
+
+870
+00:48:06,700 --> 00:48:09,519
+basically what's the probability of xn given xn minus 1 this Markovian what's
+
+871
+00:48:09,519 --> 00:48:11,859
+given xn minus 1 this Markovian what's the probability of xn plus 1 given excel
+
+872
+00:48:11,859 --> 00:48:14,319
+the probability of xn plus 1 given excel and I wanna be someone I want to
+
+873
+00:48:14,319 --> 00:48:20,349
+and I wanna be someone I want to basically polish this elimination
+
+874
+00:48:20,349 --> 00:48:26,170
+basically polish this elimination algorithm or sum product algorithm so
+
+875
+00:48:26,170 --> 00:48:28,029
+algorithm or sum product algorithm so I'm going to take the map of say and
+
+876
+00:48:28,029 --> 00:48:31,620
+I'm going to take the map of say and transfer it to factor graphs all right
+
+877
+00:48:31,620 --> 00:48:34,299
+transfer it to factor graphs all right it's very rare to do this because the
+
+878
+00:48:34,299 --> 00:48:35,769
+it's very rare to do this because the problem is trivial but on the other hand
+
+879
+00:48:35,769 --> 00:48:39,549
+problem is trivial but on the other hand sort of an instructive so this have
+
+880
+00:48:39,549 --> 00:48:41,440
+sort of an instructive so this have everybody knows what the map of more
+
+881
+00:48:41,440 --> 00:48:44,289
+everybody knows what the map of more than this right have this now and who
+
+882
+00:48:44,289 --> 00:48:46,059
+than this right have this now and who they're going to be next best for you of
+
+883
+00:48:46,059 --> 00:48:48,880
+they're going to be next best for you of the poor okay so this have the notes so
+
+884
+00:48:48,880 --> 00:48:51,160
+the poor okay so this have the notes so whether this I don't know what color is
+
+885
+00:48:51,160 --> 00:48:53,440
+whether this I don't know what color is not yellow or whatever what are the
+
+886
+00:48:53,440 --> 00:48:58,359
+not yellow or whatever what are the square boxes now the factors so what is
+
+887
+00:48:58,359 --> 00:49:00,609
+square boxes now the factors so what is this factor accounting is very than
+
+888
+00:49:00,609 --> 00:49:02,769
+this factor accounting is very than service factor let's say this is the
+
+889
+00:49:02,769 --> 00:49:08,019
+service factor let's say this is the probability effectively of the
+
+890
+00:49:08,019 --> 00:49:10,260
+probability effectively of the transition from xn minus 1 to accept
+
+891
+00:49:10,260 --> 00:49:13,720
+transition from xn minus 1 to accept right and this is the probability of
+
+892
+00:49:13,720 --> 00:49:16,480
+right and this is the probability of transition from xn plus 1 from xn to xn
+
+893
+00:49:16,480 --> 00:49:22,329
+transition from xn plus 1 from xn to xn plus 1 etc ok so we said the fact of
+
+894
+00:49:22,329 --> 00:49:22,339
+
+
+895
+00:49:22,339 --> 00:49:29,769
+so let's say that somehow we're going to blind that the you know this rules I
+
+896
+00:49:29,769 --> 00:49:32,499
+blind that the you know this rules I gave you for sending messages from a
+
+897
+00:49:32,499 --> 00:49:34,299
+gave you for sending messages from a fact if you know them from another
+
+898
+00:49:34,299 --> 00:49:37,900
+fact if you know them from another factor on this chain to say if things
+
+899
+00:49:37,900 --> 00:49:44,160
+factor on this chain to say if things make sense okay you know I think
+
+900
+00:49:44,160 --> 00:49:47,019
+make sense okay you know I think actually you know it's already in there
+
+901
+00:49:47,019 --> 00:49:48,910
+actually you know it's already in there in the slides that you just passed right
+
+902
+00:49:48,910 --> 00:50:06,640
+in the slides that you just passed right if you want to compute the marginal it
+
+903
+00:50:06,640 --> 00:50:09,939
+if you want to compute the marginal it is basically the products of the
+
+904
+00:50:09,939 --> 00:50:13,299
+is basically the products of the messages the factor let's say n minus 1
+
+905
+00:50:13,299 --> 00:50:17,289
+messages the factor let's say n minus 1 tends to know them and the product the
+
+906
+00:50:17,289 --> 00:50:21,939
+tends to know them and the product the factor n tends to the node extent so
+
+907
+00:50:21,939 --> 00:50:23,890
+factor n tends to the node extent so let's see this graphically if you want
+
+908
+00:50:23,890 --> 00:50:26,319
+let's see this graphically if you want to find the maximum of this node is
+
+909
+00:50:26,319 --> 00:50:28,419
+to find the maximum of this node is effectively the product of this message
+
+910
+00:50:28,419 --> 00:50:33,239
+effectively the product of this message and the product about versus remembering
+
+911
+00:50:33,239 --> 00:50:36,400
+and the product about versus remembering right how do you calculate marginals you
+
+912
+00:50:36,400 --> 00:50:38,109
+right how do you calculate marginals you take the messages coming from the left
+
+913
+00:50:38,109 --> 00:50:41,859
+take the messages coming from the left of the light on it say sir here on the
+
+914
+00:50:41,859 --> 00:50:44,199
+of the light on it say sir here on the left is a factor now sending a message
+
+915
+00:50:44,199 --> 00:50:45,939
+left is a factor now sending a message on the right there's another protocol
+
+916
+00:50:45,939 --> 00:50:49,539
+on the right there's another protocol notes and innocence which are under a
+
+917
+00:50:49,539 --> 00:50:52,209
+notes and innocence which are under a third list as a given and I'm going to
+
+918
+00:50:52,209 --> 00:50:55,359
+third list as a given and I'm going to see how this looks like you know to
+
+919
+00:50:55,359 --> 00:50:57,699
+see how this looks like you know to sleep we can recognize if it gives us
+
+920
+00:50:57,699 --> 00:51:00,989
+sleep we can recognize if it gives us anything familiar so this is the factor
+
+921
+00:51:00,989 --> 00:51:03,370
+anything familiar so this is the factor so we're looking here right so it's the
+
+922
+00:51:03,370 --> 00:51:09,429
+so we're looking here right so it's the factor this passport right don't pay
+
+923
+00:51:09,429 --> 00:51:12,609
+factor this passport right don't pay attention to the estimation is this
+
+924
+00:51:12,609 --> 00:51:18,459
+attention to the estimation is this message this message there equal to two
+
+925
+00:51:18,459 --> 00:51:20,799
+message this message there equal to two this summation and from queries are
+
+926
+00:51:20,799 --> 00:51:22,790
+this summation and from queries are coming
+
+927
+00:51:22,790 --> 00:51:26,390
+coming with words Michigan this is the listed
+
+928
+00:51:26,390 --> 00:51:48,080
+with words Michigan this is the listed from this to this one
+
+929
+00:51:48,080 --> 00:51:51,200
+from this to this one so what you do is take the factor which
+
+930
+00:51:51,200 --> 00:51:56,240
+so what you do is take the factor which is this n minus 1 n does the conditional
+
+931
+00:51:56,240 --> 00:51:58,640
+is this n minus 1 n does the conditional probability really okay times the
+
+932
+00:51:58,640 --> 00:52:01,610
+probability really okay times the message that comes from the node xn
+
+933
+00:52:01,610 --> 00:52:07,210
+message that comes from the node xn minus 1 to this factor fn- trunk away
+
+934
+00:52:07,210 --> 00:52:14,000
+minus 1 to this factor fn- trunk away yes right and stimuli I want to find the
+
+935
+00:52:14,000 --> 00:52:16,040
+yes right and stimuli I want to find the message from this structure to this node
+
+936
+00:52:16,040 --> 00:52:19,880
+message from this structure to this node that is again this factor right which is
+
+937
+00:52:19,880 --> 00:52:22,880
+that is again this factor right which is this point incoming message from node xn
+
+938
+00:52:22,880 --> 00:52:25,220
+this point incoming message from node xn plus 1 to this factor and then you have
+
+939
+00:52:25,220 --> 00:52:27,710
+plus 1 to this factor and then you have to integrate now the xn plus 1 so at the
+
+940
+00:52:27,710 --> 00:52:29,450
+to integrate now the xn plus 1 so at the end of the day everything is only
+
+941
+00:52:29,450 --> 00:52:37,890
+end of the day everything is only function of xn okay so now
+
+942
+00:52:37,890 --> 00:52:40,820
+function of xn okay so now [Applause]
+
+943
+00:52:40,820 --> 00:52:44,990
+[Applause] when your day with me but this message
+
+944
+00:52:44,990 --> 00:52:52,310
+when your day with me but this message here is the same as that message is not
+
+945
+00:52:52,310 --> 00:52:55,440
+here is the same as that message is not the case
+
+946
+00:52:55,440 --> 00:52:55,450
+
+
+947
+00:52:55,450 --> 00:52:59,670
+now wait a second if I go to the say shorty do it here with me now I see this
+
+948
+00:52:59,670 --> 00:53:03,630
+shorty do it here with me now I see this so we calculated this right as this part
+
+949
+00:53:03,630 --> 00:53:08,340
+so we calculated this right as this part four times I'm sure we calculated this
+
+950
+00:53:08,340 --> 00:53:10,710
+four times I'm sure we calculated this message as this part of times this
+
+951
+00:53:10,710 --> 00:53:14,550
+message as this part of times this message and we integrate without any xn
+
+952
+00:53:14,550 --> 00:53:18,120
+message and we integrate without any xn minus 1 so let's look now at this
+
+953
+00:53:18,120 --> 00:53:20,430
+minus 1 so let's look now at this incoming message which is from no xn
+
+954
+00:53:20,430 --> 00:53:22,500
+incoming message which is from no xn minus 1 to the smartphone when you
+
+955
+00:53:22,500 --> 00:53:24,510
+minus 1 to the smartphone when you believe that this message is the same as
+
+956
+00:53:24,510 --> 00:53:30,630
+believe that this message is the same as that message because not way I'm going
+
+957
+00:53:30,630 --> 00:53:32,400
+that message because not way I'm going to save this message this is messages
+
+958
+00:53:32,400 --> 00:53:34,860
+to save this message this is messages from facto specific alright so there's
+
+959
+00:53:34,860 --> 00:53:36,690
+from facto specific alright so there's no potentially or anything like that so
+
+960
+00:53:36,690 --> 00:53:39,300
+no potentially or anything like that so this message is the same as that message
+
+961
+00:53:39,300 --> 00:53:42,300
+this message is the same as that message so what I have my share I substitute
+
+962
+00:53:42,300 --> 00:53:45,000
+so what I have my share I substitute this mister as the message coming from
+
+963
+00:53:45,000 --> 00:53:48,150
+this mister as the message coming from the factor FN minus 2 there no basic and
+
+964
+00:53:48,150 --> 00:53:52,140
+the factor FN minus 2 there no basic and the N minus 1 okay and similarly I think
+
+965
+00:53:52,140 --> 00:53:54,450
+the N minus 1 okay and similarly I think this misses to be the same is not missed
+
+966
+00:53:54,450 --> 00:54:00,750
+this misses to be the same is not missed it's all right and I write like that to
+
+967
+00:54:00,750 --> 00:54:03,270
+it's all right and I write like that to these messages and I call this the Alpha
+
+968
+00:54:03,270 --> 00:54:05,670
+these messages and I call this the Alpha message and I call this the different
+
+969
+00:54:05,670 --> 00:54:10,250
+message and I call this the different masters so the Alpha message is computed
+
+970
+00:54:10,250 --> 00:54:13,710
+masters so the Alpha message is computed from left to right for our calculations
+
+971
+00:54:13,710 --> 00:54:16,170
+from left to right for our calculations you can see this you know to country if
+
+972
+00:54:16,170 --> 00:54:18,540
+you can see this you know to country if there is an cancel relation here if I
+
+973
+00:54:18,540 --> 00:54:22,500
+there is an cancel relation here if I call this my for a text n minus 1
+
+974
+00:54:22,500 --> 00:54:27,270
+call this my for a text n minus 1 you know what this whole thing is that
+
+975
+00:54:27,270 --> 00:54:28,830
+you know what this whole thing is that name should I give to this from term
+
+976
+00:54:28,830 --> 00:54:32,970
+name should I give to this from term there
+
+977
+00:54:32,970 --> 00:54:32,980
+
+
+978
+00:54:32,980 --> 00:54:40,950
+is the total addresses in our heart external and this if I call this M beta
+
+979
+00:54:40,950 --> 00:54:43,770
+external and this if I call this M beta X n plus 1 all right
+
+980
+00:54:43,770 --> 00:54:47,220
+X n plus 1 all right xn plus 1 this whole thing what it is it
+
+981
+00:54:47,220 --> 00:54:50,160
+xn plus 1 this whole thing what it is it is in beta extent is the messed is
+
+982
+00:54:50,160 --> 00:54:55,260
+is in beta extent is the messed is coming to extend backwards if we do that
+
+983
+00:54:55,260 --> 00:54:57,030
+coming to extend backwards if we do that problem for a change the forward and the
+
+984
+00:54:57,030 --> 00:55:00,960
+problem for a change the forward and the backward messages so basically what you
+
+985
+00:55:00,960 --> 00:55:06,050
+backward messages so basically what you do here is you're recovering if you like
+
+986
+00:55:06,050 --> 00:55:11,550
+do here is you're recovering if you like the rules in enough extent as the triple
+
+987
+00:55:11,550 --> 00:55:12,900
+the rules in enough extent as the triple message which is what you see here
+
+988
+00:55:12,900 --> 00:55:15,570
+message which is what you see here literally cast of Lee and the bottles
+
+989
+00:55:15,570 --> 00:55:17,190
+literally cast of Lee and the bottles with a message which is what you see
+
+990
+00:55:17,190 --> 00:55:21,599
+with a message which is what you see here recursively I mean anything new in
+
+991
+00:55:21,599 --> 00:55:24,270
+here recursively I mean anything new in in this example but I wanted to just
+
+992
+00:55:24,270 --> 00:55:28,080
+in this example but I wanted to just simply start with this rather intensive
+
+993
+00:55:28,080 --> 00:55:33,030
+simply start with this rather intensive graph that is what it's supposed to do
+
+994
+00:55:33,030 --> 00:55:34,890
+graph that is what it's supposed to do and what is the post in different chains
+
+995
+00:55:34,890 --> 00:55:37,290
+and what is the post in different chains is best friend to compute this expand
+
+996
+00:55:37,290 --> 00:55:40,530
+is best friend to compute this expand with a further message propagation and a
+
+997
+00:55:40,530 --> 00:55:42,450
+with a further message propagation and a map of message propagation and then you
+
+998
+00:55:42,450 --> 00:55:44,430
+map of message propagation and then you multiply the Alpha and Beta messages and
+
+999
+00:55:44,430 --> 00:55:47,970
+multiply the Alpha and Beta messages and get the effexor and similarly you can
+
+1000
+00:55:47,970 --> 00:55:49,260
+get the effexor and similarly you can multiply the corresponding alpha
+
+1001
+00:55:49,260 --> 00:55:51,570
+multiply the corresponding alpha messages to get the marginal of this
+
+1002
+00:55:51,570 --> 00:55:53,730
+messages to get the marginal of this node and at least note and everywhere
+
+1003
+00:55:53,730 --> 00:56:03,470
+node and at least note and everywhere else in the garden and ok
+
+1004
+00:56:03,470 --> 00:56:03,480
+
+
+1005
+00:56:03,480 --> 00:56:08,660
+and obviously to starfish on what is right so if you need to use the boundary
+
+1006
+00:56:08,660 --> 00:56:11,049
+right so if you need to use the boundary conditions that are indicated before and
+
+1007
+00:56:11,049 --> 00:56:13,160
+conditions that are indicated before and we have done this for the alpha-beta
+
+1008
+00:56:13,160 --> 00:56:16,880
+we have done this for the alpha-beta messages so if you take if you take this
+
+1009
+00:56:16,880 --> 00:56:18,829
+messages so if you take if you take this to be casted relation to the head before
+
+1010
+00:56:18,829 --> 00:56:22,789
+to be casted relation to the head before so if you want the message that needs no
+
+1011
+00:56:22,789 --> 00:56:25,609
+so if you want the message that needs no vex world to go to the facts the first
+
+1012
+00:56:25,609 --> 00:56:28,339
+vex world to go to the facts the first part or basically what you need to do is
+
+1013
+00:56:28,339 --> 00:56:32,180
+part or basically what you need to do is integrate x one from the potential to
+
+1014
+00:56:32,180 --> 00:56:34,670
+integrate x one from the potential to Taiwan to the first two nodes in the
+
+1015
+00:56:34,670 --> 00:56:36,530
+Taiwan to the first two nodes in the message from the first no to the first
+
+1016
+00:56:36,530 --> 00:56:39,410
+message from the first no to the first factor and we serve to take this equal
+
+1017
+00:56:39,410 --> 00:56:41,870
+factor and we serve to take this equal to one so you notice the first message
+
+1018
+00:56:41,870 --> 00:56:43,670
+to one so you notice the first message that comes is nothing else but
+
+1019
+00:56:43,670 --> 00:56:47,270
+that comes is nothing else but marginalization in X one of the
+
+1020
+00:56:47,270 --> 00:56:51,950
+marginalization in X one of the potential between nodes 1 &amp; 2 you really
+
+1021
+00:56:51,950 --> 00:56:55,190
+potential between nodes 1 &amp; 2 you really have to sort of spend some time doing
+
+1022
+00:56:55,190 --> 00:56:57,740
+have to sort of spend some time doing this turn and actually not spend some
+
+1023
+00:56:57,740 --> 00:56:58,520
+this turn and actually not spend some time do next
+
+1024
+00:56:58,520 --> 00:57:02,690
+time do next programmed it okay because sort of
+
+1025
+00:57:02,690 --> 00:57:04,220
+programmed it okay because sort of looking at it
+
+1026
+00:57:04,220 --> 00:57:06,559
+looking at it this just you know it's chained right so
+
+1027
+00:57:06,559 --> 00:57:08,780
+this just you know it's chained right so this is the most trivial case if we try
+
+1028
+00:57:08,780 --> 00:57:10,880
+this is the most trivial case if we try to do this and we're supposed to do this
+
+1029
+00:57:10,880 --> 00:57:15,380
+to do this and we're supposed to do this in two days or three days or two or
+
+1030
+00:57:15,380 --> 00:57:17,470
+in two days or three days or two or three lectures on the state space model
+
+1031
+00:57:17,470 --> 00:57:20,180
+three lectures on the state space model so we collect observations of the states
+
+1032
+00:57:20,180 --> 00:57:23,720
+so we collect observations of the states also you will see that things together
+
+1033
+00:57:23,720 --> 00:57:29,740
+also you will see that things together with not noisy okay but bottom line is
+
+1034
+00:57:29,740 --> 00:57:35,380
+with not noisy okay but bottom line is if you have messages that result from
+
+1035
+00:57:35,380 --> 00:57:38,690
+if you have messages that result from variable elimination and in a part of
+
+1036
+00:57:38,690 --> 00:57:41,000
+variable elimination and in a part of the office messages are messages from
+
+1037
+00:57:41,000 --> 00:57:43,760
+the office messages are messages from fastest nodes or promotes the past oh
+
+1038
+00:57:43,760 --> 00:57:47,690
+fastest nodes or promotes the past oh okay once these messages have been
+
+1039
+00:57:47,690 --> 00:57:51,109
+okay once these messages have been completed you can evaluate anything you
+
+1040
+00:57:51,109 --> 00:57:54,170
+completed you can evaluate anything you wish you can find marginals you can find
+
+1041
+00:57:54,170 --> 00:57:55,280
+wish you can find marginals you can find conditionals
+
+1042
+00:57:55,280 --> 00:57:58,579
+conditionals you can put evidence to the module joint
+
+1043
+00:57:58,579 --> 00:58:04,069
+you can put evidence to the module joint distributions etc etcetera all right so
+
+1044
+00:58:04,069 --> 00:58:05,599
+distributions etc etcetera all right so let's take a break and you guys will
+
+1045
+00:58:05,599 --> 00:58:07,910
+let's take a break and you guys will help me to do a not a change but a
+
+1046
+00:58:07,910 --> 00:58:13,599
+help me to do a not a change but a little bit more interesting problem
+
+1047
+00:58:13,599 --> 00:58:13,609
+
+
+1048
+00:58:13,609 --> 00:58:21,470
+still a pain problem so we have told note and we have our first dot this
+
+1049
+00:58:21,470 --> 00:58:23,870
+note and we have our first dot this partner connect nodes x1 x2 so function
+
+1050
+00:58:23,870 --> 00:58:27,140
+partner connect nodes x1 x2 so function of x1 x2 a function of X 2 X 3 and
+
+1051
+00:58:27,140 --> 00:58:35,630
+of x1 x2 a function of X 2 X 3 and function of X 2 X 4 let's say let me see
+
+1052
+00:58:35,630 --> 00:58:38,390
+function of X 2 X 4 let's say let me see what with it taste I mean that's suppose
+
+1053
+00:58:38,390 --> 00:58:40,549
+what with it taste I mean that's suppose we want to compute all the marginal
+
+1054
+00:58:40,549 --> 00:58:44,839
+we want to compute all the marginal distributions of this graph and you know
+
+1055
+00:58:44,839 --> 00:58:47,000
+distributions of this graph and you know you evidence is not an issue you know
+
+1056
+00:58:47,000 --> 00:58:49,339
+you evidence is not an issue you know you just use slices of these
+
+1057
+00:58:49,339 --> 00:58:51,620
+you just use slices of these distributions if you have evidence you
+
+1058
+00:58:51,620 --> 00:58:54,349
+distributions if you have evidence you know but let's say we want to find the
+
+1059
+00:58:54,349 --> 00:58:57,620
+know but let's say we want to find the marginals of X 1 X 2 X 3 X 4 in this
+
+1060
+00:58:57,620 --> 00:59:02,839
+marginals of X 1 X 2 X 3 X 4 in this graph so using the this some other
+
+1061
+00:59:02,839 --> 00:59:05,329
+graph so using the this some other powerful factor graphs what do we need
+
+1062
+00:59:05,329 --> 00:59:09,290
+powerful factor graphs what do we need to start doing
+
+1063
+00:59:09,290 --> 00:59:09,300
+
+
+1064
+00:59:09,300 --> 00:59:16,160
+wouldn't be a step one so choose I don't know then can be anything doesn't really
+
+1065
+00:59:16,160 --> 00:59:16,550
+know then can be anything doesn't really matter
+
+1066
+00:59:16,550 --> 00:59:20,210
+matter okay so in this case let's say we take
+
+1067
+00:59:20,210 --> 00:59:23,050
+okay so in this case let's say we take the root node to be x1 all right so
+
+1068
+00:59:23,050 --> 00:59:25,910
+the root node to be x1 all right so there are start sending messages from
+
+1069
+00:59:25,910 --> 00:59:28,430
+there are start sending messages from root node to the sparkler then from this
+
+1070
+00:59:28,430 --> 00:59:31,880
+root node to the sparkler then from this photo to this node okay obviously
+
+1071
+00:59:31,880 --> 00:59:33,560
+photo to this node okay obviously descend from is known for this problem
+
+1072
+00:59:33,560 --> 00:59:34,910
+descend from is known for this problem you need to know what this kind of from
+
+1073
+00:59:34,910 --> 00:59:37,220
+you need to know what this kind of from below so you're going to have to send in
+
+1074
+00:59:37,220 --> 00:59:39,010
+below so you're going to have to send in lesson from export to this factor
+
+1075
+00:59:39,010 --> 00:59:41,780
+lesson from export to this factor compute this message then multiply these
+
+1076
+00:59:41,780 --> 00:59:45,290
+compute this message then multiply these messages you get that then integrate
+
+1077
+00:59:45,290 --> 00:59:46,820
+messages you get that then integrate this thing out through this posture and
+
+1078
+00:59:46,820 --> 00:59:48,800
+this thing out through this posture and then you get the message three and they
+
+1079
+00:59:48,800 --> 00:59:50,740
+then you get the message three and they stopped going backwards
+
+1080
+00:59:50,740 --> 00:59:53,450
+stopped going backwards alright so let's look at the
+
+1081
+00:59:53,450 --> 00:59:58,040
+alright so let's look at the calculations one of the tally a question
+
+1082
+00:59:58,040 --> 00:59:59,990
+calculations one of the tally a question one sir is the message from x1 to face
+
+1083
+00:59:59,990 --> 01:00:11,050
+one sir is the message from x1 to face is one why is that
+
+1084
+01:00:11,050 --> 01:00:11,060
+
+
+1085
+01:00:11,060 --> 01:00:17,200
+I know about the weed we said it's a modern condition right it's the boundary
+
+1086
+01:00:17,200 --> 01:00:19,600
+modern condition right it's the boundary condition for this problem and it's
+
+1087
+01:00:19,600 --> 01:00:23,400
+condition for this problem and it's because there it carries the viable no
+
+1088
+01:00:23,400 --> 01:00:27,040
+because there it carries the viable no it's not a doctor okay and we will do
+
+1089
+01:00:27,040 --> 01:00:28,390
+it's not a doctor okay and we will do something with a factor maybe another
+
+1090
+01:00:28,390 --> 01:00:32,170
+something with a factor maybe another example so correct form to pay this mess
+
+1091
+01:00:32,170 --> 01:00:34,570
+example so correct form to pay this mess is equal to one now for let's try to
+
+1092
+01:00:34,570 --> 01:00:38,830
+is equal to one now for let's try to extend when we have to find this we have
+
+1093
+01:00:38,830 --> 01:00:42,040
+extend when we have to find this we have to take the passport multiplied with
+
+1094
+01:00:42,040 --> 01:00:45,790
+to take the passport multiplied with what with incoming message which is how
+
+1095
+01:00:45,790 --> 01:00:49,180
+what with incoming message which is how much one and then definitely the Flex
+
+1096
+01:00:49,180 --> 01:00:54,580
+much one and then definitely the Flex clock so if I wanted to add this terms
+
+1097
+01:00:54,580 --> 01:00:57,910
+clock so if I wanted to add this terms of explicit I would say is time the
+
+1098
+01:00:57,910 --> 01:01:01,770
+of explicit I would say is time the summation x one right and but you get up
+
+1099
+01:01:01,770 --> 01:01:09,280
+summation x one right and but you get up okay so then let's say we are stuck here
+
+1100
+01:01:09,280 --> 01:01:10,660
+okay so then let's say we are stuck here because we need to compute things from
+
+1101
+01:01:10,660 --> 01:01:12,880
+because we need to compute things from below so we have to find the message for
+
+1102
+01:01:12,880 --> 01:01:18,450
+below so we have to find the message for x4 to FC that's also mountain collision
+
+1103
+01:01:18,450 --> 01:01:23,620
+x4 to FC that's also mountain collision okay so the message is one the message
+
+1104
+01:01:23,620 --> 01:01:25,120
+okay so the message is one the message that they've seized has to extrude I
+
+1105
+01:01:25,120 --> 01:01:28,810
+that they've seized has to extrude I have to eliminate X for the same way we
+
+1106
+01:01:28,810 --> 01:01:30,970
+have to eliminate X for the same way we do elimination through you get that and
+
+1107
+01:01:30,970 --> 01:01:32,620
+do elimination through you get that and now we are ready to send a message from
+
+1108
+01:01:32,620 --> 01:01:35,560
+now we are ready to send a message from X 2 to X B so the message is basically
+
+1109
+01:01:35,560 --> 01:01:38,500
+X 2 to X B so the message is basically the product of the Masters FASS X 2 and
+
+1110
+01:01:38,500 --> 01:01:41,350
+the product of the Masters FASS X 2 and if csun's trucks - so basically the
+
+1111
+01:01:41,350 --> 01:01:45,330
+if csun's trucks - so basically the Masters from X 2 to be is the product of
+
+1112
+01:01:45,330 --> 01:01:51,100
+Masters from X 2 to be is the product of Delta X 2 and FC books - okay and then
+
+1113
+01:01:51,100 --> 01:01:55,600
+Delta X 2 and FC books - okay and then the message from FB 2 X 3 is the factor
+
+1114
+01:01:55,600 --> 01:02:00,970
+the message from FB 2 X 3 is the factor B right times this message and then
+
+1115
+01:02:00,970 --> 01:02:02,800
+B right times this message and then extrude the veg out
+
+1116
+01:02:02,800 --> 01:02:07,240
+extrude the veg out I mean really if you can sort of do this
+
+1117
+01:02:07,240 --> 01:02:09,280
+I mean really if you can sort of do this graphically you don't have to remember
+
+1118
+01:02:09,280 --> 01:02:11,230
+graphically you don't have to remember any complicated
+
+1119
+01:02:11,230 --> 01:02:14,830
+any complicated right so everything will have a factor
+
+1120
+01:02:14,830 --> 01:02:17,530
+right so everything will have a factor what you need to remember is you have to
+
+1121
+01:02:17,530 --> 01:02:20,350
+what you need to remember is you have to multiply with a past or whatever
+
+1122
+01:02:20,350 --> 01:02:22,240
+multiply with a past or whatever incoming messages you have and then
+
+1123
+01:02:22,240 --> 01:02:24,370
+incoming messages you have and then going to grade or the volume of success
+
+1124
+01:02:24,370 --> 01:02:34,570
+going to grade or the volume of success the college's body okay all right now we
+
+1125
+01:02:34,570 --> 01:02:37,060
+the college's body okay all right now we went one way and remember to get sort of
+
+1126
+01:02:37,060 --> 01:02:39,190
+went one way and remember to get sort of marginal you have to go in every adds
+
+1127
+01:02:39,190 --> 01:02:41,710
+marginal you have to go in every adds what comes in and what you know what was
+
+1128
+01:02:41,710 --> 01:02:44,830
+what comes in and what you know what was in that directions of the of the edges
+
+1129
+01:02:44,830 --> 01:02:46,780
+in that directions of the of the edges of the graph so now we have to stop
+
+1130
+01:02:46,780 --> 01:02:48,970
+of the graph so now we have to stop sending a message from experience be one
+
+1131
+01:02:48,970 --> 01:02:53,350
+sending a message from experience be one from the matrix to a particle again time
+
+1132
+01:02:53,350 --> 01:02:59,080
+from the matrix to a particle again time Swan and integrated throughout now we
+
+1133
+01:02:59,080 --> 01:03:01,030
+Swan and integrated throughout now we let's see what's going on we're gonna
+
+1134
+01:03:01,030 --> 01:03:04,570
+let's see what's going on we're gonna start sending from extra class a can you
+
+1135
+01:03:04,570 --> 01:03:06,490
+start sending from extra class a can you send the message from X to go say now
+
+1136
+01:03:06,490 --> 01:03:09,700
+send the message from X to go say now look at the question I'm gonna want you
+
+1137
+01:03:09,700 --> 01:03:14,370
+look at the question I'm gonna want you to send a message from X to do a fairy
+
+1138
+01:03:14,370 --> 01:03:14,380
+
+
+1139
+01:03:14,380 --> 01:03:20,770
+what we will need in order to send a message from Exeter to a peg we need to
+
+1140
+01:03:20,770 --> 01:03:22,840
+message from Exeter to a peg we need to know what message comes in this way
+
+1141
+01:03:22,840 --> 01:03:24,580
+know what message comes in this way which we contribute but also we need to
+
+1142
+01:03:24,580 --> 01:03:26,740
+which we contribute but also we need to know what miss this comes from the fact
+
+1143
+01:03:26,740 --> 01:03:29,500
+know what miss this comes from the fact that secret to and that message was
+
+1144
+01:03:29,500 --> 01:03:33,910
+that secret to and that message was computed from query from FC 2x2 was
+
+1145
+01:03:33,910 --> 01:03:38,920
+computed from query from FC 2x2 was completed in the forward step do not
+
+1146
+01:03:38,920 --> 01:03:42,190
+completed in the forward step do not exist and it is message should be the
+
+1147
+01:03:42,190 --> 01:03:43,330
+exist and it is message should be the forward message have already been
+
+1148
+01:03:43,330 --> 01:03:52,200
+forward message have already been calculated so now I have to account for
+
+1149
+01:03:52,200 --> 01:03:52,210
+
+
+1150
+01:03:52,210 --> 01:04:01,600
+in the stuff in the message from x22 at me
+
+1151
+01:04:01,600 --> 01:04:01,610
+
+
+1152
+01:04:01,610 --> 01:04:06,520
+yes because so this is a variable node right there's no function involved
+
+1153
+01:04:06,520 --> 01:04:16,990
+right there's no function involved without any state because let's take you
+
+1154
+01:04:16,990 --> 01:04:20,260
+without any state because let's take you notice the message from FC 2 X 2 FC 2 X
+
+1155
+01:04:20,260 --> 01:04:20,770
+notice the message from FC 2 X 2 FC 2 X 2
+
+1156
+01:04:20,770 --> 01:04:24,100
+2 it's I'm sorry this was eliminated from
+
+1157
+01:04:24,100 --> 01:04:27,430
+it's I'm sorry this was eliminated from X 2 - oh yeah good point you're making
+
+1158
+01:04:27,430 --> 01:04:31,750
+X 2 - oh yeah good point you're making so what is this supposed to be so the
+
+1159
+01:04:31,750 --> 01:04:35,950
+so what is this supposed to be so the message let's again from FA 2 X 2
+
+1160
+01:04:35,950 --> 01:04:38,020
+message let's again from FA 2 X 2 alright will be a function of X do the
+
+1161
+01:04:38,020 --> 01:04:40,780
+alright will be a function of X do the math from FC 2 X 2 X 2 so this corrected
+
+1162
+01:04:40,780 --> 01:04:44,820
+math from FC 2 X 2 X 2 so this corrected okay this is extruder okay thank you
+
+1163
+01:04:44,820 --> 01:04:47,580
+okay this is extruder okay thank you remaining if you don't see it collected
+
+1164
+01:04:47,580 --> 01:04:52,600
+remaining if you don't see it collected by tomorrow morning okay all right
+
+1165
+01:04:52,600 --> 01:04:54,610
+by tomorrow morning okay all right did I correct on this slide which was
+
+1166
+01:04:54,610 --> 01:04:58,960
+did I correct on this slide which was the message actually plus B oh wait a
+
+1167
+01:04:58,960 --> 01:05:04,090
+the message actually plus B oh wait a second twenty six two two three do we
+
+1168
+01:05:04,090 --> 01:05:11,589
+second twenty six two two three do we have this any part here
+
+1169
+01:05:11,589 --> 01:05:11,599
+
+
+1170
+01:05:11,599 --> 01:05:22,059
+what with alright okay so so basically to find business that's right there to
+
+1171
+01:05:22,059 --> 01:05:24,009
+to find business that's right there to multiply the message from left Beatrix -
+
+1172
+01:05:24,009 --> 01:05:29,279
+multiply the message from left Beatrix - and then the message from FC 2 x - okay
+
+1173
+01:05:29,279 --> 01:05:35,380
+and then the message from FC 2 x - okay then define the message from we have to
+
+1174
+01:05:35,380 --> 01:05:37,089
+then define the message from we have to find the message from extinct let's see
+
+1175
+01:05:37,089 --> 01:05:39,699
+find the message from extinct let's see also then downwards write this message
+
+1176
+01:05:39,699 --> 01:05:47,219
+also then downwards write this message there so that would be the from again
+
+1177
+01:05:47,219 --> 01:05:49,839
+there so that would be the from again the missed incoming message from left be
+
+1178
+01:05:49,839 --> 01:05:51,910
+the missed incoming message from left be too extreme but also the message from
+
+1179
+01:05:51,910 --> 01:05:54,219
+too extreme but also the message from this peg to extremely computing table on
+
+1180
+01:05:54,219 --> 01:05:56,499
+this peg to extremely computing table on the previous slide arrived which is this
+
+1181
+01:05:56,499 --> 01:05:58,180
+the previous slide arrived which is this nested okay
+
+1182
+01:05:58,180 --> 01:06:01,209
+nested okay and of course if you want to find the
+
+1183
+01:06:01,209 --> 01:06:02,680
+and of course if you want to find the message from it's cheap to explore that
+
+1184
+01:06:02,680 --> 01:06:04,420
+message from it's cheap to explore that is a factor involved so you have to
+
+1185
+01:06:04,420 --> 01:06:06,939
+is a factor involved so you have to multiply with a factor of T times the
+
+1186
+01:06:06,939 --> 01:06:09,130
+multiply with a factor of T times the atomic mass is connected to 2 FC and
+
+1187
+01:06:09,130 --> 01:06:15,749
+atomic mass is connected to 2 FC and then integrate explode okay so basically
+
+1188
+01:06:15,749 --> 01:06:18,489
+then integrate explode okay so basically the propagation of the messages between
+
+1189
+01:06:18,489 --> 01:06:21,309
+the propagation of the messages between four factors notes and those factors the
+
+1190
+01:06:21,309 --> 01:06:26,279
+four factors notes and those factors the same but when you are basically just
+
+1191
+01:06:26,279 --> 01:06:29,259
+same but when you are basically just working with factors in eliminating
+
+1192
+01:06:29,259 --> 01:06:31,329
+working with factors in eliminating factors in principle you have to
+
+1193
+01:06:31,329 --> 01:06:33,430
+factors in principle you have to multiply with the fastest function okay
+
+1194
+01:06:33,430 --> 01:06:36,549
+multiply with the fastest function okay I mean usually very much here but the
+
+1195
+01:06:36,549 --> 01:06:40,269
+I mean usually very much here but the idea is you know there is a function
+
+1196
+01:06:40,269 --> 01:06:42,069
+idea is you know there is a function involved and not function is to be
+
+1197
+01:06:42,069 --> 01:06:45,819
+involved and not function is to be accounted explicitly so in here we don't
+
+1198
+01:06:45,819 --> 01:06:47,259
+accounted explicitly so in here we don't have in fact also is basically the
+
+1199
+01:06:47,259 --> 01:06:49,180
+have in fact also is basically the product of the messages here is the
+
+1200
+01:06:49,180 --> 01:06:51,430
+product of the messages here is the factor and whatever product of messages
+
+1201
+01:06:51,430 --> 01:06:58,089
+factor and whatever product of messages you have and then elimination so just to
+
+1202
+01:06:58,089 --> 01:07:01,269
+you have and then elimination so just to show you but actually this during you
+
+1203
+01:07:01,269 --> 01:07:04,630
+show you but actually this during you can do a lot of tests of your own right
+
+1204
+01:07:04,630 --> 01:07:06,609
+can do a lot of tests of your own right so let's say we want to compute the
+
+1205
+01:07:06,609 --> 01:07:10,719
+so let's say we want to compute the marginal effects to go right so when you
+
+1206
+01:07:10,719 --> 01:07:14,140
+marginal effects to go right so when you scan based on what we said given the
+
+1207
+01:07:14,140 --> 01:07:16,710
+scan based on what we said given the marginal time you know this movement
+
+1208
+01:07:16,710 --> 01:07:19,890
+marginal time you know this movement normalized this cavity thing I don't
+
+1209
+01:07:19,890 --> 01:07:22,380
+normalized this cavity thing I don't know if it shows a lot of his demons
+
+1210
+01:07:22,380 --> 01:07:24,720
+know if it shows a lot of his demons will not come properly on the PDF so if
+
+1211
+01:07:24,720 --> 01:07:28,980
+will not come properly on the PDF so if you see that please let me know so if
+
+1212
+01:07:28,980 --> 01:07:32,130
+you see that please let me know so if you want the probability of x2 you have
+
+1213
+01:07:32,130 --> 01:07:34,140
+you want the probability of x2 you have to mess take the message from afraid to
+
+1214
+01:07:34,140 --> 01:07:36,240
+to mess take the message from afraid to do it because you have seen 2 X 2 which
+
+1215
+01:07:36,240 --> 01:07:39,900
+do it because you have seen 2 X 2 which is this and let's see for example if you
+
+1216
+01:07:39,900 --> 01:07:41,690
+is this and let's see for example if you want the message from afraid to
+
+1217
+01:07:41,690 --> 01:07:45,930
+want the message from afraid to experience - is FA with x1 integrates
+
+1218
+01:07:45,930 --> 01:07:48,540
+experience - is FA with x1 integrates out all right if they will fix one
+
+1219
+01:07:48,540 --> 01:07:51,150
+out all right if they will fix one degrees out similarly visitors this with
+
+1220
+01:07:51,150 --> 01:07:55,830
+degrees out similarly visitors this with x3 integrated x4 integrated so I can fly
+
+1221
+01:07:55,830 --> 01:07:58,170
+x3 integrated x4 integrated so I can fly this donation like that and actually
+
+1222
+01:07:58,170 --> 01:08:00,740
+this donation like that and actually this is the joint where I have
+
+1223
+01:08:00,740 --> 01:08:02,970
+this is the joint where I have integrated out all the volumes for the
+
+1224
+01:08:02,970 --> 01:08:04,800
+integrated out all the volumes for the execution or visit us tomorrow
+
+1225
+01:08:04,800 --> 01:08:08,210
+execution or visit us tomorrow I mean to test biscuits show you that
+
+1226
+01:08:08,210 --> 01:08:11,700
+I mean to test biscuits show you that things are really working properly so
+
+1227
+01:08:11,700 --> 01:08:13,320
+things are really working properly so you know when you do problems like that
+
+1228
+01:08:13,320 --> 01:08:15,480
+you know when you do problems like that right you may want to just start one do
+
+1229
+01:08:15,480 --> 01:08:17,850
+right you may want to just start one do some trivial test to see that you wanna
+
+1230
+01:08:17,850 --> 01:08:19,320
+some trivial test to see that you wanna know me think don't prepare any
+
+1231
+01:08:19,320 --> 01:08:21,600
+know me think don't prepare any information and this for this trivial
+
+1232
+01:08:21,600 --> 01:08:24,570
+information and this for this trivial example you can see me that we've got
+
+1233
+01:08:24,570 --> 01:08:29,010
+example you can see me that we've got this equation that is product incoming
+
+1234
+01:08:29,010 --> 01:08:31,820
+this equation that is product incoming messages to know that - all right
+
+1235
+01:08:31,820 --> 01:08:35,670
+messages to know that - all right indeed gives you the marginal of now
+
+1236
+01:08:35,670 --> 01:08:44,970
+indeed gives you the marginal of now Dexter
+
+1237
+01:08:44,970 --> 01:08:44,980
+
+
+1238
+01:08:44,980 --> 01:08:48,600
+all right I don't know if there's anything new on this example so I'm
+
+1239
+01:08:48,600 --> 01:08:52,920
+anything new on this example so I'm going to only fit Oh actually maybe we
+
+1240
+01:08:52,920 --> 01:08:55,170
+going to only fit Oh actually maybe we should do this example there just for a
+
+1241
+01:08:55,170 --> 01:08:58,500
+should do this example there just for a different so in this example the only
+
+1242
+01:08:58,500 --> 01:09:00,360
+different so in this example the only thing that is liquor at this I give you
+
+1243
+01:09:00,360 --> 01:09:03,050
+thing that is liquor at this I give you evidence that x1 is different rate
+
+1244
+01:09:03,050 --> 01:09:07,740
+evidence that x1 is different rate alright and and if you notice the
+
+1245
+01:09:07,740 --> 01:09:10,820
+alright and and if you notice the elimination algorithm I'd like we did
+
+1246
+01:09:10,820 --> 01:09:15,870
+elimination algorithm I'd like we did before practically identical the only
+
+1247
+01:09:15,870 --> 01:09:21,060
+before practically identical the only difference test that the you basically
+
+1248
+01:09:21,060 --> 01:09:23,790
+difference test that the you basically have to propagate the information that
+
+1249
+01:09:23,790 --> 01:09:28,290
+have to propagate the information that x1 is equal to a and the way to do this
+
+1250
+01:09:28,290 --> 01:09:30,960
+x1 is equal to a and the way to do this is by sending a delta function from x
+
+1251
+01:09:30,960 --> 01:09:33,870
+is by sending a delta function from x one platform and you can immediately see
+
+1252
+01:09:33,870 --> 01:09:36,810
+one platform and you can immediately see that this works because if you want the
+
+1253
+01:09:36,810 --> 01:09:39,630
+that this works because if you want the message at one time speaks to this would
+
+1254
+01:09:39,630 --> 01:09:42,480
+message at one time speaks to this would be the part where F 1 of X 1 X 2 times
+
+1255
+01:09:42,480 --> 01:09:45,260
+be the part where F 1 of X 1 X 2 times the incoming message and you notice
+
+1256
+01:09:45,260 --> 01:09:47,970
+the incoming message and you notice they're going to be understand this you
+
+1257
+01:09:47,970 --> 01:09:50,280
+they're going to be understand this you know it basically forces x1 take the
+
+1258
+01:09:50,280 --> 01:09:56,790
+know it basically forces x1 take the value a right so this is the only thing
+
+1259
+01:09:56,790 --> 01:09:58,500
+value a right so this is the only thing you need to do to account for evidence
+
+1260
+01:09:58,500 --> 01:10:00,780
+you need to do to account for evidence so if you have a homework problem for
+
+1261
+01:10:00,780 --> 01:10:03,390
+so if you have a homework problem for there's evidence there's nothing really
+
+1262
+01:10:03,390 --> 01:10:05,850
+there's evidence there's nothing really particular that is needed you know this
+
+1263
+01:10:05,850 --> 01:10:13,319
+particular that is needed you know this already takes care of
+
+1264
+01:10:13,319 --> 01:10:13,329
+
+
+1265
+01:10:13,329 --> 01:10:20,479
+I have a lot of job very simple sort of calculations but I want you to actually
+
+1266
+01:10:20,479 --> 01:10:23,669
+calculations but I want you to actually look at this equations and be sure that
+
+1267
+01:10:23,669 --> 01:10:26,399
+look at this equations and be sure that you clearly understand because here you
+
+1268
+01:10:26,399 --> 01:10:28,649
+you clearly understand because here you know in summation product this of that
+
+1269
+01:10:28,649 --> 01:10:29,910
+know in summation product this of that is like what is that
+
+1270
+01:10:29,910 --> 01:10:32,240
+is like what is that where is very simple it's all related
+
+1271
+01:10:32,240 --> 01:10:35,580
+where is very simple it's all related with this tree structure and in the
+
+1272
+01:10:35,580 --> 01:10:38,640
+with this tree structure and in the factors we have defined over the trees
+
+1273
+01:10:38,640 --> 01:10:42,060
+factors we have defined over the trees but what I wanted to prove for your
+
+1274
+01:10:42,060 --> 01:10:45,330
+but what I wanted to prove for your world in two lines but if somehow you're
+
+1275
+01:10:45,330 --> 01:10:48,390
+world in two lines but if somehow you're interesting to compute the modulo have
+
+1276
+01:10:48,390 --> 01:10:50,189
+interesting to compute the modulo have told the notes of the age in the fall
+
+1277
+01:10:50,189 --> 01:10:52,260
+told the notes of the age in the fall apart or severe a factor and he's
+
+1278
+01:10:52,260 --> 01:10:53,640
+apart or severe a factor and he's connecting the change of three or four
+
+1279
+01:10:53,640 --> 01:10:56,220
+connecting the change of three or four nodes and you wonder why 0
+
+1280
+01:10:56,220 --> 01:10:58,910
+nodes and you wonder why 0 look how easy the calculation looks like
+
+1281
+01:10:58,910 --> 01:11:02,850
+look how easy the calculation looks like take the factor corresponding to all
+
+1282
+01:11:02,850 --> 01:11:05,280
+take the factor corresponding to all these variables and multiply multiply
+
+1283
+01:11:05,280 --> 01:11:08,580
+these variables and multiply multiply the frozen coming note that there are
+
+1284
+01:11:08,580 --> 01:11:12,899
+the frozen coming note that there are main works of the factor so here let's
+
+1285
+01:11:12,899 --> 01:11:16,020
+main works of the factor so here let's say if I have the two nodes right it
+
+1286
+01:11:16,020 --> 01:11:18,330
+say if I have the two nodes right it takes Technol factor which exists and
+
+1287
+01:11:18,330 --> 01:11:22,770
+takes Technol factor which exists and taken out the product of so this is you
+
+1288
+01:11:22,770 --> 01:11:29,280
+taken out the product of so this is you know three months take the product of
+
+1289
+01:11:29,280 --> 01:11:31,530
+know three months take the product of the neighbors knowledge of this part or
+
+1290
+01:11:31,530 --> 01:11:33,750
+the neighbors knowledge of this part or at best and multiply this message is
+
+1291
+01:11:33,750 --> 01:11:36,169
+at best and multiply this message is coming in okay the look is basically
+
+1292
+01:11:36,169 --> 01:11:40,500
+coming in okay the look is basically given in one line by using this concept
+
+1293
+01:11:40,500 --> 01:11:48,760
+given in one line by using this concept again of
+
+1294
+01:11:48,760 --> 01:11:48,770
+
+
+1295
+01:11:48,770 --> 01:11:55,120
+and again you know I let's do this this if this makes sense if you want to take
+
+1296
+01:11:55,120 --> 01:11:57,460
+if this makes sense if you want to take here define them up the marginal of
+
+1297
+01:11:57,460 --> 01:12:00,040
+here define them up the marginal of nodes x1 and x2 just to convince you of
+
+1298
+01:12:00,040 --> 01:12:04,330
+nodes x1 and x2 just to convince you of this is correct so based on the thing
+
+1299
+01:12:04,330 --> 01:12:06,910
+this is correct so based on the thing that I proved here and you guys should
+
+1300
+01:12:06,910 --> 01:12:09,040
+that I proved here and you guys should leave if you are the marginal of extra
+
+1301
+01:12:09,040 --> 01:12:13,150
+leave if you are the marginal of extra next to it would be the factor the
+
+1302
+01:12:13,150 --> 01:12:16,960
+next to it would be the factor the message that comes to the factor f f of
+
+1303
+01:12:16,960 --> 01:12:20,110
+message that comes to the factor f f of x1 the fact of the messenger comes from
+
+1304
+01:12:20,110 --> 01:12:23,670
+x1 the fact of the messenger comes from node executes to pay which is that and
+
+1305
+01:12:23,670 --> 01:12:26,830
+node executes to pay which is that and the message from X 1 to phase 2 equal
+
+1306
+01:12:26,830 --> 01:12:31,810
+the message from X 1 to phase 2 equal comments this is similar to what we did
+
+1307
+01:12:31,810 --> 01:12:33,940
+comments this is similar to what we did in the examples before how much is this
+
+1308
+01:12:33,940 --> 01:12:37,300
+in the examples before how much is this vessel 1 all right that's a boundary
+
+1309
+01:12:37,300 --> 01:12:40,030
+vessel 1 all right that's a boundary condition and the message coming to an
+
+1310
+01:12:40,030 --> 01:12:43,630
+condition and the message coming to an extreme to FA the message coming from X
+
+1311
+01:12:43,630 --> 01:12:46,240
+extreme to FA the message coming from X you to a say this it's interesting all
+
+1312
+01:12:46,240 --> 01:12:48,940
+you to a say this it's interesting all right from XA will be the most
+
+1313
+01:12:48,940 --> 01:12:52,090
+right from XA will be the most astounding then this cocktail to this
+
+1314
+01:12:52,090 --> 01:12:55,120
+astounding then this cocktail to this node and from this cocktail of yo shall
+
+1315
+01:12:55,120 --> 01:12:58,390
+node and from this cocktail of yo shall we be the message from a2 and the metal
+
+1316
+01:12:58,390 --> 01:13:00,880
+we be the message from a2 and the metal from F Street - its - and what is the
+
+1317
+01:13:00,880 --> 01:13:03,990
+from F Street - its - and what is the message conical met need to experience
+
+1318
+01:13:03,990 --> 01:13:08,680
+message conical met need to experience the mess is coming is the fact that x
+
+1319
+01:13:08,680 --> 01:13:10,420
+the mess is coming is the fact that x there mrs. Caleigh forextrader this
+
+1320
+01:13:10,420 --> 01:13:14,350
+there mrs. Caleigh forextrader this factor which is how much 1 to the death
+
+1321
+01:13:14,350 --> 01:13:16,930
+factor which is how much 1 to the death desolation times that summation and if I
+
+1322
+01:13:16,930 --> 01:13:17,950
+desolation times that summation and if I put yourself sorry
+
+1323
+01:13:17,950 --> 01:13:19,960
+put yourself sorry you basically have to integrate whole
+
+1324
+01:13:19,960 --> 01:13:21,580
+you basically have to integrate whole body moves but 3 &amp; 4
+
+1325
+01:13:21,580 --> 01:13:23,080
+body moves but 3 &amp; 4 obviously that will give you the
+
+1326
+01:13:23,080 --> 01:13:29,140
+obviously that will give you the marginal P of X 1 X 2 again don't you
+
+1327
+01:13:29,140 --> 01:13:31,180
+marginal P of X 1 X 2 again don't you cannot bring all of these things to
+
+1328
+01:13:31,180 --> 01:13:34,120
+cannot bring all of these things to prove this right but this is sort of far
+
+1329
+01:13:34,120 --> 01:13:43,160
+prove this right but this is sort of far but somehow it worked it's you know ok
+
+1330
+01:13:43,160 --> 01:13:43,170
+
+
+1331
+01:13:43,170 --> 01:14:22,040
+you can as well okay if you want to find the marginal of Nordic tae-won preview a
+
+1332
+01:14:22,040 --> 01:14:26,120
+the marginal of Nordic tae-won preview a way to do it is actually on the edge
+
+1333
+01:14:26,120 --> 01:14:28,130
+way to do it is actually on the edge between the factors paths of the Nordics
+
+1334
+01:14:28,130 --> 01:14:30,680
+between the factors paths of the Nordics I think the product of the two messages
+
+1335
+01:14:30,680 --> 01:14:34,880
+I think the product of the two messages in both directions to Trevor no atoms
+
+1336
+01:14:34,880 --> 01:14:36,860
+in both directions to Trevor no atoms connected to a factor of one the modular
+
+1337
+01:14:36,860 --> 01:14:38,990
+connected to a factor of one the modular both node take the Masters this way
+
+1338
+01:14:38,990 --> 01:14:41,510
+both node take the Masters this way times the message that way that will
+
+1339
+01:14:41,510 --> 01:14:45,080
+times the message that way that will actually give me the monster very nice
+
+1340
+01:14:45,080 --> 01:14:48,200
+actually give me the monster very nice sort of quick result in computing margin
+
+1341
+01:14:48,200 --> 01:14:51,650
+sort of quick result in computing margin but again what I want you to sort of
+
+1342
+01:14:51,650 --> 01:14:54,080
+but again what I want you to sort of appreciate this for Devon backward
+
+1343
+01:14:54,080 --> 01:14:56,360
+appreciate this for Devon backward messages right that's a universal thing
+
+1344
+01:14:56,360 --> 01:15:01,400
+messages right that's a universal thing in in all of this type of calculations
+
+1345
+01:15:01,400 --> 01:15:03,620
+in in all of this type of calculations right you need to be able to propagate
+
+1346
+01:15:03,620 --> 01:15:06,380
+right you need to be able to propagate evidence from the leaves to the root and
+
+1347
+01:15:06,380 --> 01:15:09,590
+evidence from the leaves to the root and then anon works evidence from the root
+
+1348
+01:15:09,590 --> 01:15:11,660
+then anon works evidence from the root to the left and only then you can
+
+1349
+01:15:11,660 --> 01:15:14,180
+to the left and only then you can compute whatever your interest and do
+
+1350
+01:15:14,180 --> 01:15:19,939
+compute whatever your interest and do inference another time
+
+1351
+01:15:19,939 --> 01:15:19,949
+
+
+1352
+01:15:19,949 --> 01:15:29,689
+right there's nothing on the remaining of the slides except chatter for summary
+
+1353
+01:15:29,689 --> 01:15:32,540
+of the slides except chatter for summary of the algorithm but we just discussion
+
+1354
+01:15:32,540 --> 01:15:37,939
+of the algorithm but we just discussion factor graphs and well has done here is
+
+1355
+01:15:37,939 --> 01:15:42,669
+factor graphs and well has done here is I have just annotations from Jordans
+
+1356
+01:15:42,669 --> 01:15:46,630
+I have just annotations from Jordans reprint of I sent you a little time and
+
+1357
+01:15:46,630 --> 01:15:50,240
+reprint of I sent you a little time and with noisiest to emphasize basically the
+
+1358
+01:15:50,240 --> 01:15:52,189
+with noisiest to emphasize basically the different sort of type of messages we
+
+1359
+01:15:52,189 --> 01:15:56,290
+different sort of type of messages we have he uses the symbols new to indicate
+
+1360
+01:15:56,290 --> 01:15:59,150
+have he uses the symbols new to indicate messages for variables to factors and
+
+1361
+01:15:59,150 --> 01:16:02,000
+messages for variables to factors and then he uses the symbol new for messages
+
+1362
+01:16:02,000 --> 01:16:05,180
+then he uses the symbol new for messages contacted variables and basically they
+
+1363
+01:16:05,180 --> 01:16:09,200
+contacted variables and basically they update formulas are the same as what we
+
+1364
+01:16:09,200 --> 01:16:11,950
+update formulas are the same as what we had seen already in the lecture so if
+
+1365
+01:16:11,950 --> 01:16:16,520
+had seen already in the lecture so if you want you know for example if you
+
+1366
+01:16:16,520 --> 01:16:22,209
+you want you know for example if you want to find the lessons from a factor
+
+1367
+01:16:22,209 --> 01:16:25,610
+want to find the lessons from a factor to a node do you have to take the factor
+
+1368
+01:16:25,610 --> 01:16:28,189
+to a node do you have to take the factor itself all the messages coming from all
+
+1369
+01:16:28,189 --> 01:16:30,080
+itself all the messages coming from all the nodes which are new messages and
+
+1370
+01:16:30,080 --> 01:16:32,330
+the nodes which are new messages and then you integrate all of this variables
+
+1371
+01:16:32,330 --> 01:16:35,060
+then you integrate all of this variables out except variable X I and this will
+
+1372
+01:16:35,060 --> 01:16:38,510
+out except variable X I and this will give you this and similarly this the
+
+1373
+01:16:38,510 --> 01:16:42,410
+give you this and similarly this the message from unknown the factor we have
+
+1374
+01:16:42,410 --> 01:16:44,689
+message from unknown the factor we have to find the product of all the best is
+
+1375
+01:16:44,689 --> 01:16:48,439
+to find the product of all the best is coming from all other factors except
+
+1376
+01:16:48,439 --> 01:16:50,419
+coming from all other factors except this one but their neighbors of X I
+
+1377
+01:16:50,419 --> 01:16:53,600
+this one but their neighbors of X I multiply them and that will do the job
+
+1378
+01:16:53,600 --> 01:16:57,110
+multiply them and that will do the job so the other if it is a copy cover of
+
+1379
+01:16:57,110 --> 01:17:01,340
+so the other if it is a copy cover of the algorithm we have seen for this but
+
+1380
+01:17:01,340 --> 01:17:04,510
+the algorithm we have seen for this but the only thing that you see here is
+
+1381
+01:17:04,510 --> 01:17:09,500
+the only thing that you see here is there is nunca left right there is no
+
+1382
+01:17:09,500 --> 01:17:12,770
+there is nunca left right there is no distribute no connect and so because you
+
+1383
+01:17:12,770 --> 01:17:15,890
+distribute no connect and so because you know we have two sets of messages both
+
+1384
+01:17:15,890 --> 01:17:17,479
+know we have two sets of messages both going from the leaves to the root and
+
+1385
+01:17:17,479 --> 01:17:19,340
+going from the leaves to the root and the root to the leaves but apart from
+
+1386
+01:17:19,340 --> 01:17:22,290
+the root to the leaves but apart from that effectively
+
+1387
+01:17:22,290 --> 01:17:25,500
+that effectively if you give a try to wrangle it to go to
+
+1388
+01:17:25,500 --> 01:17:29,340
+if you give a try to wrangle it to go to another algorithm is basically minimal
+
+1389
+01:17:29,340 --> 01:17:33,210
+another algorithm is basically minimal work all right that's the algorithm and
+
+1390
+01:17:33,210 --> 01:17:36,270
+work all right that's the algorithm and there's another example you read it and
+
+1391
+01:17:36,270 --> 01:17:41,670
+there's another example you read it and we take it from there but they still
+
+1392
+01:17:41,670 --> 01:17:43,530
+we take it from there but they still thirsty I keep forgetting even though I
+
+1393
+01:17:43,530 --> 01:17:45,360
+thirsty I keep forgetting even though I don't even remember the day today
+
+1394
+01:17:45,360 --> 01:17:47,580
+don't even remember the day today all right so single Thursday and there
+
+1395
+01:17:47,580 --> 01:17:49,980
+all right so single Thursday and there is a point of view because we do not you
+
+1396
+01:17:49,980 --> 01:17:51,300
+is a point of view because we do not you are not interested to even get an
+
+1397
+01:17:51,300 --> 01:17:52,980
+are not interested to even get an expansion or anything like that so
+
+1398
+01:17:52,980 --> 01:17:55,980
+expansion or anything like that so there's no extension 
+

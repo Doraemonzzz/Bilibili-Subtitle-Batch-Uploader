@@ -1,0 +1,4992 @@
+1
+00:02:17,819 --> 00:02:23,089
+all right we're changing subject today we're gonna talk more on variational
+
+2
+00:02:23,089 --> 00:02:27,130
+we're gonna talk more on variational methods but there are some new methods
+
+3
+00:02:27,130 --> 00:02:27,140
+
+
+4
+00:02:27,140 --> 00:02:33,170
+before I start the lectures from the last from last Thursday and Tuesday
+
+5
+00:02:33,170 --> 00:02:36,589
+last from last Thursday and Tuesday they're updated there on the web
+
+6
+00:02:36,589 --> 00:02:39,289
+they're updated there on the web it took me lots of times to fix about
+
+7
+00:02:39,289 --> 00:02:42,740
+it took me lots of times to fix about the 1000 formulas so I hope someone will
+
+8
+00:02:42,740 --> 00:02:44,780
+the 1000 formulas so I hope someone will reach them okay they have a lots of
+
+9
+00:02:44,780 --> 00:02:47,089
+reach them okay they have a lots of valuable information some things we do
+
+10
+00:02:47,089 --> 00:02:49,849
+valuable information some things we do not cover so please take a look all
+
+11
+00:02:49,849 --> 00:02:52,099
+not cover so please take a look all right so maybe they because today I'm
+
+12
+00:02:52,099 --> 00:02:55,460
+right so maybe they because today I'm gonna be jumping on this particular
+
+13
+00:02:55,460 --> 00:02:58,729
+gonna be jumping on this particular lecture now I am NOT going to emphasize
+
+14
+00:02:58,729 --> 00:03:01,220
+lecture now I am NOT going to emphasize the biggest end of what exactly the
+
+15
+00:03:01,220 --> 00:03:03,770
+the biggest end of what exactly the local variation left to start but I will
+
+16
+00:03:03,770 --> 00:03:08,390
+local variation left to start but I will give you some sort of new ideas okay
+
+17
+00:03:08,390 --> 00:03:11,690
+give you some sort of new ideas okay excuse me a review so we can deviate a
+
+18
+00:03:11,690 --> 00:03:15,649
+excuse me a review so we can deviate a little bit from what we know so we the
+
+19
+00:03:15,649 --> 00:03:18,289
+little bit from what we know so we the key ingredient in variational method was
+
+20
+00:03:18,289 --> 00:03:21,530
+key ingredient in variational method was we have some data we have some of the
+
+21
+00:03:21,530 --> 00:03:24,500
+we have some data we have some of the ativ latent variables with each data
+
+22
+00:03:24,500 --> 00:03:28,129
+ativ latent variables with each data point and we wrote the this is the point
+
+23
+00:03:28,129 --> 00:03:31,399
+point and we wrote the this is the point fundamental identity the long likelihood
+
+24
+00:03:31,399 --> 00:03:33,830
+fundamental identity the long likelihood being the lower bound lost the distance
+
+25
+00:03:33,830 --> 00:03:37,490
+being the lower bound lost the distance between Q and P and what is important to
+
+26
+00:03:37,490 --> 00:03:38,990
+between Q and P and what is important to remember is both the definition of the
+
+27
+00:03:38,990 --> 00:03:41,030
+remember is both the definition of the lower bound to have the path that
+
+28
+00:03:41,030 --> 00:03:43,550
+lower bound to have the path that clearly have the KL distance between Q
+
+29
+00:03:43,550 --> 00:03:45,229
+clearly have the KL distance between Q and P because this distance is not
+
+30
+00:03:45,229 --> 00:03:46,819
+and P because this distance is not symmetric okay
+
+31
+00:03:46,819 --> 00:03:50,319
+symmetric okay so Q is the variational approximation of
+
+32
+00:03:50,319 --> 00:03:53,420
+so Q is the variational approximation of the posterior of the latent variables
+
+33
+00:03:53,420 --> 00:03:56,990
+the posterior of the latent variables okay P is this distribution and the
+
+34
+00:03:56,990 --> 00:03:59,059
+okay P is this distribution and the lower bound basically is the expectation
+
+35
+00:03:59,059 --> 00:04:00,559
+lower bound basically is the expectation with respect to the validation of
+
+36
+00:04:00,559 --> 00:04:03,619
+with respect to the validation of distribution of this block here that
+
+37
+00:04:03,619 --> 00:04:05,569
+distribution of this block here that involves the joining of likelihood and
+
+38
+00:04:05,569 --> 00:04:09,110
+involves the joining of likelihood and the variation distribution and we have
+
+39
+00:04:09,110 --> 00:04:14,270
+the variation distribution and we have seen that this is an easy way to to work
+
+40
+00:04:14,270 --> 00:04:17,240
+seen that this is an easy way to to work with because the joint log likelihood is
+
+41
+00:04:17,240 --> 00:04:19,949
+with because the joint log likelihood is usually a very
+
+42
+00:04:19,949 --> 00:04:22,080
+usually a very you know it's an illusion or the
+
+43
+00:04:22,080 --> 00:04:23,610
+you know it's an illusion or the exponential primal poverty of
+
+44
+00:04:23,610 --> 00:04:26,159
+exponential primal poverty of distributions but if you must analyze
+
+45
+00:04:26,159 --> 00:04:28,650
+distributions but if you must analyze throughout the distribution you get to
+
+46
+00:04:28,650 --> 00:04:30,450
+throughout the distribution you get to be a Gaussian mix for example something
+
+47
+00:04:30,450 --> 00:04:33,060
+be a Gaussian mix for example something that is not computationally easy to work
+
+48
+00:04:33,060 --> 00:04:33,600
+that is not computationally easy to work with
+
+49
+00:04:33,600 --> 00:04:39,060
+with okay so this is the lower bound this is
+
+50
+00:04:39,060 --> 00:04:41,310
+okay so this is the lower bound this is the KL distance I'm going to come back
+
+51
+00:04:41,310 --> 00:04:45,270
+the KL distance I'm going to come back to this equation shortly but you know in
+
+52
+00:04:45,270 --> 00:04:48,719
+to this equation shortly but you know in some ways you can also consider the
+
+53
+00:04:48,719 --> 00:04:50,939
+some ways you can also consider the joint log likelihood as being the UH
+
+54
+00:04:50,939 --> 00:04:55,260
+joint log likelihood as being the UH normalized version of the posterior okay
+
+55
+00:04:55,260 --> 00:04:58,560
+normalized version of the posterior okay so if you see it like this then you can
+
+56
+00:04:58,560 --> 00:04:59,820
+so if you see it like this then you can immediately see and I have this for
+
+57
+00:04:59,820 --> 00:05:02,070
+immediately see and I have this for another slide but you can write this as
+
+58
+00:05:02,070 --> 00:05:06,089
+another slide but you can write this as minus the KL distance between Q and they
+
+59
+00:05:06,089 --> 00:05:08,550
+minus the KL distance between Q and they are normalized posterior usually you
+
+60
+00:05:08,550 --> 00:05:09,960
+are normalized posterior usually you don't see that in the literature but I
+
+61
+00:05:09,960 --> 00:05:12,089
+don't see that in the literature but I think I'm going to make use about in the
+
+62
+00:05:12,089 --> 00:05:19,110
+think I'm going to make use about in the lectures today all right okay so this
+
+63
+00:05:19,110 --> 00:05:21,089
+lectures today all right okay so this methodology basically we apply to lots
+
+64
+00:05:21,089 --> 00:05:24,719
+methodology basically we apply to lots of problems okay and it comes with
+
+65
+00:05:24,719 --> 00:05:27,210
+of problems okay and it comes with different names but basically
+
+66
+00:05:27,210 --> 00:05:29,580
+different names but basically variational base is what you see in the
+
+67
+00:05:29,580 --> 00:05:31,830
+variational base is what you see in the literature so today we're going to try
+
+68
+00:05:31,830 --> 00:05:35,040
+literature so today we're going to try to introduce some new methods where
+
+69
+00:05:35,040 --> 00:05:36,600
+to introduce some new methods where instead of minimizing the distance
+
+70
+00:05:36,600 --> 00:05:41,610
+instead of minimizing the distance between Q and P or maximizing this we
+
+71
+00:05:41,610 --> 00:05:44,070
+between Q and P or maximizing this we will try to minimize the opposite KL
+
+72
+00:05:44,070 --> 00:05:46,560
+will try to minimize the opposite KL distance the distance between P and Q
+
+73
+00:05:46,560 --> 00:05:51,120
+distance the distance between P and Q you say why not right I mean it's
+
+74
+00:05:51,120 --> 00:05:56,550
+you say why not right I mean it's distant and acceptable distance okay you
+
+75
+00:05:56,550 --> 00:05:59,310
+distant and acceptable distance okay you may argue about that why not
+
+76
+00:05:59,310 --> 00:06:01,529
+may argue about that why not minimize the opposite distance between P
+
+77
+00:06:01,529 --> 00:06:04,170
+minimize the opposite distance between P and Q some writing this explicitly here
+
+78
+00:06:04,170 --> 00:06:08,550
+and Q some writing this explicitly here as minus the actual posterior and this
+
+79
+00:06:08,550 --> 00:06:09,960
+as minus the actual posterior and this is the variation on distribution
+
+80
+00:06:09,960 --> 00:06:13,950
+is the variation on distribution obviously you can see that this is not
+
+81
+00:06:13,950 --> 00:06:17,010
+obviously you can see that this is not an easy integral to calculate because if
+
+82
+00:06:17,010 --> 00:06:18,330
+an easy integral to calculate because if you have to basically to take the
+
+83
+00:06:18,330 --> 00:06:20,999
+you have to basically to take the expectations of this with respect to the
+
+84
+00:06:20,999 --> 00:06:26,129
+expectations of this with respect to the exact posterior well right that's a
+
+85
+00:06:26,129 --> 00:06:27,519
+exact posterior well right that's a mistake here
+
+86
+00:06:27,519 --> 00:06:31,179
+mistake here that's right thank you so this is the
+
+87
+00:06:31,179 --> 00:06:34,359
+that's right thank you so this is the stone basically here we'll collect this
+
+88
+00:06:34,359 --> 00:06:38,949
+stone basically here we'll collect this right so effectively you have to take an
+
+89
+00:06:38,949 --> 00:06:40,809
+right so effectively you have to take an expectation with extract it with respect
+
+90
+00:06:40,809 --> 00:06:43,179
+expectation with extract it with respect to the exact posterior which you don't
+
+91
+00:06:43,179 --> 00:06:45,129
+to the exact posterior which you don't know that's what we need to approximate
+
+92
+00:06:45,129 --> 00:06:47,169
+know that's what we need to approximate however we're going to do some
+
+93
+00:06:47,169 --> 00:06:49,359
+however we're going to do some one-stroke a list and we will see that
+
+94
+00:06:49,359 --> 00:06:51,759
+one-stroke a list and we will see that it leads to a whole category of
+
+95
+00:06:51,759 --> 00:06:53,319
+it leads to a whole category of algorithms that they're extremely
+
+96
+00:06:53,319 --> 00:06:57,489
+algorithms that they're extremely popular in the velocity of problems
+
+97
+00:06:57,489 --> 00:06:59,769
+popular in the velocity of problems especially in graphs that go the name
+
+98
+00:06:59,769 --> 00:07:02,139
+especially in graphs that go the name expectation propagation and and very
+
+99
+00:07:02,139 --> 00:07:04,989
+expectation propagation and and very various variants of love okay so we will
+
+100
+00:07:04,989 --> 00:07:10,389
+various variants of love okay so we will see that today I think I have shown you
+
+101
+00:07:10,389 --> 00:07:13,299
+see that today I think I have shown you this trivial example so that you can
+
+102
+00:07:13,299 --> 00:07:15,639
+this trivial example so that you can keep your eyes on so this is sort of a
+
+103
+00:07:15,639 --> 00:07:18,579
+keep your eyes on so this is sort of a distribution that it's a man-made
+
+104
+00:07:18,579 --> 00:07:20,739
+distribution that it's a man-made distribution some gaussian terms some
+
+105
+00:07:20,739 --> 00:07:22,959
+distribution some gaussian terms some sigmoid thing and we try to approximate
+
+106
+00:07:22,959 --> 00:07:25,569
+sigmoid thing and we try to approximate this with different things that we have
+
+107
+00:07:25,569 --> 00:07:27,669
+this with different things that we have seen up to now in the class so let's say
+
+108
+00:07:27,669 --> 00:07:30,849
+seen up to now in the class so let's say this is the actual distribution this
+
+109
+00:07:30,849 --> 00:07:33,219
+this is the actual distribution this dark region this is the Laplace
+
+110
+00:07:33,219 --> 00:07:36,219
+dark region this is the Laplace approximation that we already have
+
+111
+00:07:36,219 --> 00:07:39,569
+approximation that we already have discussed it center around the mold and
+
+112
+00:07:39,569 --> 00:07:44,850
+discussed it center around the mold and this is I suppose this is the
+
+113
+00:07:44,850 --> 00:07:46,479
+this is I suppose this is the distribution that you get with
+
+114
+00:07:46,479 --> 00:07:48,759
+distribution that you get with variational based by minimizing the
+
+115
+00:07:48,759 --> 00:07:51,879
+variational based by minimizing the distance between Q and P and I'm going
+
+116
+00:07:51,879 --> 00:07:54,159
+distance between Q and P and I'm going to show you later on the literature on
+
+117
+00:07:54,159 --> 00:07:56,529
+to show you later on the literature on the top of this graph the same plot
+
+118
+00:07:56,529 --> 00:07:58,539
+the top of this graph the same plot but minimizing the distance between P
+
+119
+00:07:58,539 --> 00:08:00,249
+but minimizing the distance between P and Q and your set of things looking to
+
+120
+00:08:00,249 --> 00:08:12,459
+and Q and your set of things looking to be different I'm going to twist to the
+
+121
+00:08:12,459 --> 00:08:13,989
+be different I'm going to twist to the fundamental problem in variational
+
+122
+00:08:13,989 --> 00:08:16,299
+fundamental problem in variational methods we want to minimize the distance
+
+123
+00:08:16,299 --> 00:08:24,309
+methods we want to minimize the distance of Q from P over to maximized right to
+
+124
+00:08:24,309 --> 00:08:28,959
+of Q from P over to maximized right to maximize the lower bound and I just
+
+125
+00:08:28,959 --> 00:08:30,480
+maximize the lower bound and I just mentioned before
+
+126
+00:08:30,480 --> 00:08:32,670
+mentioned before that the lower bound is really nothing
+
+127
+00:08:32,670 --> 00:08:37,620
+that the lower bound is really nothing else but the KL distance between Q and V
+
+128
+00:08:37,620 --> 00:08:41,040
+else but the KL distance between Q and V are normalized for stereo debris does
+
+129
+00:08:41,040 --> 00:08:44,180
+are normalized for stereo debris does this look to you like the lower bound
+
+130
+00:08:44,180 --> 00:08:48,210
+this look to you like the lower bound without the minus I is that the lower
+
+131
+00:08:48,210 --> 00:08:50,389
+without the minus I is that the lower bound
+
+132
+00:08:50,389 --> 00:08:54,240
+bound without the - time so I plug in a minus
+
+133
+00:08:54,240 --> 00:08:57,000
+without the - time so I plug in a minus sign there right you can see that really
+
+134
+00:08:57,000 --> 00:08:59,579
+sign there right you can see that really this is the distance between Q and
+
+135
+00:08:59,579 --> 00:09:02,699
+this is the distance between Q and Kelvin EP for curly piece basically in a
+
+136
+00:09:02,699 --> 00:09:04,889
+Kelvin EP for curly piece basically in a normalize for stereo so this is just
+
+137
+00:09:04,889 --> 00:09:06,810
+normalize for stereo so this is just another way to look at it but I'm going
+
+138
+00:09:06,810 --> 00:09:11,400
+another way to look at it but I'm going to make use of this here if you expand
+
+139
+00:09:11,400 --> 00:09:13,019
+to make use of this here if you expand actually this problem if you basically
+
+140
+00:09:13,019 --> 00:09:15,780
+actually this problem if you basically get but this is equal to the distance
+
+141
+00:09:15,780 --> 00:09:20,070
+get but this is equal to the distance between Q and P plus some some constant
+
+142
+00:09:20,070 --> 00:09:23,000
+between Q and P plus some some constant term okay in organization tau so
+
+143
+00:09:23,000 --> 00:09:29,490
+term okay in organization tau so remember that with the lower bound you
+
+144
+00:09:29,490 --> 00:09:32,540
+remember that with the lower bound you can actually itself you can write it as
+
+145
+00:09:32,540 --> 00:09:39,420
+can actually itself you can write it as as you know as the KL distant and
+
+146
+00:09:39,420 --> 00:09:43,860
+as you know as the KL distant and introduced I'm going to jump a lot of
+
+147
+00:09:43,860 --> 00:09:46,829
+introduced I'm going to jump a lot of slides since you don't have a copy of
+
+148
+00:09:46,829 --> 00:09:48,569
+slides since you don't have a copy of the slides it doesn't matter so I'm
+
+149
+00:09:48,569 --> 00:09:55,380
+the slides it doesn't matter so I'm going to go long way down the road all
+
+150
+00:09:55,380 --> 00:09:58,519
+going to go long way down the road all right so we will discuss
+
+151
+00:09:58,519 --> 00:10:02,069
+right so we will discuss approximating procedures but in problems
+
+152
+00:10:02,069 --> 00:10:04,530
+approximating procedures but in problems that sort of graph theory thick so I'm
+
+153
+00:10:04,530 --> 00:10:08,660
+that sort of graph theory thick so I'm going to give you a simple setup where
+
+154
+00:10:08,660 --> 00:10:15,480
+going to give you a simple setup where we try that let's say we are coming from
+
+155
+00:10:15,480 --> 00:10:17,519
+we try that let's say we are coming from a Gaussian and we want to compute the
+
+156
+00:10:17,519 --> 00:10:20,069
+a Gaussian and we want to compute the unknown mean of the Gaussian and we put
+
+157
+00:10:20,069 --> 00:10:22,050
+unknown mean of the Gaussian and we put some prior on that main stroke basically
+
+158
+00:10:22,050 --> 00:10:25,110
+some prior on that main stroke basically the posterior is written as the prior
+
+159
+00:10:25,110 --> 00:10:28,319
+the posterior is written as the prior times the likelihood which is looking
+
+160
+00:10:28,319 --> 00:10:30,569
+times the likelihood which is looking like that so basically rocky elliptic
+
+161
+00:10:30,569 --> 00:10:34,139
+like that so basically rocky elliptic version of this problem is using a
+
+162
+00:10:34,139 --> 00:10:36,270
+version of this problem is using a factor graph you have
+
+163
+00:10:36,270 --> 00:10:39,540
+factor graph you have the fact of knowledge that encodes the
+
+164
+00:10:39,540 --> 00:10:41,460
+the fact of knowledge that encodes the probability of the prior yard and then
+
+165
+00:10:41,460 --> 00:10:42,870
+probability of the prior yard and then for its likely to tell me have another
+
+166
+00:10:42,870 --> 00:10:47,130
+for its likely to tell me have another factor that connects this is a meal with
+
+167
+00:10:47,130 --> 00:10:49,530
+factor that connects this is a meal with the data X I that you get okay so we
+
+168
+00:10:49,530 --> 00:10:54,300
+the data X I that you get okay so we have something I Gotham and this would
+
+169
+00:10:54,300 --> 00:10:56,970
+have something I Gotham and this would be fundamental flow problems today when
+
+170
+00:10:56,970 --> 00:10:59,400
+be fundamental flow problems today when you try to estimate here now we'll try
+
+171
+00:10:59,400 --> 00:11:02,430
+you try to estimate here now we'll try to approximate this notice that the
+
+172
+00:11:02,430 --> 00:11:06,270
+to approximate this notice that the example still utilizes alright so
+
+173
+00:11:06,270 --> 00:11:08,910
+example still utilizes alright so basically here compensates for prices
+
+174
+00:11:08,910 --> 00:11:11,280
+basically here compensates for prices because we collect data one at the time
+
+175
+00:11:11,280 --> 00:11:15,240
+because we collect data one at the time so P of x1 given n P of x2 given M but
+
+176
+00:11:15,240 --> 00:11:18,510
+so P of x1 given n P of x2 given M but you can think almost in every proven BC
+
+177
+00:11:18,510 --> 00:11:19,830
+you can think almost in every proven BC graphical model thing there is a
+
+178
+00:11:19,830 --> 00:11:23,490
+graphical model thing there is a factorization so in in directed graphs
+
+179
+00:11:23,490 --> 00:11:26,400
+factorization so in in directed graphs maybe we fertilized on the probability
+
+180
+00:11:26,400 --> 00:11:30,930
+maybe we fertilized on the probability of the nodes given their parents in you
+
+181
+00:11:30,930 --> 00:11:33,180
+of the nodes given their parents in you know in undirected graphs we factorize
+
+182
+00:11:33,180 --> 00:11:38,000
+know in undirected graphs we factorize as potential server connected
+
+183
+00:11:38,000 --> 00:11:41,250
+as potential server connected specification and at least now can we
+
+184
+00:11:41,250 --> 00:11:44,280
+specification and at least now can we actually figure out a way to come up
+
+185
+00:11:44,280 --> 00:11:45,960
+actually figure out a way to come up with some approximation of this
+
+186
+00:11:45,960 --> 00:11:49,740
+with some approximation of this posteriors in a way that somehow mimics
+
+187
+00:11:49,740 --> 00:11:54,720
+posteriors in a way that somehow mimics this factorization right obviously if
+
+188
+00:11:54,720 --> 00:11:56,490
+this factorization right obviously if the exact distribution looks like that
+
+189
+00:11:56,490 --> 00:11:59,640
+the exact distribution looks like that maybe it only makes sense to have some
+
+190
+00:11:59,640 --> 00:12:01,320
+maybe it only makes sense to have some in this factorization for the variation
+
+191
+00:12:01,320 --> 00:12:03,720
+in this factorization for the variation of distribution so this is what we're
+
+192
+00:12:03,720 --> 00:12:07,520
+of distribution so this is what we're going to try to take advantage today
+
+193
+00:12:07,520 --> 00:12:11,730
+going to try to take advantage today okay telling me it will issue an example
+
+194
+00:12:11,730 --> 00:12:15,290
+okay telling me it will issue an example which we will play with later this again
+
+195
+00:12:15,290 --> 00:12:18,330
+which we will play with later this again estimating the mean of the distribution
+
+196
+00:12:18,330 --> 00:12:21,660
+estimating the mean of the distribution so we sample from a Gaussian this is the
+
+197
+00:12:21,660 --> 00:12:25,860
+so we sample from a Gaussian this is the Gaussian but actually we the actual
+
+198
+00:12:25,860 --> 00:12:27,780
+Gaussian but actually we the actual distribution we show we want to compute
+
+199
+00:12:27,780 --> 00:12:29,700
+distribution we show we want to compute this mean theta like in the previous
+
+200
+00:12:29,700 --> 00:12:32,520
+this mean theta like in the previous problem but actually the distribution we
+
+201
+00:12:32,520 --> 00:12:35,670
+problem but actually the distribution we sample is not just clean Gaussian but
+
+202
+00:12:35,670 --> 00:12:38,189
+sample is not just clean Gaussian but this Gaussian plus some
+
+203
+00:12:38,189 --> 00:12:40,749
+this Gaussian plus some all right so this is what's called the
+
+204
+00:12:40,749 --> 00:12:43,029
+all right so this is what's called the clattering problem so if you can think
+
+205
+00:12:43,029 --> 00:12:45,279
+clattering problem so if you can think of you having this Gaussian you really
+
+206
+00:12:45,279 --> 00:12:47,199
+of you having this Gaussian you really want to escalate this rain but the
+
+207
+00:12:47,199 --> 00:12:49,449
+want to escalate this rain but the samples you get are basically either
+
+208
+00:12:49,449 --> 00:12:51,339
+samples you get are basically either going to come from the actual Gaussian
+
+209
+00:12:51,339 --> 00:12:54,699
+going to come from the actual Gaussian what we're going to just noise he went
+
+210
+00:12:54,699 --> 00:12:58,109
+what we're going to just noise he went to the estimation of the parameter theta
+
+211
+00:12:58,109 --> 00:13:01,119
+to the estimation of the parameter theta so in this problem ranges to compute the
+
+212
+00:13:01,119 --> 00:13:03,339
+so in this problem ranges to compute the first order is basically the
+
+213
+00:13:03,339 --> 00:13:05,499
+first order is basically the unnormalized posterior as the prior
+
+214
+00:13:05,499 --> 00:13:08,949
+unnormalized posterior as the prior times the likelihood and H of an active
+
+215
+00:13:08,949 --> 00:13:11,199
+times the likelihood and H of an active in terms is a Gaussian mixture so if you
+
+216
+00:13:11,199 --> 00:13:14,139
+in terms is a Gaussian mixture so if you have n data points and you expand this
+
+217
+00:13:14,139 --> 00:13:16,239
+have n data points and you expand this product there you're going to get 2 to
+
+218
+00:13:16,239 --> 00:13:20,829
+product there you're going to get 2 to the N so the state can be very
+
+219
+00:13:20,829 --> 00:13:26,460
+the N so the state can be very complicated okay so can we actually do
+
+220
+00:13:26,460 --> 00:13:31,089
+complicated okay so can we actually do with variational methods in a way that
+
+221
+00:13:31,089 --> 00:13:34,239
+with variational methods in a way that this is computationally easy to work
+
+222
+00:13:34,239 --> 00:13:34,539
+this is computationally easy to work with
+
+223
+00:13:34,539 --> 00:13:37,179
+with okay so we will discuss this problem
+
+224
+00:13:37,179 --> 00:13:42,639
+okay so we will discuss this problem today which fella is like okay this has
+
+225
+00:13:42,639 --> 00:13:45,639
+today which fella is like okay this has lots of substance and I think what's
+
+226
+00:13:45,639 --> 00:13:47,169
+lots of substance and I think what's probably the only theoretical slide in
+
+227
+00:13:47,169 --> 00:13:47,909
+probably the only theoretical slide in the North today
+
+228
+00:13:47,909 --> 00:13:52,539
+the North today stop trying to pay attention we remove
+
+229
+00:13:52,539 --> 00:13:54,639
+stop trying to pay attention we remove the skin or everything we're going to do
+
+230
+00:13:54,639 --> 00:13:59,139
+the skin or everything we're going to do today approximations we using can be the
+
+231
+00:13:59,139 --> 00:14:02,229
+today approximations we using can be the whole distribution or maybe some factor
+
+232
+00:14:02,229 --> 00:14:04,359
+whole distribution or maybe some factor in the approximation we're going to
+
+233
+00:14:04,359 --> 00:14:06,729
+in the approximation we're going to assume that those factors are coming
+
+234
+00:14:06,729 --> 00:14:10,269
+assume that those factors are coming from the exponential family so in this
+
+235
+00:14:10,269 --> 00:14:12,069
+from the exponential family so in this particular case I write the distribution
+
+236
+00:14:12,069 --> 00:14:16,179
+particular case I write the distribution Q of G given some natural parameters
+
+237
+00:14:16,179 --> 00:14:18,129
+Q of G given some natural parameters theta in the generic form of the
+
+238
+00:14:18,129 --> 00:14:21,639
+theta in the generic form of the exponential form distributions G of Z of
+
+239
+00:14:21,639 --> 00:14:24,429
+exponential form distributions G of Z of the sufficient statistics and the rest
+
+240
+00:14:24,429 --> 00:14:29,109
+the sufficient statistics and the rest of basically you know some normalization
+
+241
+00:14:29,109 --> 00:14:32,739
+of basically you know some normalization term and H of Z term Vista is the form
+
+242
+00:14:32,739 --> 00:14:34,779
+term and H of Z term Vista is the form we used for the exponential family okay
+
+243
+00:14:34,779 --> 00:14:36,039
+we used for the exponential family okay a lot includes a lot of different
+
+244
+00:14:36,039 --> 00:14:37,230
+a lot includes a lot of different distributions
+
+245
+00:14:37,230 --> 00:14:41,369
+distributions all right so let's go to the new problem
+
+246
+00:14:41,369 --> 00:14:43,859
+all right so let's go to the new problem which is the minimization of the
+
+247
+00:14:43,859 --> 00:14:46,650
+which is the minimization of the distance from the actual distribution P
+
+248
+00:14:46,650 --> 00:14:49,410
+distance from the actual distribution P and the various distribution Q but here
+
+249
+00:14:49,410 --> 00:14:51,239
+and the various distribution Q but here we assume that fewest experience a
+
+250
+00:14:51,239 --> 00:14:58,739
+we assume that fewest experience a family distribution so remember the case
+
+251
+00:14:58,739 --> 00:15:09,119
+family distribution so remember the case distance is minus P that can repeat all
+
+252
+00:15:09,119 --> 00:15:13,829
+distance is minus P that can repeat all right so what is this coming so I have
+
+253
+00:15:13,829 --> 00:15:17,160
+right so what is this coming so I have to calculate this you have to take - the
+
+254
+00:15:17,160 --> 00:15:20,280
+to calculate this you have to take - the expectations with respect to P or the
+
+255
+00:15:20,280 --> 00:15:25,470
+expectations with respect to P or the norm of K over V right and not pay the
+
+256
+00:15:25,470 --> 00:15:27,449
+norm of K over V right and not pay the denominator basically with this P will
+
+257
+00:15:27,449 --> 00:15:30,269
+denominator basically with this P will give me a constant because it doesn't
+
+258
+00:15:30,269 --> 00:15:33,239
+give me a constant because it doesn't depend on Q so I'm going to get my nose
+
+259
+00:15:33,239 --> 00:15:35,509
+depend on Q so I'm going to get my nose the expression of the love of this so
+
+260
+00:15:35,509 --> 00:15:38,309
+the expression of the love of this so and we're looking at all the terms that
+
+261
+00:15:38,309 --> 00:15:42,539
+and we're looking at all the terms that depend you know here on Z and ether so
+
+262
+00:15:42,539 --> 00:15:44,900
+depend you know here on Z and ether so we're going to have minus log of Z and
+
+263
+00:15:44,900 --> 00:15:47,789
+we're going to have minus log of Z and the exponential will give me e 2
+
+264
+00:15:47,789 --> 00:15:50,309
+the exponential will give me e 2 transpose and the expectation with
+
+265
+00:15:50,309 --> 00:15:52,350
+transpose and the expectation with respect to P of Z that's the exact
+
+266
+00:15:52,350 --> 00:15:56,519
+respect to P of Z that's the exact distribution of you see we agree that
+
+267
+00:15:56,519 --> 00:15:58,710
+distribution of you see we agree that this is basically the kale this one's a
+
+268
+00:15:58,710 --> 00:16:03,970
+this is basically the kale this one's a lot using that view
+
+269
+00:16:03,970 --> 00:16:03,980
+
+
+270
+00:16:03,980 --> 00:16:12,590
+right again in the film distance there's a minus sign so - be a global queue
+
+271
+00:16:12,590 --> 00:16:14,829
+a minus sign so - be a global queue avert this or you're going to get minus
+
+272
+00:16:14,829 --> 00:16:17,840
+avert this or you're going to get minus the expectation of the scripted to pee
+
+273
+00:16:17,840 --> 00:16:20,870
+the expectation of the scripted to pee or belongeth - all right so we take
+
+274
+00:16:20,870 --> 00:16:22,790
+or belongeth - all right so we take global queue expectation with a minus
+
+275
+00:16:22,790 --> 00:16:26,300
+global queue expectation with a minus sign you get that okay so we want to
+
+276
+00:16:26,300 --> 00:16:29,510
+sign you get that okay so we want to find the parameters theta that minimizes
+
+277
+00:16:29,510 --> 00:16:31,610
+find the parameters theta that minimizes this - reverse camber verbs and so
+
+278
+00:16:31,610 --> 00:16:32,750
+this - reverse camber verbs and so you're going to take the derivative with
+
+279
+00:16:32,750 --> 00:16:34,160
+you're going to take the derivative with respect to it and you're going to set
+
+280
+00:16:34,160 --> 00:16:36,680
+respect to it and you're going to set them equal to zero so you're going to
+
+281
+00:16:36,680 --> 00:16:38,510
+them equal to zero so you're going to have the gradient of this term with
+
+282
+00:16:38,510 --> 00:16:41,570
+have the gradient of this term with respect to e theta so this is dragon
+
+283
+00:16:41,570 --> 00:16:43,430
+respect to e theta so this is dragon again respect to theta and this will
+
+284
+00:16:43,430 --> 00:16:45,620
+again respect to theta and this will give you the expectation of U of Z with
+
+285
+00:16:45,620 --> 00:16:48,230
+give you the expectation of U of Z with respect to P of Z and object forgot to
+
+286
+00:16:48,230 --> 00:16:51,710
+respect to P of Z and object forgot to put here the expectation of U of T okay
+
+287
+00:16:51,710 --> 00:16:54,199
+put here the expectation of U of T okay so actually equate this equation here
+
+288
+00:16:54,199 --> 00:16:57,350
+so actually equate this equation here should look like no actually this is
+
+289
+00:16:57,350 --> 00:16:58,190
+should look like no actually this is something different
+
+290
+00:16:58,190 --> 00:17:00,860
+something different so here we have to put brackets of U of
+
+291
+00:17:00,860 --> 00:17:07,760
+so here we have to put brackets of U of Z okay the calculation of theta is start
+
+292
+00:17:07,760 --> 00:17:09,620
+Z okay the calculation of theta is start out the optimal ETA is such that the
+
+293
+00:17:09,620 --> 00:17:11,750
+out the optimal ETA is such that the gradient - the gradient of the love of G
+
+294
+00:17:11,750 --> 00:17:14,929
+gradient - the gradient of the love of G is the expectation of U with respect to
+
+295
+00:17:14,929 --> 00:17:17,900
+is the expectation of U with respect to the exact B of Z and the exactly of Z of
+
+296
+00:17:17,900 --> 00:17:22,610
+the exact B of Z and the exactly of Z of course is not know and I'm not going to
+
+297
+00:17:22,610 --> 00:17:23,660
+course is not know and I'm not going to prove it
+
+298
+00:17:23,660 --> 00:17:26,569
+prove it you can look at the notes from last
+
+299
+00:17:26,569 --> 00:17:30,500
+you can look at the notes from last semester you can go to Wikipedia for
+
+300
+00:17:30,500 --> 00:17:34,540
+semester you can go to Wikipedia for exponential family distributions you
+
+301
+00:17:34,540 --> 00:17:36,680
+exponential family distributions you include is an exponential family
+
+302
+00:17:36,680 --> 00:17:40,730
+include is an exponential family distribution you can show for any Q in
+
+303
+00:17:40,730 --> 00:17:43,580
+distribution you can show for any Q in this family that - the gradient of the
+
+304
+00:17:43,580 --> 00:17:46,370
+this family that - the gradient of the log of G is the expectation of the
+
+305
+00:17:46,370 --> 00:17:48,110
+log of G is the expectation of the sufficient statistics with respect to
+
+306
+00:17:48,110 --> 00:17:48,910
+sufficient statistics with respect to key of G
+
+307
+00:17:48,910 --> 00:17:55,140
+key of G anybody knows
+
+308
+00:17:55,140 --> 00:17:55,150
+
+
+309
+00:17:55,150 --> 00:17:59,890
+the combination is literally one line okay so for any district there's no
+
+310
+00:17:59,890 --> 00:18:02,430
+okay so for any district there's no approximation here if I have
+
+311
+00:18:02,430 --> 00:18:04,720
+approximation here if I have distribution from the exponential comedy
+
+312
+00:18:04,720 --> 00:18:07,060
+distribution from the exponential comedy and you take the expectation of the
+
+313
+00:18:07,060 --> 00:18:09,100
+and you take the expectation of the sufficient statistics with respect to Q
+
+314
+00:18:09,100 --> 00:18:11,590
+sufficient statistics with respect to Q alright this comes to me minus the
+
+315
+00:18:11,590 --> 00:18:15,520
+alright this comes to me minus the gradient of the log of G and you can
+
+316
+00:18:15,520 --> 00:18:16,750
+gradient of the log of G and you can extend this actually to higher
+
+317
+00:18:16,750 --> 00:18:19,510
+extend this actually to higher derivatives as well you know for
+
+318
+00:18:19,510 --> 00:18:25,600
+derivatives as well you know for calculating all the moments for any
+
+319
+00:18:25,600 --> 00:18:26,950
+calculating all the moments for any distribution from the exponential
+
+320
+00:18:26,950 --> 00:18:31,030
+distribution from the exponential probability and this is an identity that
+
+321
+00:18:31,030 --> 00:18:33,550
+probability and this is an identity that we computed by minimizing this reversed
+
+322
+00:18:33,550 --> 00:18:37,270
+we computed by minimizing this reversed km diversity okay this is a problem we
+
+323
+00:18:37,270 --> 00:18:40,420
+km diversity okay this is a problem we want to find all right so that we
+
+324
+00:18:40,420 --> 00:18:43,420
+want to find all right so that we minimize the diversity elevator so you
+
+325
+00:18:43,420 --> 00:18:45,580
+minimize the diversity elevator so you can see this is minus gradient of log of
+
+326
+00:18:45,580 --> 00:18:49,060
+can see this is minus gradient of log of G minus gradient of G so you can put
+
+327
+00:18:49,060 --> 00:18:51,340
+G minus gradient of G so you can put this expectation perspective P of Z of
+
+328
+00:18:51,340 --> 00:18:54,570
+this expectation perspective P of Z of the uz the term that was here all right
+
+329
+00:18:54,570 --> 00:18:57,280
+the uz the term that was here all right equal to the expectation of U of Z with
+
+330
+00:18:57,280 --> 00:18:59,290
+equal to the expectation of U of Z with respect to Q of Z and then you get this
+
+331
+00:18:59,290 --> 00:19:01,420
+respect to Q of Z and then you get this nice identity here which is our final
+
+332
+00:19:01,420 --> 00:19:04,960
+nice identity here which is our final result and that result says that the
+
+333
+00:19:04,960 --> 00:19:06,790
+result and that result says that the expectation of U of Z with respect to
+
+334
+00:19:06,790 --> 00:19:09,190
+expectation of U of Z with respect to the approximate distribution is the same
+
+335
+00:19:09,190 --> 00:19:11,650
+the approximate distribution is the same as the expectation of U of Z with
+
+336
+00:19:11,650 --> 00:19:15,070
+as the expectation of U of Z with respect to the exact distribution and
+
+337
+00:19:15,070 --> 00:19:17,980
+respect to the exact distribution and obviously you can push it further and
+
+338
+00:19:17,980 --> 00:19:21,730
+obviously you can push it further and you use second order moment you can
+
+339
+00:19:21,730 --> 00:19:24,190
+you use second order moment you can solve at the variant of your Z with
+
+340
+00:19:24,190 --> 00:19:25,930
+solve at the variant of your Z with respect to Q of Z equal to the variance
+
+341
+00:19:25,930 --> 00:19:29,190
+respect to Q of Z equal to the variance of Y or Z with respect to P of Z etc etc
+
+342
+00:19:29,190 --> 00:19:32,950
+of Y or Z with respect to P of Z etc etc so the conclusion is that when you try
+
+343
+00:19:32,950 --> 00:19:35,740
+so the conclusion is that when you try to minimize the care they start from a
+
+344
+00:19:35,740 --> 00:19:38,200
+to minimize the care they start from a distribution P from another distribution
+
+345
+00:19:38,200 --> 00:19:40,750
+distribution P from another distribution Q in the exponential family all right
+
+346
+00:19:40,750 --> 00:19:41,920
+Q in the exponential family all right then
+
+347
+00:19:41,920 --> 00:19:46,930
+then the moments of P and Q must okay so the
+
+348
+00:19:46,930 --> 00:19:48,640
+the moments of P and Q must okay so the distribution is P and Q have the same
+
+349
+00:19:48,640 --> 00:19:51,550
+distribution is P and Q have the same office now if you may say so does not
+
+350
+00:19:51,550 --> 00:19:54,310
+office now if you may say so does not mean that because the moments of an
+
+351
+00:19:54,310 --> 00:19:56,620
+mean that because the moments of an exponential distribution really define
+
+352
+00:19:56,620 --> 00:19:57,770
+exponential distribution really define the distribution
+
+353
+00:19:57,770 --> 00:20:02,450
+the distribution but B is an exponential distribution of
+
+354
+00:20:02,450 --> 00:20:04,790
+but B is an exponential distribution of the various we're going to approximate
+
+355
+00:20:04,790 --> 00:20:07,910
+the various we're going to approximate to you whatever pierced with the family
+
+356
+00:20:07,910 --> 00:20:10,430
+to you whatever pierced with the family from the exponential distribution but we
+
+357
+00:20:10,430 --> 00:20:11,840
+from the exponential distribution but we know that family is going to be such
+
+358
+00:20:11,840 --> 00:20:13,940
+know that family is going to be such that the moments of the sufficient
+
+359
+00:20:13,940 --> 00:20:16,460
+that the moments of the sufficient statistics we have to map the moments
+
+360
+00:20:16,460 --> 00:20:19,160
+statistics we have to map the moments that we get with respect to the exact
+
+361
+00:20:19,160 --> 00:20:22,130
+that we get with respect to the exact distribution P of C now that's why you
+
+362
+00:20:22,130 --> 00:20:23,060
+distribution P of C now that's why you will see this in the literature
+
+363
+00:20:23,060 --> 00:20:25,520
+will see this in the literature sometimes people call this moment
+
+364
+00:20:25,520 --> 00:20:26,630
+sometimes people call this moment matching okay
+
+365
+00:20:26,630 --> 00:20:29,150
+matching okay we must be correct from what we have
+
+366
+00:20:29,150 --> 00:20:35,630
+we must be correct from what we have seen in afternoon support if you may
+
+367
+00:20:35,630 --> 00:20:37,550
+seen in afternoon support if you may keep safe because this exponential part
+
+368
+00:20:37,550 --> 00:20:39,770
+keep safe because this exponential part need to be a Gaussian right and you
+
+369
+00:20:39,770 --> 00:20:42,860
+need to be a Gaussian right and you trying to persuade with a Gaussian with
+
+370
+00:20:42,860 --> 00:20:45,620
+trying to persuade with a Gaussian with a Gaussian any distribution P of Z then
+
+371
+00:20:45,620 --> 00:20:47,720
+a Gaussian any distribution P of Z then then get surprised that Neil has to be
+
+372
+00:20:47,720 --> 00:20:50,270
+then get surprised that Neil has to be the mean of P of Z and that Sigma has to
+
+373
+00:20:50,270 --> 00:20:54,140
+the mean of P of Z and that Sigma has to be the variance of P of Z in a remind
+
+374
+00:20:54,140 --> 00:20:58,160
+be the variance of P of Z in a remind you sample actually in the earlier notes
+
+375
+00:20:58,160 --> 00:21:00,380
+you sample actually in the earlier notes very quickly lectures to go with right
+
+376
+00:21:00,380 --> 00:21:02,330
+very quickly lectures to go with right approximate the distribution P with a
+
+377
+00:21:02,330 --> 00:21:04,820
+approximate the distribution P with a Gaussian and I want you to go back and
+
+378
+00:21:04,820 --> 00:21:07,460
+Gaussian and I want you to go back and see when we minimize the distance of Q
+
+379
+00:21:07,460 --> 00:21:10,160
+see when we minimize the distance of Q from P not P from Q we will actually get
+
+380
+00:21:10,160 --> 00:21:11,950
+from P not P from Q we will actually get this result we got something else
+
+381
+00:21:11,950 --> 00:21:14,480
+this result we got something else you know if we minimize the distance of
+
+382
+00:21:14,480 --> 00:21:17,120
+you know if we minimize the distance of P until me and the moon will have to be
+
+383
+00:21:17,120 --> 00:21:17,930
+P until me and the moon will have to be the mean of Till's
+
+384
+00:21:17,930 --> 00:21:20,960
+the mean of Till's you know of P of Z and the signal have
+
+385
+00:21:20,960 --> 00:21:28,730
+you know of P of Z and the signal have to be the variance of beauty so changed
+
+386
+00:21:28,730 --> 00:21:31,790
+to be the variance of beauty so changed for example if you try to compute some
+
+387
+00:21:31,790 --> 00:21:34,040
+for example if you try to compute some parameters you know take the mean of the
+
+388
+00:21:34,040 --> 00:21:37,940
+parameters you know take the mean of the Gaussian right and this is the dark blue
+
+389
+00:21:37,940 --> 00:21:40,070
+Gaussian right and this is the dark blue is the exact distribution so when you
+
+390
+00:21:40,070 --> 00:21:42,260
+is the exact distribution so when you minimized with normal matching you will
+
+391
+00:21:42,260 --> 00:21:45,200
+minimized with normal matching you will get a Gaussian but basically looks like
+
+392
+00:21:45,200 --> 00:21:49,550
+get a Gaussian but basically looks like that okay so you get this with normal
+
+393
+00:21:49,550 --> 00:21:50,530
+that okay so you get this with normal much
+
+394
+00:21:50,530 --> 00:21:52,450
+much five let's make things are more
+
+395
+00:21:52,450 --> 00:21:57,190
+five let's make things are more difficult not by design but just you
+
+396
+00:21:57,190 --> 00:22:00,070
+difficult not by design but just you know like difficult things to be done
+
+397
+00:22:00,070 --> 00:22:03,480
+know like difficult things to be done guys before to sleep so we're going to
+
+398
+00:22:03,480 --> 00:22:05,980
+guys before to sleep so we're going to apply this idea moment watching
+
+399
+00:22:05,980 --> 00:22:08,410
+apply this idea moment watching basically and come up with a new method
+
+400
+00:22:08,410 --> 00:22:10,480
+basically and come up with a new method a very powerful method for doing
+
+401
+00:22:10,480 --> 00:22:11,830
+a very powerful method for doing inference in graph which is called
+
+402
+00:22:11,830 --> 00:22:15,580
+inference in graph which is called expectation propagation and you can make
+
+403
+00:22:15,580 --> 00:22:17,710
+expectation propagation and you can make this out envisioning what what the word
+
+404
+00:22:17,710 --> 00:22:20,200
+this out envisioning what what the word expectation propagation means the same
+
+405
+00:22:20,200 --> 00:22:22,180
+expectation propagation means the same way we did message passing in graphs
+
+406
+00:22:22,180 --> 00:22:24,370
+way we did message passing in graphs right the idea here that you see that
+
+407
+00:22:24,370 --> 00:22:27,250
+right the idea here that you see that wealth expectation maybe what we pass in
+
+408
+00:22:27,250 --> 00:22:30,490
+wealth expectation maybe what we pass in the graph for moment right because the
+
+409
+00:22:30,490 --> 00:22:32,950
+the graph for moment right because the local operation somehow we are going to
+
+410
+00:22:32,950 --> 00:22:36,340
+local operation somehow we are going to be doing would be minimization of some
+
+411
+00:22:36,340 --> 00:22:38,620
+be doing would be minimization of some variational exponential family
+
+412
+00:22:38,620 --> 00:22:42,280
+variational exponential family distribution ki Q so we would passing
+
+413
+00:22:42,280 --> 00:22:43,780
+distribution ki Q so we would passing moments and that's why the map is called
+
+414
+00:22:43,780 --> 00:22:48,970
+moments and that's why the map is called expectation propagation so we you know
+
+415
+00:22:48,970 --> 00:22:52,750
+expectation propagation so we you know this is the data we collected some
+
+416
+00:22:52,750 --> 00:22:54,790
+this is the data we collected some unknown parameter I'm going to do a
+
+417
+00:22:54,790 --> 00:22:56,140
+unknown parameter I'm going to do a different versions of this type of
+
+418
+00:22:56,140 --> 00:22:58,660
+different versions of this type of problems it's introducing sort of
+
+419
+00:22:58,660 --> 00:23:01,930
+problems it's introducing sort of different algorithms but right now in a
+
+420
+00:23:01,930 --> 00:23:04,030
+different algorithms but right now in a typical interest problem equal update of
+
+421
+00:23:04,030 --> 00:23:06,760
+typical interest problem equal update of the defense of our meters theta so this
+
+422
+00:23:06,760 --> 00:23:12,700
+the defense of our meters theta so this is basically Joint Distribution like
+
+423
+00:23:12,700 --> 00:23:15,280
+is basically Joint Distribution like that maybe the first term or the zero
+
+424
+00:23:15,280 --> 00:23:17,110
+that maybe the first term or the zero term you can make the prior and all the
+
+425
+00:23:17,110 --> 00:23:20,920
+term you can make the prior and all the other terms to likely to terms okay so
+
+426
+00:23:20,920 --> 00:23:23,170
+other terms to likely to terms okay so the idea here is we're going to assume
+
+427
+00:23:23,170 --> 00:23:27,190
+the idea here is we're going to assume basically that this likelihood temps for
+
+428
+00:23:27,190 --> 00:23:30,760
+basically that this likelihood temps for example okay they're easy to work
+
+429
+00:23:30,760 --> 00:23:33,070
+example okay they're easy to work distribution of gaussians right that's
+
+430
+00:23:33,070 --> 00:23:34,840
+distribution of gaussians right that's the whole idea of approximating
+
+431
+00:23:34,840 --> 00:23:36,880
+the whole idea of approximating something with a Gaussian is it's not
+
+432
+00:23:36,880 --> 00:23:39,700
+something with a Gaussian is it's not Gaussian start with so the exact
+
+433
+00:23:39,700 --> 00:23:42,610
+Gaussian start with so the exact posterior looks like this one over P of
+
+434
+00:23:42,610 --> 00:23:46,060
+posterior looks like this one over P of D times these factors and again I have
+
+435
+00:23:46,060 --> 00:23:49,660
+D times these factors and again I have incorporated here the prioritized part
+
+436
+00:23:49,660 --> 00:23:52,630
+incorporated here the prioritized part of themselves so remember that we're
+
+437
+00:23:52,630 --> 00:23:54,850
+of themselves so remember that we're going to be using that the first term in
+
+438
+00:23:54,850 --> 00:23:56,470
+going to be using that the first term in the consolidation especially the prior
+
+439
+00:23:56,470 --> 00:23:57,190
+the consolidation especially the prior the rest of the
+
+440
+00:23:57,190 --> 00:24:00,580
+the rest of the like adults this is the the
+
+441
+00:24:00,580 --> 00:24:06,009
+like adults this is the the normalization time okay I look at this
+
+442
+00:24:06,009 --> 00:24:09,610
+normalization time okay I look at this equation and we're gonna say well if you
+
+443
+00:24:09,610 --> 00:24:11,500
+equation and we're gonna say well if you know what we're gonna find approximate
+
+444
+00:24:11,500 --> 00:24:13,840
+know what we're gonna find approximate this with some various turn distribution
+
+445
+00:24:13,840 --> 00:24:18,190
+this with some various turn distribution we shall take advantage of this
+
+446
+00:24:18,190 --> 00:24:22,320
+we shall take advantage of this polarization and maybe postulate some
+
+447
+00:24:22,320 --> 00:24:24,970
+polarization and maybe postulate some variation distribution of theta but
+
+448
+00:24:24,970 --> 00:24:26,700
+variation distribution of theta but there's a similar factorization
+
+449
+00:24:26,700 --> 00:24:32,820
+there's a similar factorization okay maybe not significant interest
+
+450
+00:24:32,820 --> 00:24:35,500
+okay maybe not significant interest because this is an easy problem you
+
+451
+00:24:35,500 --> 00:24:38,080
+because this is an easy problem you notice that when I ask you this
+
+452
+00:24:38,080 --> 00:24:40,360
+notice that when I ask you this polarization each of these factors
+
+453
+00:24:40,360 --> 00:24:44,889
+polarization each of these factors depends all the same amount theta so
+
+454
+00:24:44,889 --> 00:24:46,509
+depends all the same amount theta so this is where a classical Bayesian
+
+455
+00:24:46,509 --> 00:24:48,610
+this is where a classical Bayesian inference problem so you can think if
+
+456
+00:24:48,610 --> 00:24:51,190
+inference problem so you can think if you know you have various type of
+
+457
+00:24:51,190 --> 00:24:53,259
+you know you have various type of parameters main I insist you know these
+
+458
+00:24:53,259 --> 00:24:58,240
+parameters main I insist you know these are the filters so with the care depends
+
+459
+00:24:58,240 --> 00:25:01,450
+are the filters so with the care depends on theta okay we will see later but
+
+460
+00:25:01,450 --> 00:25:04,659
+on theta okay we will see later but maybe have an appreciation for these
+
+461
+00:25:04,659 --> 00:25:07,299
+maybe have an appreciation for these factors then involve the same unknowns
+
+462
+00:25:07,299 --> 00:25:09,399
+factors then involve the same unknowns theta but right now that's what we have
+
+463
+00:25:09,399 --> 00:25:17,889
+theta but right now that's what we have okay so we perpetuate this distribution
+
+464
+00:25:17,889 --> 00:25:20,289
+okay so we perpetuate this distribution that this computation intractable will
+
+465
+00:25:20,289 --> 00:25:23,230
+that this computation intractable will is approximation can you give me a pass
+
+466
+00:25:23,230 --> 00:25:27,460
+is approximation can you give me a pass on this is possible algorithm you may
+
+467
+00:25:27,460 --> 00:25:31,779
+on this is possible algorithm you may come up with you know to approximate
+
+468
+00:25:31,779 --> 00:25:33,659
+come up with you know to approximate this without I mean just tell me
+
+469
+00:25:33,659 --> 00:25:36,909
+this without I mean just tell me everything that this potentially if this
+
+470
+00:25:36,909 --> 00:25:41,090
+everything that this potentially if this blogger
+
+471
+00:25:41,090 --> 00:25:41,100
+
+
+472
+00:25:41,100 --> 00:25:46,410
+I'm going to the most obvious thing someone to say when you try to
+
+473
+00:25:46,410 --> 00:25:53,790
+someone to say when you try to participate this without I mean so for
+
+474
+00:25:53,790 --> 00:25:55,560
+participate this without I mean so for example you can think here right if you
+
+475
+00:25:55,560 --> 00:25:59,070
+example you can think here right if you collect data 1 data at the time so maybe
+
+476
+00:25:59,070 --> 00:26:01,440
+collect data 1 data at the time so maybe one comes somebody may say oh you know
+
+477
+00:26:01,440 --> 00:26:02,970
+one comes somebody may say oh you know I'm going to go and do an approximation
+
+478
+00:26:02,970 --> 00:26:05,940
+I'm going to go and do an approximation fifth one they took on so I'm going to
+
+479
+00:26:05,940 --> 00:26:19,130
+fifth one they took on so I'm going to go and do an approximation of her too
+
+480
+00:26:19,130 --> 00:26:19,140
+
+
+481
+00:26:19,140 --> 00:26:25,610
+can we approximate basically it's popular independently of the over the
+
+482
+00:26:25,610 --> 00:26:33,620
+popular independently of the over the thing it will work is right but the
+
+483
+00:26:33,620 --> 00:26:37,039
+thing it will work is right but the emphasis is not to make its individual
+
+484
+00:26:37,039 --> 00:26:39,470
+emphasis is not to make its individual heart firm well the objective is to
+
+485
+00:26:39,470 --> 00:26:44,030
+heart firm well the objective is to approximate this whole thing well so the
+
+486
+00:26:44,030 --> 00:26:47,539
+approximate this whole thing well so the factors individually maybe are good who
+
+487
+00:26:47,539 --> 00:26:49,669
+factors individually maybe are good who cares because the purpose will be lost
+
+488
+00:26:49,669 --> 00:26:55,520
+cares because the purpose will be lost okay so for example let's consider I
+
+489
+00:26:55,520 --> 00:26:58,070
+okay so for example let's consider I think this this I don't whether this
+
+490
+00:26:58,070 --> 00:27:01,250
+think this this I don't whether this pictorial comes but let's consider an
+
+491
+00:27:01,250 --> 00:27:07,640
+pictorial comes but let's consider an exact distribution the first one is a
+
+492
+00:27:07,640 --> 00:27:08,990
+exact distribution the first one is a mixture of two thousands
+
+493
+00:27:08,990 --> 00:27:12,260
+mixture of two thousands okay that's f 1 and let's say we're
+
+494
+00:27:12,260 --> 00:27:13,970
+okay that's f 1 and let's say we're going to approximate this factor with
+
+495
+00:27:13,970 --> 00:27:16,610
+going to approximate this factor with this missing person because just to be
+
+496
+00:27:16,610 --> 00:27:21,200
+this missing person because just to be in the exponential family now she'll so
+
+497
+00:27:21,200 --> 00:27:23,330
+in the exponential family now she'll so the second factor of two looks like a
+
+498
+00:27:23,330 --> 00:27:24,770
+the second factor of two looks like a Gaussian so we get an extra
+
+499
+00:27:24,770 --> 00:27:27,110
+Gaussian so we get an extra approximation all right so if you take
+
+500
+00:27:27,110 --> 00:27:29,570
+approximation all right so if you take so this is the just product of F 1 and F
+
+501
+00:27:29,570 --> 00:27:31,700
+so this is the just product of F 1 and F 2 this is really what we want
+
+502
+00:27:31,700 --> 00:27:34,039
+2 this is really what we want approximate well and now this is the
+
+503
+00:27:34,039 --> 00:27:35,990
+approximate well and now this is the product of the two approximation and
+
+504
+00:27:35,990 --> 00:27:38,710
+product of the two approximation and your faith is not a very good
+
+505
+00:27:38,710 --> 00:27:41,480
+your faith is not a very good calculation because mainly we screw it
+
+506
+00:27:41,480 --> 00:27:49,159
+calculation because mainly we screw it up there okay all right we don't know
+
+507
+00:27:49,159 --> 00:27:51,230
+up there okay all right we don't know how you're gonna tell me you get this
+
+508
+00:27:51,230 --> 00:27:52,909
+how you're gonna tell me you get this model approximation of needs to be very
+
+509
+00:27:52,909 --> 00:27:56,299
+model approximation of needs to be very good so the addition is when you
+
+510
+00:27:56,299 --> 00:27:59,000
+good so the addition is when you approximate that one right
+
+511
+00:27:59,000 --> 00:28:01,549
+approximate that one right he put and also a lot of probability
+
+512
+00:28:01,549 --> 00:28:03,799
+he put and also a lot of probability mass in the approximation to match that
+
+513
+00:28:03,799 --> 00:28:07,100
+mass in the approximation to match that one but you really have forgot that the
+
+514
+00:28:07,100 --> 00:28:10,750
+one but you really have forgot that the probability mass effective here is zero
+
+515
+00:28:10,750 --> 00:28:13,460
+probability mass effective here is zero so like you're investing a lot of money
+
+516
+00:28:13,460 --> 00:28:16,580
+so like you're investing a lot of money to approximate well at one in a region
+
+517
+00:28:16,580 --> 00:28:21,960
+to approximate well at one in a region that doesn't
+
+518
+00:28:21,960 --> 00:28:21,970
+
+
+519
+00:28:21,970 --> 00:29:10,870
+you have to do in the we don't approach to make these factors in the penny of
+
+520
+00:29:10,870 --> 00:29:15,100
+to make these factors in the penny of each other but so we try to to do
+
+521
+00:29:15,100 --> 00:29:20,169
+each other but so we try to to do something better than that so I just
+
+522
+00:29:20,169 --> 00:29:22,750
+something better than that so I just have an idea verse for this algorithm
+
+523
+00:29:22,750 --> 00:29:25,930
+have an idea verse for this algorithm and again it is not very complicated but
+
+524
+00:29:25,930 --> 00:29:27,540
+and again it is not very complicated but you need to pay attention the algebra
+
+525
+00:29:27,540 --> 00:29:32,770
+you need to pay attention the algebra you know may be a little bit confusing
+
+526
+00:29:32,770 --> 00:29:36,220
+you know may be a little bit confusing it is really not okay so I'm going to
+
+527
+00:29:36,220 --> 00:29:39,610
+it is really not okay so I'm going to make only the Z and I remind you this
+
+528
+00:29:39,610 --> 00:29:41,970
+make only the Z and I remind you this kind of thing because the approximation
+
+529
+00:29:41,970 --> 00:29:44,740
+kind of thing because the approximation the approximate distribution if you pick
+
+530
+00:29:44,740 --> 00:29:49,330
+the approximate distribution if you pick up so this is part of J so we because we
+
+531
+00:29:49,330 --> 00:29:54,510
+up so this is part of J so we because we won't approximate now right like in the
+
+532
+00:29:54,510 --> 00:30:10,270
+won't approximate now right like in the approximation so okay to be close to
+
+533
+00:30:10,270 --> 00:30:13,850
+approximation so okay to be close to this F J we're going to try to make
+
+534
+00:30:13,850 --> 00:30:17,720
+this F J we're going to try to make distribution as close as possible to the
+
+535
+00:30:17,720 --> 00:30:23,210
+distribution as close as possible to the pj x this manga folio verifies for the
+
+536
+00:30:23,210 --> 00:30:31,970
+pj x this manga folio verifies for the surprise of the approximate apart so
+
+537
+00:30:31,970 --> 00:30:37,640
+surprise of the approximate apart so again when we compute that 126 to coming
+
+538
+00:30:37,640 --> 00:30:40,660
+again when we compute that 126 to coming it's coming here so we're going to be
+
+539
+00:30:40,660 --> 00:30:42,620
+it's coming here so we're going to be approximating alright
+
+540
+00:30:42,620 --> 00:30:44,750
+approximating alright this whole distribution to be as close
+
+541
+00:30:44,750 --> 00:30:47,330
+this whole distribution to be as close as possible to that all right well this
+
+542
+00:30:47,330 --> 00:30:50,330
+as possible to that all right well this is the exact factor all right but this
+
+543
+00:30:50,330 --> 00:30:53,210
+is the exact factor all right but this is we use the approximation of for the
+
+544
+00:30:53,210 --> 00:30:54,799
+is we use the approximation of for the other factors that we have gained up to
+
+545
+00:30:54,799 --> 00:30:56,930
+other factors that we have gained up to now again we're gonna do this
+
+546
+00:30:56,930 --> 00:30:59,870
+now again we're gonna do this iteratively right so whatever particles
+
+547
+00:30:59,870 --> 00:31:02,000
+iteratively right so whatever particles we have toward the others within
+
+548
+00:31:02,000 --> 00:31:04,190
+we have toward the others within approximation so this is what we use as
+
+549
+00:31:04,190 --> 00:31:06,320
+approximation so this is what we use as the background okay
+
+550
+00:31:06,320 --> 00:31:09,320
+the background okay the first we will be have an
+
+551
+00:31:09,320 --> 00:31:11,960
+the first we will be have an approximation for that j that is
+
+552
+00:31:11,960 --> 00:31:17,710
+approximation for that j that is accurate in regions where very
+
+553
+00:31:17,710 --> 00:31:17,720
+
+
+554
+00:31:17,720 --> 00:31:22,070
+significant probability marched right if they're 0 who cares we are not going to
+
+555
+00:31:22,070 --> 00:31:24,590
+they're 0 who cares we are not going to count for them we don't want to to
+
+556
+00:31:24,590 --> 00:31:32,270
+count for them we don't want to to invest resources from other proximity to
+
+557
+00:31:32,270 --> 00:31:35,630
+invest resources from other proximity to you say on the bus was here you know we
+
+558
+00:31:35,630 --> 00:31:38,299
+you say on the bus was here you know we have this product of the brown
+
+559
+00:31:38,299 --> 00:31:41,360
+have this product of the brown distributions all but the term tray so
+
+560
+00:31:41,360 --> 00:31:45,640
+distributions all but the term tray so longer this i am going to define this
+
+561
+00:31:45,640 --> 00:31:50,330
+longer this i am going to define this amount to ask you for the key factors
+
+562
+00:31:50,330 --> 00:31:53,659
+amount to ask you for the key factors except total j so effectively the skill
+
+563
+00:31:53,659 --> 00:31:57,400
+except total j so effectively the skill theta divided by this approximation fo j
+
+564
+00:31:57,400 --> 00:32:02,750
+theta divided by this approximation fo j okay this chance in physics comes with a
+
+565
+00:32:02,750 --> 00:32:05,330
+okay this chance in physics comes with a particular name alright because even
+
+566
+00:32:05,330 --> 00:32:07,460
+particular name alright because even this idea comes from physics but we
+
+567
+00:32:07,460 --> 00:32:10,070
+this idea comes from physics but we leave everything out so this is another
+
+568
+00:32:10,070 --> 00:32:11,990
+leave everything out so this is another factor the product from the pastors
+
+569
+00:32:11,990 --> 00:32:18,169
+factor the product from the pastors Bugsy okay all right
+
+570
+00:32:18,169 --> 00:32:18,179
+
+
+571
+00:32:18,179 --> 00:32:27,159
+to me this distribution here as natural at a times this distribution Q minus J
+
+572
+00:32:27,159 --> 00:32:31,999
+at a times this distribution Q minus J okay and situation is a normalization
+
+573
+00:32:31,999 --> 00:32:36,830
+okay and situation is a normalization factor okay so Z Jake here's the final
+
+574
+00:32:36,830 --> 00:32:41,539
+factor okay so Z Jake here's the final icon alright so what we noticed we want
+
+575
+00:32:41,539 --> 00:32:44,359
+icon alright so what we noticed we want to make this alright as close as
+
+576
+00:32:44,359 --> 00:32:48,190
+to make this alright as close as possible to dock so here is the problem
+
+577
+00:32:48,190 --> 00:32:51,289
+possible to dock so here is the problem we want to find an update of the
+
+578
+00:32:51,289 --> 00:32:54,289
+we want to find an update of the distribution Q and notice I am NOT
+
+579
+00:32:54,289 --> 00:32:56,930
+distribution Q and notice I am NOT asking an update of the factor at J of
+
+580
+00:32:56,930 --> 00:33:00,230
+asking an update of the factor at J of theta where the next thing is an update
+
+581
+00:33:00,230 --> 00:33:07,590
+theta where the next thing is an update of the whole queue of paper
+
+582
+00:33:07,590 --> 00:33:07,600
+
+
+583
+00:33:07,600 --> 00:33:13,770
+let's agree to make the active today but I'm posing the problem not for cute yeah
+
+584
+00:33:13,770 --> 00:33:15,540
+I'm posing the problem not for cute yeah we're going to take this faster if they
+
+585
+00:33:15,540 --> 00:33:17,760
+we're going to take this faster if they filled up right but I'm posing the
+
+586
+00:33:17,760 --> 00:33:20,610
+filled up right but I'm posing the problem find me this ablative clear
+
+587
+00:33:20,610 --> 00:33:24,750
+problem find me this ablative clear paper so that it matches that okay so
+
+588
+00:33:24,750 --> 00:33:27,170
+paper so that it matches that okay so the problem is fine cupid i'd like orvis
+
+589
+00:33:27,170 --> 00:33:30,480
+the problem is fine cupid i'd like orvis q nu theta so that the distance between
+
+590
+00:33:30,480 --> 00:33:35,910
+q nu theta so that the distance between this and this is me might and you notice
+
+591
+00:33:35,910 --> 00:33:37,830
+this and this is me might and you notice this very well scale distance because
+
+592
+00:33:37,830 --> 00:33:41,210
+this very well scale distance because the two popular FJ comes to the left
+
+593
+00:33:41,210 --> 00:33:43,770
+the two popular FJ comes to the left attack this very important all right so
+
+594
+00:33:43,770 --> 00:33:47,610
+attack this very important all right so it's what we discussed today alright so
+
+595
+00:33:47,610 --> 00:33:57,150
+it's what we discussed today alright so this is the through factor okay this
+
+596
+00:33:57,150 --> 00:33:58,800
+this is the through factor okay this problem is can you tell me with words
+
+597
+00:33:58,800 --> 00:34:02,880
+problem is can you tell me with words they say what is the distribution people
+
+598
+00:34:02,880 --> 00:34:07,020
+they say what is the distribution people all right that does solve this
+
+599
+00:34:07,020 --> 00:34:09,510
+all right that does solve this minimization problem and of course we're
+
+600
+00:34:09,510 --> 00:34:15,330
+minimization problem and of course we're going to constrain theta theta is in the
+
+601
+00:34:15,330 --> 00:34:17,550
+going to constrain theta theta is in the exponential family so the problem of
+
+602
+00:34:17,550 --> 00:34:19,770
+exponential family so the problem of exponential distribution which is an
+
+603
+00:34:19,770 --> 00:34:21,960
+exponential distribution which is an exponential form a distribution channel
+
+604
+00:34:21,960 --> 00:34:26,550
+exponential form a distribution channel exact answer to this problem that is
+
+605
+00:34:26,550 --> 00:34:38,830
+exact answer to this problem that is basically coming out of the optimization
+
+606
+00:34:38,830 --> 00:34:38,840
+
+
+607
+00:34:38,840 --> 00:34:44,440
+it stays hot right
+
+608
+00:34:44,440 --> 00:34:44,450
+
+
+609
+00:34:44,450 --> 00:34:48,280
+when we're watching so basically the moments of cure Flippa have to march
+
+610
+00:34:48,280 --> 00:34:53,260
+moments of cure Flippa have to march through the moments to go okay all right
+
+611
+00:34:53,260 --> 00:34:57,339
+through the moments to go okay all right so let's say it first is Gaussian is
+
+612
+00:34:57,339 --> 00:34:59,890
+so let's say it first is Gaussian is like I'm going to live with the mean
+
+613
+00:34:59,890 --> 00:35:02,500
+like I'm going to live with the mean ology used in practice right like taking
+
+614
+00:35:02,500 --> 00:35:04,180
+ology used in practice right like taking the distribution on the left hand side
+
+615
+00:35:04,180 --> 00:35:08,020
+the distribution on the left hand side and projecting it to Gaussian say some
+
+616
+00:35:08,020 --> 00:35:14,859
+and projecting it to Gaussian say some  to be the ocean and we're studying
+
+617
+00:35:14,859 --> 00:35:17,609
+to be the ocean and we're studying those moments to an affiliated Gaussian
+
+618
+00:35:17,609 --> 00:35:20,349
+those moments to an affiliated Gaussian okay an operation this can you achieve
+
+619
+00:35:20,349 --> 00:35:22,510
+okay an operation this can you achieve written in the literature there's a
+
+620
+00:35:22,510 --> 00:35:24,940
+written in the literature there's a projection operator so think of this you
+
+621
+00:35:24,940 --> 00:35:26,589
+projection operator so think of this you know whatever distribution you have
+
+622
+00:35:26,589 --> 00:35:28,630
+know whatever distribution you have you're going to approach range with a
+
+623
+00:35:28,630 --> 00:35:30,370
+you're going to approach range with a Gaussian through this one with marching
+
+624
+00:35:30,370 --> 00:35:32,620
+Gaussian through this one with marching and so you've trapped the moment and
+
+625
+00:35:32,620 --> 00:35:34,539
+and so you've trapped the moment and then you assign them to a Gaussian so
+
+626
+00:35:34,539 --> 00:35:40,450
+then you assign them to a Gaussian so that's the projections that we computed
+
+627
+00:35:40,450 --> 00:35:44,079
+that's the projections that we computed new distribution Q of theta and then we
+
+628
+00:35:44,079 --> 00:35:46,720
+new distribution Q of theta and then we want to update the software at J and I
+
+629
+00:35:46,720 --> 00:35:48,849
+want to update the software at J and I remind you that this mission P of C is
+
+630
+00:35:48,849 --> 00:35:54,120
+remind you that this mission P of C is written as left J times this
+
+631
+00:35:54,120 --> 00:35:54,130
+
+
+632
+00:35:54,130 --> 00:35:58,809
+approximation factors so basically XA of theta would be some
+
+633
+00:35:58,809 --> 00:36:01,240
+so basically XA of theta would be some normalization factor that you need times
+
+634
+00:36:01,240 --> 00:36:04,420
+normalization factor that you need times a normalized distribution Q that you
+
+635
+00:36:04,420 --> 00:36:11,680
+a normalized distribution Q that you compute for this problem you should not
+
+636
+00:36:11,680 --> 00:36:14,230
+compute for this problem you should not because one need to update know that the
+
+637
+00:36:14,230 --> 00:36:19,559
+because one need to update know that the update of the fact of J so addition is
+
+638
+00:36:19,559 --> 00:36:24,150
+update of the fact of J so addition is approximate the whole chain of theta
+
+639
+00:36:24,150 --> 00:36:25,299
+approximate the whole chain of theta okay
+
+640
+00:36:25,299 --> 00:36:28,150
+okay and another one that is done with more
+
+641
+00:36:28,150 --> 00:36:30,490
+and another one that is done with more and matching if we divide it by the
+
+642
+00:36:30,490 --> 00:36:32,470
+and matching if we divide it by the products of the approximations the
+
+643
+00:36:32,470 --> 00:36:35,920
+products of the approximations the factorization q of x from j we're going
+
+644
+00:36:35,920 --> 00:36:41,410
+factorization q of x from j we're going to get that check okay and you can tell
+
+645
+00:36:41,410 --> 00:36:44,020
+to get that check okay and you can tell it's a normalization constant so we ask
+
+646
+00:36:44,020 --> 00:36:44,510
+it's a normalization constant so we ask you
+
+647
+00:36:44,510 --> 00:37:04,460
+you the people's one so you get K so k is basically this normalization factor
+
+648
+00:37:04,460 --> 00:37:07,150
+is basically this normalization factor alright and we call this actually ZJ
+
+649
+00:37:07,150 --> 00:37:10,250
+alright and we call this actually ZJ should be a big formulas for the
+
+650
+00:37:10,250 --> 00:37:13,010
+should be a big formulas for the expectation propagation algorithm is
+
+651
+00:37:13,010 --> 00:37:16,940
+expectation propagation algorithm is what you see on the bottom alright so
+
+652
+00:37:16,940 --> 00:37:21,230
+what you see on the bottom alright so the idea is when the moment marching
+
+653
+00:37:21,230 --> 00:37:25,070
+the idea is when the moment marching okay computer home you two divided by Q
+
+654
+00:37:25,070 --> 00:37:27,470
+okay computer home you two divided by Q minus a multiplied with the
+
+655
+00:37:27,470 --> 00:37:29,240
+minus a multiplied with the normalization factor must be a plate of
+
+656
+00:37:29,240 --> 00:37:33,220
+normalization factor must be a plate of us today what's it
+
+657
+00:37:33,220 --> 00:37:33,230
+
+
+658
+00:37:33,230 --> 00:37:42,770
+okay so I am going to emphasize again the key to key points right we compute
+
+659
+00:37:42,770 --> 00:37:44,180
+the key to key points right we compute its factor
+
+660
+00:37:44,180 --> 00:37:47,420
+its factor all right not independent of the other
+
+661
+00:37:47,420 --> 00:37:52,370
+all right not independent of the other factors but in a way that the the
+
+662
+00:37:52,370 --> 00:37:54,230
+factors but in a way that the the probability of your actresses accounted
+
+663
+00:37:54,230 --> 00:37:56,510
+probability of your actresses accounted in the approximation and we do this by
+
+664
+00:37:56,510 --> 00:38:00,740
+in the approximation and we do this by not matching FJ this FJ Academy with the
+
+665
+00:38:00,740 --> 00:38:04,700
+not matching FJ this FJ Academy with the exact FJ but my matching Q theta with
+
+666
+00:38:04,700 --> 00:38:09,380
+exact FJ but my matching Q theta with this okay and so we don't have made the
+
+667
+00:38:09,380 --> 00:38:11,840
+this okay and so we don't have made the factor of J to start with will be the
+
+668
+00:38:11,840 --> 00:38:14,210
+factor of J to start with will be the whole distribution P of theta and from
+
+669
+00:38:14,210 --> 00:38:16,430
+whole distribution P of theta and from that we can update the factor of J once
+
+670
+00:38:16,430 --> 00:38:19,250
+that we can update the factor of J once we're done and and the approximation
+
+671
+00:38:19,250 --> 00:38:26,750
+we're done and and the approximation again is given on the bottom so I had
+
+672
+00:38:26,750 --> 00:38:31,790
+again is given on the bottom so I had services so think of this as you know
+
+673
+00:38:31,790 --> 00:38:35,000
+services so think of this as you know let's say that this is the exact J
+
+674
+00:38:35,000 --> 00:38:43,060
+let's say that this is the exact J alright and this is what the you know
+
+675
+00:38:43,060 --> 00:38:45,920
+alright and this is what the you know doing so can you imagine a liberal and
+
+676
+00:38:45,920 --> 00:38:49,320
+doing so can you imagine a liberal and you try to master so this is sort of an
+
+677
+00:38:49,320 --> 00:38:53,040
+you try to master so this is sort of an right Victoria here if you try to
+
+678
+00:38:53,040 --> 00:38:57,810
+right Victoria here if you try to optimize a terribly to mark this blue
+
+679
+00:38:57,810 --> 00:39:00,120
+optimize a terribly to mark this blue distribution giving it something that
+
+680
+00:39:00,120 --> 00:39:03,710
+distribution giving it something that looks like a bombshell but the
+
+681
+00:39:03,710 --> 00:39:06,510
+looks like a bombshell but the distribution is this far away from her
+
+682
+00:39:06,510 --> 00:39:11,700
+distribution is this far away from her essay okay so now what that does is
+
+683
+00:39:11,700 --> 00:39:13,980
+essay okay so now what that does is impose the approximation of the factor
+
+684
+00:39:13,980 --> 00:39:16,620
+impose the approximation of the factor today to be closer sampling between
+
+685
+00:39:16,620 --> 00:39:19,770
+today to be closer sampling between alright and the approximation for the
+
+686
+00:39:19,770 --> 00:39:23,570
+alright and the approximation for the food distribution basically terms it is
+
+687
+00:39:23,570 --> 00:39:28,530
+food distribution basically terms it is you know the probability you know the
+
+688
+00:39:28,530 --> 00:39:31,470
+you know the probability you know the nonzero probability domain of this Q
+
+689
+00:39:31,470 --> 00:39:35,850
+nonzero probability domain of this Q minus a distribution so by the way you
+
+690
+00:39:35,850 --> 00:39:37,800
+minus a distribution so by the way you can see here the notation that I told
+
+691
+00:39:37,800 --> 00:39:41,370
+can see here the notation that I told you it is very common that abhorrest
+
+692
+00:39:41,370 --> 00:39:44,070
+you it is very common that abhorrest million you know in describing what is
+
+693
+00:39:44,070 --> 00:39:47,210
+million you know in describing what is going on so when you you know remember
+
+694
+00:39:47,210 --> 00:39:51,510
+going on so when you you know remember we we are matching we compute a new to
+
+695
+00:39:51,510 --> 00:39:55,260
+we we are matching we compute a new to narrow the manipulation of matching
+
+696
+00:39:55,260 --> 00:39:57,660
+narrow the manipulation of matching moments with the distribution of you see
+
+697
+00:39:57,660 --> 00:39:59,610
+moments with the distribution of you see here inside the brackets is for the
+
+698
+00:39:59,610 --> 00:40:01,440
+here inside the brackets is for the projection operator okay
+
+699
+00:40:01,440 --> 00:40:05,400
+projection operator okay so again you know you are extracting the
+
+700
+00:40:05,400 --> 00:40:07,830
+so again you know you are extracting the moments and you try to match this to the
+
+701
+00:40:07,830 --> 00:40:09,690
+moments and you try to match this to the corresponding Gaussian distribution okay
+
+702
+00:40:09,690 --> 00:40:11,370
+corresponding Gaussian distribution okay okay
+
+703
+00:40:11,370 --> 00:40:13,200
+okay and so I will show you an example
+
+704
+00:40:13,200 --> 00:40:16,800
+and so I will show you an example actually where this distribution here
+
+705
+00:40:16,800 --> 00:40:19,230
+actually where this distribution here can be lets say Poisson distribution
+
+706
+00:40:19,230 --> 00:40:21,060
+can be lets say Poisson distribution when you have approximated with this
+
+707
+00:40:21,060 --> 00:40:27,680
+when you have approximated with this projection operator to a Gaussian
+
+708
+00:40:27,680 --> 00:40:27,690
+
+
+709
+00:40:27,690 --> 00:40:34,380
+a complexity that maybe you haven't thought about this before okay and when
+
+710
+00:40:34,380 --> 00:40:36,870
+thought about this before okay and when here over this angle is this can be the
+
+711
+00:40:36,870 --> 00:40:39,240
+here over this angle is this can be the blessing but also it can be stable a
+
+712
+00:40:39,240 --> 00:40:46,170
+blessing but also it can be stable a very painful process this exponential
+
+713
+00:40:46,170 --> 00:40:48,150
+very painful process this exponential form just gives them ownership all right
+
+714
+00:40:48,150 --> 00:40:50,580
+form just gives them ownership all right that's the most other example of
+
+715
+00:40:50,580 --> 00:40:53,339
+that's the most other example of exponential distribution
+
+716
+00:40:53,339 --> 00:40:55,170
+exponential distribution occasionally thousand obviously this
+
+717
+00:40:55,170 --> 00:40:57,749
+occasionally thousand obviously this protection will give you the cue but is
+
+718
+00:40:57,749 --> 00:41:00,479
+protection will give you the cue but is also going to be Gaussian what happens
+
+719
+00:41:00,479 --> 00:41:03,150
+also going to be Gaussian what happens when he divide to gossip having
+
+720
+00:41:03,150 --> 00:41:04,979
+when he divide to gossip having discussed an equal in class before I
+
+721
+00:41:04,979 --> 00:41:07,099
+discussed an equal in class before I will not have provided through no
+
+722
+00:41:07,099 --> 00:41:10,680
+will not have provided through no marginalization this conditional now we
+
+723
+00:41:10,680 --> 00:41:14,939
+marginalization this conditional now we have a relative to Gaussian do you see
+
+724
+00:41:14,939 --> 00:41:20,420
+have a relative to Gaussian do you see any problem
+
+725
+00:41:20,420 --> 00:41:20,430
+
+
+726
+00:41:20,430 --> 00:41:28,020
+are you happy dividing into thousands
+
+727
+00:41:28,020 --> 00:41:28,030
+
+
+728
+00:41:28,030 --> 00:41:40,059
+what can happen
+
+729
+00:41:40,059 --> 00:41:40,069
+
+
+730
+00:41:40,069 --> 00:41:51,740
+such as or what type of new medical a shift
+
+731
+00:41:51,740 --> 00:41:51,750
+
+
+732
+00:41:51,750 --> 00:41:55,460
+because this one exponents this actually I don't think the division by zero will
+
+733
+00:41:55,460 --> 00:41:57,589
+I don't think the division by zero will be a problem here okay because they're
+
+734
+00:41:57,589 --> 00:41:58,760
+be a problem here okay because they're Exponential's
+
+735
+00:41:58,760 --> 00:42:51,310
+Exponential's but because you know functions you know
+
+736
+00:42:51,310 --> 00:42:51,320
+
+
+737
+00:42:51,320 --> 00:42:56,570
+interested to enforce this right but at the end of the day but this is a
+
+738
+00:42:56,570 --> 00:42:59,359
+the end of the day but this is a Gaussian but some of the factors may
+
+739
+00:42:59,359 --> 00:43:01,300
+Gaussian but some of the factors may come to here actually a negative value
+
+740
+00:43:01,300 --> 00:43:08,020
+come to here actually a negative value okay and and you see this and you know
+
+741
+00:43:08,020 --> 00:43:10,280
+okay and and you see this and you know you may want to actually take this
+
+742
+00:43:10,280 --> 00:43:11,660
+you may want to actually take this former so didn't have time this morning
+
+743
+00:43:11,660 --> 00:43:16,280
+former so didn't have time this morning to verify them again fifteen thank
+
+744
+00:43:16,280 --> 00:43:18,800
+to verify them again fifteen thank relationship the two gaussians okay you
+
+745
+00:43:18,800 --> 00:43:22,910
+relationship the two gaussians okay you can you basically get a gas and Gaussian
+
+746
+00:43:22,910 --> 00:43:25,430
+can you basically get a gas and Gaussian right but you notice the variance is 1
+
+747
+00:43:25,430 --> 00:43:28,010
+right but you notice the variance is 1 over V 1 minus 1 over V to the want of
+
+748
+00:43:28,010 --> 00:43:30,950
+over V 1 minus 1 over V to the want of the vision of the balances of numerator
+
+749
+00:43:30,950 --> 00:43:33,710
+the vision of the balances of numerator and denominator and obviously this can
+
+750
+00:43:33,710 --> 00:43:36,970
+and denominator and obviously this can be negative obviously can be negative
+
+751
+00:43:36,970 --> 00:43:42,950
+be negative obviously can be negative okay so again it is not an issue but how
+
+752
+00:43:42,950 --> 00:43:44,599
+okay so again it is not an issue but how you program this is something you need
+
+753
+00:43:44,599 --> 00:43:47,450
+you program this is something you need to be sort of very careful alright so
+
+754
+00:43:47,450 --> 00:43:54,710
+to be sort of very careful alright so these are not your everyday couch
+
+755
+00:43:54,710 --> 00:43:54,720
+
+
+756
+00:43:54,720 --> 00:44:00,010
+so you a novice schematic on this participation of expectation propagation
+
+757
+00:44:00,010 --> 00:44:02,720
+participation of expectation propagation on the tester problem that I introduced
+
+758
+00:44:02,720 --> 00:44:04,150
+on the tester problem that I introduced and I'm going to discuss this problem
+
+759
+00:44:04,150 --> 00:44:08,560
+and I'm going to discuss this problem expensively and the topics is basically
+
+760
+00:44:08,560 --> 00:44:11,210
+expensively and the topics is basically the Soviet approximation that you get
+
+761
+00:44:11,210 --> 00:44:15,920
+the Soviet approximation that you get when the context for the support of X 2
+
+762
+00:44:15,920 --> 00:44:19,040
+when the context for the support of X 2 minus J distribution that reduces the
+
+763
+00:44:19,040 --> 00:44:20,600
+minus J distribution that reduces the bar down distribution could you do the
+
+764
+00:44:20,600 --> 00:44:24,770
+bar down distribution could you do the computation in the top two pictures is
+
+765
+00:44:24,770 --> 00:44:29,090
+computation in the top two pictures is narrow all right so you can see the this
+
+766
+00:44:29,090 --> 00:44:32,359
+narrow all right so you can see the this this distribution here is the context
+
+767
+00:44:32,359 --> 00:44:34,430
+this distribution here is the context this is the Q minus J okay
+
+768
+00:44:34,430 --> 00:44:38,210
+this is the Q minus J okay and you can depending here to show is
+
+769
+00:44:38,210 --> 00:44:40,400
+and you can depending here to show is that the actual approximation of the
+
+770
+00:44:40,400 --> 00:44:42,880
+that the actual approximation of the factor of J that we do eventually with
+
+771
+00:44:42,880 --> 00:44:46,900
+factor of J that we do eventually with expectation propagation it is only good
+
+772
+00:44:46,900 --> 00:44:49,700
+expectation propagation it is only good in the region where the support of Q
+
+773
+00:44:49,700 --> 00:44:54,200
+in the region where the support of Q minus J is nonzero okay so you can see
+
+774
+00:44:54,200 --> 00:44:54,980
+minus J is nonzero okay so you can see everywhere else
+
+775
+00:44:54,980 --> 00:44:57,820
+everywhere else right the approximation is very large
+
+776
+00:44:57,820 --> 00:45:01,250
+right the approximation is very large this is a very this is you know okay so
+
+777
+00:45:01,250 --> 00:45:04,730
+this is a very this is you know okay so here the approximation is good and the
+
+778
+00:45:04,730 --> 00:45:07,130
+here the approximation is good and the same you know the support here is
+
+779
+00:45:07,130 --> 00:45:09,109
+same you know the support here is nonzero there you can see how good the
+
+780
+00:45:09,109 --> 00:45:12,380
+nonzero there you can see how good the approximation looks the blue and what is
+
+781
+00:45:12,380 --> 00:45:16,370
+approximation looks the blue and what is it the the red they basically coincide
+
+782
+00:45:16,370 --> 00:45:18,980
+it the the red they basically coincide here now you have a mug out the context
+
+783
+00:45:18,980 --> 00:45:22,010
+here now you have a mug out the context that is much wider so you notice the
+
+784
+00:45:22,010 --> 00:45:23,990
+that is much wider so you notice the approximation that it's not anymore is
+
+785
+00:45:23,990 --> 00:45:26,080
+approximation that it's not anymore is good right because this is very wide
+
+786
+00:45:26,080 --> 00:45:28,040
+good right because this is very wide this is to be expected
+
+787
+00:45:28,040 --> 00:45:30,920
+this is to be expected all right and similarly here yeah the
+
+788
+00:45:30,920 --> 00:45:32,750
+all right and similarly here yeah the approximation starts deviating basically
+
+789
+00:45:32,750 --> 00:45:35,030
+approximation starts deviating basically it's not very good over the support so
+
+790
+00:45:35,030 --> 00:45:36,530
+it's not very good over the support so if you have a narrow support right
+
+791
+00:45:36,530 --> 00:45:39,170
+if you have a narrow support right assuming you do inference right if your
+
+792
+00:45:39,170 --> 00:45:41,420
+assuming you do inference right if your problems all over the space and you have
+
+793
+00:45:41,420 --> 00:45:45,740
+problems all over the space and you have no data the issue that you get in
+
+794
+00:45:45,740 --> 00:45:48,880
+no data the issue that you get in posterior estimation
+
+795
+00:45:48,880 --> 00:45:52,539
+posterior estimation all right for the last time all the
+
+796
+00:45:52,539 --> 00:45:53,019
+all right for the last time all the other
+
+797
+00:45:53,019 --> 00:45:55,059
+other we're going to be moving away from this
+
+798
+00:45:55,059 --> 00:45:58,829
+we're going to be moving away from this okay so this is what it looks
+
+799
+00:45:58,829 --> 00:46:02,229
+okay so this is what it looks if you initialize all the factors right
+
+800
+00:46:02,229 --> 00:46:04,539
+if you initialize all the factors right you have to start with something usually
+
+801
+00:46:04,539 --> 00:46:06,190
+you have to start with something usually if you can just put them all the big
+
+802
+00:46:06,190 --> 00:46:10,960
+if you can just put them all the big aliens with some in and violence's so
+
+803
+00:46:10,960 --> 00:46:13,979
+aliens with some in and violence's so this is your approximation for the whole
+
+804
+00:46:13,979 --> 00:46:17,019
+this is your approximation for the whole posterior distribution then you start
+
+805
+00:46:17,019 --> 00:46:19,509
+posterior distribution then you start updating one faster at the time you
+
+806
+00:46:19,509 --> 00:46:22,900
+updating one faster at the time you remember to twelve this cavity
+
+807
+00:46:22,900 --> 00:46:26,410
+remember to twelve this cavity distribution Q minus J okay by dividing
+
+808
+00:46:26,410 --> 00:46:28,989
+distribution Q minus J okay by dividing Q freedom with a factor of Jake you do
+
+809
+00:46:28,989 --> 00:46:31,299
+Q freedom with a factor of Jake you do one with matching two completely new you
+
+810
+00:46:31,299 --> 00:46:33,220
+one with matching two completely new you compute this normalization part for the
+
+811
+00:46:33,220 --> 00:46:35,920
+compute this normalization part for the update part of them is given by what you
+
+812
+00:46:35,920 --> 00:46:39,099
+update part of them is given by what you see instead be you picked all the
+
+813
+00:46:39,099 --> 00:46:43,390
+see instead be you picked all the factors okay obviously you know if
+
+814
+00:46:43,390 --> 00:46:46,180
+factors okay obviously you know if you're gonna keep iterating multiple
+
+815
+00:46:46,180 --> 00:46:48,819
+you're gonna keep iterating multiple runs to be sure that let's efficient
+
+816
+00:46:48,819 --> 00:46:50,559
+runs to be sure that let's efficient advances that the main of the variances
+
+817
+00:46:50,559 --> 00:46:52,210
+advances that the main of the variances of this approximation is don't change
+
+818
+00:46:52,210 --> 00:46:56,769
+of this approximation is don't change with iteration and once you're done you
+
+819
+00:46:56,769 --> 00:47:01,120
+with iteration and once you're done you can actually calculate the mobile
+
+820
+00:47:01,120 --> 00:47:03,789
+can actually calculate the mobile evidence as well for free right so this
+
+821
+00:47:03,789 --> 00:47:06,160
+evidence as well for free right so this would be something useful for model
+
+822
+00:47:06,160 --> 00:47:08,259
+would be something useful for model selection and the likes that you may be
+
+823
+00:47:08,259 --> 00:47:12,880
+selection and the likes that you may be interested to do the magnets is there is
+
+824
+00:47:12,880 --> 00:47:19,799
+interested to do the magnets is there is no proof of this will ever work okay and
+
+825
+00:47:19,799 --> 00:47:19,809
+
+
+826
+00:47:19,809 --> 00:47:27,190
+it will chasten right but it's not proof okay
+
+827
+00:47:27,190 --> 00:47:27,200
+
+
+828
+00:47:27,200 --> 00:47:33,120
+there's a lot of theory that goes under the expectation propagation but you know
+
+829
+00:47:33,120 --> 00:47:36,070
+the expectation propagation but you know you know so if you tomorrow come with a
+
+830
+00:47:36,070 --> 00:47:39,970
+you know so if you tomorrow come with a new PA statistics and you demonstrate
+
+831
+00:47:39,970 --> 00:47:41,830
+new PA statistics and you demonstrate something about the convergence of the
+
+832
+00:47:41,830 --> 00:47:44,050
+something about the convergence of the metals everybody will be reading your
+
+833
+00:47:44,050 --> 00:47:46,720
+metals everybody will be reading your paper because this is sort of still a
+
+834
+00:47:46,720 --> 00:47:49,930
+paper because this is sort of still a very important research topic in the
+
+835
+00:47:49,930 --> 00:47:52,120
+very important research topic in the literature all right so I think that
+
+836
+00:47:52,120 --> 00:47:57,130
+literature all right so I think that that would show you the expectation
+
+837
+00:47:57,130 --> 00:47:59,890
+that would show you the expectation propagation result so if I remember
+
+838
+00:47:59,890 --> 00:48:05,350
+propagation result so if I remember again we are approximating this darker
+
+839
+00:48:05,350 --> 00:48:10,770
+again we are approximating this darker region this is the Laplace appreciation
+
+840
+00:48:10,770 --> 00:48:10,780
+
+
+841
+00:48:10,780 --> 00:48:22,500
+minimization we got variational based
+
+842
+00:48:22,500 --> 00:48:22,510
+
+
+843
+00:48:22,510 --> 00:48:30,490
+the plants okay so in the EP so this is the variation of values which I know
+
+844
+00:48:30,490 --> 00:48:33,780
+the variation of values which I know what color is all right and the blue is
+
+845
+00:48:33,780 --> 00:48:36,550
+what color is all right and the blue is the one that we get with expectation
+
+846
+00:48:36,550 --> 00:48:39,220
+the one that we get with expectation propagation the trusox are different
+
+847
+00:48:39,220 --> 00:48:42,670
+propagation the trusox are different tonight but in this particular case if I
+
+848
+00:48:42,670 --> 00:48:45,480
+tonight but in this particular case if I see correctly right the support of the
+
+849
+00:48:45,480 --> 00:48:48,820
+see correctly right the support of the EP solution is much broader than the one
+
+850
+00:48:48,820 --> 00:48:52,200
+EP solution is much broader than the one you get with variational values okay so
+
+851
+00:48:52,200 --> 00:48:55,240
+you get with variational values okay so depending on and of course this is an AC
+
+852
+00:48:55,240 --> 00:48:57,610
+depending on and of course this is an AC distribution if you try to do this for
+
+853
+00:48:57,610 --> 00:48:59,500
+distribution if you try to do this for complicated province the answers may be
+
+854
+00:48:59,500 --> 00:49:03,570
+complicated province the answers may be completely different
+
+855
+00:49:03,570 --> 00:49:03,580
+
+
+856
+00:49:03,580 --> 00:49:10,550
+okay I'm gonna give you this as a clock the proof is given on this slide so
+
+857
+00:49:10,550 --> 00:49:15,050
+the proof is given on this slide so suppose you know you so you have a
+
+858
+00:49:15,050 --> 00:49:18,360
+suppose you know you so you have a customization of your posterior so you
+
+859
+00:49:18,360 --> 00:49:22,080
+customization of your posterior so you have the four times each of the
+
+860
+00:49:22,080 --> 00:49:23,640
+have the four times each of the likelihood temps as you collect data
+
+861
+00:49:23,640 --> 00:49:45,030
+likelihood temps as you collect data right so for the prior that you started
+
+862
+00:49:45,030 --> 00:49:49,530
+right so for the prior that you started with so let this pass it shows you if
+
+863
+00:49:49,530 --> 00:49:53,730
+with so let this pass it shows you if you start an approximation the exact
+
+864
+00:49:53,730 --> 00:50:00,990
+you start an approximation the exact value will not change that just a sister
+
+865
+00:50:00,990 --> 00:50:03,360
+value will not change that just a sister and it gives you something else
+
+866
+00:50:03,360 --> 00:50:06,450
+and it gives you something else not sure will be public so here if you
+
+867
+00:50:06,450 --> 00:50:08,670
+not sure will be public so here if you know let's say the prior you can set
+
+868
+00:50:08,670 --> 00:50:10,560
+know let's say the prior you can set this equal to the prior and you don't
+
+869
+00:50:10,560 --> 00:50:12,360
+this equal to the prior and you don't have to worry you can fit all the
+
+870
+00:50:12,360 --> 00:50:14,070
+have to worry you can fit all the factors the same because the algorithm
+
+871
+00:50:14,070 --> 00:50:16,770
+factors the same because the algorithm will not update effectively this factor
+
+872
+00:50:16,770 --> 00:50:18,990
+will not update effectively this factor of zero you know I mean it will have
+
+873
+00:50:18,990 --> 00:50:20,310
+of zero you know I mean it will have needed but it would still give you the
+
+874
+00:50:20,310 --> 00:50:28,160
+needed but it would still give you the same answer
+
+875
+00:50:28,160 --> 00:50:28,170
+
+
+876
+00:50:28,170 --> 00:50:38,240
+now there is the metal about gold maybe 20 years ago but they are not actually
+
+877
+00:50:38,240 --> 00:50:40,520
+20 years ago but they are not actually in any expectation propagation
+
+878
+00:50:40,520 --> 00:50:44,300
+in any expectation propagation algorithms but the sort of try to take
+
+879
+00:50:44,300 --> 00:50:46,160
+algorithms but the sort of try to take advantage of this factorization to do
+
+880
+00:50:46,160 --> 00:50:49,880
+advantage of this factorization to do some similar type of approximations and
+
+881
+00:50:49,880 --> 00:50:51,560
+some similar type of approximations and the metal overhead with amounts of
+
+882
+00:50:51,560 --> 00:50:54,940
+the metal overhead with amounts of references is this assumed density
+
+883
+00:50:54,940 --> 00:50:58,100
+references is this assumed density filtering method of unity in machine
+
+884
+00:50:58,100 --> 00:50:59,740
+filtering method of unity in machine learning books but they're not exactly
+
+885
+00:50:59,740 --> 00:51:04,190
+learning books but they're not exactly EP story P is basically the nearest
+
+886
+00:51:04,190 --> 00:51:18,350
+EP story P is basically the nearest approximation and okay the website which
+
+887
+00:51:18,350 --> 00:51:21,890
+approximation and okay the website which is the guy that actually the expectation
+
+888
+00:51:21,890 --> 00:51:24,860
+is the guy that actually the expectation propagation is disbelief is but MIT many
+
+889
+00:51:24,860 --> 00:51:30,430
+propagation is disbelief is but MIT many years ago this thesis was like 30 pages
+
+890
+00:51:30,430 --> 00:51:33,470
+years ago this thesis was like 30 pages we have been about play revisions of
+
+891
+00:51:33,470 --> 00:51:36,410
+we have been about play revisions of this business after graduation you know
+
+892
+00:51:36,410 --> 00:51:38,030
+this business after graduation you know what you must have carrots to revise
+
+893
+00:51:38,030 --> 00:51:40,220
+what you must have carrots to revise your taste after you graduate right you
+
+894
+00:51:40,220 --> 00:51:42,890
+your taste after you graduate right you usually you hide under the table no he's
+
+895
+00:51:42,890 --> 00:51:44,780
+usually you hide under the table no he's not hiding because he knows people are
+
+896
+00:51:44,780 --> 00:51:48,230
+not hiding because he knows people are reading it he goes and correct formulas
+
+897
+00:51:48,230 --> 00:51:51,080
+reading it he goes and correct formulas improved here there it's always existed
+
+898
+00:51:51,080 --> 00:51:52,070
+improved here there it's always existed okay
+
+899
+00:51:52,070 --> 00:51:53,630
+okay you can obviously refer to either
+
+900
+00:51:53,630 --> 00:51:56,450
+you can obviously refer to either actually if you sent on the web you will
+
+901
+00:51:56,450 --> 00:52:02,510
+actually if you sent on the web you will find very high numbers of citations for
+
+902
+00:52:02,510 --> 00:52:05,450
+find very high numbers of citations for this work but the only thing I wanted to
+
+903
+00:52:05,450 --> 00:52:10,340
+this work but the only thing I wanted to tell you is very much of promise lots of
+
+904
+00:52:10,340 --> 00:52:14,090
+tell you is very much of promise lots of toy problems the AP metal source
+
+905
+00:52:14,090 --> 00:52:16,490
+toy problems the AP metal source comparison straight basically that there
+
+906
+00:52:16,490 --> 00:52:17,690
+comparison straight basically that there are stupid or twenty of the other
+
+907
+00:52:17,690 --> 00:52:19,730
+are stupid or twenty of the other methods we have seen up to now including
+
+908
+00:52:19,730 --> 00:52:22,060
+methods we have seen up to now including that many metrics including that include
+
+909
+00:52:22,060 --> 00:52:25,890
+that many metrics including that include particle or MCMC type approximation
+
+910
+00:52:25,890 --> 00:52:29,100
+particle or MCMC type approximation so you can see here the petal in the
+
+911
+00:52:29,100 --> 00:52:33,600
+so you can see here the petal in the approximation would be P is the best
+
+912
+00:52:33,600 --> 00:52:37,800
+approximation would be P is the best basically for you know variation of a is
+
+913
+00:52:37,800 --> 00:52:41,550
+basically for you know variation of a is something most important something in
+
+914
+00:52:41,550 --> 00:52:50,760
+something most important something in the light system analysis papers domain
+
+915
+00:52:50,760 --> 00:52:52,980
+the light system analysis papers domain kosoul's that you can actually pose this
+
+916
+00:52:52,980 --> 00:52:55,860
+kosoul's that you can actually pose this problem of expectation and maximization
+
+917
+00:52:55,860 --> 00:53:00,990
+problem of expectation and maximization as the problem of minimizing energy
+
+918
+00:53:00,990 --> 00:53:04,620
+as the problem of minimizing energy function right and so it's very nice
+
+919
+00:53:04,620 --> 00:53:07,350
+function right and so it's very nice alright so the result of an optimization
+
+920
+00:53:07,350 --> 00:53:09,960
+alright so the result of an optimization version of state you know this is what
+
+921
+00:53:09,960 --> 00:53:12,720
+version of state you know this is what the problem is is minimization of some
+
+922
+00:53:12,720 --> 00:53:17,010
+the problem is is minimization of some function unfortunately there is no such
+
+923
+00:53:17,010 --> 00:53:18,720
+function unfortunately there is no such a thing as working with the lower bound
+
+924
+00:53:18,720 --> 00:53:21,300
+a thing as working with the lower bound that we saw you may be realized but the
+
+925
+00:53:21,300 --> 00:53:23,220
+that we saw you may be realized but the measurement we need the latest increase
+
+926
+00:53:23,220 --> 00:53:25,740
+measurement we need the latest increase so here if you do here's his energy
+
+927
+00:53:25,740 --> 00:53:28,050
+so here if you do here's his energy function where you do if iterations this
+
+928
+00:53:28,050 --> 00:53:32,820
+function where you do if iterations this absolutely no proof no reason why that
+
+929
+00:53:32,820 --> 00:53:35,040
+absolutely no proof no reason why that energy function will actually be
+
+930
+00:53:35,040 --> 00:53:41,450
+energy function will actually be maximized and it will be monotonically
+
+931
+00:53:41,450 --> 00:53:41,460
+
+
+932
+00:53:41,460 --> 00:53:47,100
+converges then you reach the stationary of this energy constant so if you get a
+
+933
+00:53:47,100 --> 00:53:49,980
+of this energy constant so if you get a solution that's the right solution what
+
+934
+00:53:49,980 --> 00:54:00,380
+solution that's the right solution what happens in between its mayor Fox okay
+
+935
+00:54:00,380 --> 00:54:00,390
+
+
+936
+00:54:00,390 --> 00:54:08,210
+so very big to show you possibly API which works for face daunting problem
+
+937
+00:54:08,210 --> 00:54:10,789
+which works for face daunting problem and then we will love definitely we have
+
+938
+00:54:10,789 --> 00:54:13,420
+and then we will love definitely we have a few minutes so I can tell you on
+
+939
+00:54:13,420 --> 00:54:16,370
+a few minutes so I can tell you on extending this to to publish the
+
+940
+00:54:16,370 --> 00:54:18,769
+extending this to to publish the graphical models so we can make
+
+941
+00:54:18,769 --> 00:54:20,930
+graphical models so we can make connections with other algorithms so I
+
+942
+00:54:20,930 --> 00:54:25,160
+connections with other algorithms so I know that the problem is we only want to
+
+943
+00:54:25,160 --> 00:54:31,039
+know that the problem is we only want to compute the the mean of this Gaussian so
+
+944
+00:54:31,039 --> 00:54:33,349
+compute the the mean of this Gaussian so we collect data but the data basically
+
+945
+00:54:33,349 --> 00:54:36,170
+we collect data but the data basically are noisy because some of the data may
+
+946
+00:54:36,170 --> 00:54:38,269
+are noisy because some of the data may be coming from this three bit dollars in
+
+947
+00:54:38,269 --> 00:54:39,859
+be coming from this three bit dollars in the submission but some of them can be
+
+948
+00:54:39,859 --> 00:54:42,349
+the submission but some of them can be coming from the squatter distribution so
+
+949
+00:54:42,349 --> 00:54:44,660
+coming from the squatter distribution so it can be completely relevant to the
+
+950
+00:54:44,660 --> 00:54:47,269
+it can be completely relevant to the mean that you want to estimate okay so
+
+951
+00:54:47,269 --> 00:54:48,710
+mean that you want to estimate okay so that's why this is called the clattering
+
+952
+00:54:48,710 --> 00:54:52,160
+that's why this is called the clattering problem we're going to put some prior on
+
+953
+00:54:52,160 --> 00:54:54,130
+problem we're going to put some prior on the parameters theta
+
+954
+00:54:54,130 --> 00:54:57,529
+the parameters theta obviously the UH normalized posterior
+
+955
+00:54:57,529 --> 00:55:01,400
+obviously the UH normalized posterior looks like this it's like if we turbine
+
+956
+00:55:01,400 --> 00:55:03,079
+looks like this it's like if we turbine is a Gaussian mixture so you have 2 to
+
+957
+00:55:03,079 --> 00:55:05,839
+is a Gaussian mixture so you have 2 to the N terms so this is not something if
+
+958
+00:55:05,839 --> 00:55:10,309
+the N terms so this is not something if you can work with so you can see here if
+
+959
+00:55:10,309 --> 00:55:12,470
+you can work with so you can see here if this is the to really Gaussian that you
+
+960
+00:55:12,470 --> 00:55:14,509
+this is the to really Gaussian that you want to extract the mean a lots of data
+
+961
+00:55:14,509 --> 00:55:16,069
+want to extract the mean a lots of data concentrate here but you have a lots of
+
+962
+00:55:16,069 --> 00:55:18,109
+concentrate here but you have a lots of data but have nothing to do with this
+
+963
+00:55:18,109 --> 00:55:19,880
+data but have nothing to do with this particular means so you want to be able
+
+964
+00:55:19,880 --> 00:55:27,650
+particular means so you want to be able to do inference so I that I recommend
+
+965
+00:55:27,650 --> 00:55:29,900
+to do inference so I that I recommend that you make this problem because you
+
+966
+00:55:29,900 --> 00:55:32,079
+that you make this problem because you know we mentioned things becoming
+
+967
+00:55:32,079 --> 00:55:34,519
+know we mentioned things becoming Gaussian like distributions with
+
+968
+00:55:34,519 --> 00:55:37,940
+Gaussian like distributions with negative variance if you can you know if
+
+969
+00:55:37,940 --> 00:55:40,640
+negative variance if you can you know if you look at the bra on this problem and
+
+970
+00:55:40,640 --> 00:55:42,640
+you look at the bra on this problem and you try to implement it then we have a
+
+971
+00:55:42,640 --> 00:55:45,890
+you try to implement it then we have a Python code you will see why there are
+
+972
+00:55:45,890 --> 00:55:48,710
+Python code you will see why there are problems there so I want you to actually
+
+973
+00:55:48,710 --> 00:55:51,289
+problems there so I want you to actually move algebra at the algebra is not very
+
+974
+00:55:51,289 --> 00:55:53,359
+move algebra at the algebra is not very difficult the proofs are in the slides
+
+975
+00:55:53,359 --> 00:55:55,910
+difficult the proofs are in the slides so what we are going to do is I'm just
+
+976
+00:55:55,910 --> 00:55:58,670
+so what we are going to do is I'm just gonna summarize the results we are going
+
+977
+00:55:58,670 --> 00:56:00,620
+gonna summarize the results we are going to take an approximation of pure theta
+
+978
+00:56:00,620 --> 00:56:03,670
+to take an approximation of pure theta to be a multivariate Gaussian okay
+
+979
+00:56:03,670 --> 00:56:07,549
+to be a multivariate Gaussian okay obviously this means the factors will be
+
+980
+00:56:07,549 --> 00:56:08,580
+obviously this means the factors will be also
+
+981
+00:56:08,580 --> 00:56:11,790
+also thousands but in the spirit of what we
+
+982
+00:56:11,790 --> 00:56:13,880
+thousands but in the spirit of what we discussed about Dodgers with negative
+
+983
+00:56:13,880 --> 00:56:16,740
+discussed about Dodgers with negative audience we are aggressive response of
+
+984
+00:56:16,740 --> 00:56:20,400
+audience we are aggressive response of stamina meditation care and and the
+
+985
+00:56:20,400 --> 00:56:22,320
+stamina meditation care and and the square exponential here for effectively
+
+986
+00:56:22,320 --> 00:56:26,010
+square exponential here for effectively that variance bien can be negative so
+
+987
+00:56:26,010 --> 00:56:27,480
+that variance bien can be negative so this notion I have been looking at them
+
+988
+00:56:27,480 --> 00:56:30,270
+this notion I have been looking at them on distribution would be upside down
+
+989
+00:56:30,270 --> 00:56:35,940
+on distribution would be upside down okay so you need to start this away from
+
+990
+00:56:35,940 --> 00:56:40,230
+okay so you need to start this away from with some initialization and for example
+
+991
+00:56:40,230 --> 00:56:44,250
+with some initialization and for example you can say of this factors to be equal
+
+992
+00:56:44,250 --> 00:56:44,880
+you can say of this factors to be equal to one
+
+993
+00:56:44,880 --> 00:56:47,670
+to one that's what is discussed here okay this
+
+994
+00:56:47,670 --> 00:56:49,320
+that's what is discussed here okay this assume immensely metal does the same
+
+995
+00:56:49,320 --> 00:56:51,570
+assume immensely metal does the same thing in approximating the fastest when
+
+996
+00:56:51,570 --> 00:56:53,190
+thing in approximating the fastest when you stop so you need to have something
+
+997
+00:56:53,190 --> 00:56:56,700
+you stop so you need to have something to start with okay you follow the Eiger
+
+998
+00:56:56,700 --> 00:56:58,440
+to start with okay you follow the Eiger if you're going to update would say one
+
+999
+00:56:58,440 --> 00:57:00,690
+if you're going to update would say one factor you form this cavity this
+
+1000
+00:57:00,690 --> 00:57:03,540
+factor you form this cavity this condition you computer organization you
+
+1001
+00:57:03,540 --> 00:57:06,060
+condition you computer organization you do moment marching you point in you and
+
+1002
+00:57:06,060 --> 00:57:07,950
+do moment marching you point in you and then you have there is a factor so the
+
+1003
+00:57:07,950 --> 00:57:11,310
+then you have there is a factor so the question is if you have beta factor what
+
+1004
+00:57:11,310 --> 00:57:14,130
+question is if you have beta factor what will be the mean and the variance of a
+
+1005
+00:57:14,130 --> 00:57:17,550
+will be the mean and the variance of a factor and the ancestors are the five
+
+1006
+00:57:17,550 --> 00:57:23,739
+factor and the ancestors are the five carat ring slide maybe giving this
+
+1007
+00:57:23,739 --> 00:57:23,749
+
+
+1008
+00:57:23,749 --> 00:57:35,410
+give me one second okay sterically the you know I thought there's two dreams
+
+1009
+00:57:35,410 --> 00:57:37,569
+you know I thought there's two dreams like having all the answers so if you
+
+1010
+00:57:37,569 --> 00:57:40,269
+like having all the answers so if you compute first the cavity the
+
+1011
+00:57:40,269 --> 00:57:43,930
+compute first the cavity the distribution it comes to be a Gaussian
+
+1012
+00:57:43,930 --> 00:57:46,539
+distribution it comes to be a Gaussian like this is the inverse variance is the
+
+1013
+00:57:46,539 --> 00:57:51,489
+like this is the inverse variance is the precision how it looks like okay this is
+
+1014
+00:57:51,489 --> 00:57:55,989
+precision how it looks like okay this is the main okay the normalization factor
+
+1015
+00:57:55,989 --> 00:58:00,579
+the main okay the normalization factor you can compute as well and and then you
+
+1016
+00:58:00,579 --> 00:58:03,880
+you can compute as well and and then you have to update you okay and you can so
+
+1017
+00:58:03,880 --> 00:58:07,120
+have to update you okay and you can so actually the updates of can you they
+
+1018
+00:58:07,120 --> 00:58:09,099
+actually the updates of can you they look and actually they updates you know
+
+1019
+00:58:09,099 --> 00:58:11,559
+look and actually they updates you know I'm looking on top will end here so the
+
+1020
+00:58:11,559 --> 00:58:14,109
+I'm looking on top will end here so the updates of June you look the way that
+
+1021
+00:58:14,109 --> 00:58:16,479
+updates of June you look the way that you see them here very nice clean
+
+1022
+00:58:16,479 --> 00:58:18,999
+you see them here very nice clean formula where actually this coefficient
+
+1023
+00:58:18,999 --> 00:58:21,219
+formula where actually this coefficient looks like the probability of the point
+
+1024
+00:58:21,219 --> 00:58:25,809
+looks like the probability of the point X and not being a plotter okay
+
+1025
+00:58:25,809 --> 00:58:29,920
+X and not being a plotter okay so again an analytical expression for
+
+1026
+00:58:29,920 --> 00:58:33,910
+so again an analytical expression for this these mean of the community
+
+1027
+00:58:33,910 --> 00:58:36,670
+this these mean of the community distribution is knowing the variance of
+
+1028
+00:58:36,670 --> 00:58:40,660
+distribution is knowing the variance of the kayuu distribution is also known a
+
+1029
+00:58:40,660 --> 00:58:43,779
+the kayuu distribution is also known a little early to page slides of the
+
+1030
+00:58:43,779 --> 00:58:46,809
+little early to page slides of the relation or the calculation start in
+
+1031
+00:58:46,809 --> 00:58:54,789
+relation or the calculation start in right and and if you you have the
+
+1032
+00:58:54,789 --> 00:58:59,469
+right and and if you you have the distribution you know gaussians like you
+
+1033
+00:58:59,469 --> 00:59:02,559
+distribution you know gaussians like you can update it after and the updates of
+
+1034
+00:59:02,559 --> 00:59:05,319
+can update it after and the updates of the part of them are spirits potentials
+
+1035
+00:59:05,319 --> 00:59:08,709
+the part of them are spirits potentials like that as before the mean is given by
+
+1036
+00:59:08,709 --> 00:59:11,589
+like that as before the mean is given by this nice expression the precision
+
+1037
+00:59:11,589 --> 00:59:13,839
+this nice expression the precision variance is given like this so the
+
+1038
+00:59:13,839 --> 00:59:18,099
+variance is given like this so the police jumped on the total problem or
+
+1039
+00:59:18,099 --> 00:59:21,190
+police jumped on the total problem or analytical so actually you can see sort
+
+1040
+00:59:21,190 --> 00:59:25,020
+analytical so actually you can see sort of this equation you know
+
+1041
+00:59:25,020 --> 00:59:27,090
+of this equation you know in with written Amish there are no perks
+
+1042
+00:59:27,090 --> 00:59:33,410
+in with written Amish there are no perks maesters non-medical approximation okay
+
+1043
+00:59:33,410 --> 00:59:35,910
+maesters non-medical approximation okay you can actually calculate the model
+
+1044
+00:59:35,910 --> 00:59:39,150
+you can actually calculate the model evidence as well analytically at the end
+
+1045
+00:59:39,150 --> 00:59:40,140
+evidence as well analytically at the end of the day one of the whole thing
+
+1046
+00:59:40,140 --> 00:59:43,130
+of the day one of the whole thing converges and the resilient item code
+
+1047
+00:59:43,130 --> 00:59:45,870
+converges and the resilient item code that you can allow for this type of
+
+1048
+00:59:45,870 --> 00:59:46,590
+that you can allow for this type of problem
+
+1049
+00:59:46,590 --> 00:59:50,250
+problem and mr. t Rizal Park sorry that what you
+
+1050
+00:59:50,250 --> 00:59:52,970
+and mr. t Rizal Park sorry that what you seek here this can you motion for you
+
+1051
+00:59:52,970 --> 01:00:00,630
+seek here this can you motion for you upside down all right why not I mean you
+
+1052
+01:00:00,630 --> 01:00:07,440
+upside down all right why not I mean you get the henna guys and all there was why
+
+1053
+01:00:07,440 --> 01:00:12,330
+get the henna guys and all there was why not okay
+
+1054
+01:00:12,330 --> 01:00:12,340
+
+
+1055
+01:00:12,340 --> 01:00:18,690
+again this is FN this is the approximation factor offense so you're
+
+1056
+01:00:18,690 --> 01:00:21,030
+approximation factor offense so you're not this year it's not really that you
+
+1057
+01:00:21,030 --> 01:00:23,070
+not this year it's not really that you are trying to monitor this with a pen
+
+1058
+01:00:23,070 --> 01:00:25,340
+are trying to monitor this with a pen you are trying to actually concentrate
+
+1059
+01:00:25,340 --> 01:00:28,170
+you are trying to actually concentrate in the region where the support of this
+
+1060
+01:00:28,170 --> 01:00:30,210
+in the region where the support of this cavity distribution is which is here and
+
+1061
+01:00:30,210 --> 01:00:32,220
+cavity distribution is which is here and that's what the approximation it's good
+
+1062
+01:00:32,220 --> 01:00:33,900
+that's what the approximation it's good the rest there's nothing you can do
+
+1063
+01:00:33,900 --> 01:00:36,900
+the rest there's nothing you can do about okay and in some sense you don't
+
+1064
+01:00:36,900 --> 01:00:41,130
+about okay and in some sense you don't really care and similarly in this case
+
+1065
+01:00:41,130 --> 01:00:44,940
+really care and similarly in this case the convict is here that you can see the
+
+1066
+01:00:44,940 --> 01:00:47,090
+the convict is here that you can see the two approximation is not very well
+
+1067
+01:00:47,090 --> 01:00:53,330
+two approximation is not very well almost they coincide in that region so
+
+1068
+01:00:53,330 --> 01:00:55,770
+almost they coincide in that region so it's actually for the clutter problem
+
+1069
+01:00:55,770 --> 01:00:59,220
+it's actually for the clutter problem they are in part of the Python code so
+
+1070
+01:00:59,220 --> 01:01:02,130
+they are in part of the Python code so you can if you do variation of a is you
+
+1071
+01:01:02,130 --> 01:01:04,710
+you can if you do variation of a is you use Laplace approximation you can push
+
+1072
+01:01:04,710 --> 01:01:06,240
+use Laplace approximation you can push it to as many days as you want to
+
+1073
+01:01:06,240 --> 01:01:08,220
+it to as many days as you want to basically it's proficient propagation
+
+1074
+01:01:08,220 --> 01:01:09,870
+basically it's proficient propagation through this problem performance the
+
+1075
+01:01:09,870 --> 01:01:11,300
+through this problem performance the best okay
+
+1076
+01:01:11,300 --> 01:01:13,350
+best okay institutional coming around this
+
+1077
+01:01:13,350 --> 01:01:16,350
+institutional coming around this grappling problem because he was very
+
+1078
+01:01:16,350 --> 01:01:18,390
+grappling problem because he was very easily programming they need to be
+
+1079
+01:01:18,390 --> 01:01:20,280
+easily programming they need to be completing everything was analytical and
+
+1080
+01:01:20,280 --> 01:01:22,560
+completing everything was analytical and it was also a problem quite if he comes
+
+1081
+01:01:22,560 --> 01:01:25,260
+it was also a problem quite if he comes to some of the best okay maybe you can
+
+1082
+01:01:25,260 --> 01:01:27,600
+to some of the best okay maybe you can do a problem that it becomes this for
+
+1083
+01:01:27,600 --> 01:01:36,010
+do a problem that it becomes this for you are not the best
+
+1084
+01:01:36,010 --> 01:01:36,020
+
+
+1085
+01:01:36,020 --> 01:02:58,130
+okay we have because we basically be updating information related to
+
+1086
+01:02:58,130 --> 01:03:01,490
+updating information related to variables X 1 and X 2 ok nothing else
+
+1087
+01:03:01,490 --> 01:03:06,850
+variables X 1 and X 2 ok nothing else so can somehow envision that there is no
+
+1088
+01:03:06,850 --> 01:03:09,440
+so can somehow envision that there is no expectation propagation language that's
+
+1089
+01:03:09,440 --> 01:03:11,690
+expectation propagation language that's why the title of the presentation today
+
+1090
+01:03:11,690 --> 01:03:14,570
+why the title of the presentation today was local variation fluctuations where
+
+1091
+01:03:14,570 --> 01:03:17,360
+was local variation fluctuations where somehow the whole thing collapses to
+
+1092
+01:03:17,360 --> 01:03:19,160
+somehow the whole thing collapses to allow us to do an update here and update
+
+1093
+01:03:19,160 --> 01:03:22,010
+allow us to do an update here and update there and update their etc and even
+
+1094
+01:03:22,010 --> 01:03:28,760
+there and update their etc and even further actually if you so let's say
+
+1095
+01:03:28,760 --> 01:03:32,210
+further actually if you so let's say a theorist function of x1 x2 maybe you
+
+1096
+01:03:32,210 --> 01:03:34,790
+a theorist function of x1 x2 maybe you can even fertilize this 2 factor of x 1
+
+1097
+01:03:34,790 --> 01:03:36,380
+can even fertilize this 2 factor of x 1 so you can have a polyester
+
+1098
+01:03:36,380 --> 01:03:39,680
+so you can have a polyester approximation as 1/4 - 20 X 1 and in all
+
+1099
+01:03:39,680 --> 01:03:42,050
+approximation as 1/4 - 20 X 1 and in all factor of X 2 and similarly here did you
+
+1100
+01:03:42,050 --> 01:03:43,850
+factor of X 2 and similarly here did you have something else on a function of X 2
+
+1101
+01:03:43,850 --> 01:03:46,490
+have something else on a function of X 2 the function of X 4 can you update each
+
+1102
+01:03:46,490 --> 01:03:47,990
+the function of X 4 can you update each of them separately
+
+1103
+01:03:47,990 --> 01:03:50,510
+of them separately ok can you update each of them
+
+1104
+01:03:50,510 --> 01:03:53,930
+ok can you update each of them separately - it's amazing you will say
+
+1105
+01:03:53,930 --> 01:03:56,660
+separately - it's amazing you will say that I can figure the answer is yes you
+
+1106
+01:03:56,660 --> 01:03:59,750
+that I can figure the answer is yes you can and then we will see everything we
+
+1107
+01:03:59,750 --> 01:04:01,730
+can and then we will see everything we learn about influencing graphs in
+
+1108
+01:04:01,730 --> 01:04:05,720
+learn about influencing graphs in particularly ideas of you know master
+
+1109
+01:04:05,720 --> 01:04:10,670
+particularly ideas of you know master spacing and propagation all of these
+
+1110
+01:04:10,670 --> 01:04:20,140
+spacing and propagation all of these cases are
+
+1111
+01:04:20,140 --> 01:04:20,150
+
+
+1112
+01:04:20,150 --> 01:05:14,690
+ok ok just to make things simple you can be factorized or groups of animals but
+
+1113
+01:05:14,690 --> 01:05:17,390
+be factorized or groups of animals but right now let's take you to the top four
+
+1114
+01:05:17,390 --> 01:05:20,660
+right now let's take you to the top four eyes and using a monkey - of Z to attack
+
+1115
+01:05:20,660 --> 01:05:23,600
+eyes and using a monkey - of Z to attack alright so we want to minimize this
+
+1116
+01:05:23,600 --> 01:05:25,910
+alright so we want to minimize this Traverse K of distance of P and Q so I'm
+
+1117
+01:05:25,910 --> 01:05:30,200
+Traverse K of distance of P and Q so I'm writing this the definition - P of
+
+1118
+01:05:30,200 --> 01:05:31,400
+writing this the definition - P of longer pupae
+
+1119
+01:05:31,400 --> 01:05:35,760
+longer pupae right or like be longer Peele
+
+1120
+01:05:35,760 --> 01:05:39,150
+right or like be longer Peele / cured us about there okay Scott
+
+1121
+01:05:39,150 --> 01:05:42,140
+/ cured us about there okay Scott so we need less time doing ads about now
+
+1122
+01:05:42,140 --> 01:05:46,680
+so we need less time doing ads about now the mission of a life is living as a
+
+1123
+01:05:46,680 --> 01:05:50,850
+the mission of a life is living as a poet with two eyes that are conscious of
+
+1124
+01:05:50,850 --> 01:05:54,030
+poet with two eyes that are conscious of Zi so because I have a monk here you
+
+1125
+01:05:54,030 --> 01:05:55,800
+Zi so because I have a monk here you agree with me that there Nathan would
+
+1126
+01:05:55,800 --> 01:05:57,630
+agree with me that there Nathan would give me minus B of Z summation of the
+
+1127
+01:05:57,630 --> 01:06:01,190
+give me minus B of Z summation of the level choice of Zi all right yes
+
+1128
+01:06:01,190 --> 01:06:04,770
+level choice of Zi all right yes - babe love opium gives me the entropy I
+
+1129
+01:06:04,770 --> 01:06:06,870
+- babe love opium gives me the entropy I don't care there is no dependence on you
+
+1130
+01:06:06,870 --> 01:06:10,920
+don't care there is no dependence on you so I am going to identify only the
+
+1131
+01:06:10,920 --> 01:06:13,440
+so I am going to identify only the proper QJ because this is what I am
+
+1132
+01:06:13,440 --> 01:06:15,420
+proper QJ because this is what I am going to update while you are going to
+
+1133
+01:06:15,420 --> 01:06:18,600
+going to update while you are going to see what is the effective to j1 we
+
+1134
+01:06:18,600 --> 01:06:21,660
+see what is the effective to j1 we minimize this listen so I am only take
+
+1135
+01:06:21,660 --> 01:06:24,359
+minimize this listen so I am only take 2j the rest of the terms don't depend on
+
+1136
+01:06:24,359 --> 01:06:27,420
+2j the rest of the terms don't depend on the situation I don't care or I Trump
+
+1137
+01:06:27,420 --> 01:06:29,670
+the situation I don't care or I Trump I'm going to rewrite this nice thing as
+
+1138
+01:06:29,670 --> 01:06:36,150
+I'm going to rewrite this nice thing as - fitzy all right and I'm going to
+
+1139
+01:06:36,150 --> 01:06:39,150
+- fitzy all right and I'm going to integrate all the Bible since the except
+
+1140
+01:06:39,150 --> 01:06:42,810
+integrate all the Bible since the except J so can you tell me this distribution
+
+1141
+01:06:42,810 --> 01:06:45,810
+J so can you tell me this distribution this integral what this tribution is it
+
+1142
+01:06:45,810 --> 01:06:47,580
+this integral what this tribution is it so when you take P of Z and you
+
+1143
+01:06:47,580 --> 01:06:49,830
+so when you take P of Z and you integrate everything out but sorry
+
+1144
+01:06:49,830 --> 01:06:56,640
+integrate everything out but sorry what do you get so when you take P of 0
+
+1145
+01:06:56,640 --> 01:07:01,780
+what do you get so when you take P of 0 integrate all the variables for J
+
+1146
+01:07:01,780 --> 01:07:01,790
+
+
+1147
+01:07:01,790 --> 01:07:08,599
+the Monsuno you get the mountain on you know ZJ mr. Fontenot
+
+1148
+01:07:08,599 --> 01:07:11,330
+know ZJ mr. Fontenot alright so ridiculous dimanche though
+
+1149
+01:07:11,330 --> 01:07:13,790
+alright so ridiculous dimanche though alright so this is really the moments
+
+1150
+01:07:13,790 --> 01:07:19,099
+alright so this is really the moments ago fine okay and so now we need to
+
+1151
+01:07:19,099 --> 01:07:21,440
+ago fine okay and so now we need to minimize this it's a functional of the
+
+1152
+01:07:21,440 --> 01:07:23,150
+minimize this it's a functional of the optimization problem you cannot just
+
+1153
+01:07:23,150 --> 01:07:25,190
+optimization problem you cannot just take the river to respective use a so
+
+1154
+01:07:25,190 --> 01:07:26,900
+take the river to respective use a so you need to and of course but QJ is
+
+1155
+01:07:26,900 --> 01:07:42,040
+you need to and of course but QJ is normalized
+
+1156
+01:07:42,040 --> 01:07:42,050
+
+
+1157
+01:07:42,050 --> 01:08:42,050
+okay okay makes sense to have approximation for its factors like you
+
+1158
+01:08:42,050 --> 01:08:44,390
+approximation for its factors like you know if a caveat because it's a trap
+
+1159
+01:08:44,390 --> 01:08:53,630
+know if a caveat because it's a trap secretly and in actually the individual
+
+1160
+01:08:53,630 --> 01:08:56,479
+secretly and in actually the individual component inside is part of so a very
+
+1161
+01:08:56,479 --> 01:09:02,120
+component inside is part of so a very one of its one of a 232 FB 252 f p3 of X
+
+1162
+01:09:02,120 --> 01:09:04,970
+one of its one of a 232 FB 252 f p3 of X 3 etcetera okay so that way we have a
+
+1163
+01:09:04,970 --> 01:09:30,380
+3 etcetera okay so that way we have a twenty factorized
+
+1164
+01:09:30,380 --> 01:09:30,390
+
+
+1165
+01:09:30,390 --> 01:10:32,930
+okay so we want to minimize the distance between birth distribution and Q of X
+
+1166
+01:10:32,930 --> 01:10:32,940
+
+
+1167
+01:10:32,940 --> 01:10:41,280
+and then from there we're going to come up with an update for this part by
+
+1168
+01:10:41,280 --> 01:10:46,980
+up with an update for this part by dividing by the cavity distribution an
+
+1169
+01:10:46,980 --> 01:10:49,200
+dividing by the cavity distribution an optimization problem is we need to bring
+
+1170
+01:10:49,200 --> 01:10:52,410
+optimization problem is we need to bring this distribution as close as possible
+
+1171
+01:10:52,410 --> 01:10:58,669
+this distribution as close as possible to this distribution right
+
+1172
+01:10:58,669 --> 01:11:02,390
+to this distribution right okay can you pay me based on what we saw
+
+1173
+01:11:02,390 --> 01:11:05,030
+okay can you pay me based on what we saw here let's listen to my optimization
+
+1174
+01:11:05,030 --> 01:11:11,589
+here let's listen to my optimization problem
+
+1175
+01:11:11,589 --> 01:11:11,599
+
+
+1176
+01:11:11,599 --> 01:11:23,339
+so if you missed the minimize missed from the mention of distribution
+
+1177
+01:11:23,339 --> 01:11:23,349
+
+
+1178
+01:11:23,349 --> 01:11:33,189
+operations that come out that they have to be able to work so this they have to
+
+1179
+01:11:33,189 --> 01:11:37,660
+to be able to work so this they have to be equal to given as you know the
+
+1180
+01:11:37,660 --> 01:11:42,540
+be equal to given as you know the motivation the modular submit original
+
+1181
+01:11:42,540 --> 01:11:47,830
+motivation the modular submit original this the Mazda mx-5 is just this stuff
+
+1182
+01:11:47,830 --> 01:11:49,839
+this the Mazda mx-5 is just this stuff alright what's the marginal effects
+
+1183
+01:11:49,839 --> 01:11:51,970
+alright what's the marginal effects customers extra fee RS the X 2 this is X
+
+1184
+01:11:51,970 --> 01:11:55,560
+customers extra fee RS the X 2 this is X 3 so if is this for with someone X 3
+
+1185
+01:11:55,560 --> 01:12:00,040
+3 so if is this for with someone X 3 what is the mountain X 3 I see on in
+
+1186
+01:12:00,040 --> 01:12:01,780
+what is the mountain X 3 I see on in this term here so we have to integrate
+
+1187
+01:12:01,780 --> 01:12:21,200
+this term here so we have to integrate no extreme twist anything else
+
+1188
+01:12:21,200 --> 01:12:21,210
+
+
+1189
+01:12:21,210 --> 01:13:07,460
+I'm sorry I wasn't paying attention
+
+1190
+01:13:07,460 --> 01:13:07,470
+
+
+1191
+01:13:07,470 --> 01:13:41,240
+[Music]
+
+1192
+01:13:41,240 --> 01:13:41,250
+
+
+1193
+01:13:41,250 --> 01:13:52,890
+okay anything that will disappear so make sure that we get this we get the
+
+1194
+01:13:52,890 --> 01:13:56,340
+make sure that we get this we get the update that is the summation X 3 of f DX
+
+1195
+01:13:56,340 --> 01:14:01,200
+update that is the summation X 3 of f DX 2 3 all right which is this down all
+
+1196
+01:14:01,200 --> 01:14:06,360
+2 3 all right which is this down all right and then this their FB 3 ok FP 3
+
+1197
+01:14:06,360 --> 01:14:32,860
+right and then this their FB 3 ok FP 3 is a decreased this summation here
+
+1198
+01:14:32,860 --> 01:14:32,870
+
+
+1199
+01:14:32,870 --> 01:14:37,580
+we get the update of being this and the date of FB 3
+
+1200
+01:14:37,580 --> 01:14:41,660
+date of FB 3 being done now let's concentrate because
+
+1201
+01:14:41,660 --> 01:14:43,820
+being done now let's concentrate because we only have two minutes on this
+
+1202
+01:14:43,820 --> 01:14:46,190
+we only have two minutes on this equation tells me if it reminds you
+
+1203
+01:14:46,190 --> 01:14:50,510
+equation tells me if it reminds you anything at all so by doing this if P
+
+1204
+01:14:50,510 --> 01:15:02,920
+anything at all so by doing this if P and effectively moment maps interesting
+
+1205
+01:15:02,920 --> 01:15:02,930
+
+
+1206
+01:15:02,930 --> 01:15:10,320
+[Music]
+
+1207
+01:15:10,320 --> 01:15:10,330
+
+
+1208
+01:15:10,330 --> 01:15:18,640
+[Music]
+
+1209
+01:15:18,640 --> 01:15:18,650
+
+
+1210
+01:15:18,650 --> 01:15:35,480
+this is no sense to know X 2 dot this down here and this part the sense to
+
+1211
+01:15:35,480 --> 01:15:39,560
+down here and this part the sense to know X 2 which is various and then I
+
+1212
+01:15:39,560 --> 01:15:43,610
+know X 2 which is various and then I take this factor which is a function of
+
+1213
+01:15:43,610 --> 01:15:46,160
+take this factor which is a function of X 2 and X 3 and it's a great house X 2
+
+1214
+01:15:46,160 --> 01:15:48,080
+X 2 and X 3 and it's a great house X 2 you know what I get I get the message
+
+1215
+01:15:48,080 --> 01:15:53,120
+you know what I get I get the message that is propagated to excrete okay so
+
+1216
+01:15:53,120 --> 01:15:56,810
+that is propagated to excrete okay so basically belief propagation comes as a
+
+1217
+01:15:56,810 --> 01:15:59,600
+basically belief propagation comes as a trivial exercise of expectation
+
+1218
+01:15:59,600 --> 01:16:06,500
+trivial exercise of expectation propagates okay you know not just really
+
+1219
+01:16:06,500 --> 01:16:09,230
+propagates okay you know not just really expect it right but it's just one of
+
+1220
+01:16:09,230 --> 01:16:10,979
+expect it right but it's just one of these miracles of
+
+1221
+01:16:10,979 --> 01:16:14,610
+these miracles of of mathematics and ingenuity and stimuli
+
+1222
+01:16:14,610 --> 01:16:16,580
+of mathematics and ingenuity and stimuli you can shop or view all the terror okay
+
+1223
+01:16:16,580 --> 01:16:22,050
+you can shop or view all the terror okay I suggest that you look at the slides I
+
+1224
+01:16:22,050 --> 01:16:24,720
+I suggest that you look at the slides I don't have time to discuss this further
+
+1225
+01:16:24,720 --> 01:16:27,390
+don't have time to discuss this further you can extend this this two very
+
+1226
+01:16:27,390 --> 01:16:28,770
+you can extend this this two very important maybe this key needs to be
+
+1227
+01:16:28,770 --> 01:16:30,870
+important maybe this key needs to be discussed on Thursday but basically if
+
+1228
+01:16:30,870 --> 01:16:33,810
+discussed on Thursday but basically if you can extend this to general belief
+
+1229
+01:16:33,810 --> 01:16:45,709
+you can extend this to general belief propagation okay and you can share that
+
+1230
+01:16:45,709 --> 01:16:45,719
+
+
+1231
+01:16:45,719 --> 01:16:52,260
+knowledge and this dysfunction so where the bottom edge of each note separatory
+
+1232
+01:16:52,260 --> 01:16:55,380
+the bottom edge of each note separatory all right you can update this variable
+
+1233
+01:16:55,380 --> 01:16:58,020
+all right you can update this variable amount for example and the wave length
+
+1234
+01:16:58,020 --> 01:17:02,040
+amount for example and the wave length is variable along when we did you know
+
+1235
+01:17:02,040 --> 01:17:04,919
+is variable along when we did you know passing we took all of the messages that
+
+1236
+01:17:04,919 --> 01:17:06,930
+passing we took all of the messages that are coming from this factor to the
+
+1237
+01:17:06,930 --> 01:17:08,729
+are coming from this factor to the neighbors of this particle collective
+
+1238
+01:17:08,729 --> 01:17:13,890
+neighbors of this particle collective not to this node L and so one of those
+
+1239
+01:17:13,890 --> 01:17:16,470
+not to this node L and so one of those message is coming in you multiply with
+
+1240
+01:17:16,470 --> 01:17:19,020
+message is coming in you multiply with of J and then you integrate all of the
+
+1241
+01:17:19,020 --> 01:17:21,330
+of J and then you integrate all of the variables except L and that gives you
+
+1242
+01:17:21,330 --> 01:17:25,709
+variables except L and that gives you the update of the F of T pile and it
+
+1243
+01:17:25,709 --> 01:17:27,630
+the update of the F of T pile and it comes with expectation propagation gives
+
+1244
+01:17:27,630 --> 01:17:30,300
+comes with expectation propagation gives you exactly same answer okay if you
+
+1245
+01:17:30,300 --> 01:17:32,820
+you exactly same answer okay if you don't believe me leave the notes but we
+
+1246
+01:17:32,820 --> 01:17:36,000
+don't believe me leave the notes but we will come back on this on Thursday to
+
+1247
+01:17:36,000 --> 01:17:37,470
+will come back on this on Thursday to see the miracles of expectation
+
+1248
+01:17:37,470 --> 01:17:40,110
+see the miracles of expectation propagation 
+

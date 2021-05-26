@@ -1,0 +1,5700 @@
+1
+00:02:31,830 --> 00:02:38,020
+but I was not waiting for anybody else to show up we need to start this bill 51
+
+2
+00:02:38,020 --> 00:02:41,390
+to show up we need to start this bill 51 so I'm gonna try to finish state-space
+
+3
+00:02:41,390 --> 00:02:44,960
+so I'm gonna try to finish state-space models today there will be more things
+
+4
+00:02:44,960 --> 00:02:49,580
+models today there will be more things in where they are then unbelievers as
+
+5
+00:02:49,580 --> 00:02:57,920
+in where they are then unbelievers as they say and more okay so where I was
+
+6
+00:02:57,920 --> 00:02:59,500
+they say and more okay so where I was gonna say what we are trying to finish
+
+7
+00:02:59,500 --> 00:03:02,570
+gonna say what we are trying to finish states based on those but there is lots
+
+8
+00:03:02,570 --> 00:03:05,750
+states based on those but there is lots of stuff in the notes that I don't think
+
+9
+00:03:05,750 --> 00:03:09,140
+of stuff in the notes that I don't think I will cover so that you don't get a
+
+10
+00:03:09,140 --> 00:03:11,600
+I will cover so that you don't get a headache and also we can discuss more
+
+11
+00:03:11,600 --> 00:03:13,940
+headache and also we can discuss more topics so what I want to do today is
+
+12
+00:03:13,940 --> 00:03:17,690
+topics so what I want to do today is something sort of elementary and some
+
+13
+00:03:17,690 --> 00:03:21,530
+something sort of elementary and some ways implied in in the things we have
+
+14
+00:03:21,530 --> 00:03:23,750
+ways implied in in the things we have seen before I you know so last lecture
+
+15
+00:03:23,750 --> 00:03:27,290
+seen before I you know so last lecture we derived the turn of history questions
+
+16
+00:03:27,290 --> 00:03:30,740
+we derived the turn of history questions for linear dynamical systems from
+
+17
+00:03:30,740 --> 00:03:33,470
+for linear dynamical systems from scratch basically we looked at the
+
+18
+00:03:33,470 --> 00:03:36,290
+scratch basically we looked at the questions we said this this independence
+
+19
+00:03:36,290 --> 00:03:38,180
+questions we said this this independence relations and playing with probability
+
+20
+00:03:38,180 --> 00:03:41,840
+relations and playing with probability laws we derived the the color pintura
+
+21
+00:03:41,840 --> 00:03:44,270
+laws we derived the the color pintura question so what I want to do is I want
+
+22
+00:03:44,270 --> 00:03:47,210
+question so what I want to do is I want to show you that in essence everything
+
+23
+00:03:47,210 --> 00:03:50,630
+to show you that in essence everything we learn about rest is passing when we
+
+24
+00:03:50,630 --> 00:03:52,550
+we learn about rest is passing when we apply that to the other amical systems
+
+25
+00:03:52,550 --> 00:03:55,960
+apply that to the other amical systems actually will give us directly the the
+
+26
+00:03:55,960 --> 00:03:59,960
+actually will give us directly the the the color of military questions and can
+
+27
+00:03:59,960 --> 00:04:03,530
+the color of military questions and can be generalized as well so I'm going to
+
+28
+00:04:03,530 --> 00:04:06,949
+be generalized as well so I'm going to do this highlight basically some of the
+
+29
+00:04:06,949 --> 00:04:09,890
+do this highlight basically some of the derivation the way they go they are not
+
+30
+00:04:09,890 --> 00:04:13,370
+derivation the way they go they are not trivial so so in some sense you're doing
+
+31
+00:04:13,370 --> 00:04:16,340
+trivial so so in some sense you're doing extra airport using masters passing but
+
+32
+00:04:16,340 --> 00:04:18,260
+extra airport using masters passing but at the expense basically of having an
+
+33
+00:04:18,260 --> 00:04:23,240
+at the expense basically of having an algorithm of this very general okay in
+
+34
+00:04:23,240 --> 00:04:25,100
+algorithm of this very general okay in considering the district or some
+
+35
+00:04:25,100 --> 00:04:27,530
+considering the district or some probabilistic graphical models what we
+
+36
+00:04:27,530 --> 00:04:31,540
+probabilistic graphical models what we have to do I will suggest actually that
+
+37
+00:04:31,540 --> 00:04:34,050
+have to do I will suggest actually that you guys'
+
+38
+00:04:34,050 --> 00:04:38,280
+you guys' the homework 5 maybe you do some of the
+
+39
+00:04:38,280 --> 00:04:39,810
+the homework 5 maybe you do some of the analytical calculations that we
+
+40
+00:04:39,810 --> 00:04:43,320
+analytical calculations that we discussed today because there is much to
+
+41
+00:04:43,320 --> 00:04:45,450
+discussed today because there is much to learn and they are not very difficult
+
+42
+00:04:45,450 --> 00:04:47,700
+learn and they are not very difficult but in essence if you do them you have a
+
+43
+00:04:47,700 --> 00:04:50,310
+but in essence if you do them you have a good sense of both masters passing but
+
+44
+00:04:50,310 --> 00:04:55,860
+good sense of both masters passing but also of you know dealing with the carbon
+
+45
+00:04:55,860 --> 00:04:58,670
+also of you know dealing with the carbon of in two types of equations all right
+
+46
+00:04:58,670 --> 00:05:04,470
+of in two types of equations all right so let me review for you the factor
+
+47
+00:05:04,470 --> 00:05:07,920
+so let me review for you the factor graph that corresponds to the state
+
+48
+00:05:07,920 --> 00:05:10,590
+graph that corresponds to the state space model of interest the only thing
+
+49
+00:05:10,590 --> 00:05:13,560
+space model of interest the only thing that is different here that I want to
+
+50
+00:05:13,560 --> 00:05:15,870
+that is different here that I want to remind you is that the way that we
+
+51
+00:05:15,870 --> 00:05:18,540
+remind you is that the way that we define the structure nodes we
+
+52
+00:05:18,540 --> 00:05:21,720
+define the structure nodes we incorporated both the transition model P
+
+53
+00:05:21,720 --> 00:05:24,450
+incorporated both the transition model P of Z enthusiam from Zn minus 1 to the N
+
+54
+00:05:24,450 --> 00:05:27,690
+of Z enthusiam from Zn minus 1 to the N but also the observation model so keep
+
+55
+00:05:27,690 --> 00:05:29,880
+but also the observation model so keep that in mind so it looks like a same
+
+56
+00:05:29,880 --> 00:05:32,400
+that in mind so it looks like a same thing but in reality we have accounted
+
+57
+00:05:32,400 --> 00:05:35,870
+thing but in reality we have accounted for what probability non-factor in
+
+58
+00:05:35,870 --> 00:05:38,760
+for what probability non-factor in similarly for the first part of her age
+
+59
+00:05:38,760 --> 00:05:42,750
+similarly for the first part of her age is the probability of the initial state
+
+60
+00:05:42,750 --> 00:05:45,210
+is the probability of the initial state in the observation model in the initial
+
+61
+00:05:45,210 --> 00:05:45,690
+in the observation model in the initial State
+
+62
+00:05:45,690 --> 00:05:50,310
+State alright so the message passing and you
+
+63
+00:05:50,310 --> 00:05:51,870
+alright so the message passing and you don't have to remember any questions
+
+64
+00:05:51,870 --> 00:05:55,290
+don't have to remember any questions because really it is graphical so let's
+
+65
+00:05:55,290 --> 00:05:57,750
+because really it is graphical so let's concentrate on this equation we only
+
+66
+00:05:57,750 --> 00:06:00,990
+concentrate on this equation we only look at messages that factors past the
+
+67
+00:06:00,990 --> 00:06:03,870
+look at messages that factors past the node all right the nose can actually do
+
+68
+00:06:03,870 --> 00:06:06,450
+node all right the nose can actually do anything in this draft so the message
+
+69
+00:06:06,450 --> 00:06:11,460
+anything in this draft so the message from FN to Zn is the factor itself all
+
+70
+00:06:11,460 --> 00:06:13,680
+from FN to Zn is the factor itself all right which connects the bottom of Zn
+
+71
+00:06:13,680 --> 00:06:16,920
+right which connects the bottom of Zn minus 1 is G n times the message that
+
+72
+00:06:16,920 --> 00:06:18,990
+minus 1 is G n times the message that the factor of Zn minus 1 that is some
+
+73
+00:06:18,990 --> 00:06:21,090
+the factor of Zn minus 1 that is some curved air passes to note the N minus 1
+
+74
+00:06:21,090 --> 00:06:24,120
+curved air passes to note the N minus 1 well it makes sense whatever comes st.
+
+75
+00:06:24,120 --> 00:06:26,700
+well it makes sense whatever comes st. plus the factor then you integrate the N
+
+76
+00:06:26,700 --> 00:06:29,400
+plus the factor then you integrate the N minus 1 out and you get the earth now if
+
+77
+00:06:29,400 --> 00:06:32,970
+minus 1 out and you get the earth now if this the variables are continuous would
+
+78
+00:06:32,970 --> 00:06:35,090
+this the variables are continuous would be in our problem
+
+79
+00:06:35,090 --> 00:06:37,690
+be in our problem that summation would be an integral okay
+
+80
+00:06:37,690 --> 00:06:40,450
+that summation would be an integral okay the first equation basically says that
+
+81
+00:06:40,450 --> 00:06:43,130
+the first equation basically says that the message that the notes positive
+
+82
+00:06:43,130 --> 00:06:46,400
+the message that the notes positive factor is the same as the message the
+
+83
+00:06:46,400 --> 00:06:49,190
+factor is the same as the message the previous from the bus is known so in
+
+84
+00:06:49,190 --> 00:06:53,840
+previous from the bus is known so in essence it emphasizes that we are just
+
+85
+00:06:53,840 --> 00:06:57,080
+essence it emphasizes that we are just happy enough to only work with messages
+
+86
+00:06:57,080 --> 00:06:59,300
+happy enough to only work with messages from factors to know you don't need to
+
+87
+00:06:59,300 --> 00:07:02,930
+from factors to know you don't need to bother progressing for multiparty all
+
+88
+00:07:02,930 --> 00:07:05,870
+bother progressing for multiparty all right so this is the common message
+
+89
+00:07:05,870 --> 00:07:09,230
+right so this is the common message passing and we call this the alpha
+
+90
+00:07:09,230 --> 00:07:12,920
+passing and we call this the alpha message okay and we discuss sort of two
+
+91
+00:07:12,920 --> 00:07:16,630
+message okay and we discuss sort of two different notations you know one that
+
+92
+00:07:16,630 --> 00:07:23,090
+different notations you know one that the message corresponding to this it was
+
+93
+00:07:23,090 --> 00:07:25,610
+the message corresponding to this it was the posterior of Zn given all the data
+
+94
+00:07:25,610 --> 00:07:29,540
+the posterior of Zn given all the data at the time and and I think another
+
+95
+00:07:29,540 --> 00:07:32,390
+at the time and and I think another notation was a nun normalized posterior
+
+96
+00:07:32,390 --> 00:07:36,170
+notation was a nun normalized posterior effectively so if you don't want to get
+
+97
+00:07:36,170 --> 00:07:38,150
+effectively so if you don't want to get confused with the notation effectively
+
+98
+00:07:38,150 --> 00:07:41,210
+confused with the notation effectively you can write that this is proportional
+
+99
+00:07:41,210 --> 00:07:43,160
+you can write that this is proportional to what you see on the right-hand side
+
+100
+00:07:43,160 --> 00:07:45,500
+to what you see on the right-hand side so when you compute the right-hand side
+
+101
+00:07:45,500 --> 00:07:48,230
+so when you compute the right-hand side then you normalize it and you get a
+
+102
+00:07:48,230 --> 00:07:50,390
+then you normalize it and you get a distribution so one way or another
+
+103
+00:07:50,390 --> 00:07:52,430
+distribution so one way or another it doesn't really matter if you see
+
+104
+00:07:52,430 --> 00:07:55,130
+it doesn't really matter if you see different notations okay so this is the
+
+105
+00:07:55,130 --> 00:07:57,650
+different notations okay so this is the forward messages and I also want to show
+
+106
+00:07:57,650 --> 00:08:00,320
+forward messages and I also want to show you the same schematic basically the
+
+107
+00:08:00,320 --> 00:08:04,160
+you the same schematic basically the backward messages from the root to no
+
+108
+00:08:04,160 --> 00:08:08,150
+backward messages from the root to no dates to the left so the message the
+
+109
+00:08:08,150 --> 00:08:10,100
+dates to the left so the message the message passing is basically identical
+
+110
+00:08:10,100 --> 00:08:12,260
+message passing is basically identical to before the things but it goes
+
+111
+00:08:12,260 --> 00:08:14,930
+to before the things but it goes backwards so the message from the
+
+112
+00:08:14,930 --> 00:08:19,730
+backwards so the message from the factory and the little the masters from
+
+113
+00:08:19,730 --> 00:08:25,100
+factory and the little the masters from at n plus one to note the end alright so
+
+114
+00:08:25,100 --> 00:08:26,570
+at n plus one to note the end alright so again we are making a messages from
+
+115
+00:08:26,570 --> 00:08:29,680
+again we are making a messages from practice to notes so this message here
+
+116
+00:08:29,680 --> 00:08:30,830
+practice to notes so this message here okay
+
+117
+00:08:30,830 --> 00:08:33,670
+okay is this factor
+
+118
+00:08:33,670 --> 00:08:37,010
+is this factor why is the message without the factor of
+
+119
+00:08:37,010 --> 00:08:39,500
+why is the message without the factor of ten plus two cents to note ZL plus one
+
+120
+00:08:39,500 --> 00:08:43,820
+ten plus two cents to note ZL plus one which is this and obviously this message
+
+121
+00:08:43,820 --> 00:08:46,449
+which is this and obviously this message the same as that business right so again
+
+122
+00:08:46,449 --> 00:08:49,970
+the same as that business right so again this message is this factor times this
+
+123
+00:08:49,970 --> 00:08:52,460
+this message is this factor times this message where we integrate out to the n
+
+124
+00:08:52,460 --> 00:08:54,980
+message where we integrate out to the n plus one and obviously you can see that
+
+125
+00:08:54,980 --> 00:08:56,870
+plus one and obviously you can see that this process is backwards because we
+
+126
+00:08:56,870 --> 00:09:00,829
+this process is backwards because we require this message to the right to
+
+127
+00:09:00,829 --> 00:09:02,930
+require this message to the right to compute the rest to the left and the
+
+128
+00:09:02,930 --> 00:09:06,139
+compute the rest to the left and the integration is to the variables to the
+
+129
+00:09:06,139 --> 00:09:09,230
+integration is to the variables to the right which is in this case Zn plus 1
+
+130
+00:09:09,230 --> 00:09:13,250
+right which is in this case Zn plus 1 and we call this the mega message okay
+
+131
+00:09:13,250 --> 00:09:15,079
+and we call this the mega message okay so the bigger message go backwards the
+
+132
+00:09:15,079 --> 00:09:17,840
+so the bigger message go backwards the Alpha message is to go forward so what
+
+133
+00:09:17,840 --> 00:09:19,490
+Alpha message is to go forward so what I'm gonna do is I'm going to play with
+
+134
+00:09:19,490 --> 00:09:22,400
+I'm gonna do is I'm going to play with its equations and device for you they
+
+135
+00:09:22,400 --> 00:09:26,600
+its equations and device for you they come up in three questions and it looks
+
+136
+00:09:26,600 --> 00:09:30,740
+come up in three questions and it looks sort of a massive algebraic calculation
+
+137
+00:09:30,740 --> 00:09:34,150
+sort of a massive algebraic calculation but I recommend that you do it because
+
+138
+00:09:34,150 --> 00:09:37,370
+but I recommend that you do it because not only you'll be happy that you
+
+139
+00:09:37,370 --> 00:09:40,880
+not only you'll be happy that you discover the Kalman filter equations
+
+140
+00:09:40,880 --> 00:09:44,420
+discover the Kalman filter equations from a completely different way from the
+
+141
+00:09:44,420 --> 00:09:48,620
+from a completely different way from the way carbon driver which is actually
+
+142
+00:09:48,620 --> 00:09:50,300
+way carbon driver which is actually different from the one we already have
+
+143
+00:09:50,300 --> 00:09:52,790
+different from the one we already have done in the earlier lecture but there is
+
+144
+00:09:52,790 --> 00:09:54,920
+done in the earlier lecture but there is much to learn both from Esther's passing
+
+145
+00:09:54,920 --> 00:09:57,610
+much to learn both from Esther's passing and playing with a gaussians
+
+146
+00:09:57,610 --> 00:09:59,660
+and playing with a gaussians conditionals partial answers to things
+
+147
+00:09:59,660 --> 00:10:03,949
+conditionals partial answers to things like that okay so I am going to use
+
+148
+00:10:03,949 --> 00:10:08,660
+like that okay so I am going to use first the form of the question that
+
+149
+00:10:08,660 --> 00:10:13,400
+first the form of the question that defines the Alpha messages so and again
+
+150
+00:10:13,400 --> 00:10:16,790
+defines the Alpha messages so and again as I told you if you don't you know want
+
+151
+00:10:16,790 --> 00:10:18,769
+as I told you if you don't you know want to worry what the normalization constant
+
+152
+00:10:18,769 --> 00:10:22,639
+to worry what the normalization constant here is or without fires you don't need
+
+153
+00:10:22,639 --> 00:10:25,519
+here is or without fires you don't need to bother okay you just say this is
+
+154
+00:10:25,519 --> 00:10:27,889
+to bother okay you just say this is proportional throughout and you
+
+155
+00:10:27,889 --> 00:10:30,079
+proportional throughout and you normalize and with every good luck to be
+
+156
+00:10:30,079 --> 00:10:32,210
+normalize and with every good luck to be the Alpha messages but fear I'm writing
+
+157
+00:10:32,210 --> 00:10:35,480
+the Alpha messages but fear I'm writing it in a precise for okay where this
+
+158
+00:10:35,480 --> 00:10:39,049
+it in a precise for okay where this message is the posterior of Zn given
+
+159
+00:10:39,049 --> 00:10:42,889
+message is the posterior of Zn given all the the date of the observations of
+
+160
+00:10:42,889 --> 00:10:45,139
+all the the date of the observations of Japan man okay
+
+161
+00:10:45,139 --> 00:10:50,119
+Japan man okay and this quotation is GL Scylla is
+
+162
+00:10:50,119 --> 00:10:51,859
+and this quotation is GL Scylla is basically the probability of friction
+
+163
+00:10:51,859 --> 00:10:58,609
+basically the probability of friction given X 1 to X n minus 1 okay again
+
+164
+00:10:58,609 --> 00:11:02,359
+given X 1 to X n minus 1 okay again if you like this rather than having this
+
+165
+00:11:02,359 --> 00:11:04,159
+if you like this rather than having this filtering distribution we have the joint
+
+166
+00:11:04,159 --> 00:11:08,719
+filtering distribution we have the joint distribution of Zn relaxed one to excel
+
+167
+00:11:08,719 --> 00:11:11,539
+distribution of Zn relaxed one to excel you're not going to get that TN okay but
+
+168
+00:11:11,539 --> 00:11:13,399
+you're not going to get that TN okay but more or less the question of sort of the
+
+169
+00:11:13,399 --> 00:11:17,509
+more or less the question of sort of the same alright so if you look at these
+
+170
+00:11:17,509 --> 00:11:19,129
+same alright so if you look at these equations right and obviously we're
+
+171
+00:11:19,129 --> 00:11:20,839
+equations right and obviously we're gonna make that summation and integral
+
+172
+00:11:20,839 --> 00:11:27,649
+gonna make that summation and integral and we want to get a methodology to make
+
+173
+00:11:27,649 --> 00:11:30,229
+and we want to get a methodology to make derive an inference algorithm that is
+
+174
+00:11:30,229 --> 00:11:32,569
+derive an inference algorithm that is linearly the length of the chain
+
+175
+00:11:32,569 --> 00:11:34,729
+linearly the length of the chain we need sort of to take advantage of the
+
+176
+00:11:34,729 --> 00:11:37,399
+we need sort of to take advantage of the structure of this equation in a way that
+
+177
+00:11:37,399 --> 00:11:39,439
+structure of this equation in a way that when we plug in here whatever
+
+178
+00:11:39,439 --> 00:11:43,519
+when we plug in here whatever distribution this alpha lessons is we
+
+179
+00:11:43,519 --> 00:11:45,409
+distribution this alpha lessons is we would like to get the same sort of
+
+180
+00:11:45,409 --> 00:11:48,729
+would like to get the same sort of distribution for the masses out partying
+
+181
+00:11:48,729 --> 00:11:52,489
+distribution for the masses out partying and in some sense if this belongs to
+
+182
+00:11:52,489 --> 00:11:55,159
+and in some sense if this belongs to some family of distributions we would
+
+183
+00:11:55,159 --> 00:11:56,929
+some family of distributions we would like the only thing to have to do when
+
+184
+00:11:56,929 --> 00:11:59,149
+like the only thing to have to do when we apply this equation to update the
+
+185
+00:11:59,149 --> 00:12:01,699
+we apply this equation to update the parameters of this distribution to get
+
+186
+00:12:01,699 --> 00:12:05,119
+parameters of this distribution to get the distribution of GA right so this is
+
+187
+00:12:05,119 --> 00:12:07,549
+the distribution of GA right so this is a Gaussian for example right it would be
+
+188
+00:12:07,549 --> 00:12:10,189
+a Gaussian for example right it would be great if somehow this is also a Gaussian
+
+189
+00:12:10,189 --> 00:12:12,349
+great if somehow this is also a Gaussian and the only thing we have to do is
+
+190
+00:12:12,349 --> 00:12:14,719
+and the only thing we have to do is update the mean and the variance of the
+
+191
+00:12:14,719 --> 00:12:17,479
+update the mean and the variance of the previous distribution okay now this was
+
+192
+00:12:17,479 --> 00:12:20,179
+previous distribution okay now this was doing gaussians right and this you know
+
+193
+00:12:20,179 --> 00:12:23,059
+doing gaussians right and this you know will fit perfectly with any distribution
+
+194
+00:12:23,059 --> 00:12:26,089
+will fit perfectly with any distribution from the exponential family but today we
+
+195
+00:12:26,089 --> 00:12:28,459
+from the exponential family but today we will discuss basically this the Gaussian
+
+196
+00:12:28,459 --> 00:12:33,920
+will discuss basically this the Gaussian distribution okay
+
+197
+00:12:33,920 --> 00:12:33,930
+
+
+198
+00:12:33,930 --> 00:12:40,980
+now if so we're gonna take another Miss Landow in state space model where
+
+199
+00:12:40,980 --> 00:12:43,379
+Landow in state space model where basically what the probability of Zn
+
+200
+00:12:43,379 --> 00:12:45,900
+basically what the probability of Zn given CN - trauma and the probability of
+
+201
+00:12:45,900 --> 00:12:50,189
+given CN - trauma and the probability of Excel given Zn are Gaussian and then at
+
+202
+00:12:50,189 --> 00:12:52,889
+Excel given Zn are Gaussian and then at the end of the day basically all the
+
+203
+00:12:52,889 --> 00:12:54,619
+the end of the day basically all the distributions were going to get will be
+
+204
+00:12:54,619 --> 00:12:58,230
+distributions were going to get will be gaussians so the Joint Distribution of
+
+205
+00:12:58,230 --> 00:13:00,150
+gaussians so the Joint Distribution of correlated volumes to be a multivariate
+
+206
+00:13:00,150 --> 00:13:04,170
+correlated volumes to be a multivariate Gaussian and we have seen actually this
+
+207
+00:13:04,170 --> 00:13:06,660
+Gaussian and we have seen actually this problem letting you have done it you
+
+208
+00:13:06,660 --> 00:13:09,449
+problem letting you have done it you sort of done a homework problem with
+
+209
+00:13:09,449 --> 00:13:11,819
+sort of done a homework problem with this but we will see a different
+
+210
+00:13:11,819 --> 00:13:14,429
+this but we will see a different perspective here so let me give you the
+
+211
+00:13:14,429 --> 00:13:17,879
+perspective here so let me give you the result summary of the results if you
+
+212
+00:13:17,879 --> 00:13:22,079
+result summary of the results if you apply for a Gaussian linear system the
+
+213
+00:13:22,079 --> 00:13:24,809
+apply for a Gaussian linear system the forward fasting message equations did
+
+214
+00:13:24,809 --> 00:13:28,290
+forward fasting message equations did you get the identical equations
+
+215
+00:13:28,290 --> 00:13:31,009
+you get the identical equations corresponding to the color filter okay
+
+216
+00:13:31,009 --> 00:13:34,079
+corresponding to the color filter okay if you apply the support three questions
+
+217
+00:13:34,079 --> 00:13:36,569
+if you apply the support three questions so you know this is the bigger message
+
+218
+00:13:36,569 --> 00:13:39,840
+so you know this is the bigger message you get the comments motor equations
+
+219
+00:13:39,840 --> 00:13:42,150
+you get the comments motor equations that I think if I remember we didn't
+
+220
+00:13:42,150 --> 00:13:44,910
+that I think if I remember we didn't have time to cover in last lecture I may
+
+221
+00:13:44,910 --> 00:13:48,059
+have time to cover in last lecture I may be wrong but you stop there but you can
+
+222
+00:13:48,059 --> 00:13:51,540
+be wrong but you stop there but you can imagine that similar to the beta message
+
+223
+00:13:51,540 --> 00:13:53,699
+imagine that similar to the beta message right this government's motion equations
+
+224
+00:13:53,699 --> 00:13:56,069
+right this government's motion equations basically will give us the posterior of
+
+225
+00:13:56,069 --> 00:13:58,879
+basically will give us the posterior of specific variables given all the data
+
+226
+00:13:58,879 --> 00:14:02,939
+specific variables given all the data from 1 to capital T okay that's why this
+
+227
+00:14:02,939 --> 00:14:05,069
+from 1 to capital T okay that's why this equations are quote is moving a
+
+228
+00:14:05,069 --> 00:14:08,460
+equations are quote is moving a questions so this is nice right
+
+229
+00:14:08,460 --> 00:14:10,139
+questions so this is nice right phone that gives me the Kalman filter
+
+230
+00:14:10,139 --> 00:14:12,660
+phone that gives me the Kalman filter bar forgives with it's moving equations
+
+231
+00:14:12,660 --> 00:14:14,579
+bar forgives with it's moving equations and actually if you do the forward on
+
+232
+00:14:14,579 --> 00:14:18,389
+and actually if you do the forward on the back of the questions you can get
+
+233
+00:14:18,389 --> 00:14:21,030
+the back of the questions you can get the sufficient statistics from the
+
+234
+00:14:21,030 --> 00:14:22,860
+the sufficient statistics from the hidden variables that are needed to
+
+235
+00:14:22,860 --> 00:14:25,379
+hidden variables that are needed to compute the parameters view expectation
+
+236
+00:14:25,379 --> 00:14:28,769
+compute the parameters view expectation maximization you know ever that when we
+
+237
+00:14:28,769 --> 00:14:31,350
+maximization you know ever that when we did the hmm so we will actually turn to
+
+238
+00:14:31,350 --> 00:14:33,360
+did the hmm so we will actually turn to our crystals highlight for you the
+
+239
+00:14:33,360 --> 00:14:36,350
+our crystals highlight for you the questions if you don't need to
+
+240
+00:14:36,350 --> 00:14:38,120
+questions if you don't need to the parameters and they're fixed right
+
+241
+00:14:38,120 --> 00:14:41,269
+the parameters and they're fixed right depending on what your interest is if
+
+242
+00:14:41,269 --> 00:14:43,670
+depending on what your interest is if you want the predicted distributions the
+
+243
+00:14:43,670 --> 00:14:45,230
+you want the predicted distributions the floor where the questions will do is if
+
+244
+00:14:45,230 --> 00:14:47,120
+floor where the questions will do is if you want this more thing the backward
+
+245
+00:14:47,120 --> 00:14:49,550
+you want this more thing the backward will do it if you're gonna do the amount
+
+246
+00:14:49,550 --> 00:14:51,620
+will do it if you're gonna do the amount we have to basically do more how can be
+
+247
+00:14:51,620 --> 00:14:55,340
+we have to basically do more how can be the lesson I'm gonna use the notation
+
+248
+00:14:55,340 --> 00:14:58,389
+the lesson I'm gonna use the notation from Bishop's book actually to simplify
+
+249
+00:14:58,389 --> 00:15:02,210
+from Bishop's book actually to simplify the notation for the you variables that
+
+250
+00:15:02,210 --> 00:15:04,940
+the notation for the you variables that we had but the fact we there were
+
+251
+00:15:04,940 --> 00:15:08,600
+we had but the fact we there were nothing else but a constant term in the
+
+252
+00:15:08,600 --> 00:15:10,610
+nothing else but a constant term in the the mean of these distributions I
+
+253
+00:15:10,610 --> 00:15:13,160
+the mean of these distributions I omitted here but actually if you can
+
+254
+00:15:13,160 --> 00:15:15,829
+omitted here but actually if you can solve you can take the final results in
+
+255
+00:15:15,829 --> 00:15:18,590
+solve you can take the final results in with a trivial trick you can discover
+
+256
+00:15:18,590 --> 00:15:21,769
+with a trivial trick you can discover the you know the modify the question
+
+257
+00:15:21,769 --> 00:15:23,630
+the you know the modify the question when there is an extra term of the means
+
+258
+00:15:23,630 --> 00:15:26,449
+when there is an extra term of the means here but right now concentrate on the
+
+259
+00:15:26,449 --> 00:15:28,310
+here but right now concentrate on the greatest or questioners look like right
+
+260
+00:15:28,310 --> 00:15:35,509
+greatest or questioners look like right so a an Rama will decline the transition
+
+261
+00:15:35,509 --> 00:15:38,300
+so a an Rama will decline the transition model for the states and this is the
+
+262
+00:15:38,300 --> 00:15:41,900
+model for the states and this is the observation model with metrics it here
+
+263
+00:15:41,900 --> 00:15:45,110
+observation model with metrics it here Sigma and C n Sigma remember this
+
+264
+00:15:45,110 --> 00:15:47,720
+Sigma and C n Sigma remember this because I will forget the and we will be
+
+265
+00:15:47,720 --> 00:15:51,100
+because I will forget the and we will be lost to the algebra okay so a and gamma
+
+266
+00:15:51,100 --> 00:15:56,449
+lost to the algebra okay so a and gamma C and Sigma we supposed to from some
+
+267
+00:15:56,449 --> 00:15:59,060
+C and Sigma we supposed to from some initial state and so the initial state
+
+268
+00:15:59,060 --> 00:16:00,530
+initial state and so the initial state is going to be given also as a Gaussian
+
+269
+00:16:00,530 --> 00:16:04,009
+is going to be given also as a Gaussian I mean we you can see actually later on
+
+270
+00:16:04,009 --> 00:16:06,850
+I mean we you can see actually later on maybe in the slide if we have time and
+
+271
+00:16:06,850 --> 00:16:10,130
+maybe in the slide if we have time and remember I will let you know if this is
+
+272
+00:16:10,130 --> 00:16:12,590
+remember I will let you know if this is somehow not a Gaussian Gaussian mixture
+
+273
+00:16:12,590 --> 00:16:16,100
+somehow not a Gaussian Gaussian mixture then you don't get you get the different
+
+274
+00:16:16,100 --> 00:16:18,590
+then you don't get you get the different equations and kind of filtering right so
+
+275
+00:16:18,590 --> 00:16:20,930
+equations and kind of filtering right so this is not a job basically in to start
+
+276
+00:16:20,930 --> 00:16:23,000
+this is not a job basically in to start with a Gaussian otherwise you may get in
+
+277
+00:16:23,000 --> 00:16:25,460
+with a Gaussian otherwise you may get in trouble so mister questions basically if
+
+278
+00:16:25,460 --> 00:16:27,380
+trouble so mister questions basically if you don't want them in written in terms
+
+279
+00:16:27,380 --> 00:16:29,630
+you don't want them in written in terms of distributions you know this is how
+
+280
+00:16:29,630 --> 00:16:31,009
+of distributions you know this is how the questions look like they are all
+
+281
+00:16:31,009 --> 00:16:33,319
+the questions look like they are all linear right big asked why we call this
+
+282
+00:16:33,319 --> 00:16:34,960
+linear right big asked why we call this a linear dynamical
+
+283
+00:16:34,960 --> 00:16:41,330
+a linear dynamical so later on we will actually if I don't
+
+284
+00:16:41,330 --> 00:16:42,800
+so later on we will actually if I don't have time you would have to read it
+
+285
+00:16:42,800 --> 00:16:46,610
+have time you would have to read it right but we can expect this where for
+
+286
+00:16:46,610 --> 00:16:48,500
+right but we can expect this where for example here rather than having
+
+287
+00:16:48,500 --> 00:16:50,210
+example here rather than having something a function of Z n minus 1
+
+288
+00:16:50,210 --> 00:16:52,790
+something a function of Z n minus 1 maybe we can put some function f of Z n
+
+289
+00:16:52,790 --> 00:16:57,200
+maybe we can put some function f of Z n minus 1 or here some function G of Z ok
+
+290
+00:16:57,200 --> 00:16:59,630
+minus 1 or here some function G of Z ok but right now everything is in here and
+
+291
+00:16:59,630 --> 00:17:01,510
+but right now everything is in here and everything is gone
+
+292
+00:17:01,510 --> 00:17:06,050
+everything is gone so a lot of parameters right so from the
+
+293
+00:17:06,050 --> 00:17:09,470
+so a lot of parameters right so from the dynamics basically we have a and gamma
+
+294
+00:17:09,470 --> 00:17:12,440
+dynamics basically we have a and gamma from the observation we have C and Sigma
+
+295
+00:17:12,440 --> 00:17:15,080
+from the observation we have C and Sigma and from the initial model you have mu 0
+
+296
+00:17:15,080 --> 00:17:17,990
+and from the initial model you have mu 0 and B 0 so really if you want to
+
+297
+00:17:17,990 --> 00:17:20,510
+and B 0 so really if you want to complete the problem and do expectation
+
+298
+00:17:20,510 --> 00:17:24,880
+complete the problem and do expectation maximization you need to basically
+
+299
+00:17:24,880 --> 00:17:26,810
+maximization you need to basically calculate all these parameters from
+
+300
+00:17:26,810 --> 00:17:33,920
+calculate all these parameters from observations okay and in some sense this
+
+301
+00:17:33,920 --> 00:17:36,530
+observations okay and in some sense this is something at least in engineering
+
+302
+00:17:36,530 --> 00:17:38,180
+is something at least in engineering books you will ever see you know nobody
+
+303
+00:17:38,180 --> 00:17:39,860
+books you will ever see you know nobody bothers to tell you how to compute these
+
+304
+00:17:39,860 --> 00:17:42,530
+bothers to tell you how to compute these parameters but really the algorithm here
+
+305
+00:17:42,530 --> 00:17:45,890
+parameters but really the algorithm here is just a simple application of e/m the
+
+306
+00:17:45,890 --> 00:17:48,530
+is just a simple application of e/m the same way we work with hidden Markov
+
+307
+00:17:48,530 --> 00:17:58,850
+same way we work with hidden Markov model ok derive the forward equations
+
+308
+00:17:58,850 --> 00:18:01,070
+model ok derive the forward equations for this alpha messages and somehow
+
+309
+00:18:01,070 --> 00:18:03,950
+for this alpha messages and somehow let's discover that mr. questions are
+
+310
+00:18:03,950 --> 00:18:06,500
+let's discover that mr. questions are really the Kalman filter equations so
+
+311
+00:18:06,500 --> 00:18:08,030
+really the Kalman filter equations so we're going to do is since this is a
+
+312
+00:18:08,030 --> 00:18:11,530
+we're going to do is since this is a part with algorithm I'm going to denote
+
+313
+00:18:11,530 --> 00:18:15,590
+part with algorithm I'm going to denote so everything's a Gaussian so I am going
+
+314
+00:18:15,590 --> 00:18:19,420
+so everything's a Gaussian so I am going to denote these for the Alpha message
+
+315
+00:18:19,420 --> 00:18:24,500
+to denote these for the Alpha message you know corresponding to state G n I'm
+
+316
+00:18:24,500 --> 00:18:26,150
+you know corresponding to state G n I'm going to denote the mean and the
+
+317
+00:18:26,150 --> 00:18:29,300
+going to denote the mean and the variance is mu N and VN and the idea
+
+318
+00:18:29,300 --> 00:18:32,180
+variance is mu N and VN and the idea would be that I am going to start with a
+
+319
+00:18:32,180 --> 00:18:34,970
+would be that I am going to start with a master DN minus 1 so I'm going to know
+
+320
+00:18:34,970 --> 00:18:37,190
+master DN minus 1 so I'm going to know this mu n minus 1 and VN
+
+321
+00:18:37,190 --> 00:18:40,129
+this mu n minus 1 and VN one and then somehow using this for
+
+322
+00:18:40,129 --> 00:18:43,340
+one and then somehow using this for growth message-passing equation I should
+
+323
+00:18:43,340 --> 00:18:47,480
+growth message-passing equation I should be able to update new n minus 1 and DN
+
+324
+00:18:47,480 --> 00:18:50,299
+be able to update new n minus 1 and DN minus 1 the UN and via ok
+
+325
+00:18:50,299 --> 00:18:52,279
+minus 1 the UN and via ok nothing major so basically what I have
+
+326
+00:18:52,279 --> 00:18:56,060
+nothing major so basically what I have done is I took this equation and I
+
+327
+00:18:56,060 --> 00:18:58,279
+done is I took this equation and I expanded it by plugging in all the terms
+
+328
+00:18:58,279 --> 00:19:02,600
+expanded it by plugging in all the terms still CN remember again is really not
+
+329
+00:19:02,600 --> 00:19:05,029
+still CN remember again is really not necessary sometimes confusing but to
+
+330
+00:19:05,029 --> 00:19:07,909
+necessary sometimes confusing but to make this an equal sign you need that so
+
+331
+00:19:07,909 --> 00:19:14,480
+make this an equal sign you need that so this is the mr. x this Gaussian okay the
+
+332
+00:19:14,480 --> 00:19:17,330
+this is the mr. x this Gaussian okay the observation model is clear the message
+
+333
+00:19:17,330 --> 00:19:19,610
+observation model is clear the message at n minus 1 is there so we suppose we
+
+334
+00:19:19,610 --> 00:19:22,100
+at n minus 1 is there so we suppose we know this and this is the transition
+
+335
+00:19:22,100 --> 00:19:24,710
+know this and this is the transition model looks like that ends the N minus 1
+
+336
+00:19:24,710 --> 00:19:29,330
+model looks like that ends the N minus 1 is integrated off ok so again the
+
+337
+00:19:29,330 --> 00:19:33,919
+is integrated off ok so again the problem is given this because we will do
+
+338
+00:19:33,919 --> 00:19:35,720
+problem is given this because we will do it this as we go forward
+
+339
+00:19:35,720 --> 00:19:42,240
+it this as we go forward we want to compute that okay
+
+340
+00:19:42,240 --> 00:19:42,250
+
+
+341
+00:19:42,250 --> 00:19:47,190
+and a sponson in the process if we want to have these equations properly
+
+342
+00:19:47,190 --> 00:19:49,139
+to have these equations properly normalized we will need to update these
+
+343
+00:19:49,139 --> 00:19:54,119
+normalized we will need to update these coefficients here as well all right I am
+
+344
+00:19:54,119 --> 00:19:56,070
+coefficients here as well all right I am going to take highlight as much as I can
+
+345
+00:19:56,070 --> 00:20:00,960
+going to take highlight as much as I can all right the rest i really suggest that
+
+346
+00:20:00,960 --> 00:20:04,470
+all right the rest i really suggest that you do it as a homework okay put in
+
+347
+00:20:04,470 --> 00:20:08,100
+you do it as a homework okay put in elevation arteries on the slides in the
+
+348
+00:20:08,100 --> 00:20:11,039
+elevation arteries on the slides in the slides but I want you to just copy this
+
+349
+00:20:11,039 --> 00:20:12,710
+slides but I want you to just copy this formula is actually going to either
+
+350
+00:20:12,710 --> 00:20:16,619
+formula is actually going to either because you learned about manipulative
+
+351
+00:20:16,619 --> 00:20:19,549
+because you learned about manipulative gaussians about the Woodbury identity
+
+352
+00:20:19,549 --> 00:20:23,180
+gaussians about the Woodbury identity marginalization conditionals Vegas rule
+
+353
+00:20:23,180 --> 00:20:24,720
+marginalization conditionals Vegas rule everything is there
+
+354
+00:20:24,720 --> 00:20:30,810
+everything is there how can you go wrong okay so so when we
+
+355
+00:20:30,810 --> 00:20:32,879
+how can you go wrong okay so so when we are this first I'm going to look at this
+
+356
+00:20:32,879 --> 00:20:33,269
+are this first I'm going to look at this list
+
+357
+00:20:33,269 --> 00:20:35,399
+list this ain't a grow is this integral in
+
+358
+00:20:35,399 --> 00:20:39,180
+this ain't a grow is this integral in the ocean and why the whole integral and
+
+359
+00:20:39,180 --> 00:20:43,710
+the ocean and why the whole integral and it is a Gaussian from kinds of magical
+
+360
+00:20:43,710 --> 00:20:48,600
+it is a Gaussian from kinds of magical are coming to be Gaussian white set out
+
+361
+00:20:48,600 --> 00:20:51,960
+are coming to be Gaussian white set out listing the glow when we are here on
+
+362
+00:20:51,960 --> 00:20:55,600
+listing the glow when we are here on this integral
+
+363
+00:20:55,600 --> 00:20:55,610
+
+
+364
+00:20:55,610 --> 00:21:06,930
+I have the product of two gaussians but the min of one of them right is linear
+
+365
+00:21:06,930 --> 00:21:06,940
+
+
+366
+00:21:06,940 --> 00:21:16,870
+so it's very very heaviest is like having a probability of Y given X all
+
+367
+00:21:16,870 --> 00:21:19,030
+having a probability of Y given X all right but this linear in X times the
+
+368
+00:21:19,030 --> 00:21:21,790
+right but this linear in X times the probability of X and what I'm asking is
+
+369
+00:21:21,790 --> 00:21:24,220
+probability of X and what I'm asking is to find the probability of Y when I
+
+370
+00:21:24,220 --> 00:21:30,310
+to find the probability of Y when I integrate X out right because I won't
+
+371
+00:21:30,310 --> 00:21:32,460
+integrate X out right because I won't see n minus 1 out right so basically
+
+372
+00:21:32,460 --> 00:21:35,110
+see n minus 1 out right so basically this is like having the Joint
+
+373
+00:21:35,110 --> 00:21:36,970
+this is like having the Joint Distribution of two versions then you
+
+374
+00:21:36,970 --> 00:21:38,230
+Distribution of two versions then you want to multi-role lies
+
+375
+00:21:38,230 --> 00:21:42,130
+want to multi-role lies okay so the idea is this is the formula
+
+376
+00:21:42,130 --> 00:21:44,680
+okay so the idea is this is the formula that I cut and paste it not everywhere
+
+377
+00:21:44,680 --> 00:21:47,770
+that I cut and paste it not everywhere but you guys will do the algebra and you
+
+378
+00:21:47,770 --> 00:21:51,010
+but you guys will do the algebra and you will learn it better than me so here is
+
+379
+00:21:51,010 --> 00:21:53,800
+will learn it better than me so here is like having Congress to distribution px
+
+380
+00:21:53,800 --> 00:21:57,580
+like having Congress to distribution px all right this is given this is given
+
+381
+00:21:57,580 --> 00:22:01,990
+all right this is given this is given all right hold this P of Y given X all
+
+382
+00:22:01,990 --> 00:22:04,630
+all right hold this P of Y given X all right and you notice the mean is linear
+
+383
+00:22:04,630 --> 00:22:07,840
+right and you notice the mean is linear in X which is the N minus 1 you see that
+
+384
+00:22:07,840 --> 00:22:10,780
+in X which is the N minus 1 you see that there's not be here in the Sigma Y of
+
+385
+00:22:10,780 --> 00:22:13,990
+there's not be here in the Sigma Y of course is this gamma so from my
+
+386
+00:22:13,990 --> 00:22:16,180
+course is this gamma so from my information of this for in a Gaussian
+
+387
+00:22:16,180 --> 00:22:20,920
+information of this for in a Gaussian models P of Y comes to be this nice
+
+388
+00:22:20,920 --> 00:22:23,920
+models P of Y comes to be this nice distribution that just mean that you
+
+389
+00:22:23,920 --> 00:22:25,630
+distribution that just mean that you securely has variance that we've set up
+
+390
+00:22:25,630 --> 00:22:28,150
+securely has variance that we've set up the service you don't need to prove them
+
+391
+00:22:28,150 --> 00:22:31,630
+the service you don't need to prove them you pull the mouse égalité and and you
+
+392
+00:22:31,630 --> 00:22:35,500
+you pull the mouse égalité and and you work with them okay be sure when you see
+
+393
+00:22:35,500 --> 00:22:37,480
+work with them okay be sure when you see them the first time in a textbook we
+
+394
+00:22:37,480 --> 00:22:39,640
+them the first time in a textbook we derive them because a little mistake in
+
+395
+00:22:39,640 --> 00:22:41,920
+derive them because a little mistake in the textbook we mess up the rest of your
+
+396
+00:22:41,920 --> 00:22:46,270
+the textbook we mess up the rest of your lives and I can easily see that because
+
+397
+00:22:46,270 --> 00:22:47,770
+lives and I can easily see that because I've seen those mistakes in textbooks
+
+398
+00:22:47,770 --> 00:22:52,770
+I've seen those mistakes in textbooks all right in the most common formula so
+
+399
+00:22:52,770 --> 00:22:56,050
+all right in the most common formula so so why is given like that right so this
+
+400
+00:22:56,050 --> 00:23:00,040
+so why is given like that right so this integral I can write it as a Gaussian
+
+401
+00:23:00,040 --> 00:23:02,109
+integral I can write it as a Gaussian that looks like that and he comes
+
+402
+00:23:02,109 --> 00:23:05,409
+that looks like that and he comes that the mean is a times mu n minus 1
+
+403
+00:23:05,409 --> 00:23:08,409
+that the mean is a times mu n minus 1 and the variance is P n minus 1 where
+
+404
+00:23:08,409 --> 00:23:10,899
+and the variance is P n minus 1 where the variance is written by this is
+
+405
+00:23:10,899 --> 00:23:12,399
+the variance is written by this is coming up from this nice form
+
+406
+00:23:12,399 --> 00:23:14,799
+coming up from this nice form okay you don't have to believe me
+
+407
+00:23:14,799 --> 00:23:19,119
+okay you don't have to believe me because this is the variance you plug it
+
+408
+00:23:19,119 --> 00:23:23,049
+because this is the variance you plug it in and that's what you get okay
+
+409
+00:23:23,049 --> 00:23:28,419
+in and that's what you get okay all right so obviously I'm putting n
+
+410
+00:23:28,419 --> 00:23:31,089
+all right so obviously I'm putting n minus 1 here everything because you know
+
+411
+00:23:31,089 --> 00:23:32,589
+minus 1 here everything because you know you know this whole divided was fairly
+
+412
+00:23:32,589 --> 00:23:35,169
+you know this whole divided was fairly for the time and minus 1 so we call this
+
+413
+00:23:35,169 --> 00:23:41,759
+for the time and minus 1 so we call this intermediate mathematics PN minus 1 okay
+
+414
+00:23:41,759 --> 00:23:41,769
+
+
+415
+00:23:41,769 --> 00:23:51,249
+so this integral it comes out to be a decision in Z so this tentacle is an
+
+416
+00:23:51,249 --> 00:23:53,679
+decision in Z so this tentacle is an arginine shell and what is this thing
+
+417
+00:23:53,679 --> 00:24:00,069
+arginine shell and what is this thing today is a Gaussian in extent that has
+
+418
+00:24:00,069 --> 00:24:03,999
+today is a Gaussian in extent that has immense linear function of Z so what can
+
+419
+00:24:03,999 --> 00:24:07,749
+immense linear function of Z so what can we do we need to do two things right we
+
+420
+00:24:07,749 --> 00:24:10,089
+we do we need to do two things right we need basically to complete the posterior
+
+421
+00:24:10,089 --> 00:24:13,119
+need basically to complete the posterior of this so here is not marginalization
+
+422
+00:24:13,119 --> 00:24:15,999
+of this so here is not marginalization what we need to do is sort of from P of
+
+423
+00:24:15,999 --> 00:24:20,469
+what we need to do is sort of from P of X given Y go to P of Y given X all right
+
+424
+00:24:20,469 --> 00:24:23,679
+X given Y go to P of Y given X all right and this proficiency well is really feel
+
+425
+00:24:23,679 --> 00:24:26,979
+and this proficiency well is really feel fractious the normalization factor okay
+
+426
+00:24:26,979 --> 00:24:33,959
+fractious the normalization factor okay so so what when so tell us what you need
+
+427
+00:24:33,959 --> 00:24:39,189
+so so what when so tell us what you need you know you know perfect I'm using this
+
+428
+00:24:39,189 --> 00:24:42,429
+you know you know perfect I'm using this generic notation and P of Y effects and
+
+429
+00:24:42,429 --> 00:24:44,559
+generic notation and P of Y effects and we need to invert this and we need to
+
+430
+00:24:44,559 --> 00:24:47,199
+we need to invert this and we need to compute P of X given Y and that is given
+
+431
+00:24:47,199 --> 00:24:50,139
+compute P of X given Y and that is given by this nice formal of this mean and
+
+432
+00:24:50,139 --> 00:24:55,770
+by this nice formal of this mean and this variance right and
+
+433
+00:24:55,770 --> 00:24:55,780
+
+
+434
+00:24:55,780 --> 00:25:01,600
+and actually there is as I've written down they don't use these variances you
+
+435
+00:25:01,600 --> 00:25:04,930
+down they don't use these variances you see here all right what the use is they
+
+436
+00:25:04,930 --> 00:25:08,320
+see here all right what the use is they gives the Woodbury identity where if you
+
+437
+00:25:08,320 --> 00:25:11,380
+gives the Woodbury identity where if you complete this all right you can simplify
+
+438
+00:25:11,380 --> 00:25:16,630
+complete this all right you can simplify to actually PN minus 1 minus J n times T
+
+439
+00:25:16,630 --> 00:25:18,970
+to actually PN minus 1 minus J n times T P and minus 1 for Tyrion comes to this
+
+440
+00:25:18,970 --> 00:25:24,130
+P and minus 1 for Tyrion comes to this and I know you forgot but this KN it is
+
+441
+00:25:24,130 --> 00:25:27,160
+and I know you forgot but this KN it is identical to what we derived in the last
+
+442
+00:25:27,160 --> 00:25:29,890
+identical to what we derived in the last lecture which is the column J gain
+
+443
+00:25:29,890 --> 00:25:37,210
+lecture which is the column J gain matrix okay so in this coefficient Sigma
+
+444
+00:25:37,210 --> 00:25:38,770
+matrix okay so in this coefficient Sigma n okay
+
+445
+00:25:38,770 --> 00:25:43,390
+n okay which is basically least marginal
+
+446
+00:25:43,390 --> 00:25:45,700
+which is basically least marginal effects and it's also a Gaussian that
+
+447
+00:25:45,700 --> 00:25:47,460
+effects and it's also a Gaussian that comes later okay
+
+448
+00:25:47,460 --> 00:25:51,040
+comes later okay again one less interested on Sigma n but
+
+449
+00:25:51,040 --> 00:25:54,070
+again one less interested on Sigma n but if we want to make that equation to be
+
+450
+00:25:54,070 --> 00:25:56,890
+if we want to make that equation to be to have an equal sign right it has to
+
+451
+00:25:56,890 --> 00:25:58,300
+to have an equal sign right it has to look like that this the normalization
+
+452
+00:25:58,300 --> 00:26:05,400
+look like that this the normalization factor and so look at this equation so
+
+453
+00:26:05,400 --> 00:26:09,430
+factor and so look at this equation so let me just remind you what we compute
+
+454
+00:26:09,430 --> 00:26:11,770
+let me just remind you what we compute it right what we computed is the mean
+
+455
+00:26:11,770 --> 00:26:13,600
+it right what we computed is the mean and variance of the alpha methods and
+
+456
+00:26:13,600 --> 00:26:15,790
+and variance of the alpha methods and the optimises is the filtering
+
+457
+00:26:15,790 --> 00:26:18,250
+the optimises is the filtering distribution of Z F and the president
+
+458
+00:26:18,250 --> 00:26:19,900
+distribution of Z F and the president distribution is the probability of Zn
+
+459
+00:26:19,900 --> 00:26:28,230
+distribution is the probability of Zn given the data x1 to X label that okay
+
+460
+00:26:28,230 --> 00:26:28,240
+
+
+461
+00:26:28,240 --> 00:26:34,990
+so this is the mean alright this is the mean for this filtering distribution can
+
+462
+00:26:34,990 --> 00:26:36,670
+mean for this filtering distribution can you put this term physical meaning to
+
+463
+00:26:36,670 --> 00:26:41,470
+you put this term physical meaning to Vista question so that if we have some
+
+464
+00:26:41,470 --> 00:26:43,810
+Vista question so that if we have some physical meaning then you can write the
+
+465
+00:26:43,810 --> 00:26:46,120
+physical meaning then you can write the equation from intuition rather than
+
+466
+00:26:46,120 --> 00:26:55,480
+equation from intuition rather than algebra so what is a times nu n minus 1
+
+467
+00:26:55,480 --> 00:26:55,490
+
+
+468
+00:26:55,490 --> 00:27:00,020
+so you take basically the printing distribution of 10-1
+
+469
+00:27:00,020 --> 00:27:02,360
+distribution of 10-1 and you push fun with the mean with the
+
+470
+00:27:02,360 --> 00:27:05,750
+and you push fun with the mean with the transition matrix a you sit up okay
+
+471
+00:27:05,750 --> 00:27:08,120
+transition matrix a you sit up okay so that's what it is and now we have
+
+472
+00:27:08,120 --> 00:27:10,730
+so that's what it is and now we have this gain matrix times some error and
+
+473
+00:27:10,730 --> 00:27:13,520
+this gain matrix times some error and that error is the observation that you
+
+474
+00:27:13,520 --> 00:27:16,160
+that error is the observation that you saw suddenly you see data that's your
+
+475
+00:27:16,160 --> 00:27:19,640
+saw suddenly you see data that's your observational time n right and what is C
+
+476
+00:27:19,640 --> 00:27:23,480
+observational time n right and what is C a mule and - you just told me that
+
+477
+00:27:23,480 --> 00:27:30,650
+a mule and - you just told me that a mu n minus 1 is this transy is pushing
+
+478
+00:27:30,650 --> 00:27:33,290
+a mu n minus 1 is this transy is pushing forward the previous mean with the
+
+479
+00:27:33,290 --> 00:27:36,200
+forward the previous mean with the transition matrix a so what is G times a
+
+480
+00:27:36,200 --> 00:27:40,670
+transition matrix a so what is G times a new n minus 1 it's got no observation on
+
+481
+00:27:40,670 --> 00:27:43,250
+new n minus 1 it's got no observation on that you will have and this is really
+
+482
+00:27:43,250 --> 00:27:45,770
+that you will have and this is really the other what to do and effectively
+
+483
+00:27:45,770 --> 00:27:49,550
+the other what to do and effectively before you have a landing matrix which
+
+484
+00:27:49,550 --> 00:27:52,460
+before you have a landing matrix which is this common gain matrix right so k
+
+485
+00:27:52,460 --> 00:27:56,390
+is this common gain matrix right so k times this error plus the first pair
+
+486
+00:27:56,390 --> 00:27:59,390
+times this error plus the first pair gives you the new updated mean and
+
+487
+00:27:59,390 --> 00:28:03,110
+gives you the new updated mean and that's right out okay first you know
+
+488
+00:28:03,110 --> 00:28:06,350
+that's right out okay first you know this is easy to remember but you do not
+
+489
+00:28:06,350 --> 00:28:08,090
+this is easy to remember but you do not remember that actually the exact
+
+490
+00:28:08,090 --> 00:28:10,700
+remember that actually the exact learning matrix this gain matrix is
+
+491
+00:28:10,700 --> 00:28:13,550
+learning matrix this gain matrix is given by anything like that but you know
+
+492
+00:28:13,550 --> 00:28:15,290
+given by anything like that but you know what at the end of the days we know for
+
+493
+00:28:15,290 --> 00:28:17,390
+what at the end of the days we know for stochastic optimization it doesn't
+
+494
+00:28:17,390 --> 00:28:19,640
+stochastic optimization it doesn't really matter in other ways if you put
+
+495
+00:28:19,640 --> 00:28:21,320
+really matter in other ways if you put something else and you start iterating
+
+496
+00:28:21,320 --> 00:28:22,910
+something else and you start iterating you will give the right answer straining
+
+497
+00:28:22,910 --> 00:28:25,370
+you will give the right answer straining waste okay but if we want to do things
+
+498
+00:28:25,370 --> 00:28:27,620
+waste okay but if we want to do things exactly and this is how the name looks
+
+499
+00:28:27,620 --> 00:28:31,940
+exactly and this is how the name looks of the variance and house here you need
+
+500
+00:28:31,940 --> 00:28:34,220
+of the variance and house here you need to start the algorithm and swiftly take
+
+501
+00:28:34,220 --> 00:28:36,380
+to start the algorithm and swiftly take the rest is passing on the first step
+
+502
+00:28:36,380 --> 00:28:40,010
+the rest is passing on the first step the first message basically requires the
+
+503
+00:28:40,010 --> 00:28:42,470
+the first message basically requires the initial state to the probability of Z 1
+
+504
+00:28:42,470 --> 00:28:45,910
+initial state to the probability of Z 1 times the first measurement that you do
+
+505
+00:28:45,910 --> 00:28:50,450
+times the first measurement that you do so this is our first P of Z 1 this is
+
+506
+00:28:50,450 --> 00:28:53,650
+so this is our first P of Z 1 this is the emission
+
+507
+00:28:53,650 --> 00:28:57,880
+the emission of x1 okay so if you plug in actually
+
+508
+00:28:57,880 --> 00:29:00,490
+of x1 okay so if you plug in actually following the same ones are blessed or
+
+509
+00:29:00,490 --> 00:29:02,950
+following the same ones are blessed or messes passing its to through to the
+
+510
+00:29:02,950 --> 00:29:04,300
+messes passing its to through to the algebra because you don't have any
+
+511
+00:29:04,300 --> 00:29:07,270
+algebra because you don't have any integral anything like that here is muon
+
+512
+00:29:07,270 --> 00:29:10,300
+integral anything like that here is muon and here is v1 and the constants to our
+
+513
+00:29:10,300 --> 00:29:13,540
+and here is v1 and the constants to our scanner like that okay so you have a way
+
+514
+00:29:13,540 --> 00:29:16,780
+scanner like that okay so you have a way to start the algorithm and and then if
+
+515
+00:29:16,780 --> 00:29:18,670
+to start the algorithm and and then if you use the update formulas and that's
+
+516
+00:29:18,670 --> 00:29:21,510
+you use the update formulas and that's the come up into the questions and done
+
+517
+00:29:21,510 --> 00:29:25,390
+the come up into the questions and done okay in you know in a few minutes we
+
+518
+00:29:25,390 --> 00:29:27,490
+okay in you know in a few minutes we basically finished with a color filter
+
+519
+00:29:27,490 --> 00:29:34,050
+basically finished with a color filter questions using ideas of masters party
+
+520
+00:29:34,050 --> 00:29:34,060
+
+
+521
+00:29:34,060 --> 00:29:39,010
+just a mini are sort of a graphical representation of the way that you
+
+522
+00:29:39,010 --> 00:29:41,470
+representation of the way that you compute this printing distributions so I
+
+523
+00:29:41,470 --> 00:29:45,070
+compute this printing distributions so I think and I think this is how we derive
+
+524
+00:29:45,070 --> 00:29:47,110
+think and I think this is how we derive these things last week so this is the
+
+525
+00:29:47,110 --> 00:29:51,780
+these things last week so this is the printing distribution of n minus 1 then
+
+526
+00:29:51,780 --> 00:29:57,090
+printing distribution of n minus 1 then you use the transition model basically
+
+527
+00:29:57,090 --> 00:29:59,890
+you use the transition model basically defined by this probability of Zn given
+
+528
+00:29:59,890 --> 00:30:03,520
+defined by this probability of Zn given Zn minus 1 so you update basically
+
+529
+00:30:03,520 --> 00:30:06,310
+Zn minus 1 so you update basically interstate is the end still using the
+
+530
+00:30:06,310 --> 00:30:08,980
+interstate is the end still using the measurements from x1 to xn minus 1 so
+
+531
+00:30:08,980 --> 00:30:12,280
+measurements from x1 to xn minus 1 so this is like an accretion model and the
+
+532
+00:30:12,280 --> 00:30:16,770
+this is like an accretion model and the values of this dictates basically a
+
+533
+00:30:16,770 --> 00:30:20,740
+values of this dictates basically a distribution that has is much wider in
+
+534
+00:30:20,740 --> 00:30:24,460
+distribution that has is much wider in support from the splintering stage at n
+
+535
+00:30:24,460 --> 00:30:27,330
+support from the splintering stage at n minus 1 and then effectively what to get
+
+536
+00:30:27,330 --> 00:30:30,220
+minus 1 and then effectively what to get the filtering state at time n you
+
+537
+00:30:30,220 --> 00:30:32,920
+the filtering state at time n you basically have to multiply with the
+
+538
+00:30:32,920 --> 00:30:35,410
+basically have to multiply with the observation model ok that looks like
+
+539
+00:30:35,410 --> 00:30:39,600
+observation model ok that looks like this and eventually this very broad
+
+540
+00:30:39,600 --> 00:30:43,180
+this and eventually this very broad push forward apply for one step
+
+541
+00:30:43,180 --> 00:30:46,420
+push forward apply for one step predicting this position now is modified
+
+542
+00:30:46,420 --> 00:30:49,390
+predicting this position now is modified to give you to give you this good
+
+543
+00:30:49,390 --> 00:30:51,330
+to give you to give you this good distribution that is the
+
+544
+00:30:51,330 --> 00:30:57,170
+distribution that is the take the time that so basically again
+
+545
+00:30:57,170 --> 00:31:02,370
+take the time that so basically again one-step prediction you know ahead and
+
+546
+00:31:02,370 --> 00:31:06,420
+one-step prediction you know ahead and then you collect the measurement accent
+
+547
+00:31:06,420 --> 00:31:10,140
+then you collect the measurement accent and you update with this model for a
+
+548
+00:31:10,140 --> 00:31:12,600
+and you update with this model for a minute efficiency it gives you and you
+
+549
+00:31:12,600 --> 00:31:17,790
+minute efficiency it gives you and you get the right to talk alright so now we
+
+550
+00:31:17,790 --> 00:31:20,730
+get the right to talk alright so now we have to discuss the backward message
+
+551
+00:31:20,730 --> 00:31:22,800
+have to discuss the backward message passing I wanna do this fast because
+
+552
+00:31:22,800 --> 00:31:24,300
+passing I wanna do this fast because basically the question is look the same
+
+553
+00:31:24,300 --> 00:31:27,870
+basically the question is look the same okay you will only be interested from
+
+554
+00:31:27,870 --> 00:31:30,990
+okay you will only be interested from this backward passing for getting this
+
+555
+00:31:30,990 --> 00:31:33,210
+this backward passing for getting this smoothing equations but I don't think I
+
+556
+00:31:33,210 --> 00:31:36,810
+smoothing equations but I don't think I cover or maybe it was in last two
+
+557
+00:31:36,810 --> 00:31:39,630
+cover or maybe it was in last two seconds from the previous lecture so we
+
+558
+00:31:39,630 --> 00:31:42,240
+seconds from the previous lecture so we need to get the smoothing distributions
+
+559
+00:31:42,240 --> 00:31:45,210
+need to get the smoothing distributions potential I remind you that we have
+
+560
+00:31:45,210 --> 00:31:48,780
+potential I remind you that we have defined as gamma messages okay as the
+
+561
+00:31:48,780 --> 00:31:50,820
+defined as gamma messages okay as the product of the message is coming at each
+
+562
+00:31:50,820 --> 00:31:53,550
+product of the message is coming at each node so the product of alpha and beta
+
+563
+00:31:53,550 --> 00:31:56,790
+node so the product of alpha and beta and this gamma messages define the
+
+564
+00:31:56,790 --> 00:31:58,620
+and this gamma messages define the sufficient statistics that we need of
+
+565
+00:31:58,620 --> 00:31:59,700
+sufficient statistics that we need of the EM algorithm
+
+566
+00:31:59,700 --> 00:32:02,520
+the EM algorithm okay and we were breaking discussed me
+
+567
+00:32:02,520 --> 00:32:03,280
+okay and we were breaking discussed me in one word
+
+568
+00:32:03,280 --> 00:32:08,350
+in one word well today all right so the debate looks
+
+569
+00:32:08,350 --> 00:32:11,170
+well today all right so the debate looks like that we basically have to go
+
+570
+00:32:11,170 --> 00:32:13,030
+like that we basically have to go backward we'd have to start to the last
+
+571
+00:32:13,030 --> 00:32:15,250
+backward we'd have to start to the last so ten plus one to complete the master
+
+572
+00:32:15,250 --> 00:32:18,100
+so ten plus one to complete the master then I have defined exactly the message
+
+573
+00:32:18,100 --> 00:32:22,570
+then I have defined exactly the message here so that this is equality including
+
+574
+00:32:22,570 --> 00:32:24,970
+here so that this is equality including the closeness of the heft and again you
+
+575
+00:32:24,970 --> 00:32:26,700
+the closeness of the heft and again you can look back on the previous lecture
+
+576
+00:32:26,700 --> 00:32:30,070
+can look back on the previous lecture but I had this equation that we
+
+577
+00:32:30,070 --> 00:32:33,010
+but I had this equation that we normalize our normalized form okay this
+
+578
+00:32:33,010 --> 00:32:39,790
+normalize our normalized form okay this is is precisely God so and again what's
+
+579
+00:32:39,790 --> 00:32:42,940
+is is precisely God so and again what's the meaning of the bigger message is the
+
+580
+00:32:42,940 --> 00:32:44,650
+the meaning of the bigger message is the probability of sending observations to
+
+581
+00:32:44,650 --> 00:32:48,160
+probability of sending observations to xn plus 1 to x cup the length given that
+
+582
+00:32:48,160 --> 00:32:51,580
+xn plus 1 to x cup the length given that I started third Zn at some value okay so
+
+583
+00:32:51,580 --> 00:32:58,540
+I started third Zn at some value okay so that's the bit America
+
+584
+00:32:58,540 --> 00:32:58,550
+
+
+585
+00:32:58,550 --> 00:33:02,260
+I remember I give you the answer blog but basically what you need to do is
+
+586
+00:33:02,260 --> 00:33:05,050
+but basically what you need to do is take the since everything is a Gaussian
+
+587
+00:33:05,050 --> 00:33:06,580
+take the since everything is a Gaussian let me see we're going to assume that
+
+588
+00:33:06,580 --> 00:33:08,830
+let me see we're going to assume that this bigger message this is a given
+
+589
+00:33:08,830 --> 00:33:16,830
+this bigger message this is a given anywhere
+
+590
+00:33:16,830 --> 00:33:16,840
+
+
+591
+00:33:16,840 --> 00:33:24,209
+all right so we have this okay we know that we have that we know that we know
+
+592
+00:33:24,209 --> 00:33:27,239
+that we have that we know that we know the update from the alpha messengers we
+
+593
+00:33:27,239 --> 00:33:32,249
+the update from the alpha messengers we know the skin obviously where I have
+
+594
+00:33:32,249 --> 00:33:34,169
+know the skin obviously where I have this rather than giving you the little
+
+595
+00:33:34,169 --> 00:33:36,839
+this rather than giving you the little essence it and actually if it is not in
+
+596
+00:33:36,839 --> 00:33:39,089
+essence it and actually if it is not in the slides maybe that's an external
+
+597
+00:33:39,089 --> 00:33:41,909
+the slides maybe that's an external hormone to the idea of explicitly the
+
+598
+00:33:41,909 --> 00:33:43,729
+hormone to the idea of explicitly the bit of assistance or the bus was moving
+
+599
+00:33:43,729 --> 00:33:48,810
+bit of assistance or the bus was moving color filtering equations okay so this
+
+600
+00:33:48,810 --> 00:33:50,849
+color filtering equations okay so this peg will I have is the combined message
+
+601
+00:33:50,849 --> 00:33:53,339
+peg will I have is the combined message Department beta in the derivation but if
+
+602
+00:33:53,339 --> 00:33:57,119
+Department beta in the derivation but if you only use this to compute this beta
+
+603
+00:33:57,119 --> 00:34:00,180
+you only use this to compute this beta messages thank you good you get this the
+
+604
+00:34:00,180 --> 00:34:03,930
+messages thank you good you get this the smoothing distributions so what I have
+
+605
+00:34:03,930 --> 00:34:08,159
+smoothing distributions so what I have here is I defined the gamma to be a
+
+606
+00:34:08,159 --> 00:34:13,319
+here is I defined the gamma to be a Gaussian with mean this new and Hart and
+
+607
+00:34:13,319 --> 00:34:18,710
+Gaussian with mean this new and Hart and V and Hart and you can show by you know
+
+608
+00:34:18,710 --> 00:34:21,529
+V and Hart and you can show by you know if actually what you need to do is
+
+609
+00:34:21,529 --> 00:34:24,629
+if actually what you need to do is multiply this with an R for instance all
+
+610
+00:34:24,629 --> 00:34:26,849
+multiply this with an R for instance all right so you can get the Rommel essence
+
+611
+00:34:26,849 --> 00:34:29,159
+right so you can get the Rommel essence of the left and then plug in everything
+
+612
+00:34:29,159 --> 00:34:31,680
+of the left and then plug in everything you know on the right everything is a
+
+613
+00:34:31,680 --> 00:34:34,669
+you know on the right everything is a Gaussian and here is the final answer
+
+614
+00:34:34,669 --> 00:34:38,309
+Gaussian and here is the final answer the mean and the variance for the gamma
+
+615
+00:34:38,309 --> 00:34:41,519
+the mean and the variance for the gamma resist is the mean and the variance that
+
+616
+00:34:41,519 --> 00:34:46,849
+resist is the mean and the variance that we computed for the Alpha messages times
+
+617
+00:34:46,849 --> 00:34:51,599
+we computed for the Alpha messages times this are the mean and the variance one
+
+618
+00:34:51,599 --> 00:34:53,700
+this are the mean and the variance one step ahead right because these are
+
+619
+00:34:53,700 --> 00:34:56,900
+step ahead right because these are backwards equations minus alpha nu n
+
+620
+00:34:56,900 --> 00:34:59,970
+backwards equations minus alpha nu n minus P n but we derive it in this
+
+621
+00:34:59,970 --> 00:35:03,900
+minus P n but we derive it in this matrix J and here is given V n times a
+
+622
+00:35:03,900 --> 00:35:05,670
+matrix J and here is given V n times a transpose B n minus
+
+623
+00:35:05,670 --> 00:35:10,080
+transpose B n minus okay so a very nice equation and I think
+
+624
+00:35:10,080 --> 00:35:12,960
+okay so a very nice equation and I think bits of the equations actually for the
+
+625
+00:35:12,960 --> 00:35:15,990
+bits of the equations actually for the carbons moving algorithm if you see in
+
+626
+00:35:15,990 --> 00:35:17,910
+carbons moving algorithm if you see in the notes basically you will immediately
+
+627
+00:35:17,910 --> 00:35:19,740
+the notes basically you will immediately recognize what the questions you need to
+
+628
+00:35:19,740 --> 00:35:27,030
+recognize what the questions you need to so coming out of this alright
+
+629
+00:35:27,030 --> 00:35:29,730
+so coming out of this alright to apply this equations or give you the
+
+630
+00:35:29,730 --> 00:35:31,680
+to apply this equations or give you the gamma Leicester's obviously you have
+
+631
+00:35:31,680 --> 00:35:33,990
+gamma Leicester's obviously you have first to run the power of addresses
+
+632
+00:35:33,990 --> 00:35:36,930
+first to run the power of addresses passing together nu + V and then go
+
+633
+00:35:36,930 --> 00:35:39,890
+passing together nu + V and then go backwards to calculate gamma okay
+
+634
+00:35:39,890 --> 00:35:43,920
+backwards to calculate gamma okay alright so you have to blossom in
+
+635
+00:35:43,920 --> 00:35:46,680
+alright so you have to blossom in sequence now there is one more
+
+636
+00:35:46,680 --> 00:35:48,570
+sequence now there is one more distribution that you need to get on the
+
+637
+00:35:48,570 --> 00:35:54,090
+distribution that you need to get on the air Margaret remember that remember this
+
+638
+00:35:54,090 --> 00:35:57,150
+air Margaret remember that remember this weird distribution the joint
+
+639
+00:35:57,150 --> 00:36:01,370
+weird distribution the joint distribution of Zn minus 1 CL that comes
+
+640
+00:36:01,370 --> 00:36:04,470
+distribution of Zn minus 1 CL that comes with the first one we did it apply the
+
+641
+00:36:04,470 --> 00:36:05,760
+with the first one we did it apply the hidden order
+
+642
+00:36:05,760 --> 00:36:09,600
+hidden order am L going from the hmm order okay so we
+
+643
+00:36:09,600 --> 00:36:13,260
+am L going from the hmm order okay so we will need to compute this joint
+
+644
+00:36:13,260 --> 00:36:16,470
+will need to compute this joint distribution for staining of Zn -
+
+645
+00:36:16,470 --> 00:36:19,140
+distribution for staining of Zn - Rollins yeah all right and there are
+
+646
+00:36:19,140 --> 00:36:22,680
+Rollins yeah all right and there are multiple ways of doing it you know and
+
+647
+00:36:22,680 --> 00:36:25,260
+multiple ways of doing it you know and here obviously the most trivial way to
+
+648
+00:36:25,260 --> 00:36:28,500
+here obviously the most trivial way to do it is to take the masters to derive
+
+649
+00:36:28,500 --> 00:36:30,600
+do it is to take the masters to derive so no than minus 1 and alpha message
+
+650
+00:36:30,600 --> 00:36:32,610
+so no than minus 1 and alpha message that the message that I should not beat
+
+651
+00:36:32,610 --> 00:36:35,700
+that the message that I should not beat up from right and then multiply with the
+
+652
+00:36:35,700 --> 00:36:37,470
+up from right and then multiply with the transition model and the observation
+
+653
+00:36:37,470 --> 00:36:39,120
+transition model and the observation model and that will give you this
+
+654
+00:36:39,120 --> 00:36:43,470
+model and that will give you this distribution so when you plug in all the
+
+655
+00:36:43,470 --> 00:36:46,350
+distribution so when you plug in all the distributions where it comes out is but
+
+656
+00:36:46,350 --> 00:36:48,660
+distributions where it comes out is but the joint distribution of Zn minus n CN
+
+657
+00:36:48,660 --> 00:36:54,780
+the joint distribution of Zn minus n CN is nu n minus 1 mu n I remind you these
+
+658
+00:36:54,780 --> 00:36:58,520
+is nu n minus 1 mu n I remind you these are the means for the gamma messages
+
+659
+00:36:58,520 --> 00:37:02,640
+are the means for the gamma messages okay and the core audience is J n minus
+
+660
+00:37:02,640 --> 00:37:05,460
+okay and the core audience is J n minus 1 times these variants of the gamma
+
+661
+00:37:05,460 --> 00:37:07,440
+1 times these variants of the gamma methods and
+
+662
+00:37:07,440 --> 00:37:10,950
+methods and the J metrics some priority is given by
+
+663
+00:37:10,950 --> 00:37:17,839
+the J metrics some priority is given by this okay so let me understand that
+
+664
+00:37:17,839 --> 00:37:20,130
+this okay so let me understand that equations are easy right but you know if
+
+665
+00:37:20,130 --> 00:37:22,290
+equations are easy right but you know if you think of writing a computer program
+
+666
+00:37:22,290 --> 00:37:25,200
+you think of writing a computer program that implements this it's basically once
+
+667
+00:37:25,200 --> 00:37:27,300
+that implements this it's basically once you put their analytical expressions the
+
+668
+00:37:27,300 --> 00:37:29,120
+you put their analytical expressions the whole algorithm is basically ten lines
+
+669
+00:37:29,120 --> 00:37:32,579
+whole algorithm is basically ten lines and literally Spain I mean if you search
+
+670
+00:37:32,579 --> 00:37:34,230
+and literally Spain I mean if you search on the web and you download the color
+
+671
+00:37:34,230 --> 00:37:39,150
+on the web and you download the color filter algorithm it's ten lights because
+
+672
+00:37:39,150 --> 00:37:41,490
+filter algorithm it's ten lights because every do you know the MATLAB knows how
+
+673
+00:37:41,490 --> 00:37:43,500
+every do you know the MATLAB knows how to manipulate gaussians and you don't
+
+674
+00:37:43,500 --> 00:37:45,329
+to manipulate gaussians and you don't have to do much you give the exact
+
+675
+00:37:45,329 --> 00:37:47,760
+have to do much you give the exact expressions and the rest is history
+
+676
+00:37:47,760 --> 00:37:53,940
+expressions and the rest is history okay I mean they become how we're going
+
+677
+00:37:53,940 --> 00:37:56,099
+okay I mean they become how we're going to get all these parameters now that we
+
+678
+00:37:56,099 --> 00:38:02,280
+to get all these parameters now that we got the sufficient statistics for you
+
+679
+00:38:02,280 --> 00:38:03,780
+got the sufficient statistics for you know with other sufficient statistics
+
+680
+00:38:03,780 --> 00:38:08,760
+know with other sufficient statistics for this from this gamma messages so I
+
+681
+00:38:08,760 --> 00:38:13,819
+for this from this gamma messages so I remind you what we need to do and let
+
+682
+00:38:13,819 --> 00:38:16,530
+remind you what we need to do and let somebody remind me so what we supposed
+
+683
+00:38:16,530 --> 00:38:26,400
+somebody remind me so what we supposed to do yes whether we will we take so the
+
+684
+00:38:26,400 --> 00:38:32,170
+to do yes whether we will we take so the expectation of what
+
+685
+00:38:32,170 --> 00:38:32,180
+
+
+686
+00:38:32,180 --> 00:38:37,010
+the joint log-likelihood so we will take basically there's only like if result
+
+687
+00:38:37,010 --> 00:38:40,480
+basically there's only like if result observations and hidden variables
+
+688
+00:38:40,480 --> 00:38:43,099
+observations and hidden variables because what's a very easy distribution
+
+689
+00:38:43,099 --> 00:38:45,500
+because what's a very easy distribution right Gaussian basically easy to write
+
+690
+00:38:45,500 --> 00:38:48,920
+right Gaussian basically easy to write down especially the long and because we
+
+691
+00:38:48,920 --> 00:38:50,839
+down especially the long and because we don't know z we will take the
+
+692
+00:38:50,839 --> 00:38:53,180
+don't know z we will take the expectation of that with respect to the
+
+693
+00:38:53,180 --> 00:38:54,460
+expectation of that with respect to the posterior of the Samadhi
+
+694
+00:38:54,460 --> 00:38:56,900
+posterior of the Samadhi so rather than a step to do that
+
+695
+00:38:56,900 --> 00:38:58,790
+so rather than a step to do that computation with all the parameters
+
+696
+00:38:58,790 --> 00:39:02,240
+computation with all the parameters fixed are variously to all and then once
+
+697
+00:39:02,240 --> 00:39:05,410
+fixed are variously to all and then once we compute out so that we prepare to be
+
+698
+00:39:05,410 --> 00:39:08,079
+we compute out so that we prepare to be sufficient statistics because that
+
+699
+00:39:08,079 --> 00:39:09,829
+sufficient statistics because that expectation with respect to the
+
+700
+00:39:09,829 --> 00:39:15,260
+expectation with respect to the posterior of Z right will acquire the
+
+701
+00:39:15,260 --> 00:39:18,109
+posterior of Z right will acquire the mean of Z and you know the C variables
+
+702
+00:39:18,109 --> 00:39:21,290
+mean of Z and you know the C variables that we saw before so that's part of the
+
+703
+00:39:21,290 --> 00:39:25,550
+that we saw before so that's part of the step and in the m-step basically we are
+
+704
+00:39:25,550 --> 00:39:28,190
+step and in the m-step basically we are going to take derivatives with respect
+
+705
+00:39:28,190 --> 00:39:30,980
+going to take derivatives with respect to the theta parameters and will provide
+
+706
+00:39:30,980 --> 00:39:33,319
+to the theta parameters and will provide update and the three parameters here are
+
+707
+00:39:33,319 --> 00:39:36,500
+update and the three parameters here are sort of elastic because we have one two
+
+708
+00:39:36,500 --> 00:39:39,650
+sort of elastic because we have one two three four five matrices in one vector
+
+709
+00:39:39,650 --> 00:39:43,309
+three four five matrices in one vector okay the next thing is you will see that
+
+710
+00:39:43,309 --> 00:39:46,190
+okay the next thing is you will see that the equations actually decouple and in
+
+711
+00:39:46,190 --> 00:39:49,880
+the equations actually decouple and in almost in a trivial way they look like
+
+712
+00:39:49,880 --> 00:39:51,710
+almost in a trivial way they look like I'm making a lot of these matrices like
+
+713
+00:39:51,710 --> 00:39:55,040
+I'm making a lot of these matrices like the covariances like you know gamma and
+
+714
+00:39:55,040 --> 00:39:57,410
+the covariances like you know gamma and Sigma you will see that it looks almost
+
+715
+00:39:57,410 --> 00:40:03,589
+Sigma you will see that it looks almost like working with estimating the mean
+
+716
+00:40:03,589 --> 00:40:05,690
+like working with estimating the mean and the variance of a multivariate
+
+717
+00:40:05,690 --> 00:40:08,630
+and the variance of a multivariate Gaussian so basically doing Emily
+
+718
+00:40:08,630 --> 00:40:10,339
+Gaussian so basically doing Emily estimate for the multivariate Gaussian
+
+719
+00:40:10,339 --> 00:40:12,859
+estimate for the multivariate Gaussian and as you know what you do Emily you
+
+720
+00:40:12,859 --> 00:40:14,359
+and as you know what you do Emily you basically get the sample mean of the
+
+721
+00:40:14,359 --> 00:40:20,540
+basically get the sample mean of the sample variance okay so this is the
+
+722
+00:40:20,540 --> 00:40:22,430
+sample variance okay so this is the sufficient statistic that we need right
+
+723
+00:40:22,430 --> 00:40:24,349
+sufficient statistic that we need right the expectation of Zn
+
+724
+00:40:24,349 --> 00:40:28,010
+the expectation of Zn we already completed it
+
+725
+00:40:28,010 --> 00:40:28,020
+
+
+726
+00:40:28,020 --> 00:40:35,859
+we need the this remember this joint thinks you know
+
+727
+00:40:35,859 --> 00:40:37,630
+this remember this joint thinks you know we need the expectation of Z and Z and
+
+728
+00:40:37,630 --> 00:40:40,450
+we need the expectation of Z and Z and minus one post post so you can since you
+
+729
+00:40:40,450 --> 00:40:44,500
+minus one post post so you can since you know the distribution of the joint the
+
+730
+00:40:44,500 --> 00:40:46,890
+know the distribution of the joint the joint distribution of z LZ at minus 1
+
+731
+00:40:46,890 --> 00:40:50,950
+joint distribution of z LZ at minus 1 this will be the body also that this
+
+732
+00:40:50,950 --> 00:40:51,790
+this will be the body also that this relation
+
+733
+00:40:51,790 --> 00:40:55,450
+relation - unit responds and then of course you
+
+734
+00:40:55,450 --> 00:40:57,970
+- unit responds and then of course you will need the expectation of TN z and
+
+735
+00:40:57,970 --> 00:41:00,100
+will need the expectation of TN z and transpose that is given like that and
+
+736
+00:41:00,100 --> 00:41:02,609
+transpose that is given like that and all of these parties we just computed
+
+737
+00:41:02,609 --> 00:41:05,020
+all of these parties we just computed all right so this will be can be sort of
+
+738
+00:41:05,020 --> 00:41:07,120
+all right so this will be can be sort of that in the aesthetic
+
+739
+00:41:07,120 --> 00:41:10,000
+that in the aesthetic so the not like equal to it's a trivial
+
+740
+00:41:10,000 --> 00:41:12,990
+so the not like equal to it's a trivial because you know you have the initial
+
+741
+00:41:12,990 --> 00:41:15,820
+because you know you have the initial observation model I mean the initial
+
+742
+00:41:15,820 --> 00:41:20,220
+observation model I mean the initial state model and then the transition and
+
+743
+00:41:20,220 --> 00:41:25,630
+state model and then the transition and the measurement and these are gaussians
+
+744
+00:41:25,630 --> 00:41:27,850
+the measurement and these are gaussians so we'll take long substring just
+
+745
+00:41:27,850 --> 00:41:29,800
+so we'll take long substring just simplify the trivial matter
+
+746
+00:41:29,800 --> 00:41:33,070
+simplify the trivial matter so this is what we need to compute need
+
+747
+00:41:33,070 --> 00:41:36,160
+so this is what we need to compute need to take the joint of likelihood and take
+
+748
+00:41:36,160 --> 00:41:39,010
+to take the joint of likelihood and take the expectation with respect to
+
+749
+00:41:39,010 --> 00:41:41,349
+the expectation with respect to parameters are showing the expectation
+
+750
+00:41:41,349 --> 00:41:43,690
+parameters are showing the expectation with respect to the z variables keeping
+
+751
+00:41:43,690 --> 00:41:47,620
+with respect to the z variables keeping the parameters fixed so let's do sort of
+
+752
+00:41:47,620 --> 00:41:49,770
+the parameters fixed so let's do sort of a trivial application of this to
+
+753
+00:41:49,770 --> 00:41:53,080
+a trivial application of this to computing new 0 and p 0 i remind you
+
+754
+00:41:53,080 --> 00:41:56,349
+computing new 0 and p 0 i remind you those are the mean and variance for the
+
+755
+00:41:56,349 --> 00:42:00,370
+those are the mean and variance for the initial state okay so basically in that
+
+756
+00:42:00,370 --> 00:42:02,380
+initial state okay so basically in that preparation of the joint of likelihood
+
+757
+00:42:02,380 --> 00:42:04,060
+preparation of the joint of likelihood only this term will give the
+
+758
+00:42:04,060 --> 00:42:05,830
+only this term will give the contribution for the involved in here 0
+
+759
+00:42:05,830 --> 00:42:09,340
+contribution for the involved in here 0 0 and really I mean estimating easier to
+
+760
+00:42:09,340 --> 00:42:12,099
+0 and really I mean estimating easier to 0 is like an Emily for multivariate
+
+761
+00:42:12,099 --> 00:42:16,240
+0 is like an Emily for multivariate Gaussian right I mean it's identical
+
+762
+00:42:16,240 --> 00:42:19,630
+Gaussian right I mean it's identical okay so when you write you expand this
+
+763
+00:42:19,630 --> 00:42:21,910
+okay so when you write you expand this this is what you get right
+
+764
+00:42:21,910 --> 00:42:26,349
+this is what you get right the only difference from doing Emily of
+
+765
+00:42:26,349 --> 00:42:28,450
+the only difference from doing Emily of multi-value Gaussian here is an
+
+766
+00:42:28,450 --> 00:42:30,220
+multi-value Gaussian here is an expectation with respect to the Z
+
+767
+00:42:30,220 --> 00:42:32,590
+expectation with respect to the Z variables so you notice the expectation
+
+768
+00:42:32,590 --> 00:42:33,250
+variables so you notice the expectation with involved
+
+769
+00:42:33,250 --> 00:42:36,640
+with involved you know z1 transposing one in also
+
+770
+00:42:36,640 --> 00:42:39,220
+you know z1 transposing one in also expectation of Z 1 verse of the
+
+771
+00:42:39,220 --> 00:42:41,530
+expectation of Z 1 verse of the sufficient statistic that I saw before
+
+772
+00:42:41,530 --> 00:42:46,840
+sufficient statistic that I saw before so z1 expectation of Z 1 and Z ones you
+
+773
+00:42:46,840 --> 00:42:50,190
+so z1 expectation of Z 1 and Z ones you want to expose so you have altered and
+
+774
+00:42:50,190 --> 00:42:57,040
+want to expose so you have altered and so when so these are the statistics you
+
+775
+00:42:57,040 --> 00:43:02,880
+so when so these are the statistics you need to compute okay and in the end step
+
+776
+00:43:02,880 --> 00:43:05,530
+need to compute okay and in the end step four is the maximization with respect to
+
+777
+00:43:05,530 --> 00:43:09,880
+four is the maximization with respect to the 0 and p 0 which the same thing as
+
+778
+00:43:09,880 --> 00:43:11,890
+the 0 and p 0 which the same thing as have antiviral gaussian and basically
+
+779
+00:43:11,890 --> 00:43:13,360
+have antiviral gaussian and basically these are the results that you get
+
+780
+00:43:13,360 --> 00:43:17,950
+these are the results that you get okay so the the updates of the main and
+
+781
+00:43:17,950 --> 00:43:20,560
+okay so the the updates of the main and the valiant are given basically actually
+
+782
+00:43:20,560 --> 00:43:22,150
+the valiant are given basically actually in terms of the sufficient statistics
+
+783
+00:43:22,150 --> 00:43:28,720
+in terms of the sufficient statistics because I mean this destructive expected
+
+784
+00:43:28,720 --> 00:43:32,290
+because I mean this destructive expected result here ok these are again like the
+
+785
+00:43:32,290 --> 00:43:34,360
+result here ok these are again like the sample mean right and this is like the
+
+786
+00:43:34,360 --> 00:43:37,780
+sample mean right and this is like the sample body right the expectations them
+
+787
+00:43:37,780 --> 00:43:43,210
+sample body right the expectations them so far of something okay
+
+788
+00:43:43,210 --> 00:43:44,530
+so far of something okay very fast you know if you want to
+
+789
+00:43:44,530 --> 00:43:47,490
+very fast you know if you want to calculate for example a and gamma okay
+
+790
+00:43:47,490 --> 00:43:50,710
+calculate for example a and gamma okay you need to expand this term so to
+
+791
+00:43:50,710 --> 00:43:52,150
+you need to expand this term so to expand it you can get something like
+
+792
+00:43:52,150 --> 00:43:52,630
+expand it you can get something like this
+
+793
+00:43:52,630 --> 00:43:57,250
+this alright and you complete your sufficient
+
+794
+00:43:57,250 --> 00:43:59,050
+alright and you complete your sufficient statistics then we take derivatives with
+
+795
+00:43:59,050 --> 00:44:01,390
+statistics then we take derivatives with respect to a and gamma the game it looks
+
+796
+00:44:01,390 --> 00:44:03,880
+respect to a and gamma the game it looks identical to multivariate Gaussian you
+
+797
+00:44:03,880 --> 00:44:08,140
+identical to multivariate Gaussian you know and be obtained of a and gamma in
+
+798
+00:44:08,140 --> 00:44:10,780
+know and be obtained of a and gamma in the m-step look like this really the
+
+799
+00:44:10,780 --> 00:44:13,000
+the m-step look like this really the only thing you need to compute again is
+
+800
+00:44:13,000 --> 00:44:15,310
+only thing you need to compute again is the sufficient statistics okay
+
+801
+00:44:15,310 --> 00:44:18,640
+the sufficient statistics okay and the sufficient statistics for a and
+
+802
+00:44:18,640 --> 00:44:22,450
+and the sufficient statistics for a and gamma obviously they involve all the
+
+803
+00:44:22,450 --> 00:44:24,220
+gamma obviously they involve all the sufficient statistics overall little
+
+804
+00:44:24,220 --> 00:44:28,030
+sufficient statistics overall little left right so you don't have you know in
+
+805
+00:44:28,030 --> 00:44:32,230
+left right so you don't have you know in this case all right well as suppose in
+
+806
+00:44:32,230 --> 00:44:35,170
+this case all right well as suppose in the previous case for the initial state
+
+807
+00:44:35,170 --> 00:44:36,529
+the previous case for the initial state you didn't have this
+
+808
+00:44:36,529 --> 00:44:39,019
+you didn't have this relations but here basically without the
+
+809
+00:44:39,019 --> 00:44:41,179
+relations but here basically without the summations that you need to make this to
+
+810
+00:44:41,179 --> 00:44:50,559
+summations that you need to make this to go in similarly for this calculation of
+
+811
+00:44:50,559 --> 00:44:54,650
+go in similarly for this calculation of Sigma of Z and Sigma that they come in
+
+812
+00:44:54,650 --> 00:44:59,209
+Sigma of Z and Sigma that they come in the observation model again mr. Fisher's
+
+813
+00:44:59,209 --> 00:45:05,739
+the observation model again mr. Fisher's for distinct look like this okay and
+
+814
+00:45:05,739 --> 00:45:05,749
+
+
+815
+00:45:05,749 --> 00:45:16,299
+actually you can see immediately why we had caused the end to be sort of to be
+
+816
+00:45:16,299 --> 00:45:16,309
+
+
+817
+00:45:16,309 --> 00:45:23,750
+what's the name we gave to the N I forgot remind me
+
+818
+00:45:23,750 --> 00:45:23,760
+
+
+819
+00:45:23,760 --> 00:45:32,720
+say the word but for that I'm tired you know I am justified you know with the
+
+820
+00:45:32,720 --> 00:45:38,170
+know I am justified you know with the world that's nice amenity responsibility
+
+821
+00:45:38,170 --> 00:45:40,160
+world that's nice amenity responsibility okay
+
+822
+00:45:40,160 --> 00:45:41,510
+okay similarly the concept of the
+
+823
+00:45:41,510 --> 00:45:43,460
+similarly the concept of the responsibility because you know you
+
+824
+00:45:43,460 --> 00:45:45,140
+responsibility because you know you completing C and if you take all the day
+
+825
+00:45:45,140 --> 00:45:47,599
+completing C and if you take all the day all the observations but you sign a
+
+826
+00:45:47,599 --> 00:45:49,550
+all the observations but you sign a posterior probability to each of them
+
+827
+00:45:49,550 --> 00:46:04,970
+posterior probability to each of them right you know estimate basically the
+
+828
+00:46:04,970 --> 00:46:07,490
+right you know estimate basically the only thing you need to do is when you're
+
+829
+00:46:07,490 --> 00:46:10,609
+only thing you need to do is when you're going and finish the equation when
+
+830
+00:46:10,609 --> 00:46:13,970
+going and finish the equation when you're going to compute this expectation
+
+831
+00:46:13,970 --> 00:46:15,530
+you're going to compute this expectation the joint of likelihood the only thing
+
+832
+00:46:15,530 --> 00:46:18,440
+the joint of likelihood the only thing you have to do is write one put some log
+
+833
+00:46:18,440 --> 00:46:20,900
+you have to do is write one put some log of the prior probability there as well
+
+834
+00:46:20,900 --> 00:46:23,330
+of the prior probability there as well and the rest is service it will change
+
+835
+00:46:23,330 --> 00:46:27,349
+and the rest is service it will change any between in the derivative to get
+
+836
+00:46:27,349 --> 00:46:29,540
+any between in the derivative to get some extra terms the doctors regular
+
+837
+00:46:29,540 --> 00:46:32,030
+some extra terms the doctors regular license basically but getting the map
+
+838
+00:46:32,030 --> 00:46:38,230
+license basically but getting the map estimate is sort of trivial now again
+
+839
+00:46:38,230 --> 00:46:42,770
+estimate is sort of trivial now again this thinks they look like comma type of
+
+840
+00:46:42,770 --> 00:46:45,080
+this thinks they look like comma type of problems but you know as you can see you
+
+841
+00:46:45,080 --> 00:46:47,530
+problems but you know as you can see you know former promised you know there were
+
+842
+00:46:47,530 --> 00:46:51,050
+know former promised you know there were lots of progress on the spending habits
+
+843
+00:46:51,050 --> 00:46:53,780
+lots of progress on the spending habits how would this work you know they were
+
+844
+00:46:53,780 --> 00:46:57,250
+how would this work you know they were things done in the last 15-20 years so
+
+845
+00:46:57,250 --> 00:47:00,140
+things done in the last 15-20 years so this a nice reference that contains this
+
+846
+00:47:00,140 --> 00:47:04,670
+this a nice reference that contains this sort of calculation
+
+847
+00:47:04,670 --> 00:47:04,680
+
+
+848
+00:47:04,680 --> 00:47:12,930
+okay I'm losing my audience what's happening today it's like I'm telling
+
+849
+00:47:12,930 --> 00:47:14,600
+happening today it's like I'm telling that back for two minutes and then
+
+850
+00:47:14,600 --> 00:47:29,880
+that back for two minutes and then everybody's gone if you try to play with
+
+851
+00:47:29,880 --> 00:47:33,750
+everybody's gone if you try to play with this message passing and and references
+
+852
+00:47:33,750 --> 00:47:36,900
+this message passing and and references I don't have them here but deny if you
+
+853
+00:47:36,900 --> 00:47:39,810
+I don't have them here but deny if you search you will find ways of doing this
+
+854
+00:47:39,810 --> 00:47:42,360
+search you will find ways of doing this but let's say that somehow you're not
+
+855
+00:47:42,360 --> 00:47:44,820
+but let's say that somehow you're not happy with messages that are gaussians
+
+856
+00:47:44,820 --> 00:47:48,780
+happy with messages that are gaussians right I mean I can you know maybe you're
+
+857
+00:47:48,780 --> 00:47:50,940
+right I mean I can you know maybe you're nice model is not Gaussian maybe your
+
+858
+00:47:50,940 --> 00:47:53,160
+nice model is not Gaussian maybe your initials trade is non Gaussian so how do
+
+859
+00:47:53,160 --> 00:47:54,600
+initials trade is non Gaussian so how do you use this equation let's say well
+
+860
+00:47:54,600 --> 00:47:57,750
+you use this equation let's say well this is a Gaussian mixture okay now if
+
+861
+00:47:57,750 --> 00:48:01,670
+this is a Gaussian mixture okay now if business a Gaussian makes the right and
+
+862
+00:48:01,670 --> 00:48:05,300
+business a Gaussian makes the right and there's the time put here okay xn given
+
+863
+00:48:05,300 --> 00:48:12,210
+there's the time put here okay xn given Zn so you start with say with the
+
+864
+00:48:12,210 --> 00:48:16,410
+Zn so you start with say with the methods of a z1 that is a Gaussian
+
+865
+00:48:16,410 --> 00:48:21,360
+methods of a z1 that is a Gaussian mixture then a of z2 will be also mixed
+
+866
+00:48:21,360 --> 00:48:24,900
+mixture then a of z2 will be also mixed with K square components basically it
+
+867
+00:48:24,900 --> 00:48:27,150
+with K square components basically it would be a Gaussian mixed with K cubed
+
+868
+00:48:27,150 --> 00:48:29,340
+would be a Gaussian mixed with K cubed components so basically you know
+
+869
+00:48:29,340 --> 00:48:31,230
+components so basically you know identical dilatory explosion in
+
+870
+00:48:31,230 --> 00:48:34,050
+identical dilatory explosion in components of these messages so the only
+
+871
+00:48:34,050 --> 00:48:38,730
+components of these messages so the only way that you can pursue sort of a non
+
+872
+00:48:38,730 --> 00:48:40,650
+way that you can pursue sort of a non Gaussian representation gives an extra
+
+873
+00:48:40,650 --> 00:48:43,260
+Gaussian representation gives an extra sphere would be to actually take
+
+874
+00:48:43,260 --> 00:48:45,690
+sphere would be to actually take different listeners with this mixtures
+
+875
+00:48:45,690 --> 00:48:48,030
+different listeners with this mixtures but before you update and you go to the
+
+876
+00:48:48,030 --> 00:48:50,340
+but before you update and you go to the next clip projecting back to K
+
+877
+00:48:50,340 --> 00:48:53,070
+next clip projecting back to K components so your new combinations of K
+
+878
+00:48:53,070 --> 00:48:55,110
+components so your new combinations of K square components but then you know
+
+879
+00:48:55,110 --> 00:48:56,970
+square components but then you know perhaps made this again with case J
+
+880
+00:48:56,970 --> 00:48:59,990
+perhaps made this again with case J component and
+
+881
+00:48:59,990 --> 00:49:00,000
+
+
+882
+00:49:00,000 --> 00:49:05,750
+the wristwatch remember out of the group at MIT that had done this type of
+
+883
+00:49:05,750 --> 00:49:10,760
+at MIT that had done this type of calculations many 10 years course oh so
+
+884
+00:49:10,760 --> 00:49:14,000
+calculations many 10 years course oh so basically yes gaussians make this update
+
+885
+00:49:14,000 --> 00:49:18,920
+basically yes gaussians make this update progress analytical but you know if you
+
+886
+00:49:18,920 --> 00:49:20,690
+progress analytical but you know if you want to use anything that's long
+
+887
+00:49:20,690 --> 00:49:24,260
+want to use anything that's long Gaussian ignoring new territories and
+
+888
+00:49:24,260 --> 00:49:25,550
+Gaussian ignoring new territories and you have to be very careful how you do
+
+889
+00:49:25,550 --> 00:49:26,510
+you have to be very careful how you do okay
+
+890
+00:49:26,510 --> 00:49:28,040
+okay it doesn't mean you cannot be done what
+
+891
+00:49:28,040 --> 00:49:33,650
+it doesn't mean you cannot be done what he means is not going to be easy to
+
+892
+00:49:33,650 --> 00:49:49,490
+he means is not going to be easy to compute this topic is related with this
+
+893
+00:49:49,490 --> 00:49:51,920
+compute this topic is related with this type of exchange extensions when the
+
+894
+00:49:51,920 --> 00:49:54,140
+type of exchange extensions when the messages are non Gaussian how do you
+
+895
+00:49:54,140 --> 00:49:57,740
+messages are non Gaussian how do you actually okay is there are other any
+
+896
+00:49:57,740 --> 00:49:58,910
+actually okay is there are other any other methods okay
+
+897
+00:49:58,910 --> 00:50:02,180
+other methods okay and one of the methods that allows you
+
+898
+00:50:02,180 --> 00:50:04,310
+and one of the methods that allows you to do messages that they are non
+
+899
+00:50:04,310 --> 00:50:07,040
+to do messages that they are non Gaussian is to use a particle
+
+900
+00:50:07,040 --> 00:50:10,040
+Gaussian is to use a particle representation of the of the vestiges so
+
+901
+00:50:10,040 --> 00:50:14,240
+representation of the of the vestiges so you can figure out basically having the
+
+902
+00:50:14,240 --> 00:50:17,750
+you can figure out basically having the messages represented in terms of top box
+
+903
+00:50:17,750 --> 00:50:22,250
+messages represented in terms of top box alright and I know in the cola gave at
+
+904
+00:50:22,250 --> 00:50:24,440
+alright and I know in the cola gave at least three or four lectures of the
+
+905
+00:50:24,440 --> 00:50:27,530
+least three or four lectures of the topics are not quite sure how much you
+
+906
+00:50:27,530 --> 00:50:31,010
+topics are not quite sure how much you will be for us to discuss a lot of
+
+907
+00:50:31,010 --> 00:50:33,350
+will be for us to discuss a lot of details right somewhere try to spend
+
+908
+00:50:33,350 --> 00:50:36,530
+details right somewhere try to spend maybe 10 minutes okay because this maps
+
+909
+00:50:36,530 --> 00:50:38,180
+maybe 10 minutes okay because this maps are extremely powerful like for example
+
+910
+00:50:38,180 --> 00:50:43,310
+are extremely powerful like for example in robotics in tackling everything is
+
+911
+00:50:43,310 --> 00:50:46,250
+in robotics in tackling everything is using particle methods because those
+
+912
+00:50:46,250 --> 00:50:49,820
+using particle methods because those emissions long work gaussians are the
+
+913
+00:50:49,820 --> 00:50:52,160
+emissions long work gaussians are the wrong approach equation so the only way
+
+914
+00:50:52,160 --> 00:50:54,620
+wrong approach equation so the only way out is time approximation method or
+
+915
+00:50:54,620 --> 00:50:59,020
+out is time approximation method or using this part of things okay
+
+916
+00:50:59,020 --> 00:51:03,250
+using this part of things okay now I know about the 10th of the class -
+
+917
+00:51:03,250 --> 00:51:05,740
+now I know about the 10th of the class - good luck with my you know attending my
+
+918
+00:51:05,740 --> 00:51:07,359
+good luck with my you know attending my lectures in the hole
+
+919
+00:51:07,359 --> 00:51:09,940
+lectures in the hole but I also test that the remember
+
+920
+00:51:09,940 --> 00:51:11,589
+but I also test that the remember nothing okay
+
+921
+00:51:11,589 --> 00:51:18,609
+nothing okay right you sick they remember absolutely
+
+922
+00:51:18,609 --> 00:51:22,829
+right you sick they remember absolutely nothing so let me so I'm not going to
+
+923
+00:51:22,829 --> 00:51:24,849
+nothing so let me so I'm not going to let me jump okay
+
+924
+00:51:24,849 --> 00:51:26,140
+let me jump okay sorry I'm not going to tell you
+
+925
+00:51:26,140 --> 00:51:31,470
+sorry I'm not going to tell you everything
+
+926
+00:51:31,470 --> 00:51:31,480
+
+
+927
+00:51:31,480 --> 00:51:44,890
+alright so me discuss sort of this prediction and update of the state that
+
+928
+00:51:44,890 --> 00:51:48,279
+prediction and update of the state that we use basically for the Kalman filter
+
+929
+00:51:48,279 --> 00:51:50,440
+we use basically for the Kalman filter equations of the previous lectures and
+
+930
+00:51:50,440 --> 00:51:53,170
+equations of the previous lectures and when I show here is rather than of
+
+931
+00:51:53,170 --> 00:51:57,339
+when I show here is rather than of making one state at the time they think
+
+932
+00:51:57,339 --> 00:52:00,640
+making one state at the time they think so in this case from the Stefan versus
+
+933
+00:52:00,640 --> 00:52:03,490
+so in this case from the Stefan versus prediction I have data from 1 to n minus
+
+934
+00:52:03,490 --> 00:52:04,839
+prediction I have data from 1 to n minus 1 all right
+
+935
+00:52:04,839 --> 00:52:07,029
+1 all right and I'm updating all the states
+
+936
+00:52:07,029 --> 00:52:09,640
+and I'm updating all the states including our state n and the addition
+
+937
+00:52:09,640 --> 00:52:12,609
+including our state n and the addition of the prediction step is the end of
+
+938
+00:52:12,609 --> 00:52:15,880
+of the prediction step is the end of this distribution at the joint of Z's
+
+939
+00:52:15,880 --> 00:52:19,510
+this distribution at the joint of Z's from 1 to N minus 1 given X 1 n minus 1
+
+940
+00:52:19,510 --> 00:52:22,510
+from 1 to N minus 1 given X 1 n minus 1 so this prediction one step ahead only
+
+941
+00:52:22,510 --> 00:52:27,730
+so this prediction one step ahead only involves lives of these dynamics the
+
+942
+00:52:27,730 --> 00:52:30,490
+involves lives of these dynamics the probability of Zn given Zn minus 1 okay
+
+943
+00:52:30,490 --> 00:52:34,630
+probability of Zn given Zn minus 1 okay right so again in for the filtering a
+
+944
+00:52:34,630 --> 00:52:37,089
+right so again in for the filtering a question the prediction step involving
+
+945
+00:52:37,089 --> 00:52:40,299
+question the prediction step involving the variables here here just because I
+
+946
+00:52:40,299 --> 00:52:42,519
+the variables here here just because I company's equations for much more
+
+947
+00:52:42,519 --> 00:52:45,779
+company's equations for much more general sort of type of calculations I
+
+948
+00:52:45,779 --> 00:52:48,400
+general sort of type of calculations I demonstrate this when we keep the
+
+949
+00:52:48,400 --> 00:52:50,289
+demonstrate this when we keep the posterior of all of these variables ok
+
+950
+00:52:50,289 --> 00:52:52,630
+posterior of all of these variables ok so this is the prediction for one step
+
+951
+00:52:52,630 --> 00:52:56,470
+so this is the prediction for one step ahead that we have seen and and as we
+
+952
+00:52:56,470 --> 00:52:59,049
+ahead that we have seen and and as we discussed even today if you want now if
+
+953
+00:52:59,049 --> 00:53:00,290
+discussed even today if you want now if you observe want you
+
+954
+00:53:00,290 --> 00:53:03,080
+you observe want you the point xn and you want to update the
+
+955
+00:53:03,080 --> 00:53:05,810
+the point xn and you want to update the prospero of all the Z's up to n then
+
+956
+00:53:05,810 --> 00:53:07,430
+prospero of all the Z's up to n then definitely what you need to do is take
+
+957
+00:53:07,430 --> 00:53:09,590
+definitely what you need to do is take this distribution multiplied with the
+
+958
+00:53:09,590 --> 00:53:13,820
+this distribution multiplied with the observation model xn given Zn so in a
+
+959
+00:53:13,820 --> 00:53:17,150
+observation model xn given Zn so in a particle that metals so if you you know
+
+960
+00:53:17,150 --> 00:53:19,220
+particle that metals so if you you know make all of this delusion then you get
+
+961
+00:53:19,220 --> 00:53:26,660
+make all of this delusion then you get that these filter equations ok because
+
+962
+00:53:26,660 --> 00:53:29,330
+that these filter equations ok because here I don't have all my observations on
+
+963
+00:53:29,330 --> 00:53:31,790
+here I don't have all my observations on each sub to help ok so you get the color
+
+964
+00:53:31,790 --> 00:53:38,870
+each sub to help ok so you get the color of entry questions for this so the idea
+
+965
+00:53:38,870 --> 00:53:42,770
+of entry questions for this so the idea of this particle levels are asking
+
+966
+00:53:42,770 --> 00:53:45,470
+of this particle levels are asking informant in time to represent these
+
+967
+00:53:45,470 --> 00:53:48,200
+informant in time to represent these distributions with samples without
+
+968
+00:53:48,200 --> 00:53:49,090
+distributions with samples without detection
+
+969
+00:53:49,090 --> 00:53:55,100
+detection ok and somehow another one understanding
+
+970
+00:53:55,100 --> 00:53:57,110
+ok and somehow another one understanding the distributions as you go from one
+
+971
+00:53:57,110 --> 00:54:00,250
+the distributions as you go from one step to another are provide basically
+
+972
+00:54:00,250 --> 00:54:05,420
+step to another are provide basically the the waves of this Delta functions as
+
+973
+00:54:05,420 --> 00:54:11,870
+the the waves of this Delta functions as you go from n minus 1 to n right
+
+974
+00:54:11,870 --> 00:54:14,480
+you go from n minus 1 to n right so the idea here is that you have Delta
+
+975
+00:54:14,480 --> 00:54:17,330
+so the idea here is that you have Delta functions but in shall we do class some
+
+976
+00:54:17,330 --> 00:54:19,130
+functions but in shall we do class some of the Cardinal the weight is the same
+
+977
+00:54:19,130 --> 00:54:22,670
+of the Cardinal the weight is the same so we're going to have weighted samples
+
+978
+00:54:22,670 --> 00:54:25,910
+so we're going to have weighted samples to express these distributions and if
+
+979
+00:54:25,910 --> 00:54:27,710
+to express these distributions and if your I these distributions in terms of
+
+980
+00:54:27,710 --> 00:54:29,540
+your I these distributions in terms of samples you can actually in principle
+
+981
+00:54:29,540 --> 00:54:32,060
+samples you can actually in principle represent any sort of distributions can
+
+982
+00:54:32,060 --> 00:54:33,830
+represent any sort of distributions can be anything all right
+
+983
+00:54:33,830 --> 00:54:35,990
+be anything all right anything that the distribution is very
+
+984
+00:54:35,990 --> 00:54:39,380
+anything that the distribution is very complex you will need more samples but
+
+985
+00:54:39,380 --> 00:54:45,860
+complex you will need more samples but this ideas here it comes out that if you
+
+986
+00:54:45,860 --> 00:54:48,650
+this ideas here it comes out that if you take the samples and somehow you update
+
+987
+00:54:48,650 --> 00:54:51,230
+take the samples and somehow you update are ways to one step to another the
+
+988
+00:54:51,230 --> 00:54:54,410
+are ways to one step to another the algoriphagus the complexity that depends
+
+989
+00:54:54,410 --> 00:54:56,060
+algoriphagus the complexity that depends the area or the number of the samples
+
+990
+00:54:56,060 --> 00:54:59,030
+the area or the number of the samples not on the little n so in principle you
+
+991
+00:54:59,030 --> 00:55:01,490
+not on the little n so in principle you can keep doing this forever you can
+
+992
+00:55:01,490 --> 00:55:02,670
+can keep doing this forever you can control us
+
+993
+00:55:02,670 --> 00:55:05,250
+control us distribution from time while 2 to
+
+994
+00:55:05,250 --> 00:55:07,830
+distribution from time while 2 to infinity even though there would be the
+
+995
+00:55:07,830 --> 00:55:09,450
+infinity even though there would be the generous issues and all the things that
+
+996
+00:55:09,450 --> 00:55:16,050
+generous issues and all the things that we have no time to discuss ok give you
+
+997
+00:55:16,050 --> 00:55:19,440
+we have no time to discuss ok give you basically I'm actually I'm going to go
+
+998
+00:55:19,440 --> 00:55:22,770
+basically I'm actually I'm going to go directly on the picture okay since we
+
+999
+00:55:22,770 --> 00:55:32,640
+directly on the picture okay since we Vista so so we have here is the mountain
+
+1000
+00:55:32,640 --> 00:55:35,520
+Vista so so we have here is the mountain the define them and we know the temple
+
+1001
+00:55:35,520 --> 00:55:37,620
+the define them and we know the temple in distribution and I write the specter
+
+1002
+00:55:37,620 --> 00:55:39,570
+in distribution and I write the specter in distribution in terms of this
+
+1003
+00:55:39,570 --> 00:55:41,550
+in distribution in terms of this particle service event the functions
+
+1004
+00:55:41,550 --> 00:55:45,750
+particle service event the functions that are you know sentient basically on
+
+1005
+00:55:45,750 --> 00:55:49,530
+that are you know sentient basically on this part it was capital of Z n okay and
+
+1006
+00:55:49,530 --> 00:55:54,030
+this part it was capital of Z n okay and this are wage okay in the way it's
+
+1007
+00:55:54,030 --> 00:55:55,830
+this are wage okay in the way it's actually when I represent this are the
+
+1008
+00:55:55,830 --> 00:55:59,250
+actually when I represent this are the particles a different location and to
+
+1009
+00:55:59,250 --> 00:56:00,920
+particles a different location and to indicate which way it's a bigger
+
+1010
+00:56:00,920 --> 00:56:08,670
+indicate which way it's a bigger basically it's a bigger okay so to be
+
+1011
+00:56:08,670 --> 00:56:11,430
+basically it's a bigger okay so to be able to move forward this particles and
+
+1012
+00:56:11,430 --> 00:56:13,890
+able to move forward this particles and compute the filtering distribution time
+
+1013
+00:56:13,890 --> 00:56:17,130
+compute the filtering distribution time n plus 1 you remember I need to do two
+
+1014
+00:56:17,130 --> 00:56:19,680
+n plus 1 you remember I need to do two things first I need to move most fair
+
+1015
+00:56:19,680 --> 00:56:23,940
+things first I need to move most fair which with this dynamical model and then
+
+1016
+00:56:23,940 --> 00:56:27,870
+which with this dynamical model and then I need to apply the observation the
+
+1017
+00:56:27,870 --> 00:56:30,780
+I need to apply the observation the emission probabilities P of X given Z so
+
+1018
+00:56:30,780 --> 00:56:33,870
+emission probabilities P of X given Z so the variability is assuming that you
+
+1019
+00:56:33,870 --> 00:56:36,840
+the variability is assuming that you have this particle distribution if you
+
+1020
+00:56:36,840 --> 00:56:38,640
+have this particle distribution if you take this update equations other hands
+
+1021
+00:56:38,640 --> 00:56:43,020
+take this update equations other hands before alright and if you apply the
+
+1022
+00:56:43,020 --> 00:56:45,540
+before alright and if you apply the levity update equation somewhere I have
+
+1023
+00:56:45,540 --> 00:56:48,000
+levity update equation somewhere I have an update equation what is it here this
+
+1024
+00:56:48,000 --> 00:56:50,820
+an update equation what is it here this is the prediction for one step ahead the
+
+1025
+00:56:50,820 --> 00:56:53,360
+is the prediction for one step ahead the only thing you have to do is take rest
+
+1026
+00:56:53,360 --> 00:56:56,790
+only thing you have to do is take rest approach in terms of particles and then
+
+1027
+00:56:56,790 --> 00:56:59,400
+approach in terms of particles and then multiply this with the dynamical model
+
+1028
+00:56:59,400 --> 00:57:03,780
+multiply this with the dynamical model of P of Z L given Zn minus 1 so
+
+1029
+00:57:03,780 --> 00:57:05,180
+of P of Z L given Zn minus 1 so basically this is what I have done here
+
+1030
+00:57:05,180 --> 00:57:07,350
+basically this is what I have done here all right I compute
+
+1031
+00:57:07,350 --> 00:57:11,100
+all right I compute the posterior of CN plus one still given
+
+1032
+00:57:11,100 --> 00:57:13,890
+the posterior of CN plus one still given heaven with only the date of the time
+
+1033
+00:57:13,890 --> 00:57:14,400
+heaven with only the date of the time man
+
+1034
+00:57:14,400 --> 00:57:18,870
+man so this one required this posterior of
+
+1035
+00:57:18,870 --> 00:57:21,360
+so this one required this posterior of CN plus 1 given at the end and then
+
+1036
+00:57:21,360 --> 00:57:23,510
+CN plus 1 given at the end and then because you have these Delta functions
+
+1037
+00:57:23,510 --> 00:57:26,300
+because you have these Delta functions this posterior we have to be calculated
+
+1038
+00:57:26,300 --> 00:57:30,570
+this posterior we have to be calculated given its particle I don't know if you
+
+1039
+00:57:30,570 --> 00:57:32,550
+given its particle I don't know if you can see what you actually get through
+
+1040
+00:57:32,550 --> 00:57:37,070
+can see what you actually get through there is terms of a Gaussian mixture
+
+1041
+00:57:37,070 --> 00:57:37,080
+
+
+1042
+00:57:37,080 --> 00:57:42,480
+right you get the Gaussian x2 distribution okay and because we don't
+
+1043
+00:57:42,480 --> 00:57:44,310
+distribution okay and because we don't like thousand extras what you can do is
+
+1044
+00:57:44,310 --> 00:57:47,520
+like thousand extras what you can do is you can understand all this all right
+
+1045
+00:57:47,520 --> 00:57:52,020
+you can understand all this all right you can example this and if your sample
+
+1046
+00:57:52,020 --> 00:57:53,490
+you can example this and if your sample is show that all the new samples
+
+1047
+00:57:53,490 --> 00:57:56,160
+is show that all the new samples basically have equal weight the way you
+
+1048
+00:57:56,160 --> 00:57:58,140
+basically have equal weight the way you do with Monte Carlo and this little
+
+1049
+00:57:58,140 --> 00:58:02,220
+do with Monte Carlo and this little squares here little circles for equal
+
+1050
+00:58:02,220 --> 00:58:04,470
+squares here little circles for equal radius base period of the new samples
+
+1051
+00:58:04,470 --> 00:58:06,450
+radius base period of the new samples that give you this one step ahead
+
+1052
+00:58:06,450 --> 00:58:09,750
+that give you this one step ahead predicted distribution okay so then I
+
+1053
+00:58:09,750 --> 00:58:13,890
+predicted distribution okay so then I took my filtering distribution at time N
+
+1054
+00:58:13,890 --> 00:58:17,820
+took my filtering distribution at time N and I now do one step ahead prediction
+
+1055
+00:58:17,820 --> 00:58:21,330
+and I now do one step ahead prediction with recently and I get this little star
+
+1056
+00:58:21,330 --> 00:58:25,050
+with recently and I get this little star post ok and what remains is to actually
+
+1057
+00:58:25,050 --> 00:58:27,750
+post ok and what remains is to actually multiply this distribution with the
+
+1058
+00:58:27,750 --> 00:58:30,090
+multiply this distribution with the observation model which is P of X given
+
+1059
+00:58:30,090 --> 00:58:33,270
+observation model which is P of X given Z and if you do that because you have
+
+1060
+00:58:33,270 --> 00:58:35,100
+Z and if you do that because you have this Delta functions the new
+
+1061
+00:58:35,100 --> 00:58:37,560
+this Delta functions the new distribution will be basically the
+
+1062
+00:58:37,560 --> 00:58:39,030
+distribution will be basically the effects given each of these particles
+
+1063
+00:58:39,030 --> 00:58:41,490
+effects given each of these particles times this Delta function but you
+
+1064
+00:58:41,490 --> 00:58:44,250
+times this Delta function but you compute it there so you can see the new
+
+1065
+00:58:44,250 --> 00:58:46,650
+compute it there so you can see the new filter in this position the location of
+
+1066
+00:58:46,650 --> 00:58:48,300
+filter in this position the location of the part of this hasn't changed but the
+
+1067
+00:58:48,300 --> 00:58:50,550
+the part of this hasn't changed but the waste have changed because the weights
+
+1068
+00:58:50,550 --> 00:58:53,520
+waste have changed because the weights now are dictated by the observational
+
+1069
+00:58:53,520 --> 00:58:57,060
+now are dictated by the observational model of P of X given C
+
+1070
+00:58:57,060 --> 00:58:57,070
+
+
+1071
+00:58:57,070 --> 00:59:04,710
+I know there is too much there to get but I need to tell you about this
+
+1072
+00:59:04,710 --> 00:59:06,960
+but I need to tell you about this because some of these methods are the
+
+1073
+00:59:06,960 --> 00:59:09,000
+because some of these methods are the methods that are used in practice
+
+1074
+00:59:09,000 --> 00:59:11,910
+methods that are used in practice this is how we're gonna implement the
+
+1075
+00:59:11,910 --> 00:59:12,360
+this is how we're gonna implement the trainer
+
+1076
+00:59:12,360 --> 00:59:16,950
+trainer Gaussian models maybe even a linear
+
+1077
+00:59:16,950 --> 00:59:19,860
+Gaussian models maybe even a linear models or unity of non Gaussian noise
+
+1078
+00:59:19,860 --> 00:59:23,190
+models or unity of non Gaussian noise you know this meant was work and they
+
+1079
+00:59:23,190 --> 00:59:25,290
+you know this meant was work and they are sort of the standard methods for
+
+1080
+00:59:25,290 --> 00:59:28,220
+are sort of the standard methods for implementing lists of data questions in
+
+1081
+00:59:28,220 --> 00:59:31,200
+implementing lists of data questions in many areas all right
+
+1082
+00:59:31,200 --> 00:59:39,600
+many areas all right many are okay I'm actually with the bad
+
+1083
+00:59:39,600 --> 00:59:44,490
+many are okay I'm actually with the bad reasons I have committed to give I don't
+
+1084
+00:59:44,490 --> 00:59:47,010
+reasons I have committed to give I don't know how many lectures this summer in
+
+1085
+00:59:47,010 --> 00:59:48,660
+know how many lectures this summer in another university on the top of this
+
+1086
+00:59:48,660 --> 00:59:51,090
+another university on the top of this type of metals so if you are interested
+
+1087
+00:59:51,090 --> 00:59:54,420
+type of metals so if you are interested I will try to sort of prepare specific
+
+1088
+00:59:54,420 --> 00:59:57,030
+I will try to sort of prepare specific notes from scotts basically for this
+
+1089
+00:59:57,030 --> 01:00:00,990
+notes from scotts basically for this part of into methods maybe by by
+
+1090
+01:00:00,990 --> 01:00:04,170
+part of into methods maybe by by mid-june or so okay so what a wise you
+
+1091
+01:00:04,170 --> 01:00:05,970
+mid-june or so okay so what a wise you can look at the notes from the course
+
+1092
+01:00:05,970 --> 01:00:07,950
+can look at the notes from the course last semester that contains more
+
+1093
+01:00:07,950 --> 01:00:12,240
+last semester that contains more information any questions to this at
+
+1094
+01:00:12,240 --> 01:00:15,180
+information any questions to this at least in spirit what they are I mean the
+
+1095
+01:00:15,180 --> 01:00:18,810
+least in spirit what they are I mean the whole idea is I represent the
+
+1096
+01:00:18,810 --> 01:00:20,070
+whole idea is I represent the distributions the splintering
+
+1097
+01:00:20,070 --> 01:00:22,860
+distributions the splintering distributions in terms of samples right
+
+1098
+01:00:22,860 --> 01:00:26,790
+distributions in terms of samples right and a distribution in terms of samples
+
+1099
+01:00:26,790 --> 01:00:29,330
+and a distribution in terms of samples is a bunch of Delta functions all right
+
+1100
+01:00:29,330 --> 01:00:31,950
+is a bunch of Delta functions all right if you just need these are depending how
+
+1101
+01:00:31,950 --> 01:00:34,440
+if you just need these are depending how we do the sampling to know if the
+
+1102
+01:00:34,440 --> 01:00:38,370
+we do the sampling to know if the weights are equal or they are different
+
+1103
+01:00:38,370 --> 01:00:43,380
+weights are equal or they are different okay and so in this case you start with
+
+1104
+01:00:43,380 --> 01:00:45,360
+okay and so in this case you start with so when we see some of the start with
+
+1105
+01:00:45,360 --> 01:00:47,460
+so when we see some of the start with bigger than others the weights different
+
+1106
+01:00:47,460 --> 01:00:50,250
+bigger than others the weights different but if you sample from this you notice
+
+1107
+01:00:50,250 --> 01:00:54,180
+but if you sample from this you notice like this sample that has degrade as you
+
+1108
+01:00:54,180 --> 01:00:58,500
+like this sample that has degrade as you sample it gives you two children by just
+
+1109
+01:00:58,500 --> 01:01:01,880
+sample it gives you two children by just the idea because there's no worry okay
+
+1110
+01:01:01,880 --> 01:01:03,980
+the idea because there's no worry okay but it's not the new samples all of them
+
+1111
+01:01:03,980 --> 01:01:08,270
+but it's not the new samples all of them have now equal way okay and then this is
+
+1112
+01:01:08,270 --> 01:01:10,430
+have now equal way okay and then this is your observation model so obviously
+
+1113
+01:01:10,430 --> 01:01:12,650
+your observation model so obviously these samples for example here when we
+
+1114
+01:01:12,650 --> 01:01:14,180
+these samples for example here when we passed and prove this observation model
+
+1115
+01:01:14,180 --> 01:01:17,390
+passed and prove this observation model we have bigger weight and again here we
+
+1116
+01:01:17,390 --> 01:01:19,400
+we have bigger weight and again here we have bigger weights of they're small and
+
+1117
+01:01:19,400 --> 01:01:22,430
+have bigger weights of they're small and so this is sort of a very powerful way
+
+1118
+01:01:22,430 --> 01:01:26,990
+so this is sort of a very powerful way to do something to do small thing to
+
+1119
+01:01:26,990 --> 01:01:29,090
+to do something to do small thing to there are lots of different type of
+
+1120
+01:01:29,090 --> 01:01:31,580
+there are lots of different type of things and then the standard levels as I
+
+1121
+01:01:31,580 --> 01:01:36,830
+things and then the standard levels as I said in robotics in in any sort of
+
+1122
+01:01:36,830 --> 01:01:38,420
+said in robotics in in any sort of dynamical problems not on your body
+
+1123
+01:01:38,420 --> 01:01:42,200
+dynamical problems not on your body touching anything all right
+
+1124
+01:01:42,200 --> 01:01:46,060
+touching anything all right we have a few minutes left so let me
+
+1125
+01:01:46,060 --> 01:01:49,370
+we have a few minutes left so let me Pacific how show you can finish this
+
+1126
+01:01:49,370 --> 01:01:54,950
+Pacific how show you can finish this topic how you extend this ideas when the
+
+1127
+01:01:54,950 --> 01:01:59,840
+topic how you extend this ideas when the model is not linear all right so so we
+
+1128
+01:01:59,840 --> 01:02:01,430
+model is not linear all right so so we had two linear models right both the
+
+1129
+01:02:01,430 --> 01:02:05,990
+had two linear models right both the dynamics it was for the Z you know
+
+1130
+01:02:05,990 --> 01:02:08,630
+dynamics it was for the Z you know remember Z n equal a Z n minus 1 plus
+
+1131
+01:02:08,630 --> 01:02:12,590
+remember Z n equal a Z n minus 1 plus noise let's say that the relation is not
+
+1132
+01:02:12,590 --> 01:02:14,990
+noise let's say that the relation is not linear then we basically have the N
+
+1133
+01:02:14,990 --> 01:02:18,740
+linear then we basically have the N minus 1 goes to some linear function f
+
+1134
+01:02:18,740 --> 01:02:24,380
+minus 1 goes to some linear function f of X to give me to give me Z n okay you
+
+1135
+01:02:24,380 --> 01:02:28,640
+of X to give me to give me Z n okay you can do this you know in in instead of
+
+1136
+01:02:28,640 --> 01:02:30,890
+can do this you know in in instead of the matrix a or you can have something
+
+1137
+01:02:30,890 --> 01:02:33,530
+the matrix a or you can have something like that to represent noise okay but
+
+1138
+01:02:33,530 --> 01:02:36,950
+like that to represent noise okay but the bottom line is the relation we have
+
+1139
+01:02:36,950 --> 01:02:42,500
+the bottom line is the relation we have between variables at n minus 1 and n all
+
+1140
+01:02:42,500 --> 01:02:44,990
+between variables at n minus 1 and n all between the state and the observations
+
+1141
+01:02:44,990 --> 01:02:47,690
+between the state and the observations in the given time they're coupled to
+
+1142
+01:02:47,690 --> 01:02:50,390
+in the given time they're coupled to some nonlinear function and so we need
+
+1143
+01:02:50,390 --> 01:02:55,160
+some nonlinear function and so we need to find some way to deal with it
+
+1144
+01:02:55,160 --> 01:02:55,170
+
+
+1145
+01:02:55,170 --> 01:03:00,660
+in terms of particles you know that's not an issue right so well when I say we
+
+1146
+01:03:00,660 --> 01:03:02,400
+not an issue right so well when I say we need to find some way to deal with this
+
+1147
+01:03:02,400 --> 01:03:04,530
+need to find some way to deal with this can we actually want to try the carbon
+
+1148
+01:03:04,530 --> 01:03:07,620
+can we actually want to try the carbon filter equations to do that okay and the
+
+1149
+01:03:07,620 --> 01:03:10,610
+filter equations to do that okay and the answer of course is yes you can
+
+1150
+01:03:10,610 --> 01:03:16,740
+answer of course is yes you can so yes then this is the trivial model so
+
+1151
+01:03:16,740 --> 01:03:19,370
+so yes then this is the trivial model so let's say the the dynamics are given by
+
+1152
+01:03:19,370 --> 01:03:23,550
+let's say the the dynamics are given by this function G okay and the observation
+
+1153
+01:03:23,550 --> 01:03:25,140
+this function G okay and the observation model by another nonlinear function
+
+1154
+01:03:25,140 --> 01:03:29,880
+model by another nonlinear function eight okay so the phonology is called
+
+1155
+01:03:29,880 --> 01:03:33,330
+eight okay so the phonology is called the extended Kalman filter and it's
+
+1156
+01:03:33,330 --> 01:03:36,720
+the extended Kalman filter and it's nothing else but linearization of GNH
+
+1157
+01:03:36,720 --> 01:03:39,510
+nothing else but linearization of GNH and among the previous state estimates
+
+1158
+01:03:39,510 --> 01:03:42,240
+and among the previous state estimates using basically a Taylor series
+
+1159
+01:03:42,240 --> 01:03:43,850
+using basically a Taylor series expansion
+
+1160
+01:03:43,850 --> 01:03:46,920
+expansion okay and actually there are versions of
+
+1161
+01:03:46,920 --> 01:03:50,160
+okay and actually there are versions of this form you can use first on the
+
+1162
+01:03:50,160 --> 01:03:52,230
+this form you can use first on the Taylor expansion and also a second of
+
+1163
+01:03:52,230 --> 01:03:54,180
+Taylor expansion and also a second of the Pedro expansion you can do anything
+
+1164
+01:03:54,180 --> 01:03:57,270
+the Pedro expansion you can do anything you want to the against once you
+
+1165
+01:03:57,270 --> 01:04:01,980
+you want to the against once you approximate this and you you know if you
+
+1166
+01:04:01,980 --> 01:04:05,250
+approximate this and you you know if you use the Taylor series expansion will
+
+1167
+01:04:05,250 --> 01:04:07,230
+use the Taylor series expansion will give you sort of a linear term is a 3-1
+
+1168
+01:04:07,230 --> 01:04:13,680
+give you sort of a linear term is a 3-1 or a near term intensity and so would
+
+1169
+01:04:13,680 --> 01:04:16,530
+or a near term intensity and so would you sort of a derivative times 90 minus
+
+1170
+01:04:16,530 --> 01:04:18,540
+you sort of a derivative times 90 minus 1 and if you approximate the derivative
+
+1171
+01:04:18,540 --> 01:04:23,700
+1 and if you approximate the derivative of the previous state then the common
+
+1172
+01:04:23,700 --> 01:04:31,800
+of the previous state then the common equation so really it's super fancy bra
+
+1173
+01:04:31,800 --> 01:04:33,450
+equation so really it's super fancy bra there is really nothing there I think
+
+1174
+01:04:33,450 --> 01:04:37,380
+there is really nothing there I think the equations are sort of in your eyes
+
+1175
+01:04:37,380 --> 01:04:39,660
+the equations are sort of in your eyes and then cut and paste from the only
+
+1176
+01:04:39,660 --> 01:04:42,210
+and then cut and paste from the only questions from the new questions but let
+
+1177
+01:04:42,210 --> 01:04:46,620
+questions from the new questions but let me show you graphically what the idea
+
+1178
+01:04:46,620 --> 01:04:51,440
+me show you graphically what the idea here is so remember we have
+
+1179
+01:04:51,440 --> 01:04:55,250
+here is so remember we have as some function some running a function
+
+1180
+01:04:55,250 --> 01:04:58,750
+as some function some running a function G of X all right so if X is a Gaussian
+
+1181
+01:04:58,750 --> 01:05:02,450
+G of X all right so if X is a Gaussian the idea is when you compute let's say
+
+1182
+01:05:02,450 --> 01:05:06,200
+the idea is when you compute let's say which Montecarlo y equals G of X you
+
+1183
+01:05:06,200 --> 01:05:07,730
+which Montecarlo y equals G of X you don't get a Gaussian you get a real
+
+1184
+01:05:07,730 --> 01:05:10,130
+don't get a Gaussian you get a real distribution of usage here so this
+
+1185
+01:05:10,130 --> 01:05:12,860
+distribution of usage here so this bimodal distribution okay so the
+
+1186
+01:05:12,860 --> 01:05:16,640
+bimodal distribution okay so the question is not really neat to do when
+
+1187
+01:05:16,640 --> 01:05:19,220
+question is not really neat to do when we take a Gaussian and we apply this
+
+1188
+01:05:19,220 --> 01:05:21,940
+we take a Gaussian and we apply this mapping to effects to get the Gaussian
+
+1189
+01:05:21,940 --> 01:05:27,440
+mapping to effects to get the Gaussian right and so the idea for this extended
+
+1190
+01:05:27,440 --> 01:05:30,440
+right and so the idea for this extended color filter is to do linearization in
+
+1191
+01:05:30,440 --> 01:05:34,450
+color filter is to do linearization in the mode of X ok and then basically
+
+1192
+01:05:34,450 --> 01:05:36,980
+the mode of X ok and then basically alright so this is the approximation we
+
+1193
+01:05:36,980 --> 01:05:40,190
+alright so this is the approximation we do all right and then we pass the
+
+1194
+01:05:40,190 --> 01:05:44,120
+do all right and then we pass the probability we passed this line through
+
+1195
+01:05:44,120 --> 01:05:46,400
+probability we passed this line through the probability of P of X and that will
+
+1196
+01:05:46,400 --> 01:05:49,880
+the probability of P of X and that will give me this dotted Gaussian which is
+
+1197
+01:05:49,880 --> 01:05:52,700
+give me this dotted Gaussian which is the expanding our field of Gaussian that
+
+1198
+01:05:52,700 --> 01:05:55,760
+the expanding our field of Gaussian that has a mean basically that is given by
+
+1199
+01:05:55,760 --> 01:06:02,540
+has a mean basically that is given by this value here okay so how does the
+
+1200
+01:06:02,540 --> 01:06:04,970
+this value here okay so how does the linearization look like so for example
+
+1201
+01:06:04,970 --> 01:06:09,860
+linearization look like so for example this is the observation order your
+
+1202
+01:06:09,860 --> 01:06:12,230
+this is the observation order your interest first on the table since the
+
+1203
+01:06:12,230 --> 01:06:17,840
+interest first on the table since the question this is the value so we had H
+
+1204
+01:06:17,840 --> 01:06:20,150
+question this is the value so we had H here right so we is the value is
+
+1205
+01:06:20,150 --> 01:06:24,650
+here right so we is the value is computed at the previous mean okay if
+
+1206
+01:06:24,650 --> 01:06:26,150
+computed at the previous mean okay if you remember this notation which is near
+
+1207
+01:06:26,150 --> 01:06:31,250
+you remember this notation which is near 50 minus 1 is the main of what
+
+1208
+01:06:31,250 --> 01:06:34,760
+50 minus 1 is the main of what distribution then this is the
+
+1209
+01:06:34,760 --> 01:06:37,820
+distribution then this is the observationally right so what is mere TT
+
+1210
+01:06:37,820 --> 01:06:42,080
+observationally right so what is mere TT minus 1
+
+1211
+01:06:42,080 --> 01:06:42,090
+
+
+1212
+01:06:42,090 --> 01:06:48,170
+how many data have collected through this after 3-1 so this is the main of
+
+1213
+01:06:48,170 --> 01:06:51,230
+this after 3-1 so this is the main of the one step ahead prolific distribution
+
+1214
+01:06:51,230 --> 01:06:54,560
+the one step ahead prolific distribution okay some approximating age using the
+
+1215
+01:06:54,560 --> 01:06:57,830
+okay some approximating age using the mean plus the derivative at the same
+
+1216
+01:06:57,830 --> 01:07:01,340
+mean plus the derivative at the same location times the error of this one
+
+1217
+01:07:01,340 --> 01:07:05,150
+location times the error of this one have I had in prediction the other if
+
+1218
+01:07:05,150 --> 01:07:08,210
+have I had in prediction the other if you look from the observation Y key okay
+
+1219
+01:07:08,210 --> 01:07:10,190
+you look from the observation Y key okay I don't know why it is white you know
+
+1220
+01:07:10,190 --> 01:07:12,650
+I don't know why it is white you know text but anyways coming forward from
+
+1221
+01:07:12,650 --> 01:07:14,270
+text but anyways coming forward from here of their give us different
+
+1222
+01:07:14,270 --> 01:07:17,720
+here of their give us different equations so so basically they tell us
+
+1223
+01:07:17,720 --> 01:07:22,640
+equations so so basically they tell us this expansion here around the mean of
+
+1224
+01:07:22,640 --> 01:07:24,920
+this expansion here around the mean of the one hand one step ahead predictive
+
+1225
+01:07:24,920 --> 01:07:29,600
+the one hand one step ahead predictive distribution okay another place there's
+
+1226
+01:07:29,600 --> 01:07:32,210
+distribution okay another place there's absolutely nothing different from what
+
+1227
+01:07:32,210 --> 01:07:34,310
+absolutely nothing different from what we had before if you remember the linear
+
+1228
+01:07:34,310 --> 01:07:36,230
+we had before if you remember the linear model for coming up integration she goes
+
+1229
+01:07:36,230 --> 01:07:41,330
+model for coming up integration she goes the Gaussian of YT given let's say what
+
+1230
+01:07:41,330 --> 01:07:44,720
+the Gaussian of YT given let's say what was the metrics that we have here you
+
+1231
+01:07:44,720 --> 01:07:48,980
+was the metrics that we have here you see sometimes right p plus some constant
+
+1232
+01:07:48,980 --> 01:07:53,210
+see sometimes right p plus some constant so the constant is this minus this times
+
+1233
+01:07:53,210 --> 01:07:56,510
+so the constant is this minus this times that okay and of course here I'm
+
+1234
+01:07:56,510 --> 01:07:58,340
+that okay and of course here I'm thinking that the noisiest Gaussian okay
+
+1235
+01:07:58,340 --> 01:08:00,950
+thinking that the noisiest Gaussian okay if the noisiest Gaussian is not Gaussian
+
+1236
+01:08:00,950 --> 01:08:03,490
+if the noisiest Gaussian is not Gaussian basically you have to incorporate things
+
+1237
+01:08:03,490 --> 01:08:07,640
+basically you have to incorporate things in a slightly different form okay
+
+1238
+01:08:07,640 --> 01:08:12,160
+in a slightly different form okay and you know same thing for the
+
+1239
+01:08:12,160 --> 01:08:16,430
+and you know same thing for the evolution of the of the dynamics let's
+
+1240
+01:08:16,430 --> 01:08:18,740
+evolution of the of the dynamics let's not bother about you all right students
+
+1241
+01:08:18,740 --> 01:08:20,780
+not bother about you all right students really move it on the previous slide so
+
+1242
+01:08:20,780 --> 01:08:23,810
+really move it on the previous slide so basically you take linear Taylor series
+
+1243
+01:08:23,810 --> 01:08:30,680
+basically you take linear Taylor series expansion around these the previous
+
+1244
+01:08:30,680 --> 01:08:33,110
+expansion around these the previous night the main of the three stage which
+
+1245
+01:08:33,110 --> 01:08:35,360
+night the main of the three stage which is near t minus one and this is the
+
+1246
+01:08:35,360 --> 01:08:40,220
+is near t minus one and this is the error again times this Jacobian there
+
+1247
+01:08:40,220 --> 01:08:42,019
+error again times this Jacobian there but there's a gradient position Z with
+
+1248
+01:08:42,019 --> 01:08:50,059
+but there's a gradient position Z with respect to Z I mean you know once you do
+
+1249
+01:08:50,059 --> 01:08:54,229
+respect to Z I mean you know once you do this if you look at your genetic type of
+
+1250
+01:08:54,229 --> 01:08:56,329
+this if you look at your genetic type of simple equations did you cut and paste
+
+1251
+01:08:56,329 --> 01:08:57,829
+simple equations did you cut and paste on solvers
+
+1252
+01:08:57,829 --> 01:09:02,030
+on solvers updating that this is your matrix x y
+
+1253
+01:09:02,030 --> 01:09:04,910
+updating that this is your matrix x y this is the constant and the rest is
+
+1254
+01:09:04,910 --> 01:09:11,920
+this is the constant and the rest is very useful okay and if anyone you know
+
+1255
+01:09:11,920 --> 01:09:15,229
+very useful okay and if anyone you know of notation basically you know if you do
+
+1256
+01:09:15,229 --> 01:09:17,479
+of notation basically you know if you do this linearization you can get various
+
+1257
+01:09:17,479 --> 01:09:20,930
+this linearization you can get various different versions of this extended
+
+1258
+01:09:20,930 --> 01:09:23,090
+different versions of this extended Kalman filter including what's called
+
+1259
+01:09:23,090 --> 01:09:26,479
+Kalman filter including what's called its innovative dkf if anybody is
+
+1260
+01:09:26,479 --> 01:09:29,780
+its innovative dkf if anybody is interested I can give you to read a very
+
+1261
+01:09:29,780 --> 01:09:32,510
+interested I can give you to read a very nice book by a stonker that I promise
+
+1262
+01:09:32,510 --> 01:09:34,400
+nice book by a stonker that I promise you you can read it in less than three
+
+1263
+01:09:34,400 --> 01:09:37,460
+you you can read it in less than three hours okay and he has a computer program
+
+1264
+01:09:37,460 --> 01:09:40,099
+hours okay and he has a computer program that comes with it has nothing in the
+
+1265
+01:09:40,099 --> 01:09:42,260
+that comes with it has nothing in the conditional probability graphical models
+
+1266
+01:09:42,260 --> 01:09:45,890
+conditional probability graphical models but is everything from zero including
+
+1267
+01:09:45,890 --> 01:09:51,130
+but is everything from zero including applications to the most complex sort of
+
+1268
+01:09:51,130 --> 01:09:54,320
+applications to the most complex sort of way for doing some sort of essence of
+
+1269
+01:09:54,320 --> 01:09:56,180
+way for doing some sort of essence of karma filter if you'll read the book in
+
+1270
+01:09:56,180 --> 01:09:57,680
+karma filter if you'll read the book in three hours and a minute
+
+1271
+01:09:57,680 --> 01:09:59,810
+three hours and a minute so if anybody's interested I think it's
+
+1272
+01:09:59,810 --> 01:10:03,710
+so if anybody's interested I think it's online that okay and if you know access
+
+1273
+01:10:03,710 --> 01:10:05,770
+online that okay and if you know access but you can actually reach this Christus
+
+1274
+01:10:05,770 --> 01:10:08,360
+but you can actually reach this Christus that is two or three years before this
+
+1275
+01:10:08,360 --> 01:10:11,229
+that is two or three years before this book okay
+
+1276
+01:10:11,229 --> 01:10:18,850
+book okay so you can look at those things just six
+
+1277
+01:10:18,850 --> 01:10:23,229
+so you can look at those things just six minutes finis right another algorithm is
+
+1278
+01:10:23,229 --> 01:10:25,660
+minutes finis right another algorithm is the uncertainty column of the table to
+
+1279
+01:10:25,660 --> 01:10:31,089
+the uncertainty column of the table to do TRAI and the idea here is that it is
+
+1280
+01:10:31,089 --> 01:10:33,160
+do TRAI and the idea here is that it is easier to approximate the Gaussian run
+
+1281
+01:10:33,160 --> 01:10:35,229
+easier to approximate the Gaussian run the log to approximate the function
+
+1282
+01:10:35,229 --> 01:10:39,129
+the log to approximate the function so actually one to linear paste the
+
+1283
+01:10:39,129 --> 01:10:41,459
+so actually one to linear paste the function you tried actually to
+
+1284
+01:10:41,459 --> 01:10:45,520
+function you tried actually to approximate some data to fit the
+
+1285
+01:10:45,520 --> 01:10:48,339
+approximate some data to fit the Gaussian so basically don't manipulate
+
+1286
+01:10:48,339 --> 01:10:51,069
+Gaussian so basically don't manipulate the function trying to make data to fit
+
+1287
+01:10:51,069 --> 01:10:54,609
+the function trying to make data to fit in some Gaussian point okay and how do
+
+1288
+01:10:54,609 --> 01:10:56,669
+in some Gaussian point okay and how do you do this
+
+1289
+01:10:56,669 --> 01:11:05,410
+you do this so here's the idea if the ocean all
+
+1290
+01:11:05,410 --> 01:11:07,990
+so here's the idea if the ocean all right this is this is the unscented
+
+1291
+01:11:07,990 --> 01:11:09,669
+right this is this is the unscented transport basically that you have to use
+
+1292
+01:11:09,669 --> 01:11:11,859
+transport basically that you have to use if you have some distribution that fits
+
+1293
+01:11:11,859 --> 01:11:14,020
+if you have some distribution that fits in the Gaussian and you want to pass
+
+1294
+01:11:14,020 --> 01:11:17,350
+in the Gaussian and you want to pass this to a mapping of the form y equal f
+
+1295
+01:11:17,350 --> 01:11:19,799
+this to a mapping of the form y equal f of X right F is a nonlinear function
+
+1296
+01:11:19,799 --> 01:11:22,660
+of X right F is a nonlinear function which you need to do is you need to
+
+1297
+01:11:22,660 --> 01:11:27,299
+which you need to do is you need to compute what is called Sigma points and
+
+1298
+01:11:27,299 --> 01:11:29,919
+compute what is called Sigma points and these are constants basically that you
+
+1299
+01:11:29,919 --> 01:11:32,080
+these are constants basically that you can optimize all right these are the
+
+1300
+01:11:32,080 --> 01:11:34,270
+can optimize all right these are the columns of the Sigma matrix this is the
+
+1301
+01:11:34,270 --> 01:11:37,419
+columns of the Sigma matrix this is the mean of this G of X so you calculate the
+
+1302
+01:11:37,419 --> 01:11:40,240
+mean of this G of X so you calculate the Sigma forest and never can do this
+
+1303
+01:11:40,240 --> 01:11:42,760
+Sigma forest and never can do this you Paskus this Sigma points through the
+
+1304
+01:11:42,760 --> 01:11:45,160
+you Paskus this Sigma points through the function f and then you fit this data
+
+1305
+01:11:45,160 --> 01:11:48,750
+function f and then you fit this data wise to now sir that's all
+
+1306
+01:11:48,750 --> 01:11:53,700
+wise to now sir that's all so again money relating this function f
+
+1307
+01:11:53,700 --> 01:11:57,669
+so again money relating this function f to give you a linear equation that will
+
+1308
+01:11:57,669 --> 01:11:59,919
+to give you a linear equation that will lead to a Gaussian with the dress you
+
+1309
+01:11:59,919 --> 01:12:05,180
+lead to a Gaussian with the dress you introduced this Sigma points okay
+
+1310
+01:12:05,180 --> 01:12:07,370
+introduced this Sigma points okay and in this case they have to D plus 1
+
+1311
+01:12:07,370 --> 01:12:09,770
+and in this case they have to D plus 1 points you pass this through the
+
+1312
+01:12:09,770 --> 01:12:11,450
+points you pass this through the function f and then in through the
+
+1313
+01:12:11,450 --> 01:12:14,450
+function f and then in through the Gaussian so obviously in our case we
+
+1314
+01:12:14,450 --> 01:12:17,510
+Gaussian so obviously in our case we have to do this twice you have to do
+
+1315
+01:12:17,510 --> 01:12:20,030
+have to do this twice you have to do this for the the dynamical model and we
+
+1316
+01:12:20,030 --> 01:12:22,280
+this for the the dynamical model and we have to do this for the observational
+
+1317
+01:12:22,280 --> 01:12:29,360
+have to do this for the observational model and effectively if so if you pass
+
+1318
+01:12:29,360 --> 01:12:31,340
+model and effectively if so if you pass this through the function and you want
+
+1319
+01:12:31,340 --> 01:12:32,360
+this through the function and you want to compute the mean and the variance
+
+1320
+01:12:32,360 --> 01:12:36,020
+to compute the mean and the variance this the general response okay this
+
+1321
+01:12:36,020 --> 01:12:39,439
+this the general response okay this looks very much like sample mean the
+
+1322
+01:12:39,439 --> 01:12:41,540
+looks very much like sample mean the sample variance the only difference here
+
+1323
+01:12:41,540 --> 01:12:44,090
+sample variance the only difference here is because these points were selected in
+
+1324
+01:12:44,090 --> 01:12:48,080
+is because these points were selected in the some optimal way their weights would
+
+1325
+01:12:48,080 --> 01:12:50,060
+the some optimal way their weights would not be equal so you know the weights
+
+1326
+01:12:50,060 --> 01:12:52,430
+not be equal so you know the weights they have to be calculated depending on
+
+1327
+01:12:52,430 --> 01:12:54,760
+they have to be calculated depending on the parameters that you use in the
+
+1328
+01:12:54,760 --> 01:12:58,760
+the parameters that you use in the uncertain transport if you try to do
+
+1329
+01:12:58,760 --> 01:13:02,420
+uncertain transport if you try to do this in one day in case you get inspired
+
+1330
+01:13:02,420 --> 01:13:04,670
+this in one day in case you get inspired that this reminds you anything the three
+
+1331
+01:13:04,670 --> 01:13:06,650
+that this reminds you anything the three points for example that you're going to
+
+1332
+01:13:06,650 --> 01:13:09,410
+points for example that you're going to use is given Gaussian in one deal with
+
+1333
+01:13:09,410 --> 01:13:12,470
+use is given Gaussian in one deal with mu nu minus square root of 3 times Sigma
+
+1334
+01:13:12,470 --> 01:13:16,550
+mu nu minus square root of 3 times Sigma and mu plus square root of 3 times Sigma
+
+1335
+01:13:16,550 --> 01:13:23,780
+and mu plus square root of 3 times Sigma and the algorithm is again sort of the
+
+1336
+01:13:23,780 --> 01:13:26,479
+and the algorithm is again sort of the first step is we need to predict the one
+
+1337
+01:13:26,479 --> 01:13:29,600
+first step is we need to predict the one hand of step so to compute the filtering
+
+1338
+01:13:29,600 --> 01:13:32,090
+hand of step so to compute the filtering distribution again right you first have
+
+1339
+01:13:32,090 --> 01:13:35,600
+distribution again right you first have to go one step ahead with observations
+
+1340
+01:13:35,600 --> 01:13:40,310
+to go one step ahead with observations only after t minus 1 okay so to do this
+
+1341
+01:13:40,310 --> 01:13:43,840
+only after t minus 1 okay so to do this what we have to do is pass the previous
+
+1342
+01:13:43,840 --> 01:13:46,550
+what we have to do is pass the previous Gaussian distribution the Gaussian
+
+1343
+01:13:46,550 --> 01:13:49,220
+Gaussian distribution the Gaussian approximation we had for the filter and
+
+1344
+01:13:49,220 --> 01:13:51,770
+approximation we had for the filter and distribution of CP minus 1 so what you
+
+1345
+01:13:51,770 --> 01:13:54,439
+distribution of CP minus 1 so what you need to this first this through the
+
+1346
+01:13:54,439 --> 01:13:56,240
+need to this first this through the function G that defines the kinematic
+
+1347
+01:13:56,240 --> 01:13:59,720
+function G that defines the kinematic model right the dynamical model G so
+
+1348
+01:13:59,720 --> 01:14:03,290
+model right the dynamical model G so basically start with this decline the
+
+1349
+01:14:03,290 --> 01:14:05,870
+basically start with this decline the Sigma points and then pass them to G and
+
+1350
+01:14:05,870 --> 01:14:08,209
+Sigma points and then pass them to G and then to compute the mean of the variance
+
+1351
+01:14:08,209 --> 01:14:11,590
+then to compute the mean of the variance of that you weight them appropriately
+
+1352
+01:14:11,590 --> 01:14:13,570
+of that you weight them appropriately using the standard formulas from the
+
+1353
+01:14:13,570 --> 01:14:16,750
+using the standard formulas from the insensitive small and you get the mean
+
+1354
+01:14:16,750 --> 01:14:19,050
+insensitive small and you get the mean of the volatility like that and
+
+1355
+01:14:19,050 --> 01:14:25,080
+of the volatility like that and eventually to genetic impedance of this
+
+1356
+01:14:25,080 --> 01:14:28,330
+eventually to genetic impedance of this observation model but is nonlinear okay
+
+1357
+01:14:28,330 --> 01:14:33,850
+observation model but is nonlinear okay so so what you need to miss you need to
+
+1358
+01:14:33,850 --> 01:14:37,300
+so so what you need to miss you need to pass the power of Sigma T that we
+
+1359
+01:14:37,300 --> 01:14:40,690
+pass the power of Sigma T that we completed the previous step there is the
+
+1360
+01:14:40,690 --> 01:14:43,840
+completed the previous step there is the observation London okay so this is what
+
+1361
+01:14:43,840 --> 01:14:50,050
+observation London okay so this is what you get okay and then eventually you are
+
+1362
+01:14:50,050 --> 01:14:54,490
+you get okay and then eventually you are going to have this is sort of a
+
+1363
+01:14:54,490 --> 01:14:56,980
+going to have this is sort of a likelihood and this is sort of like a
+
+1364
+01:14:56,980 --> 01:14:59,680
+likelihood and this is sort of like a primer so you're going to need to do the
+
+1365
+01:14:59,680 --> 01:15:01,780
+primer so you're going to need to do the 2013 distribution you will need to use
+
+1366
+01:15:01,780 --> 01:15:04,180
+2013 distribution you will need to use Bayes rule and compute the probability
+
+1367
+01:15:04,180 --> 01:15:10,390
+Bayes rule and compute the probability of Z given Y so if you have nice and and
+
+1368
+01:15:10,390 --> 01:15:13,000
+of Z given Y so if you have nice and and if you have P of Z they're basically
+
+1369
+01:15:13,000 --> 01:15:15,460
+if you have P of Z they're basically just Vegas truth directly it can give
+
+1370
+01:15:15,460 --> 01:15:18,820
+just Vegas truth directly it can give you the filtering distribution so this
+
+1371
+01:15:18,820 --> 01:15:20,470
+you the filtering distribution so this is just from the formulas for Gaussian
+
+1372
+01:15:20,470 --> 01:15:25,870
+is just from the formulas for Gaussian linear models by noting specific this
+
+1373
+01:15:25,870 --> 01:15:28,330
+linear models by noting specific this once alpha qkf algorithm is basically
+
+1374
+01:15:28,330 --> 01:15:30,040
+once alpha qkf algorithm is basically clever another kind of reasoning is the
+
+1375
+01:15:30,040 --> 01:15:33,550
+clever another kind of reasoning is the desirable algorithm because have much
+
+1376
+01:15:33,550 --> 01:15:36,040
+desirable algorithm because have much higher accuracy than the linearization
+
+1377
+01:15:36,040 --> 01:15:40,060
+higher accuracy than the linearization that we discussed before okay and the
+
+1378
+01:15:40,060 --> 01:15:42,250
+that we discussed before okay and the objection is you have optimized this
+
+1379
+01:15:42,250 --> 01:15:44,680
+objection is you have optimized this various points don't may be the function
+
+1380
+01:15:44,680 --> 01:15:47,460
+various points don't may be the function and you know it's very nice
+
+1381
+01:15:47,460 --> 01:15:51,130
+and you know it's very nice extermination to program you don't have
+
+1382
+01:15:51,130 --> 01:15:53,830
+extermination to program you don't have to program so you didn't give them any
+
+1383
+01:15:53,830 --> 01:15:55,390
+to program so you didn't give them any hormones to program this right but
+
+1384
+01:15:55,390 --> 01:15:56,800
+hormones to program this right but things maybe you should give them
+
+1385
+01:15:56,800 --> 01:16:00,250
+things maybe you should give them something worth a download maybe one of
+
+1386
+01:16:00,250 --> 01:16:04,000
+something worth a download maybe one of the algorithms and the play with a
+
+1387
+01:16:04,000 --> 01:16:06,040
+the algorithms and the play with a tortoise you can plot to see how the
+
+1388
+01:16:06,040 --> 01:16:07,250
+tortoise you can plot to see how the Pinto
+
+1389
+01:16:07,250 --> 01:16:10,310
+Pinto looks like you know how this malting
+
+1390
+01:16:10,310 --> 01:16:12,799
+looks like you know how this malting distribution looks like and and and the
+
+1391
+01:16:12,799 --> 01:16:16,939
+distribution looks like and and and the like just to finish the 125 right
+
+1392
+01:16:16,939 --> 01:16:21,560
+like just to finish the 125 right obviously this nebula sound a small part
+
+1393
+01:16:21,560 --> 01:16:24,589
+obviously this nebula sound a small part of this whole area of data stimulation
+
+1394
+01:16:24,589 --> 01:16:27,529
+of this whole area of data stimulation right so cue work with dynamical data
+
+1395
+01:16:27,529 --> 01:16:29,989
+right so cue work with dynamical data you need to know all of the specifics up
+
+1396
+01:16:29,989 --> 01:16:32,779
+you need to know all of the specifics up and down every single detail because
+
+1397
+01:16:32,779 --> 01:16:36,319
+and down every single detail because playing with data in time requires that
+
+1398
+01:16:36,319 --> 01:16:38,719
+playing with data in time requires that you do prediction you do small things of
+
+1399
+01:16:38,719 --> 01:16:42,830
+you do prediction you do small things of filtering all right all of the above
+
+1400
+01:16:42,830 --> 01:16:46,219
+filtering all right all of the above okay there are lots of power of new
+
+1401
+01:16:46,219 --> 01:16:47,989
+okay there are lots of power of new books that are coming out on data
+
+1402
+01:16:47,989 --> 01:16:50,989
+books that are coming out on data stimulation dressed up with a little bit
+
+1403
+01:16:50,989 --> 01:16:53,209
+stimulation dressed up with a little bit of mathematics they don't contain
+
+1404
+01:16:53,209 --> 01:16:55,100
+of mathematics they don't contain anything new because this ideas have
+
+1405
+01:16:55,100 --> 01:16:56,719
+anything new because this ideas have been out there for 20 years
+
+1406
+01:16:56,719 --> 01:17:00,199
+been out there for 20 years okay but people who want right I mean if
+
+1407
+01:17:00,199 --> 01:17:03,020
+okay but people who want right I mean if you want to write a book you know you
+
+1408
+01:17:03,020 --> 01:17:05,540
+you want to write a book you know you can do something on Kalman filtering six
+
+1409
+01:17:05,540 --> 01:17:06,859
+can do something on Kalman filtering six months okay
+
+1410
+01:17:06,859 --> 01:17:08,779
+months okay and then someone can read it you know
+
+1411
+01:17:08,779 --> 01:17:12,189
+and then someone can read it you know how many also to the three hours okay
+
+1412
+01:17:12,189 --> 01:17:16,790
+how many also to the three hours okay and and always there's something to make
+
+1413
+01:17:16,790 --> 01:17:18,109
+and and always there's something to make it different
+
+1414
+01:17:18,109 --> 01:17:20,239
+it different okay but in the end you the formulas are
+
+1415
+01:17:20,239 --> 01:17:23,540
+okay but in the end you the formulas are in the books already in papers and you
+
+1416
+01:17:23,540 --> 01:17:28,489
+in the books already in papers and you can read them and so on Thursday we're
+
+1417
+01:17:28,489 --> 01:17:31,100
+can read them and so on Thursday we're going to change subject and move the
+
+1418
+01:17:31,100 --> 01:17:33,229
+going to change subject and move the body to variational approximate method
+
+1419
+01:17:33,229 --> 01:17:36,229
+body to variational approximate method okay and where we need to spend at least
+
+1420
+01:17:36,229 --> 01:17:38,870
+okay and where we need to spend at least three or four lectures discuss polyester
+
+1421
+01:17:38,870 --> 01:17:41,880
+three or four lectures discuss polyester on that okay
+
+1422
+01:17:41,880 --> 01:17:45,000
+on that okay a lot of stuff to read I'm going to post
+
+1423
+01:17:45,000 --> 01:17:47,640
+a lot of stuff to read I'm going to post this lectures today so you guys can take
+
+1424
+01:17:47,640 --> 01:17:52,740
+this lectures today so you guys can take a look and and take it from there all
+
+1425
+01:17:52,740 --> 01:17:54,900
+a look and and take it from there all right 
+
