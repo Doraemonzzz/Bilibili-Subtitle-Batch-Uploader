@@ -44,7 +44,15 @@ pip install -e .
 
 - bvid：视频bv号，例如视频https://www.bilibili.com/video/BV1Jq4y1j7jC/的BV号为1Jq4y1j7jC
 
-- csrf：即bili_jct，获取方法见https://github.com/JunzhouLiu/BILIBILI-HELPER
+- csrf：即bili_jct，以谷歌浏览器为例：
+
+  - 登录https://www.bilibili.com/
+
+  - F12打开开发者工具
+
+  - 选择Network，XHR，刷新页面，选择Name中的pc，选择Cookies，找到bili_jct，复制其Value即可：
+
+    ![](./photo/3.jpg)
 
 - cookie：以谷歌浏览器为例：
 
@@ -52,7 +60,7 @@ pip install -e .
 
   - F12打开开发者工具
 
-  - 选择Network，XHR，刷新页面，找到Request Headers中cookie，复制cookie后的全部内容
+  - 选择Network，XHR，刷新页面，选择Name中的pc，找到Headers中Request Headers中cookie，复制cookie后的全部内容：
 
     ![](./photo/1.jpg)
 
@@ -79,3 +87,12 @@ pip install -e .
 bisbu
 ```
 
+
+
+## 参考资料
+
+https://github.com/JunzhouLiu/BILIBILI-HELPER
+
+https://github.com/FXTD-ODYSSEY/bilibili-subtile-uploader
+
+https://github.com/FXTD-ODYSSEY/bilibili-subtile-uploader

@@ -12,7 +12,7 @@ setup(
     packages=['bisbu'],
     entry_points={
         'console_scripts': [
-            'bisbu = bisbu:main',
+            'bisbu = bisbu.bisbu:main',
         ],
     },
     install_requires=[

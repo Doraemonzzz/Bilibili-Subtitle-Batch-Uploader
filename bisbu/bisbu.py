@@ -13,7 +13,7 @@ import subprocess
 from datetime import datetime
 from tqdm import tqdm
 
-from cmd import parse_args
+from .cmd import parse_args
 from .bilibili_tool import submit_subtitle, get_bvdata, get_oid, oid_to_sub, get_duration
 from .sub_tool import lang_to_blang, get_sub_type, get_sub_lang, get_sub_file
 from .bcc_parser import BccParserMixin
