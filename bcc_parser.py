@@ -1,13 +1,15 @@
+# coding: utf-8
+
 """
 代码来自https://github.com/FXTD-ODYSSEY/bilibili-subtile-uploader
 """
 
 import os
 import re
-from datetime import datetime
-
 import pysrt
 import pyvtt
+
+from datetime import datetime
 
 class BccParserMixin(object):
     @staticmethod
@@ -17,6 +19,7 @@ class BccParserMixin(object):
         :type srt_path: srt
         :return: bcc json 数据
         :rtype: srt
+        :duration: 视频长度
         """
         subs = pysrt.open(srt_path)
         bcc = {

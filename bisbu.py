@@ -15,19 +15,20 @@ from tqdm import tqdm
 
 from cmd import parse_args
 from bilibili_tool import submit_subtitle, get_bvdata, get_oid, oid_to_sub, get_duration
-from sub_tool import lang_to_blang, get_subtype, get_sublang, get_sub_file
+from sub_tool import lang_to_blang, get_sub_type, get_sub_lang, get_sub_file
 from bcc_parser import BccParserMixin
 
 def gen_fail_upload(fail_upload, output="fail_upload.txt"):
+    """
+    生成上传失败的字幕列表
+    """
     with open(output, "w") as f:
         for file in fail_upload:
             f.writelines(file + "\n")
 
 def main():
-    args = parse_args()
-
     # 参数
-    #sub_dir = r"{}".format(args.sub_dir)
+    args = parse_args()
     sub_dir = args.sub_dir
     bvid = args.bvid
     csrf = args.csrf
@@ -52,9 +53,9 @@ def main():
         duration = get_duration(oid_list, oid)
         for subfile in oid2sub[oid]:
             # 字幕类型
-            sub_type = get_subtype(subfile)
+            sub_type = get_sub_type(subfile)
             # 字幕语种
-            lang = get_sublang(subfile)
+            lang = get_sub_lang(subfile)
             # 字幕对应的b站语种代码
             blang = lang2blang[lang]
             
@@ -68,8 +69,6 @@ def main():
             response = submit_subtitle(subtitle, oid, csrf, cookie, bvid, blang)
             if (response["code"] != 0):
                 fail_upload.append(subfile)
-                print(subfile)
-                print(response)
 
     # 记录上传失败的字幕
     gen_fail_upload(fail_upload)

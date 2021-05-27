@@ -1,3 +1,5 @@
+# coding: utf-8
+
 """
 代码来自https://github.com/FXTD-ODYSSEY/bilibili-subtile-uploader
 """
@@ -54,6 +56,9 @@ def get_oid(bvdata):
     return oid_list
 
 def get_duration(oid_list, oid):
+    """
+    获得视频时长
+    """
     return oid_list[oid][1]
 
 def oid_to_sub(oid_list, sub_files):
@@ -66,7 +71,7 @@ def oid_to_sub(oid_list, sub_files):
         title = oid_list[oid][0]
         oid2sub[oid] = []
         for subfile in sub_files:
-            # 本地字幕文件名包含远程标题, 则更新
+            # 如果本地字幕文件名包含远程标题, 则更新
             if title in subfile:
                 oid2sub[oid].append(subfile)
 

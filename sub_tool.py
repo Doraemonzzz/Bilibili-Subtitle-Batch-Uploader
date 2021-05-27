@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import os
 
 def lang_to_blang():
@@ -23,19 +25,22 @@ def lang_to_blang():
 
     return lang2blang
 
-def get_subtype(subfile):
+def get_sub_type(subfile):
     """
     获得字幕类型, srt或vtt
     """
     return subfile.split(".")[-1]
 
-def get_sublang(subfile):
+def get_sub_lang(subfile):
     """
     获得字幕语种, 例如"zh-Hans", "en"
     """
     return subfile.split(".")[-2]
 
 def get_dir_file(dir):
+    """
+    获得文件夹中文件
+    """
     files = []
     for file in os.listdir(dir):
         new_dir = os.path.join(dir, file)
@@ -47,10 +52,13 @@ def get_dir_file(dir):
     return files
 
 def get_sub_file(dir, sub_type=["srt", "vtt"]):
+    """
+    获得文件夹中字幕文件
+    """
     files = get_dir_file(dir)
     sub_files = []
     for file in files:
-        if get_subtype(file) in sub_type:
+        if get_sub_type(file) in sub_type:
             sub_files.append(file)
     
     return sub_files
