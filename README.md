@@ -89,6 +89,24 @@ bisbu
 
 
 
+## 注意事项
+
+字幕和b站上传视频的名称必须一一对应，例如某个视频的名称为：
+
+```
+[2020-12-26] 20.2 Cramér's LDP, Part 2
+```
+
+那么字幕的名称应该为：
+
+```
+[2020-12-26] 20.2 Cramér's LDP, Part 2.en.srt
+[2020-12-26] 20.2 Cramér's LDP, Part 2.zh-Hans.srt
+[2020-12-26] 20.2 Cramér's LDP, Part 2.zh-Hans-en.srt
+```
+
+
+
 ## 参考资料
 
 https://github.com/JunzhouLiu/BILIBILI-HELPER
