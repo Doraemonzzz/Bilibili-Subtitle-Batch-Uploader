@@ -95,4 +95,4 @@ https://github.com/JunzhouLiu/BILIBILI-HELPER
 
 https://github.com/FXTD-ODYSSEY/bilibili-subtile-uploader
 
-https://github.com/FXTD-ODYSSEY/bilibili-subtile-uploader
+https://blog.l0v0.com/posts/55790015.html
