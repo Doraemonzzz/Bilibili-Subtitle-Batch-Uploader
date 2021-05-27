@@ -4,11 +4,11 @@ from distutils.core import setup
 
 setup(
     name='bisbu',
-    version='0.0.1',
+    version='0.0.0',
     description='Bilibili subtitle batch uploader',
     author='Doraemonzzz',
     author_email='doraemon_zzz@163.com',
-    url='https://github.com/agermanidis/autosub',
+    url='https://github.com/Doraemonzzz/Bilibili-Subtitle-Batch-Uploader',
     packages=['bisbu'],
     entry_points={
         'console_scripts': [

@@ -9,7 +9,7 @@ import requests
 
 from urllib import parse
 
-from constant import *
+from .constant import *
 
 def submit_subtitle(subtitle, oid, csrf, cookie, bvid=None, lang="en-US"):
     """

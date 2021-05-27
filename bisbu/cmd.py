@@ -4,7 +4,7 @@ import os
 import sys
 import configargparse as argparse
 
-from constant import CONF_FILE_NAME
+from .constant import CONF_FILE_NAME
 
 def parse_args():
     """
