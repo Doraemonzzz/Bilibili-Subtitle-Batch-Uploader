@@ -7,12 +7,14 @@ def lang_to_blang():
     字幕文件语种和b站字幕语种号的对应关系, 例如en对应en-US
     """
     langs = [
+        "zh-CN",
         "zh-Hans-en",
         "zh-Hans",
         "en"
     ]
 
     blangs = [
+        "zh-CN",
         "zh-CN",
         "zh-Hans",
         "en-US",
