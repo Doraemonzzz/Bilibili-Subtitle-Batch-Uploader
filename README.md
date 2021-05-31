@@ -22,6 +22,8 @@ https://github.com/FXTD-ODYSSEY/bilibili-subtile-uploader
 
 ### 安装
 
+#### 源码安装
+
 下载仓库，使用命令
 
 ```
@@ -36,11 +38,27 @@ pip install -e .
 
 
 
+#### pypi安装
+
+todo
+
+
+
+#### 添加环境变量
+
+windows端需要添加环境变量，以Anaconda为例，需要添加：
+
+```
+D:\Anaconda3\Scripts
+```
+
+
+
 ### 配置文件
 
 新建配置文件bisbu.conf，内容如下：
 
-- sub_dir：字幕文件夹所在的绝对路径
+- sub_dir：字幕文件夹所在的绝对路径，**注意只能使用全英文路径!**
 
 - bvid：视频bv号，例如视频https://www.bilibili.com/video/BV1Jq4y1j7jC/的BV号为1Jq4y1j7jC
 
