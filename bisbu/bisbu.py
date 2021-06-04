@@ -78,7 +78,6 @@ def main():
     if (len(output) == 0):
         print("字幕全部上传成功!")
     else:
-
         print(f"字幕部分上传失败，上传失败的字幕名称保存在{output}，共{len(output)}个！")
 
 if __name__ == "__main__":
