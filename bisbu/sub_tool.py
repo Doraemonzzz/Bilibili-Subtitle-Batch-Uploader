@@ -1,11 +1,18 @@
 # coding: utf-8
 
 import os
+import requests
+import json
+
+from .constant import SUB_LAN_URL
 
 def lang_to_blang():
     """
     字幕文件语种和b站字幕语种号的对应关系, 例如en对应en-US
     """
+    # 自定义字幕编码的对应关系
+    lang2blang = dict()
+
     langs = [
         "zh-CN",
         "zh-Hans-en",
@@ -21,9 +28,15 @@ def lang_to_blang():
     ]
 
     n = len(langs)
-    lang2blang = dict()
+    
     for i in range(n):
         lang2blang[langs[i]] = blangs[i]
+
+    # b站字幕编码的对应关系
+    sub_lan = requests.get(SUB_LAN_URL)
+    sub_list = json.loads(sub_lan.text)
+    for sub in sub_list:
+        lang2blang[sub['lan']] = sub['lan']
 
     return lang2blang
 
