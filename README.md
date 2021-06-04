@@ -22,6 +22,14 @@ https://github.com/FXTD-ODYSSEY/bilibili-subtile-uploader
 
 ### 安装
 
+#### pypi安装（推荐）
+
+```
+pip install bisbu
+```
+
+
+
 #### 源码安装
 
 下载仓库，使用命令
@@ -34,14 +42,6 @@ git clone https://github.com/Doraemonzzz/Bilibili-Subtitle-Batch-Uploader
 
 ```
 pip install -e .
-```
-
-
-
-#### pypi安装（推荐）
-
-```
-pip install bisbu
 ```
 
 
