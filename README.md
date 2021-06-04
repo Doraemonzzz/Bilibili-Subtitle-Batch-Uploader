@@ -38,9 +38,11 @@ pip install -e .
 
 
 
-#### pypi安装
+#### pypi安装（推荐）
 
-todo
+```
+pip install bisbu
+```
 
 
 
