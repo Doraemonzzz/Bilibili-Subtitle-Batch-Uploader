@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name='bisbu',
-    version='0.0.0',
+    version='0.0.1',
     description='Bilibili subtitle batch uploader',
     author='Doraemonzzz',
     author_email='doraemon_zzz@163.com',
