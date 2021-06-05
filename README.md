@@ -48,7 +48,7 @@ pip install -e .
 
 #### 添加环境变量
 
-windows端需要添加环境变量，以Anaconda为例，需要添加：
+windows需要添加环境变量，以Anaconda为例，需要添加：
 
 ```
 D:\Anaconda3\Scripts

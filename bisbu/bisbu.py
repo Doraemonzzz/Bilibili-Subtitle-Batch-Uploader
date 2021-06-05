@@ -69,13 +69,14 @@ def main():
             response = submit_subtitle(subtitle, oid, csrf, cookie, bvid, blang)
             if (response["code"] != 0):
                 fail_upload.append(subfile)
+                fail_upload.append("错误原因: " + response["message"])
 
     # 记录上传失败的字幕
     output = os.path.join(sub_dir, "fail_upload.txt")
     gen_fail_upload(fail_upload, output)
 
     # 生成上传情况
-    if (len(output) == 0):
+    if (len(fail_upload) == 0):
         print("字幕全部上传成功!")
     else:
         print(f"字幕部分上传失败，上传失败的字幕名称保存在{output}，共{len(output)}个！")
