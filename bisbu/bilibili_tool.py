@@ -71,8 +71,11 @@ def oid_to_sub(oid_list, sub_files):
         title = oid_list[oid][0]
         oid2sub[oid] = []
         for subfile in sub_files:
-            # 如果本地字幕文件名包含远程标题, 则更新
             if title in subfile:
+                # 如果本地字幕文件名包含远程标题, 则更新
+                oid2sub[oid].append(subfile)
+            elif subfile in title:
+                # 如果远程标题包含本地字幕, 则更新
                 oid2sub[oid].append(subfile)
 
     return oid2sub
